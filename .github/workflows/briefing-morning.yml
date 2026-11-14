@@ -1,0 +1,48 @@
+name: "모닝 브리핑 자동 수집 (글로벌 · 장 개장 전)"
+
+# KST 06:30, 평일(KST 월~금)에 실행됩니다.
+# GitHub Actions cron은 UTC 기준이며, UTC 21:30은 다음날 KST 06:30이므로
+# "KST 월~금"에 대응하는 UTC 요일은 "일(0)~목(4)"입니다. (하루 당겨짐에 주의)
+on:
+  schedule:
+    - cron: "30 21 * * 0-4"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: wm-desk-data-commit
+  cancel-in-progress: false
+
+jobs:
+  build-morning:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 체크아웃
+        uses: actions/checkout@v4
+
+      - name: Node.js 설정
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: 글로벌 모닝 브리핑 데이터 생성 (시세 + 뉴스 + AI 요약)
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          ANTHROPIC_MODEL: ${{ vars.ANTHROPIC_MODEL }}
+        run: node scripts/build-morning.mjs
+
+      - name: F/O 리포트 아카이브 보강 (주 1회 또는 수동 실행 시)
+        if: github.event.schedule == '30 21 * * 0' || github.event_name == 'workflow_dispatch'
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: node scripts/build-insights.mjs
+
+      - name: 변경사항 커밋 & 푸시
+        run: |
+          git config user.name "wm-desk-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/
+          git diff --quiet --cached || git commit -m "chore(data): 모닝 브리핑 자동 갱신 [$(date -u +'%Y-%m-%d %H:%M UTC')]"
+          git push
