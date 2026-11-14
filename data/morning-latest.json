@@ -1,0 +1,25 @@
+{
+  "edition": "MORNING",
+  "generatedAt": "2026-01-01T00:00:00.000Z",
+  "generatedAtKST": "2026.01.01 09:00",
+  "sourceStatus": {
+    "market": "seed",
+    "news": "seed",
+    "summary": "seed"
+  },
+  "market": [
+    { "key": "KOSPI", "name": "코스피", "group": "domestic", "priceStr": "—", "diffStr": "—", "changePct": 0, "asOfLocal": "최초 수집 전", "asOfKst": "최초 수집 전", "stale": true },
+    { "key": "KOSDAQ", "name": "코스닥", "group": "domestic", "priceStr": "—", "diffStr": "—", "changePct": 0, "asOfLocal": "최초 수집 전", "asOfKst": "최초 수집 전", "stale": true },
+    { "key": "SP500", "name": "S&P 500", "group": "global", "priceStr": "—", "diffStr": "—", "changePct": 0, "asOfLocal": "최초 수집 전", "asOfKst": "최초 수집 전", "stale": true },
+    { "key": "NASDAQ", "name": "나스닥", "group": "global", "priceStr": "—", "diffStr": "—", "changePct": 0, "asOfLocal": "최초 수집 전", "asOfKst": "최초 수집 전", "stale": true },
+    { "key": "SOX", "name": "필라델피아 반도체", "group": "global", "priceStr": "—", "diffStr": "—", "changePct": 0, "asOfLocal": "최초 수집 전", "asOfKst": "최초 수집 전", "stale": true },
+    { "key": "USDKRW", "name": "원/달러 환율", "group": "fx", "priceStr": "—", "diffStr": "—", "changePct": 0, "asOfLocal": "최초 수집 전", "asOfKst": "최초 수집 전", "stale": true }
+  ],
+  "issues": [
+    { "cat": "GLOBAL ISSUE 01", "tag": "샘플 데이터", "title": "아직 GitHub Actions가 한 번도 실행되지 않았습니다", "desc": "이 내용은 초기 샘플(seed) 데이터입니다. GitHub Actions 워크플로(briefing-morning.yml)가 처음 실행되면 실제 시세·뉴스 기반 요약으로 자동 교체됩니다. README의 '처음 배포 체크리스트'를 확인하세요." },
+    { "cat": "GLOBAL ISSUE 02", "tag": "샘플 데이터", "title": "Actions → Run workflow 로 수동 실행해볼 수 있습니다", "desc": "Repository → Actions 탭 → '모닝 브리핑 자동 수집' 워크플로 → Run workflow 버튼으로 즉시 1회 실행해 결과를 확인할 수 있습니다." },
+    { "cat": "GLOBAL ISSUE 03", "tag": "샘플 데이터", "title": "ANTHROPIC_API_KEY 미설정 시에도 사이트는 정상 동작합니다", "desc": "AI 요약 키가 없으면 규칙 기반 폴백 요약이 대신 생성되어, 어떤 경우에도 화면이 깨지지 않습니다." }
+  ],
+  "talkingPoint": "이 문구는 초기 샘플(seed) 데이터입니다. GitHub Actions가 최초로 실행되고 나면 실제 시장 지표와 수집된 뉴스를 근거로 한 '손님 브리핑 종합 요약'으로 자동 교체됩니다.",
+  "topNews": []
+}

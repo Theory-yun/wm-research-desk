@@ -1,0 +1,16 @@
+{
+  "name": "wm-research-desk",
+  "version": "1.0.0",
+  "private": true,
+  "description": "PB용 데일리 마켓 브리핑 포털 — GitHub Actions가 서버사이드에서 시세·뉴스를 수집해 data/*.json을 생성하고, GitHub Pages가 정적 프론트엔드를 서빙합니다.",
+  "type": "module",
+  "scripts": {
+    "build:morning": "node scripts/build-morning.mjs",
+    "build:evening": "node scripts/build-evening.mjs",
+    "build:insights": "node scripts/build-insights.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {}
+}
