@@ -1,6 +1,8 @@
 import { fetchWithRetry } from "./fetchUtil.mjs";
 
-const DEFAULT_GEMINI_MODEL = "gemini-2.5-flash"; // 운영 전 Google AI Studio에서 최신 모델ID 확인 권장
+// "-latest" 별칭은 구글이 새 Flash 모델을 낼 때마다 자동으로 가리키는 모델을 바꿔주는 공식 별칭입니다.
+// (날짜 박힌 모델ID를 직접 박아두면 모델이 폐기될 때 404가 나므로, 별칭을 기본값으로 사용합니다.)
+const DEFAULT_GEMINI_MODEL = "gemini-flash-latest";
 const DEFAULT_CLAUDE_MODEL = "claude-sonnet-4-5-20250929"; // 운영 전 Anthropic 콘솔에서 최신 모델ID 확인 권장
 
 const SYSTEM_PROMPT =

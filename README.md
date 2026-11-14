@@ -78,8 +78,9 @@ wm-research-desk/
    (별도 빌드 워크플로 없이 정적 파일을 바로 서빙합니다.)
 3. 레포 → **Settings → Secrets and variables → Actions**
    - `New repository secret` → `GEMINI_API_KEY` 등록 (Gemini API 키, [aistudio.google.com/apikey](https://aistudio.google.com/apikey)에서 발급 — AI 요약 1순위)
-   - 필요 시 `New repository variable` → `GEMINI_MODEL` 등록 (비워두면 코드 기본값 `gemini-2.5-flash` 사용 —
-     운영 전 Google AI Studio에서 최신 모델 ID를 꼭 확인하세요)
+   - 필요 시 `New repository variable` → `GEMINI_MODEL` 등록 (비워두면 코드 기본값 `gemini-flash-latest`를
+     사용 — 구글이 신규 Flash 모델을 낼 때마다 자동으로 가리키는 대상이 바뀌는 별칭이라 날짜 박힌 모델ID보다
+     안전합니다. 특정 버전에 고정하고 싶을 때만 이 변수를 지정하세요)
    - (선택) `New repository secret` → `ANTHROPIC_API_KEY` 등록 — Gemini 키가 없거나 호출이 실패할 때 대신 쓰이는
      2순위 Claude API 키. 필요 시 `ANTHROPIC_MODEL` 변수도 함께 등록.
    - **둘 다 등록하지 않아도 사이트는 정상 동작합니다.** 이 경우 AI 요약 대신 규칙 기반 폴백 문구가 생성됩니다.
