@@ -64,9 +64,12 @@ async function callGemini(prompt) {
     generationConfig: { responseMimeType: "application/json", maxOutputTokens: 8192 },
   };
 
+  // retries:2 + backoffMs:2000(지수 백오프 2s→4s) — "모델 과부하(503)" 같은 일시적 장애는
+  // 몇 초만 기다리면 풀리는 경우가 많아, 시세/뉴스 호출보다 더 끈기 있게 재시도합니다.
   const res = await fetchWithRetry(`https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`, {
     timeoutMs: 55000,
-    retries: 1,
+    retries: 2,
+    backoffMs: 2000,
     headers: {
       "x-goog-api-key": apiKey,
       "content-type": "application/json",
