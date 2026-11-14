@@ -33,10 +33,29 @@ jobs:
           ANTHROPIC_MODEL: ${{ vars.ANTHROPIC_MODEL }}
         run: node scripts/build-evening.mjs
 
-      - name: 변경사항 커밋 & 푸시
+      - name: 변경사항 커밋 & 푸시 (충돌 시 리베이스 재시도)
         run: |
           git config user.name "wm-desk-bot"
           git config user.email "actions@users.noreply.github.com"
           git add data/
-          git diff --quiet --cached || git commit -m "chore(data): 이브닝 브리핑 자동 갱신 [$(date -u +'%Y-%m-%d %H:%M UTC')]"
-          git push
+          if git diff --quiet --cached; then
+            echo "변경 사항 없음 — 커밋 생략"
+            exit 0
+          fi
+          git commit -m "chore(data): 이브닝 브리핑 자동 갱신 [$(date -u +'%Y-%m-%d %H:%M UTC')]"
+          for i in 1 2 3 4 5; do
+            if git push; then
+              echo "push 성공 (시도 $i)"
+              exit 0
+            fi
+            echo "push 실패 (시도 $i/5) — 원격 변경사항을 받아 리베이스 후 재시도합니다"
+            git fetch origin main
+            if ! git rebase origin/main; then
+              echo "리베이스 충돌 — 자동 복구 불가, 다음 스케줄 실행에서 재시도됩니다"
+              git rebase --abort
+              exit 1
+            fi
+            sleep $((RANDOM % 8 + 3))
+          done
+          echo "5회 재시도 후에도 push 실패"
+          exit 1
