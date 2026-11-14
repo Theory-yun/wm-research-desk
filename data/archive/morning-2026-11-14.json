@@ -1,7 +1,7 @@
 {
   "edition": "MORNING",
-  "generatedAt": "2026-11-14T13:00:05.918Z",
-  "generatedAtKST": "2026.11.14 22:00",
+  "generatedAt": "2026-11-14T13:51:20.861Z",
+  "generatedAtKST": "2026.11.14 22:51",
   "sourceStatus": {
     "market": "ok",
     "news": "ok",
@@ -18,7 +18,7 @@
       "asOfLocal": "국내 정규장 기준",
       "asOfKst": "한국 정규장 15:30 마감",
       "stale": false,
-      "updatedAt": "2026-11-14T13:00:02.833Z"
+      "updatedAt": "2026-11-14T13:51:16.918Z"
     },
     {
       "key": "KOSDAQ",
@@ -30,7 +30,7 @@
       "asOfLocal": "국내 정규장 기준",
       "asOfKst": "한국 정규장 15:30 마감",
       "stale": false,
-      "updatedAt": "2026-11-14T13:00:02.833Z"
+      "updatedAt": "2026-11-14T13:51:16.918Z"
     },
     {
       "key": "SP500",
@@ -42,7 +42,7 @@
       "asOfLocal": "현지 11.13 16:00 마감",
       "asOfKst": "한국 11.14 06:00 마감",
       "stale": false,
-      "updatedAt": "2026-11-14T13:00:02.833Z"
+      "updatedAt": "2026-11-14T13:51:16.918Z"
     },
     {
       "key": "NASDAQ",
@@ -54,7 +54,7 @@
       "asOfLocal": "현지 11.13 16:00 마감",
       "asOfKst": "한국 11.14 06:00 마감",
       "stale": false,
-      "updatedAt": "2026-11-14T13:00:02.833Z"
+      "updatedAt": "2026-11-14T13:51:16.918Z"
     },
     {
       "key": "SOX",
@@ -66,7 +66,7 @@
       "asOfLocal": "현지 11.13 16:00 마감",
       "asOfKst": "한국 11.14 06:00 마감",
       "stale": false,
-      "updatedAt": "2026-11-14T13:00:02.833Z"
+      "updatedAt": "2026-11-14T13:51:16.918Z"
     },
     {
       "key": "USDKRW",
@@ -78,7 +78,7 @@
       "asOfLocal": "집계 기준 확인 중",
       "asOfKst": "집계 기준 확인 중",
       "stale": false,
-      "updatedAt": "2026-11-14T13:00:02.833Z"
+      "updatedAt": "2026-11-14T13:51:16.918Z"
     }
   ],
   "issues": [
