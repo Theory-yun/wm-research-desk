@@ -54,14 +54,18 @@ async function callGemini(prompt) {
   const apiKey = process.env.GEMINI_API_KEY;
   const model = process.env.GEMINI_MODEL || DEFAULT_GEMINI_MODEL;
 
+  // maxOutputTokens를 넉넉하게 잡아둡니다: 최신 Gemini 모델은 기본적으로 내부 "thinking"을 하는데,
+  // 이 추론 토큰도 같은 토큰 예산을 나눠 쓰기 때문에 예산이 너무 작으면 실제 답변이 비어버릴 수 있습니다.
+  // (모델 세대마다 thinking 끄는 파라미터 이름이 달라 - 2.5는 thinkingBudget, 3.x는 thinkingLevel -
+  //  잘못 섞으면 400 에러가 나므로, thinking을 직접 끄는 대신 예산/타임아웃을 넉넉히 주는 방식으로 대응합니다.)
   const body = {
     contents: [{ role: "user", parts: [{ text: prompt }] }],
     systemInstruction: { parts: [{ text: SYSTEM_PROMPT }] },
-    generationConfig: { responseMimeType: "application/json", maxOutputTokens: 1400 },
+    generationConfig: { responseMimeType: "application/json", maxOutputTokens: 8192 },
   };
 
   const res = await fetchWithRetry(`https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`, {
-    timeoutMs: 30000,
+    timeoutMs: 55000,
     retries: 1,
     headers: {
       "x-goog-api-key": apiKey,
