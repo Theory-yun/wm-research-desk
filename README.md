@@ -1,8 +1,8 @@
 # HANA Family Office · WM RESEARCH DESK
 
 PB(프라이빗 뱅커)가 손님에게 전달할 **장 개장 전(모닝/글로벌) · 장 종료 후(이브닝/국내)** 데일리 마켓 브리핑을
-자동으로 만들어주는 정적 웹 포털입니다. GitHub Actions가 서버사이드에서 시세·뉴스를 수집하고 Claude API로
-핵심 요약을 생성해 `data/*.json`에 저장하면, GitHub Pages가 그 데이터를 읽는 정적 페이지를 서빙합니다.
+자동으로 만들어주는 정적 웹 포털입니다. GitHub Actions가 서버사이드에서 시세·뉴스를 수집하고 Gemini API(또는
+Claude API)로 핵심 요약을 생성해 `data/*.json`에 저장하면, GitHub Pages가 그 데이터를 읽는 정적 페이지를 서빙합니다.
 
 이전 버전(브라우저에서 공개 CORS 프록시로 실시간 스크래핑)을 처음부터 다시 설계했습니다. 왜, 무엇이
 바뀌었는지는 맨 아래 [기존 버전과 달라진 점](#기존-버전과-달라진-점--종합-제언-반영) 참고.
@@ -16,7 +16,7 @@ PB(프라이빗 뱅커)가 손님에게 전달할 **장 개장 전(모닝/글로
  모닝(글로벌) 데이터 수집            이브닝(국내) 데이터 수집
    ├─ 핵심 지표 6종 시세(Naver/Yahoo, 서버사이드 직접 호출 — 프록시 불필요)
    ├─ 뉴스 수집(RSS + 구글 뉴스 RSS 검색)
-   ├─ Claude API 호출 → 핵심 이슈 3건 + 종합 요약 생성 (실패 시 규칙 기반 폴백)
+   ├─ Gemini API 호출 → 핵심 이슈 3건 + 종합 요약 생성 (Gemini 실패/미설정 시 Claude → 그래도 실패 시 규칙 기반 폴백)
    └─ data/morning-latest.json 또는 data/evening-latest.json 커밋 & 푸시
                               │
                               ▼
@@ -51,7 +51,7 @@ wm-research-desk/
 │       ├── config.mjs         # 지표·RSS·키워드 분류 설정 (여길 고치면 거의 다 커스터마이징됨)
 │       ├── market.mjs         # 시세 수집 (Naver 공식 API 우선, Yahoo 폴백)
 │       ├── news.mjs           # RSS/구글뉴스 수집·중복제거·태깅
-│       ├── summarize.mjs      # Claude API 요약 + 규칙 기반 폴백
+│       ├── summarize.mjs      # Gemini API 요약(1순위) + Claude API(2순위) + 규칙 기반 폴백
 │       ├── buildEdition.mjs   # 모닝/이브닝 공통 빌드 로직
 │       └── fetchUtil.mjs      # 재시도/타임아웃 fetch, KST 시간 유틸
 ├── data/
@@ -77,10 +77,12 @@ wm-research-desk/
 2. 레포 → **Settings → Pages** → Source를 "Deploy from a branch"로, Branch를 `main` / `root (/)`로 지정합니다.
    (별도 빌드 워크플로 없이 정적 파일을 바로 서빙합니다.)
 3. 레포 → **Settings → Secrets and variables → Actions**
-   - `New repository secret` → `ANTHROPIC_API_KEY` 등록 (Claude API 키, AI 요약 생성용)
-   - 필요 시 `New repository variable` → `ANTHROPIC_MODEL` 등록 (비워두면 코드 기본값 사용 —
-     운영 전 Anthropic 콘솔에서 최신 모델 ID를 꼭 확인하세요)
-   - **키를 등록하지 않아도 사이트는 정상 동작합니다.** 이 경우 AI 요약 대신 규칙 기반 폴백 문구가 생성됩니다.
+   - `New repository secret` → `GEMINI_API_KEY` 등록 (Gemini API 키, [aistudio.google.com/apikey](https://aistudio.google.com/apikey)에서 발급 — AI 요약 1순위)
+   - 필요 시 `New repository variable` → `GEMINI_MODEL` 등록 (비워두면 코드 기본값 `gemini-2.5-flash` 사용 —
+     운영 전 Google AI Studio에서 최신 모델 ID를 꼭 확인하세요)
+   - (선택) `New repository secret` → `ANTHROPIC_API_KEY` 등록 — Gemini 키가 없거나 호출이 실패할 때 대신 쓰이는
+     2순위 Claude API 키. 필요 시 `ANTHROPIC_MODEL` 변수도 함께 등록.
+   - **둘 다 등록하지 않아도 사이트는 정상 동작합니다.** 이 경우 AI 요약 대신 규칙 기반 폴백 문구가 생성됩니다.
 4. 레포 → **Actions** 탭 → 두 워크플로("모닝 브리핑 자동 수집", "이브닝 브리핑 자동 수집")가 보이는지 확인 →
    각각 **Run workflow**로 1회 수동 실행해 `data/*.json`이 실제 값으로 갱신되는지 확인합니다.
 5. Pages URL(`https://<계정>.github.io/<레포명>/`)에 접속해 화면이 뜨는지 확인합니다.
@@ -119,7 +121,7 @@ node scripts/build-evening.mjs
 | 2. 로딩시간 단축 | 브라우저는 정적 JSON만 fetch (실시간 다중 API 호출·프록시 전부 제거). 60여 개 종목 실시간 탭/차트 제거. 45초 폴링 제거(→ 10분 주기로 "새 데이터 있는지"만 가볍게 확인). |
 | 3. 지속 업데이트 고려 | 모듈화된 Node 스크립트(`scripts/lib/*`), 설정은 `config.mjs` 한 곳에 집중, 프론트도 ES 모듈로 분리. 지표/RSS/캘린더는 코드 수정 없이 JSON·config만 바꾸면 반영. |
 | 4. 데이터 항상 정확 | 모든 소스 실패 시 "그런 척" 하지 않고 `stale:true` + 이전 값 유지로 투명하게 표시. 검증 못 한 RSS 주소는 추측해서 넣지 않음. AI는 제공된 숫자만 쓰도록 프롬프트에 명시. |
-| 5. 핵심만 뽑은 요약 | Claude API가 시세+뉴스 후보 중 PB 관점 핵심 3이슈 + 종합 talkingPoint만 생성(길게 나열하지 않음). 키 없으면 규칙 기반 폴백. |
+| 5. 핵심만 뽑은 요약 | Gemini(또는 Claude) API가 시세+뉴스 후보 중 PB 관점 핵심 3이슈 + 종합 talkingPoint만 생성(길게 나열하지 않음). 키 없으면 규칙 기반 폴백. |
 | 6. 모닝=글로벌 | `build-morning.mjs`는 `GLOBAL_QUERY_RULES`(뉴욕증시·연준·달러인덱스·국제유가 등)만 사용. |
 | 7. 이브닝=국내 | `build-evening.mjs`는 `DOMESTIC_RSS_FEEDS` + `DOMESTIC_QUERY_RULES`(코스피·코스닥·수급·부동산 등)만 사용. |
 | 8. 종합 제언 반영 | 아래 표 참고. |
@@ -157,7 +159,7 @@ node scripts/build-evening.mjs
   (1) 재시도 2회 → (2) Yahoo 폴백 → (3) 그래도 실패하면 이전 값 + `stale:true` 표시, 순서로 절대
   화면이 깨지지 않게 설계되어 있지만, 특정 지표가 계속 "갱신 실패"로 보인다면 이 가능성을 가장 먼저
   점검하세요(며칠 뒤 자동으로 복구되는 경우가 많습니다. 지속되면 정식 시세 벤더 전환을 권장합니다).
-- **AI 요약 비용**: Claude API는 호출당 과금됩니다. 하루 2회(모닝/이브닝) 호출이라 비용은 크지 않지만,
-  운영 전 Anthropic 콘솔에서 가격을 확인하세요.
+- **AI 요약 비용**: Gemini·Claude 둘 다 호출당 과금됩니다(Gemini는 무료 등급 한도도 있으니 Google AI Studio에서
+  확인). 하루 2회(모닝/이브닝) 호출이라 비용은 크지 않지만, 운영 전 각 콘솔에서 가격을 확인하세요.
 - **"지난 브리핑 다시보기"**: `data/archive/`에 날짜별로 이미 쌓이고 있으니, 프론트에 간단한 날짜
   선택 UI만 추가하면 바로 확장할 수 있습니다.

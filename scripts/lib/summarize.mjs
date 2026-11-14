@@ -1,65 +1,114 @@
 import { fetchWithRetry } from "./fetchUtil.mjs";
 
-const DEFAULT_MODEL = "claude-sonnet-4-5-20250929"; // 운영 전 Anthropic 콘솔에서 최신 모델ID 확인 권장
+const DEFAULT_GEMINI_MODEL = "gemini-2.5-flash"; // 운영 전 Google AI Studio에서 최신 모델ID 확인 권장
+const DEFAULT_CLAUDE_MODEL = "claude-sonnet-4-5-20250929"; // 운영 전 Anthropic 콘솔에서 최신 모델ID 확인 권장
+
+const SYSTEM_PROMPT =
+  "당신은 국내 증권사 패밀리오피스(Family Office) 소속의 30년 경력 PB입니다. " +
+  "오직 사용자가 제공한 '시장 지표'와 '뉴스 헤드라인' 데이터만 근거로 삼아 " +
+  "초고액자산가(UHNW) 손님에게 전달할 하루 브리핑 콘텐츠를 작성합니다. " +
+  "제공되지 않은 숫자·사실을 새로 만들어내지 마세요. " +
+  "설명이나 코드블록 없이, 반드시 지정된 JSON 스키마 객체 하나만 출력하세요.";
 
 /**
- * Claude API를 호출해 "핵심 이슈 3건 + 종합 talkingPoint"를 생성합니다.
+ * "핵심 이슈 3건 + 종합 talkingPoint"를 생성합니다. (Gemini 1순위 → Claude 2순위 → 규칙 기반 폴백)
  *
  * 설계 원칙(정확성 최우선):
  *  - 숫자(시세·등락률 등)는 전부 market 배열에서 이미 서버가 계산해 둔 값을 "그대로 문장에 녹여서"
  *    쓰게 하고, AI가 새로운 숫자를 창작하지 못하도록 프롬프트에 명시합니다.
  *  - 응답은 반드시 JSON 스키마로만 받고, 파싱에 실패하면 즉시 규칙 기반 폴백으로 전환합니다.
- *  - API 키가 없거나 호출이 실패해도 사이트 자체는 절대 깨지지 않도록 폴백을 항상 보장합니다.
+ *  - 두 AI 키가 모두 없거나 호출이 모두 실패해도 사이트 자체는 절대 깨지지 않도록 폴백을 항상 보장합니다.
+ *  - 제공자 선택은 환경변수 존재 여부로만 결정합니다(GEMINI_API_KEY가 있으면 Gemini를 먼저 시도) —
+ *    두 키를 동시에 넣어두면 Gemini 장애 시 Claude로 자동 전환되는 이중 안전망이 됩니다.
  */
 export async function generateBriefingSummary({ edition, market, candidateNews, pbNotes }) {
-  const apiKey = process.env.ANTHROPIC_API_KEY;
-  if (!apiKey) {
-    console.warn("[summarize] ANTHROPIC_API_KEY가 설정되지 않아 규칙 기반 폴백 요약을 사용합니다.");
-    return { ...fallbackSummary({ edition, market, candidateNews }), summarySource: "fallback" };
-  }
-
   const prompt = buildPrompt({ edition, market, candidateNews, pbNotes });
 
-  try {
-    const body = {
-      model: process.env.ANTHROPIC_MODEL || DEFAULT_MODEL,
-      max_tokens: 1400,
-      system:
-        "당신은 국내 증권사 패밀리오피스(Family Office) 소속의 30년 경력 PB입니다. " +
-        "오직 사용자가 제공한 '시장 지표'와 '뉴스 헤드라인' 데이터만 근거로 삼아 " +
-        "초고액자산가(UHNW) 손님에게 전달할 하루 브리핑 콘텐츠를 작성합니다. " +
-        "제공되지 않은 숫자·사실을 새로 만들어내지 마세요. " +
-        "설명이나 코드블록 없이, 반드시 지정된 JSON 스키마 객체 하나만 출력하세요.",
-      messages: [{ role: "user", content: prompt }],
-    };
-
-    const res = await fetchWithRetry("https://api.anthropic.com/v1/messages", {
-      timeoutMs: 30000,
-      retries: 1,
-      headers: {
-        "x-api-key": apiKey,
-        "anthropic-version": "2023-06-01",
-        "content-type": "application/json",
-      },
-      method: "POST",
-      body: JSON.stringify(body),
-      responseType: "json",
-    });
-
-    const text = res?.content?.[0]?.text;
-    const parsed = extractJson(text);
-    if (!parsed?.issues || !Array.isArray(parsed.issues) || parsed.issues.length === 0 || !parsed.talkingPoint) {
-      throw new Error("AI 응답 스키마가 예상과 다릅니다.");
+  if (process.env.GEMINI_API_KEY) {
+    try {
+      const parsed = await callGemini(prompt);
+      return { issues: parsed.issues.slice(0, 3), talkingPoint: String(parsed.talkingPoint), summarySource: "ai-gemini" };
+    } catch (err) {
+      console.error(`[summarize] Gemini API 호출 실패: ${err.message}`);
     }
+  }
 
-    return {
-      issues: parsed.issues.slice(0, 3),
-      talkingPoint: String(parsed.talkingPoint),
-      summarySource: "ai",
-    };
-  } catch (err) {
-    console.error(`[summarize] Claude API 호출 실패 → 규칙 기반 폴백 사용: ${err.message}`);
-    return { ...fallbackSummary({ edition, market, candidateNews }), summarySource: "fallback" };
+  if (process.env.ANTHROPIC_API_KEY) {
+    try {
+      const parsed = await callClaude(prompt);
+      return { issues: parsed.issues.slice(0, 3), talkingPoint: String(parsed.talkingPoint), summarySource: "ai-claude" };
+    } catch (err) {
+      console.error(`[summarize] Claude API 호출 실패: ${err.message}`);
+    }
+  }
+
+  if (!process.env.GEMINI_API_KEY && !process.env.ANTHROPIC_API_KEY) {
+    console.warn("[summarize] GEMINI_API_KEY/ANTHROPIC_API_KEY가 모두 설정되지 않아 규칙 기반 폴백 요약을 사용합니다.");
+  }
+  return { ...fallbackSummary({ edition, market, candidateNews }), summarySource: "fallback" };
+}
+
+async function callGemini(prompt) {
+  const apiKey = process.env.GEMINI_API_KEY;
+  const model = process.env.GEMINI_MODEL || DEFAULT_GEMINI_MODEL;
+
+  const body = {
+    contents: [{ role: "user", parts: [{ text: prompt }] }],
+    systemInstruction: { parts: [{ text: SYSTEM_PROMPT }] },
+    generationConfig: { responseMimeType: "application/json", maxOutputTokens: 1400 },
+  };
+
+  const res = await fetchWithRetry(`https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`, {
+    timeoutMs: 30000,
+    retries: 1,
+    headers: {
+      "x-goog-api-key": apiKey,
+      "content-type": "application/json",
+    },
+    method: "POST",
+    body: JSON.stringify(body),
+    responseType: "json",
+  });
+
+  const text = res?.candidates?.[0]?.content?.parts?.[0]?.text;
+  const parsed = extractJson(text);
+  validateSchema(parsed);
+  return parsed;
+}
+
+async function callClaude(prompt) {
+  const apiKey = process.env.ANTHROPIC_API_KEY;
+  const model = process.env.ANTHROPIC_MODEL || DEFAULT_CLAUDE_MODEL;
+
+  const body = {
+    model,
+    max_tokens: 1400,
+    system: SYSTEM_PROMPT,
+    messages: [{ role: "user", content: prompt }],
+  };
+
+  const res = await fetchWithRetry("https://api.anthropic.com/v1/messages", {
+    timeoutMs: 30000,
+    retries: 1,
+    headers: {
+      "x-api-key": apiKey,
+      "anthropic-version": "2023-06-01",
+      "content-type": "application/json",
+    },
+    method: "POST",
+    body: JSON.stringify(body),
+    responseType: "json",
+  });
+
+  const text = res?.content?.[0]?.text;
+  const parsed = extractJson(text);
+  validateSchema(parsed);
+  return parsed;
+}
+
+function validateSchema(parsed) {
+  if (!parsed?.issues || !Array.isArray(parsed.issues) || parsed.issues.length === 0 || !parsed.talkingPoint) {
+    throw new Error("AI 응답 스키마가 예상과 다릅니다.");
   }
 }
 
