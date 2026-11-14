@@ -1,25 +1,211 @@
 {
   "edition": "MORNING",
-  "generatedAt": "2026-01-01T00:00:00.000Z",
-  "generatedAtKST": "2026.01.01 09:00",
+  "generatedAt": "2026-11-14T13:00:05.918Z",
+  "generatedAtKST": "2026.11.14 22:00",
   "sourceStatus": {
-    "market": "seed",
-    "news": "seed",
-    "summary": "seed"
+    "market": "ok",
+    "news": "ok",
+    "summary": "fallback"
   },
   "market": [
-    { "key": "KOSPI", "name": "코스피", "group": "domestic", "priceStr": "—", "diffStr": "—", "changePct": 0, "asOfLocal": "최초 수집 전", "asOfKst": "최초 수집 전", "stale": true },
-    { "key": "KOSDAQ", "name": "코스닥", "group": "domestic", "priceStr": "—", "diffStr": "—", "changePct": 0, "asOfLocal": "최초 수집 전", "asOfKst": "최초 수집 전", "stale": true },
-    { "key": "SP500", "name": "S&P 500", "group": "global", "priceStr": "—", "diffStr": "—", "changePct": 0, "asOfLocal": "최초 수집 전", "asOfKst": "최초 수집 전", "stale": true },
-    { "key": "NASDAQ", "name": "나스닥", "group": "global", "priceStr": "—", "diffStr": "—", "changePct": 0, "asOfLocal": "최초 수집 전", "asOfKst": "최초 수집 전", "stale": true },
-    { "key": "SOX", "name": "필라델피아 반도체", "group": "global", "priceStr": "—", "diffStr": "—", "changePct": 0, "asOfLocal": "최초 수집 전", "asOfKst": "최초 수집 전", "stale": true },
-    { "key": "USDKRW", "name": "원/달러 환율", "group": "fx", "priceStr": "—", "diffStr": "—", "changePct": 0, "asOfLocal": "최초 수집 전", "asOfKst": "최초 수집 전", "stale": true }
+    {
+      "key": "KOSPI",
+      "name": "코스피",
+      "group": "domestic",
+      "priceStr": "5,290.53",
+      "diffStr": "▼ -52.20",
+      "changePct": -0.98,
+      "asOfLocal": "국내 정규장 기준",
+      "asOfKst": "한국 정규장 15:30 마감",
+      "stale": false,
+      "updatedAt": "2026-11-14T13:00:02.833Z"
+    },
+    {
+      "key": "KOSDAQ",
+      "name": "코스닥",
+      "group": "domestic",
+      "priceStr": "699.66",
+      "diffStr": "▲ +3.13",
+      "changePct": 0.45,
+      "asOfLocal": "국내 정규장 기준",
+      "asOfKst": "한국 정규장 15:30 마감",
+      "stale": false,
+      "updatedAt": "2026-11-14T13:00:02.833Z"
+    },
+    {
+      "key": "SP500",
+      "name": "S&P 500",
+      "group": "global",
+      "priceStr": "7,561.67",
+      "diffStr": "▼ -30.73",
+      "changePct": -0.4,
+      "asOfLocal": "현지 11.13 16:00 마감",
+      "asOfKst": "한국 11.14 06:00 마감",
+      "stale": false,
+      "updatedAt": "2026-11-14T13:00:02.833Z"
+    },
+    {
+      "key": "NASDAQ",
+      "name": "나스닥",
+      "group": "global",
+      "priceStr": "25,136.27",
+      "diffStr": "▼ -229.82",
+      "changePct": -0.91,
+      "asOfLocal": "현지 11.13 16:00 마감",
+      "asOfKst": "한국 11.14 06:00 마감",
+      "stale": false,
+      "updatedAt": "2026-11-14T13:00:02.833Z"
+    },
+    {
+      "key": "SOX",
+      "name": "필라델피아 반도체",
+      "group": "global",
+      "priceStr": "10,146.32",
+      "diffStr": "▼ -360.35",
+      "changePct": -3.43,
+      "asOfLocal": "현지 11.13 16:00 마감",
+      "asOfKst": "한국 11.14 06:00 마감",
+      "stale": false,
+      "updatedAt": "2026-11-14T13:00:02.833Z"
+    },
+    {
+      "key": "USDKRW",
+      "name": "원/달러 환율",
+      "group": "fx",
+      "priceStr": "1,336.20",
+      "diffStr": "▼ -26.50",
+      "changePct": -1.94,
+      "asOfLocal": "집계 기준 확인 중",
+      "asOfKst": "집계 기준 확인 중",
+      "stale": false,
+      "updatedAt": "2026-11-14T13:00:02.833Z"
+    }
   ],
   "issues": [
-    { "cat": "GLOBAL ISSUE 01", "tag": "샘플 데이터", "title": "아직 GitHub Actions가 한 번도 실행되지 않았습니다", "desc": "이 내용은 초기 샘플(seed) 데이터입니다. GitHub Actions 워크플로(briefing-morning.yml)가 처음 실행되면 실제 시세·뉴스 기반 요약으로 자동 교체됩니다. README의 '처음 배포 체크리스트'를 확인하세요." },
-    { "cat": "GLOBAL ISSUE 02", "tag": "샘플 데이터", "title": "Actions → Run workflow 로 수동 실행해볼 수 있습니다", "desc": "Repository → Actions 탭 → '모닝 브리핑 자동 수집' 워크플로 → Run workflow 버튼으로 즉시 1회 실행해 결과를 확인할 수 있습니다." },
-    { "cat": "GLOBAL ISSUE 03", "tag": "샘플 데이터", "title": "ANTHROPIC_API_KEY 미설정 시에도 사이트는 정상 동작합니다", "desc": "AI 요약 키가 없으면 규칙 기반 폴백 요약이 대신 생성되어, 어떤 경우에도 화면이 깨지지 않습니다." }
+    {
+      "cat": "GLOBAL ISSUE 01",
+      "tag": "대체투자 · 매크로 · 외환",
+      "title": "국제 금시세 전망, 3900달러 반등…미 국채금리 5%에 금값 불안",
+      "desc": "톱스타뉴스 (2026.11.13 21:39) 보도. 자동 요약 생성에 실패하여 원문 제목을 그대로 노출했습니다 — AI 요약 키 설정 또는 호출 상태를 확인해주세요."
+    },
+    {
+      "cat": "GLOBAL ISSUE 02",
+      "tag": "외환 · 매크로 · 대체투자",
+      "title": "유가 뛰고 달러 강세까지…원·달러 환율 6원 상승, 코스피 1% 가까이 하락",
+      "desc": "베타뉴스 (2026.11.13 17:26) 보도. 자동 요약 생성에 실패하여 원문 제목을 그대로 노출했습니다 — AI 요약 키 설정 또는 호출 상태를 확인해주세요."
+    },
+    {
+      "cat": "GLOBAL ISSUE 03",
+      "tag": "외환 · 매크로 · 대체투자",
+      "title": "코스피, 젠슨 황 사임·유가 급등에 1% 하락…코스닥은 강보합 마감",
+      "desc": "청년일보 (2026.11.13 16:47) 보도. 자동 요약 생성에 실패하여 원문 제목을 그대로 노출했습니다 — AI 요약 키 설정 또는 호출 상태를 확인해주세요."
+    }
   ],
-  "talkingPoint": "이 문구는 초기 샘플(seed) 데이터입니다. GitHub Actions가 최초로 실행되고 나면 실제 시장 지표와 수집된 뉴스를 근거로 한 '손님 브리핑 종합 요약'으로 자동 교체됩니다.",
-  "topNews": []
+  "talkingPoint": "[글로벌 모닝 요약] S&P500 7,561.67(-0.4%), 나스닥 25,136.27(-0.91%), 필라델피아 반도체 10,146.32(-3.43%)로 마감했습니다. 참고로 직전 국내 마감은 코스피 5,290.53(-0.98%), 코스닥 699.66(0.45%)였습니다. (이 요약은 AI 생성에 실패해 규칙 기반으로 생성되었습니다.)",
+  "topNews": [
+    {
+      "title": "국제 금시세 전망, 3900달러 반등…미 국채금리 5%에 금값 불안",
+      "press": "톱스타뉴스",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE54Y1dCNWxPNEdXNzhIZnluYjNrZkR6cExSeUVIdmVzWnZNUUpwOUFCZU9LS21mYThvaE4tb09vTExWbTV5UllhcXhaTHJ3SWI1SnhISTF3dl9EaUNGT0gxUXBVZzJxUXdfWE9rZUZ0UzBsUQ?oc=5",
+      "timestamp": 1794573554000,
+      "date": "2026.11.13 21:39",
+      "tags": [
+        "대체투자",
+        "매크로",
+        "외환"
+      ],
+      "score": 13
+    },
+    {
+      "title": "유가 뛰고 달러 강세까지…원·달러 환율 6원 상승, 코스피 1% 가까이 하락",
+      "press": "베타뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9GYmNWRnZySVZWVXU0NUdGbmNXR3ZOcVZqYllxZ0NJa0NuUUJpbGdnOC1BUnBwdHNnMFJLcldod0N0UF85RU1VVHcyR1ZTNGNBYk11cDllUUdpeHFMTk5EZ2d5TVk?oc=5",
+      "timestamp": 1794558415000,
+      "date": "2026.11.13 17:26",
+      "tags": [
+        "외환",
+        "매크로",
+        "대체투자"
+      ],
+      "score": 13
+    },
+    {
+      "title": "코스피, 젠슨 황 사임·유가 급등에 1% 하락…코스닥은 강보합 마감",
+      "press": "청년일보",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5aNUJIZm5NdlBUUFIwR3IyNHNIZ0xFZDFWOW9CSGhOa19UdndwUzJjSmFWZ1Bzb21wbDlNNTltMVYxa0xMWHFDUnlhMzB4WnYwdmJTVG1scVEzeUJBXzlCYnNjRHhkNkU?oc=5",
+      "timestamp": 1794556062000,
+      "date": "2026.11.13 16:47",
+      "tags": [
+        "외환",
+        "매크로",
+        "대체투자"
+      ],
+      "score": 13
+    },
+    {
+      "title": "[환율마감] 원·달러 5거래일만 반등, 유가·미국채 금리 급등",
+      "press": "이투데이",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFB2WDVXRnFiTWZHRTNFLWRMNk9vTl9JU2V3aGVEeWFBdmFNR0J6SjlMYVhRbmJDa0xPckF6UDV3VUZLRnRzMXoxc0VEdEJ6Q3hxLVUxOUZtV2pYSXNKY19VdnpZcll0anV6dTRfcThfWDdla3F5?oc=5",
+      "timestamp": 1794553800000,
+      "date": "2026.11.13 16:10",
+      "tags": [
+        "외환",
+        "매크로",
+        "대체투자"
+      ],
+      "score": 13
+    },
+    {
+      "title": "환율·유가 하락에 10월 수입물가 1.8%↓…수출물가는 0.7%↑",
+      "press": "동양뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFAtRnFVN2Iza3J2azhnd1VHd3BYMWp5V2F4Z3JGWm9FWG91RGZ1STcyZ3RiQkl4X1NyVmlQeGRkdnFjR3hnc3Y2eVF4eHFmX2ZwVGUxdTU5Z3Q2dmtOUEp0SGg3ZGNTdDMxWWc?oc=5",
+      "timestamp": 1794551604000,
+      "date": "2026.11.13 15:33",
+      "tags": [
+        "외환",
+        "매크로",
+        "대체투자"
+      ],
+      "score": 13
+    },
+    {
+      "title": "[국제/금융] 세계 금값 온스당 3,900달러 하회… 달러 강세·Fed 금리 인상 기대에 107달러 급락",
+      "press": "굿모닝베트남미디어",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1Qa0hUVkV2UnBjYmxOSlVTYXRMZU5LMDBsLWIwTTVTOFRyeUJvMHkxQWZDRXFpcjdsWjB3OHB3elkyZk1xR1hqcTdDSDN6MnFpSW84MkdMTDlSUno5SktiaTl2ZHdwNHRQcDhScTVFZFY?oc=5",
+      "timestamp": 1794546737000,
+      "date": "2026.11.13 14:12",
+      "tags": [
+        "대체투자",
+        "매크로",
+        "외환"
+      ],
+      "score": 13
+    },
+    {
+      "title": "유가·환율 하락에 수입물가 1.8%↓…반도체 호황에 수출 교역조건 개선 - https://www.ppss.kr/",
+      "press": "https://www.ppss.kr/",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFAtSFpNZ1VyMjltV2wtVDl1TFdmeS1NSGdzN3gzazBRdDJxUHpfSlJ3VjFZNEs0bVRWeHR3UThtMGdva0lXMG9IdGhuQXUxbDdBdnRzYVVvOE5hd2F5WFE3ZGp0YTQ?oc=5",
+      "timestamp": 1794538325000,
+      "date": "2026.11.13 11:52",
+      "tags": [
+        "외환",
+        "매크로",
+        "대체투자"
+      ],
+      "score": 13
+    },
+    {
+      "title": "환율·유가 동반 하락에 수입물가 1.8% 내려",
+      "press": "스페셜경제",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5iOExPU0tzY3Q4a3QwMGFqZ2N4WGFzQ2VxbDIwc2NsQXhMUVd0bDlyanpMYWhibWhMQU1VdEhhdGp3VTZMMFpERFlFNk1iMVJadlBqQ1FSdmxpUG9kVEdBSTZRekthdnFFUDJZbA?oc=5",
+      "timestamp": 1794534125000,
+      "date": "2026.11.13 10:42",
+      "tags": [
+        "외환",
+        "매크로",
+        "대체투자"
+      ],
+      "score": 13
+    }
+  ]
 }

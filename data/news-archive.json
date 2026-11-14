@@ -1,4 +1,2624 @@
 {
-  "updatedAt": null,
-  "items": []
+  "updatedAt": "2026-11-14T13:00:05.916Z",
+  "items": [
+    {
+      "title": "[뉴욕증시 마감] 다우 소폭 상승 속 엔비디아 2% 하락하며 시총 4조 달러 하회",
+      "press": "CBC뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9PSjBQWlJiUEduXzBTdnJ5bloyT0d2NWhROVUwMnhXcm9JaHhpNHBMZXJwY0VGQmJJcTQwTlhTNlo5RzZNOFN1UDhLdDVGN1hPY0dfbkV5UjRpTmtsa0FBYjc2TE1oSVN0?oc=5",
+      "timestamp": 1794657000000,
+      "date": "2026.11.14 20:50",
+      "tags": [
+        "매크로",
+        "외환"
+      ]
+    },
+    {
+      "title": "홍라희에 '삼전 1115만주' 받은 이재용…증여세는 얼마?",
+      "press": "이데일리",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOWG5wSTBnT3E1SUZLaGU3X1RnVTBYbm1ZX3JLWFFEZUJ6MjU4b3pBazRFaEZkQll1UGVXRjNOZlFmMHU0eGYzX21NYzJMV3E0M3ZKX1ZLU1QzcXB2NEc2Wl9Td0lvUzBMSTFNLWdDNWc5VEl4bFpCY1lIeE8tX0xpTQ?oc=5",
+      "timestamp": 1794655720000,
+      "date": "2026.11.14 20:28",
+      "tags": [
+        "TAX"
+      ]
+    },
+    {
+      "title": "[뉴욕증시] 황제 퇴진 '혼돈의 AI 테마···엔비디아 2%↓·AMD 반락·세레브라스 급등",
+      "press": "서울파이낸스",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE40cnNLbk9fbFlNbW56WmNOczBYYXl5YjBtQ05fSzdRUDFZOTBtcXJsMjcxal9KNkFtUTVPWE5lcllQeGdsWjdfa21FOHBCYmR3d05KWE9DTkE3MnQxczlScmYzZ0xoYWJiQ2c?oc=5",
+      "timestamp": 1794655586000,
+      "date": "2026.11.14 20:26",
+      "tags": [
+        "매크로"
+      ]
+    },
+    {
+      "title": "월스트리트, 연준 금리 3회 연속 인상 전망",
+      "press": "IDNFinancials",
+      "url": "https://news.google.com/rss/articles/CBMioAJBVV95cUxQSmhmVjBHaE5lbzBJaV9sckdFcEh3NHo0RXdLRWJrR1ZJOUNtTjRVVVh6N210THJ1OW5JeUJWRkViZ1V3R3luRmxva0RrSFNpY1lMUXAzM0hBNEhGM25XNVh4WkM4aVhFUUkybzQ4SlFPa3VKQ0tzdDA1NHdzdnV3M1RPTmp3Mm8tRGw5NmQ1V0RVdnRDYjdrQWVtRnpwcjNGRGlDUFN4TUJNRDdpRWJldTB6QzdyR2lZN3JnMXMzYVhLLTd2QTVWRUQtc0VOLTQ0WTZwcndya3F4VG94bjVKbXJ4Vk5rbk93SkpBLW1ZbVJHdm5MM1R4UWxFNG1jN3N2N2hIUWpMQUloczlISlBKLWlaWm96UGN0QXQtQTF1RVQ?oc=5",
+      "timestamp": 1794650400000,
+      "date": "2026.11.14 19:00",
+      "tags": [
+        "매크로"
+      ]
+    },
+    {
+      "title": "K뷰티 전용 ETF 뉴욕증시 상장…투자 흥행으로 이어질까",
+      "press": "블로터",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1ZaS1mVHJiQzczcVBxQzVPVllwNEs4aVI5Q240czZjZU9LNTVGUlNaNDB3RnV0dG1wZWtMQ0NzS1FKaXkxWmJod3B3RmNWOWYwN3ZReEx4WE00QV9ubzRZTnkzOUVCZzdF0gFsQVVfeXFMT2JPQkFWZ1F4dS1fOHNEZFV2R3hQNlNLQ2FhbFNKZlJBN25VQUlHeWRzMmtZUk11c1AtOFJadWNpa3VraGRHWGtGRGNYRUVfUHh2Nl9BbWhXdUJLMFg5NHFxR2NlYXk3LTltTmF0?oc=5",
+      "timestamp": 1794646800000,
+      "date": "2026.11.14 18:00",
+      "tags": [
+        "매크로"
+      ]
+    },
+    {
+      "title": "모친 홍라희에 삼전 주식 1115만8000주 받은 이재용, 증여세는 얼마나?",
+      "press": "문화일보",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE41TlVtN2tXSHJOd2E3bk02UUxrejhaYXVYN2ZGeE03Q1hDNmJlZUlfdFlBVmlaOWtlV29qUEQ0YnZRTmRfM0hVMzdYTURIOW1K?oc=5",
+      "timestamp": 1794642367000,
+      "date": "2026.11.14 16:46",
+      "tags": [
+        "TAX"
+      ]
+    },
+    {
+      "title": "뉴욕증시에 전용 K-ETF 상장…K뷰티, 월스트리트 새 투자 테마로",
+      "press": "SBS Biz",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5jNDMzRktoRko0QTlMSVN0djhTZ2lDZUJWaVBBaDNEWGw0TjlQbklHX3FmNERrMzRZZEk5Mm5qZ0FXSndzVUlkUGNuYkNFUllFTHFz0gFYQVVfeXFMUGNnTXFjME1wbmNIajF0eFBYdXM5VlpXd3dBVmc3cHRLOHJRa1hYXzVkZDg1QWVHNVUzQVdvcWV6c2VBaDd6dDNOZnUzNGFJalZSVUstUTRGMA?oc=5",
+      "timestamp": 1794637080000,
+      "date": "2026.11.14 15:18",
+      "tags": [
+        "매크로"
+      ]
+    },
+    {
+      "title": "\"내 계좌엔 언제 꽂혀요?\"…'121조 잭팟'에 개미들 들썩 [이수의 ETF 줌인]",
+      "press": "한국경제",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE4yTHJ6VUtuSzBSeFl0eXhIdWpCSEl0Q3h0S19ibGpWa29SM1JBbnhVdUJ5MzdBS2dRVnRXZWdzMWRtTnhRLV9rMEZfcDBnU1hMTEV6X3BMRnBUZw?oc=5",
+      "timestamp": 1794636005000,
+      "date": "2026.11.14 15:00",
+      "tags": [
+        "매크로"
+      ]
+    },
+    {
+      "title": "美 뉴욕증시에 K뷰티 ETF 상장…한국 화장품·의료미용 기업 투자",
+      "press": "한스경제",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9iblRnZ0d1RnQ2NHpTNHNKNGRESGFKTERmd2F0RVBhWTRzQUJUbFNNX1JwYndxSVBVQXpoaVJFMms5c1QtNE5VRXpwdDJHWWFfQzNsb1NVSkFfMVBZekNCeFpzYmxfNk9VR1NV0gFvQVVfeXFMT0FMeHpjZmwtS3JHXzRkOUNpYXl1ektqVWFycllia2NxUjEtVmJtNWVESjVjZ2dqdUs3a0R4MUUtUGdhdEQ5QllSNlRlSzNvZFpzTDFBQU5JZUk5bWEySkxOdHdxQk4xcHJ6T3RxZzQw?oc=5",
+      "timestamp": 1794633398000,
+      "date": "2026.11.14 14:16",
+      "tags": [
+        "매크로"
+      ]
+    },
+    {
+      "title": "급락 딛고 반등한 코스피…다음주 '엔비디아·연준' 변수 주목",
+      "press": "데일리한국",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE55TDI4T0RuUTZUVHhuRmtGX1poV3VXcUVKTTEwQ1hhU3E3WnN6X2FvZ0ljdzc3RXpVVDZ6S1d3XzZIb3VvMDRWVUVQb2RNQVNhR2t0U3U2S043TEF2T004T3pqbTNqVmZYLXdST1RkSdIBc0FVX3lxTFB3T3Jfdzh1YlRZbUZ4dl90LWxLT3dLc0UxNV81OGQ2ZjlGZldqSVJCR0doS3gzOGxuRWs0VktKR2dQejBxV2VDOWZsYjhuS0dHQ3U1d0tsVDIwYURQOGVKN0VOSjE5SHlsemxXRHltQXVTSjQ?oc=5",
+      "timestamp": 1794632400000,
+      "date": "2026.11.14 14:00",
+      "tags": [
+        "매크로"
+      ]
+    },
+    {
+      "title": "시장은 12월에 연준 금리 인상을 예상",
+      "press": "IDNFinancials",
+      "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxPSW9GZmdrMy1uRDFUaTFZRkZfanM3c2lUTTYwNTdDUEx4ZVhBblkzaHE1NUdoeXE1VmZzT0h6M2lHMlV3cTF4ZkR0c19GTGJEcDZZQ2xMdjBGRk1YWTNfaGdvcGEyWWhrWTkwTjN6cVZFUFlSWHpOeTNkM3VlaW5OYndWc3QyTUdLYXRaNEdULXZCT2lLNGtwbDc3NllrV2lrOFp2dEpqc0g0RThtOFRHMERKNVozQTM4Q2doR1Vza2YwR1NRVW9laGZUanR6RUpmcXJ2NXI5SVVfenlvMDVoREptNDNMYXgzTXBxVjlUTTNXUTczbkNKVnZrcmlsUHNlNVNuXzVYRWY?oc=5",
+      "timestamp": 1794632400000,
+      "date": "2026.11.14 14:00",
+      "tags": [
+        "매크로"
+      ]
+    },
+    {
+      "title": "뉴욕증시, 엔비디아 여파에 혼조 마감…“다우 0.10%↑·나스닥 0.91%↓”",
+      "press": "파이낸셜투데이",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE85dUFQWDA4S0lzX2lBWVRPbGZONFp1VWRidXo0dzFYZlZrdXAyRDRxTmlPWHoteVZjOGJscnFEbE93MVluYXNDZU1sWC1PQTRaTHVsUEZJeHhVWGtxR0hnaHBYMnd0RzRtWXfSAW5BVV95cUxPU05kYmVBUFVrVTBjc1pCbXhEU3Vzd0N5a3k2bUg2S2VmeFBWR01rWk12RU0xUklMMGRIcElQMmU1ank5MGI4VnYyV2FueVlncE5BaVYxZW1VN19uSmhncWNsM05JcEFOaEtqYVdPdw?oc=5",
+      "timestamp": 1794629807000,
+      "date": "2026.11.14 13:16",
+      "tags": [
+        "매크로"
+      ]
+    },
+    {
+      "title": "“송파 집 한 채가 전분데…웬 상속세” 팔아서 노후자금으로 쓸까, 지분 증여로 세금 아낄까 [이보소]",
+      "press": "헤럴드경제",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1vNkRNRUZPaUVMV2N5b2w4ZjV3T3VtNEpEZlNMMHNUU3NDV1czVVlQVlljbFdzSElralJXNTZITXdTSkZ5VHlZa2VxbHhZeWszeXV5MFhR?oc=5",
+      "timestamp": 1794629400000,
+      "date": "2026.11.14 13:10",
+      "tags": [
+        "TAX"
+      ]
+    },
+    {
+      "title": "반도체주 투매에 나스닥 0.91%↓…애플은 장중 사상 최고가",
+      "press": "콕스뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE8tMU02LTBWNFo4RDJ4aHZMWHIzb0xNUmxDNmlrM3ZFb1hsSy1hMEhqM0dzcERvV0owNWFiRWE5NEhLOXB4QXhVazJWdDJvdlZmdTNDamtac1lQM3VvaFg0TEF1ZEExRGw0V0E?oc=5",
+      "timestamp": 1794627955000,
+      "date": "2026.11.14 12:45",
+      "tags": [
+        "매크로"
+      ]
+    },
+    {
+      "title": "오늘 금시세 순금 한 돈 73만 2000원 국제 금값 하락세",
+      "press": "중앙이코노미뉴스",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE43TmM2T3BXY01OUVZVaHBKM25nY2J0dFVQWG5YOGt3MDMzVGpkUjh3RHJ5eGxhcW14cWxhV3B0NnRXOXFVTlFscVVJekhUd3FYTEFMeW5MdFhEanNJRldsaHhiMjBVY3gycXJyYUE1bmpmUQ?oc=5",
+      "timestamp": 1794627348000,
+      "date": "2026.11.14 12:35",
+      "tags": [
+        "대체투자"
+      ]
+    },
+    {
+      "title": "10억에 판 어머니 집, 양도세 3억→8654만원…대체 무슨 일[판례방]",
+      "press": "이데일리",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQZHpmQWlwWXU3WmZoeUY2MTlyNHBfZ0NQcTBVTlhZTWJXTmpZVWhFOE1DOVo1OXh2dkoxRmY4TXZZTmdYQUZwTkNEOGhnTU5HUWZYMl9MdFJ5X2NpWk9aMUZ5TnBUR24zWkZzWG9ySHpEMnQta1VGdnhsMEFCUDdlaQ?oc=5",
+      "timestamp": 1794627003000,
+      "date": "2026.11.14 12:30",
+      "tags": [
+        "TAX"
+      ]
+    },
+    {
+      "title": "[해외시황] 뉴욕증시, 엔비디아發 불확실성 지속에 '혼조'…나스닥 0.91%↓",
+      "press": "프라임경제",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9UZEN5U2hucFpGTEo5aDdLeEVTZTQ0ak5Kdm1iSGVkemhiSVFrRkdHTmdQeG5uUXB1VnQ3cXNFNFVleWwzQW5xYWNTWlZkMFpjXzRjOFRteVhiVUU0U2lXUjl5WnZ1aGYyY3ZlVw?oc=5",
+      "timestamp": 1794625855000,
+      "date": "2026.11.14 12:10",
+      "tags": [
+        "매크로"
+      ]
+    },
+    {
+      "title": "美 연준 '빅스텝' 공포에 상업용부동산 시장도 긴장…\"거래 깨질라\"",
+      "press": "이데일리",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNejZMMk13VUJVRDdENWlZbmlsXy1nRXZxV0gxVzIwSkR0Y25IUk0ydDlGbUFfMHYwNXNKWnlyUGcxZnkyNjViSHE3MDZKQURFSVpfbUpHbG5TSmhhWG1CalZvT3ZGS0RuRkRxcWtrT0RjX3FNcVQ3WmdYbHlWWUdDVg?oc=5",
+      "timestamp": 1794625564000,
+      "date": "2026.11.14 12:06",
+      "tags": [
+        "매크로",
+        "부동산"
+      ]
+    },
+    {
+      "title": "뉴욕증시 혼조…반도체주 약세에 나스닥 0.9%↓",
+      "press": "코리아리포트",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1zclVlQW1uZmNJVHA1X2JoaU4xaFBmc19GRmU1QUJ0cHBYVXFPRU5vSmphLXZWMGJhQkFLeWtmQmRVS3RJcXE2cGstSDQ2WlZUSWY0RW92QWZZaHd6X1VmWm9lU190ZVhkbjMyTmJ2YWc?oc=5",
+      "timestamp": 1794624884000,
+      "date": "2026.11.14 11:54",
+      "tags": [
+        "매크로"
+      ]
+    },
+    {
+      "title": "[금시세] 국제 금값 18k 등 얼마?",
+      "press": "게임톡",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE93TERIdGhueXluRHBZbkp1ZjN2OEdJQmVRckMwQkVLbFY5ZktHYzZnTFFTS2NKaktybjRNYVo0N3BJUnZBYVpwcUh5eVZGWmZQaXNWSjFhU2ZaRnBVMFhqSFhqTF9NWEc1bGNBVQ?oc=5",
+      "timestamp": 1794624033000,
+      "date": "2026.11.14 11:40",
+      "tags": [
+        "대체투자"
+      ]
+    },
+    {
+      "title": "오늘 금값·금한돈시세, 순금 살까 팔까…매매 가격 차이 확인",
+      "press": "키즈맘",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5ITHFYMExMVHRaY09KZVloUkpGb1VRUThNOW5keG9VaTRrV2docVF2RjRVRXpLb2w1VWNpaF9GbkJkRjB6Um1JM3pobWtTTUxGQ1E5SmZ3RXlOcVZ5LUgyMHNoS0MyLVdi?oc=5",
+      "timestamp": 1794623806000,
+      "date": "2026.11.14 11:36",
+      "tags": [
+        "대체투자"
+      ]
+    },
+    {
+      "title": "국제 금값, 미국 인플레이션 지표 발표 후 온스당 104달러 급락",
+      "press": "씬짜오베트남",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE5LdWdrTUs0U1gyNklRS2llbk1SZUF4bnc4ZUl2TzRBUnNHMHg4UHhyai0tdzNfOVdwMU1UYTJsVzZtVDhDYUNjNA?oc=5",
+      "timestamp": 1794621487000,
+      "date": "2026.11.14 10:58",
+      "tags": [
+        "대체투자",
+        "외환"
+      ]
+    },
+    {
+      "title": "원달러 환율, 5거래일 만에 반등…1,336.7원 마감",
+      "press": "씬짜오베트남",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE9neDZaZzZqOWpNczV5bHZhNXR6RUZELXhzRVNTVVd3eU9iU2s3TnBXUFRMZEtHdTBic1BjWUQwQ0pQa0hLWDJvXw?oc=5",
+      "timestamp": 1794621429000,
+      "date": "2026.11.14 10:57",
+      "tags": [
+        "외환"
+      ]
+    },
+    {
+      "title": "국제유가 상승에 달러 강세…달러인덱스 19개월 만에 최고",
+      "press": "서울경제",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1qYUZzRFlzdHNfSkI4MlduanF0ajlTdlo4QWIxNFdYc0ZJMnNvWU9QX01tR1FhNk1vY0R6SzliUzdGcVVqYkJvMTM2Q1Y1UlhkRnfSAVNBVV95cUxNV2hvSDMzeWNRNy1LalFRNXZrWUdJMmRZRXpqN1o4SDluMkJZU05ENGlpYVNEN2hrc0NmY1lLV3FSNm9lVmp4cUgtaWxRZ1Z5YjJDbw?oc=5",
+      "timestamp": 1794620877000,
+      "date": "2026.11.14 10:47",
+      "tags": [
+        "외환",
+        "대체투자"
+      ]
+    },
+    {
+      "title": "연준 '매파 합창'…12월 넘어 내년까지 금리 올리나",
+      "press": "블루밍비트",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5kU255UTNZUjVTMzVEcGs5ekpsQ085dmNURGkxcHFIb1hfMG1CVUJtYmJ6Ml9xMTFMUUZnMjBTVkE4TXM3Rm9MV0Y1NnBSRFlD?oc=5",
+      "timestamp": 1794619501000,
+      "date": "2026.11.14 10:25",
+      "tags": [
+        "매크로"
+      ]
+    },
+    {
+      "title": "뉴욕증시, 다우지수만 소폭 상승…엔비디아 하락 지속",
+      "press": "매일경제TV",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5DMTJsbWJvTzQ1NDlOZkxHR0Y0RExpNjE2dlRSRDlfSnZGS2Itd2s3VVhYaF9qdTFjaTZMQ000UUhTc1lmckpzYlBIa2NEWFZXNHR2SmhRcHRRcmVqM3JmM0stcEc0ZHRn?oc=5",
+      "timestamp": 1794619380000,
+      "date": "2026.11.14 10:23",
+      "tags": [
+        "매크로"
+      ]
+    },
+    {
+      "title": "[뉴욕증시] AI·반도체 약세에 혼조세 마감…엔비디아 2.01%↓",
+      "press": "중앙신문",
+      "url": "https://news.google.com/rss/articles/CBMiwgJBVV95cUxQS0hWamRfcTNCT0tiNkowRXVaeEpjWHl5WlJIdDM4MS1JUnREakVaaTBaeVktUGNpNHB2M1ZNVHZxS0ptOS13VzNWZEN1bkl0UTcyUVFMLWt5ZENPMzFJdXlSSUhfaGozdGZJaWlnUnJ4cGRzeGl3ZzJpWkZYazRxSHhWVmk2TzhONXlBcXFnZlZhZEU1R0YtVHhpQW9KTFNuTFpCMHE1U3F3ZkJSa0tnZG1jT2dZUlNmVlhSOUl1Q0tCMFJVOXZiSFJGaUVmTVV3bU1IYlBSX2xVRzF3Wm1rd1JGNVRVdVNGSlhsNTFheXI4U0lwenFIa0VIYjdVaVlqS0lGZFkxQmxVUFVqTkwtcHA0d29UdzIxUW5hZFc1Tm9CNV8zcEY1UXRDNmN5M2ZEXzRlWGtsdENkRHFHRW1wSmtn?oc=5",
+      "timestamp": 1794619280000,
+      "date": "2026.11.14 10:21",
+      "tags": [
+        "매크로"
+      ]
+    },
+    {
+      "title": "美 연준 'AI 버블' 경고…고평가 주식·빚투성 투자에 금융시장 위험 고조",
+      "press": "www.ebn.co.kr",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE0tZll1aW9WNUMxT3RzV2YxdVVycUZwU2pZdThuS25aXzR4YlBVQjhrSlE4bllJeFlFTmtVcWhfRXV3cmxfT2FsT2doZV9kLVRiSnRUZWowS2djSjJsUGFDLUFfWFBMTkRl?oc=5",
+      "timestamp": 1794617517000,
+      "date": "2026.11.14 09:51",
+      "tags": [
+        "매크로"
+      ]
+    },
+    {
+      "title": "엔비디아 실적·앤트로픽 상장·연준 긴축 신호 한 주에 몰렸다…코스피 5200~6000 전망",
+      "press": "마켓잉크",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9XNkhreXZxeVJFaWdQQi1RTHhseEs3dWl1Nzl0eTZuaTFCVTRrMTNfRHFQdm1ZTzNmU3IxQm9TblFFaXJVNTVGb1g3MkpyX2dFb0twaUZMUHRTTkJTRDJnODZtUkFQZGVwUlJXMHY1bw?oc=5",
+      "timestamp": 1794617008000,
+      "date": "2026.11.14 09:43",
+      "tags": [
+        "매크로"
+      ]
+    },
+    {
+      "title": "한국투자증권, 초고액자산가 대상 ‘패밀리오피스 컨퍼런스’ 개최...기업금융·세무·법률 등 서비스 확대",
+      "press": "더퍼블릭",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBBckoyaEEyY1FwZlg1WGI1bGo4MUExTlE1eEM0ajRNTjJCOFpaRXBrZDJLSk56VVhNUmctVFN6bXNxNjNsQ0owQ2NkeGZJUkdVY2wxZHNJNTdWdnk4eEp4Wi1kZF9VX3d2VE9R0gFvQVVfeXFMT00td29EYzRBMGw3cV9DS2lxSU4zWXEyVXBPbnF1V3J1NjMwUG5VelUwNGVhMGlXcWhrT1ZzcWRjS0dVQ0Jjanc1clQySFRyZldzOVY4cjA0OXN2ODIwWm5TNFplUzNPOXY3b19RaHRj?oc=5",
+      "timestamp": 1794616519000,
+      "date": "2026.11.14 09:35",
+      "tags": [
+        "TAX",
+        "부동산"
+      ]
+    },
+    {
+      "title": "뉴욕증시 혼조 마감…엔비디아 2% 하락·반도체주 약세",
+      "press": "KBC광주방송",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE8xWXlaeGgyQnNYeVh0X3VOZVhRZERmRGoyd2pjUXRrVmp5SlkzT2VDdHU1ZWdCQlc1R2NOUXlWZVNjODZuLUhwMmkyOGdQbWJJZW9wZldIcjR3Qi1uVlJwbw?oc=5",
+      "timestamp": 1794616321000,
+      "date": "2026.11.14 09:32",
+      "tags": [
+        "매크로"
+      ]
+    },
+    {
+      "title": "[뉴욕증시]'젠슨 황 스캔들' 여파 지속… 다우지수만 상승, 혼조 마감",
+      "press": "아시아경제",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1SS3piTi1pdkNCd2dCZVNtLVo1Y1diV0pjYUpmREw1YnRsVDFQd1Fad3ZLZm5oNFp6UGZXLVZjSkRldHRibERJQjc2Z3dxT2ttSGNOYnNlQWJ5cDBZU0c2Tg?oc=5",
+      "timestamp": 1794615678000,
+      "date": "2026.11.14 09:21",
+      "tags": [
+        "매크로"
+      ]
+    },
+    {
+      "title": "기술주 약세 뚫은 스위스 윈드워드바이오, 나스닥서 1조 원대 몸값 평가",
+      "press": "글로벌이코노믹",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPaDVvbmp5Q1RhOVlxc3F5ZHpTX0JFaW9XM2xqRko0OW1STW5EZ3FJcXlObGFScFlKcVYyNi1lUWZlTmlFRXVYbWpwUnQyMUlnbC1GbXhtbnFybVMyVzRCQW5aOWNNTHRhMFlnQjZOZFU1S0Z6YlNadWdfdjByVmNBWUJ5YkZkb3Ey?oc=5",
+      "timestamp": 1794614676000,
+      "date": "2026.11.14 09:04",
+      "tags": [
+        "매크로"
+      ]
+    },
+    {
+      "title": "금시세·금값 14일",
+      "press": "www.bntnews.co.kr",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1Yci1MSXNpR1ZMX3VFRGZ1c05SMF9MX1dpc0FNbS02eXJidUdUQnBTc3djbElEV0gxcVpOMjNoSV95eEtrQ1Y0VlF3NjI2RG44NHVSaEFMZ0tleEI2dWFUZXdieHo?oc=5",
+      "timestamp": 1794614462000,
+      "date": "2026.11.14 09:01",
+      "tags": [
+        "대체투자"
+      ]
+    },
+    {
+      "title": "[오늘의 금값시세] 2026년 11월 14일 g당 168,340.0원·1돈 631,275원…국제 금 보합",
+      "press": "민심뉴스",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFAtUUdOQlJQNzJWc3VMekRHS01aeUp2VUYxNkJiai15S2VhWGs5SDFpU1BDVFhaSmVIdWI5dzF5aXJWdk80TUNiZU9iQXNvMWJsaXRPdDY2c3ZQbDJCbXNNelBtNGNDZVRNVU1BTWhn?oc=5",
+      "timestamp": 1794614439000,
+      "date": "2026.11.14 09:00",
+      "tags": [
+        "대체투자"
+      ]
+    },
+    {
+      "title": "뉴욕증시 혼조 마감…엔비디아 여파에 반도체·AI주 동반 급락",
+      "press": "BBS불교방송",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE03dUxrb1Z6dFJXUWFLOGpUTTdNM2gwamZrTGlBQnZvMEJwUGxuckpiNEgzS2hMOEFCa3BFcXRUemJneTcxY3ktWW1xbnVGczFtT1hkeGpxSk5tclhyb1h2UmFVWTRoQ0l5N0xF?oc=5",
+      "timestamp": 1794614229000,
+      "date": "2026.11.14 08:57",
+      "tags": [
+        "매크로"
+      ]
+    },
+    {
+      "title": "엔비디아 CEO 사퇴 후폭풍…나스닥 0.91%↓, 美 반도체주 줄줄이 급락 By EBN",
+      "press": "Investing.com 한국어",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBFZ1ZCdmFPR2N1M21MX3FqVnI4SFJRclhUcm94b0d5VWdhcTdJOWdLOUZiTnVBSmk0elgzazBESWQ0dXJyLVh4S2xGOV9VcVBiTEhYM3UwTkJsaV9haDZITGtkbDEyV3JQWWlKUm5vNFg?oc=5",
+      "timestamp": 1794614160000,
+      "date": "2026.11.14 08:56",
+      "tags": [
+        "매크로"
+      ]
+    },
+    {
+      "title": "美 생산자물가 6.5% 급등, 4년 만에 최고…연준 12월 금리인상 ’무게’ By EBN",
+      "press": "Investing.com 한국어",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBEMFVQaVFUbzExMF94VjBLalJPRjdqUXFPVGd3VmMwSFZqc1lvT1ltTmVYel9DZmVsNUJfeFkwNmJLN2NTcG80dTJ1ekNfQjZYZjJzR295N3VtUUg4SHlpRl9KMnpMc1NueDZFbUxZVTU?oc=5",
+      "timestamp": 1794614100000,
+      "date": "2026.11.14 08:55",
+      "tags": [
+        "매크로"
+      ]
+    },
+    {
+      "title": "뉴욕증시,엔비디아 주가 급락에 혼조…나스닥 0.91% 하락",
+      "press": "스페셜경제",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFA0WGlTcnY0YUt3WnY1LXVZbTJGYURZX1VXZ0xNdEVBNS1RS2RWNlVPNXhpSTJLSVdWYXROT2NHTWJLX05jb1VWZUlVRHVWVU9sdXlNMGhES1RqYTFIbV9IQXk0YlBvSkhUNUpGSA?oc=5",
+      "timestamp": 1794613817000,
+      "date": "2026.11.14 08:50",
+      "tags": [
+        "매크로"
+      ]
+    },
+    {
+      "title": "엔비디아 시총 4조달러 깨졌다…뉴욕증시 나스닥 0.91% 하락 - https://www.theconnectmoney.com/",
+      "press": "https://www.theconnectmoney.com/",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBEa3JHQ1F0SFZZcUY2NEJCQVJ5TU9NQWU1eV9TLW9VaG5Fd2VJSGtpNzJnZlhoWk5Zbm5lNXRLQ0FiUGFzZElnLTdIeGRCdWQ3Ul9fLTlFMUJrM3BmWVdGdA?oc=5",
+      "timestamp": 1794613500000,
+      "date": "2026.11.14 08:45",
+      "tags": [
+        "매크로",
+        "외환"
+      ]
+    },
+    {
+      "title": "뉴욕증시, 엔비디아 후폭풍에 혼조…나스닥 0.91%↓",
+      "press": "블루밍비트",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE94aGptcEJTM1FTcUM5eGRicHptdXg5c2hiWnZqYVYzU204N1RQdUhxdDdNMHM4MnFCeFJEUXpjeE5yemVCMlByZElVaXFJbGpS?oc=5",
+      "timestamp": 1794613309000,
+      "date": "2026.11.14 08:41",
+      "tags": [
+        "매크로"
+      ]
+    },
+    {
+      "title": "뉴욕증시 혼조 마감…엔비디아 하락세 계속",
+      "press": "연합뉴스TV",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE83eW4xejFoTGVWX0VBMGhZRl9JTi1xLVRVWkhYdTJXYl9rMHhXdDNiS1JVMWcxX1NoZ2pCbVpsamE1TzRES2ZOeEoxY1BmSU5wb01lME1INENLVVI0NFo3WmxkcFlGNDQ?oc=5",
+      "timestamp": 1794613200000,
+      "date": "2026.11.14 08:40",
+      "tags": [
+        "매크로"
+      ]
+    },
+    {
+      "title": "뉴욕증시 혼조 마감…엔비디아 2.01% 하락",
+      "press": "서울경제TV",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE03bWJuaFBwQ2dQMWxCa3BWNkZSQzZxcW5ENHNadnJLQm10Y19aYmZIQlhrWlNIV1NaZk14dDRHZFpKckhmaExPT3RvR2xiUXRHMy1INTVjZWVhRTY5MHh2UlY5X1E?oc=5",
+      "timestamp": 1794613178000,
+      "date": "2026.11.14 08:39",
+      "tags": [
+        "매크로"
+      ]
+    },
+    {
+      "title": "11월 14일 KRX 금시장 휴장…국제 금값은 주간 하락",
+      "press": "비건뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9OOWlhRWR5QlFjbmh2TE5ZUEpDMGQwbllUa1JwZm5jUGNGSUp5SExPd1l5clRDb05yV1llV3ltcFdkUEc3NXl1eTVOcXZaa1NGaTMwbC1IbkpoWlhYQmVfMzhmamZsUQ?oc=5",
+      "timestamp": 1794612792000,
+      "date": "2026.11.14 08:33",
+      "tags": [
+        "대체투자"
+      ]
+    },
+    {
+      "title": "[TheTax]남편 사망 전→아들→이혼한 母계좌 이체된 돈…증여세 내라? - 머니투데이",
+      "press": "머니투데이",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1OLWFjaDlORW5sMWw3blJuYnUxMTVEamxXcVNKdDJoNjVzTHFhYUNEbldvNHdZcXdEVHJ0SmIzamsyMk9fZmR2dkpaeEY2X3BjV0M5dmhtRW9BVG5SLXpHUkV6N2xYb2dTcEJZ0gFwQVVfeXFMUEZPRC1wekFlNkpKZ2lBdERGRHdZWVdkSlVQMDJ1RndLV0tYVENCeXVnZzhSRnNLWW84U09qRkdrdnNnYWFIdG42NDdQNkNlSmkwMHVwMjZfT2daS0hSM2JqR3oyYkVRTmZXODFocjZCSg?oc=5",
+      "timestamp": 1794612322000,
+      "date": "2026.11.14 08:25",
+      "tags": [
+        "TAX"
+      ]
+    },
+    {
+      "title": "뉴욕｜엔비디아 6주째 추락…뉴욕증시, AI 불안에 하락",
+      "press": "OBC 뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5hek9zRU1UeERDaEJvVmYtVV9McDdoanlDSGUzdFlucjZxNnFkREFkeVA3VzViZjFCWHZkOXE0YS0wSzhHNEFmMGVfMnRFTGYtNHczbENXcFJ6d1VyMzZ4SE5acWVjQk5ZRWc?oc=5",
+      "timestamp": 1794612280000,
+      "date": "2026.11.14 08:24",
+      "tags": [
+        "매크로"
+      ]
+    },
+    {
+      "title": "뉴욕증시, 엔비디아發 반도체주 급락…나스닥 0.91% 하락",
+      "press": "산경투데이",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9WMS0wYlItYzZYZGFQcmg0UEw0MlZXOWFkZFZSUHg2R1dxd3FPekdLYnp4S2VobS1ncE9RbldPbU5pUzhaVEJ6NDlOQ3BDSlg1Q0hrUW1IZWcyME5HSFZob2d0dVlhd3BHZkI1TUhPa0vSAXRBVV95cUxNV2lQRXU5YkFLV3cwZGE0OFJyRmZYV3g2QUVWV19Gbl9SLVd2bVlDa0tQZ3NwbFFReGJqNkl0MmNZN0R3Vm80a0R2ZDFWZUNXZGNIQjY3aFVQRDhsOU1lcTdWNWdQbC1SMjVHOWdqS2daWE9mZg?oc=5",
+      "timestamp": 1794611703000,
+      "date": "2026.11.14 08:15",
+      "tags": [
+        "매크로"
+      ]
+    },
+    {
+      "title": "[속보]뉴욕증시 혼조 마감…다우 상승에도 나스닥 0.91% 하락, 엔비디아 충격 기술주 확산",
+      "press": "CBC뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5fUkNsM0xQQzl3elJ4aG1wTHpFZmxocVc3VUJHTlpzSTR1NWJVVWk1Nk8xYUpoMUtLNFpDOE8tbU1zc0d0dHlLSHBWQU1lZUNwXzE5Vk4zMmU0bnlUdlFsYThFSG4wR0Uz?oc=5",
+      "timestamp": 1794611100000,
+      "date": "2026.11.14 08:05",
+      "tags": [
+        "매크로"
+      ]
+    },
+    {
+      "title": "[뉴욕증시] 젠슨 황 퇴진에 속슬 11%↓…AI 끝나나",
+      "press": "자본시장뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBERXotdlU3SEttWkFSOVdYclFwbVBONnJ2OHZPREZlbzJaeHo5SzdPaFR5TjFnV2RQbG5FamRTRjF5Qnh3VVdaU3p1ekt6VlFmMXBLaGxtdjlXcGNXRzQtU2w3dnFEUkU?oc=5",
+      "timestamp": 1794610800000,
+      "date": "2026.11.14 08:00",
+      "tags": [
+        "매크로"
+      ]
+    },
+    {
+      "title": "월가 달구는 K-뷰티…아모레·파마리서치 담은 ETF, 뉴욕증시 상장 - 머니투데이",
+      "press": "머니투데이",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE4tazIyQ0drQnhmLUc4TmQxU2pHd0NRNC16NGZmeVlTOEtEMlU2YnM0VWZvTEF0OTlaUXVhOHZCOG00MEI2TU9vYk9oMDlnVmdCTkR1R1RjVDNRc2ptSndLdTNnaE5SSUhMV2ZaN2NjVXZNX1BMbWfSAXtBVV95cUxOaGE1UFIxRlVEeW1femlHdjQ1OUY2WERYRnAwUm1NOHB2OFNIaTk0OWFWODBQUVJqOFBjbGZMZGtVdlkxaGs0cWVJeVhMMHFnUndYYkNrUHJYdExRSWttUjJuZGlGMG42NTlTSFBzaUI2VjMzY3hkTHcxZ0k?oc=5",
+      "timestamp": 1794610670000,
+      "date": "2026.11.14 07:57",
+      "tags": [
+        "매크로"
+      ]
+    },
+    {
+      "title": "뉴욕증시, 엔비디아 사태 확산·연준 AI 고평가 경고에 혼조 마감",
+      "press": "글로벌E",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1YRnpSRF9XVFZkZGNmVF94ai14QnpUS0UtTlFFVE9xek1tWUY0Q0RjY2phUEowSXpMdFRwcnlQa2p3eU1rcmgtTzJ6YzRsTW9Ja0JpUzI2MEk2LWJTOXRuR2VzdEpnMHh2akk40gFvQVVfeXFMTUhWQ1hsdk9FcV9VY0hUdzJxMXZTQ0Fsb0Y0cW5XeEg0R2ZIWVpaalhEYzlZTTJ0Z2NvRHdlUDNtQkJ0RzVvQ1EwWVh6aVhaTzhlS3kxRHhwQnpNOS1sVG5jcFJWNEdrbHpxRnVRREpZ?oc=5",
+      "timestamp": 1794610547000,
+      "date": "2026.11.14 07:55",
+      "tags": [
+        "매크로"
+      ]
+    },
+    {
+      "title": "뉴욕증시 혼조 마감…엔비디아 2%↓‘하락세’ 지속",
+      "press": "경향신문",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE0xNXN0aEQtcWlmQkhBZElMSUpRYlRnWFRubEp2RWFPY2E2bXN1N0RyLU1lZUxtc0d2ekMwbG5jUFNtZFRGY3o0ZjRUbVNubEhpcnJLNGROcXRpQdIBX0FVX3lxTFBBTm45ZHpENjNkVzBvOXlUVjdGQzdEOVdNTzVSeXFCWlBYUDRCd2NFSG1FcGxYMmxGWVlhb05OQ3poVnYyQVNQcHVjTDJTS3BZSDNxblNJcTJEekxVb1ZB?oc=5",
+      "timestamp": 1794610320000,
+      "date": "2026.11.14 07:52",
+      "tags": [
+        "매크로"
+      ]
+    },
+    {
+      "title": "뉴욕 증시에 ‘K뷰티 전용 ETF’ 상장...“월가 새 투자 대상”",
+      "press": "서울경제",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBaU3F1OGl2alp0RWFYZEQyMExNNTNwdHNtT2QxNEFYUGpITXZHOHFPVmVzN2VHS0NJUFlLX3lIOFNvWVk1SWFOTEN4a2YwdWh1VFHSAVNBVV95cUxPNXZlS3d5alZYOGNLTml5N3JHUVBTdXY4RTBBcjdmeE1FY0hmemEyVWlyVGFtQmJhSEJISVJvS0tHd3gtMXBWdGM0bjUyN0dwVng0OA?oc=5",
+      "timestamp": 1794610119000,
+      "date": "2026.11.14 07:48",
+      "tags": [
+        "매크로"
+      ]
+    },
+    {
+      "title": "뉴욕증시, 엔비디아 스캔들 여파에 혼조...나스닥 0.91% 하락",
+      "press": "M이코노미뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1wYkFNWldEdWt6RHRsb3I1alJwcWFabF9EV0JZQjVNUzBIcm56U0R4dmEzUk95eGYtZ0JZXzJ4X3dEUU9IYUthdTFhUi0yaEh2TXM4WER2RkQ2R2ptM2syUEc4YXcyUzg?oc=5",
+      "timestamp": 1794609482000,
+      "date": "2026.11.14 07:38",
+      "tags": [
+        "매크로"
+      ]
+    },
+    {
+      "title": "연준 RMP, 4개월 연속 중단…재투자 재정증권 매입만 하기로(상보)",
+      "press": "연합인포맥스",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9Fa01Qb0hxcE5ZdHZUb3lNTzM1NGRIaW1YMXUxXzFyZklGU0hOZV8tQUJHUlNGeTcwZmo5QU1HRmY3bzBwb081U01mTWQ4LUt6eUktX1poLVZpbVRMelIyQzFubmthY2czRDNoYm5la2c?oc=5",
+      "timestamp": 1794608222000,
+      "date": "2026.11.14 07:17",
+      "tags": [
+        "매크로"
+      ]
+    },
+    {
+      "title": "코스피, 한달새 10% '뚝'…내주 '엔비디아·美中회담·연준' 주목",
+      "press": "연합인포맥스",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE45SUNMUllnQThzdDFnb19jUTZoM2RHVHdLWHc1aE05S3RHd25sbnR4Vy15dVdwMGp5T2pBVEhzaXVXMHNxZG5zcHZBbHlXcjVhMFFYdjVxRDgyczZWdV8tYjRLTlowYnpZWVpXc2UyTHo?oc=5",
+      "timestamp": 1794608108000,
+      "date": "2026.11.14 07:15",
+      "tags": [
+        "매크로"
+      ]
+    },
+    {
+      "title": "뉴욕증시, 다우지수만 0.1% 상승…엔비디아 2%↓, 하락 지속(종합)",
+      "press": "연합뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9VVnB2UXhZcUlKbm9ORGlTUEw4R3pEOGpDcVI2WVFTZ2lVVWl3c0hFYUwxMk5jWXRWdHZjcVVXNU8zYW5WaWl3R2VZZjlTWElZZ0xWZFlTZEd5SzTSAWBBVV95cUxPYzI3aFBvQlpEOUhQdFFfNE5MUkVNTU9HM2xiZWVIYzliUlR2ZjNRYW9UQUNUNm9jYlJ6VU1wWnRxUFByZXVyYVU3RXluejVaN0kwX0VSMFpiXzlKUE5yT0E?oc=5",
+      "timestamp": 1794608086000,
+      "date": "2026.11.14 07:14",
+      "tags": [
+        "매크로"
+      ]
+    },
+    {
+      "title": "[지난밤 뉴욕에선] 나스닥 0.91%↓, 다우는 소폭 상승",
+      "press": "스트레이트뉴스",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE44cFRLVnJYTFBUaGxFN0diYVNFSk1UX2VNc3lkRlY3anpjeXFYRk1XNjIwNmJYZ2p6dzNYOGNVQnRYMG1yYkgwX1Z6cmRJaVRySzNTUHlueXZKOWVLaFUxNS15QU5qRExpT29aZk1tVUVBb1nSAXdBVV95cUxNekl1Mm9WSkRoMFJNcUJ6Z25SOWhEVzRTWWdaMUZhZmY2X214dFUzQVR6V2FlcG9PSWc2NTdGQ1J6ZzFWaFdiaDNxdFVKRTR5WllzN2JKR2N5eEE5NHVfbU8yc3VPZGtDMlhlSUlxOV9ZWmJWak5CVQ?oc=5",
+      "timestamp": 1794607901000,
+      "date": "2026.11.14 07:11",
+      "tags": [
+        "매크로"
+      ]
+    },
+    {
+      "title": "뉴욕증시, 반도체주 약세에 나스닥 0.91%↓…다우는 상승",
+      "press": "Chosunbiz",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQQWtVZW5IV1hmWGJfUG1KQmhuQzRWbGlyYldmX1ZiUGxoQnhEUE1HRksxc2RNMDNEVExXZWJadFVjTnhFaDZnQThMV2pjVTZPV0hZSjY2YmxfOWc1MHhTUmJsbndLVkhpZnpuS1hpbktTaDdnc25kNzJ6MzloakNkOGtIODNUX0ZwUmtuclU3Ny0tVG1YY09Qa1BOMjZvd9IBsgFBVV95cUxQcDhkOTRKYk1yckJuODBxMVFpQV9WcWpobFZDTkFrRHVzd2dSbVNRcVFwQjVHVE1ObzFkYzg0LWF0cXBtaHI0SG5tMmkxMGxZY3FJdlNvUGw0V2NxN05kZ0toWTFzWGdMYm5RLW9VdWg3MGZYMWNuWHFQMTUwYm84b3JrRnZBZjVOMGtuZ2puMUQtQ0pyZlpPaXpOVHY5c1FJNmFabUNlV3hkOEVVYy1SaTFR?oc=5",
+      "timestamp": 1794607740000,
+      "date": "2026.11.14 07:09",
+      "tags": [
+        "매크로"
+      ]
+    },
+    {
+      "title": "뉴욕증시 ‘젠슨 황 퇴진’에 AI주 흔들…다우만 소폭 상승(종합)",
+      "press": "뉴스투데이",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1qSFJ6LUotS0dqOFdDRDRwY1d3RHY3RFkyNWhqTFdwaWlYV3hfRUk5TG1USjY3MXV1SkNmcVNCRndsOUZMYVRkdDdfU1JBN3J0VG1PWDdWak5iZW9VbGc?oc=5",
+      "timestamp": 1794607620000,
+      "date": "2026.11.14 07:07",
+      "tags": [
+        "매크로"
+      ]
+    },
+    {
+      "title": "다우 50달러 반등·나스닥 0.9%↓…AI주 약세 지속",
+      "press": "경북매일",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE51d28yUUZfYjdLTldPdEozQmdiTURVTjdxaXJuVnNMdDVtSFIyS09SOWpTcW1vSVhXY3hpeVVPRVNFcDZBVjFnUFNHUnV3ejNkM1BTY2RrYVNyQQ?oc=5",
+      "timestamp": 1794607320000,
+      "date": "2026.11.14 07:02",
+      "tags": [
+        "매크로",
+        "외환"
+      ]
+    },
+    {
+      "title": "화장품 사던 미국인들, 이젠 주식까지 산다…`K뷰티` ETF 뉴욕 증시 상장",
+      "press": "매일신문",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1ubzlqRi13cURVLS16U2JWLUp2TXZrSmJBNzdLRV9lUUlBcjlYNzVJSFBId1pqMllZUXlIVFNGZjdLYlE1d3lUQl82dW1zei1uZmN1SkdSVU1QZ0lEUXN0Ukh3?oc=5",
+      "timestamp": 1794607257000,
+      "date": "2026.11.14 07:00",
+      "tags": [
+        "매크로"
+      ]
+    },
+    {
+      "title": "[뉴욕증시] 젠슨 황 스캔들 여파 지속…혼조 마감",
+      "press": "연합인포맥스",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBEaXJScWZGeU8tQk12RDlvSFpoX3RNRDNhaTVuM2xKaUV3cmJfQzEtNk1wczlJQkstc3JUYUxCQkxaa1p1ZDRKN0NoMno0M1RHOFNrdUZ0NklPMGhUQUhkX0JBZEpWcmhndWNITGx0WFI?oc=5",
+      "timestamp": 1794606826000,
+      "date": "2026.11.14 06:53",
+      "tags": [
+        "매크로"
+      ]
+    },
+    {
+      "title": "엔비디아 2%대 하락에 뉴욕증시 혼조⋯나스닥 0.91%↓ [상보]",
+      "press": "이투데이",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE0zYWN0cE5tTS1PaXB3cTBIMnU4cjJLU0ZpYk5FRlBQTFJkNUduaEEteTc3Y2M4Y1FJSkVjcDFaVWJsLXdDRnJBdGpQMVJwdTlZUG9vYQ?oc=5",
+      "timestamp": 1794606720000,
+      "date": "2026.11.14 06:52",
+      "tags": [
+        "매크로"
+      ]
+    },
+    {
+      "title": "뉴욕증시, 엔비디아 우려에 혼조 마감…나스닥 0.91%↓",
+      "press": "뉴스핌",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9lMFUyRnVBdi15MFNOSEhYQ1VMLVBTbHI5cElURXIwOGVrREdjUC1YazhHUC1mMEhjSU1UTVJBNDFHSXhfZTBTSmFielBpQUZWWnhPQWg3b1pQZDlV?oc=5",
+      "timestamp": 1794606420000,
+      "date": "2026.11.14 06:47",
+      "tags": [
+        "매크로"
+      ]
+    },
+    {
+      "title": "[뉴욕증시] 엔비디아 매도세에 나스닥 하락... 젠슨 황 사임 여파 지속",
+      "press": "글로벌이코노믹",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQbmxvYm1sY0NlOXo4U1Vub0lQR3RjMVppQUdlU3phU1k3S0dSUDA1QXlZMk1kYk1ZcVp3VW9kWWZKdUdBb1NXVi15SXVCTUVVSks3UEY2bnppS19RR0pqSmVnV3pOTzI0Sm9URmxLZXlkUkhjellNa1JwQUxOZW5vcEFqX1ZaeXN4?oc=5",
+      "timestamp": 1794606413000,
+      "date": "2026.11.14 06:46",
+      "tags": [
+        "매크로"
+      ]
+    },
+    {
+      "title": "[뉴욕증시] 기술주 약세 속 다우지수만 0.1% 상승…엔비디아, 낙폭 2%로 좁혀",
+      "press": "파이낸셜뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBJNDhBOFdEZS03cW1tdzljdHVRMWp0QzZjMl9hazl1cUZNdUJEWkpyVDRuWU9sTDZqLUtweVJmYURHWWloTDdBNmMwR3h2d0JQWml2c3NLanp2QQ?oc=5",
+      "timestamp": 1794606287000,
+      "date": "2026.11.14 06:44",
+      "tags": [
+        "매크로"
+      ]
+    },
+    {
+      "title": "뉴욕증시 혼조 마감…엔비디아 2% 하락, 기술주 약세 지속",
+      "press": "뉴시안",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFB2ZUtmOG9Zay1WSEZMU0ZObFYzQ3BkdEtMVEtMU3hVY0Q3UGxyS3I3ZnJESUJzbktWRVQ2akxPUEpGN3czZU40RnBnSVd5aktXaDM4Ym9aTE9TaVpMTGRpcDJEcWwyaWlFMnlxVg?oc=5",
+      "timestamp": 1794605402000,
+      "date": "2026.11.14 06:30",
+      "tags": [
+        "매크로"
+      ]
+    },
+    {
+      "title": "[서울데이터랩] 다우 소폭 상승, 나스닥 약세…반도체주 급락에 기술주 부담",
+      "press": "서울신문",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9qSkFtT3NkQTczVHYwckRoV0xpZERZX3QwNE1XMjhIS1JadFc0RXlBS2Z6ZlNtVWRRWHExOUJpVEpDUmUzdE10ei1ET2FPT3J4SVBlR3NEaWluWHJPRzVjRENCUzdTV3hkNGhVT0taRQ?oc=5",
+      "timestamp": 1794605355000,
+      "date": "2026.11.14 06:29",
+      "tags": [
+        "매크로"
+      ]
+    },
+    {
+      "title": "뉴욕증시 혼조 마감‥엔비디아 하락세 계속, 2%↓",
+      "press": "MBC 뉴스",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBNZ3dybUxTWVBuMlRJZ1pJM1ZZZ3FPN1lnNVRzZnVDaDF6N19XMlpTcmZ2b0Y5V2twX28zNi16dFc2bmdIRUFRelc1NVNnSDJzOXR4OU8tTnYzaXNmRUdMd0FMMDJhaGRRWlVuZ0ZHTTdacmJk0gF0QVVfeXFMUE9mVHdQcGpXTVV5TDFtRl9lVlk3Q3RDNVdKbGdFbmV6ZTMyNEpUTlZOb1l6UmgtNVFJSmZvU21rVzV2ZTEwanRIYV9YdkRzWlNTaG1zcFk5cFFyS0haZkxhdmFxQlpQQ3BZMzVxV1V1U2VzMjU?oc=5",
+      "timestamp": 1794605348000,
+      "date": "2026.11.14 06:29",
+      "tags": [
+        "매크로"
+      ]
+    },
+    {
+      "title": "연준 “AI 위험, 금융 안정 최대 우려 요인”",
+      "press": "Investing.com 한국어",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE4tTl95Q0RjVU56WkpMVVprQnNrX0JQbU5ib1RzTWRncjFUR0VFSlRQSTJmU0drWUJtdUVZMjl0eDFaQV9CS3M4ZmQ2VjJVa0E3V1BIOHNsWGl4S0RLQ2tBM1QyN25iUC1YVjhTT3BGWTIzWlctbW1n?oc=5",
+      "timestamp": 1794605220000,
+      "date": "2026.11.14 06:27",
+      "tags": [
+        "매크로"
+      ]
+    },
+    {
+      "title": "뉴욕증시, 다우지수만 0.1% 상승…엔비디아 2%↓",
+      "press": "SBS Biz",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5zT0VkX0tHMldrX3paSVY1TmVNcWd6X1JHQ05RMkJ2QTVkZ09NUW1fZk91cUNuSEhUTVdRX2hibHg5RFo1UkZqbEhtS3FnQzNsSUxz0gFYQVVfeXFMT3FMcFFPcnV2VHp3UWdCd3R1bW9uOFo5LXBfWk55MVdtVUViV1JKeWthb0gyNzliRGxybzVaaUpkbVZ3OUcyblNZZ0c2UndGSEgzangxY1dnNw?oc=5",
+      "timestamp": 1794605220000,
+      "date": "2026.11.14 06:27",
+      "tags": [
+        "매크로"
+      ]
+    },
+    {
+      "title": "[뉴욕환시] 달러 나흘째↑…끈적한 美 도매물가에 인플레 우려 지속",
+      "press": "KB Think",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1XMzJNU3IxNHdfd3BTYTFPRlRYMzJVcTVUYmdWemtycXJvcXpETUZMdEJwamlnQ3dlMUJTZ1N4OHo2NXNCYmtKNmtjYUpIMTZONHhWbVNEeENPSG9penNsQWhrRWFUajlsRTdpM2dfMHFOdw?oc=5",
+      "timestamp": 1794604847000,
+      "date": "2026.11.14 06:20",
+      "tags": [
+        "외환",
+        "매크로"
+      ]
+    },
+    {
+      "title": "뉴욕증시 혼조 마감…엔비디아 하락세 계속, 2%↓",
+      "press": "연합뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFB5MHNNT2FzWnlzOWNJRnA3NnFCM3RGbVZKVHBYejdrQk0xSDBvTEJJblNxblp3eDhfR2syT1BRejBpYnJuclQ4X1o2eXQweVhXbzdqd24zWk41bzjSAWBBVV95cUxPcW05YTVodGYwS0VTZnJ4Yzk3bFdESGNrOGRNMWEtcl81azNZazByRlNvb3JvWi1yUnBycGtWWEZLaGtMN1k1YzBGaVBQR3FUMzJRSWNzamFxZWJhZDcwZm4?oc=5",
+      "timestamp": 1794604700000,
+      "date": "2026.11.14 06:18",
+      "tags": [
+        "매크로"
+      ]
+    },
+    {
+      "title": "[뉴욕증시-1보] 젠슨 황 스캔들 여파 지속…혼조 마감",
+      "press": "연합인포맥스",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1BaFhLd2dPcDhaNHFtYTg3cERiZ0hVWU1aSjFmZ1J4eVRWU0FxazFEWm14REZsY1hISll3eFRkaXR3Q0RWNGN0TXRVWlRlVmpZMVVnUUNfQmI4ZmZ4US0yMmxJUDd0SDFRN3V4bW5JQm7SAXRBVV95cUxQZlpWYUgtOFlSME9YWmQtVVJfODBITmVaVDJBZ0U1QmJUbm9rTEpwVVFEVFhnZW9CTlFicnFoaUk0SWRzWjh5SHF3SlR0SEpydXJiVkxvUGNGdEx1cV9Fal8wRTY3Y0FmV2l0OUNqX04yX1BlSQ?oc=5",
+      "timestamp": 1794604598000,
+      "date": "2026.11.14 06:16",
+      "tags": [
+        "매크로"
+      ]
+    },
+    {
+      "title": "[뉴욕마감] 엔비디아 악재에 기술주 압박…S&P500·나스닥 하락 마감",
+      "press": "뉴스1",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBfRnlGUFJRZmVWRTRRWnhyc3NLQnN1MWI1dmZEQ2tTNGtBcE4xN3RqanpMcE9DaEtSdVhhNWJfbWpZZWtKbFhaWmt2LVc4SHVlbHJhTV80NTA?oc=5",
+      "timestamp": 1794604533000,
+      "date": "2026.11.14 06:15",
+      "tags": [
+        "매크로"
+      ]
+    },
+    {
+      "title": "뉴욕증시 혼조 마감…다우 0.10%↑·나스닥 0.91%↓(1보)",
+      "press": "뉴스투데이",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE10VE14Vl9vV1FWUFFPV0tpOUV3R3dxdkh4NXFWOGpFd2hzOTl6OUEyUmc3VzJNcFBydjBxUVJfLVNHREM4bFhyc0xSeDJYajZYS0cxTVF1VlpmbklmbXc?oc=5",
+      "timestamp": 1794604500000,
+      "date": "2026.11.14 06:15",
+      "tags": [
+        "매크로"
+      ]
+    },
+    {
+      "title": "뉴욕 증시 엔비디아 영향 나스닥 지수 하락 마감",
+      "press": "뉴시스",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBkZEh1LUp3WmdLa1BwejRXMXluRVdTYUZpN2s4WEhUVW9ud3pSOFBCNkdVUEFJbUQyc3FRZjhuS3hkN2MyUkpER1dHN3dyMGJFWlVJTkJVeHhhalZWbVFGWdIBeEFVX3lxTE12MGx6RUV0Z1pua0N0TkNkZWJBdHpCWHg4YnVYeERoM2J4dlBWclRYUzVUWFVmVDR3eFROd25KajVLMmtRR2JucHhXQjlzXzhoeVk1RFNJTGRFaWc2MEZ4cndCU2lEcW1tRTA5VTlwUDNGc24td2NaSQ?oc=5",
+      "timestamp": 1794604461000,
+      "date": "2026.11.14 06:14",
+      "tags": [
+        "매크로"
+      ]
+    },
+    {
+      "title": "[속보]엔비디아 반등 실패에 기술주 밀려…나스닥 0.9%↓",
+      "press": "이데일리",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPRGJJR21ielBqdXF4MWRFdFhkMk5US1RpbEpxdE5zcGdja1dGb0hqWEduaHp1Q3htZ3FvQWlhcURGdUhodExLTGJHRTJFeTJFTmZzQXd6WmozRXhQX3J3c1JuaGY1eTdVdlQySDY5VE4zVVFHLTU0NmlQeGNGUmMwVw?oc=5",
+      "timestamp": 1794604213000,
+      "date": "2026.11.14 06:10",
+      "tags": [
+        "매크로"
+      ]
+    },
+    {
+      "title": "[속보] 뉴욕증시, 혼조⋯나스닥 0.91%↓",
+      "press": "이투데이",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5tSFVFMGdlbm5ScmtZSG9qNmxYQXBGZkxtZzBjNEdTVWo1Tl9VT3lPX0hLQXh5ODV5emx0U2R2RGJ2dHlEbzhZUmNSWElXT284R3RyWg?oc=5",
+      "timestamp": 1794604140000,
+      "date": "2026.11.14 06:09",
+      "tags": [
+        "매크로"
+      ]
+    },
+    {
+      "title": "뉴욕증시, 혼조세로 마감…나스닥 0.91%↓",
+      "press": "블루밍비트",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1CSFE1VFpJb0xONUhhd1FGNUFHM3k4a3ppTTVEUU9PeGZMeXI5b3B6TFVqdHFHbDh5T1dqVHBVYzNzUTNScEVERVNrRFVBZ1BD?oc=5",
+      "timestamp": 1794603884000,
+      "date": "2026.11.14 06:04",
+      "tags": [
+        "매크로"
+      ]
+    },
+    {
+      "title": "[속보][뉴욕증시] 다우지수만 0.1% 상승…엔비디아, 2% 하락",
+      "press": "파이낸셜뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1GbnkwQkFPb2lvdlh1WXlNWDViMWg5UG5UalFiRHpxSmdHNXNqbEtxLUNjdDJQOGs4RWtSQ3IyS0JrMVc3Y2p4ajVud1I3YkpBYXluVU05RU5qUQ?oc=5",
+      "timestamp": 1794603716000,
+      "date": "2026.11.14 06:01",
+      "tags": [
+        "매크로"
+      ]
+    },
+    {
+      "title": "뉴욕증시, 혼조세로 전환…나스닥 0.97%↓",
+      "press": "블루밍비트",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFB3NU96RGdyOF9HazVqem9yVzlQZlVJOUFBYVhLa0x6eVVlMzg2LTdFUXFTOXdLRlhZdTJZRFFFZk53a3JVS0d3aHJKc0tTVlJU?oc=5",
+      "timestamp": 1794600303000,
+      "date": "2026.11.14 05:05",
+      "tags": [
+        "매크로"
+      ]
+    },
+    {
+      "title": "베선트는 유가, 굴스비는 서비스…美 물가 진단 '충돌'",
+      "press": "마켓인",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE45bVdKMkVPLWkyQUM1WmtKQm4zS0dKUGZucmxGaXRoU0V4S0U2TzRwQlhLSm9YeWtXRU9LLWZXR1pwalVlcFZQRnEwSDJwWDUwT1FpYVBCRWNHSU5zMDJKN3VoeHdtbDVZUUIzaVJSUEdVbGM?oc=5",
+      "timestamp": 1794599283000,
+      "date": "2026.11.14 04:48",
+      "tags": [
+        "매크로",
+        "대체투자"
+      ]
+    },
+    {
+      "title": "굴스비 \"연준, 인플레에 분명 할 일 있어...팬데믹 공급 충격에 AI 수요 과열 겹쳐\"",
+      "press": "파이낸셜뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5RN1pLaWJNRmJXSVhkUWJkc2pZMzFXQ0R5dFVmMnVsdGtfbDNFT1NwdWw5Z3ZxWTdtNVc5TnNCTDhtQlZJN09fTTQ4eXRVOTM4S2lGSUpiM1lGZw?oc=5",
+      "timestamp": 1794593207000,
+      "date": "2026.11.14 03:06",
+      "tags": [
+        "매크로"
+      ]
+    },
+    {
+      "title": "연준 ‘12월 금리 인상’ 베팅에…달러 가치, 지난해 5월 이후 최고｜Global Money Club",
+      "press": "중앙일보",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1SRjB3NlVrS0d3WklvbU12ZF9xU2RBTWhyR1FjV3ZlUUhOUkk5TVg3ajR1R1B3TWVWc0tmdHQ3c1VPYVNxOTVQSGVneE0zY3Rrb0Z2RGFrNVF5SmM?oc=5",
+      "timestamp": 1794590935000,
+      "date": "2026.11.14 02:28",
+      "tags": [
+        "매크로",
+        "외환"
+      ]
+    },
+    {
+      "title": "BofA \"연준, 다음 달부터 3회 연속 금리 인상\"…1월 전망 추가",
+      "press": "연합인포맥스",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5wUGQ3T1lmeDBuT3dOUklaQ0hOUEFxS1dTcUpmMXFFci1EX05QNjlIaUgzQ1ZkNFZpNFN6ZlVVU2ZfMzRYRE1yajc3SElEd1FyNE40anQtbE1vek1LMGNGRTZtQ2xzbG11QUxkdUw4dG0?oc=5",
+      "timestamp": 1794588116000,
+      "date": "2026.11.14 01:41",
+      "tags": [
+        "매크로"
+      ]
+    },
+    {
+      "title": "뉴욕증시, 10월 PPI 둔화 속 장 초반 혼조세",
+      "press": "Chosunbiz",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNYzR5Y3hSdUFwNlpQeU8wc3B6OHFSZTBCMUhIR1dRSWdCeS1RbHpWYUtnWEhCT0xpRng1Umd1TkFJLWVCSDkydG9xVGR3X2VJaFNCRDEwN0NTd3B0bGJkaG9ZLTQ5WVdyWXI5M3Z2Q1ZtUks0WlFDMUpNdzl4SWh3OUFZdGVfSmdvNUHSAZ4BQVVfeXFMTjF3a0Nqblp5MVkxUjlYQXpRYjRnQlpUSkdTOEEtZG5ORDZFbkFKVk1xaW1HS1pZRDZ5eHNzTWZyOHY1ZTJDTVp5OUw3ajRBWGlvT3FtcjZFbmZGSE5wSWJUaXh0SGhaR1dtV1RURkRtQ010VmpLZE1TRlZveDFwOVNCWUw5TF91Z3A1bnBjSHVTNmJnQXh5UVd5UGdYMVE?oc=5",
+      "timestamp": 1794587460000,
+      "date": "2026.11.14 01:31",
+      "tags": [
+        "매크로"
+      ]
+    },
+    {
+      "title": "달라스 연준 로건 총재, 유동성 도구와 통화정책 분리 촉구",
+      "press": "Investing.com 한국어",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5vUl9DVWhjVkNVbjU2bThWTkk3VjNzS0xoNU9nUmd3MVh5eUhkWXpwWEFyVlBaOUs5WHpURGczTHZqdFpTcVdHbnVJTTZBYnFWN2VTdEFfaU9WaG9WOFlXanBjVng0MmdoYlE?oc=5",
+      "timestamp": 1794587220000,
+      "date": "2026.11.14 01:27",
+      "tags": [
+        "매크로"
+      ]
+    },
+    {
+      "title": "시카고 연은 총재 \"연준, 신뢰 유지 위해 분명히 해야 할 일 있어\"",
+      "press": "연합인포맥스",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9TYkNCS1hBcjhZSVNjbjZGeGd4X3M2VHJLbEphWS1zYzhYSW1DNHNTUlQwaTE0dlJfYzZ2QjIzUkpzaXo2WWdYZzBZS1lmcHZjZzlZcmxCTXVSamZ6VzB3NXI2eVRTOWszOVp6cmEwYWM?oc=5",
+      "timestamp": 1794587001000,
+      "date": "2026.11.14 01:23",
+      "tags": [
+        "매크로"
+      ]
+    },
+    {
+      "title": "美재무 \"과도한 금리 인상은 잡음 큰 수치에 대응하는 것…연준 오픈마인드 가져야\"",
+      "press": "연합인포맥스",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBHU2YyVnBtalIwOGVIakdrTVF6VWR6eHJ5YWFxQWY3T2Zldy1MZG1sZzNmV1BvUGxUQ1RxOVFnVXNMOS1mSkh3NEY4QzV1cGU3RjByRkphaVFaTG5oN1FWWENLTlBsd3NUVmlxcUN4RXA?oc=5",
+      "timestamp": 1794586140000,
+      "date": "2026.11.14 01:09",
+      "tags": [
+        "매크로"
+      ]
+    },
+    {
+      "title": "뉴욕 증시, PPI 4년 만에 최고 수준 상승에 혼조 출발...엔비디아 3% 넘게 하락",
+      "press": "YTN",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5PV2dHTGVob1l6a2prUXBWQ2lnNzBMd0d4d2xpNXlJaTlXcmJXdlFqTXZJNUZUVjVLWUNMbnM0eFcteFJ6RTR4YmJOUHFxSEJyRFZrZTE4bFJmZExZM0E?oc=5",
+      "timestamp": 1794586020000,
+      "date": "2026.11.14 01:07",
+      "tags": [
+        "매크로"
+      ]
+    },
+    {
+      "title": "연준 콜린스 총재, 추가 금리 인상 필요할 수 있다고 밝혀",
+      "press": "Investing.com 한국어",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5Qcy1udjFXc2ZxNVh0WmliOFdkTHJObkQxeTNPRWZfSUNtaHpuekcwZVhRTUpEam5naG1uVVdudWJGT2dYSTRoTjgyaU9Cb0pBVm1DZHJPZ2xfVmFkbkVpT3BVMC16UHJxN3c?oc=5",
+      "timestamp": 1794585480000,
+      "date": "2026.11.14 00:58",
+      "tags": [
+        "매크로"
+      ]
+    },
+    {
+      "title": "오늘의 금값시세(11월 14일자) 금값하락 \"저가 매수 기회?\"",
+      "press": "국제뉴스",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5oRHdjY04wbUdmbXFESjg3YXNpTFlZWUFjRVczc2drS1lnbHhrWUEwZTVXSjJQTVp2YUVldXBmUkh0RExnT0hkNkJtNEFSZ3hLcWgtdC1XQVdYNDlING5qb1RLU1psc0hXSm1FS0Nn?oc=5",
+      "timestamp": 1794585460000,
+      "date": "2026.11.14 00:57",
+      "tags": [
+        "대체투자"
+      ]
+    },
+    {
+      "title": "월가, 연준 금리 인상 전망 줄상향…BofA \"12월에 이어 1월, 3월에도 올린다\"",
+      "press": "뉴스핌",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE94QnRVa0JaTWV1SVdEYkRzdTVjWDBWRFhkWGdsVktidlFRN3AzdkJPTFh0UC1NNE41bmhncjY1Y0dneFoxRS1pVGFsYzJ0aENheW1YWHpGRVY1Uk5W?oc=5",
+      "timestamp": 1794583860000,
+      "date": "2026.11.14 00:31",
+      "tags": [
+        "매크로"
+      ]
+    },
+    {
+      "title": "[환율마감] 원/달러 환율, 5거래일 만에 6.0원 오른 1,336.7원 마감… 달러인덱스 1년 7개월 만에 최고",
+      "press": "CBC뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9kVG15Y2R4SnUxTUxGdW5rU0RobDhmcjVjTWpWQVptYTdsSXJRenpTUDhsVkhPZlhQa1IxcGdHNGMwSE9fYldSNElldkJqYWFycElxWHpTM1VXRWpiNTBpX0xScC1VOWhl?oc=5",
+      "timestamp": 1794582300000,
+      "date": "2026.11.14 00:05",
+      "tags": [
+        "외환"
+      ]
+    },
+    {
+      "title": "뉴욕증시, PPI 소화하며 혼조 출발",
+      "press": "연합뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1wR2dPUlJHMVZmVHBtUjVFWjBQMHR3cHJ5c1pJZS1JZjB6azMyYi1TMW9CTWJPckVmRExMMGMxWXRjMmhPZDkzaWZLeVJ5M1lyUnU4VkduNnZja0HSAWBBVV95cUxPZ1ZjVkR4T0JKdDFkVUxHMFdHdUp3b1hDOFZfSXcyYU1DZk1BcV9vNHp0dGRzak9KMXpwZEJRS2N1al92MzhoMWtOUVEtWEhWVWZDcVJvYU1qZUpwYXJMaEE?oc=5",
+      "timestamp": 1794582196000,
+      "date": "2026.11.14 00:03",
+      "tags": [
+        "매크로"
+      ]
+    },
+    {
+      "title": "美 생산자물가 상승률 약 4년 만에 최고…연준, 12월 ‘빅스텝’ 밟을까",
+      "press": "조선일보",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOSDZlcTVWc1B1UVV1aFg0WVJqVVhHMVpUWU9xUmQyUzJXaGhTWkNucFVpbzJLYjBBcjNPdlA3Q1FWT2dZYWhTNzRKZEVtWHhtRVQ2Q0NxNHVxaDN0aUxFRHBrVktKb1d1SG9iX3d1LXBjSXJWT3NqYTluYmRRTzBtOXlLNkxHakpk?oc=5",
+      "timestamp": 1794577610000,
+      "date": "2026.11.13 22:46",
+      "tags": [
+        "매크로"
+      ]
+    },
+    {
+      "title": "“어머니에게 삼성전자 주식 2조6000억 받았다”…이재용, 증여세만 1조6000억?",
+      "press": "데일리25",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5wc25DUkdkdThqTlhuTXVCZ1MyNlo0ZEtzQkR1Ny1HOWNLVnYwVnFLTy02QUc0czZiS3VEVGc2QU1Ick43WWpxOThsWVhrSFEtYkd5U000NGRYRkpxSlIzXzRUeHV3ZE9wMWFnUw?oc=5",
+      "timestamp": 1794577316000,
+      "date": "2026.11.13 22:41",
+      "tags": [
+        "TAX"
+      ]
+    },
+    {
+      "title": "뉴욕증시 개장 전 특징주...엔비디아·세레브라스↑ VS MS는 서비스 장애에↓",
+      "press": "뉴스핌",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9icVVmNHlrZnZ0SWh1Q29GYWljUVg1a1lFX05ONnRzQ09yd1U5Y3lmZXZnQ244OGZhUTBhamhHekJsdEZVTEk1MTZEZGxqYzEtbnpicU5PY0t1ZG5O?oc=5",
+      "timestamp": 1794576480000,
+      "date": "2026.11.13 22:28",
+      "tags": [
+        "매크로"
+      ]
+    },
+    {
+      "title": "뉴욕증시 프리뷰, 美 주가지수 선물 혼조…엔비디아 반등에도 AI 투자 불안 지속",
+      "press": "뉴스핌",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE45akk1b0t6RHpzMXhULURsZ05JU21YVXJ4WWw2UGZ1MU5zX2lRMXBKbDl4UzVsR0JZZklzdk8wZmtjWnZFRGU2RDZncXVsYlNwcUVXWDdKcHktV2pt?oc=5",
+      "timestamp": 1794575760000,
+      "date": "2026.11.13 22:16",
+      "tags": [
+        "매크로"
+      ]
+    },
+    {
+      "title": "국제 금시세 전망, 3900달러 반등…미 국채금리 5%에 금값 불안",
+      "press": "톱스타뉴스",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE54Y1dCNWxPNEdXNzhIZnluYjNrZkR6cExSeUVIdmVzWnZNUUpwOUFCZU9LS21mYThvaE4tb09vTExWbTV5UllhcXhaTHJ3SWI1SnhISTF3dl9EaUNGT0gxUXBVZzJxUXdfWE9rZUZ0UzBsUQ?oc=5",
+      "timestamp": 1794573554000,
+      "date": "2026.11.13 21:39",
+      "tags": [
+        "대체투자",
+        "매크로",
+        "외환"
+      ]
+    },
+    {
+      "title": "미 달러화 강세…美 도매물가 대기 속 달러-엔 160엔 돌파",
+      "press": "KB Think",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9pYl9YVHU3YTZpUERSYjI1eHJ2YTNHSG4xTjhsdGNMU3dSdHN1TkJaQlFha2JnNWowWDNpVXVES2tfYmpmTWIzNlo3WVJmcmd1QVhiWXhVWXJ6a01TZ3RIY2pJcWlsbjZnbjloUEI2VGtTZw?oc=5",
+      "timestamp": 1794573395000,
+      "date": "2026.11.13 21:36",
+      "tags": [
+        "외환",
+        "매크로"
+      ]
+    },
+    {
+      "title": "달러-원, 뉴욕장서 1,330원 후반대 거래",
+      "press": "KB Think",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBXd2NWRzVkelhFdzQxbzM3VHlpRFNWWHR0anluQTJ5UDVyVjNoUnlEWlNCcHY4UDdwWXNJUktRSG1xODNScmhSSE1vM2ZTWXpSbEdpd1F2S2pxVzd3dlB0T0tVdW5GLXVpcUdQQmItQ1NmQQ?oc=5",
+      "timestamp": 1794572000000,
+      "date": "2026.11.13 21:13",
+      "tags": [
+        "외환"
+      ]
+    },
+    {
+      "title": "\"안전 자산의 배신?\" 4,000달러 지지선 뚫린 국제 금값, 3,860달러 선까지 '수직 낙하",
+      "press": "고양 in",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9CUDFBcnQ5ZjgyV19TOE44WTEtRUFBWEZKM2FUODFqWWNxU2Q4a2N3Z1NpSEUwOXR2VGhoS2dXZ2ZWREhHS1BucUtneU12bl9MMUg4TjR5UkgwNGtZU1hROFhyUW9YTVk?oc=5",
+      "timestamp": 1794563248000,
+      "date": "2026.11.13 18:47",
+      "tags": [
+        "대체투자",
+        "외환"
+      ]
+    },
+    {
+      "title": "금시세·금값 13일",
+      "press": "www.bntnews.co.kr",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9YYWh0dkZzV2xjQ2ZRRzU2Q28zemlxZXhaTWh6QmNYbHhXSVBKTGVXVHFoanpIVnpUbnN0Q0tNcVVFc0dIZ1lSYm5nTWZwTFVQRGpjeXZVaUtFSUo3dUdVODNYYmY?oc=5",
+      "timestamp": 1794563220000,
+      "date": "2026.11.13 18:47",
+      "tags": [
+        "대체투자"
+      ]
+    },
+    {
+      "title": "이재용, 삼성전자 주식 1,115만8,000주 증여 완료… 증여세 1조6,000억 육박할 듯",
+      "press": "한국일보",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5qWnVzczhmWV9hQkdkQlRBR0dLSnpyLXpielVvNjc5YWd0UTEzeXI0eFF2cDlpaGVNckh4TkdDbFJqX1E1MmVHN3FoVmtTX2N6ajZNWVFscHpMN1VLNTZFbE5KcHlQaUdqRWU0aEF30gFzQVVfeXFMTW0zRnB5MGZpYTBpc2dTUXY5VFFiQXlTV0o3dXZrTjN4MjliNWdjUTBPTDlDSkNYaHFkY0FWakdxN0E5ZWZrWGhIQS1jTG5VQWdrcGFEVEllOVhfM1htMG1ySVdjNGpnODBxV2hCSnVwaEhzMA?oc=5",
+      "timestamp": 1794560760000,
+      "date": "2026.11.13 18:06",
+      "tags": [
+        "TAX"
+      ]
+    },
+    {
+      "title": "[외환] 원·달러 1336.7원…증시 꺾이자 반등",
+      "press": "자본시장뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9LUEMwUWRxSEVIeWpPZnNhZlBIOWtnQkJEaHBfUF9uVzI5anQyN01leHlGdGFYTDVJQW5CYkNWeEg1Q29velZMOTRPY3NsRy1Zc1NyZnlpTU5sRU9vaE1xUDdfcDdIOEU?oc=5",
+      "timestamp": 1794560400000,
+      "date": "2026.11.13 18:00",
+      "tags": [
+        "외환",
+        "매크로"
+      ]
+    },
+    {
+      "title": "\"금 지금 사도 되나\"… 국제 금값 4000달러 아래로, 순금 한 돈 '살 때 75만·팔 때 64만' 11만원 차이",
+      "press": "경제시그널",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9Uc090Nmt0M29aaEJzT1BPT19RM1hvaFhPRjN3cVQzcDFDUXhWejdMQ0FQTG5RYnZOT0x0Sl84enFma050bXNkNzA1eE5PM2NxU2RObDhFS0twY2JJNXBkbUNsMjJXdHl4V241X0hpXzJiam8?oc=5",
+      "timestamp": 1794560400000,
+      "date": "2026.11.13 18:00",
+      "tags": [
+        "대체투자",
+        "외환"
+      ]
+    },
+    {
+      "title": "유가 뛰고 달러 강세까지…원·달러 환율 6원 상승, 코스피 1% 가까이 하락",
+      "press": "베타뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9GYmNWRnZySVZWVXU0NUdGbmNXR3ZOcVZqYllxZ0NJa0NuUUJpbGdnOC1BUnBwdHNnMFJLcldod0N0UF85RU1VVHcyR1ZTNGNBYk11cDllUUdpeHFMTk5EZ2d5TVk?oc=5",
+      "timestamp": 1794558415000,
+      "date": "2026.11.13 17:26",
+      "tags": [
+        "외환",
+        "매크로",
+        "대체투자"
+      ]
+    },
+    {
+      "title": "원·달러 환율, 5거래일 만에 반등…1336.7원 마감 [김혜란의 FX]",
+      "press": "서울경제",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9GWG5zRjhjRXJ5dGsyUmtKXzlzUGdDTGZBa3VQYnFvQXYzUmNVbUQ1dHlzVnhPUWs1b0loNjFnTDdQSjFjeVFSWUNGYUxLejRlSnfSAVNBVV95cUxNWHFGOF9vRXZrZXZoanlfZm12bDdYeUZYQ2lKYXdtMHhicmRIcEU5Z3N0R1A5MDFzRHhiX014TmFZVXlYc25maXRoOEl1TUJhRnVhRQ?oc=5",
+      "timestamp": 1794558266000,
+      "date": "2026.11.13 17:24",
+      "tags": [
+        "외환"
+      ]
+    },
+    {
+      "title": "한국투자증권, 패밀리오피스 고객 초청 컨퍼런스 데이 개최",
+      "press": "인사이트코리아",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE94OFhTZm9rbVN4T3dwLW1aYWZrT3VnYnktd3R1ZW5haG9kSXFCVnFXdjJRSDBiWEZIYW9wNmtqdlRBRjR4VnNvODY4NC1iQWJkd01GcEp4Rm52VUlBT2c3eVZsdEwyaWxwdVg3cERpSjdSSmfSAXdBVV95cUxNTENTYVBqc24wSUQ4YXpSUHN3a0UyT1h5T0RoLU9qcllOVEVhdXhza1hFc3IwMFdCSkdQbTBDbHkzVTQ3ZjViek92Q2VOMEJBNm8zRXVhMGFqWkdBdHRDVmwtM0NMdkQ2eTdITXktb3UyVXRXNTg4dw?oc=5",
+      "timestamp": 1794557618000,
+      "date": "2026.11.13 17:13",
+      "tags": [
+        "TAX",
+        "부동산"
+      ]
+    },
+    {
+      "title": "美 긴축 우려·유가 급등에 강달러 압력…환율 6.0원 오른 1336.7원 마감",
+      "press": "www.ebn.co.kr",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1TTmV6anF6MTVhSjlzbzU3WFdMaHJFRkZUTC1iMjBxQ2VMMi1LOUVoVUZfdDdOeFFXN1ZYYTZvbkVVeWswT2w4Q21PLWNvS0NiNG83MGpSMzRyLXI3Ql9NSml3VXM5ZlZK?oc=5",
+      "timestamp": 1794557340000,
+      "date": "2026.11.13 17:09",
+      "tags": [
+        "외환",
+        "대체투자"
+      ]
+    },
+    {
+      "title": "[포토뉴스] 한투증권, 패밀리오피스 고객 초청 ‘2026 컨퍼런스 데이’ 진행",
+      "press": "CNB뉴스",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9JcEl6QkNfZzBBRkI5ZEF5eHlMMWpaV3RNb3BOTFhaVkloLV9xTUFFWGJ1NC1TUm5TS0QyQUpqbWl4U0ZKUW9DQkZJWnNFc21pbG5KXzYxcHRBWHFZWWU2NjdmcU0waXhDdWkw?oc=5",
+      "timestamp": 1794556962000,
+      "date": "2026.11.13 17:02",
+      "tags": [
+        "TAX",
+        "부동산"
+      ]
+    },
+    {
+      "title": "미 연준, 내년 금리 결정 회의 7번으로 줄여",
+      "press": "매일경제 마켓",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE0tcEs5YjU0QUU5aEtiWWxfTkdkcEYySmxUa21lWkxnM19BcjRsZnIzbW9HQkdZVTU2Z3Z4OVBPMGtSbDUwZFlXYThMRW1rRWN2OHc?oc=5",
+      "timestamp": 1794556610000,
+      "date": "2026.11.13 16:56",
+      "tags": [
+        "매크로"
+      ]
+    },
+    {
+      "title": "[외환+] 유가 상승·기술주 투심 악화···원·달러 환율, 1330원대 중반 마감",
+      "press": "서울파이낸스",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1Gekt2Vnc1RkpBNVh4T185bVZzS3M0a2oxbDJrZ3JvX21mVTVRREx0aE90RUJKTm5CNEhZam9HcFBuS1pTMkYwRGxSOXRfTHBxSThZb01Zelo3eXU3VmVGaVhpYW9FV3c4dFE?oc=5",
+      "timestamp": 1794556336000,
+      "date": "2026.11.13 16:52",
+      "tags": [
+        "외환",
+        "대체투자"
+      ]
+    },
+    {
+      "title": "코스피, 젠슨 황 사임·유가 급등에 1% 하락…코스닥은 강보합 마감",
+      "press": "청년일보",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5aNUJIZm5NdlBUUFIwR3IyNHNIZ0xFZDFWOW9CSGhOa19UdndwUzJjSmFWZ1Bzb21wbDlNNTltMVYxa0xMWHFDUnlhMzB4WnYwdmJTVG1scVEzeUJBXzlCYnNjRHhkNkU?oc=5",
+      "timestamp": 1794556062000,
+      "date": "2026.11.13 16:47",
+      "tags": [
+        "외환",
+        "매크로",
+        "대체투자"
+      ]
+    },
+    {
+      "title": "[포토] 코스피 하락, 원달러 환율 소폭 상승",
+      "press": "천지일보",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1iRjJtalVwRThNNmdCR3dYOWJHLUNIWXk3WWRxWmlCSG95WmNfVVp1SzlyX2ZEMXFoLUVsa3BjTkZQbjUyYTZ5S0VPTVZYeFRFQVhPdjRSLU1ELXo5WklzaVoyRWlzb0pWekE?oc=5",
+      "timestamp": 1794555872000,
+      "date": "2026.11.13 16:44",
+      "tags": [
+        "외환",
+        "매크로"
+      ]
+    },
+    {
+      "title": "원·달러 환율 1336.7원 마감…유가 급등·달러 강세에 5거래일 만에 반등",
+      "press": "센머니",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBXUHB0dTNaNnNMOVE3Z0Yzc3kydzFCSjVZZkRhN3FLNzNXMm5zM3ExUFJNeXIyQ1lPQlpYYVBWOFBHd0RDalNnUWFKT1gtR2czTDBHelUyUHJrdE8zdUd6REZ2NW5pbnBHcGlIUA?oc=5",
+      "timestamp": 1794555000000,
+      "date": "2026.11.13 16:30",
+      "tags": [
+        "외환",
+        "대체투자"
+      ]
+    },
+    {
+      "title": "美 연준, 2027년부터 금리 결정 회의 연 7회로 축소…수십 년 통화정책 관행 손질",
+      "press": "글로벌이코노믹",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPbjZ0UDVkeHE2eDctTnVpYlQ3SlZMMkpwUmNuS0owVXZMOU42b2RzTUVnMUxqVHpib1l3eGtOa0RHeEw5YlRqblNQMkNsWXc3QVNkNFNEMHFBelpNQ0hNNnpITDVLZGRHdlBqTEtfSWtieWVHS2pmUWVISl9KdlM1bkxJS3ctVUhn?oc=5",
+      "timestamp": 1794554312000,
+      "date": "2026.11.13 16:18",
+      "tags": [
+        "매크로"
+      ]
+    },
+    {
+      "title": "환율, 달러 강세에 닷새 만에 반등…6.0원 오른 1,336.7원",
+      "press": "연합뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE95VVRZQU9XT2lwbGd4T0xSV3NWeV9fYXhOVjc5M0p6MVkydEFUd2hOMjNUODVKSy1pY1c3bVJEVDRhQjZTSERKQjZOTUVCSGZLQkpZUldHbER4NjDSAWBBVV95cUxPb2hkMTNNRjZ5OVRRUE9USHRUUGJMS1FRQzcxbkdPaWFKZ2g3WXVuSkpqamw5R1BVYk83dkM0cmVVdmk0Wk54cHdZX2dzb1NkV2lSaFpaaDRVXzJoV0R1cnU?oc=5",
+      "timestamp": 1794554311000,
+      "date": "2026.11.13 16:18",
+      "tags": [
+        "외환"
+      ]
+    },
+    {
+      "title": "[환율마감] 원·달러 5거래일만 반등, 유가·미국채 금리 급등",
+      "press": "이투데이",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFB2WDVXRnFiTWZHRTNFLWRMNk9vTl9JU2V3aGVEeWFBdmFNR0J6SjlMYVhRbmJDa0xPckF6UDV3VUZLRnRzMXoxc0VEdEJ6Q3hxLVUxOUZtV2pYSXNKY19VdnpZcll0anV6dTRfcThfWDdla3F5?oc=5",
+      "timestamp": 1794553800000,
+      "date": "2026.11.13 16:10",
+      "tags": [
+        "외환",
+        "매크로",
+        "대체투자"
+      ]
+    },
+    {
+      "title": "코스피 하락, 원달러 환율 상승",
+      "press": "뉴스1",
+      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE03MG1wWG02UURPT0ZVbkhhTjlCLVlaWUt1UHh5WmVabzlWUndkdzZUSmJDeFdzSkVuMzhya3Q3QTNBVGFQVkdVOWkzUQ?oc=5",
+      "timestamp": 1794553460000,
+      "date": "2026.11.13 16:04",
+      "tags": [
+        "외환",
+        "매크로"
+      ]
+    },
+    {
+      "title": "원·달러 환율, 6.0원 오른 1336.7원",
+      "press": "데일리안",
+      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOd2RRcTYzQ1N2TjFSeFAySEFSNTZSTEhOQzc4a1JWWGNkc0dZUWZSSUlGSjJBdjdPTzlpd2FucjlhbmpzN1pYWlRFUG9PZ2ZqelhfdmtFb0dZMHVaclMtT3FYM3E1OURfTFZTUFlwc2poWmNUVUU4VnBuU0kwcFh4b2xWY0h1RjZoZEY5akQ3UUlVM1VRYnRmbmxXR1Zoa3JGdmZsVDE0MXJETlh5Q2ZyZU44N19BWThVbmsxNnpGdXcyajBaeWJldE81Z09mb044bFVQZnJSc3o?oc=5",
+      "timestamp": 1794552660000,
+      "date": "2026.11.13 15:51",
+      "tags": [
+        "외환"
+      ]
+    },
+    {
+      "title": "[외환] 원·달러 환율 1336.7원 마감···6.0원↑",
+      "press": "서울파이낸스",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1yaERIY2IwZEZVYjJHZzlCdW9vWnl3Sy05X194SDFIbTNLQnhSWFNSYmJZRWpMWG53aDczNEMxSkllSDQ3UE4zUW0yV3RycHlRZzg5d2VabXdLVmFBT254LW1mdHJRSDBwWXc?oc=5",
+      "timestamp": 1794552310000,
+      "date": "2026.11.13 15:45",
+      "tags": [
+        "외환"
+      ]
+    },
+    {
+      "title": "원·달러 환율, 6.0원 오른 1336.7원 마감",
+      "press": "뉴시스",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFB6V05ZQko0cmUwNnAxOWRmc294cW05MGo2OGNCRHBmRlRDaklsZ3hkT0kxYlZJZ1BLbkxQajVOcjQyQmtkMS01LUJNcG95b1ZhdGVxZjA1anpmUWllSWtCcdIBeEFVX3lxTE53RzFuV2JNOFg0emUwb2ZLbFdBVXFNS1doTkhrenM5aWdlbGpDSE5JYXhqUVVnelFpWG1zYUdCNHRSYjBDVDNGY3IzeEZKbFJqOFpHcUZOWnZ5a29DY1pEY2tMdnk0cTI0eEhYOFpFZFg0RXY2X2lvVA?oc=5",
+      "timestamp": 1794552149000,
+      "date": "2026.11.13 15:42",
+      "tags": [
+        "외환"
+      ]
+    },
+    {
+      "title": "코스피, 0.98%하락한 5290.53 마감…원·달러 환율 6.0원↑",
+      "press": "민주신문",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE43Nzc3RFg5anhiQmVxSG12UWlGUlZHbXpDbWk5LURSUzVxQ2JKWFJpclhxcGpPcU94bDhPdFN5OE1MZE5HazRtUXdBdlhKZnRUd1NLT3Nvanp1TllHbXFZeXZPV2Rza3fSAWtBVV95cUxQWGZyWVFGRl92NG8zVEs2RW9XRGM3MmlyV1pjVEdOVVMzV0xhamhwNzBOTGpMbWFsRWF5LTNpTGxSYURNRHFLZGRPdFVhMzNSMVlUbGl2ejZwcjI0TkUwQTN4OENHTDRfaVFtZw?oc=5",
+      "timestamp": 1794552112000,
+      "date": "2026.11.13 15:41",
+      "tags": [
+        "외환",
+        "매크로"
+      ]
+    },
+    {
+      "title": "원·달러 환율 6.0원 오른 1336.7원",
+      "press": "파이낸셜뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBHNU9mV3NKdG15SEVYN3dqQ3VXZVRNSFJFeFIzUktFV2luT3F2WnFGdk5aU3Q4bjVwd2p6WEF3N1Qwa2xXd3NnRUExQ3ctZm9xNXkweUMwbDc3dw?oc=5",
+      "timestamp": 1794552004000,
+      "date": "2026.11.13 15:40",
+      "tags": [
+        "외환"
+      ]
+    },
+    {
+      "title": "원·달러 환율, 6원 오른 1336.7원",
+      "press": "Chosunbiz",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOcTNEMi1fdmFINWY3VEo1WENLUjBOWkdDcXJVVERCWFhCMlUyaFNGWEx6V2txNEh0RzYzNFpyUGZpUGxBZUFRb2FDX0x3d0NPWGo3S0tueDV5bVFQN19RTU02OFAyanIxM1NGOC03SEIzNy1QdUFoYzlkejBPUG9TaDdPT3pfd9IBmgFBVV95cUxObzVSblFvc0JZbnhhdzZ2c2tfMHl4QUhJYVFHdFRPNlZrV3VXdUU3VHVZVmI2WEp1Yi1QdzA4b3BMTGlENl9XaWd0RmQyRDhEMEZlVTVJalVQZWl2R3p6bk5xWnFhdHJ6S1dRZGNnYVZwZUFMekM3Yk1mX2RoY19ndjliWmVCd3NVOENkbDJiTnJUbzN0Y3J1bjlR?oc=5",
+      "timestamp": 1794551700000,
+      "date": "2026.11.13 15:35",
+      "tags": [
+        "외환"
+      ]
+    },
+    {
+      "title": "[속보]원·달러 환율, 6.0원 오른 1336.7원 마감",
+      "press": "뉴시스",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5lMTRTZjRvaGF0eWF3VGI3M29EY3FvaFh2MVhqR3pkVHV0UjBBYmpfYmpCMEUyWmprT0FHOUJkVlVZY1JfZW5aZWZPOHBDLXQxM09ya21XQTdHV3hjT3FXRVVR?oc=5",
+      "timestamp": 1794551639000,
+      "date": "2026.11.13 15:33",
+      "tags": [
+        "외환"
+      ]
+    },
+    {
+      "title": "환율·유가 하락에 10월 수입물가 1.8%↓…수출물가는 0.7%↑",
+      "press": "동양뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFAtRnFVN2Iza3J2azhnd1VHd3BYMWp5V2F4Z3JGWm9FWG91RGZ1STcyZ3RiQkl4X1NyVmlQeGRkdnFjR3hnc3Y2eVF4eHFmX2ZwVGUxdTU5Z3Q2dmtOUEp0SGg3ZGNTdDMxWWc?oc=5",
+      "timestamp": 1794551604000,
+      "date": "2026.11.13 15:33",
+      "tags": [
+        "외환",
+        "매크로",
+        "대체투자"
+      ]
+    },
+    {
+      "title": "[외환] 원/달러 환율 6.0원 오른 1,336.7원(15:30 기준가)",
+      "press": "연합뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBjTU9WQUl3Vk9IS2ZQd0RrOVhjX3ZiWm1razNYN0M5MkVPbWNPQm9aQ0FDZXJxWVBONXg0THpVTUtMLUJ3b2pkX3AxdXFfLVFROHJrU1ZDTDQ1SVlvNjFKTdIBYEFVX3lxTFBjTU9WQUl3Vk9IS2ZQd0RrOVhjX3ZiWm1razNYN0M5MkVPbWNPQm9aQ0FDZXJxWVBONXg0THpVTUtMLUJ3b2pkX3AxdXFfLVFROHJrU1ZDTDQ1SVlvNjFKTQ?oc=5",
+      "timestamp": 1794551577000,
+      "date": "2026.11.13 15:32",
+      "tags": [
+        "외환"
+      ]
+    },
+    {
+      "title": "한국투자증권, 초고액자산가 대상 ‘2026 패밀리오피스 컨퍼런스 데이’ 개최",
+      "press": "PRESS9",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1oT2VheGJwc3B3VGtGRHNlRllJZ1FYRDQyM2dnZmE3YlFCdGN3d1Zua1Zhd3BqbW16Q1JaVUNoWlZ3X2U5bVE5SW9UU2QtaUg4RDlrSXNWNnYxbmxWTzhRc1ctd2o?oc=5",
+      "timestamp": 1794550852000,
+      "date": "2026.11.13 15:20",
+      "tags": [
+        "TAX",
+        "부동산"
+      ]
+    },
+    {
+      "title": "‘금리 결정’ FOMC는 7번만 한다… 美 연준, 내년 일정 발표",
+      "press": "Chosunbiz",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPSWdLR0drek85UG54TlhJZjJEMWxSUzR5em1yM25XaXJqazlFaFVTc2diajlpZ0dNbHM2NmRjOEFhSlRJSGlHcWpyR1g4UDJpYzl4Y2NQblhBeVpmYktiQTdJRDJVeFVRWmkwazNqeU4wQ3pRd3Uyd25RZ1ZrTXJXeE9kYWV0R3pYdU5fS05FdklPdEoyRjNQclkwX3NVd9IBsgFBVV95cUxPckRZdUQzWnZfdF84b0poaGtDUkhRZ0dRVGRNeG9aNTBLLU81dlRKN3ZORER3ZUJUejZtb2hSVTRSUG9oeFdfcUQxVGJISGZzQmFsaHJRZFBQRFFtSFpBSEsweE1vWExsdkpEU0NRUXVTN253UnlHaXNfLUdzcXhNMVRIMHhxUlQzX2ljSjg2b2dBUV92TU53bWtieEVvcDh3ZmNpT0g3UGw2eVZJMmYyNG93?oc=5",
+      "timestamp": 1794550800000,
+      "date": "2026.11.13 15:20",
+      "tags": [
+        "매크로"
+      ]
+    },
+    {
+      "title": "한국투자증권, '2026 패밀리오피스 컨퍼런스 데이' 진행",
+      "press": "뉴스핌",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1UcmlOQ25yekw1bVd2dzNKV1hrQUc2RUlGQ1pqUEpLeENBc2liMXFpMWpWeEd6UjNSbUhZWXNZX3dwVWxEaV9IRVZfY2lsVDVBRXk4Qzd1MDI1SS1D?oc=5",
+      "timestamp": 1794550080000,
+      "date": "2026.11.13 15:08",
+      "tags": [
+        "TAX",
+        "부동산"
+      ]
+    },
+    {
+      "title": "한국투자증권, 패밀리오피스 고객 초청 '컨퍼런스 데이' 개최",
+      "press": "파이낸셜포스트",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1aX2w4cy03VHlmOHhlQ2xQd2pKWGhQeHY1OW5FRVVpTUpaSkNkVVpwRktyWG5DZ1RoamdVejc2Wm5hTmlDTlY1MVpqSVZ5V183Zlh5M3MySGp4ZUwwNHZWVUZVWEs4WWw4X0pnSG5qcC1tZUFi?oc=5",
+      "timestamp": 1794549953000,
+      "date": "2026.11.13 15:05",
+      "tags": [
+        "TAX",
+        "부동산"
+      ]
+    },
+    {
+      "title": "한국투자증권, '컨퍼런스 데이' 주최... 패밀리오피스 고객 소통 개선",
+      "press": "뉴스락",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE54NlJtbWdyLWZNVUZORjdCM0dnSmV3NklFb1BOanliTUd6WkF5WFM5UUptWlJNMXUwVmJFVzBHLWt3d0FtMzE0Q3lHa0ZZZkdNa3loVjVhem9YNFF3cDV2aEdYMnV4UG5FWk9EeQ?oc=5",
+      "timestamp": 1794549755000,
+      "date": "2026.11.13 15:02",
+      "tags": [
+        "TAX",
+        "부동산"
+      ]
+    },
+    {
+      "title": "한국투자증권, 초고액자산가 대상 ‘패밀리오피스 컨퍼런스 데이’ 개최",
+      "press": "라이센스뉴스",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5GTzg0Zk5lQ1Q2QlhnbzJFUUh4NUZObzJLM2hmWWl1NGJfeXVlbDBZemctakgxT1NOT0FyUG0zUHV2Xy1ERnRtSTRlY3lZOEdGbzhoaUNBcjB4NDhEbmxJNFoydmJQYXN5bkow?oc=5",
+      "timestamp": 1794549095000,
+      "date": "2026.11.13 14:51",
+      "tags": [
+        "TAX",
+        "부동산"
+      ]
+    },
+    {
+      "title": "한국투자증권, 패밀리오피스 고객과 '컨퍼런스 데이'…자산승계 전략 공유",
+      "press": "서울경제TV",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5nUDJMU3JpV3MyTWJuU1M1VWZ1blo4Z1pZWWpndTlKb1hwTVhmVmFRVGIwakoxaWluTVlwQjhjT1QwcGVZQmx6aXYwdlBjY0RXQ29XUHV1Q1ZIa0stcVF4MkREMlM?oc=5",
+      "timestamp": 1794548654000,
+      "date": "2026.11.13 14:44",
+      "tags": [
+        "TAX",
+        "부동산"
+      ]
+    },
+    {
+      "title": "오늘 금시세(금값) 나흘 연속 폭락... 금가격이 1년 최저치로 추락한 원인",
+      "press": "위키트리",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1NTzMxalZnWDQ4UjZ1TUtSa3VlbC0yY3ZNZk9kb0ljLUZuVEhraEFvN2RmeF9Ma2l2Njd1bzhkY0tGSjZPVlpqc2E0UURTcHl4aWVsTUpn?oc=5",
+      "timestamp": 1794547920000,
+      "date": "2026.11.13 14:32",
+      "tags": [
+        "외환",
+        "대체투자"
+      ]
+    },
+    {
+      "title": "한국투자증권, 패밀리오피스 고객 초청 '2026 컨퍼런스 데이' 개최",
+      "press": "전자신문",
+      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE0tMW81Skt6LV82YTNWaDRBMUk0TmtRNGp6RDJySDRhSXhrU2stZGVLTmhlbGNKSENKRHFZQlVzWi0tY3IxQ2FsdHpLN1BUdw?oc=5",
+      "timestamp": 1794547428000,
+      "date": "2026.11.13 14:23",
+      "tags": [
+        "TAX",
+        "부동산"
+      ]
+    },
+    {
+      "title": "한국투자증권, 'VVIP 고객' 모아 ‘2026 패밀리오피스 컨퍼런스 데이’ 개최",
+      "press": "매일일보",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1jYlYxcWd5NHgtYlJzc194XzIyU3lIU0w0Y3ZoUFVoZFQ2RzlsLVgwQ24xdkRGRllJcVJXQ25LZG1GbGhGUWtOblNUbE5Vbnk3R1ZnOXVnT3NIZmtZX2J0cWJCbWU?oc=5",
+      "timestamp": 1794547383000,
+      "date": "2026.11.13 14:23",
+      "tags": [
+        "TAX",
+        "부동산"
+      ]
+    },
+    {
+      "title": "한국투자증권, '2026 패밀리오피스 컨퍼런스 데이' 개최...자산승계 전략 공유",
+      "press": "핀포인트뉴스",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5KVGFuSGRuWjkzMjNwODJOcElhM29Wc3R1dy03elZhZ2FJRXNrdkZiUWxwVU1kblEtYXduclpWZ0tfdzdyMmg4LUdsOGxBdDZudTE5RmdfWWhtNWZNRm96S2dLcWo3MWhPMWdRc2ViTmNlTDjSAXdBVV95cUxQODQ5ZkpQRThXaHBYS19fOEdfaThWSDFXX1hTMlNWUGZJZVhvenJsSDMtLUNpY1lMM0E5bWJSX2pvVWNLM251RElGZkxzcmpjajFxTTNEMERJZTk3S3ZDalVxQWMtZUZDT3VHY252SGRjekVJUHdSWQ?oc=5",
+      "timestamp": 1794547227000,
+      "date": "2026.11.13 14:20",
+      "tags": [
+        "TAX",
+        "부동산"
+      ]
+    },
+    {
+      "title": "[국제/금융] 세계 금값 온스당 3,900달러 하회… 달러 강세·Fed 금리 인상 기대에 107달러 급락",
+      "press": "굿모닝베트남미디어",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1Qa0hUVkV2UnBjYmxOSlVTYXRMZU5LMDBsLWIwTTVTOFRyeUJvMHkxQWZDRXFpcjdsWjB3OHB3elkyZk1xR1hqcTdDSDN6MnFpSW84MkdMTDlSUno5SktiaTl2ZHdwNHRQcDhScTVFZFY?oc=5",
+      "timestamp": 1794546737000,
+      "date": "2026.11.13 14:12",
+      "tags": [
+        "대체투자",
+        "매크로",
+        "외환"
+      ]
+    },
+    {
+      "title": "한국투자증권, 초고액자산가 대상 '패밀리오피스 컨퍼런스' 개최",
+      "press": "컨슈머타임스",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9KMkxJYVo0NV9RV3NPWWNnMXR6RlZzY1pkWHJnNDI5bWhIcENtTWFOQlg5LU5zZVA1NnFleUczaUVZZ05WcE9DaDJ2QmJ0cjZxQldwaHJwRzA4OEczS1ZuSTc5OU9NUlp1WGc?oc=5",
+      "timestamp": 1794546698000,
+      "date": "2026.11.13 14:11",
+      "tags": [
+        "TAX",
+        "부동산"
+      ]
+    },
+    {
+      "title": "[종합 환율] 11월 13일 장중 달러 유로 엔 위안 등 주요 통화 일제히 하락",
+      "press": "투어코리아",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9qaUhzOVoxYjFhRFB6RGpjei1LSWw5bkhzU1E0ODRpbkI3Q3Bac2ZUaHljZXlBYXB4WXhBTEhza2FIOEV4OGEtVTlYbWFqVFpSa0MwRmN5OU9RbVR6SExtaWt1c2JkamkyR01QZGpR?oc=5",
+      "timestamp": 1794545598000,
+      "date": "2026.11.13 13:53",
+      "tags": [
+        "외환"
+      ]
+    },
+    {
+      "title": "한국투자증권, 초고액자산가 초청 '2026 패밀리오피스 컨퍼런스 데이' 개최",
+      "press": "뉴스드림",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBkLWtNN2JWcjRtdFh4TFZIOGFsckdzd3J3ZHM5RVJETTZfSWJHTGxrbzY3OFJTQ2JBNVpPdFUxeXNpNHlRdnkwTE9fUkprVEJRODE0ejh4WVhDN2h0ZWNVeWZJX3lJV0pIdzFJ0gFuQVVfeXFMUGUxUUhaY2FPd2VYLTNZNDRraktmcjY3eF9QVzk3R0I3WldHS3h2ci1SbXVIY3J5NWxraF94c1RwYzAtY2c0T2RlLThYMjVoMklsWk9zRGQ1dVNmRjRZcnZLSlkxeS0yWldlSGlyWGc?oc=5",
+      "timestamp": 1794545552000,
+      "date": "2026.11.13 13:52",
+      "tags": [
+        "TAX",
+        "부동산"
+      ]
+    },
+    {
+      "title": "한국투자증권, 패밀리오피스 고객 초청 ‘2026 컨퍼런스데이’ 개최",
+      "press": "인더뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5xaTd6NXFQVE14YVBJRkxyVldVNkpZMEFQVU0xekdOT2ZGTGhhRnl3dkRWanNqcXRMN1F6SmJOczYwZ2NXeUVCV1I1TzFIOVg0eVU4bmZ3V0liYTF6TnlORTJablQ?oc=5",
+      "timestamp": 1794545326000,
+      "date": "2026.11.13 13:48",
+      "tags": [
+        "TAX",
+        "부동산"
+      ]
+    },
+    {
+      "title": "미래에셋자산운용, TIGER 미국나스닥100채권혼합50, 순자산 5000억원 넘어",
+      "press": "Daily NTN",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1GdV9ISDJTTXRTYUh1NDFtY3pGcFI3UGFkMGxBcWVKOXgwQkpBaEl5MUo2b290a0ppTTFudlNtdmJKQ2p6MG14MkxFYm5xMjVuTDRWeGlCRUp0ZnNJR1dFbEI4OHZXMEZwa1E?oc=5",
+      "timestamp": 1794545057000,
+      "date": "2026.11.13 13:44",
+      "tags": [
+        "매크로"
+      ]
+    },
+    {
+      "title": "한국투자증권, 초고액자산가 대상 패밀리오피스 콘퍼런스 개최",
+      "press": "뉴스포스트",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFAwaUgtY2k5ZVlOaEZuUVl1S2w3aGdVQ2lVWkhUb2dMZEc5TERqS0lvU0xmblI4UXFjU0ctSHA5cENrVl9EN0NsMjVtaHBHalJhRW9GaVdETnlsTWEzVWtMVG83dkVsSGJJeHc?oc=5",
+      "timestamp": 1794544675000,
+      "date": "2026.11.13 13:37",
+      "tags": [
+        "TAX",
+        "부동산"
+      ]
+    },
+    {
+      "title": "[외환] 강달러 상쇄하는 네고…1,330원 초반대로 |",
+      "press": "연합인포맥스",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5raDZMVXM3bjQyTlR6bFpFcFRvVVdJbjlmbTlKcV9pMGRPZEhxV2otM082VS1vRXZaT1VNODEyY2tOdC16eGxST2ZSU043clZjNDBGRHlUV3g3TVZ5LTh1NHlpZ1pUblh5alZUa1JqYVhZSmRl?oc=5",
+      "timestamp": 1794543818000,
+      "date": "2026.11.13 13:23",
+      "tags": [
+        "외환"
+      ]
+    },
+    {
+      "title": "오늘(13일) 금시세 하락…순금 1돈 금값 73만7000원",
+      "press": "더페어",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE40OVdLdFFFNXZ0SEdCVkZaTzJEWU80VVlQMEpOWWZDX0tHN3JGRWlrUVpHWm5VMFlEX19XbWhVNFZlS01GQmZQR2VsLXBiS0t4YzJGSmJBblhWWXdST0Q1VHgxQTc1MDVqY2Z5cUVYQjPSAXRBVV95cUxNN19MNWJOakM3MEI5S3ZZSUJPQUxGYjVnT3EwN2NkZ3BTM3NoT3dkS2FRVTJ1RUZtNGNsaEppa3kzX25ZZWhvVE9LaVF4S29YYWtZcENqa3pSU0RjVmdJaTgwU1JBWGpNQlFwOEhCbjI1bzdJNA?oc=5",
+      "timestamp": 1794543057000,
+      "date": "2026.11.13 13:10",
+      "tags": [
+        "대체투자"
+      ]
+    },
+    {
+      "title": "[금시세] 국제 금값 1돈 얼마?",
+      "press": "게임톡",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9rSEFpdlJZN0JJaXUyNXFKS3AxV1NuUVFuTzJEWnhhcS1fazRwcTM5eUlWbWliNjh0RHFSZFNkWTE0Q2hXSm1lekJnQW1UY2hCTWxvNVVTeml4YUtMZjM0WDlsWXBlRzgzd2pFcA?oc=5",
+      "timestamp": 1794540374000,
+      "date": "2026.11.13 12:26",
+      "tags": [
+        "대체투자"
+      ]
+    },
+    {
+      "title": "S&P500 선물, 엔비디아 충격 딛고 상승…美 국채금리↓",
+      "press": "연합인포맥스",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9na3lMQk9Na2gyVEJKZTNKY1poZWMxOF9mTHh4czdWNVpWemtMZUpmNllnTXhnRTNQQkdqRG1UekVOS19yclFBNWtuUy1YQ056UU5IT1ZuaDBVeFJWSkU2UG5RZ1dsUnZKc2VKQ0I1dFQ?oc=5",
+      "timestamp": 1794539706000,
+      "date": "2026.11.13 12:15",
+      "tags": [
+        "매크로"
+      ]
+    },
+    {
+      "title": "李 “상속세 줄이려 주가 낮췄나” 의심속 개혁전담기구 신설 지시",
+      "press": "문화일보",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5mVlduVElFRThIQXZZMlZOU21fMFYwYzRBdE1INTQ2WlBhSUF3NHE2cVBXbU9oVUZjVl8zRG01MTVkUHhDSVJLLVZYMklYVy1t?oc=5",
+      "timestamp": 1794538938000,
+      "date": "2026.11.13 12:02",
+      "tags": [
+        "TAX"
+      ]
+    },
+    {
+      "title": "[금 시세] 국제 금값 상승 흐름… 중동 긴장과 미중러 회동 주시",
+      "press": "센머니",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE83dlhzUmctWUpHeEJiYm5qaVJMeEJOdEIxa0gtX3pyTVppZXpmbkpCb1JJXzJwR2YwaDFiRmNPZkdVUkVqZmxKQ0RmTWN4VnJiZ3FPSGMwT0Jsa0NCeENwOHZpdlVmUWIyekJFaA?oc=5",
+      "timestamp": 1794538851000,
+      "date": "2026.11.13 12:00",
+      "tags": [
+        "대체투자"
+      ]
+    },
+    {
+      "title": "李 “상속세 줄이려 주가 낮게 관리하나”…상장사 지배구조 지적",
+      "press": "메트로신문",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBMNWZzV0ltWEVVdEo0UkdpUW04THk3SGt4RmtTNXVIRlBJRnhQX0REckZNQmZybjlzSlZXZEcxLWE3X2pIMk1lOFlGY2ZTR2ExdlNPVFd1Unhhb2xOMzVidw?oc=5",
+      "timestamp": 1794538742000,
+      "date": "2026.11.13 11:59",
+      "tags": [
+        "TAX"
+      ]
+    },
+    {
+      "title": "유가·환율 하락에 수입물가 1.8%↓…반도체 호황에 수출 교역조건 개선 - https://www.ppss.kr/",
+      "press": "https://www.ppss.kr/",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFAtSFpNZ1VyMjltV2wtVDl1TFdmeS1NSGdzN3gzazBRdDJxUHpfSlJ3VjFZNEs0bVRWeHR3UThtMGdva0lXMG9IdGhuQXUxbDdBdnRzYVVvOE5hd2F5WFE3ZGp0YTQ?oc=5",
+      "timestamp": 1794538325000,
+      "date": "2026.11.13 11:52",
+      "tags": [
+        "외환",
+        "매크로",
+        "대체투자"
+      ]
+    },
+    {
+      "title": "자본시장 간담회 개최...\"고의 주가 낮춘 기업 대주주에 상속, 증여세등 최대 40% 할증 과세 \"주장도",
+      "press": "데일리경제",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5ncWYzbTBGdWhCZmdnSkRTVnBSX3RyQ3JId0E4b0s3aXRYcXppQWZJNFR6SldDdUphekNCRVFPM1ZSLS16OGZ2S0JidmlCQ2JvaWNRZ3FHRHJFcWQ2V2x2UXpmaTFBdTNpajNOYQ?oc=5",
+      "timestamp": 1794538049000,
+      "date": "2026.11.13 11:47",
+      "tags": [
+        "TAX"
+      ]
+    },
+    {
+      "title": "[외환] 美 긴축 기대에 달러 연동으로 추가 상승…1,330원대 후반",
+      "press": "연합인포맥스",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBjZXpFTWFCN3g4WDhINWZvR0pQcGhZTzBfbjVlemwxdGdEY210dEVVT1U0ZWVERGdNTEJnWV84TGozQm9oNTZxVU8yZTYyVFNycVFLZGZxeUVib2txeHl3bjJsMkdaMFl5X0NicTdCb1BWR1Ff0gF0QVVfeXFMUGNlekVNYUI3eDhYOEg1Zm9HSlBwaFlPMF9uNWV6bDF0Z0RjbXR0RVVPVTRlZUREZ01MQmdZXzhMajNCb2g1NnFVTzJlNjJUU3JxUUtkZnF5RWJva3F4eXduMmwyR1owWXlfQ2JxN0JvUFZHUV8?oc=5",
+      "timestamp": 1794537429000,
+      "date": "2026.11.13 11:37",
+      "tags": [
+        "외환"
+      ]
+    },
+    {
+      "title": "중국내 상속세 도입 여론…전직 장관급 인사 공개 제안",
+      "press": "아주경제",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBlalZBcHNFVGFlMk9vNklta19RUEtwUFRldHdZVVNHZHJteTU0eGxCeTdwS3V3TDBhREJqbkVpMjJHX09hanFlZk4zaE5ySDhRN3RvX3N2TUpGQdIBWEFVX3lxTFA2clpucWdkNlNjcGZKNU1iRmQ2NmF2eXNuMlVpc3NoSWc5VVRuMk5zYVdraWx3S0x5UnZNTXVxekdrSnY4ejIwNXJXM0ZjWWNrMHkwd1BleDY?oc=5",
+      "timestamp": 1794536109000,
+      "date": "2026.11.13 11:15",
+      "tags": [
+        "TAX"
+      ]
+    },
+    {
+      "title": "[금복이의 금 이야기] 중동전쟁 불확실성 고조에 금값은 하락",
+      "press": "지디넷코리아",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBCZTlPSjJxcEt0UFF2UC11bXdyMkJfdTNSUS0td2w0THRHQkJvOUJ1azhhNU9jS2psOGtKenQ3b2ZCWThKekVTa1FDWUtraHZ0MGl3Z3Nn?oc=5",
+      "timestamp": 1794535378000,
+      "date": "2026.11.13 11:02",
+      "tags": [
+        "대체투자"
+      ]
+    },
+    {
+      "title": "원/달러 환율, 보름 만에 1,320원대로 하락",
+      "press": "씬짜오베트남",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE9rdkhVODI2U29QWV8wS1dhc2ZRUzhpeXd1UG1vM1ZYUjVNNTBCQndDdXk4TWc5ZzZubHFjbnFwWlI0Qmt0UVRVWQ?oc=5",
+      "timestamp": 1794534882000,
+      "date": "2026.11.13 10:54",
+      "tags": [
+        "외환"
+      ]
+    },
+    {
+      "title": "국제 금값, 1년여 만에 최저치로 급락",
+      "press": "씬짜오베트남",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE1jMVduUVFIcUl5Q0Z3Tzd0NVJXczNUd05hY001eC1lV1doR2hEMWI3T1R4YmxvNTRiT1pUMUk4X1RHUTZWUUV5Rw?oc=5",
+      "timestamp": 1794534849000,
+      "date": "2026.11.13 10:54",
+      "tags": [
+        "대체투자"
+      ]
+    },
+    {
+      "title": "원화 강세에 수입물가 한 달 만에 하락…반도체 호황에 수출물가는 반등",
+      "press": "한국일보",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE82TzVzM2F6QWZUSmxOSHZwMk43VFl5OHdsalBWY3dtRlpmbXBBWWNVVGttQXRUWThJQjZQc3ZyYWcyUTZPVjJ0VmRUdnJ3bEZVNkdVRzBVMVZqeG1McDNWUGJiWVBaZlp2Z1oyRE9n0gFzQVVfeXFMTnA1RWEwS1BOTzBROG1ZNU1zUVA0VlBoLTB3ZDVCdFFqQWVlQmZHT2FXY21DRnFZaUZ4c2tEbWJPdlo0VHNyZkh1QkZRRlpPYVFuZ0NLdXVHSTFOZmVSbUViVlBLbU13dE1qN1p5Ynk0RDZGQQ?oc=5",
+      "timestamp": 1794534840000,
+      "date": "2026.11.13 10:54",
+      "tags": [
+        "외환",
+        "매크로"
+      ]
+    },
+    {
+      "title": "10월 수출물가지수 반도체 가격 상승에 0.7% 올라, 수입물가는 1.8% 하락",
+      "press": "비즈니스포스트",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5JeDBmRjhFalZWVVFKa3RwSWplXzFDY2JxcjM2MjFuYnFtQXRQMDBxaFNLdFd2QVJ0a0poZUV2MDZjR2oxajZwdF9SUjRoNjU0RVV4ZWx4cGRLZFdJX3psTEJpZVQ2eVFQM1JPS2I0YXd0aGM?oc=5",
+      "timestamp": 1794534799000,
+      "date": "2026.11.13 10:53",
+      "tags": [
+        "외환",
+        "매크로"
+      ]
+    },
+    {
+      "title": "[포토] 코스피 상승… 원/달러 환율 소폭 상승",
+      "press": "천지일보",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9kTmE2bi1ZVHp5MEROZDB4SGtUQmJHQnUzRVB5ekhwUHB1SGlmcGJnSzNBSUE5V2dQOGltMFRDb2d2b0RYcWNoTVpNOTJCeVJDWVYwVjdtUjZ2cVFZQmRKZm9CUS1vQmFVYnc?oc=5",
+      "timestamp": 1794534735000,
+      "date": "2026.11.13 10:52",
+      "tags": [
+        "외환",
+        "매크로"
+      ]
+    },
+    {
+      "title": "워시 연준 의장, AI·생산성 콘퍼런스서 연설…경제 영향 점검 |",
+      "press": "연합인포맥스",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBaUmJKRElWRGtYcjljMWU2dkRSclQ0eHRldFdVbjZpYVhnQUtucHhCMmZDMlJTTFBkYkFKMkkzcTNXQWxoSFVzOTdRaU1XZ2FBbnlGQUx1WXJQT2MtZm9kdnV2WEttLWZKSFZIUWYxVnVKcmZz?oc=5",
+      "timestamp": 1794534166000,
+      "date": "2026.11.13 10:42",
+      "tags": [
+        "매크로"
+      ]
+    },
+    {
+      "title": "환율·유가 동반 하락에 수입물가 1.8% 내려",
+      "press": "스페셜경제",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5iOExPU0tzY3Q4a3QwMGFqZ2N4WGFzQ2VxbDIwc2NsQXhMUVd0bDlyanpMYWhibWhMQU1VdEhhdGp3VTZMMFpERFlFNk1iMVJadlBqQ1FSdmxpUG9kVEdBSTZRekthdnFFUDJZbA?oc=5",
+      "timestamp": 1794534125000,
+      "date": "2026.11.13 10:42",
+      "tags": [
+        "외환",
+        "매크로",
+        "대체투자"
+      ]
+    },
+    {
+      "title": "[오늘의 금시세] 11월 13일 금값 하락…순금 한 돈 73만4000원, 은·백금도 약세",
+      "press": "잡포스트",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5VSjFEdVlwMURvOVRKaEhrd1FBdTlXY0V3ZEVzN2dpUWYybHVCS2JhSG8yRm5Ca09Cb3FMMndsdVNXTjREbFpHaWFOcWRWV2J4UU53bndsU3BNbWRWal9hZHg2SVFmblB5UmdNOGlLYzVIQdIBckFVX3lxTE5VSjFEdVlwMURvOVRKaEhrd1FBdTlXY0V3ZEVzN2dpUWYybHVCS2JhSG8yRm5Ca09Cb3FMMndsdVNXTjREbFpHaWFOcWRWV2J4UU53bndsU3BNbWRWal9hZHg2SVFmblB5UmdNOGlLYzVIQQ?oc=5",
+      "timestamp": 1794534041000,
+      "date": "2026.11.13 10:40",
+      "tags": [
+        "대체투자"
+      ]
+    },
+    {
+      "title": "“상속세 줄이려 주가 누르기…고의 기업에 40% 할증 과세해야”",
+      "press": "이데일리",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOaDFwb3d1dFlqYUJpbmxYWHdJRGoyMUJlR3lmWHlqZXB1XzlrT2dYWXNNSnpTbWRsSzJaNHE4STJjeHgxLWl1WlBtb3k2ZFg1OVJIbzU0ZUtLODZQbS1rNjNGRXN3UVVLX0hGUERCNDR6QVhxOGtwTFlYclh2U0xPNw?oc=5",
+      "timestamp": 1794533908000,
+      "date": "2026.11.13 10:38",
+      "tags": [
+        "TAX"
+      ]
+    },
+    {
+      "title": "10월 수입물가 1.8% 하락 전환…환율·유가 동반 하락 영향",
+      "press": "폴리뉴스 Polinews",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9iLVpzYTVlTExLd0FFVjhramxDT2xUdjBVemN4OXB3WnlmbzNaUmd1UHVhcDRpUlprUUFoY2cyVldSX240OG5BX3oxSVBaR1E0UnVKaGdPeV9NbHQ1d1ZjTTZUdllRcW9KdU13SkpB?oc=5",
+      "timestamp": 1794533400000,
+      "date": "2026.11.13 10:30",
+      "tags": [
+        "외환",
+        "매크로",
+        "대체투자"
+      ]
+    },
+    {
+      "title": "李대통령, 상속세 겨냥 주가 누르기 의심 지적…주주 존중 강조",
+      "press": "아주경제",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1aNE9YdklIMHp2Y245Ujg4SEp1OUt3VkRibkJTeTdlcG9UbGJIdlFZRWJjMnBaZkRhN0dtUFd4eWhjclIxa3c1NVJRb3ZKNHNSMWpnbks0M29aZ9IBWEFVX3lxTFAyS0NZNEJGaW1oX1FVWk9QTFpabW16QzZ4eGprbGVraHAtaHdmRWpOejFpN1EyMEJDQnIzXzl1ZmYyanZvT2VOMFZJZGdPUmNvR21Meml6Zm8?oc=5",
+      "timestamp": 1794533173000,
+      "date": "2026.11.13 10:26",
+      "tags": [
+        "TAX"
+      ]
+    },
+    {
+      "title": "환율·유가 떨어지니 10월 수입물가 1.8%↓…한 달 만에 하락 전환",
+      "press": "ER 이코노믹리뷰",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBoZXVXeG5jRFhaV0I2eDZsdlRTUUpqekNwbUlPdU1yS1NBd3VyM0RudzBkanM0N3AyOTFuMF9SMEVoME9uLVBIUmg0MERRR1JKYy04M3JWeC1DR1FZdmdpTlJ0bi0zeUUyRGRqYg?oc=5",
+      "timestamp": 1794533153000,
+      "date": "2026.11.13 10:25",
+      "tags": [
+        "외환",
+        "매크로",
+        "대체투자"
+      ]
+    },
+    {
+      "title": "환율·유가 하락에 10월 수입물가 1.8%↓···수출물가는 반도체가 견인",
+      "press": "스마트비즈",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5HdWVWcEwwVVFWdDhKT2NSb2V4ZDRPZ3NJLWh1S3FfZHNMM0pSNE1WMEYyYnFVMUZ0cUpZaFBHMVVrN09FMVhRYi1YUEp0dFRJTUpBRzJqaUhwbDhmdEkwekpoUVp0STY4YUU2dQ?oc=5",
+      "timestamp": 1794532829000,
+      "date": "2026.11.13 10:20",
+      "tags": [
+        "외환",
+        "매크로",
+        "대체투자"
+      ]
+    },
+    {
+      "title": "환율·유가 동반 하락에 10월 수입물가 1.8％↓",
+      "press": "TBS 서울",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPTmJtY2xReWZWWVNLeWUybmtYQzRMOUg2aEk3cmFMSUhlT0l3aGhUdXY3WVRXb29QRjJudFJfTXNNMVlNMkdxVWdUNHZBN1k5bm1BckdVT3hqeDdyclZLWTVGUTRTMGdIb2ZPbTVsS0hBOFRXUklhcGlFOTRJYjFVWkpRQUhHZw?oc=5",
+      "timestamp": 1794532440000,
+      "date": "2026.11.13 10:14",
+      "tags": [
+        "외환",
+        "매크로",
+        "대체투자"
+      ]
+    },
+    {
+      "title": "원달러 환율 나흘째 하락…엔화 강세, 국제 금 2.88% 하락",
+      "press": "중기이코노미",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9YWlMtUVQycmppeXhJRDE5LUoxcTBaUzdicXBuLWZTYktpMHc1MjRZaUdOd2hDY2owMWpnT1d6c1FKSnJSR3djTUZDN3hUVHpQbTdwN1hkUUJUTm1WZ1VZWWt6aklFR3hCREE?oc=5",
+      "timestamp": 1794532243000,
+      "date": "2026.11.13 10:10",
+      "tags": [
+        "외환"
+      ]
+    },
+    {
+      "title": "환율·유가 하락에 10월 수입물가 1.8%↓…한달 만 하락 전환",
+      "press": "프라임경제",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5TNDdOYXFfXzhpdWFKQlNqb3RSMVJxRFVtcjYwajVWc0duazF5XzY3dDR0VFBYdmhxc1dkNHdFb3JlcDhxbmNyaFVJY2Y0bUJubGNBamdOMlc2SVpJZXZzc2FPUE1rbXg5Nk9xQQ?oc=5",
+      "timestamp": 1794532047000,
+      "date": "2026.11.13 10:07",
+      "tags": [
+        "외환",
+        "매크로",
+        "대체투자"
+      ]
+    },
+    {
+      "title": "국제 금값 3일간 229달러 급락…3900달러 붕괴 후 반등에도 회복 역부족",
+      "press": "현대경제",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1CaHFmanlfWTZxNzlHZWh6RXo3OUY0Uk41X0xGMHJrYlhJYXJneG52aWVOUmFEUnZLaktXdlZ4MDlWLVpoNWFNRWFLdUt5UENnREVxVzdZQ2c3aElsQ3RrY0NjVnd2SXlsamRN?oc=5",
+      "timestamp": 1794531556000,
+      "date": "2026.11.13 09:59",
+      "tags": [
+        "대체투자",
+        "외환"
+      ]
+    },
+    {
+      "title": "오늘 금시세, 금값 방향은 언제쯤…살 때·팔 때 가격 차이 확인",
+      "press": "키즈맘",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1YbGFxZjZIc0NqSHNadDN3bVZTVDZJbm5RdGR3X19fYmkwUElHVWNwRmNsRmVnbUNoQVJvSUdTaVhIOGpwUXpZcDJqaHl0clJsTk5tbl9aYTBEY0pyYlRKYkhCekZLS0Jr?oc=5",
+      "timestamp": 1794531039000,
+      "date": "2026.11.13 09:50",
+      "tags": [
+        "대체투자"
+      ]
+    },
+    {
+      "title": "유가·환율 동반 하락에 10월 수입물가 1.8%↓…하락 전환",
+      "press": "금융소비자뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9zbTd3WDFDenRwbDRIbHh3ZnRNTDdmSFV1Ykk5TWJiNnpYLTJUb0tuekplc3A5M1Rsb0wyNVBGQ3pPby1yMzdyZUVoMy0wM0ZDbzgtNWRsLUJWdXZnSzlpMHl4RERBSG9PT1E?oc=5",
+      "timestamp": 1794530940000,
+      "date": "2026.11.13 09:49",
+      "tags": [
+        "외환",
+        "매크로",
+        "대체투자"
+      ]
+    },
+    {
+      "title": "중동 긴장에 강달러 압력 지속…원달러 환율 1330원대 중반",
+      "press": "아주경제",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1RTnlIellSS2FEaXJMa0J3N2Uzd2hJQXEwOXBjV2w3RnZ2VzNNVW5WM2lJeG1OcHc0ck1kMW53WkFXelM4NDZ4Ym1hdDMtZkxpN3NDWmp3VVjSAVhBVV95cUxNUU55SHpZUkthRGlyTGtCdzdlM3doSUFxMDlwY1dsN0Z2dlczTVVuVjNpSXhtTnB3NHJNZDFud1pBV3pTODQ2eGJtYXQzLWZMaTdzQ1pqd1VY?oc=5",
+      "timestamp": 1794530789000,
+      "date": "2026.11.13 09:46",
+      "tags": [
+        "외환"
+      ]
+    },
+    {
+      "title": "[속보]李대통령 \"기업의 '주주 존중' 화두…상속세에 주가 관리하는 거 아니냐 의심도\" - 머니투데이",
+      "press": "머니투데이",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBPS0h5N2hlVC1lVG5sM21XYjVybExYNV9Lb1RUcC1UUllQRWRibkZrSWFNb3NWdGtOUWNIV2RiMm9NSmNTaVFPUy1yY191RUYxcUZwanhsZVMxYnRGSHUwRXFrMGpDYVBJLTdNQThOamlrUUtiNTRBdEZR0gF_QVVfeXFMTk5wZmUxQ1dTTUhxYWloY3pVY0V1cWl0aW1WWWQwem5IeWdqRzItZ19Bb2xJUVUyLUFyX2didkF2Y3Qza1NCRFVtb0FWMFk2V09EdFZIRDlhUHdBVXNkR2RsT3JoRElFTFMzRUdSNUwxM2lvN1M3bk02Rm1pbmFyYw?oc=5",
+      "timestamp": 1794530632000,
+      "date": "2026.11.13 09:43",
+      "tags": [
+        "TAX"
+      ]
+    },
+    {
+      "title": "환율·유가 동반 하락에 10월 수입물가 1.8%↓…수출물량·교역조건은 역대 최고",
+      "press": "와이드경제",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9LdjVwWVhMM3hPMEZJZTZhdEdianVPWHU0eGNnRHNEbzR0Vld1ZXl2cnJsZG94b3JZNDhuSEtPWDNEZzJoaHBTN082QVROa0VyZ3RGWkEwRUQxRWFTWndWVDZxVWhVVGhidDk3bQ?oc=5",
+      "timestamp": 1794530527000,
+      "date": "2026.11.13 09:42",
+      "tags": [
+        "외환",
+        "매크로",
+        "대체투자"
+      ]
+    },
+    {
+      "title": "[오늘 금시세] 금 한돈 62만7825원 5거래일째 하락…중동발 물가·금리 충격에 국제 금값 급락",
+      "press": "톱스타뉴스",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9WRVl0V0dINW1aNXZqSUQxWXpqTDV5Rlh2UXlhZmhreTVsTjNTOGRGVFlzWklpczFOZFFhTjFOaTAwTUsyenlMQzdvbC13cmJzQU4wZUtnU1pLTGYzTzdFdG9BNmI1X2lBMGtXSnFBUXNydw?oc=5",
+      "timestamp": 1794530260000,
+      "date": "2026.11.13 09:37",
+      "tags": [
+        "대체투자",
+        "매크로"
+      ]
+    },
+    {
+      "title": "환율, 1330원대 중반으로 올라…중동 긴장에 달러 강세 지속",
+      "press": "뉴스투데이",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9oUGc0NHVvT1B1a1ZzUEpPN0FLRUNzZVltdXQwZGs3X2owUlFFZ1daZDliRnlDTUowam5FUHNjSENhSXZnbEpKb1VJS2JLOGh2aUhXdnNoTFV2QTMzUkE?oc=5",
+      "timestamp": 1794529740000,
+      "date": "2026.11.13 09:29",
+      "tags": [
+        "외환"
+      ]
+    },
+    {
+      "title": "환율·유가 하락에 수입물가 1.8%↓…수출물량은 역대 최대폭 증가",
+      "press": "부산일보",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBDWHV5VjM2SE5UQXprTlFMTXpjZGFwWHhpY0NWaEZYaXQ4cEpXZ1ZIVm9kNVZaM3Fhb0NXX21NQTMybWRXOW42TUR0dXBUOUdGR05zRmhjQTh5NHB4VGFiRUZLOUMwcXlqV20zeE1ScDE5aTMx?oc=5",
+      "timestamp": 1794529432000,
+      "date": "2026.11.13 09:23",
+      "tags": [
+        "외환",
+        "매크로",
+        "대체투자"
+      ]
+    },
+    {
+      "title": "[외환] 트럼프 이란 협상 거부…원·달러 환율 1340원 넘나",
+      "press": "자본시장뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5ubGt5VTlKZjcwYjQwcWlzNjAzekdRV2c2MTJEOW42N3BJZm91SGNyQ01SM1VVdS1FZndWaUpNQWtEZnhvRXIwc2VlRHpWM3JkLUNvODRNU1lHMnBUX0NqYWdQWUhBTlk?oc=5",
+      "timestamp": 1794529318000,
+      "date": "2026.11.13 09:21",
+      "tags": [
+        "외환"
+      ]
+    },
+    {
+      "title": "원·달러 환율, 3.4원 오른 1334.1원",
+      "press": "Chosunbiz",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNNHBEbzFmRDhXV2JraFl3TkJxcEdNT0NTa3F1U0Y0dm1fUUJUZHVKeElWS1ZlZG8tSDJBMHpSUzlOOVRYbk9UR3NMM1BTb2hwclk3ZDBySDRZNVEwdWI4YTBwWGxjUjBnTktIRm45d1l5NFhyUHhiU19SbjFqNHJHdy13V3ZSUDlabURDY0VNb256Nk5LcXcyUXFn0gGaAUFVX3lxTE00cERvMWZEOFdXYmtoWXdOQnFwR01PQ1NrcXVTRjR2bV9RQlRkdUp4SVZLVmVkby1IMkEwelJTOU45VFhuT1RHc0wzUFNvaHByWTdkMHJINFk1UTB1YjhhMHBYbGNSMGdOS0hGbjl3WXk0WHJQeGJTX1JuMWo0ckd3LXdXdlJQOVptRENjRU1vbno2TktxdzJRcWc?oc=5",
+      "timestamp": 1794529260000,
+      "date": "2026.11.13 09:21",
+      "tags": [
+        "외환"
+      ]
+    },
+    {
+      "title": "\"전투 경험 풍부한 연준, 매파가 주도권 잡고 금리 3번 올릴 것\"",
+      "press": "연합인포맥스",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBkTTlqWWw1Z1VKeHJwYWVIRlBMQzgtRk1sYW1lYm4xdWp6MG1CVFJyRUNXQW96eHBwWk1wRHdQSEpOVGZtYjA5aEZoM3N0ZUhueFBHQzE0N1JCWlo1czMya1VzNnBHMlVidl8ydzFMT0vSAXRBVV95cUxNSDBUOVg0N1JnUGw0eHp6R2FfUWlWeVhFNEVkeWxNWDF5dTJKeDZfUm1FX1FPLTU1Q0hDdFB3Z0VpdjJDNUZuY2ZLbkphSHlwWVBJQ0NKM0VSTVBTWUF5QWVJM2hJUmxYSTkteHl3aGtmakl2UA?oc=5",
+      "timestamp": 1794529068000,
+      "date": "2026.11.13 09:17",
+      "tags": [
+        "매크로"
+      ]
+    },
+    {
+      "title": "[오늘 금시세]미국 물가 충격에 금값 ‘뚝’…국내 금값 3%대 급락",
+      "press": "남도일보",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE4zTjZiVHExSlNMM0xRRjhnUEQwWVFoajVLOGRGaEJCcnowQjhwR29nclFPdXJzRnhXSU5oOFJIUWJpdnBtaXgxa09TamNUbWxLWjdqajZBdzdDdHlsQnJYYzlpVTdpY05uZlZWYdIBcEFVX3lxTE1CaXVmMVpDbmRxWmJTVExWaTluSWczNlQwWXRCUXpyWEc4WGZDaGhXQjVzNTJ1STBaWUxSZ2I1UTJYeEFEU2FFX0szSkpxUUdKWllwdUZtQzNNeDJ0QzVNcDBtOFdUR21UN2FtYU11MzU?oc=5",
+      "timestamp": 1794528900000,
+      "date": "2026.11.13 09:15",
+      "tags": [
+        "대체투자",
+        "매크로"
+      ]
+    },
+    {
+      "title": "[외환+] 유가·금리 공포 재개···원·달러 환율, 1336원대 상승 출발",
+      "press": "서울파이낸스",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBSU3pTc0JCM3dPbjZVY0lja1Z2cnk0cV9ycUJYaTNtVDU1RE1ZMlB3c3Jpc1ZGM24wM0NBc1NzTS03b3ZlM1hmdmZ6bnU5UWhENEJYaGVnb1FxZUhZRllIVmZzWTZHQWY5NkE?oc=5",
+      "timestamp": 1794528745000,
+      "date": "2026.11.13 09:12",
+      "tags": [
+        "외환",
+        "매크로",
+        "대체투자"
+      ]
+    },
+    {
+      "title": "환율 진정에 10월 수입물가 1.8% 감소…범용 D램·AI 인프라 업고 수출물량은 '역대 최대'",
+      "press": "포인트데일리",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1oVGlKQ0JjYVRybXF2U3ZKbFlFY3Z4bVl2VE9mSTAwdFRtU1MyeGNsSXh1QTAwUUxiR3RFaWlLSWJld3VZOUJ1bkxiT1laWFptMUQ3eWVpNnhSYmFDaks1ZFlwV3daeUpyM25KRDBIUXbSAXRBVV95cUxOc0JjWlRkcDZFdnE4eXgtYy02eGkySDRTSzFYR093Q3Z3Y1dKOGZad3IzMWwyWVpkcV9FbmhzNldNemFqQWJVVGQzempxVlJaQmVySENaYXJGcmJnUS1QYlZKUFNuRFNHNmUya20zdjlwYlFIeQ?oc=5",
+      "timestamp": 1794528145000,
+      "date": "2026.11.13 09:02",
+      "tags": [
+        "외환",
+        "매크로"
+      ]
+    },
+    {
+      "title": "환율·유가 하락에 10월 수입물가 1.8%↓…수출물량 43.9%↑",
+      "press": "서울경제TV",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9wS1BxQXd4VUx6ci1laEZGWUZWWGVTYUF3T1duNWhZM0xqdUhPYWlTLTdtd0VqdmlnSEdYeExMRUxTQi1NVEhmYUpYUlJmQzZiQUZFUmpjUFcwR21RME1jSkl1NTQ?oc=5",
+      "timestamp": 1794527767000,
+      "date": "2026.11.13 08:56",
+      "tags": [
+        "외환",
+        "매크로",
+        "대체투자"
+      ]
+    },
+    {
+      "title": "(기자의 눈) 가업상속공제, 누구를 위한 기준인가",
+      "press": "전기신문",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE14bm0xZ3QtblA1WkdLdEw0cXZBamRpRzd3SWVUeWJoSWQydEVIamhiQ1dqc3gybURpeEhNNTkwNG1UWU5udk42cExwc29EWjB6c2oxZzFqbUZTVjNWMWdyWDY3aURYbFFoT0paWmRYUzbSAXBBVV95cUxNeG5tMWd0LW5QNVpHS3RMNHF2QWpkaUc3d0llVHliaElkMnRFSGpoYkNXanN4Mm1EaXhITTU5MDRtVFlObnZONnBMcHNvRFowenNqMWcxam1GU1YzVjFnclg2N2lEWGxRaE9KWlpkWFM2?oc=5",
+      "timestamp": 1794527695000,
+      "date": "2026.11.13 08:54",
+      "tags": [
+        "TAX"
+      ]
+    },
+    {
+      "title": "美 연준, 내년 기준금리 결정 8번서 7번으로…10월엔 전략만 논의",
+      "press": "조선일보",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNbi1QS0I1NnF5TXNiY1RFZEo5enRSb0hKX1I1TmxnZEJvSVUxY0RkT3ZXanhqOU9lWXVzQndOU3dxNlBJSElDQ0ZxX0ZUNjBQQXVBb3VLUks2WHhXdHFNU3plTUpTV0RRQ3FsMmJ6RngzRkJPNjhCeWNhYnk0M0JuWUdCdEdGaDNX?oc=5",
+      "timestamp": 1794526847000,
+      "date": "2026.11.13 08:40",
+      "tags": [
+        "매크로"
+      ]
+    },
+    {
+      "title": "환율·유가 하락에 10월 수입물가 1.8% 내림세… 수출물량·교역조건은 역대 최고",
+      "press": "서울뉴스통신",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5ackluMlYtRWwwdVBDek53T0Uwcl9WV0tXeG5yOFRYQnRVSk5TbzhSOURya1dYUVpqOUNSTUtHNUpjbGxKSTRPeHN3M3lSRkwyM2Z3NGcxRENPY1hUdzdGRjZjcVFJQmNUNnow?oc=5",
+      "timestamp": 1794526418000,
+      "date": "2026.11.13 08:33",
+      "tags": [
+        "외환",
+        "매크로",
+        "대체투자"
+      ]
+    },
+    {
+      "title": "환율·유가 하락에 수입물가 1.8%↓…수출물량은 역대 최대 증가",
+      "press": "청년일보",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5zaWlPcHA4UnpxVGo2QmVnR3VqblNCa2NmNXQ0SFZ4QUxpdnI0Mlhxd1htVjlETTlEU2NsN0h6bm5SNTZ6TkFJdFBhVFVwMG9rbGQtZHhDNU42SlhvUG5CeDhlQmFXRE0?oc=5",
+      "timestamp": 1794526112000,
+      "date": "2026.11.13 08:28",
+      "tags": [
+        "외환",
+        "매크로",
+        "대체투자"
+      ]
+    },
+    {
+      "title": "[환율 전망] 미국 빅스텝 우려에 금리 급등, 달러 연일 강세",
+      "press": "KB Think",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE4wdktyb2FNQlhPNGhmVHNEOGRrbTVyeC01TUhldmpfOHVpLXpJT05pLS1BdGl0QzZVQ2R2YmFqYURjak1MdGNTRUlLMF91a041N29SRjZYX3JVM2JqaG9MOQ?oc=5",
+      "timestamp": 1794525062000,
+      "date": "2026.11.13 08:11",
+      "tags": [
+        "외환",
+        "매크로"
+      ]
+    },
+    {
+      "title": "유가 상승이 촉발한 강달러 압박⋯\"1340원 터치 시도\" [환율전망]",
+      "press": "이투데이",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5POThTZTBYQkZtX080S3ZRR3NwLVZfR3lWeWNpMEpVQzdDdzNyWU5RZ0NjdXdYVnA5TGZqYmhoODZYYUNPMEYwUVNpcEpWZFJnNTl3Mw?oc=5",
+      "timestamp": 1794525000000,
+      "date": "2026.11.13 08:10",
+      "tags": [
+        "외환",
+        "대체투자"
+      ]
+    },
+    {
+      "title": "젠슨 황 사임 후폭풍…환율도 1340원대 재진입 시도[외환브리핑]",
+      "press": "이데일리",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNeE5YOWFSZEl1cEV1amNXdzJKMTNaVXV1aWU1N1BqYklpb1V3allEREJvd1lPWVNfR0tuQ3M1WVVsZE0wN3hfMVVrVThlLU9saHI1Smd5ajBLNkZlY1BaVUJLeG5Va3RFOTRmT3Q5bjlGcEIzckZ1d3FOLVh2TnVYSA?oc=5",
+      "timestamp": 1794524987000,
+      "date": "2026.11.13 08:09",
+      "tags": [
+        "외환"
+      ]
+    },
+    {
+      "title": "국제 금값, 미 국채금리 상승에 3거래일 연속 하락⋯2.9%↓",
+      "press": "이투데이",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFB0NjJWcWhyWHE5VnFOemZLdlA1Mlk3RTRWREUyU2JSZkhpS3NVVS1fS3E1SU1mUElRY1hjazVOZ3VNaFFENlhoWlZkOXJxNUcxTEVuXw?oc=5",
+      "timestamp": 1794524640000,
+      "date": "2026.11.13 08:04",
+      "tags": [
+        "대체투자",
+        "매크로"
+      ]
+    },
+    {
+      "title": "10월 수입물가 1.8% 하락 전환...환율·유가 하락 영",
+      "press": "M이코노미뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBvVmtpRVg5SDNLZDVNMlBwZkRIc3NlZllHZmpJalB1bGxnVXRDWWpsTURzNWh0WVAtYkxyVVhvMDZidE1iODBtczNkdl9rRzd1NzZRd1o3UTM1N3lBaGdpQ0RiTEFuSGM?oc=5",
+      "timestamp": 1794524600000,
+      "date": "2026.11.13 08:03",
+      "tags": [
+        "외환",
+        "매크로",
+        "대체투자"
+      ]
+    },
+    {
+      "title": "美 연준, 내년 금리 결정 FOMC는 7회...10월엔 전략 회의만",
+      "press": "오피니언뉴스",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1FdnpNcE1qTzdoZEhJc1MzMzQteV9KWnF2MjNaTW9LWlQxRDkySnktdWJ0SVVZSzFqVFNubUJuV1JnODBzSlpQdzBoX3dZNEoxdTgyZU5kQmkxaUt0dzhkeXNzUlJGNHB3Q3JDVnRwc1Bqdw?oc=5",
+      "timestamp": 1794524467000,
+      "date": "2026.11.13 08:01",
+      "tags": [
+        "매크로"
+      ]
+    },
+    {
+      "title": "금값 3거래일 연속 급락…유가 상승에 인플레 공포 확산",
+      "press": "한국경제",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5jRVF6WkMwb2stVVJmb2VZUHB6RkxTTXk5b2ZNZnM1Ylg3S2xLV2g3NFNjU1kxZ3V4Z1kwMTM0a0JKRHczLVQzY1dWRlZyanVWOE80LTVnS0Q1QQ?oc=5",
+      "timestamp": 1794524397000,
+      "date": "2026.11.13 07:59",
+      "tags": [
+        "대체투자"
+      ]
+    },
+    {
+      "title": "최저 찍은 국제 금값…국내 금시세는?",
+      "press": "이투데이",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBBUVlORVRUR0s1SHdqRGhGcDBneVh0SE1ReEIxRlF0Tk1GNnFUXzN6QTRGdzlpU2tkc0cwWXFmNFdQZ2ZCNnhNeENpTWFyM1JFMWdHUw?oc=5",
+      "timestamp": 1794523860000,
+      "date": "2026.11.13 07:51",
+      "tags": [
+        "대체투자"
+      ]
+    },
+    {
+      "title": "원·달러 환율·국제 유가 하락에…10월 수입물가 1.8%↓",
+      "press": "뉴시스",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5VSHlGQVBrLWl4RzJQTWI1RW00ZzRGWklWbFg3ZlE4cEJ3WWthbU1vRENiUnpUMkJMRFVTaldYWWp3YTMwOVEzTFBldGI4VjJnNHlHX3VTQ3RFTXZBZDRWN9IBeEFVX3lxTE4wM3VHeUF0RjQ0dWhfaU9GR0NBTVR2WjU5Tk9VaW9oQlkxS2xTMHV3T2FYMk5MWWFGaGhfR0hxMnJSLXdkdjFkbE5yOUJlQWItV0xqWUxfdEpqSmlIc2JwcFBSRWpzM1haRDBvNEl4NC1IUXpZRVhoeA?oc=5",
+      "timestamp": 1794523147000,
+      "date": "2026.11.13 07:39",
+      "tags": [
+        "외환",
+        "매크로",
+        "대체투자"
+      ]
+    },
+    {
+      "title": "환율·유가 하락에 10월 수입물가 내림세 전환",
+      "press": "한겨레",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9tSTBtZlJvMjZJd1ZGeG84M1R1WktIZ3RvTlhiZW5XUzdCU0VtbkY3VDVGVFVYdnlycHFHVW15OTZkZkZiOXNZQ2hDOTVNMFpYS19rWHNBcllWZ1hYVF9mRWpIRU85LUkwS1RrbTBPSWp0QQ?oc=5",
+      "timestamp": 1794521640000,
+      "date": "2026.11.13 07:14",
+      "tags": [
+        "외환",
+        "매크로",
+        "대체투자"
+      ]
+    },
+    {
+      "title": "주식 판 외국인, 채권은 왜 넉 달 만에 사들였나",
+      "press": "자본시장뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9HUldQRHd5S1ZES2hwZDJlMVFnOVJ1cmR0dG5IMHJCS1gxeGlzY24tb0M5NlR1UWV3TzFIUGtqbUlta09GSDdWX1NsUEJsTHhWR2N6WWV2QU1HLW0tbFBNdllqYktxR2c?oc=5",
+      "timestamp": 1794520800000,
+      "date": "2026.11.13 07:00",
+      "tags": [
+        "외환"
+      ]
+    },
+    {
+      "title": "[뉴욕증시] 젠슨 황 해임이 촉발한 불확실성…하락 마감",
+      "press": "연합인포맥스",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1qbi1zRzBpYnU4RTdYR2ZwREdWQTEycENXeEJiMFJHMnpSaTMzWk1XekxYM213Y196M0hjYktpYXRaN2dtWkhlellWLTFFbEJZdmVoRU81X2FwekVaeVpXOVZpc0UtYm1WMEhMOThZQlo?oc=5",
+      "timestamp": 1794520387000,
+      "date": "2026.11.13 06:53",
+      "tags": [
+        "매크로"
+      ]
+    },
+    {
+      "title": "국제유가, 이란전쟁 격화 우려 재부각 등 영향 2거래일째 상승-WTI 2%대 올라 88달러대⋯국제금값, 달러강세 등에 3거래일째 하락",
+      "press": "이코노뉴스",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBhUFVCOUxxM1p3ZzRrRDZWbjBHeW9VdDl0S0lCVTdkVFZZa1RSSWNXRHhaOVh4VllIaTQ5OWJJeXVCVFgxWHl3OUxIYkVrb2lBeG12Vlg0Q01jWkxkTmQyZ3RvYVkzSWw0STBxalJvZw?oc=5",
+      "timestamp": 1794520254000,
+      "date": "2026.11.13 06:50",
+      "tags": [
+        "대체투자",
+        "외환"
+      ]
+    },
+    {
+      "title": "[뉴욕 금·채권·달러] 미 국채금리 5.12%·달러 19개월 최고…금값 2.88% 하락",
+      "press": "블록미디어",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBCUzlabTBVbGs5M29OMExjemR5Y1RhSWJIREFmV1NSZDNfNW90SG16cVVuaVRBaXE4N2puNHdaVnNVTUVMRzYwZS1zSy05QUQzQWJ5ZklYbVc?oc=5",
+      "timestamp": 1794520223000,
+      "date": "2026.11.13 06:50",
+      "tags": [
+        "대체투자",
+        "매크로",
+        "외환"
+      ]
+    },
+    {
+      "title": "[글로벌증시] 젠슨 황 퇴진·유가 급등에 뉴욕증시 일제 하락",
+      "press": "연합뉴스TV",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1Nay0yOFo4cG5LVFF0VlYzX2ttdHR4MkJIRS1laWpGUFVzUGhsUW5mWm83MzRpR3R6ZFpEMGx5Y2oyVEpjZ3lvRTlwVk85ZjV4YXJSZDhXTml4azJ1LWE5eE5LZkxTb1E?oc=5",
+      "timestamp": 1794520200000,
+      "date": "2026.11.13 06:50",
+      "tags": [
+        "매크로",
+        "대체투자"
+      ]
+    },
+    {
+      "title": "외국인 주식자금 26조원 이탈했는데 원화는 강세…한국 금융시장 '엇갈린 신호'",
+      "press": "지이코노미",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5xRW9RYkc4ejlxNERfMHhZaWZYU2tQS2F4bS1TUmwza1NqTDNlX0M0SFV4VHZHTW11Q216UUFNOFFuWmZfZlFGRWVSZ3RNLUJobEZrczN4d1NQZ1NXU0xjQ3F3TGw?oc=5",
+      "timestamp": 1794518908000,
+      "date": "2026.11.13 06:28",
+      "tags": [
+        "외환"
+      ]
+    },
+    {
+      "title": "[뉴욕증시-1보] 젠슨 황 해임이 촉발한 불확실성…하락 마감",
+      "press": "연합인포맥스",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1tUEE2WGFuWHFRWnp1UVBnV3pKemt2bkVFcjFqYTJEZTdjNFJtbE9JVmtFOUhiVXQ1ajd5YVk4bzRfclNVTWU5REcyaVJybUY0RjJUdFZLeGFwZ256Z2NZcDhSTU5xVnJ2eWhJSGJIU0TSAXRBVV95cUxPSFZZQ0k4OEJmTkZ0WjFWTWgzX1lta2ljcFowVFBqdzl1QzJSeldFQ0FkVUp3Y3dtUXo0ZDZrbjRISWlVeFVhR1FoWlBITTB6WDljaVU4ZjBwcFNOR0c4a2VqdFBXaGVJekZvRE9Zd3dEZGlwWg?oc=5",
+      "timestamp": 1794518350000,
+      "date": "2026.11.13 06:19",
+      "tags": [
+        "매크로"
+      ]
+    },
+    {
+      "title": "젠슨 황 퇴진·유가 급등에 뉴욕증시 하락…나스닥 0.4%↓",
+      "press": "KBS 뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFB6SUZEdndqQ3ctU0VfTnIyMEVmY3lSZXZoa3VVYS1tVGJGelVyZTNYUENpdjQxZGhPLXIwUHlvQlRTN1BlSjc1VUlSa21XWmRlcWxsOG92QWxRSk0?oc=5",
+      "timestamp": 1794517860000,
+      "date": "2026.11.13 06:11",
+      "tags": [
+        "매크로",
+        "대체투자"
+      ]
+    },
+    {
+      "title": "10월 수출물가, 환율 하락에도 석 달 만에 ↑…'반도체의 힘'",
+      "press": "데일리안",
+      "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxQZGlJczlCRHRJUGoyaU9vdUJZVzZFNjdCejlDbHN1ZlN2Rms1bzY4ZnE5enRUMk85SWFjbFlMZnplQjNuMDVGRkw3eUtQa2VaT3U1WnhHcUpPTVFLNnR6Sk5uUkpCaVFiQ29GdGhHWnAyM3IyVzZXazlTQWF0N3R3M0RFOW5FN1dITThUaTF5bFhRMzIxSTlvbU5LUXpDUFpoaHNEYTB1SWZYR0M3TWpfQ0dIR3NOWm5SRUZISWl3R0hJMlZDQXdFS1pRRGNsUjBDV3VzZjNCeVg4clZOV1drbGF4b3BuMTB0bTMyMXJnZnNEemJlV1pQMlo3N1pkTU5FUnVZ?oc=5",
+      "timestamp": 1794517500000,
+      "date": "2026.11.13 06:05",
+      "tags": [
+        "외환",
+        "매크로"
+      ]
+    },
+    {
+      "title": "환율·유가 동반 하락에 10월 수입물가 1.8%↓",
+      "press": "연합뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5teDF1QUllZmNvbzhBRlA1dDNmSWVyS2piS1hETGl0T0Nua1RxSnphZ3ZwcmhXdFNhM0czWWZhZVdseUFHQkV0UVhxS0wxOTBCY2pxQjVlaEpUeWfSAWBBVV95cUxNTXFid0JBWkJ3SXZzVm5nS0NaN0dKZVFURVNBWkVhTUtBQUFiNFF5MjR4QWxHblZsOFBLVHlnblJ5Rk5ScDFOVm90dUpyd080dXlYQmFveGxKUUliQmdlWFA?oc=5",
+      "timestamp": 1794517203000,
+      "date": "2026.11.13 06:00",
+      "tags": [
+        "외환",
+        "매크로",
+        "대체투자"
+      ]
+    },
+    {
+      "title": "환율·유가 내리자 수입물가 한 달만 하락...10월 1.8%↓[Pick코노미]",
+      "press": "서울경제",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1HeUZndHRVbGh3NXdrbzFva3hQLUxQeVNWRnJ3U1ByUGF5eUdXSERtZEt0dmtsSjVORmZKb3lHQTNRN20wSGtKRkVuUmpFMjJzclHSAVNBVV95cUxNNmlNalVoWUVFZVJZa1pHMGZCaHZyU0VQWXI2NWlDR1ZWeFNhTHRvZ2JBdnpUMEpXTWE3UEZMWFNsaFR2c1RzOXZNWnN3Ti04bXNUWQ?oc=5",
+      "timestamp": 1794517200000,
+      "date": "2026.11.13 06:00",
+      "tags": [
+        "외환",
+        "매크로",
+        "대체투자"
+      ]
+    },
+    {
+      "title": "환율·유가 떨어지니…10월 수입물가 한달 만에 하락",
+      "press": "헤럴드경제",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9Pa1R1MUE2UHoxYWdMZUlPVkJxbmctOEI4VGVnNl9IMDZsNDJwTUJvdk9lYV9heDZ2NEtreGRtVmNVeEhYRExrSEJqQmtfWE8zeTlaeEZB?oc=5",
+      "timestamp": 1794517200000,
+      "date": "2026.11.13 06:00",
+      "tags": [
+        "외환",
+        "매크로",
+        "대체투자"
+      ]
+    },
+    {
+      "title": "[금/유가] 중동 평화기대 후퇴하며 유가 2% 급등…금값 3% 급락",
+      "press": "뉴스핌",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1IWktMY01LTDFkSUQ0MUQ4bUdoQXRpMC1NcnRjbWVqdGt6UzY3NXFpNnBpQkF5dDZaU1NXZV9rcnlWd1NMV054aTVYbW5KOGJTWWVONnBSc1U0V1Z0?oc=5",
+      "timestamp": 1794516480000,
+      "date": "2026.11.13 05:48",
+      "tags": [
+        "대체투자"
+      ]
+    },
+    {
+      "title": "연준, 내년 '금리 결정' FOMC 7차례 개최…10월엔 통화정책 전략만 |",
+      "press": "연합인포맥스",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBLb2hCUXZERFJUOGdTYkN6a1BycF8xVmxaS3VKVk9OTHBhNDVXdTF6QXlDaWdDdjhpX2dwMzVWV3Y5NWlDVHF6a1dmc3g5RkpLYV9KNER5YTA3Mmd4bHFYOVFIMFN2UUd4WnFoOEd4WXlhWXBw?oc=5",
+      "timestamp": 1794515975000,
+      "date": "2026.11.13 05:39",
+      "tags": [
+        "매크로"
+      ]
+    },
+    {
+      "title": "美연준, 내년 '금리 결정' FOMC는 7번만…10월엔 전략 논의 집중",
+      "press": "연합뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5VSEFvcTlyZHlUeGZiQUR6SmdlTk1JZFpxSE1tdWsyY2kweldQM181WkZoWWN5NlpzYTlJZkJ6aWRNVEpJN2lkT09lSTAxNFlncE1STHNZd0duZ3fSAWBBVV95cUxQUGhyTWtLMVM5Z2p5TS1RaWdMRVF6UXR4NVpsbk5EakxiRU9zNkFqcGhuaDhQZGN0UUw2WDhxVDNLWHA1Tlh1Sl8tUkM3MWk3UFF0NEdhNjFvWTVkRDZ2MEc?oc=5",
+      "timestamp": 1794515824000,
+      "date": "2026.11.13 05:37",
+      "tags": [
+        "매크로"
+      ]
+    },
+    {
+      "title": "국제 금값, 온스당 3901.79달러(약 521만원)에 거래됐다",
+      "press": "토큰포스트",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5yVV9VcnR1T3hHYW8wcWF4UXVNVjhUU2Z2UnhiVmgxX1I2QU9xX1BkN05sUUx4WWlrbVlwZmhEeUU1WFEtSEd4QVVrNTBmOGFBQ2NaZEstM1TSAV5BVV95cUxOTG9pRmQxdDM4aFB2RW1PRHNvX04xSF82eFZjXzJnbTRVcE0yS2NUNWlzVjRDdkRMLUtKX1F1UlJuX0tFWVd3d2Q0Nk5VQWVLNDVaVFVqTWpaMENsZVN3?oc=5",
+      "timestamp": 1794500564000,
+      "date": "2026.11.13 01:22",
+      "tags": [
+        "대체투자",
+        "외환"
+      ]
+    },
+    {
+      "title": "국제금값, 3950달러 밑으로…1주일여 만에 최저",
+      "press": "글로벌이코노믹",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOMlE1eTRIMjJldUZTS3FGYmNFRzhZdnVoMEtlZTRMQ1UzeUFwOUpBbWVtYzdudVVlNkVtcmdDbndGRGpNSGZWdjVDSHBubEpvSGZSSmtGSnlVQzlPTVlmbTdoMExSWVh1OEFvSEFTaEtTQjQtOURMSTBEVVVoaTU1UXRiM21CSzQ?oc=5",
+      "timestamp": 1794499200000,
+      "date": "2026.11.13 01:00",
+      "tags": [
+        "대체투자",
+        "외환"
+      ]
+    },
+    {
+      "title": "[환율마감] 장중 1,327.7원까지 내려… 위험선호 심리 속 외국인 3천400억 순매수",
+      "press": "CBC뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9KX0RjREE2ek03Sll1S3JiNUphdDR0WFJmSnl0eUNsNFFBeUI5UTNGWE1vb0hzS1luRXRtTWZONV9wOFJmU0E0UTE3REZwUXNMT2FKcG00eEJ6YnloWG44M3FSN19Db2NW?oc=5",
+      "timestamp": 1794495900000,
+      "date": "2026.11.13 00:05",
+      "tags": [
+        "외환"
+      ]
+    },
+    {
+      "title": "오늘의 금값시세(11월 13일자) 금값 \"올해말 전망\"",
+      "press": "국제뉴스",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9oS2ZkenJGYUJPeU5KSGRUYzFnZVdIM0JxRzlWdElvN1YwUm1HR041QXNNRjRhWjgzTjlQN25nT2Z4czB6aTRmSEcwUkJSQ1lMakt1QzU3a2Vfa1hsYkNTal9GQ3VmYzk3UVZscjNB?oc=5",
+      "timestamp": 1794495780000,
+      "date": "2026.11.13 00:03",
+      "tags": [
+        "대체투자"
+      ]
+    },
+    {
+      "title": "달러-원, 뉴욕장서 1,330원 초반대 거래 |",
+      "press": "연합인포맥스",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5iRzR6V3dDaGRDZ2VHSDNBS0x3QnduSGZGRnRwa2E3c3dhNWtqUmhkS2JGYW5oUm8tT1Z2Wk5ZRlFuSFVUMzBJN3hfelpCVTJXTWRGRWczZFBVOUwyU1Z2VXp1c0FfQldKajhiakRDOFU4OWpU?oc=5",
+      "timestamp": 1794493803000,
+      "date": "2026.11.12 23:30",
+      "tags": [
+        "외환"
+      ]
+    },
+    {
+      "title": "역대급 수출 호조에도 달러 강세…원·달러 환율 향방 주목",
+      "press": "뉴스비전e",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE53U3lYc2V0U2J6UUc0VWtYZldzSzZBMm15U25nWnRLblhsd1hhSnREUmxpSVNDcGg1dlRXM0dUX18yUGd6UG9HT2RpZmhWcEoxX0VQVFhCdlVfRVVHV05lOWZ1LXUwQQ?oc=5",
+      "timestamp": 1794492148000,
+      "date": "2026.11.12 23:02",
+      "tags": [
+        "외환"
+      ]
+    },
+    {
+      "title": "국민은행, 유언대용신탁 1조원 시대…대중형 자산관리로 확대",
+      "press": "뉴스저널리즘",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5xM09DTnExQkE1V2RMTVBZRW56NlhQZHNwQVJlLXh5a0drakFOaVFHQzdlVVd1OXhzUDNJeEJvY1NUVjBPYlRLbk9HTmg4c2xvaTByWnJaUXA3T2k4Tm9kWmx4UEtYZzkzYXln?oc=5",
+      "timestamp": 1794475362000,
+      "date": "2026.11.12 18:22",
+      "tags": [
+        "TAX"
+      ]
+    },
+    {
+      "title": "[더밸류 브리핑] 오늘의 NH투자증권 소식...패밀리오피스 세미나·희망나무 장학금",
+      "press": "더밸류뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5TUTdUcS12MWZjWTZYTEJ6YnpodGJSTlhvcXI5MG1NTEJkcXJCRGtCNkZmdFNDckhMRjRPOHJJSmJJOWtObkxWNHc0VDVRTmZVdzMxag?oc=5",
+      "timestamp": 1794467756000,
+      "date": "2026.11.12 16:15",
+      "tags": [
+        "TAX",
+        "부동산"
+      ]
+    },
+    {
+      "title": "與 이훈기 의원 “주가 낮출수록 상속세 줄어…상증세법 개정 정부안 폐기해야”",
+      "press": "문화일보",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBDZmpZRFoxX0JEc1JOOG1MZ0lJOG9EbWNWRFZZaDdvUW1SYWdWeS1MZ0RrNXJoemJaR1FEM1dfTmg4MEFtbGNkbDRaWVhxdkNH?oc=5",
+      "timestamp": 1794465524000,
+      "date": "2026.11.12 15:38",
+      "tags": [
+        "TAX"
+      ]
+    },
+    {
+      "title": "NH투자증권, 패밀리오피스 고객 초청…2027년 투자·절세 전략 공유",
+      "press": "투데이e코노믹",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9fcTlOWFRQSFVJQ0NHRXdJRFhqOTRYcXZabWdEVWZrZkpBYk1mVWZUYUdxRUJIeGhsaDd3VVRnVmxuTUhUZ0VWaGdQcTNqUVMyNjlsNnRNZlI1VVEyNER4aXN4OUFKazA?oc=5",
+      "timestamp": 1794463146000,
+      "date": "2026.11.12 14:59",
+      "tags": [
+        "TAX",
+        "부동산"
+      ]
+    },
+    {
+      "title": "NH투자증권, ‘Exclusive Family Office Seminar’ 개최",
+      "press": "PRESS9",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBPcDkwUkItLTBVS1lXZVFyazRueXh4bmxubDZCSmljdjY3V0ZucEtYSzE2Vm04aTRKQ1BzWEJ1VGt3VVZTX0VCdnc3TUswZ3gxMmVzX0RYQUM1dnk5TDlrRHJ2eWs?oc=5",
+      "timestamp": 1794458471000,
+      "date": "2026.11.12 13:41",
+      "tags": [
+        "TAX"
+      ]
+    },
+    {
+      "title": "NH투자증권, 패밀리오피스 세미나 개최…300억 이상 고객 초청",
+      "press": "이데일리",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOWnk3U21wUXVaRGFWZUkycWNPVkgyWTE4M2JvYks3V2Rqb1IzRGtabE9CbThwX05mckhUblE0c1A1RDJLU0NQZ2dvNElpV2d6YThtQk8za1VyN202a2U4M014ZUU2MTlRVHlTZ1R4Z3R3LUp6a1oxQjQ4c1cwM2NIdQ?oc=5",
+      "timestamp": 1794458448000,
+      "date": "2026.11.12 13:40",
+      "tags": [
+        "TAX",
+        "부동산"
+      ]
+    },
+    {
+      "title": "NH투자증권, '300억 자산가 초청' 패밀리오피스 세미나",
+      "press": "아시아타임즈",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1TMHdoUV9pc20tV3RZSGdiTTNNTnBqQTY3cEZVcGdGQm9TazZvSmtQTkp4NUpQRjJqbkZ5ajRTT2hHWDNNV245RVJVOWkzNTVBSWp0S2RjQTdXLW9XUFE?oc=5",
+      "timestamp": 1794457860000,
+      "date": "2026.11.12 13:31",
+      "tags": [
+        "TAX",
+        "부동산"
+      ]
+    },
+    {
+      "title": "NH투자증권, 패밀리오피스 고객 대상 ‘2027년 글로벌 자산시장 전망’ 세미나",
+      "press": "ER 이코노믹리뷰",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1fVlhFdjIyWVRGM2ZBX3k5SDlkMmtNaTNhOFV4NnBxLVdwbURxOGtGQmFDRUl6eDJxU0Q0RVhadFljVFhIUmNnZXMyR2NtVC1KZDdyQ1BjZU52SlhJeXNhOWRjWkIwa2d4Q2ZyXw?oc=5",
+      "timestamp": 1794457128000,
+      "date": "2026.11.12 13:18",
+      "tags": [
+        "TAX",
+        "부동산"
+      ]
+    },
+    {
+      "title": "부모님께 받은 1,000만 원, 증여세 내야 할까? - 영상 | 멀티미디어",
+      "press": "대한민국 정책브리핑",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQYm5YajZCVXJ2eGNDM09scDNsd0t3VU5RRTVpRk5qRHBOQWpXVFBveDd4cVlOOGstOXBzaVFDNVF2QlZIU1FtaDAzVk9uRE5Hbkp2SXVfWm5PMGhlSzdGY2htRUlybHJSVXhXV2FZWFMwQUhJSDdBSzF5YVdxOG92QVJJaHlCY2hEUVhLQQ?oc=5",
+      "timestamp": 1794453865000,
+      "date": "2026.11.12 12:24",
+      "tags": [
+        "TAX"
+      ]
+    },
+    {
+      "title": "NH투자證, 자산 300억 이상 패밀리오피스 세미나",
+      "press": "경제타임스",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE83aUZoTW9fZXJlVFVlZ3dKeEJLWkdrWXlPUnk3azVUSVBGN1ducWdTcXFYQVE4cTc2TkxRWGV2RWstWERzdUZfb0xyS0d0Y2xocFk0?oc=5",
+      "timestamp": 1794452731000,
+      "date": "2026.11.12 12:05",
+      "tags": [
+        "TAX",
+        "부동산"
+      ]
+    },
+    {
+      "title": "NH투자증권, 패밀리오피스 고객 대상 프라이빗 세미나 개최",
+      "press": "파이낸셜투데이",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1xZmdESXZxbXVYZmItcWY5WGo3X3pfY05CdmtwbmktWDFxLUlhZXJKYmdVY2Q3OEUxMVBrWkpoNUNXNzJVQ1dFRkNCTlB4Y0lTSW1qeU5uZjBVOHk5UWpFelBuaWh1VjBHNEHSAW5BVV95cUxNWHJ3M0g5UWF4cFVSQ2lfOHpBMTMxZHlMSHdlRlFqelh5WmFUV1RWRkxBN2JqTkFCejBDdnF2NGpfYkc3Tmg3Vm1VcV8wMjN0VWFKTVJGZHZ0dGVVZHlUZndlaExCX3M3VEdkeVczUQ?oc=5",
+      "timestamp": 1794451752000,
+      "date": "2026.11.12 11:49",
+      "tags": [
+        "TAX",
+        "부동산"
+      ]
+    },
+    {
+      "title": "NH투자증권, 패밀리오피스고객 대상 프라이빗세미나 진행",
+      "press": "인더뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9ZWVZ2WWNEZVVER19xdTBvTUE5RTc4X1ZXbTY5Y1pNM3BEN012RE5fRmVaRUExR3daS0poNzhlUWgwalFaY1BfNVhDcjNyOE81dXY0MnBYb0FhN2YwX3E2OEdGbHQ?oc=5",
+      "timestamp": 1794451613000,
+      "date": "2026.11.12 11:46",
+      "tags": [
+        "TAX",
+        "부동산"
+      ]
+    },
+    {
+      "title": "NH투자증권, 자산 300억원 이상 고객 대상 프라이빗 세미나 - 머니투데이",
+      "press": "머니투데이",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBWRXktMU1qWHV4NHc3QkMtUHBuRVlyZEl0ZTQ3RmowQTBrWTFfUjNYTFYxNTcyclAxd1ZnTElYSEQzYmIwSGRWUXQweFpKQmhZTHlnNktiOUN3R0hIT0trU2NhYVRHdWE3dzJPcHE4Ul9CekEzdGfSAXtBVV95cUxOU3MxTUpEZGZmdDJFV1lENUV3RGFnUldhMGNaSHlOTDVtOExncUd3b2hsRGdEcmlWdVpCRkJXcFBiNUkxcFVoRmpVUndSazUwbE9hV0g4dTBQTVJ0b0pNcnNKaDAwekdJUDlYUWpwb21nbVNpaUJxUW1ENnM?oc=5",
+      "timestamp": 1794450995000,
+      "date": "2026.11.12 11:36",
+      "tags": [
+        "TAX"
+      ]
+    },
+    {
+      "title": "이훈기 \"주가 낮출수록 상속세 뚝\"…420억 vs 3360억",
+      "press": "국제뉴스",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9QS09tLXY0WHdPWlNkeXRYT1EzTnhSWTNhb2Nfd2FGSGlnMTc2UjVJZExyWXlmX01ZdnB6ZmxoLW5Yc0JHTjFiTFhJa28zbDEtQU12OVZXTWc0eTljVmp5MW9OYk50SkdTVXpHNW53?oc=5",
+      "timestamp": 1794450725000,
+      "date": "2026.11.12 11:32",
+      "tags": [
+        "TAX"
+      ]
+    },
+    {
+      "title": "부모님께 받은 1000만원, 증여세 내야 할까…엄마·아빠 합산하면 달라지는 세금",
+      "press": "CBC뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9henlUZFNsYnhiVU1LMFZ5VjQ5djRZbDI3N2tQMjRyZGJZMV9id3BTTWlqbEdqcGtLMFpMS0JzM3FHdWJCYjFqcTF6U2w1QmVfblVmZS1xWk1UOXlOSnRyd2hrRFdCMG5p?oc=5",
+      "timestamp": 1794450713000,
+      "date": "2026.11.12 11:31",
+      "tags": [
+        "TAX"
+      ]
+    },
+    {
+      "title": "온누리국제법인, UAE·파나마 상속·증여세 절세 전략 설명회 개최",
+      "press": "파이낸셜리뷰",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5Rc1FmQjVPUGpiNHh0MEViOG5PMzUxMmdJaTl3VlZUMW1oQldxOUZ5TDAwdHotVDZtUVQwbm9tYWFaVHpCWFZmT0xNTVhxc0NydTZGZHY2NlVDeVd2cHVRZmNhVDFrMWhIMDJjaGFVRU56blRQ?oc=5",
+      "timestamp": 1794450140000,
+      "date": "2026.11.12 11:22",
+      "tags": [
+        "TAX"
+      ]
+    },
+    {
+      "title": "\"VVIP 모셔라\" NH증권, 300억 자산가 대상 패밀리오피스 세미나",
+      "press": "뉴시스",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE12Rm1LU2prUEwtMWlRM0pQVG1HX1dxUXY1MWtqcE9nMW1rQ1FKUUJkVlcwbjBtWFdfcmpJZS0xOUZXN2JKSGo2WlpFemMxQVBuaTItQzg1cGt1SmxrWFBTYlE4MHZJa2VBQmhnMDFQMnlXYWJKU3FpTtIBeEFVX3lxTE12Rm1LU2prUEwtMWlRM0pQVG1HX1dxUXY1MWtqcE9nMW1rQ1FKUUJkVlcwbjBtWFdfcmpJZS0xOUZXN2JKSGo2WlpFemMxQVBuaTItQzg1cGt1SmxrWFBTYlE4MHZJa2VBQmhnMDFQMnlXYWJKU3FpTg?oc=5",
+      "timestamp": 1794448930000,
+      "date": "2026.11.12 11:02",
+      "tags": [
+        "TAX",
+        "부동산"
+      ]
+    },
+    {
+      "title": "NH투자증권, 초고액 자산가 대상 패밀리오피스 세미나 개최",
+      "press": "포춘코리아",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFAtb0d5NFh2cmVZYVBjTS1HS05IMjZuemlheUlEZ3Z4Y3R0STh3a0lseVU0VTRvWFpydmdyQjFEdWNPNVhCYWxGSlBHMGY0RGZ2WmJEcG0zOUJqSkR5QzdoaUd4SlpldVpfaDZaQVdKcndFZw?oc=5",
+      "timestamp": 1794447341000,
+      "date": "2026.11.12 10:35",
+      "tags": [
+        "TAX",
+        "부동산"
+      ]
+    },
+    {
+      "title": "NH투자증권, 패밀리오피스 세미나…내년 전망·절세 전략 공유",
+      "press": "우먼타임스",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFByOG1YT3MzY0ZNdFhJYUpNWU9aRjFteUJDOFZ6QnJHMWVlZHpNNFFBY2lhTnZZT2xKRGJ2dlNOOWxkcHpDa2pkLUNtMk51WWhXdDFXUE9hVDA4bU9RZlBuX1lGU2VmWEszVlpsSm9rVmTSAXRBVV95cUxQc3ZFLXZVak0ySHpYaU5DWi1iN1JrWW1MLTRPZW12U0ZoYUVtY0pxRG9GRVVNUzNTQlAxM0JyTUFBVDg0VDV4SVc1OXRubnlsZ2RfTGxPWFlXM3FiNnhJWWo0UFZWRDNfblE0SlVDUllxd1hIRA?oc=5",
+      "timestamp": 1794446835000,
+      "date": "2026.11.12 10:27",
+      "tags": [
+        "TAX",
+        "부동산"
+      ]
+    },
+    {
+      "title": "NH투자증권, 예탁자산 300억원 이상 고객 대상 '패밀리오피스 세미나' 개최",
+      "press": "한국경제",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBQVFVhcUZmZUwtMWNvMjNsLVZKT3hXdDZOTklaMjNxVzRWRThDOU5qOXgyVS1wTW45a0RuVVZQS2otcUxUaThmdTUxZE5CUjBOUU54c09ndzBDdw?oc=5",
+      "timestamp": 1794445926000,
+      "date": "2026.11.12 10:12",
+      "tags": [
+        "TAX",
+        "부동산"
+      ]
+    },
+    {
+      "title": "NH투자증권, 예탁자산 300억 원 이상 패밀리오피스 고객 대상 프라이빗 세미나 개최",
+      "press": "펜앤마이크",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE05UEozcFlUNEtxTk12MFFFMHJ4LWRzTXMzZ052QWF2Ql9haGQ3WTN5YXEyM2psSlFPajNSQmFlalU3eDV2cENIQ195c2tFMHZtSjR1ZGlfWE5BVXNiQ0J1dWcyQ05BdXZrbGFV0gFvQVVfeXFMTlVnWl8waC11NTc0RHFQZjducG82RGpKVkJuYjVTOEYxN24xeWdJalJlVmU0bGJ0cW9Dak9ZdWNDOHp0QVZJTV9tbVR3LWpQTXZuNl9MZkpCZkVVQklNTERHUHlCU3BkMEJfelBVaXFj?oc=5",
+      "timestamp": 1794445645000,
+      "date": "2026.11.12 10:07",
+      "tags": [
+        "TAX",
+        "부동산"
+      ]
+    }
+  ]
 }

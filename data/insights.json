@@ -1,15 +1,165 @@
 {
-  "updatedAt": null,
+  "updatedAt": "2026-11-14T13:00:06.330Z",
   "items": [
-    { "stars": "★★★★★", "category": "국내 부자보고서", "title": "2025 한국 부자 보고서 (Korea Wealth Report — 15주년 특집)", "desc": "금융자산 10억 원 이상 한국 부자의 자산 구조, 부동산·금융 비중, 부의 원천 및 차세대 승계 방식 심층 분석", "org": "KB금융지주 경영연구소", "date": "연례 핵심백서", "btnText": "📥 PDF 다운로드", "url": "https://files-scs.pstatic.net/2025/12/23/FhQP9SHDXS/2025%20%ED%95%9C%EA%B5%AD%20%EB%B6%80%EC%9E%90%20%EB%B3%B4%EA%B3%A0%EC%84%9C.pdf" },
-    { "stars": "★★★★★", "category": "국내 부자보고서", "title": "대한민국 웰스 리포트 (Korean Wealth Report — 초고액자산가 & 영리치)", "desc": "초고액자산가(UHNW) 가문의 패밀리오피스 활용 트렌드, 영리치·올드리치 포트폴리오 비교 및 가업승계 수요", "org": "하나금융연구소", "date": "하나금융 공식발간", "btnText": "🔗 공식 리포트", "url": "https://www.hanaif.re.kr/boardDetail.do?hmpeSeqNo=36521" },
-    { "stars": "★★★★★", "category": "글로벌 F/O 백서", "title": "UBS Global Family Office Report (글로벌 패밀리오피스 리포트)", "desc": "전 세계 320개 싱글 패밀리오피스(평균 자산 26억 달러)의 전략적 자산배분(사모·채권·부동산), 가문 거버넌스 및 승계 표준 백서", "org": "UBS Global Wealth", "date": "글로벌 표준백서", "btnText": "📥 PDF 다운로드", "url": "https://advisors.ubs.com/mediahandler/media/808993/global-family-office-report-en-2026-single.pdf" },
-    { "stars": "★★★★★", "category": "글로벌 F/O 백서", "title": "J.P. Morgan Global Family Office Report (글로벌 패밀리오피스 서베이)", "desc": "글로벌 190여 개 패밀리오피스의 대체투자(PE·사모크레딧·인프라) 비중, AI 투자 테마, 사이버보안 및 운영 비용 벤치마크", "org": "J.P. Morgan Private Bank", "date": "글로벌 IB 백서", "btnText": "🔗 원문 리포트", "url": "https://privatebank.jpmorgan.com/nam/en/services/family-office/global-family-office-report" },
-    { "stars": "★★★★★", "category": "글로벌 F/O 백서", "title": "Goldman Sachs Family Office Investment Insights Report (Eyes on the Horizon)", "desc": "기관급 패밀리오피스 CIO들의 글로벌 매크로 전망, 다이렉트 딜(Direct Investing), 사모 시장 및 현금성 자산 운용 전략", "org": "Goldman Sachs", "date": "글로벌 CIO 서베이", "btnText": "🔗 원문 리포트", "url": "https://www.goldmansachs.com/insights/articles/family-office-investment-insights-report" },
-    { "stars": "★★★★☆", "category": "글로벌 F/O 백서", "title": "Citi Private Bank Global Family Office Survey Insights", "desc": "아시아·북미·유럽 패밀리오피스 리더들의 금리 사이클 대응, 포트폴리오 리밸런싱 및 패밀리 거버넌스 조사", "org": "Citi Private Bank", "date": "글로벌 서베이", "btnText": "🔗 원문 자료실", "url": "https://www.privatebank.citibank.com/insights/family-office-survey" },
-    { "stars": "★★★★☆", "category": "글로벌 F/O 백서", "title": "Knight Frank — The Wealth Report (글로벌 초고액자산가 & 프라임 부동산 백서)", "desc": "전 세계 UHNW(순자산 3,000만 달러 이상) 인구 이동, 글로벌 프라임 상업용·주거용 부동산 및 럭셔리 실물자산 투자 지표", "org": "Knight Frank Research", "date": "글로벌 부동산·웰스", "btnText": "🔗 원문 자료실", "url": "https://www.knightfrank.com/wealthreport" },
-    { "stars": "★★★★☆", "category": "글로벌 F/O 백서", "title": "Capgemini World Wealth Report (세계 부자 보고서)", "desc": "글로벌 고액자산가(HNWI) 자산 규모 추이, 자산관리(WM) 디지털 플랫폼 혁신 및 차세대 자산 이전(Great Wealth Transfer) 분석", "org": "Capgemini Research", "date": "글로벌 WM 백서", "btnText": "🔗 원문 자료실", "url": "https://www.capgemini.com/insights/research-library/world-wealth-report/" },
-    { "stars": "★★★★★", "category": "가업승계·세무·신탁", "title": "PwC Global Family Office Deals Study & Tax Succession Guide", "desc": "글로벌 가문 오너십 기업의 M&A, 지주사 전환, 가업승계 조세 전략 및 패밀리 거버넌스 구조화 가이드", "org": "PwC Global / 삼일PwC", "date": "딜·세무·승계 백서", "btnText": "🔗 원문 자료실", "url": "https://www.pwc.com/gx/en/services/family-business/family-office.html" },
-    { "stars": "★★★★☆", "category": "가업승계·세무·신탁", "title": "Deloitte Family Office Insights Series — Defining the Family Office Landscape", "desc": "싱글·멀티 패밀리오피스 설립 로드맵, 가문 헌장(Family Constitution), 리스크 관리 및 차세대 후계자 교육 프레임워크", "org": "Deloitte Private", "date": "F/O 운영 가이드", "btnText": "🔗 원문 자료실", "url": "https://www2.deloitte.com/global/en/pages/deloitte-private/articles/family-office-insights-series.html" }
+    {
+      "stars": "★★★★★",
+      "category": "국내 부자보고서",
+      "title": "2025 한국 부자 보고서 (Korea Wealth Report — 15주년 특집)",
+      "desc": "금융자산 10억 원 이상 한국 부자의 자산 구조, 부동산·금융 비중, 부의 원천 및 차세대 승계 방식 심층 분석",
+      "org": "KB금융지주 경영연구소",
+      "date": "연례 핵심백서",
+      "btnText": "📥 PDF 다운로드",
+      "url": "https://files-scs.pstatic.net/2025/12/23/FhQP9SHDXS/2025%20%ED%95%9C%EA%B5%AD%20%EB%B6%80%EC%9E%90%20%EB%B3%B4%EA%B3%A0%EC%84%9C.pdf"
+    },
+    {
+      "stars": "★★★★★",
+      "category": "국내 부자보고서",
+      "title": "대한민국 웰스 리포트 (Korean Wealth Report — 초고액자산가 & 영리치)",
+      "desc": "초고액자산가(UHNW) 가문의 패밀리오피스 활용 트렌드, 영리치·올드리치 포트폴리오 비교 및 가업승계 수요",
+      "org": "하나금융연구소",
+      "date": "하나금융 공식발간",
+      "btnText": "🔗 공식 리포트",
+      "url": "https://www.hanaif.re.kr/boardDetail.do?hmpeSeqNo=36521"
+    },
+    {
+      "stars": "★★★★★",
+      "category": "글로벌 F/O 백서",
+      "title": "UBS Global Family Office Report (글로벌 패밀리오피스 리포트)",
+      "desc": "전 세계 320개 싱글 패밀리오피스(평균 자산 26억 달러)의 전략적 자산배분(사모·채권·부동산), 가문 거버넌스 및 승계 표준 백서",
+      "org": "UBS Global Wealth",
+      "date": "글로벌 표준백서",
+      "btnText": "📥 PDF 다운로드",
+      "url": "https://advisors.ubs.com/mediahandler/media/808993/global-family-office-report-en-2026-single.pdf"
+    },
+    {
+      "stars": "★★★★★",
+      "category": "글로벌 F/O 백서",
+      "title": "J.P. Morgan Global Family Office Report (글로벌 패밀리오피스 서베이)",
+      "desc": "글로벌 190여 개 패밀리오피스의 대체투자(PE·사모크레딧·인프라) 비중, AI 투자 테마, 사이버보안 및 운영 비용 벤치마크",
+      "org": "J.P. Morgan Private Bank",
+      "date": "글로벌 IB 백서",
+      "btnText": "🔗 원문 리포트",
+      "url": "https://privatebank.jpmorgan.com/nam/en/services/family-office/global-family-office-report"
+    },
+    {
+      "stars": "★★★★★",
+      "category": "글로벌 F/O 백서",
+      "title": "Goldman Sachs Family Office Investment Insights Report (Eyes on the Horizon)",
+      "desc": "기관급 패밀리오피스 CIO들의 글로벌 매크로 전망, 다이렉트 딜(Direct Investing), 사모 시장 및 현금성 자산 운용 전략",
+      "org": "Goldman Sachs",
+      "date": "글로벌 CIO 서베이",
+      "btnText": "🔗 원문 리포트",
+      "url": "https://www.goldmansachs.com/insights/articles/family-office-investment-insights-report"
+    },
+    {
+      "stars": "★★★★☆",
+      "category": "글로벌 F/O 백서",
+      "title": "Citi Private Bank Global Family Office Survey Insights",
+      "desc": "아시아·북미·유럽 패밀리오피스 리더들의 금리 사이클 대응, 포트폴리오 리밸런싱 및 패밀리 거버넌스 조사",
+      "org": "Citi Private Bank",
+      "date": "글로벌 서베이",
+      "btnText": "🔗 원문 자료실",
+      "url": "https://www.privatebank.citibank.com/insights/family-office-survey"
+    },
+    {
+      "stars": "★★★★☆",
+      "category": "글로벌 F/O 백서",
+      "title": "Knight Frank — The Wealth Report (글로벌 초고액자산가 & 프라임 부동산 백서)",
+      "desc": "전 세계 UHNW(순자산 3,000만 달러 이상) 인구 이동, 글로벌 프라임 상업용·주거용 부동산 및 럭셔리 실물자산 투자 지표",
+      "org": "Knight Frank Research",
+      "date": "글로벌 부동산·웰스",
+      "btnText": "🔗 원문 자료실",
+      "url": "https://www.knightfrank.com/wealthreport"
+    },
+    {
+      "stars": "★★★★☆",
+      "category": "글로벌 F/O 백서",
+      "title": "Capgemini World Wealth Report (세계 부자 보고서)",
+      "desc": "글로벌 고액자산가(HNWI) 자산 규모 추이, 자산관리(WM) 디지털 플랫폼 혁신 및 차세대 자산 이전(Great Wealth Transfer) 분석",
+      "org": "Capgemini Research",
+      "date": "글로벌 WM 백서",
+      "btnText": "🔗 원문 자료실",
+      "url": "https://www.capgemini.com/insights/research-library/world-wealth-report/"
+    },
+    {
+      "stars": "★★★★★",
+      "category": "가업승계·세무·신탁",
+      "title": "PwC Global Family Office Deals Study & Tax Succession Guide",
+      "desc": "글로벌 가문 오너십 기업의 M&A, 지주사 전환, 가업승계 조세 전략 및 패밀리 거버넌스 구조화 가이드",
+      "org": "PwC Global / 삼일PwC",
+      "date": "딜·세무·승계 백서",
+      "btnText": "🔗 원문 자료실",
+      "url": "https://www.pwc.com/gx/en/services/family-business/family-office.html"
+    },
+    {
+      "stars": "★★★★☆",
+      "category": "가업승계·세무·신탁",
+      "title": "Deloitte Family Office Insights Series — Defining the Family Office Landscape",
+      "desc": "싱글·멀티 패밀리오피스 설립 로드맵, 가문 헌장(Family Constitution), 리스크 관리 및 차세대 후계자 교육 프레임워크",
+      "org": "Deloitte Private",
+      "date": "F/O 운영 가이드",
+      "btnText": "🔗 원문 자료실",
+      "url": "https://www2.deloitte.com/global/en/pages/deloitte-private/articles/family-office-insights-series.html"
+    },
+    {
+      "stars": "★★★★☆",
+      "category": "가업승계·세무·신탁",
+      "title": "[자동 수집] 유언대용신탁, 부동산 임대료만 받아도 취득세 붙는다 [가온의 패밀리오피스 리포트]",
+      "desc": "한국경제 발간 패밀리오피스·자산관리 리서치 아티클 (원문 출고: 2026.11.10 20:00)",
+      "org": "한국경제",
+      "date": "2026.11.10",
+      "btnText": "🔗 리포트 원문",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBnZDlYTzVoTFdoRXUyRTFiSl9KenJ0bDh5WDh0VFJmM25qNWtMbXVxeXl1S2xrYk4wdU1RRm5ESFBHSzdvemZ1MkFubmFUQUg0aElSdWowYkhHUQ?oc=5"
+    },
+    {
+      "stars": "★★★★☆",
+      "category": "가업승계·세무·신탁",
+      "title": "[자동 수집] 한국투자증권, '2026 패밀리오피스 컨퍼런스 데이' 진행",
+      "desc": "뉴스핌 발간 패밀리오피스·자산관리 리서치 아티클 (원문 출고: 2026.11.13 15:08)",
+      "org": "뉴스핌",
+      "date": "2026.11.13",
+      "btnText": "🔗 리포트 원문",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1UcmlOQ25yekw1bVd2dzNKV1hrQUc2RUlGQ1pqUEpLeENBc2liMXFpMWpWeEd6UjNSbUhZWXNZX3dwVWxEaV9IRVZfY2lsVDVBRXk4Qzd1MDI1SS1D?oc=5"
+    },
+    {
+      "stars": "★★★★☆",
+      "category": "가업승계·세무·신탁",
+      "title": "[자동 수집] [issue&] 200가문 선택, 55조 자산관리 패밀리오피스",
+      "desc": "중앙일보 발간 패밀리오피스·자산관리 리서치 아티클 (원문 출고: 2026.10.28 16:00)",
+      "org": "중앙일보",
+      "date": "2026.10.28",
+      "btnText": "🔗 리포트 원문",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE16elphUjRMQlQxckQyUEFpaGVaX1BKd0FaYnhubzZjbmxxNUItVnE3VGhlTmloV01scFlzZGZWcHVRRXd0NmJ6QVhOVENsaUMtTG9YcUp3?oc=5"
+    },
+    {
+      "stars": "★★★★☆",
+      "category": "가업승계·세무·신탁",
+      "title": "[자동 수집] [더밸류 브리핑] 오늘의 NH투자증권 소식...패밀리오피스 세미나·희망나무 장학금",
+      "desc": "더밸류뉴스 발간 패밀리오피스·자산관리 리서치 아티클 (원문 출고: 2026.11.12 16:15)",
+      "org": "더밸류뉴스",
+      "date": "2026.11.12",
+      "btnText": "🔗 리포트 원문",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5TUTdUcS12MWZjWTZYTEJ6YnpodGJSTlhvcXI5MG1NTEJkcXJCRGtCNkZmdFNDckhMRjRPOHJJSmJJOWtObkxWNHc0VDVRTmZVdzMxag?oc=5"
+    },
+    {
+      "stars": "★★★★☆",
+      "category": "가업승계·세무·신탁",
+      "title": "[자동 수집] NH투자증권, 패밀리오피스고객 대상 프라이빗세미나 진행",
+      "desc": "인더뉴스 발간 패밀리오피스·자산관리 리서치 아티클 (원문 출고: 2026.11.12 11:46)",
+      "org": "인더뉴스",
+      "date": "2026.11.12",
+      "btnText": "🔗 리포트 원문",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9ZWVZ2WWNEZVVER19xdTBvTUE5RTc4X1ZXbTY5Y1pNM3BEN012RE5fRmVaRUExR3daS0poNzhlUWgwalFaY1BfNVhDcjNyOE81dXY0MnBYb0FhN2YwX3E2OEdGbHQ?oc=5"
+    },
+    {
+      "stars": "★★★★☆",
+      "category": "가업승계·세무·신탁",
+      "title": "[자동 수집] [심층 분석] 하나은행, 초고액자산가 관리의 범위를 넓힌다…금융 넘어 가족 단위 라이프스타일로",
+      "desc": "뉴스밸류 발간 패밀리오피스·자산관리 리서치 아티클 (원문 출고: 2026.10.27 16:00)",
+      "org": "뉴스밸류",
+      "date": "2026.10.27",
+      "btnText": "🔗 리포트 원문",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5GQ0pIZENhckphRUxQVTZnaWwyU2RhTXNFMGdOWTk4cE9mVUx1QkJoVk5KeTgxYzU2ZmNLUmhDdVJHbTVjOXdOWE1EQ2Y0eWh4bFF1eFN6SjZrVzVmdFU1RTFSclJPZkRTdUE?oc=5"
+    }
   ]
 }
