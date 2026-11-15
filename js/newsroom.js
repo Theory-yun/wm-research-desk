@@ -121,7 +121,7 @@ export function initNewsroomEvents() {
       StorageUtil.set(LOCAL_STORAGE_KEYS.scrapMap, STATE.scrapMap);
       renderNewsroom();
     } else if (btn.dataset.action === "copy") {
-      const msg = `📰 [HANA Family Office 마켓 브리핑]\n■ ${item.title}\n• 분류: ${(item.tags || []).join(", ")} | 언론사: ${item.press} (출고일: ${item.date})\n🔗 원문: ${item.url}`;
+      const msg = `📰 [J의 WM Research Desk 마켓 브리핑]\n■ ${item.title}\n• 분류: ${(item.tags || []).join(", ")} | 언론사: ${item.press} (출고일: ${item.date})\n🔗 원문: ${item.shortUrl || item.url}`;
       navigator.clipboard?.writeText(msg).then(() => alert("기사 브리핑 문구가 복사되었습니다."));
     }
   });

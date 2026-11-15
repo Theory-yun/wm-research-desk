@@ -43,7 +43,7 @@ function wireUpStaticEvents() {
   $("btn-pdf-download").addEventListener("click", downloadPdf);
   $("btn-goto-newsroom").addEventListener("click", () => switchTab("tab-newsroom"));
 
-  // 상단 HANA Family Office / WM RESEARCH DESK 클릭 → 종합 대시보드
+  // 상단 J의 WM Research Desk 클릭 → 종합 대시보드
   $("brand-home-link").addEventListener("click", (e) => {
     e.preventDefault();
     switchTab("tab-dashboard");

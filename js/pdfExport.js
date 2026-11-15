@@ -19,7 +19,7 @@ export function copyKakaoBriefing() {
 
   const issues = data.issues.map((i, idx) => `${idx + 1}️⃣ *[${i.tag}]* ${i.title}\n   └ ${i.desc}`).join("\n\n");
   const top5 = getTop5News()
-    .map((n, i) => `📌 *${i + 1}. ${n.title}* (${n.press} | ${n.date})\n   🔗 ${n.url}`)
+    .map((n, i) => `📌 *${i + 1}. ${n.title}* (${n.press} | ${n.date})\n   🔗 ${n.shortUrl || n.url}`)
     .join("\n\n");
   const talking = $("edition-talking-point")?.textContent.trim() ?? data.talkingPoint;
 

@@ -6,6 +6,7 @@ import { fetchGoogleNewsQuery, fetchRssFeed, mergeAndDedupe } from "./news.mjs";
 import { clusterStories, rankClusters, aiMergeAndClassify, aiClassifyTitles, keywordClassify } from "./newsIntel.mjs";
 import { generateBriefingSummary } from "./summarize.mjs";
 import { buildAssetChecks } from "./assetChecks.mjs";
+import { attachShortUrls } from "./shortUrl.mjs";
 import { kstStamp, kstDateKey } from "./fetchUtil.mjs";
 import { FO_QUERY_RULES, NEWS_ARCHIVE_MAX_AGE_DAYS, NEWS_ARCHIVE_MAX_ITEMS, SUMMARY_CANDIDATE_NEWS_COUNT, TOP_NEWS_COUNT } from "./config.mjs";
 
@@ -107,6 +108,8 @@ export async function buildEdition({ edition, directFeeds, queryRules, pbNotesPa
   const candidateNews = stories.slice(0, SUMMARY_CANDIDATE_NEWS_COUNT);
   console.log(`필독 뉴스: 후보 ${pool.length}건 → 이야기 ${stories.length}개 (분야 판정: ${groups ? "AI" : "키워드 규칙"})`);
   topNews.forEach((n, i) => console.log(`  ${i + 1}. [${n.scope ?? "-"}·${n.coverage}곳] [${n.tags.join(",")}] ${n.title.slice(0, 50)}`));
+  // 카톡 복사용 단축 URL (이전 브리핑에서 만든 것은 재사용)
+  await attachShortUrls(topNews, new Map((previous?.topNews ?? []).filter((n) => n.shortUrl).map((n) => [n.url, n.shortUrl])));
 
   // 4) 뉴스룸 탭용 누적 아카이브에 병합 + 아직 AI 분야 판정을 안 받은 기사 판정
   const mergedArchive = mergeAndDedupe(archive.items, batches, { maxAgeDays: NEWS_ARCHIVE_MAX_AGE_DAYS }).slice(
