@@ -185,26 +185,23 @@ function renderTop5News() {
 /* ----------------------------- 포트폴리오 체크포인트 ----------------------------- */
 const LEVEL_CLASS = { "변동 큼": "lv-high", "주목": "lv-mid", "평이": "lv-low" };
 
-/** 본사 하우스뷰(선택): 기준일이 있고 해당 자산군 stance가 있을 때만 표시, 30일 경과 시 경고 */
-function houseViewChip(key) {
-  const hv = STATE.houseView;
-  const v = hv?.views?.[key];
-  if (!hv?.asOf || !v?.stance) return "";
-  const days = Math.floor((Date.now() - new Date(`${hv.asOf}T00:00:00+09:00`).getTime()) / 86400e3);
-  const stale = days > 30 ? `<span class="ac-hv-stale">⚠ 기준일 ${days}일 경과</span>` : "";
-  return `<div class="ac-hv"><span class="ac-hv-label">본사 하우스뷰</span> <strong>${escapeHtml(v.stance)}</strong>
-    <span class="ac-hv-date">(${escapeHtml(hv.asOf)} 기준${hv.source ? ` · ${escapeHtml(hv.source)}` : ""})</span>${stale}
-    ${v.comment ? `<div class="ac-hv-comment">${escapeHtml(v.comment)}</div>` : ""}</div>`;
-}
-
 function renderPortfolio() {
   const grid = $("portfolio-cards-grid");
   if (!grid) return;
   const ac = currentEditionData()?.assetChecks;
-  if (!ac?.cards?.length) {
-    grid.innerHTML = `<div class="ac-empty">다음 브리핑 생성부터 자산군별 점검 포인트가 표시됩니다.</div>`;
+  const extra = $("ac-extra");
+  const bar = $("ac-ratio-bar");
+  if (!ac?.cards?.length || ac.framework !== "3:4:3") {
+    grid.innerHTML = `<div class="ac-empty">다음 브리핑 생성부터 3:4:3 바구니별 시사점이 표시됩니다.</div>`;
+    if (extra) extra.innerHTML = "";
+    if (bar) bar.innerHTML = "";
     return;
   }
+  if (bar)
+    bar.innerHTML = ac.cards
+      .map((c) => `<div class="ratio-seg seg-${c.key}" style="flex:${c.target}"><b>${c.target}%</b> ${c.icon} ${escapeHtml(c.name)}</div>`)
+      .join("");
+
   grid.innerHTML = ac.cards
     .map((c) => {
       const market = c.market
@@ -217,18 +214,29 @@ function renderPortfolio() {
         .map((n) => `<a class="ac-news" href="${encodeURI(n.url)}" target="_blank" rel="noopener noreferrer">📰 ${escapeHtml(n.title)} <em>${n.coverage}곳</em></a>`)
         .join("");
       return `
-        <article class="ac-card">
+        <article class="ac-card card-${c.key}">
           <div class="ac-head">
-            <span class="ac-name">${c.icon} ${escapeHtml(c.name)}</span>
+            <span class="ac-name">${c.icon} ${escapeHtml(c.name)} <span class="ac-target">기준 ${c.target}%</span></span>
             <span class="ac-level ${LEVEL_CLASS[c.level] ?? ""}">${escapeHtml(c.level)}</span>
           </div>
+          <div class="ac-role">${escapeHtml(c.role)}</div>
           <div class="ac-headline">${escapeHtml(c.headline)}</div>
+          <p class="ac-check"><span class="lb-insight">오늘의 시사점</span>${escapeHtml(c.insight)}</p>
           <p class="ac-check"><span>확인할 것</span>${escapeHtml(c.check)}</p>
-          ${houseViewChip(c.key)}
           ${market || events || news ? `<div class="ac-basis"><div class="ac-basis-label">근거</div>${market ? `<div class="ac-mkts">${market}</div>` : ""}${events}${news}</div>` : ""}
         </article>`;
     })
     .join("");
+
+  if (extra) {
+    const reb = ac.rebalance ? `<div class="ac-rebalance">⚖️ <b>리밸런싱 점검</b> ${escapeHtml(ac.rebalance)}</div>` : "";
+    const tax = (ac.taxNews ?? []).length
+      ? `<div class="ac-tax"><span>🏢⚖️ 세무·부동산 참고</span>${ac.taxNews
+          .map((n) => `<a href="${encodeURI(n.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(n.title)} <em>${n.coverage}곳</em></a>`)
+          .join("")}</div>`
+      : "";
+    extra.innerHTML = reb + tax;
+  }
 }
 
 /* ----------------------------- 대시보드 전체 렌더 ----------------------------- */

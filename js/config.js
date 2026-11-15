@@ -5,7 +5,6 @@ export const DATA_FILES = {
   evening: "data/evening-latest.json",
   newsArchive: "data/news-archive.json",
   insights: "data/insights.json",
-  houseView: "data/house-view.json",
   macroEvents: "data/macro-events.json",
   autoEvents: "data/auto-events.json",
   eventResults: "data/event-results.json",
