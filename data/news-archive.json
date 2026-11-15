@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-15T06:40:11.813Z",
+  "updatedAt": "2026-11-15T06:42:35.086Z",
   "items": [
     {
       "title": "역대급 실적에도 엔비디아가 늘 하락했던 진짜 이유ㅣ월가는 이렇게 읽는다(3화) [매플 인뎁스]",
@@ -561,7 +561,7 @@
       "timestamp": 1794711607000,
       "date": "2026.11.15 12:00",
       "tags": [
-        "매크로"
+        "채권·금리"
       ]
     },
     {
@@ -694,6 +694,17 @@
       "tags": [
         "증시",
         "매크로"
+      ],
+      "tagSource": "ai"
+    },
+    {
+      "title": "송파 풍납극동 재건축 확정…기존보다 183세대 늘어난다 : 부동산",
+      "press": "재경일보",
+      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBiblYwUDdWUHBqSjVEemhoWUktYTF1bHRMb0M5TmIta3NhRmtMSVFxRFpkWTJiSWNxVGNHNUZSdFB3UkdaSjdYakNtTQ?oc=5",
+      "timestamp": 1794709572000,
+      "date": "2026.11.15 11:26",
+      "tags": [
+        "부동산"
       ],
       "tagSource": "ai"
     },
@@ -2768,16 +2779,6 @@
         "증시"
       ],
       "tagSource": "ai"
-    },
-    {
-      "title": "성남시, 내달 10일 채용박람회…참여기업 20개사 모집",
-      "press": "연합뉴스",
-      "url": "https://www.yna.co.kr/view/AKR20261113134700061",
-      "timestamp": 1794621600000,
-      "date": "2026.11.14 11:00",
-      "tags": [
-        "매크로"
-      ]
     }
   ]
 }
