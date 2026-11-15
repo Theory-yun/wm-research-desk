@@ -1,6 +1,6 @@
 {
   "note": "curated=true 는 PB가 고른 연례 핵심 리포트(고정), 나머지는 scripts/build-insights.mjs가 매일 자동 수집합니다.",
-  "updatedAt": "2026-11-15T08:00:04.528Z",
+  "updatedAt": "2026-11-15T09:20:58.173Z",
   "categories": [
     "글로벌 F/O 동향",
     "국내 부자·웰스 리포트",
@@ -226,6 +226,19 @@
     {
       "stars": "★★★★☆",
       "category": "대체투자·사모시장",
+      "title": "KIC, 삼성화재 손잡고 英보험사 캐노피우스에 3억달러 투자",
+      "desc": "국민연금 등 공적 기관과 국내 금융사의 해외 보험사 공동 투자 사례를 보여줍니다.",
+      "org": "KB Think",
+      "date": "2026.11.10",
+      "ts": 1794276356000,
+      "btnText": "🔗 원문 보기",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9oS055MzhyRUhETUxfYTNPVGNQSnlXcWpTaF9vV0p0WEg4MTlnZmF6dHdRN3FCbGViVWM0Z3JJdE95Y3h1X3paWnJtdVM1SzZsRTFRdDZLWUpNU3hJUlJwZ0NxOFBOSHFTNTZ1V3BmZVUtUQ?oc=5",
+      "lang": "ko",
+      "classifiedBy": "AI(gemini-3.5-flash-lite)"
+    },
+    {
+      "stars": "★★★★☆",
+      "category": "대체투자·사모시장",
       "title": "어필리에이트매니저 실적 발표 앞둬…대체투자 성장 주목",
       "desc": "대체투자 시장의 전반적인 성장세와 주요 지표 변화를 점검하는 데 참고할 수 있습니다.",
       "org": "Investing.com 한국어",
@@ -289,6 +302,19 @@
       "classifiedBy": "AI(gemini-3.5-flash-lite)"
     },
     {
+      "stars": "★★★★☆",
+      "category": "자산배분·시장 전망",
+      "title": "올 214조 외인 순매도 미국이 최다 아니었네…영국계가 절반 차지",
+      "desc": "외국인 순매도 자금 중 영국계 자금이 절반을 차지하는 등 국가별 수급 통계를 확인할 수 있습니다.",
+      "org": "매일경제 마켓",
+      "date": "2026.11.06",
+      "ts": 1793952000000,
+      "btnText": "🔗 원문 보기",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5qRnFZeDZIM3ZaeU8zR0JXVHQzZlN3WnlmNmdac0xkQ2J0SWJMd0RDM05rbk93TlJIYTJscHo4NDJrN1o1MnY4TmRzcU5lclJFckE?oc=5",
+      "lang": "ko",
+      "classifiedBy": "AI(gemini-3.5-flash-lite)"
+    },
+    {
       "stars": "★★★★★",
       "category": "글로벌 F/O 동향",
       "title": "신규 킹스톤 패밀리오피스 보고서 – 독일 부동산 노출도를 대폭 축소하는 패밀리오피스",
@@ -299,6 +325,19 @@
       "btnText": "🔗 원문 보기",
       "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNbGpfem5Pa1A5X051QlRybmZ5bjVMbEE0OF9JVlZkbGl5LXdGdmpDRllSZndSdmdxaU1xYmNVeDhzbFcxSTFRSTl3bDRTWktOYm42anExYldOaUlvV0NRbUg5N2FyZ3gxOFJEcDZ3WlB5aVRlaWxZeXlKeHBlOFRSOW85LU4xUWxaMDhFQmVJaGFzWmZMMFdKQkJGaGxCQkZEWVpwQ3lfMGlDVGVCeXNXREFCcHpILWdScUN3ei1rMFlfRFB6ZjlFT3g0eklaNERJ?oc=5",
       "lang": "en",
+      "classifiedBy": "AI(gemini-3.5-flash-lite)"
+    },
+    {
+      "stars": "★★★★☆",
+      "category": "대체투자·사모시장",
+      "title": "AI 인프라에 5조달러 몰린다…GPU 파이낸싱·온사이트 발전 등 유망",
+      "desc": "AI 인프라 분야에 막대한 자금이 유입되며 GPU 파이낸싱과 온사이트 발전 등이 유망 투자처로 꼽힙니다.",
+      "org": "마켓인",
+      "date": "2026.11.05",
+      "ts": 1793860325000,
+      "btnText": "🔗 원문 보기",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1fWkRmVjBRUVY2VGduZ2E2MnFONVpITGNTM1p4MXlYZmdIeFJIYkwyZmlfTW9jV3UtSGFIdE05SUd5MC1TaXRpUWg1cE8yVU15aGtpeHRwOUE2OG1XcWRWVUtTbVRaWTN4WTdDcnpJeXNXRUk?oc=5",
+      "lang": "ko",
       "classifiedBy": "AI(gemini-3.5-flash-lite)"
     },
     {
@@ -343,13 +382,13 @@
     {
       "stars": "★★★★☆",
       "category": "국내 부자·웰스 리포트",
-      "title": "연방준비제도 새 부의 보고서에서 가장 충격적인 내용: 고등학교 졸업장이 없는 가구의 중위 순자산이 55% 감소했다",
-      "desc": "연방준비제도의 새로운 부의 보고서에서 학력에 따른 가구 중위 순자산 격차를 보여줍니다.",
-      "org": "Yahoo Finance",
+      "title": "연방준비제도 신규 부의 보고서에서 가장 충격적인 한 줄: 고등학교 졸업장이 없는 가정은 중간 순자산이 55% 감소했습니다",
+      "desc": "연방준비제도의 자산 보고서 결과 교육 수준에 따른 가계 순자산 격차와 변화를 보여줍니다.",
+      "org": "24/7 Wall St.",
       "date": "2026.11.02",
       "ts": 1793606400000,
       "btnText": "🔗 원문 보기",
-      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNdTVyY0g4TjFvUi01SURqTlBUR0gyQlRCQkhOYnY0cHRXQ0ZYamNLUXU2Y2RBa1c5M3hXbnlKSlF1bTQ5NjV6WFE0VUFUYlVETUM0TzI3TFVCem96Qm9CWHBfLXBmUXZzMVFQd1poVlFKYXd3VE9Pa3FEcHVMRUtUY3BTLUNJNmNvLTl5aTBoQ0s?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxNdGdWTE5GV3VkZnZhUzlnYUtneEh1RERka2xFQThmVGIyRmR1OFhPLTF1NWwtRzdLMTA1NWtzaWU2N1V4SUhXMENhUHItWjVXM3U1SGxVSW1Bbm9hWjhVUFIzY0pObm1aUUh4X2thdUZQMkhPd0lTbFZwM0M4aGl2RFRyZmxVRzdmQnpkZHZPYkN6cG9VVmR3c0F3WmlBZDY5TEFoTWRheVI2dHQ3WEdSeHBCRzFVTWdpZ0tkd055YlphOFhyWDViaDAzN0s3WEpPbG1NWmlfQ1Q5QkltSFhyeE5Kem1IY19mb0psQmZjdWQzWnNMeFZ4VDIxMXNXdVg2VlJRTEJZNXc?oc=5",
       "lang": "en",
       "classifiedBy": "AI(gemini-3.5-flash-lite)"
     },
@@ -454,6 +493,19 @@
       "ts": 1793170800000,
       "btnText": "🔗 원문 보기",
       "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPclVkVHNOVi1SREZ5UVBjaS1vV1d6enREdmFmeVhFb3ZUX2VjSmZNb2txZ1c3b3lZWEZlak5MY0NFT3laZmhRRUJqOTlacEI3ZTVQems4SnE3QXJjMTEyWFlYVkN3aGNFbFZWQlBndnoxUDR3U3ZITmZpcENPX3FaMFg0LS1BSkNheVpNWE14dUg?oc=5",
+      "lang": "en",
+      "classifiedBy": "AI(gemini-3.5-flash-lite)"
+    },
+    {
+      "stars": "★★★★☆",
+      "category": "글로벌 F/O 동향",
+      "title": "래플스 패밀리오피스, 아시아의 스테이블코인 억만장자를 위한 자산관리사 구축",
+      "desc": "아시아 지역 패밀리오피스가 스테이블코인 자산가들을 위한 서비스 확장에 나서고 있습니다.",
+      "org": "Fortune",
+      "date": "2026.10.23",
+      "ts": 1792738800000,
+      "btnText": "🔗 원문 보기",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9rVC1YMWs0ZzdLZ2ZSc3ZrS08weU1CS1Vnd3o2NUJ4dTBhVUp2Sm9NUWhSWlVKWHVVTXEwd1ZFNTBzUXRLUUFVQW1wUDFGZC1ZQ1liNVJYcHBkQTk5ZVlFNXRJd29ZV1hVRnlieFNsMVBIWS04QURNTjNadk8?oc=5",
       "lang": "en",
       "classifiedBy": "AI(gemini-3.5-flash-lite)"
     },
