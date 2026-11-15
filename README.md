@@ -186,3 +186,17 @@ node scripts/build-evening.mjs
 | BOJ | boj.or.jp (Scheduled Dates of MPMs) | 전년도 7월 말 |
 
 > 새 유형(예: 한국 CPI, 미국 PCE)을 추가하려면 `kinds`에 설명을 먼저 넣고 `items`에서 그 `kind`를 쓰면 됩니다. 화면 코드는 수정할 필요가 없습니다.
+
+## 자동 갱신 워크플로 `캘린더·F/O Insight 자동 갱신` (하루 2회, KST 07:10 · 17:40)
+
+| 수집 대상 | 출처 | 방식 |
+|---|---|---|
+| 미국 CPI·고용 결과 | BLS 공식 API | 공식 지수로 계산 |
+| FOMC 결과 | 연준 성명서 원문 | 공식 문구에서 추출 |
+| 한은·ECB·BOJ 결과 | 발표 직후 뉴스 헤드라인 | Gemini 정리(근거 2건 이상일 때만 기록) |
+| 코스피 시총 상위 10 실적 일정·잠정실적 | DART 공시 | **`DART_API_KEY` 시크릿 필요** (opendart.fss.or.kr 무료 발급) |
+| F/O Insight 자료 | 국문·영문 뉴스 9개 주제 | Gemini가 홍보성 기사 제외·분류, 같은 사건 기사 1건으로 병합 |
+
+- 결과는 `data/event-results.json`, 실적 일정은 `data/auto-events.json`에 저장되며, 한 번 확정된 결과는 덮어쓰지 않습니다.
+- 만기일·휴장일·MSCI 일정은 `data/market-holidays.json`을 고친 뒤 `node scripts/build-rule-events.mjs`로 다시 계산합니다.
+- 지난 브리핑은 `data/archive/`에 날짜별로 쌓이고, `data/archive/index.json`이 대시보드의 날짜 선택 목록이 됩니다.
