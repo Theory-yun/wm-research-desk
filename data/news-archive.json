@@ -1,6 +1,30 @@
 {
-  "updatedAt": "2026-11-15T23:31:13.352Z",
+  "updatedAt": "2026-11-15T23:36:34.247Z",
   "items": [
+    {
+      "title": "[오늘 증시 동향] 미국 나스닥 약세에 반도체주 부담…AI 투자 불확실성과 금리 전망 주목",
+      "press": "톱뉴스",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1wcjROTGozNFg2bU9yZ1l1eHNkMlgxVGExTldGbkI2aVZDR19XWGhQZnE0ai1CZlB5UkgxXzEybFp5blN6TWh2dnhwSmp1NzVwaWNFWDdwVGtOYm9JZFB5ckdyaXpLZ29CU2pMV1k4SQ?oc=5",
+      "timestamp": 1794785431000,
+      "date": "2026.11.16 08:30",
+      "tags": [
+        "증시",
+        "채권·금리"
+      ],
+      "tagSource": "ai"
+    },
+    {
+      "title": "[모닝 리포트] \"외국인 자금 이탈에 환율 상승, 1330원대 반등 전망\"",
+      "press": "뉴스핌",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE92a0MyWFZlREppQVRzUFR2VDRPdWhGQmdXRFVjeWdWVl93djIxVUM2Q0tOSU12WEdoTVN1VGpPUFRSZWJfYm5wY0d2a0t1Q2syeUlpRXJZNVBGZWZs?oc=5",
+      "timestamp": 1794785280000,
+      "date": "2026.11.16 08:28",
+      "tags": [
+        "외환",
+        "증시"
+      ],
+      "tagSource": "ai"
+    },
     {
       "title": "[마켓뷰] '젠슨 황' 파장속 'AI 빅위크' 경계감…코스피 향배는",
       "press": "연합뉴스",
@@ -2779,27 +2803,6 @@
       "tags": [
         "매크로"
       ]
-    },
-    {
-      "title": "구성별 설명이 있는 2021년 무입금 카지노 보너스 안내 페이지",
-      "press": "centrserdce.ru",
-      "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE5IVHZqMmlvcFpjeWI2T05hd1RsbG1MS0VnWDhDcE1mMVlzLXdmNmE3WFVrSU9NRzhzQXoyUVI1R3hlUWdDVFNteTI4NXI?oc=5",
-      "timestamp": 1794690226000,
-      "date": "2026.11.15 06:03",
-      "tags": [
-        "외환"
-      ]
-    },
-    {
-      "title": "뉴발란스 본사 직접 진출에 이랜드 손 떼나…직영점 잇달아 폐점",
-      "press": "연합뉴스",
-      "url": "https://www.yna.co.kr/view/AKR20261112036800030",
-      "timestamp": 1794690181000,
-      "date": "2026.11.15 06:03",
-      "tags": [
-        "증시"
-      ],
-      "tagSource": "ai"
     }
   ]
 }
