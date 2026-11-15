@@ -130,7 +130,10 @@ export async function buildAssetChecks({ edition, market, stories, dataDir }) {
     return card;
   });
 
-  const taxNews = newsFor(TAX_TAGS, 4).filter((n) => n.coverage >= 2).slice(0, 2); // 2곳 이상 보도된 것만(잡음 방지)
+  // 2곳 이상 보도된 것만, 자격시험·인사 등 자산가 세무와 무관한 기사 제외(잡음 방지)
+  const taxNews = newsFor(TAX_TAGS, 6)
+    .filter((n) => n.coverage >= 2 && !/세무사|시험|합격|채용|인사|임명|선임/.test(n.title))
+    .slice(0, 2);
   const rebalance = cards.some((c) => c.level === "변동 큼")
     ? `오늘 ${cards.filter((c) => c.level === "변동 큼").map((c) => c.name).join("·")} 바구니의 시장 변동이 커서, 손님 포트폴리오가 3:4:3 기준 비중에서 벗어났을 수 있습니다. 허용 범위 이탈 여부를 점검하세요.`
     : null;
