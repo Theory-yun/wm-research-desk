@@ -59,6 +59,7 @@ function checkEdition(f, ed) {
 
   for (const n of ed.topNews ?? []) {
     if (!isUrl(n.url)) err(f, `topNews URL 이상: ${n.title}`);
+    if (/[?&][A-Za-z_]+$/.test(n.url || "")) err(f, `topNews 링크가 잘림(파라미터 값 없음): ${n.url}`);
     if (/ - https?:\/\//.test(n.title)) err(f, `topNews 제목에 주소 잔여물: ${n.title}`);
     for (const t of n.tags ?? []) if (!NEWS_CATEGORIES.includes(t)) err(f, `topNews 분야 이름 이상: ${t}`);
   }

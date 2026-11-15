@@ -46,8 +46,13 @@ export async function resolveGoogleNewsUrl(gnUrl) {
       method: "POST", body, responseType: "text", timeoutMs: 10000, retries: 1,
       headers: { "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8", "User-Agent": BROWSER_UA },
     });
-    const url = res?.match(/\\"garturlres\\",\\"(https?:[^"\\]+)/)?.[1];
-    return url ? url.replace(/\\u0026/g, "&").replace(/\\\//g, "/") : null;
+    // 응답은 JSON 안에 JSON 문자열이 든 형태: \"garturlres\",\"https://...?idxno\u003d123\"
+    const raw = res?.match(/garturlres\\",\\"(.+?)\\"/)?.[1];
+    if (!raw) return null;
+    const url = raw
+      .replace(/\\+u([0-9a-fA-F]{4})/g, (_, h) => String.fromCharCode(parseInt(h, 16)))
+      .replace(/\\+\//g, "/");
+    return /^https?:\/\/[^\s"]+$/.test(url) ? url : null;
   } catch {
     return null;
   }
@@ -114,11 +119,13 @@ export async function verifyArticleTime(item) {
   const originalUrl = isGN ? await resolveGoogleNewsUrl(item.url) : item.url;
   let publishedTs = null;
   let source = "rss";
+  let pageOk = false;
   if (originalUrl) {
     try {
       const html = await fetchWithRetry(originalUrl, {
         responseType: "text", timeoutMs: 9000, retries: 1, headers: { "User-Agent": BROWSER_UA, Accept: "text/html" },
       });
+      pageOk = typeof html === "string" && html.length > 500;
       publishedTs = extractPublishedTs(html);
       if (publishedTs) source = "meta";
     } catch (e) {
@@ -134,7 +141,8 @@ export async function verifyArticleTime(item) {
   if (publishedTs && (publishedTs > Date.now() + 3600e3 || publishedTs < Date.now() - 365 * 86400e3)) {
     publishedTs = null; source = "rss";
   }
-  return { publishedTs: publishedTs ?? item.timestamp, originalUrl: originalUrl ?? null, source };
+  // 원문 페이지가 열리지 않았으면(404·차단) 링크는 원래 것을 유지
+  return { publishedTs: publishedTs ?? item.timestamp, originalUrl: pageOk || !isGN ? originalUrl : null, source };
 }
 
 /**
