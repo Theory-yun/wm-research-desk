@@ -1,7 +1,7 @@
 {
   "edition": "MORNING",
-  "generatedAt": "2026-11-15T05:54:51.676Z",
-  "generatedAtKST": "2026.11.15 14:54",
+  "generatedAt": "2026-11-15T06:16:10.944Z",
+  "generatedAtKST": "2026.11.15 15:16",
   "sourceStatus": {
     "market": "ok",
     "news": "ok",
@@ -19,7 +19,7 @@
       "asOfLocal": "국내 정규장 기준",
       "asOfKst": "한국 정규장 15:30 마감",
       "stale": false,
-      "updatedAt": "2026-11-15T05:53:58.757Z"
+      "updatedAt": "2026-11-15T06:14:37.204Z"
     },
     {
       "key": "KOSDAQ",
@@ -31,7 +31,7 @@
       "asOfLocal": "국내 정규장 기준",
       "asOfKst": "한국 정규장 15:30 마감",
       "stale": false,
-      "updatedAt": "2026-11-15T05:53:58.757Z"
+      "updatedAt": "2026-11-15T06:14:37.204Z"
     },
     {
       "key": "SP500",
@@ -43,7 +43,7 @@
       "asOfLocal": "현지 11.13 16:00 마감",
       "asOfKst": "한국 11.14 06:00 마감",
       "stale": false,
-      "updatedAt": "2026-11-15T05:53:58.757Z"
+      "updatedAt": "2026-11-15T06:14:37.204Z"
     },
     {
       "key": "NASDAQ",
@@ -55,7 +55,7 @@
       "asOfLocal": "현지 11.13 16:00 마감",
       "asOfKst": "한국 11.14 06:00 마감",
       "stale": false,
-      "updatedAt": "2026-11-15T05:53:58.757Z"
+      "updatedAt": "2026-11-15T06:14:37.204Z"
     },
     {
       "key": "SOX",
@@ -67,7 +67,7 @@
       "asOfLocal": "현지 11.13 16:00 마감",
       "asOfKst": "한국 11.14 06:00 마감",
       "stale": false,
-      "updatedAt": "2026-11-15T05:53:58.757Z"
+      "updatedAt": "2026-11-15T06:14:37.204Z"
     },
     {
       "key": "USDKRW",
@@ -79,30 +79,30 @@
       "asOfLocal": "집계 기준 확인 중",
       "asOfKst": "집계 기준 확인 중",
       "stale": false,
-      "updatedAt": "2026-11-15T05:53:58.757Z"
+      "updatedAt": "2026-11-15T06:14:37.204Z"
     }
   ],
   "issues": [
     {
-      "cat": "증시·반도체",
+      "cat": "증시/반도체",
       "tag": "나스닥 -0.91% · 필라델피아 반도체 -3.43%",
-      "title": "엔비디아 여파에 기술주 흔들…필라델피아 반도체 지수 급락",
-      "desc": "간밤 뉴욕증시는 엔비디아 여파 속 나스닥(-0.91%)과 S&P 500(-0.4%)이 하락 마감했습니다. 특히 필라델피아 반도체 지수가 -3.43% 급락하며 대형 기술주를 중심으로 매물 출회가 확대되었습니다. 젠슨 황 사임 이슈와 실적 발표를 앞두고 AI 투자 향방에 대한 시장의 경계감이 높아진 모습입니다."
+      "title": "엔비디아 여파 및 반도체 약세 속 뉴욕증시 혼조 마감",
+      "desc": "간밤 뉴욕증시는 엔비디아 여파로 필라델피아 반도체 지수가 3.43% 급락하면서 나스닥(-0.91%)과 S&P 500(-0.4%)을 중심으로 약세를 보였습니다. 반도체 기술주 약세 속에 투자자들이 반도체를 매도하고 대표지수로 이동하는 흐름도 함께 나타났습니다."
     },
     {
-      "cat": "매크로·금리",
-      "tag": "미 10월 CPI 0.4%↑ · 10년물 5.15%",
-      "title": "美 연준 'AI 금융 위험' 경고…CPI 상승 속 금리 부담 지속",
-      "desc": "미 연준이 AI 자산 가치 고평가와 부채 급증에 따른 금융 위험을 경고하고 나섰습니다. 한편 미 10월 CPI가 0.4% 상승하고 근원 CPI가 0.3% 오르면서 10년물 국채 금리는 5.15%를 기록했습니다. 이에 따라 12월 FOMC의 금리 향방을 둘러싼 불확실성이 지속되고 있습니다."
+      "cat": "미국 매크로",
+      "tag": "美 10월 CPI 0.4%↑ · 10년물 금리 5.15%",
+      "title": "美 연준의 AI 위험 경고 및 10월 CPI 발표에 금리 주시",
+      "desc": "미 연준은 AI가 자산가치 고평가 및 부채 급증 등 금융 위험을 유발할 수 있다고 우려를 밝혔습니다. 아울러 미 10월 CPI가 0.4% 상승하고 10년물 국채 금리가 5.15%를 기록하며 12월 FOMC 정책 향방에 시장의 관심이 쏠리고 있습니다."
     },
     {
-      "cat": "외환·국내증시",
-      "tag": "원/달러 1,336.20원(-1.94%) · 코스피 5,290.53",
-      "title": "원/달러 환율 급락 속 국내 증시 장 초반 수급 점검 필요",
-      "desc": "원/달러 환율은 1,336.20원으로 전일 대비 -26.50원(-1.94%) 하락하며 원화 강세를 보였습니다. 직전 한국 정규장에서 코스피는 5,290.53(-0.98%)으로 하락한 반면 코스닥은 699.66(+0.45%) 상승 마감했습니다. 환율 하락과 미 반도체 지수 약세가 금일 국내 기술주 수급에 미칠 영향을 주시해야 합니다."
+      "cat": "외환/물가",
+      "tag": "원/달러 환율 1,336.20원 (-1.94%)",
+      "title": "원/달러 환율 하락 속 수입물가 1.8% 감소",
+      "desc": "원/달러 환율이 1,336.20원으로 1.94% 하락한 가운데, 환율과 유가 하락 영향으로 수입물가가 1.8% 감소했습니다. 내년 달러당 1,320원대 원화 강세 전환 전망이 나오는 가운데 수출물가는 반도체 강세 영향으로 반등을 기록했습니다."
     }
   ],
-  "talkingPoint": "간밤 글로벌 시장은 엔비디아 관련 여파로 필라델피아 반도체 지수가 -3.43% 급락하고 나스닥(-0.91%)과 S&P 500(-0.4%)이 하락 마감했습니다. 미 연준의 AI 금융 위험 경고와 10월 CPI 상승(10년물 금리 5.15%)으로 통화정책 경계감이 지속되고 있습니다. 원/달러 환율이 1,336.20원(-1.94%)으로 하락한 가운데, 직전 장에서 5,290.53을 기록한 코스피는 미 반도체주 약세 여파로 장 초반 기술주 중심의 수급 변동성이 나타날 수 있으니 유의하시기 바랍니다.",
+  "talkingPoint": "금일 국내 장 개장 전에는 간밤 미 필라델피아 반도체 지수(-3.43%)와 나스닥(-0.91%)의 하락 여파에 유의할 필요가 있습니다. 미 연준의 AI 금융 위험 경고와 10월 CPI 상승(0.4%), 미 10년물 금리 5.15% 기록 등 매크로 불확실성이 이어지고 있습니다. 다만 원/달러 환율이 1,336.20원(-1.94%)으로 하락하며 수입물가(1.8%↓) 안정세를 보이는 점은 긍정적입니다. 전일 코스피(5,290.53, -0.98%) 하락과 코스닥(699.66, +0.45%) 상승 등 혼조세가 이어진 만큼, 글로벌 반도체 변동성에 대비한 보수적 관점의 대응을 추천합니다.",
   "topNews": [
     {
       "title": "뉴욕증시, 엔비디아 여파에 혼조 마감…“다우 0.10%↑·나스닥 0.91%↓”",
@@ -122,7 +122,7 @@
         "코리아리포트",
         "BBS불교방송",
         "https://www.theconnectmoney.com/",
-        "블루밍비트"
+        "연합뉴스TV"
       ]
     },
     {
@@ -144,7 +144,7 @@
         "연합뉴스",
         "자본시장뉴스",
         "재경일보",
-        "마켓잉크"
+        "Vietnam.vn"
       ]
     },
     {
@@ -158,30 +158,30 @@
         "매크로"
       ],
       "tagSource": "ai",
-      "coverage": 5,
+      "coverage": 4,
       "scope": "해외",
       "outlets": [
         "ISSUE ON (이슈온)",
         "스페셜경제",
         "이데일리",
-        "Vietnam.vn",
-        "코인리더스"
+        "Vietnam.vn"
       ]
     },
     {
-      "title": "[위클리 재테크 레터] 젠슨 황 사임에 엔비디아 실적까지…AI 투자 향방 가를 한 주",
-      "press": "https://www.theconnectmoney.com/",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9EUEtDd1JCNDBkbEtKV0RxMmhrUU9lMmlNc1RReHFjSUlkX3l1VXlaQlZBS0hOMDZDY0tYcV8ySWVBQWVvMW5HbmJQX1hpTFBBcGNlYTVSSU00RkhkeFRFWg?oc=5",
-      "timestamp": 1794713820000,
-      "date": "2026.11.15 12:37",
+      "title": "시바이누(SHIB) 0.000003700달러 지지선 지킬까…연준 긴축 우려에 밈코인 약세",
+      "press": "코인리더스",
+      "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE5ac29ORlN2cXRhMFJYeFBFck9wYmJFakdMT2xKNlBEVDc2YVpBZXZLYk1YcGc3VzJYY253eEFYNlk1bUx3SzhkQnlB?oc=5",
+      "timestamp": 1794722625000,
+      "date": "2026.11.15 15:03",
       "tags": [
-        "증시"
+        "대체투자",
+        "매크로"
       ],
       "tagSource": "ai",
       "coverage": 1,
       "scope": "해외",
       "outlets": [
-        "https://www.theconnectmoney.com/"
+        "코인리더스"
       ]
     },
     {
@@ -236,39 +236,48 @@
       "scope": "국내",
       "outlets": [
         "아시아경제",
+        "뉴시스",
         "연합인포맥스",
         "이포커스",
-        "오피니언뉴스",
-        "KB Think"
+        "오피니언뉴스"
       ]
     },
     {
-      "title": "나스닥 23시간 거래 초읽기…韓증시 '머니무브' 촉각",
-      "press": "이투데이",
-      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBKVUhkZWY4c21pck9yVUtILTVTRkFXbjBMUVBCRTN3Q0xBYVBuQV95bmtycjZMUzFwUEtfNEF3NkhtSTVFMGtxNy14Qlh5anJ0M1duMg?oc=5",
-      "timestamp": 1794703440000,
-      "date": "2026.11.15 09:44",
+      "title": "홍라희에 '삼전 1115만주' 받은 이재용…증여세는 얼마?",
+      "press": "이데일리",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOWG5wSTBnT3E1SUZLaGU3X1RnVTBYbm1ZX3JLWFFEZUJ6MjU4b3pBazRFaEZkQll1UGVXRjNOZlFmMHU0eGYzX21NYzJMV3E0M3ZKX1ZLU1QzcXB2NEc2Wl9Td0lvUzBMSTFNLWdDNWc5VEl4bFpCY1lIeE8tX0xpTQ?oc=5",
+      "timestamp": 1794655720000,
+      "date": "2026.11.14 20:28",
       "tags": [
-        "증시"
+        "TAX"
       ],
       "tagSource": "ai",
       "coverage": 2,
       "scope": "국내",
       "outlets": [
-        "이투데이",
-        "연합뉴스"
+        "이데일리",
+        "문화일보"
       ]
     }
   ],
   "assetChecks": {
-    "generatedAt": "2026-11-15T05:54:51.676Z",
+    "framework": "3:4:3",
+    "generatedAt": "2026-11-15T06:16:10.944Z",
     "model": "gemini-3.5-flash",
     "cards": [
       {
-        "key": "bond",
-        "name": "채권·금리",
-        "icon": "🏦",
-        "market": [],
+        "key": "safe",
+        "name": "안전자산",
+        "target": 30,
+        "icon": "🛡️",
+        "role": "예금·국채·우량채·달러·금 등 자산을 지키는 바구니",
+        "market": [
+          {
+            "name": "원/달러 환율",
+            "priceStr": "1,336.20",
+            "changePct": -1.94
+          }
+        ],
         "events": [
           {
             "date": "2026-11-26",
@@ -280,27 +289,30 @@
         ],
         "news": [
           {
-            "title": "미 10월 CPI 0.4%↑·근원 0.3%↑…12월 FOMC 인상폭 쟁점, 10년물 5.15%",
-            "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBjRXVMdXNlV2ZxMXdmSEFPbHRhZEt4Sk5QQ3V2clZEcllyU3VaSmo5emFqd0o0d1VqdEhHYVowcXAyaDNJWWxLa1NCcWI1YkVOY0R0LTkwNk1ZeFlBUy1oZWh4M1ZyeWViRk9n?oc=5",
-            "press": "ISSUE ON (이슈온)",
+            "title": "[주末머니]\"내년 환율, 달러당 1320원…원화 강세 전환\"",
+            "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9QZktnNEV0d2ZQekhoZFhwcHljRWFfcEpUS3NEUG1IeVhnaXUzOXVyVVdlWTR1eVZYVC1YNmtnOHRWOWtrdWQ1ekxONHk0RDdoOFJyUFBTVm9pUmNEaHFTMUJn?oc=5",
+            "press": "아시아경제",
             "coverage": 5
           },
           {
-            "title": "[채권-주간] 11월 금통위 직전 글로벌·외국인·주가 주시",
-            "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9Zd3Rnb3U3dVZPV0F4VVQyOGRTVVA1eS1EYUVBZ0s0NXllclNLNXp4YllkWVF6OFN1UFY1eVo2aGx1Q3RfdGk1ZTgxQlJlYUhmam9hYmZXUnBzUU1kYUpvUzFyRXR2UXIyc0hOTm9aVy1iUQ?oc=5",
-            "press": "KB Think",
-            "coverage": 1
+            "title": "미 10월 CPI 0.4%↑·근원 0.3%↑…12월 FOMC 인상폭 쟁점, 10년물 5.15%",
+            "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBjRXVMdXNlV2ZxMXdmSEFPbHRhZEt4Sk5QQ3V2clZEcllyU3VaSmo5emFqd0o0d1VqdEhHYVowcXAyaDNJWWxLa1NCcWI1YkVOY0R0LTkwNk1ZeFlBUy1oZWh4M1ZyeWViRk9n?oc=5",
+            "press": "ISSUE ON (이슈온)",
+            "coverage": 4
           }
         ],
-        "level": "주목",
-        "headline": "미 10년물 5.15%·CPI 상승 및 11/26 금통위 D-11 영향 점검",
-        "check": "미 10월 CPI 상승(0.4%↑)과 10년물 금리 5.15% 기록에 따른 채권 시장 변동을 점검할 것. 11/26 한국은행 금통위(D-11)를 앞두고 글로벌 및 외국인 동향을 확인할 것.",
+        "level": "변동 큼",
+        "headline": "원/달러 1,336.20원 하락 및 미 10년물 5.15% 기록",
+        "insight": "미 10월 CPI 상승과 10년물 국채금리 5.15% 형성 속에서 원/달러 환율이 1,336.20원으로 1.94% 하락했습니다. 11월 26일 한국은행 금통위 일정과 내년 환율 전망(1,320원)이 맞물리며 외환 및 금리 변동성에 대한 관찰이 요구됩니다.",
+        "check": "환율 변동과 미 국채금리 5.15% 수준에 따른 안전자산 내 달러 및 채권 자산의 평가금액 변화를 확인해야 합니다.",
         "textBy": "ai"
       },
       {
-        "key": "equity",
-        "name": "주식",
-        "icon": "📈",
+        "key": "core",
+        "name": "시장 추종",
+        "target": 40,
+        "icon": "📊",
+        "role": "국내·해외 지수 ETF·분산 펀드로 시장 수익을 따라가는 바구니",
         "market": [
           {
             "name": "코스피",
@@ -321,11 +333,6 @@
             "name": "나스닥",
             "priceStr": "25,136.27",
             "changePct": -0.91
-          },
-          {
-            "name": "필라델피아 반도체",
-            "priceStr": "10,146.32",
-            "changePct": -3.43
           }
         ],
         "events": [
@@ -351,49 +358,25 @@
             "coverage": 14
           }
         ],
-        "level": "변동 큼",
-        "headline": "나스닥·필반도체 하락 및 11/20 미 옵션 만기 D-5 점검",
-        "check": "나스닥(-0.91%)과 필라델피아 반도체(-3.43%) 하락 및 연준의 AI 자산가치 고평가 우려 영향을 점검할 것. 11/20 미국 월물 옵션 만기일(D-5)을 앞두고 손님 주식 포트폴리오의 변동성을 확인할 것.",
+        "level": "주목",
+        "headline": "나스닥 0.91% 하락 및 11/20 미 옵션 만기일 도래",
+        "insight": "엔비디아 여파와 미 연준의 AI 자산가치 고평가 우려 속에 나스닥(-0.91%)과 코스피(-0.98%) 등 주요 지수가 하락세를 보였습니다. 11월 20일 미국 옵션 만기일을 앞두고 지정학적 및 금융 위험 요인에 따른 지수 변동성이 관측됩니다.",
+        "check": "주요 지수 하락과 미국 옵션 만기일 일정에 따른 시장 추종 ETF 및 펀드의 수익률 현황을 확인해야 합니다.",
         "textBy": "ai"
       },
       {
-        "key": "fx",
-        "name": "외환",
-        "icon": "💱",
+        "key": "satellite",
+        "name": "초과 수익",
+        "target": 30,
+        "icon": "🚀",
+        "role": "개별 종목·테마·원자재·대체투자로 추가 수익을 노리는 바구니",
         "market": [
           {
-            "name": "원/달러 환율",
-            "priceStr": "1,336.20",
-            "changePct": -1.94
+            "name": "필라델피아 반도체",
+            "priceStr": "10,146.32",
+            "changePct": -3.43
           }
         ],
-        "events": [
-          {
-            "date": "2026-11-26",
-            "kind": "bok",
-            "dday": 11,
-            "label": "한국은행 금통위 (통화정책방향 결정회의)",
-            "when": "11/26(목)"
-          }
-        ],
-        "news": [
-          {
-            "title": "[주末머니]\"내년 환율, 달러당 1320원…원화 강세 전환\"",
-            "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9QZktnNEV0d2ZQekhoZFhwcHljRWFfcEpUS3NEUG1IeVhnaXUzOXVyVVdlWTR1eVZYVC1YNmtnOHRWOWtrdWQ1ekxONHk0RDdoOFJyUFBTVm9pUmNEaHFTMUJn?oc=5",
-            "press": "아시아경제",
-            "coverage": 5
-          }
-        ],
-        "level": "변동 큼",
-        "headline": "원/달러 환율 1,336.20원(-1.94%) 하락 및 금통위 일정 점검",
-        "check": "원/달러 환율이 1,336.20원(-1.94%)으로 하락한 상황에서 내년 1,320원대 원화 강세 전망을 점검할 것. 11/26 한국은행 금통위(D-11) 일정에 따른 외환 노출 자산을 확인할 것.",
-        "textBy": "ai"
-      },
-      {
-        "key": "commodity",
-        "name": "원자재·대체투자",
-        "icon": "🛢️",
-        "market": [],
         "events": [],
         "news": [
           {
@@ -403,41 +386,26 @@
             "coverage": 7
           },
           {
-            "title": "원유 공급 늘어도 비트코인 반등 어렵나…유가 안정 기대에 숨은 변수는?",
-            "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE02UnBiUXgtY1FnRWRkWlVnWFRSVXZkd05wdDhMeko1Uk5ybEJHa1RhVDg2MnFCXy1xNHMzcUxiejBMT3NpaF9PamN3?oc=5",
+            "title": "시바이누(SHIB) 0.000003700달러 지지선 지킬까…연준 긴축 우려에 밈코인 약세",
+            "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE5ac29ORlN2cXRhMFJYeFBFck9wYmJFakdMT2xKNlBEVDc2YVpBZXZLYk1YcGc3VzJYY253eEFYNlk1bUx3SzhkQnlB?oc=5",
             "press": "코인리더스",
             "coverage": 1
           }
         ],
-        "level": "주목",
-        "headline": "금 가격 전망 변화 및 유가·비트코인 동향 점검",
-        "check": "월가 분석가들의 주간 금 가격 예측 동향과 원유 공급 및 비트코인 반등 관련 변수를 확인할 것. 대체투자 포트폴리오의 변동 요인을 점검할 것.",
+        "level": "변동 큼",
+        "headline": "필라델피아 반도체 3.43% 하락 및 밈코인 약세",
+        "insight": "필라델피아 반도체 지수가 3.43% 급락하고 연준 긴축 우려로 시바이누 등 가상자산이 약세를 나타냈습니다. 월가의 금가격 전망 진단이 이어지는 가운데 테마 종목과 대체자산 전반의 변동성이 확대된 상황입니다.",
+        "check": "반도체 지수 하락과 가상자산 약세에 따른 초과 수익 바구니 내 개별 종목 및 대체투자 자산의 평가 손익을 확인해야 합니다.",
         "textBy": "ai"
-      },
+      }
+    ],
+    "rebalance": "오늘 안전자산·초과 수익 바구니의 시장 변동이 커서, 손님 포트폴리오가 3:4:3 기준 비중에서 벗어났을 수 있습니다. 허용 범위 이탈 여부를 점검하세요.",
+    "taxNews": [
       {
-        "key": "estate_tax",
-        "name": "부동산·세무",
-        "icon": "🏢",
-        "market": [],
-        "events": [],
-        "news": [
-          {
-            "title": "홍라희에 '삼전 1115만주' 받은 이재용…증여세는 얼마?",
-            "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOWG5wSTBnT3E1SUZLaGU3X1RnVTBYbm1ZX3JLWFFEZUJ6MjU4b3pBazRFaEZkQll1UGVXRjNOZlFmMHU0eGYzX21NYzJMV3E0M3ZKX1ZLU1QzcXB2NEc2Wl9Td0lvUzBMSTFNLWdDNWc5VEl4bFpCY1lIeE8tX0xpTQ?oc=5",
-            "press": "이데일리",
-            "coverage": 2
-          },
-          {
-            "title": "'실거주 우대' 흔들린 종부세, '30% 할증' 재검토된 상속세 … 정치 논리에 휘둘리는 조세 원칙",
-            "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBERHoyNng1S2t1WXFsdlR0akw0bHJ0RWVrR2FlWW1MYkwtTFc1MjJ6NmRzUUZWWjFmU1NQWmFkS0lfNFdETnJfTkZVS1VJdGQ1ekFjTGFJNFhNLVFiMk1yczdNWG9OSWpiVlF5OEs3Wkt2cjBnekd5RmVrd9IBgAFBVV95cUxOallqcVM5OUVaR2U1X1FIbzBCU1VLWlAwdTFyOVRDVGRsYkRpaGdNSnU4OXEta2YyOFJTbEpmWUppWTJUcmVIOGx6TVhBRkNydHd6aXBCSGhXN3kxZzJGOHJKRUtRMmhoMmg2bFZMR21oUmZ5bm91eEdua2JEcTRkUg?oc=5",
-            "press": "뉴데일리",
-            "coverage": 1
-          }
-        ],
-        "level": "평이",
-        "headline": "삼전 주식 증여 이슈 및 종부세·상속세 재검토 논의 점검",
-        "check": "삼성전자 주식 1,115만 주 증여 사례와 더불어 종부세 및 상속세(30% 할증) 재검토 관련 조세 동향을 점검할 것. 손님의 부동산 및 상속·증여 세무 이슈를 확인할 것.",
-        "textBy": "ai"
+        "title": "홍라희에 '삼전 1115만주' 받은 이재용…증여세는 얼마?",
+        "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOWG5wSTBnT3E1SUZLaGU3X1RnVTBYbm1ZX3JLWFFEZUJ6MjU4b3pBazRFaEZkQll1UGVXRjNOZlFmMHU0eGYzX21NYzJMV3E0M3ZKX1ZLU1QzcXB2NEc2Wl9Td0lvUzBMSTFNLWdDNWc5VEl4bFpCY1lIeE8tX0xpTQ?oc=5",
+        "press": "이데일리",
+        "coverage": 2
       }
     ]
   }
