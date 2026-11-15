@@ -1,6 +1,17 @@
 {
-  "updatedAt": "2026-11-15T07:22:00.979Z",
+  "updatedAt": "2026-11-15T07:45:42.153Z",
   "items": [
+    {
+      "title": "“美 AI 투자붐, 2028년 전후 조정 가능성…반도체 의존도 높은 韓 대비해야”",
+      "press": "매일경제",
+      "url": "https://www.mk.co.kr/news/economy/12209261",
+      "timestamp": 1794728121000,
+      "date": "2026.11.15 16:35",
+      "tags": [
+        "증시"
+      ],
+      "tagSource": "ai"
+    },
     {
       "title": "[이번주 증시] 'AI 투심' 살아날까…엔비디아 실적·앤트로픽 IPO '주목'",
       "press": "뉴시안",
@@ -2765,17 +2776,6 @@
       "date": "2026.11.14 14:44",
       "tags": [
         "부동산"
-      ],
-      "tagSource": "ai"
-    },
-    {
-      "title": "“군인·산모·실직자 ‘주목’…보험료 안 내도 국민연금 가입기간 늘어난다?”",
-      "press": "매일경제",
-      "url": "https://www.mk.co.kr/news/economy/12208863",
-      "timestamp": 1794635056000,
-      "date": "2026.11.14 14:44",
-      "tags": [
-        "TAX"
       ],
       "tagSource": "ai"
     }

@@ -1,12 +1,12 @@
 {
   "edition": "EVENING",
-  "generatedAt": "2026-11-15T07:22:22.518Z",
-  "generatedAtKST": "2026.11.15 16:22",
+  "generatedAt": "2026-11-15T07:46:32.361Z",
+  "generatedAtKST": "2026.11.15 16:46",
   "sourceStatus": {
     "market": "ok",
     "news": "ok",
     "summary": "ai-gemini",
-    "summaryModel": "gemini-3.5-flash"
+    "summaryModel": "gemini-3.5-flash-lite"
   },
   "market": [
     {
@@ -19,7 +19,7 @@
       "asOfLocal": "국내 정규장 기준",
       "asOfKst": "한국 정규장 15:30 마감",
       "stale": false,
-      "updatedAt": "2026-11-15T07:21:51.759Z"
+      "updatedAt": "2026-11-15T07:45:26.019Z"
     },
     {
       "key": "KOSDAQ",
@@ -31,7 +31,7 @@
       "asOfLocal": "국내 정규장 기준",
       "asOfKst": "한국 정규장 15:30 마감",
       "stale": false,
-      "updatedAt": "2026-11-15T07:21:51.759Z"
+      "updatedAt": "2026-11-15T07:45:26.019Z"
     },
     {
       "key": "SP500",
@@ -43,7 +43,7 @@
       "asOfLocal": "현지 11.13 16:00 마감",
       "asOfKst": "한국 11.14 06:00 마감",
       "stale": false,
-      "updatedAt": "2026-11-15T07:21:51.759Z"
+      "updatedAt": "2026-11-15T07:45:26.019Z"
     },
     {
       "key": "NASDAQ",
@@ -55,7 +55,7 @@
       "asOfLocal": "현지 11.13 16:00 마감",
       "asOfKst": "한국 11.14 06:00 마감",
       "stale": false,
-      "updatedAt": "2026-11-15T07:21:51.759Z"
+      "updatedAt": "2026-11-15T07:45:26.019Z"
     },
     {
       "key": "SOX",
@@ -67,7 +67,7 @@
       "asOfLocal": "현지 11.13 16:00 마감",
       "asOfKst": "한국 11.14 06:00 마감",
       "stale": false,
-      "updatedAt": "2026-11-15T07:21:51.759Z"
+      "updatedAt": "2026-11-15T07:45:26.019Z"
     },
     {
       "key": "USDKRW",
@@ -79,30 +79,30 @@
       "asOfLocal": "집계 기준 확인 중",
       "asOfKst": "집계 기준 확인 중",
       "stale": false,
-      "updatedAt": "2026-11-15T07:21:51.759Z"
+      "updatedAt": "2026-11-15T07:45:26.019Z"
     }
   ],
   "issues": [
     {
-      "cat": "증시/수급",
-      "tag": "코스피 5,290.53 (-0.98%) · 외국인 5,000억원 이상 순매도",
-      "title": "코스피 5,290.53 하락 마감…외국인 5,000억원 넘게 순매도",
-      "desc": "금일 코스피는 장중 5500선을 넘어서기도 했으나 외국인의 5,000억원 이상 순매도 영향으로 전일 대비 0.98% 하락한 5,290.53에 마감했습니다. 반면 코스닥은 0.45% 상승한 699.66을 기록하며 지수별 차별화 양상을 보였습니다. 원/달러 환율은 1,336.20원으로 전일 대비 1.94% 하락했습니다."
+      "cat": "증시",
+      "tag": "코스피 5,290.53 (-0.98%) · 외국인 5,000억원대 순매도",
+      "title": "코스피 장중 5,500선 상회 후 하락 전환, 5,290.53 마감",
+      "desc": "코스피는 장중 5,500선을 넘기도 했으나 외국인의 5,000억원 넘는 순매도세에 밀려 0.98% 하락한 5,290.53으로 마감했습니다. 반면 코스닥은 699.66으로 0.45% 소폭 상승하며 혼조세를 보였습니다."
     },
     {
-      "cat": "글로벌/AI",
-      "tag": "필라델피아 반도체 -3.43% · 엔비디아 실적 주목",
-      "title": "AI 투심 회복 분수령…엔비디아 실적 및 앤트로픽 상장 주시",
-      "desc": "미국 증시에서 필라델피아 반도체 지수가 3.43% 하락하고 나스닥이 0.91% 내리는 등 기술주 약세가 지속되었습니다. 시장은 향후 발표될 엔비디아 실적과 앤트로픽 상장이 글로벌 AI 투자 심리 회복의 주요 분수령이 될 것으로 주목하고 있습니다."
+      "cat": "증시",
+      "tag": "필라델피아 반도체 -3.43% · 나스닥 -0.91%",
+      "title": "뉴욕증시 및 필라델피아 반도체 지수 하락 마감",
+      "desc": "앞서 마감된 뉴욕증시에서 S&P 500은 -0.4%, 나스닥은 -0.91% 하락했습니다. 특히 필라델피아 반도체 지수는 -3.43% 급락하며 국내 증시의 투자 심리에도 부담으로 작용했습니다."
     },
     {
-      "cat": "산업/원전",
-      "tag": "무보-슬로바키아 수은 협력 · 韓 원전 유럽 진출 지원",
-      "title": "무역보험공사, 슬로바키아 수은과 협력…국내 원전기업 유럽 진출 지원",
-      "desc": "한국무역보험공사가 슬로바키아 수출입은행과 업무협약을 체결하고 국내 원전 기업의 유럽 시장 진출 지원에 나섰습니다. 이번 협력을 통해 유럽 내 원전 프로젝트 관련 국내 기업들의 수출 및 금융 지원 기반이 강화될 것으로 보입니다."
+      "cat": "외환",
+      "tag": "원/달러 환율 1,336.20원 (-1.94%)",
+      "title": "원/달러 환율 1,336.20원으로 큰 폭 하락",
+      "desc": "원/달러 환율은 집계 기준 확인 중인 가운데 전일 대비 26.50원(-1.94%) 하락한 1,336.20원을 기록했습니다. 환율이 큰 폭으로 내리며 외환 시장의 변동성이 확대된 하루였습니다."
     }
   ],
-  "talkingPoint": "금일 국내 증시는 외국인의 5,000억원 이상 순매도 영향으로 코스피가 0.98% 하락한 5,290.53에 마감한 반면, 코스닥은 0.45% 상승한 699.66으로 장을 마쳤습니다. 뉴욕 증시에서 필라델피아 반도체 지수가 3.43%, 나스닥이 0.91% 하락하며 기술주 약세가 이어진 점이 국내 대형주 수급에 부담으로 작용했습니다. 원/달러 환율은 1,336.20원으로 1.94% 하락하며 원화 강세를 기록했습니다. 시장은 엔비디아 실적 발표와 앤트로픽 상장을 앞두고 AI 투자 심리의 방향성을 확인하려는 흐름을 보이고 있습니다.",
+  "talkingPoint": "오늘 국내 증시는 장중 5,500선을 상회하기도 했으나 외국인의 5,000억원 넘는 순매도가 출회되면서 코스피가 0.98% 하락한 5,290.53으로 거래를 마쳤습니다. 반면 코스닥은 699.66으로 0.45% 상승 마감하며 양 시장이 엇갈린 흐름을 보였습니다. 해외 시장에서는 S&P 500(-0.4%)과 나스닥(-0.91%)이 하락했고, 특히 필라델피아 반도체 지수가 3.43% 급락하며 글로벌 기술주 조정 압력이 확인되었습니다. 원/달러 환율은 26.50원 내린 1,336.20원을 기록하며 환율 변동성이 두드러진 하루였습니다.",
   "topNews": [
     {
       "title": "코스피 장중 5500 넘었다 0.98%↓ 5290.53 마감…외국인 5000억원 넘게 순매도",
@@ -114,21 +114,22 @@
         "증시"
       ],
       "tagSource": "ai",
-      "coverage": 7,
+      "coverage": 8,
       "scope": "국내",
       "outlets": [
         "연합뉴스",
         "ISSUE ON (이슈온)",
         "한국경제",
+        "K뉴스통신",
         "문화일보",
-        "매일경제",
-        "YTN"
-      ]
+        "매일경제"
+      ],
+      "shortUrl": "https://is.gd/hUprbB"
     },
     {
       "title": "송파 풍납극동아파트, 최고 40층 598가구로 재건축",
       "press": "Chosunbiz",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPeWtkVHdiN1duMEw3empJNzJMcmExYVMxdE9zRU15LVJmLXZUVzN0cTE4c09pVV80TDhDdDFSYnZkamxtUFVkNUx2MzhUTlNoTlhSRlZ2LUg4cWJOU3NvOE9EQ2NRYlpDVWlRV1BJenQ2dGE3dWRfZ015RWJscU1CZUpneVZZLUN2azRDTWR4eVNLSjc0cU5hc9IBrAFBVV95cUxNUWVtUmlwRnEyeUdnU1VJcFpBUDF3NlhyMDJKZ2N0WmxNVThHVmJibVhiV2kySjFVak0wVTFlazZhU2FDOXEySUp5N0RYQmE4blFRUFAzZ3VVeU5JMXNWX1pEWkgwNjUzWUJwWU1hWVhZcEw4SVJYOVIwUC10blE5dllEX01JVDJLNUV1WW02VlItTTNYV3N5Y1I3TzJlbkYwU3FqYlI5dW9Jbi1U?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPeWtkVHdiN1duMEw3empJNzJMcmExYVMxdE9zRU15LVJmLXZUVzN0cTE4c09pVV80TDhDdDFSYnZkamxtUFVkNUx2MzhUTlNoTlhSRlZ2LUg4cWJOU3NvOE9EQ2NRYlpDVWlRV1BJenQ2dGE3dWRfZ015RWJscU1CZUpneVZZLUN2azRDTWR4eVNLSjc0cU5hcw?oc=5",
       "timestamp": 1794710160000,
       "date": "2026.11.15 11:36",
       "tags": [
@@ -142,7 +143,8 @@
         "한국경제",
         "연합뉴스",
         "매일경제"
-      ]
+      ],
+      "shortUrl": "https://is.gd/j183cE"
     },
     {
       "title": "재경부 \"세무사 수석 합격 효력정지 논의\"…\"회계사 1차 불합격\"(종합)",
@@ -160,43 +162,26 @@
         "연합뉴스",
         "파이낸셜뉴스",
         "한국경제"
-      ]
-    },
-    {
-      "title": "무보, 슬로바키아 수출입은행과 맞손…韓 원전기업 유럽 진출 지원",
-      "press": "파이낸셜뉴스",
-      "url": "https://www.fnnews.com/news/202611151000103158",
-      "timestamp": 1794705041000,
-      "date": "2026.11.15 10:10",
-      "tags": [
-        "증시",
-        "매크로"
       ],
-      "tagSource": "ai",
-      "coverage": 3,
-      "scope": "국내",
-      "outlets": [
-        "파이낸셜뉴스",
-        "연합뉴스",
-        "한국경제"
-      ]
+      "shortUrl": "https://is.gd/f8kR0v"
     },
     {
-      "title": "캐나다 시민권자의 한국 땅 상속, 유언장대로 될까",
-      "press": "한국경제",
-      "url": "https://www.hankyung.com/article/202611107435i",
-      "timestamp": 1794722402000,
-      "date": "2026.11.15 15:00",
+      "title": "강남권 분양 확 줄자…서울 1순위 청약자 4년래 최저",
+      "press": "매일경제",
+      "url": "https://www.mk.co.kr/news/realestate/12209143",
+      "timestamp": 1794714802000,
+      "date": "2026.11.15 12:53",
       "tags": [
-        "TAX"
+        "부동산"
       ],
       "tagSource": "ai",
       "coverage": 2,
       "scope": "국내",
       "outlets": [
-        "한국경제",
-        "파이낸셜뉴스"
-      ]
+        "매일경제",
+        "연합뉴스"
+      ],
+      "shortUrl": "https://is.gd/9AVdTc"
     },
     {
       "title": "코인원 \"외주업체 해킹으로 이름·계좌번호 등 고객 정보 유출\"",
@@ -205,8 +190,7 @@
       "timestamp": 1794709101000,
       "date": "2026.11.15 11:18",
       "tags": [
-        "대체투자",
-        "증시"
+        "대체투자"
       ],
       "tagSource": "ai",
       "coverage": 2,
@@ -214,7 +198,26 @@
       "outlets": [
         "한국경제",
         "연합뉴스"
-      ]
+      ],
+      "shortUrl": "https://is.gd/H1fmbV"
+    },
+    {
+      "title": "무보, 슬로바키아 수출입은행과 맞손…韓 원전기업 유럽 진출 지원",
+      "press": "파이낸셜뉴스",
+      "url": "https://www.fnnews.com/news/202611151000103158",
+      "timestamp": 1794705041000,
+      "date": "2026.11.15 10:10",
+      "tags": [
+        "매크로"
+      ],
+      "tagSource": "ai",
+      "coverage": 2,
+      "scope": "국내",
+      "outlets": [
+        "파이낸셜뉴스",
+        "연합뉴스"
+      ],
+      "shortUrl": "https://is.gd/iJVOke"
     },
     {
       "title": "최대주주 지분 50% 이상인데 저PBR株 명단, 단독 공개합니다",
@@ -230,29 +233,31 @@
       "scope": "국내",
       "outlets": [
         "매일경제"
-      ]
+      ],
+      "shortUrl": "https://is.gd/qP9ePp"
     },
     {
-      "title": "[단독]국내생산촉진세제 놓고...정부 통상리스크 점검",
-      "press": "매일경제",
-      "url": "https://www.mk.co.kr/news/economy/12209180",
-      "timestamp": 1794721226000,
-      "date": "2026.11.15 14:40",
+      "title": "캐나다 시민권자의 한국 땅 상속, 유언장대로 될까",
+      "press": "한국경제",
+      "url": "https://www.hankyung.com/article/202611107435i",
+      "timestamp": 1794722402000,
+      "date": "2026.11.15 15:00",
       "tags": [
-        "매크로"
+        "TAX"
       ],
       "tagSource": "ai",
       "coverage": 1,
       "scope": "국내",
       "outlets": [
-        "매일경제"
-      ]
+        "한국경제"
+      ],
+      "shortUrl": "https://is.gd/Y1j5a2"
     }
   ],
   "assetChecks": {
     "framework": "models",
-    "generatedAt": "2026-11-15T07:22:22.518Z",
-    "model": "gemini-3.5-flash-lite",
+    "generatedAt": "2026-11-15T07:46:32.361Z",
+    "model": "gemini-flash-lite-latest",
     "models": [
       {
         "key": "conservative",
@@ -317,8 +322,8 @@
             "coverage": 1
           },
           {
-            "title": "집값 뛰자 ‘50년 주담대’ 늘어나는 일본…은퇴 뒤 빚 감당할까",
-            "url": "https://www.mk.co.kr/news/world/12209191",
+            "title": "롯데건설, PF 대출 8900억대로 축소",
+            "url": "https://www.mk.co.kr/news/realestate/12209145",
             "press": "매일경제",
             "coverage": 1
           }
@@ -326,21 +331,21 @@
         "level": "변동 큼",
         "texts": {
           "conservative": {
-            "headline": "포트폴리오의 70%를 차지하는 안전자산의 중심축 점검",
-            "insight": "원/달러 환율이 1,336.20원으로 1.94% 하락한 가운데, 다가오는 한국은행 금통위 일정을 주시하며 자산 방어력을 확인해야 합니다.",
-            "check": "환율 하락에 따른 원화 가치 변동이 보유 안전자산 가치에 미치는 영향을 점검하세요.",
+            "headline": "자산 방어의 핵심, 원/달러 환율 하락과 금통위 대기",
+            "insight": "원/달러 환율이 1,336.20원으로 1.94% 하락하였으며, 다가오는 한국은행 금통위를 앞두고 있습니다. 비중이 70%로 가장 큰 만큼, 환율 변동과 통화정책 방향에 대한 점검이 필수적입니다.",
+            "check": "원/달러 환율 하락세가 안전자산 가치에 미치는 영향과 금통위 일정을 확인하세요.",
             "textBy": "ai"
           },
           "standard": {
-            "headline": "30% 비중의 안전자산으로 기초 체력 유지",
-            "insight": "원/달러 환율 1,336.20원 하락과 금통위 대기 상황에서 적정 비중으로 포트폴리오를 지탱하고 있습니다.",
-            "check": "환율 변동성과 다가오는 금통위 일정이 안전자산에 미치는 영향을 점검하세요.",
+            "headline": "환율 하락 및 금통위 앞둔 안전자산 점검",
+            "insight": "원/달러 환율이 1,336.20원으로 1.94% 하락하고 한국은행 금통위를 앞두고 있습니다. 비중 30% 수준에서 변동 요인을 관리합니다.",
+            "check": "환율 변동 및 금통위 일정을 점검하세요.",
             "textBy": "ai"
           },
           "aggressive": {
-            "headline": "10% 비중의 안전자산은 최소한의 방어 역할",
-            "insight": "환율 하락과 금통위 일정이 있으나 포트폴리오 내 비중이 낮아 전체 성과에 미치는 영향은 제한적입니다.",
-            "check": "원/달러 환율 변동에 따른 최소한의 안전판 상태를 확인하세요.",
+            "headline": "소폭 비중의 안전자산, 환율 및 금통위 확인",
+            "insight": "원/달러 환율 1.94% 하락과 금통위 일정이 있으나, 비중이 10%로 낮아 전체 포트폴리오에 미치는 영향은 제한적입니다.",
+            "check": "환율 및 통화정책 일정의 기본 사항을 확인하세요.",
             "textBy": "ai"
           }
         }
@@ -387,33 +392,33 @@
             "title": "코스피 장중 5500 넘었다 0.98%↓ 5290.53 마감…외국인 5000억원 넘게 순매도",
             "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1LaFdqUVBzSEZuR0xEVFcyWHNQQzkwc2p0RFVTZjIzYzFCVDhxMW01VTdaanVJQ2poLW5BcUlMWkl4eUhCYUozZGJ5MEUwZG9LRHNZSk5aS3lpUUZHeHJfUVM2UmFNaUV5ZjBR?oc=5",
             "press": "ISSUE ON (이슈온)",
-            "coverage": 7
+            "coverage": 8
           },
           {
-            "title": "엔비디아 실적·앤트로픽 상장…AI 투심 회복 분수령",
-            "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE94cnNQM0RFSEN0ZFRRZ0k0Ujdsd3pFUWF6SUFDci13V0JJQzJrTzRQVGdVcEVPVzMxSXVMVVhzVmkwLWpudk91amhYLUx4NVlIV2tnUDRRUC14d2tNTkE?oc=5",
-            "press": "뉴스투데이",
-            "coverage": 4
+            "title": "“美 AI 투자붐, 2028년 전후 조정 가능성…반도체 의존도 높은 韓 대비해야”",
+            "url": "https://www.mk.co.kr/news/economy/12209261",
+            "press": "매일경제",
+            "coverage": 3
           }
         ],
         "level": "평이",
         "texts": {
           "conservative": {
-            "headline": "시장 추종 비중 20%로 전체 영향은 제한적",
-            "insight": "코스피 5,290.53 마감 및 주요국 지수 약세에도 불구하고 낮은 비중으로 인해 포트폴리오 전반의 충격은 크지 않습니다.",
-            "check": "글로벌 지수 하락세가 전체 자산에 미치는 국소적 변동을 확인하세요.",
+            "headline": "제한적 영향, 코스피 하락 속 지수 흐름 관찰",
+            "insight": "코스피가 5,290.53으로 하락 마감했으나 본 모델 내 비중이 20%로 낮아 포트폴리오 전체 영향은 제한적입니다.",
+            "check": "외국인 순매도 규모와 지수 추이를 평이한 수준에서 확인하세요.",
             "textBy": "ai"
           },
           "standard": {
-            "headline": "40% 비중의 시장 추종 핵심 점검 구간",
-            "insight": "코스피 5,290.53 및 S&P 500, 나스닥 하락과 외국인 순매도세가 나타나며 미국 월물 옵션 만기일을 앞두고 있습니다.",
-            "check": "외국인 순매도 규모와 주요 지수 흐름이 시장 추종 자산에 미치는 영향을 확인하세요.",
+            "headline": "시장 추종 중심, 코스피 하락과 미국 일정 점검",
+            "insight": "코스피 5,290.53 마감 및 미국 월물 옵션 만기일을 앞두고 있으며, 비중 40%로 시장 흐름을 꾸준히 관찰해야 하는 핵심 영역입니다.",
+            "check": "외국인의 코스피 순매도 동향과 미국 지수 흐름을 확인하세요.",
             "textBy": "ai"
           },
           "aggressive": {
-            "headline": "40% 비중의 시장 추종 흐름 면밀히 관찰",
-            "insight": "코스피 5,290.53 하락과 외국인 순매도, 미국 옵션 만기일을 맞아 시장 방향성 확인이 중요합니다.",
-            "check": "외국인 수급 변화와 AI 투심 회복 분수령 관련 뉴스가 지수 추종 자산에 주는 영향을 확인하세요.",
+            "headline": "시장 추종의 축, 코스피 하락과 대외 변수 대응",
+            "insight": "코스피 5,290.53 하락 및 외국인 순매도, 미국 AI 투자붐 조정 가능성 등 지수 관련 요인이 비중 40%인 이 바구니에서 중요하게 다뤄집니다.",
+            "check": "외국인 수급과 미국 시장 연동성을 점검하세요.",
             "textBy": "ai"
           }
         }
@@ -443,21 +448,21 @@
         "level": "변동 큼",
         "texts": {
           "conservative": {
-            "headline": "초과 수익 10% 비중으로 변동성 영향 제한적",
-            "insight": "필라델피아 반도체 하락과 코인원 고객 정보 유출 뉴스 등 개별 악재가 있으나, 낮은 비중으로 영향은 한정적입니다.",
-            "check": "보유 중인 개별 테마 및 대체투자 자산의 리스크 노출 정도를 확인하세요.",
+            "headline": "부분적 변동, 반도체 하락과 해킹 이슈의 영향",
+            "insight": "필라델피아 반도체 하락 및 코인원 고객 정보 유출 뉴스가 있으나, 비중이 10%에 불과해 전체 자산에 미치는 영향은 제한적입니다.",
+            "check": "개별 테마 및 종목 관련 뉴스의 제한적 파급력을 확인하세요.",
             "textBy": "ai"
           },
           "standard": {
-            "headline": "초과 수익 30% 비중의 적극적 모니터링 필요",
-            "insight": "필라델피아 반도체 3.43% 하락과 코인원 정보 유출 등 개별 이슈가 포트폴리오 수익률에 유의미한 변수로 작용합니다.",
-            "check": "반도체 지수 하락 및 개별 테마 관련 뉴스가 초과 수익 바구니에 미치는 타격을 확인하세요.",
+            "headline": "초과 수익 영역, 반도체 및 테마 이슈 점검",
+            "insight": "필라델피아 반도체 3.43% 하락과 코인원 정보 유출 뉴스가 있으며, 비중 30%로 초과 수익 바구니 내 세심한 확인이 필요합니다.",
+            "check": "반도체 지수 하락과 개별 이슈가 미치는 영향을 확인하세요.",
             "textBy": "ai"
           },
           "aggressive": {
-            "headline": "50%를 차지하는 초과 수익 바구니의 핵심 점검",
-            "insight": "필라델피아 반도체 3.43% 급락과 코인원 정보 유출 이슈는 공격형 포트폴리오의 성과를 좌우할 수 있는 최우선 점검 사항입니다.",
-            "check": "반도체 관련 자산 및 개별 테마의 낙폭과 리스크 요인을 구체적으로 확인하세요.",
+            "headline": "최우선 점검, 반도체 급락과 개별 이슈 대응",
+            "insight": "필라델피아 반도체가 3.43% 하락하고 코인원 해킹 이슈가 발생한 가운데, 비중이 50%로 가장 높아 포트폴리오 성과의 핵심 점검 사항입니다.",
+            "check": "반도체 지수 하락 폭과 관련 개별 뉴스의 파장을 집중적으로 확인하세요.",
             "textBy": "ai"
           }
         }
@@ -471,14 +476,14 @@
     "taxNews": [
       {
         "title": "송파 풍납극동아파트, 최고 40층 598가구로 재건축",
-        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPeWtkVHdiN1duMEw3empJNzJMcmExYVMxdE9zRU15LVJmLXZUVzN0cTE4c09pVV80TDhDdDFSYnZkamxtUFVkNUx2MzhUTlNoTlhSRlZ2LUg4cWJOU3NvOE9EQ2NRYlpDVWlRV1BJenQ2dGE3dWRfZ015RWJscU1CZUpneVZZLUN2azRDTWR4eVNLSjc0cU5hc9IBrAFBVV95cUxNUWVtUmlwRnEyeUdnU1VJcFpBUDF3NlhyMDJKZ2N0WmxNVThHVmJibVhiV2kySjFVak0wVTFlazZhU2FDOXEySUp5N0RYQmE4blFRUFAzZ3VVeU5JMXNWX1pEWkgwNjUzWUJwWU1hWVhZcEw4SVJYOVIwUC10blE5dllEX01JVDJLNUV1WW02VlItTTNYV3N5Y1I3TzJlbkYwU3FqYlI5dW9Jbi1U?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPeWtkVHdiN1duMEw3empJNzJMcmExYVMxdE9zRU15LVJmLXZUVzN0cTE4c09pVV80TDhDdDFSYnZkamxtUFVkNUx2MzhUTlNoTlhSRlZ2LUg4cWJOU3NvOE9EQ2NRYlpDVWlRV1BJenQ2dGE3dWRfZ015RWJscU1CZUpneVZZLUN2azRDTWR4eVNLSjc0cU5hcw?oc=5",
         "press": "Chosunbiz",
         "coverage": 4
       },
       {
-        "title": "캐나다 시민권자의 한국 땅 상속, 유언장대로 될까",
-        "url": "https://www.hankyung.com/article/202611107435i",
-        "press": "한국경제",
+        "title": "강남권 분양 확 줄자…서울 1순위 청약자 4년래 최저",
+        "url": "https://www.mk.co.kr/news/realestate/12209143",
+        "press": "매일경제",
         "coverage": 2
       }
     ]
