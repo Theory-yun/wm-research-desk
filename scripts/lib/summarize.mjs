@@ -1,8 +1,16 @@
 import { fetchWithRetry } from "./fetchUtil.mjs";
 
-// "-latest" 별칭은 구글이 새 Flash 모델을 낼 때마다 자동으로 가리키는 모델을 바꿔주는 공식 별칭입니다.
-// (날짜 박힌 모델ID를 직접 박아두면 모델이 폐기될 때 404가 나므로, 별칭을 기본값으로 사용합니다.)
-const DEFAULT_GEMINI_MODEL = "gemini-flash-latest";
+// Gemini 모델 후보 — 위에서부터 순서대로 시도하고, 실패(503 수요 폭주·404 단종·타임아웃)하면 즉시 다음 모델로 넘어갑니다.
+// 2026-11-15 진단 결과(실제 브리핑 크기 프롬프트, 이 저장소의 키 기준):
+//   gemini-flash-latest      → 45~60초 무응답 (기존 실패 원인)
+//   gemini-3.8-flash         → 503 high demand
+//   gemini-3.5-flash         → ✅ 약 9초
+//   gemini-3.5-flash-lite    → ✅ 약 2초
+//   gemini-2.5-flash(-lite)  → 404 신규 사용자 제공 종료
+// 버전 고정 모델이 언젠가 단종돼도 마지막 "-latest" 별칭이 받쳐주도록 별칭을 끝에 둡니다.
+// 저장소 variable GEMINI_MODEL을 지정하면 그 모델을 맨 앞에서 먼저 시도합니다.
+const GEMINI_MODEL_CHAIN = ["gemini-3.5-flash", "gemini-3.5-flash-lite", "gemini-flash-lite-latest", "gemini-3.1-flash-lite"];
+const GEMINI_PER_MODEL_TIMEOUT_MS = 30000;
 const DEFAULT_CLAUDE_MODEL = "claude-sonnet-4-5-20250929"; // 운영 전 Anthropic 콘솔에서 최신 모델ID 확인 권장
 
 const SYSTEM_PROMPT =
@@ -27,11 +35,20 @@ export async function generateBriefingSummary({ edition, market, candidateNews, 
   const prompt = buildPrompt({ edition, market, candidateNews, pbNotes });
 
   if (process.env.GEMINI_API_KEY) {
-    try {
-      const parsed = await callGemini(prompt);
-      return { issues: parsed.issues.slice(0, 3), talkingPoint: String(parsed.talkingPoint), summarySource: "ai-gemini" };
-    } catch (err) {
-      console.error(`[summarize] Gemini API 호출 실패: ${err.message}`);
+    const chain = [...new Set([process.env.GEMINI_MODEL, ...GEMINI_MODEL_CHAIN].filter(Boolean))];
+    for (const model of chain) {
+      try {
+        const parsed = await callGemini(prompt, model);
+        console.log(`[summarize] Gemini 요약 성공: ${model}`);
+        return {
+          issues: parsed.issues.slice(0, 3),
+          talkingPoint: String(parsed.talkingPoint),
+          summarySource: "ai-gemini",
+          summaryModel: model,
+        };
+      } catch (err) {
+        console.error(`[summarize] Gemini(${model}) 실패 → 다음 후보 시도: ${err.message}`);
+      }
     }
   }
 
@@ -50,9 +67,8 @@ export async function generateBriefingSummary({ edition, market, candidateNews, 
   return { ...fallbackSummary({ edition, market, candidateNews }), summarySource: "fallback" };
 }
 
-async function callGemini(prompt) {
+async function callGemini(prompt, model) {
   const apiKey = process.env.GEMINI_API_KEY;
-  const model = process.env.GEMINI_MODEL || DEFAULT_GEMINI_MODEL;
 
   // maxOutputTokens를 넉넉하게 잡아둡니다: 최신 Gemini 모델은 기본적으로 내부 "thinking"을 하는데,
   // 이 추론 토큰도 같은 토큰 예산을 나눠 쓰기 때문에 예산이 너무 작으면 실제 답변이 비어버릴 수 있습니다.
@@ -64,12 +80,13 @@ async function callGemini(prompt) {
     generationConfig: { responseMimeType: "application/json", maxOutputTokens: 8192 },
   };
 
-  // retries:2 + backoffMs:2000(지수 백오프 2s→4s) — "모델 과부하(503)" 같은 일시적 장애는
-  // 몇 초만 기다리면 풀리는 경우가 많아, 시세/뉴스 호출보다 더 끈기 있게 재시도합니다.
+  // 모델당 1회 재시도(3초 후)만 하고, 그래도 안 되면 다음 모델로 넘어갑니다.
+  // (한 모델에 오래 매달리기보다 다른 모델로 빨리 갈아타는 편이 성공률이 높다는 것이 진단 결과입니다.)
   const res = await fetchWithRetry(`https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`, {
-    timeoutMs: 55000,
-    retries: 2,
-    backoffMs: 2000,
+    timeoutMs: GEMINI_PER_MODEL_TIMEOUT_MS,
+    retries: 1,
+    backoffMs: 3000,
+    noRetryStatuses: [400, 401, 403, 404], // 키·모델 문제는 재시도해도 같으므로 즉시 다음 모델로
     headers: {
       "x-goog-api-key": apiKey,
       "content-type": "application/json",
@@ -79,7 +96,8 @@ async function callGemini(prompt) {
     responseType: "json",
   });
 
-  const text = res?.candidates?.[0]?.content?.parts?.[0]?.text;
+  if (!res) throw new Error("응답 없음(위 fetchWithRetry 로그 참고)");
+  const text = res?.candidates?.[0]?.content?.parts?.map((p) => p.text ?? "").join("");
   const parsed = extractJson(text);
   validateSchema(parsed);
   return parsed;

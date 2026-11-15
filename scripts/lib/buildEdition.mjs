@@ -82,7 +82,7 @@ export async function buildEdition({ edition, directFeeds, queryRules, pbNotesPa
     candidateNews: candidateNews.length ? candidateNews : previous?.topNews ?? [],
     pbNotes,
   });
-  console.log(`요약 생성 방식: ${summary.summarySource}`);
+  console.log(`요약 생성 방식: ${summary.summarySource}${summary.summaryModel ? ` (${summary.summaryModel})` : ""}`);
 
   // 6) 최종 JSON 작성 (latest + 날짜별 아카이브 둘 다 저장 → 추후 "지난 브리핑 다시보기" 기능 확장 가능)
   const now = new Date();
@@ -94,6 +94,7 @@ export async function buildEdition({ edition, directFeeds, queryRules, pbNotesPa
       market: marketFailCount === 0 ? "ok" : marketFailCount === market.length ? "failed" : "partial",
       news: freshCount > 0 ? "ok" : "failed",
       summary: summary.summarySource,
+      ...(summary.summaryModel ? { summaryModel: summary.summaryModel } : {}),
     },
     market,
     issues: summary.issues,

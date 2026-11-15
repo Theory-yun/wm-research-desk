@@ -18,7 +18,7 @@
 
 export async function fetchWithRetry(
   url,
-  { timeoutMs = 8000, retries = 2, headers = {}, responseType = "json", method = "GET", body, backoffMs = 400 } = {}
+  { timeoutMs = 8000, retries = 2, headers = {}, responseType = "json", method = "GET", body, backoffMs = 400, noRetryStatuses = [] } = {}
 ) {
   let lastErr;
   for (let attempt = 0; attempt <= retries; attempt++) {
@@ -37,12 +37,18 @@ export async function fetchWithRetry(
         },
       });
       clearTimeout(timer);
-      if (!res.ok) throw new Error(`HTTP ${res.status} (${url})`);
+      if (!res.ok) {
+        // 서버가 돌려준 에러 메시지(예: 구글 API의 "high demand", "no longer available")를 로그에 남겨 원인 파악을 쉽게 합니다.
+        const detail = (await res.text().catch(() => "")).replace(/\s+/g, " ").slice(0, 200);
+        const httpErr = new Error(`HTTP ${res.status} (${url}) ${detail}`);
+        httpErr.status = res.status;
+        throw httpErr;
+      }
       return responseType === "json" ? await res.json() : await res.text();
     } catch (err) {
       clearTimeout(timer);
       lastErr = err;
-      if (attempt < retries) {
+      if (attempt < retries && !noRetryStatuses.includes(err.status)) {
         // backoffMs 기본 400ms: 시세/뉴스처럼 빠르게 넘어가야 하는 호출에 적합.
         // AI 요약처럼 "503 모델 과부하" 같은 일시적 장애에 더 여유를 두고 싶으면
         // 호출하는 쪽에서 backoffMs를 더 크게 넘기면 됩니다(지수 백오프: backoffMs * 2^attempt).
