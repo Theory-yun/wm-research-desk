@@ -1,6 +1,6 @@
 {
   "note": "curated=true 는 PB가 고른 연례 핵심 리포트(고정), 나머지는 scripts/build-insights.mjs가 매일 자동 수집합니다.",
-  "updatedAt": "2026-11-15T04:55:14.632Z",
+  "updatedAt": "2026-11-15T07:20:09.211Z",
   "categories": [
     "글로벌 F/O 동향",
     "국내 부자·웰스 리포트",
@@ -173,6 +173,19 @@
     },
     {
       "stars": "★★★★☆",
+      "category": "자산배분·시장 전망",
+      "title": "피델리티, 2027년 전망에서 금리 인상과 AI 전력 수요 조명",
+      "desc": "2027년 전망을 통해 금리 인상과 AI 전력 수요의 중요성을 강조한 리서치 내용입니다.",
+      "org": "BBJ - Budapest Business Journal",
+      "date": "2026.11.12",
+      "ts": 1794483000000,
+      "btnText": "🔗 원문 보기",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPbU5OUW5tejFOaEJ2NmVlR2RsUGxjMjRNNkNCU09CNElZSXFwZ2Z2TmZMNnZUeF9LaUI3X2lsQ1Juc0l6QmNURUVwQ29hQUswNWlMaFBuaG4wM2JEV1gwUnhSMnlFWDgycDMyX1E2WGVBeDZXNmk3ZWJYSm1yVHlxTWZzb09SSjZSSkdPLTRkbWNpbVZNVGVaZkh0LXo1Nm5yQmVHV1RwQm00ZEVmUms4?oc=5",
+      "lang": "en",
+      "classifiedBy": "AI(gemini-3.5-flash-lite)"
+    },
+    {
+      "stars": "★★★★☆",
       "category": "대체투자·사모시장",
       "title": "亞 사모대출 커진다…韓기업도 활용 늘 것",
       "desc": "아시아 지역 내 사모대출 시장의 확대와 국내 기업들의 활용 증가 등 대체투자 시장의 새로운 동향을 보여줍니다.",
@@ -277,6 +290,19 @@
     },
     {
       "stars": "★★★★☆",
+      "category": "대체투자·사모시장",
+      "title": "트윈포커스 공동창업자: 'DPI 위기' 속 사모펀드 투자 점점 더 까다로워져",
+      "desc": "DPI 위기 속에서 사모펀드 투자 집행이 더욱 까다로워지고 있는 대체투자 시장 동향입니다.",
+      "org": "PEI Private Equity",
+      "date": "2026.11.04",
+      "ts": 1793798098000,
+      "btnText": "🔗 원문 보기",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQRnlseE9xNEUzQ1ZBSGpWdWlUWUF3czZMblo1LU8xVnZQZ0doeFhpUzRzZEF3MzdOTkNxcVJtdFZfRWVWYVc1OF9ZOEJBVVZPTVhOaVgyTDMxRVV5Z3oyWVZ5THAzZ0dlcmVJbEhZbk5YR1N2TXg2QXBra1JVLWRWd3k5X3ZqSDBxMWs5Mk84ZUo0TXY0Q19nSnlwdHY3cWNaMjNpZWkwSzM4VDM0VG5HZTNhaWtId3JZZjBLM1EtZW1OcFA2?oc=5",
+      "lang": "en",
+      "classifiedBy": "AI(gemini-3.5-flash-lite)"
+    },
+    {
+      "stars": "★★★★☆",
       "category": "승계·세무·신탁",
       "title": "2026년 가업승계 세제개편안…승계 가능한 업종과 제외되는 업종은?",
       "desc": "가업승계 세제개편안에 따라 승계가 가능한 업종과 제외되는 업종을 분석한 세무 관련 정보입니다.",
@@ -286,6 +312,19 @@
       "btnText": "🔗 원문 보기",
       "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFB5QkY3aUZ6dVNHNllwZTQtY0FlcmRBdVFUTzlNZno0Vm1SQXpWOHJiWll1T0MwVWpJSXZWYzlIRTcxOURsNHVFZjJtQTRUZmRZcmQwWWE2N0RNaVBhcHJnQU4tTQ?oc=5",
       "lang": "ko",
+      "classifiedBy": "AI(gemini-3.5-flash-lite)"
+    },
+    {
+      "stars": "★★★★☆",
+      "category": "자산배분·시장 전망",
+      "title": "11월 주식시장 전망: 2026년 남은 기간 포트폴리오 포지셔닝 방법",
+      "desc": "2026년 잔여 기간 동안 주식시장 포트폴리오를 어떻게 구성할지에 대한 자산배분 전망입니다.",
+      "org": "Morningstar",
+      "date": "2026.11.03",
+      "ts": 1793692800000,
+      "btnText": "🔗 원문 보기",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQaVVWZXNxSXFDUmhYbGJFZjZIWlV0MElvbDZUc0pBR01Vbk44REpJVTZoRVdtdlpoc2hlNG1yYkdFbkYxR283alo3Q29raGk3bTBPMWZPS3lJblo3TERFdmZwSmRmb1A5YmkydURqbFRiY3JvQ0xqU1hlbzY2T21iY2lsSFN0NWNFXzBLUW1ad1l2OUoxcmRaOFBmUkZBQ0xfbTNHejJDa1J0a2ZN?oc=5",
+      "lang": "en",
       "classifiedBy": "AI(gemini-3.5-flash-lite)"
     },
     {
@@ -338,6 +377,32 @@
       "btnText": "🔗 원문 보기",
       "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBKallJMXFfZjN5d3ZERThQTDU5ZXB1bDROakRIRmliSnBZX0htNElGaERCTlZ6Z012Y3ZvR2RMZzlTY0NyY3ByandwODRpaDRxMnk0Tm5RaGRZcXZxblk4UnV1b1dVU3ZUc3U2V1lmWTlVSHljWUHSAWZBVV95cUxOMldCZ2ltQng1UkJOQ3JHb1R1TGJTbVNuaE11WHJnMTNTMk1fakY1SDBKMWM3QzI1OG1vY2JqOUV1Ql82UHZDMFhDUHdZUkk1bTVfSHFBMnEteXQ5MXNjTEZhYmRSZXc?oc=5",
       "lang": "ko",
+      "classifiedBy": "AI(gemini-3.5-flash-lite)"
+    },
+    {
+      "stars": "★★★★☆",
+      "category": "자산배분·시장 전망",
+      "title": "2026년 금 가격 전망치 2개 분기 연속 하향 조정; 애널리스트들은 여전히 2027년 4,650달러 반등 전망",
+      "desc": "금 가격 전망치 수정 및 2027년 반등 시나리오를 다룬 시장 전망 통계입니다.",
+      "org": "BigGo Finance",
+      "date": "2026.10.29",
+      "ts": 1793257200000,
+      "btnText": "🔗 원문 보기",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9IX05CZm04dndJUm9fWGZyN1VFa0V6SmRDOHpweFdsWHprczVCdWgta2pMejJHQlJKeVE1RnZJT1NCNXE4NkZpM0xMcXpNUGQyTFNxaDc3ajl1SXFTNUhRdVNsVEdxTGZtUkJqaFJ1VU5ZNUhzR3c?oc=5",
+      "lang": "en",
+      "classifiedBy": "AI(gemini-3.5-flash-lite)"
+    },
+    {
+      "stars": "★★★★★",
+      "category": "대체투자·사모시장",
+      "title": "프레킨, 2031년 사모시장 운용자산(AuM) 34조 달러 돌파 전망",
+      "desc": "프레킨이 발표한 글로벌 사모시장 운용자산 규모의 장기 성장 통계 전망입니다.",
+      "org": "Family Wealth Report",
+      "date": "2026.10.29",
+      "ts": 1793257200000,
+      "btnText": "🔗 원문 보기",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPbUVobGVkeUJLbDc4ZUJSX09SNnlyU3N2b0NfaWY1V0JNdGhfSmM2SmRMSmMyR050M0pZYTlrbjh6dkI3MjZFU2c4d2VYZm1pZV9nYlR2YkVrT2RlYUh2T3lEWjVQTWE5Q1BGRWhNb3p5QUZZX2VEOFJSc1ZWMFNIWU9TU0FUMVJySlVyRnlsZ0hUaVdQbEJpam4wczMyb21FaTVoQ05SV3hCUjdVbTlvZzhWWVVzcGs?oc=5",
+      "lang": "en",
       "classifiedBy": "AI(gemini-3.5-flash-lite)"
     },
     {
@@ -407,6 +472,19 @@
     },
     {
       "stars": "★★★★★",
+      "category": "자산배분·시장 전망",
+      "title": "JP모건, 장기 자본시장 수익률 전망 상향 조정",
+      "desc": "JP모건이 발표한 장기 자본시장 수익률 전망 상향 조정 데이터입니다.",
+      "org": "Wealth Briefing",
+      "date": "2026.10.21",
+      "ts": 1792566000000,
+      "btnText": "🔗 원문 보기",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQdG9tOXpWR1FnMVhlT0hBbVNCMjZUQnB6aGN0b2syaTR3N2tzTnRwODVITm5QR1Q1Y3hvdGJvRHZDLUlGTDNXREFoalhhSlJRVUM0Nmh5V0F0M1E1cUZaNEJkOEtHRGNWZklFdjFYQ3RPT3hITGRHUVNFaW1oR0xZbmZMTzE4U05aRkVhUnd5OVZWb3BsdFVlcDY5aWpqWDNRZEJzNUgwWVFCZ0hGUmJiU3Vn?oc=5",
+      "lang": "en",
+      "classifiedBy": "AI(gemini-3.5-flash-lite)"
+    },
+    {
+      "stars": "★★★★★",
       "category": "글로벌 F/O 동향",
       "title": "“패밀리오피스는 프라이버시를 최우선으로 여겨야 한다” – 서밋 보고서",
       "desc": "글로벌 패밀리오피스 운영에서 프라이버시 보호가 핵심 가치임을 강조한 서밋 보고서 내용입니다.",
@@ -471,6 +549,19 @@
       "classifiedBy": "AI(gemini-3.5-flash-lite)"
     },
     {
+      "stars": "★★★★☆",
+      "category": "승계·세무·신탁",
+      "title": "초부유층 사이의 상속 이전 문제를 둘러싼 불안감.",
+      "desc": "초부유층 사이에서 상속 이전 문제와 관련해 불안감이 대두되고 있음을 다룬 내용입니다.",
+      "org": "Vietnam.vn",
+      "date": "2026.10.20",
+      "ts": 1792479600000,
+      "btnText": "🔗 원문 보기",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQb1J1WmxENjVuRVVXS09zM3hCRDZVRXVEczBVLXphQUFZdFRldV9LelJzRmdJSzdqMWNuaE5ZcWMwXzVrdThzQklhYnE5QjFEb051NlJVTkpieUg5WTlERVhvSV9pLVAzNkxRY0NwNlNSZ1dpbmtCYWhzLS03dVFuWlhHYTYzZw?oc=5",
+      "lang": "ko",
+      "classifiedBy": "AI(gemini-3.5-flash-lite)"
+    },
+    {
       "stars": "★★★★★",
       "category": "글로벌 F/O 동향",
       "title": "아시아 초고액자산가 차세대, 가문 사업 매각 후 계획에 가장 발언권 적어: 줄리어스 베어",
@@ -484,15 +575,15 @@
       "classifiedBy": "AI(gemini-3.5-flash-lite)"
     },
     {
-      "stars": "★★★★★",
+      "stars": "★★★★☆",
       "category": "자산배분·시장 전망",
-      "title": "J.P. 모간, 10~15년간 60/40 포트폴리오 7.0% 수익률 전망하는 2027 장기 자본시장 가정 프로젝트 발표",
-      "desc": "J.P. 모간이 발표한 장기 자본시장 가정(LTCMA)을 통해 향후 10~15년간 전통 자산배분 포트폴리오의 기대 수익률을 전망할 수 있습니다.",
-      "org": "Investing News Network",
-      "date": "2026.10.19",
-      "ts": 1792393200000,
+      "title": "2026~2027년 금 전망: 금리, 중앙은행, 그리고 사이클",
+      "desc": "금리, 중앙은행, 사이클을 중심으로 한 2026~2027년 금 시장 전망을 담고 있습니다.",
+      "org": "RankiaPro",
+      "date": "2026.10.16",
+      "ts": 1792134000000,
       "btnText": "🔗 원문 보기",
-      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPUFYxbWhld1hrVWpYZjNfVnFNR2d6V25RQTlzVkFWc1JVZTN3aXhneUg2ZXlvZnZIUVpjcURYYXNSNEhkVVFzcks1Tm0tUEUyczdCem8wUWc2Qm1UeTRaZmthOF9xVzdBVTYzeXM4dnI2Vk9VVHl5aldzWUhMSm1neEFiVVZrMm40dVRLal9zVGEyRnA5M09zUVdvMTl5SDduMWdFSXdlUDhOWEZVSzBpQUR5WFBDS2p5bVI0Wi1nWUxkOUQyazFVZkEwc0tqTEpfZmhXbTdGQVNCTTAzcDJicQ?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9HbV9kbTI4c0xFeHJRbWROMC1NUV9iTndfaThCcGpoUi0yNkJrRm1JMWp5T2R1UFNWZXdKcGd4ZE0wQ0FjdEUwalBRcHNuTFFuNkRIWkc5Umk1NzJDajR6Zko4cXBjSV9RYjNEQ3lUZzFvU1hSTWtxQWFkeElKUQ?oc=5",
       "lang": "en",
       "classifiedBy": "AI(gemini-3.5-flash-lite)"
     },
@@ -545,6 +636,19 @@
       "ts": 1790665200000,
       "btnText": "🔗 원문 보기",
       "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQUGtwSHVNcVR0cHZSeThPLS1JOGxrcDFBNXZIUzFuVy0xTFJJUC1JMWNROEU3TUxkR2Z3ajdzVzdjQ01VUWRTQUtuUnhER0t2enVBWHJIaTZ1RVp4ZXNPVmplQ1htUVJuSnVFdl9mbWRVZ0MzRkhBaG40Z1llMm5aLUtEMjIwTVRIYmZYRmptenVQQkRkNXpDaFZWdndTVkRSclFHeVRqQQ?oc=5",
+      "lang": "en",
+      "classifiedBy": "AI(gemini-3.5-flash-lite)"
+    },
+    {
+      "stars": "★★★★★",
+      "category": "글로벌 F/O 동향",
+      "title": "대규모 부의 이전이 도래하고 있다 – 다만 그 누구도 예상하지 못한 방식으로",
+      "desc": "예상과 다른 양상으로 전개되는 글로벌 대규모 부의 이전 현상을 다룬 리포트입니다.",
+      "org": "Family Wealth Report",
+      "date": "2026.09.25",
+      "ts": 1790319600000,
+      "btnText": "🔗 원문 보기",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQNk1oNzg2aHVMazV1SHZ2TkJTcGt0RlFfX2IxMVY3OHBBb0VUNndpbi1vam96R0R1dF9oVEY3RGxZajFtd05PYzJ2QVRQemI4RmNMS3c4UTRlc2dFbWhRV05vck1yVUxkNVpLOWZ0b1RGUU9DeVBRUjBRdDlvbzFLVXhCT0Y0bzI2ZmN6SFVJZGFwVEhSOXE5OEdwd3pId2FaN2N3czN0UGxwMWhWR0xpM2NQTDVSaEEtMHFaY0UwQk9PWGpvZS16WnFLNXFjQjN5d1FJ?oc=5",
       "lang": "en",
       "classifiedBy": "AI(gemini-3.5-flash-lite)"
     },
