@@ -81,6 +81,8 @@ export async function buildEdition({ edition, directFeeds, queryRules, pbNotesPa
   if (pool.length < 20) pool = editionFresh; // 주말 등 기사가 적으면 범위를 넓힘
   const clusters = rankClusters(clusterStories(pool)).slice(0, 40);
   const groups = await aiMergeAndClassify(clusters, { label: `${edition} 필독 뉴스` });
+  const focus = edition === "MORNING" ? "해외" : "국내";
+  const focusRank = (n) => (n.scope === focus ? 0 : n.scope ? 1 : 0.5);
   const stories = (groups ?? clusters.map((c) => ({ clusters: [c], cats: [], relevant: true })))
     .filter((g) => g.relevant)
     .map((g) => {
@@ -93,15 +95,17 @@ export async function buildEdition({ edition, directFeeds, queryRules, pbNotesPa
         tags: tags.length ? tags : rep.tags,
         tagSource: g.cats.length ? "ai" : "keyword",
         coverage: outlets.length,
+        scope: g.scope ?? null,
         outlets: outlets.slice(0, 6),
         latestTs: Math.max(...items.map((i) => i.timestamp)),
       };
     })
-    .sort((a, b) => b.coverage - a.coverage || b.latestTs - a.latestTs);
+    // 에디션 성격에 맞는 이야기 먼저(모닝=해외, 이브닝=국내), 그 안에서 보도 언론사 수 → 최신순
+    .sort((a, b) => focusRank(a) - focusRank(b) || b.coverage - a.coverage || b.latestTs - a.latestTs);
   const topNews = stories.slice(0, TOP_NEWS_COUNT).map(({ latestTs, ...n }) => n);
   const candidateNews = stories.slice(0, SUMMARY_CANDIDATE_NEWS_COUNT);
   console.log(`필독 뉴스: 후보 ${pool.length}건 → 이야기 ${stories.length}개 (분야 판정: ${groups ? "AI" : "키워드 규칙"})`);
-  topNews.forEach((n, i) => console.log(`  ${i + 1}. [${n.coverage}곳] [${n.tags.join(",")}] ${n.title.slice(0, 50)}`));
+  topNews.forEach((n, i) => console.log(`  ${i + 1}. [${n.scope ?? "-"}·${n.coverage}곳] [${n.tags.join(",")}] ${n.title.slice(0, 50)}`));
 
   // 4) 뉴스룸 탭용 누적 아카이브에 병합 + 아직 AI 분야 판정을 안 받은 기사 판정
   const mergedArchive = mergeAndDedupe(archive.items, batches, { maxAgeDays: NEWS_ARCHIVE_MAX_AGE_DAYS }).slice(

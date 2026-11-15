@@ -134,6 +134,7 @@ export async function aiMergeAndClassify(clusters, { label = "필독 뉴스" } =
 1) 서로 같은 사건·같은 발표를 다룬 항목은 하나의 그룹으로 합치세요. 주제만 비슷하고 다른 사건이면 합치지 마세요.
 2) 각 그룹의 핵심 주제를 보고 분야를 정하세요. 제목에 단어가 들어 있다는 이유만으로 분류하지 말고 핵심 주제로 판단하세요.
 3) relevant: 금융사 행사·세미나·상품 홍보, 개인 투자 실패담 같은 흥미 위주 기사, 투자와 무관한 기사면 false.
+4) scope: 이야기의 무대가 한국 시장·한국 경제·한국 제도면 "국내", 미국 등 해외 시장·해외 경제면 "해외".
 
 분야(이 이름 그대로만, 주 분야 1개 + 필요시 보조 1개):
 ${CATEGORY_GUIDE}
@@ -141,7 +142,7 @@ ${CATEGORY_GUIDE}
 ${clusters.map((c, i) => `${i + 1}. ${c.rep.title} (${c.outlets.length}곳)`).join("\n")}
 
 모든 번호가 정확히 한 그룹에 들어가야 합니다. JSON 배열로만:
-[{"members": [번호들], "cats": ["주 분야", "보조 분야(선택)"], "relevant": true|false}]`,
+[{"members": [번호들], "cats": ["주 분야", "보조 분야(선택)"], "relevant": true|false, "scope": "국내"|"해외"}]`,
     validate: (d) => Array.isArray(d) && d.length > 0,
   });
   if (!r) return null;
@@ -152,7 +153,7 @@ ${clusters.map((c, i) => `${i + 1}. ${c.rep.title} (${c.outlets.length}곳)`).jo
     if (!members.length) continue;
     members.forEach((i) => used.add(i));
     const cats = (g.cats ?? []).filter((c) => NEWS_CATEGORIES.includes(c)).slice(0, 2);
-    groups.push({ clusters: members.map((i) => clusters[i]), cats, relevant: g.relevant !== false });
+    groups.push({ clusters: members.map((i) => clusters[i]), cats, relevant: g.relevant !== false, scope: g.scope === "해외" ? "해외" : g.scope === "국내" ? "국내" : null });
   }
   // AI가 빠뜨린 묶음은 그대로 남김
   clusters.forEach((c, i) => !used.has(i) && groups.push({ clusters: [c], cats: [], relevant: true }));
