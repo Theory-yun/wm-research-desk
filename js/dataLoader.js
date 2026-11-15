@@ -36,5 +36,5 @@ export async function loadAllData() {
   STATE.newsArchive = newsArchive?.items ?? [];
   STATE.insights = insights?.items ?? [];
   STATE.portfolioNotes = portfolioNotes?.items ?? [];
-  STATE.macroEvents = macroEvents?.items ?? [];
+  STATE.macro = macroEvents ?? null; // { coverage, kinds, items, ... }
 }

@@ -61,7 +61,7 @@ wm-research-desk/
 │   ├── news-archive.json      # 뉴스룸 탭용 누적 뉴스 아카이브 (Actions가 덮어씀)
 │   ├── insights.json          # F/O 리포트 목록 (정적 유지 + 주간 자동 보강)
 │   ├── portfolio-notes.json   # 포트폴리오 체크포인트 3카드 문구 (PB가 직접 편집)
-│   ├── macro-events.json      # 매크로·세무 캘린더 (PB가 직접 편집)
+│   ├── macro-events.json      # 월별 핵심 매크로 일정 (공식 발표 일정만, PB가 직접 편집)
 │   ├── pb-notes-morning.md    # AI 요약 생성 시 참고할 본사 메모(모닝)
 │   └── pb-notes-evening.md    # AI 요약 생성 시 참고할 본사 메모(이브닝)
 ├── index.html / css/styles.css / js/*.js   # 프론트엔드 (정적, 빌드 과정 없음)
@@ -78,9 +78,9 @@ wm-research-desk/
    (별도 빌드 워크플로 없이 정적 파일을 바로 서빙합니다.)
 3. 레포 → **Settings → Secrets and variables → Actions**
    - `New repository secret` → `GEMINI_API_KEY` 등록 (Gemini API 키, [aistudio.google.com/apikey](https://aistudio.google.com/apikey)에서 발급 — AI 요약 1순위)
-   - 필요 시 `New repository variable` → `GEMINI_MODEL` 등록 (비워두면 코드 기본값 `gemini-flash-latest`를
-     사용 — 구글이 신규 Flash 모델을 낼 때마다 자동으로 가리키는 대상이 바뀌는 별칭이라 날짜 박힌 모델ID보다
-     안전합니다. 특정 버전에 고정하고 싶을 때만 이 변수를 지정하세요)
+   - (선택) `New repository variable` → `GEMINI_MODEL` 등록 — 비워두면 코드의 후보 목록을 순서대로 시도합니다
+     (한 모델이 503·단종·타임아웃이면 자동으로 다음 모델로 전환). 문제가 생기면 Actions 탭의
+     **"Gemini API 진단"** 워크플로를 수동 실행해 키 유효성과 모델별 응답 상태를 확인하세요.
    - (선택) `New repository secret` → `ANTHROPIC_API_KEY` 등록 — Gemini 키가 없거나 호출이 실패할 때 대신 쓰이는
      2순위 Claude API 키. 필요 시 `ANTHROPIC_MODEL` 변수도 함께 등록.
    - **둘 다 등록하지 않아도 사이트는 정상 동작합니다.** 이 경우 AI 요약 대신 규칙 기반 폴백 문구가 생성됩니다.
@@ -164,3 +164,25 @@ node scripts/build-evening.mjs
   확인). 하루 2회(모닝/이브닝) 호출이라 비용은 크지 않지만, 운영 전 각 콘솔에서 가격을 확인하세요.
 - **"지난 브리핑 다시보기"**: `data/archive/`에 날짜별로 이미 쌓이고 있으니, 프론트에 간단한 날짜
   선택 UI만 추가하면 바로 확장할 수 있습니다.
+
+
+## 월별 핵심 매크로 일정 관리 (`data/macro-events.json`)
+
+대시보드 하단 캘린더는 **각 기관이 공식 발표한 일정만** 보여줍니다(추정 날짜 없음).
+
+- 수록 범위: `coverage.from` ~ `coverage.to` (현재 2026-10 ~ 2027-12). 전월/익월 버튼은 이 범위 안에서만 이동합니다.
+- 수록 항목: 미 FOMC · 한은 금통위 · ECB · BOJ 금리 결정, 미국 CPI · 고용보고서, 미국 중간선거, 국내 증시 연말 휴장
+- `kinds` = 일정 유형별 팝업 설명(어떤 일정인지 / 왜 중요한지 / PB 체크포인트 / 출처), `items` = 날짜별 일정
+- 날짜는 **현지 기준**이고, 한국시간은 각 항목의 `timeKst`에 적습니다(예: FOMC는 한국시간 다음 날 새벽).
+
+**새 연도 일정 추가 방법** — 아래 공식 출처에서 다음 해 일정이 나오면 `items`에 추가하고 `coverage.to`를 늘리세요.
+
+| 일정 | 공식 출처 | 보통 발표 시기 |
+|---|---|---|
+| FOMC | federalreserve.gov/monetarypolicy/fomccalendars.htm | 전년도 여름 |
+| 한은 금통위 | bok.or.kr (금융통화위원회 정기회의 개최 예정일) | 전년도 10월 말 |
+| 미국 CPI·고용 | bls.gov/schedule | 전년도 가을 |
+| ECB | ecb.europa.eu (Governing Council meetings) | 1~2년 전 |
+| BOJ | boj.or.jp (Scheduled Dates of MPMs) | 전년도 7월 말 |
+
+> 새 유형(예: 한국 CPI, 미국 PCE)을 추가하려면 `kinds`에 설명을 먼저 넣고 `items`에서 그 `kind`를 쓰면 됩니다. 화면 코드는 수정할 필요가 없습니다.

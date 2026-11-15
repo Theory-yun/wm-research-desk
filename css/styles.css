@@ -349,12 +349,64 @@ button, input, select, textarea { font-family: inherit; }
 .cal-day-cell.sun .cal-day-num { color: var(--up-red); }
 .cal-day-cell.sat .cal-day-num { color: var(--down-blue); }
 .cal-ev-pill { font-size: 10px; font-weight: 700; padding: 1.5px 4px; border-radius: 3px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.ev-macro { background: #e0f2fe; color: #0369a1; }
-.ev-tax { background: #fef3c7; color: #92400e; }
-.ev-fo { background: #ecfdf5; color: #047857; }
 .cal-event-list-box { display: flex; flex-direction: column; gap: 8px; }
-.cal-event-card { display: flex; align-items: center; gap: 10px; padding: 10px 12px; border: 1px solid var(--border-color); border-radius: 8px; background: var(--bg-subtle); font-size: 12.8px; }
-.cal-date-chip { background: var(--hana-green); color: #ffffff; font-weight: 800; font-size: 11.5px; padding: 4px 8px; border-radius: 5px; min-width: 58px; text-align: center; }
+.cal-event-card { display: flex; align-items: center; gap: 10px; padding: 9px 12px; border: 1px solid var(--border-color); border-radius: 8px; background: var(--bg-subtle); font-size: 12.8px; width: 100%; text-align: left; cursor: pointer; font-family: inherit; transition: border-color .15s, background .15s; }
+.cal-event-card:hover, .cal-event-card:focus-visible { border-color: var(--hana-gold); background: #fff; outline: none; }
+.cal-event-card.is-past { opacity: .55; }
+.cal-date-chip { background: var(--hana-green); color: #ffffff; font-weight: 800; font-size: 11.5px; padding: 4px 8px; border-radius: 5px; min-width: 64px; text-align: center; white-space: nowrap; }
+.cal-date-chip small { font-weight: 600; margin-left: 2px; opacity: .85; }
+
+/* --- 매크로 캘린더: 월 이동 / 범례 / 일정 표시 --- */
+.mc-header { flex-wrap: wrap; gap: 10px; }
+.mc-nav { display: flex; align-items: center; gap: 6px; }
+.mc-nav-btn { border: 1px solid var(--border-color); background: #fff; color: var(--text-main); font-size: 12px; font-weight: 700; padding: 6px 10px; border-radius: 6px; cursor: pointer; font-family: inherit; }
+.mc-nav-btn:hover:not(:disabled) { border-color: var(--hana-green); color: var(--hana-green); }
+.mc-nav-btn:disabled { opacity: .4; cursor: not-allowed; }
+.mc-today-btn { background: var(--hana-gold-light); }
+.mc-month-label { font-weight: 800; font-size: 14px; min-width: 64px; text-align: center; color: var(--text-main); }
+.mc-legend { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin: -4px 0 12px; }
+.mc-legend-note { font-size: 11px; color: #64748b; margin-left: 4px; }
+.mc-pill { display: inline-block; font-size: 10px; font-weight: 800; padding: 1.5px 5px; border-radius: 3px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100%; }
+.mc-pill.cat-rate { background: #dbeafe; color: #1e3a8a; }
+.mc-pill.cat-data { background: #e0f2fe; color: #0369a1; }
+.mc-pill.cat-politics { background: #f3e8ff; color: #6b21a8; }
+.mc-pill.cat-market { background: #f1f5f9; color: #475569; }
+.mc-more { font-size: 10px; font-weight: 700; color: #64748b; }
+.cal-day-cell.has-events { cursor: pointer; }
+.cal-day-cell.has-events:hover, .cal-day-cell.has-events:focus-visible { background: #f8fafc; box-shadow: inset 0 0 0 1.5px var(--hana-green); outline: none; }
+.cal-day-cell.past-day:not(.today-cell) .mc-pill { opacity: .55; }
+.mc-list-head { font-size: 12.5px; color: var(--text-body); padding: 0 2px 2px; }
+.mc-list-head strong { color: var(--hana-green); }
+.mc-list-head span { color: #94a3b8; font-size: 11.5px; }
+.mc-card-title { flex: 1; font-weight: 700; color: #0f172a; }
+.mc-card-title em { color: var(--hana-gold); font-style: normal; }
+.mc-empty { padding: 24px; text-align: center; color: #94a3b8; font-size: 13px; border: 1px dashed var(--border-color); border-radius: 8px; }
+
+/* --- 매크로 캘린더: 상세 레이어 팝업 --- */
+body.modal-open { overflow: hidden; }
+.mc-modal-overlay { position: fixed; inset: 0; background: rgba(15, 23, 42, .55); display: flex; align-items: center; justify-content: center; padding: 16px; z-index: 1000; }
+.mc-modal-overlay[hidden] { display: none; }
+.mc-modal { background: #fff; border-radius: 14px; width: min(560px, 100%); max-height: 86vh; display: flex; flex-direction: column; box-shadow: 0 20px 50px rgba(0,0,0,.25); }
+.mc-modal-head { display: flex; justify-content: space-between; align-items: center; padding: 14px 18px; border-bottom: 1px solid var(--border-color); font-weight: 800; color: var(--hana-green); font-size: 14px; }
+.mc-modal-close { border: none; background: transparent; font-size: 18px; cursor: pointer; color: #64748b; line-height: 1; padding: 4px 6px; border-radius: 6px; }
+.mc-modal-close:hover { background: #f1f5f9; color: #0f172a; }
+.mc-modal-body { overflow-y: auto; padding: 4px 18px 18px; }
+.mc-detail { padding: 14px 0; border-bottom: 1px solid #f1f5f9; font-size: 13px; color: var(--text-body); line-height: 1.6; }
+.mc-detail:last-child { border-bottom: none; }
+.mc-detail-tags { display: flex; gap: 6px; align-items: center; }
+.mc-detail-tags .mc-pill { font-size: 11px; padding: 2px 7px; }
+.mc-tag-plain { font-size: 11.5px; color: #64748b; }
+.mc-detail h4 { margin: 8px 0 6px; font-size: 16px; color: #0f172a; }
+.mc-detail h5 { margin: 12px 0 4px; font-size: 12.5px; color: var(--hana-green); }
+.mc-detail p { margin: 0; }
+.mc-detail ul { margin: 0; padding-left: 18px; }
+.mc-detail li { margin: 2px 0; }
+.mc-meta { display: grid; grid-template-columns: 64px 1fr; gap: 3px 8px; margin: 0; background: var(--bg-subtle); border-radius: 8px; padding: 8px 10px; font-size: 12.5px; }
+.mc-meta dt { color: #64748b; font-weight: 700; }
+.mc-meta dd { margin: 0; color: #0f172a; font-weight: 600; }
+.mc-highlight { margin-top: 8px !important; color: #92400e; background: var(--hana-gold-light); border-radius: 6px; padding: 6px 10px; font-weight: 700; font-size: 12.5px; }
+.mc-caveat, .mc-source { margin-top: 10px !important; font-size: 11.5px; color: #64748b; }
+.mc-source a { color: var(--hana-green); font-weight: 700; }
 
 .compliance-bar {
   margin-top: 18px;

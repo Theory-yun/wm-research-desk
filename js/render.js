@@ -1,4 +1,5 @@
 import { STATE, currentEditionData, escapeHtml, StorageUtil } from "./state.js";
+import { renderMacroCalendar } from "./macroCalendar.js";
 import { TAG_CLASS_MAP, LOCAL_STORAGE_KEYS, TOP5_DEFAULT_COUNT } from "./config.js";
 import { isKrxOpenNow } from "./util.js";
 
@@ -201,68 +202,6 @@ function renderPortfolio() {
     .join("");
 }
 
-/* ----------------------------- 매크로 캘린더 ----------------------------- */
-function renderCalendar() {
-  const grid = $("macro-calendar-grid");
-  const list = $("macro-event-detail-list");
-  if (!grid || !list) return;
-
-  const now = new Date();
-  const y = now.getFullYear();
-  const m = now.getMonth();
-  const today = now.getDate();
-  $("macro-cal-title").textContent = `${y}년 ${m + 1}월 주요 매크로 · 세무 스케줄`;
-
-  const monthEvents = STATE.macroEvents.filter((e) => {
-    const d = new Date(e.date);
-    return d.getFullYear() === y && d.getMonth() === m;
-  });
-  const byDay = {};
-  monthEvents.forEach((e) => {
-    const day = new Date(e.date).getDate();
-    (byDay[day] = byDay[day] || []).push(e);
-  });
-
-  const firstDow = new Date(y, m, 1).getDay();
-  const lastDate = new Date(y, m + 1, 0).getDate();
-  const prevLast = new Date(y, m, 0).getDate();
-
-  let html = "";
-  for (let i = firstDow - 1; i >= 0; i--) {
-    html += `<div class="cal-day-cell other-month"><div class="cal-day-num">${prevLast - i}</div></div>`;
-  }
-  for (let d = 1; d <= lastDate; d++) {
-    const dow = (firstDow + d - 1) % 7;
-    const dowCls = dow === 0 ? "sun" : dow === 6 ? "sat" : "";
-    const tCls = d === today ? "today-cell" : "";
-    const evs = (byDay[d] || []).map((e) => `<div class="cal-ev-pill ${e.type}">• ${escapeHtml(e.tag)}</div>`).join("");
-    html += `<div class="cal-day-cell ${dowCls} ${tCls}"><div class="cal-day-num"><span>${d}</span></div>${evs}</div>`;
-  }
-  const rem = (7 - ((firstDow + lastDate) % 7)) % 7;
-  for (let n = 1; n <= rem; n++) {
-    html += `<div class="cal-day-cell other-month"><div class="cal-day-num">${n}</div></div>`;
-  }
-  grid.innerHTML = html;
-
-  const upcoming = STATE.macroEvents
-    .filter((e) => new Date(e.date).getTime() >= new Date(y, m, today).getTime() - 86400000)
-    .sort((a, b) => new Date(a.date) - new Date(b.date))
-    .slice(0, 8);
-
-  list.innerHTML = upcoming
-    .map((ev) => {
-      const d = new Date(ev.date);
-      return `
-        <div class="cal-event-card">
-          <span class="cal-date-chip">${String(d.getMonth() + 1).padStart(2, "0")}.${String(d.getDate()).padStart(2, "0")}</span>
-          <span class="cal-ev-pill ${ev.type}" style="padding:3px 7px; font-size:11px;">${escapeHtml(ev.tag)}</span>
-          <span style="flex:1; font-weight:700; color:#0f172a;">${escapeHtml(ev.title)}</span>
-        </div>
-      `;
-    })
-    .join("");
-}
-
 /* ----------------------------- 대시보드 전체 렌더 ----------------------------- */
 export function renderDashboard() {
   const data = currentEditionData();
@@ -279,7 +218,7 @@ export function renderDashboard() {
   renderIssues(data);
   renderTop5News();
   renderPortfolio();
-  renderCalendar();
+  renderMacroCalendar();
   renderTicker();
 }
 

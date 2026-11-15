@@ -96,14 +96,22 @@
         <div class="portfolio-cards-grid" id="portfolio-cards-grid"></div>
       </section>
 
-      <section class="card-box">
-        <div class="section-header">
+      <section class="card-box" id="macro-calendar-section">
+        <div class="section-header mc-header">
           <h2 class="section-title"><span class="bar-gold"></span><span id="macro-cal-title"></span></h2>
-          <div style="display:flex; gap:6px; align-items:center;">
-            <span class="badge-tag tag-macro">매크로·통화</span>
-            <span class="badge-tag tag-tax">TAX·세무</span>
-            <span class="badge-tag tag-estate">F/O·자산전략</span>
+          <div class="mc-nav no-print" role="group" aria-label="월 이동">
+            <button type="button" class="mc-nav-btn" id="mc-prev" aria-label="전월">◀ 전월</button>
+            <span class="mc-month-label" id="mc-month-label"></span>
+            <button type="button" class="mc-nav-btn" id="mc-next" aria-label="익월">익월 ▶</button>
+            <button type="button" class="mc-nav-btn mc-today-btn" id="mc-today">이번 달</button>
           </div>
+        </div>
+        <div class="mc-legend">
+          <span class="mc-pill cat-rate">금리 결정</span>
+          <span class="mc-pill cat-data">경제 지표</span>
+          <span class="mc-pill cat-politics">정치·선거</span>
+          <span class="mc-pill cat-market">증시 일정</span>
+          <span class="mc-legend-note">美 미국 · 韓 한국 · EU 유로존 · 日 일본 · 날짜는 현지 기준, 상세에서 한국시간 확인</span>
         </div>
         <div class="macro-calendar-layout">
           <div class="cal-grid-wrap">
@@ -113,6 +121,16 @@
           <div class="cal-event-list-box" id="macro-event-detail-list"></div>
         </div>
       </section>
+
+      <div class="mc-modal-overlay no-print" id="mc-modal" hidden>
+        <div class="mc-modal" role="dialog" aria-modal="true" aria-labelledby="mc-modal-date">
+          <div class="mc-modal-head">
+            <span id="mc-modal-date"></span>
+            <button type="button" class="mc-modal-close" id="mc-modal-close" aria-label="닫기">✕</button>
+          </div>
+          <div class="mc-modal-body" id="mc-modal-body"></div>
+        </div>
+      </div>
 
       <div class="compliance-bar no-print">
         <strong>[컴플라이언스 안내]</strong> 본 화면은 하나증권 패밀리오피스 PB의 상담 참고 및 손님 브리핑 보조용 자료이며, 공신력 있는 시장 정보와 정규장 마감 데이터를 바탕으로 자동 생성됩니다. 다만 AI 생성 과정에서 오류가 포함될 수 있으므로 손님께 전달 전 PB의 확인을 권장하며, 본 자료는 투자 결과에 대한 법적 책임 소재의 증빙자료로 사용될 수 없습니다.
