@@ -1,6 +1,6 @@
 {
   "note": "캘린더 일정의 결과. 대부분 scripts/collect-calendar.mjs가 자동으로 채우며, method가 manual인 항목은 사람이 직접 입력한 것입니다. status가 final이면 다시 덮어쓰지 않습니다.",
-  "updatedAt": "2026-11-15T07:20:03.758Z",
+  "updatedAt": "2026-11-15T07:59:59.950Z",
   "results": {
     "2026-10-22|bok": {
       "status": "final",
@@ -111,6 +111,123 @@
       "sourceName": "Federal Reserve — FOMC 성명서",
       "sourceUrl": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
       "collectedAt": "2026-11-15T04:55:09.215Z"
+    },
+    "2026-11-12|earnings_kr|032830|prelim": {
+      "status": "final",
+      "headline": "2026년 3분기 매출 8,671,021백만원 · 영업이익 937,686백만원 (전년비 +14.9%)",
+      "details": [
+        "연결 기준 잠정실적 · 공시 원문 표에서 AI가 옮겨 적은 수치이므로 원문 확인 권장"
+      ],
+      "method": "ai-disclosure",
+      "model": "gemini-3.5-flash-lite",
+      "sourceName": "DART — 삼성생명 연결재무제표기준영업(잠정)실적(공정공시)",
+      "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261112800352",
+      "collectedAt": "2026-11-15T07:59:43.319Z"
+    },
+    "2026-11-11|earnings_kr|105560|prelim": {
+      "status": "final",
+      "headline": "2026년 3분기 매출 24,498,249 백만원 · 영업이익 2,367,289 백만원 (전년비 +1.38%)",
+      "details": [
+        "연결 기준 잠정실적 · 공시 원문 표에서 AI가 옮겨 적은 수치이므로 원문 확인 권장"
+      ],
+      "method": "ai-disclosure",
+      "model": "gemini-3.5-flash-lite",
+      "sourceName": "DART — KB금융 [기재정정]연결재무제표기준영업(잠정)실적(공정공시)",
+      "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261111800559",
+      "collectedAt": "2026-11-15T07:59:46.871Z"
+    },
+    "2026-11-03|earnings_kr|373220|prelim": {
+      "status": "final",
+      "headline": "2026년 3분기 매출 96,434억원 · 영업이익 7,560억원 (전년비 +25.7%)",
+      "details": [
+        "연결 기준 잠정실적 · 공시 원문 표에서 AI가 옮겨 적은 수치이므로 원문 확인 권장"
+      ],
+      "method": "ai-disclosure",
+      "model": "gemini-3.5-flash-lite",
+      "sourceName": "DART — LG에너지솔루션 [기재정정]연결재무제표기준영업(잠정)실적(공정공시)",
+      "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261103800087",
+      "collectedAt": "2026-11-15T07:59:48.446Z"
+    },
+    "2026-11-02|earnings_kr|005380|prelim": {
+      "status": "final",
+      "headline": "현대차 잠정실적 공시 — 수치는 공시 원문에서 확인",
+      "details": [],
+      "method": "official",
+      "sourceName": "DART — 영업(잠정)실적(공정공시)",
+      "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261102800520",
+      "collectedAt": "2026-11-15T07:59:49.349Z"
+    },
+    "2026-10-29|earnings_kr|105560|prelim": {
+      "status": "final",
+      "headline": "2026년 3분기 매출 24,498,249백만원 · 영업이익 2,367,289백만원 (전년비 +1.38%)",
+      "details": [
+        "연결 기준 잠정실적 · 공시 원문 표에서 AI가 옮겨 적은 수치이므로 원문 확인 권장"
+      ],
+      "method": "ai-disclosure",
+      "model": "gemini-3.5-flash-lite",
+      "sourceName": "DART — KB금융 연결재무제표기준영업(잠정)실적(공정공시)",
+      "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261029800345",
+      "collectedAt": "2026-11-15T07:59:52.209Z"
+    },
+    "2026-10-29|earnings_kr|005380|prelim": {
+      "status": "final",
+      "headline": "2026년 3분기 매출 45,110,247백만원 · 영업이익 2,677,232백만원 (전년비 5.5%)",
+      "details": [
+        "연결 기준 잠정실적 · 공시 원문 표에서 AI가 옮겨 적은 수치이므로 원문 확인 권장"
+      ],
+      "method": "ai-disclosure",
+      "model": "gemini-3.5-flash-lite",
+      "sourceName": "DART — 현대차 연결재무제표기준영업(잠정)실적(공정공시)",
+      "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261029800228",
+      "collectedAt": "2026-11-15T07:59:53.153Z"
+    },
+    "2026-10-29|earnings_kr|005930|prelim": {
+      "status": "final",
+      "headline": "2026년 3분기 매출 1,952,532억원 · 영업이익 1,074,405억원 (전년비 +783.11%)",
+      "details": [
+        "연결재무제표기준 기준 잠정실적 · 공시 원문 표에서 AI가 옮겨 적은 수치이므로 원문 확인 권장"
+      ],
+      "method": "ai-disclosure",
+      "model": "gemini-3.5-flash-lite",
+      "sourceName": "DART — 삼성전자 연결재무제표기준영업(잠정)실적(공정공시)",
+      "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261029800087",
+      "collectedAt": "2026-11-15T07:59:55.722Z"
+    },
+    "2026-10-28|earnings_kr|009150|prelim": {
+      "status": "final",
+      "headline": "2026년 3분기 매출 3,763,278 백만원 · 영업이익 690,957 백만원 (전년비 165.5%)",
+      "details": [
+        "연결 기준 잠정실적 · 공시 원문 표에서 AI가 옮겨 적은 수치이므로 원문 확인 권장"
+      ],
+      "method": "ai-disclosure",
+      "model": "gemini-3.5-flash-lite",
+      "sourceName": "DART — 삼성전기 연결재무제표기준영업(잠정)실적(공정공시)",
+      "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261028800169",
+      "collectedAt": "2026-11-15T07:59:57.682Z"
+    },
+    "2026-10-28|earnings_kr|000660|prelim": {
+      "status": "final",
+      "headline": "2026년 3분기 매출 104,615,483백만원 · 영업이익 83,333,818백만원 (전년비 632.1%)",
+      "details": [
+        "연결 기준 잠정실적 · 공시 원문 표에서 AI가 옮겨 적은 수치이므로 원문 확인 권장"
+      ],
+      "method": "ai-disclosure",
+      "model": "gemini-3.5-flash-lite",
+      "sourceName": "DART — SK하이닉스 연결재무제표기준영업(잠정)실적(공정공시)",
+      "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261028800036",
+      "collectedAt": "2026-11-15T07:59:58.961Z"
+    },
+    "2026-10-27|earnings_kr|068270|prelim": {
+      "status": "final",
+      "headline": "2026년 3분기 매출 15,755억원 · 영업이익 5,253억원 (전년비 +74.29%)",
+      "details": [
+        "연결 기준 잠정실적 · 공시 원문 표에서 AI가 옮겨 적은 수치이므로 원문 확인 권장"
+      ],
+      "method": "ai-disclosure",
+      "model": "gemini-3.5-flash-lite",
+      "sourceName": "DART — 셀트리온 [기재정정]연결재무제표기준영업(잠정)실적(공정공시)",
+      "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261027800047",
+      "collectedAt": "2026-11-15T07:59:59.947Z"
     }
   }
 }

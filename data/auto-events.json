@@ -1,6 +1,5 @@
 {
-  "updatedAt": "2026-11-15T07:20:03.757Z",
-  "note": "DART_API_KEY 미설정 — 실적 공시 수집 생략",
+  "updatedAt": "2026-11-15T07:59:59.949Z",
   "top10": [
     {
       "code": "005930",
@@ -43,5 +42,188 @@
       "name": "셀트리온"
     }
   ],
-  "items": []
+  "items": [
+    {
+      "kind": "earnings_kr",
+      "company": "셀트리온",
+      "stockCode": "068270",
+      "rceptNo": "20261027800047",
+      "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261027800047",
+      "auto": "dart",
+      "id": "2026-10-27|earnings_kr|068270|prelim",
+      "date": "2026-10-27",
+      "title": "셀트리온 잠정실적 발표",
+      "meeting": "[기재정정]연결재무제표기준영업(잠정)실적(공정공시)",
+      "timeKst": "10/27 공시"
+    },
+    {
+      "kind": "earnings_kr",
+      "company": "삼성전기",
+      "stockCode": "009150",
+      "rceptNo": "20261028800169",
+      "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261028800169",
+      "auto": "dart",
+      "id": "2026-10-28|earnings_kr|009150|prelim",
+      "date": "2026-10-28",
+      "title": "삼성전기 잠정실적 발표",
+      "meeting": "연결재무제표기준영업(잠정)실적(공정공시)",
+      "timeKst": "10/28 공시"
+    },
+    {
+      "kind": "earnings_kr",
+      "company": "SK하이닉스",
+      "stockCode": "000660",
+      "rceptNo": "20261028800052",
+      "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261028800052",
+      "auto": "dart",
+      "id": "2026-10-28|earnings_kr|000660|ir",
+      "date": "2026-10-28",
+      "title": "SK하이닉스 기업설명회(IR)",
+      "meeting": "[기재정정]기업설명회(IR)개최(안내공시) (공시일 2026-10-28)",
+      "timeKst": "10/28 (공시 기준)"
+    },
+    {
+      "kind": "earnings_kr",
+      "company": "SK하이닉스",
+      "stockCode": "000660",
+      "rceptNo": "20261028800036",
+      "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261028800036",
+      "auto": "dart",
+      "id": "2026-10-28|earnings_kr|000660|prelim",
+      "date": "2026-10-28",
+      "title": "SK하이닉스 잠정실적 발표",
+      "meeting": "연결재무제표기준영업(잠정)실적(공정공시)",
+      "timeKst": "10/28 공시"
+    },
+    {
+      "kind": "earnings_kr",
+      "company": "KB금융",
+      "stockCode": "105560",
+      "rceptNo": "20261029800345",
+      "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261029800345",
+      "auto": "dart",
+      "id": "2026-10-29|earnings_kr|105560|prelim",
+      "date": "2026-10-29",
+      "title": "KB금융 잠정실적 발표",
+      "meeting": "연결재무제표기준영업(잠정)실적(공정공시)",
+      "timeKst": "10/29 공시"
+    },
+    {
+      "kind": "earnings_kr",
+      "company": "현대차",
+      "stockCode": "005380",
+      "rceptNo": "20261029800228",
+      "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261029800228",
+      "auto": "dart",
+      "id": "2026-10-29|earnings_kr|005380|prelim",
+      "date": "2026-10-29",
+      "title": "현대차 잠정실적 발표",
+      "meeting": "연결재무제표기준영업(잠정)실적(공정공시)",
+      "timeKst": "10/29 공시"
+    },
+    {
+      "kind": "earnings_kr",
+      "company": "삼성전자",
+      "stockCode": "005930",
+      "rceptNo": "20261029800087",
+      "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261029800087",
+      "auto": "dart",
+      "id": "2026-10-29|earnings_kr|005930|prelim",
+      "date": "2026-10-29",
+      "title": "삼성전자 잠정실적 발표",
+      "meeting": "연결재무제표기준영업(잠정)실적(공정공시)",
+      "timeKst": "10/29 공시"
+    },
+    {
+      "kind": "earnings_kr",
+      "company": "현대차",
+      "stockCode": "005380",
+      "rceptNo": "20261102800520",
+      "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261102800520",
+      "auto": "dart",
+      "id": "2026-11-02|earnings_kr|005380|prelim",
+      "date": "2026-11-02",
+      "title": "현대차 잠정실적 발표",
+      "meeting": "영업(잠정)실적(공정공시)",
+      "timeKst": "11/02 공시"
+    },
+    {
+      "kind": "earnings_kr",
+      "company": "LG에너지솔루션",
+      "stockCode": "373220",
+      "rceptNo": "20261103800087",
+      "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261103800087",
+      "auto": "dart",
+      "id": "2026-11-03|earnings_kr|373220|prelim",
+      "date": "2026-11-03",
+      "title": "LG에너지솔루션 잠정실적 발표",
+      "meeting": "[기재정정]연결재무제표기준영업(잠정)실적(공정공시)",
+      "timeKst": "11/03 공시"
+    },
+    {
+      "kind": "earnings_kr",
+      "company": "현대차",
+      "stockCode": "005380",
+      "rceptNo": "20261104800225",
+      "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261104800225",
+      "auto": "dart",
+      "id": "2026-11-04|earnings_kr|005380|ir",
+      "date": "2026-11-04",
+      "title": "현대차 기업설명회(IR)",
+      "meeting": "기업설명회(IR)개최(안내공시) (공시일 2026-11-04)",
+      "timeKst": "11/04 09:00 (공시 기준)"
+    },
+    {
+      "kind": "earnings_kr",
+      "company": "KB금융",
+      "stockCode": "105560",
+      "rceptNo": "20261111800559",
+      "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261111800559",
+      "auto": "dart",
+      "id": "2026-11-11|earnings_kr|105560|prelim",
+      "date": "2026-11-11",
+      "title": "KB금융 잠정실적 발표",
+      "meeting": "[기재정정]연결재무제표기준영업(잠정)실적(공정공시)",
+      "timeKst": "11/11 공시"
+    },
+    {
+      "kind": "earnings_kr",
+      "company": "삼성생명",
+      "stockCode": "032830",
+      "rceptNo": "20261112800352",
+      "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261112800352",
+      "auto": "dart",
+      "id": "2026-11-12|earnings_kr|032830|prelim",
+      "date": "2026-11-12",
+      "title": "삼성생명 잠정실적 발표",
+      "meeting": "연결재무제표기준영업(잠정)실적(공정공시)",
+      "timeKst": "11/12 공시"
+    },
+    {
+      "kind": "earnings_kr",
+      "company": "삼성생명",
+      "stockCode": "032830",
+      "rceptNo": "20261028800567",
+      "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261028800567",
+      "auto": "dart",
+      "id": "2026-11-12|earnings_kr|032830|ir",
+      "date": "2026-11-12",
+      "title": "삼성생명 기업설명회(IR)",
+      "meeting": "기업설명회(IR)개최(안내공시) (공시일 2026-10-28)",
+      "timeKst": "11/12 14:00 (공시 기준)"
+    },
+    {
+      "kind": "earnings_kr",
+      "company": "삼성전자",
+      "stockCode": "005930",
+      "rceptNo": "20261113801115",
+      "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261113801115",
+      "auto": "dart",
+      "id": "2026-11-18|earnings_kr|005930|ir",
+      "date": "2026-11-18",
+      "title": "삼성전자 기업설명회(IR)",
+      "meeting": "기업설명회(IR)개최(안내공시) (공시일 2026-11-13)",
+      "timeKst": "11/18 13:00 (공시 기준)"
+    }
+  ]
 }

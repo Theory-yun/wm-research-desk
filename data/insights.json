@@ -1,6 +1,6 @@
 {
   "note": "curated=true 는 PB가 고른 연례 핵심 리포트(고정), 나머지는 scripts/build-insights.mjs가 매일 자동 수집합니다.",
-  "updatedAt": "2026-11-15T07:20:09.211Z",
+  "updatedAt": "2026-11-15T08:00:04.528Z",
   "categories": [
     "글로벌 F/O 동향",
     "국내 부자·웰스 리포트",
@@ -213,6 +213,19 @@
     {
       "stars": "★★★★☆",
       "category": "대체투자·사모시장",
+      "title": "부동산 신흥 트렌드: 유럽 2027",
+      "desc": "유럽 부동산 시장의 신흥 투자 트렌드와 전망을 제시합니다.",
+      "org": "PwC",
+      "date": "2026.11.10",
+      "ts": 1794297600000,
+      "btnText": "🔗 원문 보기",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNa3hOWUlTVkNqcWZGS1lfM0l4elZwOTh4ckl0bHJEMVJxaEQ1LVlKakpxOUhNQnFwUDFSZ2N5V3NpVlVlRkNheTlMSXpiUnJ6YTMtdURuRml4RXlBV01MeDVDamstOVlKUUlJd2RfenJOc3NiQ1V6OGJMa0pqRGZxY3Fja1RPN25jNm5XMDllbkV4SzBsUDkxV3FNeG9ZZw?oc=5",
+      "lang": "en",
+      "classifiedBy": "AI(gemini-3.5-flash-lite)"
+    },
+    {
+      "stars": "★★★★☆",
+      "category": "대체투자·사모시장",
       "title": "어필리에이트매니저 실적 발표 앞둬…대체투자 성장 주목",
       "desc": "대체투자 시장의 전반적인 성장세와 주요 지표 변화를 점검하는 데 참고할 수 있습니다.",
       "org": "Investing.com 한국어",
@@ -330,13 +343,13 @@
     {
       "stars": "★★★★☆",
       "category": "국내 부자·웰스 리포트",
-      "title": "연방준비제도 새 부의 보고서에서 가장 충격적인 한 줄: 고등학교 졸업장이 없는 가계의 중간 순자산 55% 감소",
-      "desc": "미국 연방준비제도의 새로운 자산 보고서를 통해 계층별·학력별 가계 순자산 증감 통계를 확인할 수 있습니다.",
-      "org": "24/7 Wall St.",
+      "title": "연방준비제도 새 부의 보고서에서 가장 충격적인 내용: 고등학교 졸업장이 없는 가구의 중위 순자산이 55% 감소했다",
+      "desc": "연방준비제도의 새로운 부의 보고서에서 학력에 따른 가구 중위 순자산 격차를 보여줍니다.",
+      "org": "Yahoo Finance",
       "date": "2026.11.02",
       "ts": 1793606400000,
       "btnText": "🔗 원문 보기",
-      "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxNdGdWTE5GV3VkZnZhUzlnYUtneEh1RERka2xFQThmVGIyRmR1OFhPLTF1NWwtRzdLMTA1NWtzaWU2N1V4SUhXMENhUHItWjVXM3U1SGxVSW1Bbm9hWjhVUFIzY0pObm1aUUh4X2thdUZQMkhPd0lTbFZwM0M4aGl2RFRyZmxVRzdmQnpkZHZPYkN6cG9VVmR3c0F3WmlBZDY5TEFoTWRheVI2dHQ3WEdSeHBCRzFVTWdpZ0tkd055YlphOFhyWDViaDAzN0s3WEpPbG1NWmlfQ1Q5QkltSFhyeE5Kem1IY19mb0psQmZjdWQzWnNMeFZ4VDIxMXNXdVg2VlJRTEJZNXc?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNdTVyY0g4TjFvUi01SURqTlBUR0gyQlRCQkhOYnY0cHRXQ0ZYamNLUXU2Y2RBa1c5M3hXbnlKSlF1bTQ5NjV6WFE0VUFUYlVETUM0TzI3TFVCem96Qm9CWHBfLXBmUXZzMVFQd1poVlFKYXd3VE9Pa3FEcHVMRUtUY3BTLUNJNmNvLTl5aTBoQ0s?oc=5",
       "lang": "en",
       "classifiedBy": "AI(gemini-3.5-flash-lite)"
     },
@@ -364,6 +377,19 @@
       "btnText": "🔗 원문 보기",
       "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1HRXg0WWpsVWF0QWtPNGZsSk8xSXJGTmM0NXpjbjlOTlRKRUo2WmFTUjhoZ1B2VVhTR0s1dkZfYzBCbkRYci1YOHRsRVBPZmZqQ2JJQWRra0J3RDV3amtZOEtNTUc?oc=5",
       "lang": "ko",
+      "classifiedBy": "AI(gemini-3.5-flash-lite)"
+    },
+    {
+      "stars": "★★★★☆",
+      "category": "대체투자·사모시장",
+      "title": "2026 사모펀드 아시아 전망",
+      "desc": "아시아 지역의 사모펀드 시장 동향과 전망을 다루고 있습니다.",
+      "org": "Markets Group",
+      "date": "2026.10.30",
+      "ts": 1793343600000,
+      "btnText": "🔗 원문 보기",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOalVWM2ZqT1NaXzhMZ2VSOTRHMmJaeXFTb0pEM3pCQ0hlSUhWdlp0a2dpYUdvLXFNUHJKaDUtR3FMeGZ1c2pSYWxBQk9kU0Zxa210OFRDVjM2ZDdRSlpXb2xuUDVGbmlvNUtGckcyUFh1SUdYZ0c1YTNYdS1yT1k0aUZLYXh6amZW?oc=5",
+      "lang": "en",
       "classifiedBy": "AI(gemini-3.5-flash-lite)"
     },
     {
@@ -571,6 +597,19 @@
       "ts": 1792479600000,
       "btnText": "🔗 원문 보기",
       "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNbl94R0VmSjdvdVRDcnlCMUJEaW5TWngyaVkxNnNoSmFFVGhyZ3VDMlVLZEVDRkJhT3d3OURpcllpbkg1VUF5dDl1Z3VKR0xDR0k3bGJOaXhvaFZ5alJuRng5NWFSM2tOYy1XSWxHRkdBTVNQbjhlVGxzYWVpb2FwMlhYV1FXQjdVOGdSeUxMaEdZYktDV0g4SHJuMF9veDlPYWR0Qy12YVVtdEhFRFJiT0M3Q0c2aml0OGRyc1N0ZUtSLUM3cm5HMDI0eVVqbTgyY2xxVw?oc=5",
+      "lang": "en",
+      "classifiedBy": "AI(gemini-3.5-flash-lite)"
+    },
+    {
+      "stars": "★★★★★",
+      "category": "자산배분·시장 전망",
+      "title": "제이피모간, 10-15년간 60/40 포트폴리오에 대해 7.0%의 수익률을 전망하는 2027 장기 자본시장 가정 프로젝트 발표",
+      "desc": "10~15년 동안 60/40 포트폴리오의 기대수익률을 7.0%로 전망한 장기 자본시장 가정 프로젝트를 공개했습니다.",
+      "org": "Investing News Network",
+      "date": "2026.10.19",
+      "ts": 1792393200000,
+      "btnText": "🔗 원문 보기",
+      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPUFYxbWhld1hrVWpYZjNfVnFNR2d6V25RQTlzVkFWc1JVZTN3aXhneUg2ZXlvZnZIUVpjcURYYXNSNEhkVVFzcks1Tm0tUEUyczdCem8wUWc2Qm1UeTRaZmthOF9xVzdBVTYzeXM4dnI2Vk9VVHl5aldzWUhMSm1neEFiVVZrMm40dVRLal9zVGEyRnA5M09zUVdvMTl5SDduMWdFSXdlUDhOWEZVSzBpQUR5WFBDS2p5bVI0Wi1nWUxkOUQyazFVZkEwc0tqTEpfZmhXbTdGQVNCTTAzcDJicQ?oc=5",
       "lang": "en",
       "classifiedBy": "AI(gemini-3.5-flash-lite)"
     },
