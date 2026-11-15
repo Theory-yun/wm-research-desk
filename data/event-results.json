@@ -76,17 +76,6 @@
       "sourceUrl": "https://www.bls.gov/ces/",
       "collectedAt": "2026-11-15T04:50:46.395Z"
     },
-    "2026-10-28|fomc": {
-      "status": "final",
-      "headline": "기준금리 동결 — 연방기금금리 목표 범위 3.75~4.00%",
-      "details": [
-        "반대 의견 없음(성명서 기준)"
-      ],
-      "method": "official",
-      "sourceName": "Federal Reserve — FOMC 성명서",
-      "sourceUrl": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
-      "collectedAt": "2026-11-15T04:52:46.775Z"
-    },
     "2026-10-29|ecb": {
       "status": "final",
       "headline": "기준금리 동결 — 연 2.5%",

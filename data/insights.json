@@ -1,6 +1,6 @@
 {
   "note": "curated=true 는 PB가 고른 연례 핵심 리포트(고정), 나머지는 scripts/build-insights.mjs가 매일 자동 수집합니다.",
-  "updatedAt": "2026-11-15T04:52:57.900Z",
+  "updatedAt": "2026-11-15T04:54:21.900Z",
   "categories": [
     "글로벌 F/O 동향",
     "국내 부자·웰스 리포트",
@@ -198,110 +198,6 @@
       "classifiedBy": "AI(gemini-3.5-flash-lite)"
     },
     {
-      "stars": "★★★★★",
-      "category": "자산배분·시장 전망",
-      "title": "신한투자증권, ‘2027 금융시장 포럼’ 생중계...\"내년 전망 공개\"",
-      "desc": "다가오는 2027년 금융시장 전망을 파악하여 초고액자산가 포트폴리오 재편 및 자산배분 전략 수립에 활용할 수 있습니다.",
-      "org": "매일일보",
-      "date": "2026.11.11",
-      "ts": 1794371958000,
-      "btnText": "🔗 원문 보기",
-      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1jbVNKNHdBd2FFUE4tM3ZJRVNjcmwwWnUtNDFOTWZvUTNPOVF0eXUwZ0hLVTUyS2NqSnQxcXlHZ1JVUzVISmQ3QmtaOTN1ZkdOb2lxSldCWmVsZkpWSmxmamQyUjg?oc=5",
-      "lang": "ko",
-      "classifiedBy": "AI(gemini-3.5-flash-lite)"
-    },
-    {
-      "stars": "★★★★★",
-      "category": "자산배분·시장 전망",
-      "title": "신한투자증권, 내년 금융시장 전망 제시…AI 기업 수익성·투자전략 점검",
-      "desc": "AI 관련 기업의 수익성 중심 투자전략을 점검하여 성장주 투자 자문에 활용할 수 있습니다.",
-      "org": "이코노미사이언스",
-      "date": "2026.11.11",
-      "ts": 1794363068000,
-      "btnText": "🔗 원문 보기",
-      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5jMWxyTmhyMEtnZHQ2a0ZFdy13UFVaRDYtNkg2WGMzaEd4TkctWmhybmpGN00zRmQxbVN1MmF5VW8xZkxMbDd2XzdENGJvMndXN0JHa0J0ck4wbjJ0QzdaVV9Tc0FRaUlhanJicjh4VQ?oc=5",
-      "lang": "ko",
-      "classifiedBy": "AI(gemini-3.5-flash-lite)"
-    },
-    {
-      "stars": "★★★★★",
-      "category": "자산배분·시장 전망",
-      "title": "신한투자증권, 내년 경제·산업 전망 제시…11~12일 금융시장 포럼",
-      "desc": "내년 경제 및 산업 전반의 흐름을 조망하여 장기 자산관리 전략 수립에 참고할 수 있습니다.",
-      "org": "전자신문",
-      "date": "2026.11.11",
-      "ts": 1794361131000,
-      "btnText": "🔗 원문 보기",
-      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBDQWYyZm5YVlRhQnhnSWVYWG5XNVdYOEQ4TTVja3l5cUs0b1ViNlM5LVhGMFZMckQxRkJYLTRTVVFydzNmOXBLUW84NjE5QQ?oc=5",
-      "lang": "ko",
-      "classifiedBy": "AI(gemini-3.5-flash-lite)"
-    },
-    {
-      "stars": "★★★★★",
-      "category": "자산배분·시장 전망",
-      "title": "“AI 투자 열풍, 기업 실적으로 이어질까”…신한투자증권, 2027년 금융시장 전망",
-      "desc": "AI 투자 열풍과 기업 실적의 연관성을 점검한 2027년 시장 전망으로, 테마별 자산배분 상담에 활용 가능합니다.",
-      "org": "디지털데일리",
-      "date": "2026.11.11",
-      "ts": 1794360758000,
-      "btnText": "🔗 원문 보기",
-      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE82ZVE0M2RIX0RESU5hY2UxNXNmNlFXbDhzcFFfa2hua3dXRThfMmZoZThDX01waFc4U3hzYnBLYmhKNW1aTEwydWtaZkY0VG1odjZaYWhBTGRYUlJOeWxmR0hnM1I?oc=5",
-      "lang": "ko",
-      "classifiedBy": "AI(gemini-3.5-flash-lite)"
-    },
-    {
-      "stars": "★★★★★",
-      "category": "자산배분·시장 전망",
-      "title": "\"투자전략 공개\" 신한투자증권, '2027년 금융시장 포럼'",
-      "desc": "기관의 공식적인 연간 투자전략과 경제 전망을 바탕으로 고객 상담 시 시장 방향성을 제시할 수 있습니다.",
-      "org": "아시아경제",
-      "date": "2026.11.11",
-      "ts": 1794358800000,
-      "btnText": "🔗 원문 보기",
-      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1pbHdXaDNRT3RZZk83ZDFic05BUEVJZXVHRDZhQ2ZYMnlFUjVxbHNqWXZmMlE5ekVxM0tJZTZmMXZCd0p6aHVuVHdaUUFTQXJzRGRKSVlaS3pka1pWQ3RjMGp3?oc=5",
-      "lang": "ko",
-      "classifiedBy": "AI(gemini-3.5-flash-lite)"
-    },
-    {
-      "stars": "★★★★★",
-      "category": "자산배분·시장 전망",
-      "title": "신한투자증권, '2027년 금융시장 전망 포럼' 개최",
-      "desc": "신한투자증권의 2027년 금융시장 전망을 통해 자산배분 기준을 점검할 수 있습니다.",
-      "org": "라이센스뉴스",
-      "date": "2026.11.11",
-      "ts": 1794357498000,
-      "btnText": "🔗 원문 보기",
-      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE55Y2xZZy1lT2JUSzRFQ0lXRTZJekQzemZLejBMdzhYZW4wNkhaaWtmWmlzWUdGQVdZWk8ycVpqU1UzTlF0NUJqeWthbENnVklrZ2pXWHRhZUE3RzM1Y3FHVG1qT2lCQU83RE9R?oc=5",
-      "lang": "ko",
-      "classifiedBy": "AI(gemini-3.5-flash-lite)"
-    },
-    {
-      "stars": "★★★★★",
-      "category": "자산배분·시장 전망",
-      "title": "신한투자증권, '2027년 금융시장 포럼' 개최…업종별 투자전략 점검",
-      "desc": "업종별 상세 투자전략을 점검하여 고액자산가의 섹터별 투자 비중 조절 자문에 활용할 수 있습니다.",
-      "org": "뉴스핌",
-      "date": "2026.11.11",
-      "ts": 1794356820000,
-      "btnText": "🔗 원문 보기",
-      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE14eFZDTzJfVWFlZnRWLUxuNUZUWWo0TTF0T3lpeDJOMUs3Sl9UYXI3b21fOGM5Q1NSV0wtdWpGcm5EVFJDb2RHV2U3dEFxR3VTSjE0TWtQMXlPM2p2?oc=5",
-      "lang": "ko",
-      "classifiedBy": "AI(gemini-3.5-flash-lite)"
-    },
-    {
-      "stars": "★★★★★",
-      "category": "자산배분·시장 전망",
-      "title": "신한투자증권, 2027 신한금융시장포럼 개최..\"성장 기대 넘어 수익성\"",
-      "desc": "성장 기대감에서 벗어나 실질적인 수익성에 주목하는 2027년 시장 전망을 자산가 상담에 활용할 수 있습니다.",
-      "org": "스마트투데이",
-      "date": "2026.11.11",
-      "ts": 1794355320000,
-      "btnText": "🔗 원문 보기",
-      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE51a0FfZXNCdXNnbFk4ZkhqOFJJZ3lYaFlrMm1FQ1Y3ZTRfRC10eTJYYXA0amYzSDZOclljS1o2eTNrQjZ4aEJDMHZOWXluU3MyaE5lc2ZIRjhwOGtNNTRR?oc=5",
-      "lang": "ko",
-      "classifiedBy": "AI(gemini-3.5-flash-lite)"
-    },
-    {
       "stars": "★★★★☆",
       "category": "대체투자·사모시장",
       "title": "어필리에이트매니저 실적 발표 앞둬…대체투자 성장 주목",
@@ -445,19 +341,6 @@
       "classifiedBy": "AI(gemini-3.5-flash-lite)"
     },
     {
-      "stars": "★★★★☆",
-      "category": "국내 부자·웰스 리포트",
-      "title": "[issue&] 200가문 선택, 55조 자산관리 패밀리오피스",
-      "desc": "국내 초고액자산가 가문의 패밀리오피스 이용 현황과 대규모 자산관리 규모를 파악할 수 있는 통계 자료입니다.",
-      "org": "중앙일보",
-      "date": "2026.10.28",
-      "ts": 1793170800000,
-      "btnText": "🔗 원문 보기",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE16elphUjRMQlQxckQyUEFpaGVaX1BKd0FaYnhubzZjbmxxNUItVnE3VGhlTmloV01scFlzZGZWcHVRRXd0NmJ6QVhOVENsaUMtTG9YcUp3?oc=5",
-      "lang": "ko",
-      "classifiedBy": "AI(gemini-3.5-flash-lite)"
-    },
-    {
       "stars": "★★★★★",
       "category": "글로벌 F/O 동향",
       "title": "인구통계 변화와 시장 복잡성이 패밀리오피스를 변화시키고 있다",
@@ -467,19 +350,6 @@
       "ts": 1793170800000,
       "btnText": "🔗 원문 보기",
       "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPclVkVHNOVi1SREZ5UVBjaS1vV1d6enREdmFmeVhFb3ZUX2VjSmZNb2txZ1c3b3lZWEZlak5MY0NFT3laZmhRRUJqOTlacEI3ZTVQems4SnE3QXJjMTEyWFlYVkN3aGNFbFZWQlBndnoxUDR3U3ZITmZpcENPX3FaMFg0LS1BSkNheVpNWE14dUg?oc=5",
-      "lang": "en",
-      "classifiedBy": "AI(gemini-3.5-flash-lite)"
-    },
-    {
-      "stars": "★★★★★",
-      "category": "글로벌 F/O 동향",
-      "title": "모건스탠리 패밀리오피스, 초고액자산가의 복잡성·변화·세대 전환 대응 지원 이니셔티브 출범",
-      "desc": "초고액자산가 가문의 복잡한 자산 승계와 세대 전환을 돕기 위한 글로벌 금융사의 지원 동향입니다.",
-      "org": "Yahoo Finance",
-      "date": "2026.10.27",
-      "ts": 1793084400000,
-      "btnText": "🔗 원문 보기",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPaEkxYVJiZVRWelp6dmpWNmY2RElTMGQ3SF9Cd2R5SDlDOElOdGlpcHJ3RXc2ZVRhVWQ0TUZ6T2pVbTUzeXF6cjlPcEFBYjZvZ2RyaXZadHprZkRRc2N2UU5MUG8xdHpmaFFvNjhTX3liSTQ0M0NyNmM3SHFTY2YwTEdxLUw0TFRFR2FmVE1vVmxqa3B3N2REMFIzRWd1am9EZkNYWA?oc=5",
       "lang": "en",
       "classifiedBy": "AI(gemini-3.5-flash-lite)"
     },

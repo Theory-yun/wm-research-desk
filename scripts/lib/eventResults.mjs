@@ -143,7 +143,7 @@ async function fomcResult(ev) {
   const decision = /decided to (?:maintain|keep)/i.test(text) ? "동결" : /decided to lower/i.test(text) ? "인하" : /decided to raise/i.test(text) ? "인상" : null;
   if (!decision) return null;
   // "Voting against this action was Stephen I. Miran, who preferred ..." — 중간 이니셜의 마침표에서 잘리지 않게
-  const against = text.match(/Voting against (?:the|this) action (?:were|was):? (.+?)(?:, who |; |\. [A-Z][a-z])/i)?.[1];
+  const against = text.match(/Voting against (?:the|this) action (?:were|was):? (.+?)(?:, who |; |(?<! [A-Z])\.(?: |$))/)?.[1];
   return {
     headline: `기준금리 ${decision} — 연방기금금리 목표 범위 ${frac(rng[1])}~${frac(rng[2])}%`,
     details: [against ? `반대 의견: ${against.trim()}` : "반대 의견 없음(성명서 기준)"],

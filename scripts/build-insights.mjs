@@ -30,6 +30,37 @@ const QUERIES = [
 ];
 
 const PROMO = /세미나|컨퍼런스|간담회|행사|개최|진행|초청|이벤트|출시|오픈|선임|수상|MOU|협약|채용/;
+// AI 분류 뒤에도 한 번 더 거르는 명백한 홍보성 표현
+const HARD_PROMO = /생중계|세미나|컨퍼런스|간담회|이벤트|\[issue&\]|\[광고\]|이니셔티브 출범|initiative launch/i;
+
+/** 제목 2글자 묶음(bigram) 유사도 — 같은 사건을 여러 언론이 쓴 기사를 하나로 묶는 데 사용 */
+function bigrams(t) {
+  const s = t.replace(/[\s\p{P}]/gu, "").toLowerCase();
+  const out = new Set();
+  for (let i = 0; i < s.length - 1; i++) out.add(s.slice(i, i + 2));
+  return out;
+}
+function similarity(a, b) {
+  const A = bigrams(a), B = bigrams(b);
+  if (!A.size || !B.size) return 0;
+  let inter = 0;
+  for (const x of A) if (B.has(x)) inter++;
+  return inter / Math.min(A.size, B.size);
+}
+// 제목 맨 앞 주어(예: "신한투자증권," / "신한證,")의 앞 두 글자
+const lead = (t) => (t.match(/^([^\s,·…]{2,})[,·]/)?.[1] ?? "").slice(0, 2);
+function sameStory(a, b) {
+  const sim = similarity(a.title, b.title);
+  if (sim >= 0.5) return true;
+  const sameLead = lead(a.title) && lead(a.title) === lead(b.title);
+  return sameLead && a.category === b.category && Math.abs((a.ts ?? 0) - (b.ts ?? 0)) < 7 * 86400e3 && sim >= 0.25;
+}
+/** 같은 이야기를 다룬 기사는 먼저 나온(최신·상위) 1건만 남김 */
+function dedupeStories(items) {
+  const kept = [];
+  for (const it of items) if (!kept.some((k) => sameStory(k, it))) kept.push(it);
+  return kept;
+}
 
 function readJsonSafe(p, fb) {
   try {
@@ -50,7 +81,8 @@ async function aiClassify(cands) {
     models: GEMINI_LITE_FIRST,
     prompt: `당신은 패밀리오피스 PB의 리서치 담당입니다. 아래 기사 제목들 중 초고액자산가 손님 상담에 실제로 쓸모 있는 것만 고르세요.
 남길 것: 리서치 보고서·설문 결과·통계/데이터 발표, 자산배분 전망, 세법·상속·신탁 제도 변화, 대체투자 시장 동향.
-뺄 것: 금융사 행사·세미나·상품 출시·인사·수상 등 홍보성 기사, 개별 종목 시황, 제목만으로 내용을 알 수 없는 기사.
+뺄 것: 금융사 행사·포럼 개최·생중계·세미나·상품 출시·조직 신설·인사·수상 등 홍보성 기사, 기업 홍보성 기획기사, 개별 종목 시황, 제목만으로 내용을 알 수 없는 기사.
+같은 사건·같은 보고서를 다룬 기사가 여러 건이면 가장 내용이 분명한 1건만 남기세요.
 각 항목은 제목에 적힌 내용만으로 작성하고, 제목에 없는 숫자·사실은 절대 추가하지 마세요. 영문 제목은 뜻을 바꾸지 말고 한국어로 옮기세요.
 
 분류는 다음 중 하나: ${INSIGHT_CATEGORIES.join(" / ")}
@@ -115,10 +147,11 @@ async function main() {
 
   // 3) 병합·정리
   const cutoff = Date.now() - 90 * 86400e3;
-  const auto = [...fresh, ...prevAuto]
-    .filter((r) => (r.ts ?? 0) >= cutoff)
-    .sort((a, b) => (b.ts ?? 0) - (a.ts ?? 0))
-    .slice(0, 60);
+  const auto = dedupeStories(
+    [...fresh, ...prevAuto]
+      .filter((r) => (r.ts ?? 0) >= cutoff && !HARD_PROMO.test(r.title))
+      .sort((a, b) => (b.ts ?? 0) - (a.ts ?? 0))
+  ).slice(0, 60);
 
   fs.writeFileSync(
     FILE,
