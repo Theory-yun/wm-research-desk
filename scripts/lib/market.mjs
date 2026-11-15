@@ -22,11 +22,39 @@ async function fetchNaverDomesticIndex(code) {
 
   if (Number.isNaN(price) || price <= 100) return null;
 
+  // 장 시작 전(동시호가 등)에는 '오늘 세션'으로 넘어가 등락이 0으로 표시됨 →
+  // 마지막으로 마감한 거래일의 종가·등락을 일별 시세에서 가져옴
+  const status = String(data.marketStatus || "").toUpperCase();
+  const notClosed = status && status !== "CLOSE";
+  if (notClosed || (diff === 0 && ratio === 0)) {
+    const last = await fetchNaverDomesticLastClose(code);
+    if (last) return last;
+  }
   return {
     price,
     diff: isDown ? -Math.abs(diff) : Math.abs(diff),
     pct: isDown ? -Math.abs(ratio) : Math.abs(ratio),
+    tradeDate: String(data.localTradedAt || "").slice(0, 10) || null,
   };
+}
+
+/** 일별 시세에서 '오늘(KST) 이전'의 가장 최근 마감 거래일 */
+async function fetchNaverDomesticLastClose(code) {
+  const url = `https://m.stock.naver.com/api/index/${encodeURIComponent(code)}/price?pageSize=5&page=1`;
+  const rows = await fetchWithRetry(url, { timeoutMs: 6000 });
+  if (!Array.isArray(rows)) return null;
+  const todayKst = new Date(Date.now() + 9 * 3600e3).toISOString().slice(0, 10);
+  const row = rows.find((r) => String(r.localTradedAt || "").slice(0, 10) < todayKst);
+  if (!row) return null;
+  const num = (v) => parseFloat(String(v ?? "").replace(/,/g, ""));
+  const price = num(row.closePrice);
+  const diffAbs = Math.abs(num(row.compareToPreviousClosePrice));
+  const pctRaw = num(row.fluctuationsRatio);
+  if (Number.isNaN(price) || price <= 100 || Number.isNaN(diffAbs)) return null;
+  const down = row.compareToPreviousPrice?.code === "5" || row.compareToPreviousPrice?.code === "4" || pctRaw < 0 ||
+    String(row.compareToPreviousClosePrice).trim().startsWith("-");
+  console.log(`[국내지수] ${code}: 장 시작 전이라 ${String(row.localTradedAt).slice(0, 10)} 마감 종가 사용`);
+  return { price, diff: down ? -diffAbs : diffAbs, pct: down ? -Math.abs(pctRaw) : Math.abs(pctRaw), tradeDate: String(row.localTradedAt).slice(0, 10) };
 }
 
 /** 네이버 금융 공식 "해외지수" API (.INX, .IXIC, .SOX 등) */
@@ -121,7 +149,8 @@ export async function collectCoreMarket(previousMarket = []) {
 
       if (sym.naverDomesticCode) {
         quote = await fetchNaverDomesticIndex(sym.naverDomesticCode);
-        dual = { local: "국내 정규장 기준", kst: "한국 정규장 15:30 마감" };
+        const md = quote?.tradeDate ? ` ${quote.tradeDate.slice(5, 7)}.${quote.tradeDate.slice(8, 10)}` : "";
+        dual = { local: "국내 정규장 기준", kst: `한국 정규장${md} 15:30 마감` };
       } else if (sym.naverWorldCode) {
         quote = await fetchNaverWorldIndex(sym.naverWorldCode);
         if (quote?.timestampSec) dual = dualCloseTimeLabel(quote.timestampSec);

@@ -43,7 +43,7 @@ function wireUpStaticEvents() {
   $("btn-pdf-download").addEventListener("click", downloadPdf);
   $("btn-goto-newsroom").addEventListener("click", () => switchTab("tab-newsroom"));
 
-  // 상단 J의 WM Research Desk 클릭 → 종합 대시보드
+  // 상단 J's WM RESEARCH DESK 클릭 → 종합 대시보드
   $("brand-home-link").addEventListener("click", (e) => {
     e.preventDefault();
     switchTab("tab-dashboard");
@@ -72,12 +72,12 @@ function wireUpStaticEvents() {
     const btn = $("btn-reload-data");
     const orig = btn.textContent;
     btn.disabled = true;
-    btn.textContent = "⏳ 데이터 확인 중...";
+    btn.textContent = "확인 중…";
     await loadAllData();
     renderDashboard();
     renderNewsroom();
     renderInsights();
-    btn.textContent = "✅ 최신 데이터 확인 완료";
+    btn.textContent = "최신 상태";
     setTimeout(() => {
       btn.disabled = false;
       btn.textContent = orig;

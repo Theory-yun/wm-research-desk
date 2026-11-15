@@ -36,9 +36,9 @@ export function renderBoard() {
       (p) => `
       <tr style="cursor:pointer;" data-post-id="${p.id}">
         <td><span class="badge-tag tag-macro">${escapeHtml(p.category)}</span></td>
-        <td style="font-weight:600; color:#0f172a;">${escapeHtml(p.title)}</td>
+        <td style="font-weight:600; color:#9DB0DC;">${escapeHtml(p.title)}</td>
         <td>${escapeHtml(p.author)}</td>
-        <td style="color:#64748b;">${escapeHtml(p.date)}</td>
+        <td style="color:#9DADAA;">${escapeHtml(p.date)}</td>
       </tr>
     `
     )
@@ -53,10 +53,10 @@ function viewPost(id) {
   box.innerHTML = `
     <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
       <span class="badge-tag tag-macro">${escapeHtml(post.category)}</span>
-      <span style="font-size:12px; color:#64748b;">작성자: ${escapeHtml(post.author)} | 등록일: ${escapeHtml(post.date)}</span>
+      <span style="font-size:12px; color:#9DADAA;">작성자: ${escapeHtml(post.author)} | 등록일: ${escapeHtml(post.date)}</span>
     </div>
-    <h4 style="font-size:16px; font-weight:700; color:#0f172a; margin-bottom:10px;">${escapeHtml(post.title)}</h4>
-    <p style="font-size:14px; color:#334155; line-height:1.6; white-space:pre-wrap; margin-bottom:12px;">${escapeHtml(post.content)}</p>
+    <h4 style="font-size:16px; font-weight:700; color:#9DB0DC; margin-bottom:10px;">${escapeHtml(post.title)}</h4>
+    <p style="font-size:14px; color:#DCE4E2; line-height:1.6; white-space:pre-wrap; margin-bottom:12px;">${escapeHtml(post.content)}</p>
     <div style="text-align:right;">
       <button type="button" id="btn-delete-post" data-post-id="${post.id}" data-post-author="${escapeHtml(post.author)}" style="background:#ef4444; color:#fff; border:none; padding:5px 10px; border-radius:4px; font-size:12px; cursor:pointer;">게시글 삭제</button>
     </div>

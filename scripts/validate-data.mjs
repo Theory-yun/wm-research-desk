@@ -41,6 +41,7 @@ function checkEdition(f, ed) {
     if (m.stale) warn(f, `${m.name} 시세 갱신 실패(이전 값 표시 중)`);
     if (m.stale && m.priceStr === "—") continue;
     if (!Number.isFinite(m.changePct)) err(f, `${m.name} changePct 숫자 아님: ${m.changePct}`);
+    if (m.group === "domestic" && m.changePct === 0 && /0\.00$/.test(String(m.diffStr))) err(f, `${m.name} 등락 0 — 장 시작 전 값이 들어갔을 가능성`);
     // 등락폭·등락률·현재가가 서로 맞는지 (diff / (price - diff) ≈ pct)
     const price = Number(String(m.priceStr).replace(/,/g, ""));
     const absDiff = Math.abs(Number(String(m.diffStr).replace(/[▲▼+\-,\s]/g, "")));

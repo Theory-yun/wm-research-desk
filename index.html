@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="google" content="notranslate">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>J의 WM Research Desk</title>
+  <title>J's WM RESEARCH DESK</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" defer></script>
 </head>
@@ -17,44 +17,45 @@
     <div id="wm-ticker-track" class="wm-ticker-track"></div>
   </div>
 
-  <!-- 헤더 -->
+  <!-- 헤더: 브랜드 · 메뉴 · 에디션 전환 · 카톡/PDF 한 줄 (모바일: 메뉴는 하단 탭) -->
   <header class="main-header">
     <div class="header-inner">
       <a href="#tab-dashboard" class="brand-title-group brand-home-link" id="brand-home-link" title="종합 대시보드로 이동">
-        <h1 class="brand-title">J의 WM Research Desk</h1>
+        <h1 class="brand-title">J's WM RESEARCH DESK</h1>
       </a>
-      <div class="header-controls">
-        <span id="current-date"></span>
-        <button type="button" id="btn-reload-data" class="btn-refresh">🔄 데이터 새로고침</button>
+      <nav class="main-nav" aria-label="주 메뉴">
+        <div class="nav-inner" id="main-nav-inner">
+          <button type="button" class="nav-btn active" data-tab="tab-dashboard">대시보드</button>
+          <button type="button" class="nav-btn" data-tab="tab-newsroom">뉴스룸</button>
+          <button type="button" class="nav-btn" data-tab="tab-insight">F/O Insight</button>
+          <button type="button" class="nav-btn" data-tab="tab-board">게시판</button>
+        </div>
+      </nav>
+      <div class="header-controls no-print">
+        <div class="ed-toggle" role="group" aria-label="브리핑 선택">
+          <button type="button" id="btn-ed-morning" class="ed-pill-btn active" data-edition="MORNING" title="모닝 · 장 개장 전 · 글로벌">AM 모닝</button>
+          <button type="button" id="btn-ed-evening" class="ed-pill-btn" data-edition="EVENING" title="이브닝 · 장 종료 후 · 국내">PM 이브닝</button>
+        </div>
+        <div class="hdr-actions">
+          <button type="button" class="hdr-btn" id="btn-copy-kakao">카톡 복사</button>
+          <button type="button" class="hdr-btn hdr-btn-primary" id="btn-pdf-download">PDF</button>
+        </div>
       </div>
     </div>
   </header>
-
-  <!-- 네비게이션 -->
-  <nav class="main-nav">
-    <div class="nav-inner" id="main-nav-inner">
-      <button type="button" class="nav-btn active" data-tab="tab-dashboard">종합 대시보드</button>
-      <button type="button" class="nav-btn" data-tab="tab-newsroom">마켓 뉴스룸</button>
-      <button type="button" class="nav-btn" data-tab="tab-insight">F/O Insight</button>
-      <button type="button" class="nav-btn" data-tab="tab-board">게시판</button>
-    </div>
-  </nav>
 
   <!-- [탭 1] 종합 대시보드 -->
   <main id="tab-dashboard" class="tab-section active">
     <div class="pb-slim-toolbar no-print">
       <div class="toolbar-left">
-        <span class="toolbar-label">⏱ 브리핑 에디션</span>
-        <button type="button" id="btn-ed-morning" class="ed-pill-btn active" data-edition="MORNING">🌅 모닝 (장 개장 전 · 글로벌)</button>
-        <button type="button" id="btn-ed-evening" class="ed-pill-btn" data-edition="EVENING">🌇 이브닝 (장 종료 후 · 국내)</button>
-        <label class="archive-picker" title="지난 브리핑 다시보기">📂
-          <select id="archive-date-select" aria-label="지난 브리핑 날짜 선택"></select>
-        </label>
+        <span class="toolbar-status" id="current-date"></span>
       </div>
       <div class="toolbar-right">
-        <button type="button" class="icon-action-btn" id="btn-edit-briefing">✏️ <span>문구 임시 편집</span></button>
-        <button type="button" class="icon-action-btn" id="btn-copy-kakao">💬 <span>카톡 브리핑 복사</span></button>
-        <button type="button" class="icon-action-btn pdf-primary" id="btn-pdf-download">📥 <span>손님용 PDF 보고서</span></button>
+        <label class="archive-picker" title="지난 브리핑 다시보기">지난 브리핑
+          <select id="archive-date-select" aria-label="지난 브리핑 날짜 선택"></select>
+        </label>
+        <button type="button" class="icon-action-btn" id="btn-edit-briefing"><span>문구 편집</span></button>
+        <button type="button" class="icon-action-btn" id="btn-reload-data"><span>새로고침</span></button>
       </div>
     </div>
 
@@ -77,9 +78,9 @@
         <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px;">
           <div style="display:flex; align-items:center; gap:8px;">
             <span class="brand-badge" id="edition-badge-tag"></span>
-            <h2 style="font-size:16px; font-weight:800; color:#0f172a;" id="edition-main-heading"></h2>
+            <h2 style="font-size:16px; font-weight:800; color:#9DB0DC;" id="edition-main-heading"></h2>
           </div>
-          <span id="edition-auto-time-note" style="font-size:11.5px; color:#004B49; font-weight:700;" class="no-print"></span>
+          <span id="edition-auto-time-note" style="font-size:11.5px; color:#8FD3C4; font-weight:700;" class="no-print"></span>
         </div>
         <div class="issue-grid-3" id="edition-issues-container"></div>
         <div class="pb-talking-box">
@@ -91,7 +92,7 @@
       <section class="card-box top5-news-section" style="margin-bottom:20px;">
         <div class="section-header">
           <h2 class="section-title"><span class="bar-gold"></span><span id="top5-news-heading">손님 필독 마켓 뉴스 TOP</span></h2>
-          <button type="button" class="no-print" id="btn-goto-newsroom" style="background:none; border:none; color:#004B49; font-size:12px; font-weight:700; cursor:pointer;">전체 뉴스룸 보기 →</button>
+          <button type="button" class="no-print" id="btn-goto-newsroom" style="background:none; border:none; color:#8FD3C4; font-size:12px; font-weight:700; cursor:pointer;">전체 뉴스룸 보기 →</button>
         </div>
         <div id="dashboard-top5-news" class="top5-list-grid"></div>
       </section>
@@ -142,7 +143,7 @@
       </div>
 
       <div class="compliance-bar no-print">
-        <strong>[컴플라이언스 안내]</strong> 본 화면은 J의 WM Research Desk — PB의 상담 참고 및 손님 브리핑 보조용 자료이며, 공신력 있는 시장 정보와 정규장 마감 데이터를 바탕으로 자동 생성됩니다. 다만 AI 생성 과정에서 오류가 포함될 수 있으므로 손님께 전달 전 PB의 확인을 권장하며, 본 자료는 투자 결과에 대한 법적 책임 소재의 증빙자료로 사용될 수 없습니다.
+        <strong>[컴플라이언스 안내]</strong> 본 화면은 J's WM RESEARCH DESK — PB의 상담 참고 및 손님 브리핑 보조용 자료이며, 공신력 있는 시장 정보와 정규장 마감 데이터를 바탕으로 자동 생성됩니다. 다만 AI 생성 과정에서 오류가 포함될 수 있으므로 손님께 전달 전 PB의 확인을 권장하며, 본 자료는 투자 결과에 대한 법적 책임 소재의 증빙자료로 사용될 수 없습니다.
       </div>
     </div>
 
@@ -154,7 +155,7 @@
     <div class="card-box">
       <div class="section-header">
         <h2 class="section-title"><span class="bar-gold"></span><span>WM RESEARCH 마켓 뉴스룸</span></h2>
-        <span id="news-status-badge" style="font-size: 12px; color: #047857; font-weight: 700;"></span>
+        <span id="news-status-badge" style="font-size: 12px; color: #84F5D5; font-weight: 700;"></span>
       </div>
       <div class="news-top-controls">
         <div class="filter-pill-bar" id="news-filter-bar">
@@ -174,10 +175,10 @@
           <button type="button" class="btn-primary" id="btn-news-search">검색</button>
         </div>
       </div>
-      <p style="font-size:11.5px; color:#94a3b8; margin-bottom:10px;">※ 이 검색은 GitHub Actions가 자동 수집해 둔 아카이브 내에서만 동작합니다 (실시간 외부 웹 검색이 아닙니다 — 더 정확하고 빠르게 동작하도록 의도한 설계입니다).</p>
+      <p style="font-size:11.5px; color:#8A9A97; margin-bottom:10px;">※ 이 검색은 GitHub Actions가 자동 수집해 둔 아카이브 내에서만 동작합니다 (실시간 외부 웹 검색이 아닙니다 — 더 정확하고 빠르게 동작하도록 의도한 설계입니다).</p>
       <div id="news-container" style="min-height: 300px;"></div>
-      <div style="text-align:center; padding:22px 0 10px; border-top: 1px solid #f1f5f9; margin-top: 10px;">
-        <div id="news-count-info" style="font-size:12px; color:#64748b; margin-bottom:10px;"></div>
+      <div style="text-align:center; padding:22px 0 10px; border-top: 1px solid #294560; margin-top: 10px;">
+        <div id="news-count-info" style="font-size:12px; color:#9DADAA; margin-bottom:10px;"></div>
         <button type="button" id="btn-load-more-news" class="btn-primary" style="padding:10px 26px;">+ 10개 더 보기</button>
       </div>
     </div>
@@ -188,7 +189,7 @@
     <div class="card-box">
       <div class="section-header">
         <h2 class="section-title"><span class="bar-gold"></span><span>F/O 전략 기획 필수 리서치 & 글로벌 부자 보고서 아카이브</span></h2>
-        <span id="insight-status-label" style="font-size: 12px; color: #047857; font-weight: 700;"></span>
+        <span id="insight-status-label" style="font-size: 12px; color: #84F5D5; font-weight: 700;"></span>
       </div>
       <div class="filter-pill-bar" id="insight-filter-bar" style="margin-bottom: 12px;">
         <button type="button" class="filter-pill-btn active" data-filter="ALL">전체 (<span id="insight-total-count">0</span>)</button>

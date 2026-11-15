@@ -51,7 +51,7 @@ function row(r) {
         <div class="ins-desc">${escapeHtml(r.desc)}</div>
         ${meta}
       </td>
-      <td><span style="font-weight:700; color:#004B49;">${escapeHtml(r.org)}</span><br><span style="font-size:11.5px; color:#94a3b8;">${escapeHtml(r.date)}</span></td>
+      <td><span style="font-weight:700; color:#8FD3C4;">${escapeHtml(r.org)}</span><br><span style="font-size:11.5px; color:#8A9A97;">${escapeHtml(r.date)}</span></td>
       <td style="text-align:center;"><a href="${encodeURI(r.url)}" target="_blank" rel="noopener noreferrer" class="btn-download">${escapeHtml(r.btnText)}</a></td>
     </tr>`;
 }
@@ -72,7 +72,7 @@ export function renderInsights() {
   const section = (title, rows) => (rows.length ? `<tr class="ins-section"><td colspan="5">${title}</td></tr>` + rows.map(row).join("") : "");
   tbody.innerHTML =
     section("🔄 최근 자동 수집 자료 (리서치·통계·제도 변화)", auto) + section("📌 PB 선정 연례 핵심 리포트", curated) ||
-    `<tr><td colspan="5" style="text-align:center; color:#94a3b8; padding:24px;">이 분류에 해당하는 자료가 아직 없습니다.</td></tr>`;
+    `<tr><td colspan="5" style="text-align:center; color:#8A9A97; padding:24px;">이 분류에 해당하는 자료가 아직 없습니다.</td></tr>`;
 }
 
 export function initInsightEvents() {

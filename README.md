@@ -1,4 +1,4 @@
-# J의 WM Research Desk
+# J's WM RESEARCH DESK
 
 PB(프라이빗 뱅커)가 손님에게 전달할 **장 개장 전(모닝/글로벌) · 장 종료 후(이브닝/국내)** 데일리 마켓 브리핑을
 자동으로 만들어주는 정적 웹 포털입니다. GitHub Actions가 서버사이드에서 시세·뉴스를 수집하고 Gemini API(또는

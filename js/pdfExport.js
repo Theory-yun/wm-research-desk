@@ -23,7 +23,7 @@ export function copyKakaoBriefing() {
     .join("\n\n");
   const talking = $("edition-talking-point")?.textContent.trim() ?? data.talkingPoint;
 
-  const msg = `🏛️ *[J의 WM Research Desk 마켓 브리핑]*\n${icon} *기준:* ${data.generatedAtKST} (${STATE.edition === "MORNING" ? "모닝 · 글로벌" : "이브닝 · 국내"})\n━━━━━━━━━━━━━━━━━━\n\n📊 *1. 핵심 지표 (요약)*\n${lines}\n\n🔥 *2. 핵심 마켓 이슈*\n${issues}\n\n💡 *3. 손님 브리핑 종합 요약*\n${talking}\n\n📰 *4. 손님 필독 인기 뉴스*\n${top5}\n\n━━━━━━━━━━━━━━━━━━\n💼 *J의 WM Research Desk*\n※ 본 자료는 PB 상담 보조용이며 법적 책임 증빙자료로 사용될 수 없습니다.`;
+  const msg = `🏛️ *[J's WM RESEARCH DESK 마켓 브리핑]*\n${icon} *기준:* ${data.generatedAtKST} (${STATE.edition === "MORNING" ? "모닝 · 글로벌" : "이브닝 · 국내"})\n━━━━━━━━━━━━━━━━━━\n\n📊 *1. 핵심 지표 (요약)*\n${lines}\n\n🔥 *2. 핵심 마켓 이슈*\n${issues}\n\n💡 *3. 손님 브리핑 종합 요약*\n${talking}\n\n📰 *4. 손님 필독 인기 뉴스*\n${top5}\n\n━━━━━━━━━━━━━━━━━━\n💼 *J's WM RESEARCH DESK*\n※ 본 자료는 PB 상담 보조용이며 법적 책임 증빙자료로 사용될 수 없습니다.`;
 
   navigator.clipboard?.writeText(msg).then(() => alert("손님 카톡 브리핑 문구가 복사되었습니다. 채팅방에 붙여넣기(Ctrl+V) 하세요."));
 }
@@ -143,7 +143,7 @@ export function buildFormalPdfHtml() {
   return `
     <div class="rp-page">
       <header class="rp-header">
-        <div class="rp-brand"><span class="rp-badge">J의 WM Research Desk</span><span class="rp-title">데일리 마켓 브리핑</span><span class="rp-edition">${escapeHtml(edTitle)}</span></div>
+        <div class="rp-brand"><span class="rp-badge">J's WM RESEARCH DESK</span><span class="rp-title">데일리 마켓 브리핑</span><span class="rp-edition">${escapeHtml(edTitle)}</span></div>
         <div class="rp-meta">데이터 기준 <b>${escapeHtml(data.generatedAtKST)}</b> · 출력 ${escapeHtml(printedStr)}</div>
       </header>
 
@@ -172,7 +172,7 @@ export function buildFormalPdfHtml() {
         </section>
       </div>
 
-      <footer class="rp-footer">본 자료는 J의 WM Research Desk가 PB 상담 참고용으로 시장 데이터와 공시·보도를 바탕으로 자동 생성(AI 요약 포함)되었습니다. 자산배분 모델은 예시이며 투자 권유가 아니고, 투자 결과에 대한 법적 책임의 증빙자료로 사용될 수 없습니다. 손님 전달 전 PB의 확인을 권장합니다.</footer>
+      <footer class="rp-footer">본 자료는 J's WM RESEARCH DESK가 PB 상담 참고용으로 시장 데이터와 공시·보도를 바탕으로 자동 생성(AI 요약 포함)되었습니다. 자산배분 모델은 예시이며 투자 권유가 아니고, 투자 결과에 대한 법적 책임의 증빙자료로 사용될 수 없습니다. 손님 전달 전 PB의 확인을 권장합니다.</footer>
     </div>
   `;
 }
@@ -195,7 +195,7 @@ export async function downloadPdf() {
 
   const data = currentEditionData();
   const edTag = STATE.edition === "MORNING" ? "0_Morning" : "1_Evening";
-  const fName = `J의WMResearchDesk_마켓브리핑_${data.generatedAtKST.replace(/[.\s:]/g, "")}_${edTag}.pdf`;
+  const fName = `Js_WM_RESEARCH_DESK_마켓브리핑_${data.generatedAtKST.replace(/[.\s:]/g, "")}_${edTag}.pdf`;
 
   if (window.html2pdf) {
     try {

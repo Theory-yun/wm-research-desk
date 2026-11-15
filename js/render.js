@@ -148,7 +148,7 @@ function renderTop5News() {
   const box = $("dashboard-top5-news");
   const top = getTop5News();
   if (!top.length) {
-    box.innerHTML = `<div style="padding:24px; text-align:center; color:#004B49; font-size:13.5px; font-weight:700;">아직 수집된 기사가 없습니다. GitHub Actions 실행 후 채워집니다.</div>`;
+    box.innerHTML = `<div style="padding:24px; text-align:center; color:#8FD3C4; font-size:13.5px; font-weight:700;">아직 수집된 기사가 없습니다. GitHub Actions 실행 후 채워집니다.</div>`;
     return;
   }
   box.innerHTML = top
@@ -169,10 +169,10 @@ function renderTop5News() {
               <div style="display:flex; align-items:center; gap:6px; margin-bottom:3px; flex-wrap:wrap;">
                 ${tags}
                 ${coverage}
-                <span style="font-size:11.5px; font-weight:800; color:#004B49;">${escapeHtml(n.press)}</span>
-                <span style="font-size:11px; color:#475569; font-weight:700;">발행 ${escapeHtml(n.date)}</span>
+                <span style="font-size:11.5px; font-weight:800; color:#8FD3C4;">${escapeHtml(n.press)}</span>
+                <span style="font-size:11px; color:#B7C3C0; font-weight:700;">발행 ${escapeHtml(n.date)}</span>
               </div>
-              <div style="font-size:14px; font-weight:700; color:#0f172a; line-height:1.35;">${escapeHtml(n.title)}</div>
+              <div class="top5-title" style="font-size:14.5px; font-weight:600; color:#E8EEEC; line-height:1.45;">${escapeHtml(n.title)}</div>
             </div>
           </div>
           <span class="top5-link-pill">기사 원문 ↗</span>
@@ -313,7 +313,7 @@ export function toggleEditBriefing() {
   document.querySelectorAll("#dashboard-screen-view .editable-text").forEach((el) => {
     el.contentEditable = STATE.isEditing ? "true" : "false";
     el.style.outline = STATE.isEditing ? "1px dashed #C5A059" : "none";
-    el.style.backgroundColor = STATE.isEditing ? "#fffbeb" : "";
+    el.style.backgroundColor = STATE.isEditing ? "#1F1B12" : "";
   });
   if (btn) {
     btn.innerHTML = STATE.isEditing ? "✅ <span>편집 완료 (이 화면에만 임시 적용)</span>" : "✏️ <span>문구 임시 편집</span>";

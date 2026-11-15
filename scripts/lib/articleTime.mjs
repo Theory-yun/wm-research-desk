@@ -67,6 +67,17 @@ export function extractPublishedTs(html) {
     const ts = parseLooseDate(raw);
     if (ts) return ts;
   }
+  // 국내 언론사 본문 표기: "입력 2026.11.15 15:05", "기사입력 2026-11-15 15:05:12", "등록 2026.11.15 오후 3:05"
+  const text = head.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ");
+  const m = text.match(/(?:기사\s*)?(?:입력|등록|최초\s*입력|게재|발행|승인)\s*[:：]?\s*(20\d{2})[.\-\/년]\s*(\d{1,2})[.\-\/월]\s*(\d{1,2})일?\s*(오전|오후)?\s*(\d{1,2}):(\d{2})/);
+  if (m) {
+    let hh = Number(m[5]);
+    if (m[4] === "오후" && hh < 12) hh += 12;
+    if (m[4] === "오전" && hh === 12) hh = 0;
+    const pad = (x) => String(x).padStart(2, "0");
+    const ts = Date.parse(`${m[1]}-${pad(m[2])}-${pad(m[3])}T${pad(hh)}:${m[6]}:00+09:00`);
+    if (!Number.isNaN(ts)) return ts;
+  }
   return null;
 }
 
@@ -110,7 +121,9 @@ export async function verifyArticleTime(item) {
       });
       publishedTs = extractPublishedTs(html);
       if (publishedTs) source = "meta";
-    } catch { /* 원문 접속 실패 → 아래 대안 */ }
+    } catch (e) {
+      console.log(`  [발행시각] 원문 접속 실패 ${originalUrl.slice(0, 60)} — ${String(e.message).slice(0, 60)}`);
+    }
     if (!publishedTs) {
       const u = urlDateTs(originalUrl);
       // URL 날짜가 RSS 날짜(KST 기준)보다 하루 이상 이르면 URL 날짜를 채택(시각 미상)
@@ -139,6 +152,7 @@ export async function verifyStoryTimes(items, { maxAgeHours = 72 } = {}) {
     const date = v.source === "url" ? kstFormat(v.publishedTs).slice(0, 10) : kstFormat(v.publishedTs);
     const next = { ...n, timestamp: v.publishedTs, date, rssDate, timeSource: v.source };
     if (v.originalUrl && v.originalUrl !== n.url) { next.googleUrl = n.url; next.url = v.originalUrl; }
+    if (v.source === "rss") console.log(`  [발행시각] 원문에서 시각을 못 찾아 RSS 시각 사용: ${n.title.slice(0, 30)}`);
     if (changed) {
       fixed++;
       console.log(`  [발행시각 보정] ${rssDate} → ${date} (${v.source}) ${n.title.slice(0, 36)}`);
