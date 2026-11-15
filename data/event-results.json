@@ -1,6 +1,6 @@
 {
   "note": "캘린더 일정의 결과. 대부분 scripts/collect-calendar.mjs가 자동으로 채우며, method가 manual인 항목은 사람이 직접 입력한 것입니다. status가 final이면 다시 덮어쓰지 않습니다.",
-  "updatedAt": "2026-11-15T04:50:46.395Z",
+  "updatedAt": "2026-11-15T04:52:48.232Z",
   "results": {
     "2026-10-22|bok": {
       "status": "final",
@@ -75,6 +75,42 @@
       "sourceName": "BLS — Employment Situation",
       "sourceUrl": "https://www.bls.gov/ces/",
       "collectedAt": "2026-11-15T04:50:46.395Z"
+    },
+    "2026-10-28|fomc": {
+      "status": "final",
+      "headline": "기준금리 동결 — 연방기금금리 목표 범위 3.75~4.00%",
+      "details": [
+        "반대 의견 없음(성명서 기준)"
+      ],
+      "method": "official",
+      "sourceName": "Federal Reserve — FOMC 성명서",
+      "sourceUrl": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
+      "collectedAt": "2026-11-15T04:52:46.775Z"
+    },
+    "2026-10-29|ecb": {
+      "status": "final",
+      "headline": "기준금리 동결 — 연 2.5%",
+      "details": [
+        "유럽중앙은행(ECB)은 2026년 10월 29일 통화정책회의에서 기준금리를 2.5%로 동결했습니다.",
+        "근거 헤드라인 6건 · 예: \"European Central Bank keeps key interest rate on hold at 2.5%\" (CNBC)"
+      ],
+      "method": "ai-news",
+      "model": "gemini-3.5-flash-lite",
+      "sourceName": "CNBC 외 뉴스",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1EdmRuRWxaV3lJMlRiZGxtYmV3eV94WGRrcW9SU2xuejhkcUktdkVUNUlnUFR4YmJqZkNaRmJsYnVQem1KbHlYaTM4Q196b0xHdkVFWENydFItQzBtN2pXbUZkLXVEamNqNTFTZVFuOXRfTWZaeDhiM25fRkNBUdIBgwFBVV95cUxOclAxUlNIR3dYMzV2aUFZSjVxZ05CWUxzeXRMWU9MM3N5QS1DYS1mc1pnSU81cWlCQktxbk11NkQtWEFSWU1pQmxLY3N3dzlBbnJUTFlBUG1iZ2VPME93aktzay1VdWJaWF9SaF9vOHpDSDgtaTFVVXFCX2p0ZGRwNWdlZw?oc=5",
+      "collectedAt": "2026-11-15T04:52:47.849Z"
+    },
+    "2026-11-10|cpi_us": {
+      "status": "final",
+      "headline": "CPI 전월비 헤드라인 +0.4%, 근원 +0.3%",
+      "details": [
+        "전년 같은 달(2025년 10월) 지수가 BLS에서 발표되지 않아 전년비는 BLS 보도자료 원문을 확인하세요.",
+        "2026년 10월 지표 · BLS 공식 지수로 계산(발표 수치와 반올림 차이가 있을 수 있음)"
+      ],
+      "method": "official",
+      "sourceName": "BLS — Consumer Price Index",
+      "sourceUrl": "https://www.bls.gov/cpi/",
+      "collectedAt": "2026-11-15T04:52:48.231Z"
     }
   }
 }
