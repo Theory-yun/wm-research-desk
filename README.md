@@ -200,3 +200,17 @@ node scripts/build-evening.mjs
 - 결과는 `data/event-results.json`, 실적 일정은 `data/auto-events.json`에 저장되며, 한 번 확정된 결과는 덮어쓰지 않습니다.
 - 만기일·휴장일·MSCI 일정은 `data/market-holidays.json`을 고친 뒤 `node scripts/build-rule-events.mjs`로 다시 계산합니다.
 - 지난 브리핑은 `data/archive/`에 날짜별로 쌓이고, `data/archive/index.json`이 대시보드의 날짜 선택 목록이 됩니다.
+
+
+## 자동화 한눈에 보기
+
+| 워크플로 | 실행 시각(KST) | 하는 일 |
+|---|---|---|
+| 모닝 브리핑 자동 수집 | 평일 06:30 | 해외 시세·뉴스 수집 → 필독 뉴스(보도 언론사 수 순위·AI 분야 판정) → AI 요약 → 배분 모델별 점검 → 날짜별 보관 |
+| 이브닝 브리핑 자동 수집 | 평일 16:05 | 위와 같은 과정, 국내 중심 |
+| 캘린더·F/O Insight 자동 갱신 | 매일 07:10 · 17:40 | 일정 결과(FOMC·CPI·고용·금통위 등), 시총 상위 실적 공시(DART), F/O Insight 자료 수집 |
+| Gemini API 진단 | 수동 | AI 요약이 안 될 때 키·모델 상태 점검 |
+
+- 모든 워크플로는 마지막에 `node scripts/validate-data.mjs`로 데이터를 점검하고, 문제가 있으면 Actions 화면에 경고를 남깁니다.
+- 데이터가 push되면 GitHub Pages가 자동으로 사이트를 다시 배포합니다.
+- 사람이 해야 하는 일: 매년 새 공식 일정(FOMC·금통위·CPI 등)과 휴장일 추가 — 수록 범위 3개월 전부터 점검 스크립트가 경고합니다.

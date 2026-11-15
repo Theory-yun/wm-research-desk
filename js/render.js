@@ -47,7 +47,7 @@ export function renderTicker() {
         ${m.stale ? '<span class="wm-stale-dot" title="갱신 실패"></span>' : ""}
         <span class="wm-ticker-name">[${liveBadge}] ${escapeHtml(m.name)}</span>
         <span class="${dir}">${escapeHtml(m.priceStr)}</span>
-        <span class="${dir}">${arrow} ${escapeHtml(m.diffStr)} (${m.changePct >= 0 ? "+" : ""}${m.changePct}%)</span>
+        <span class="${dir}">${arrow} ${escapeHtml(String(m.diffStr).replace(/^[▲▼]\s*/, ""))} (${m.changePct >= 0 ? "+" : ""}${m.changePct}%)</span>
       </div>
     `;
   };

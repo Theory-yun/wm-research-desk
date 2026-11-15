@@ -42,6 +42,10 @@ jobs:
           GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}
         run: node scripts/build-insights.mjs
 
+      - name: 데이터 무결성 점검 (문제 있으면 Actions 화면에 경고 표시)
+        run: |
+          node scripts/validate-data.mjs || echo "::warning title=데이터 점검::오류가 발견되었습니다. 이 단계 로그를 확인하세요."
+
       - name: 변경사항 커밋 & 푸시 (동시 실행 시 안전 재시도)
         run: |
           bash scripts/ci/commit-push.sh "chore(data): 캘린더·F/O Insight 자동 갱신 [$(date -u +'%Y-%m-%d %H:%M UTC')]"
