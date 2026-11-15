@@ -170,7 +170,7 @@ function renderTop5News() {
                 ${tags}
                 ${coverage}
                 <span style="font-size:11.5px; font-weight:800; color:#004B49;">${escapeHtml(n.press)}</span>
-                <span style="font-size:11px; color:#475569; font-weight:700;">원문 출고: ${escapeHtml(n.date)}</span>
+                <span style="font-size:11px; color:#475569; font-weight:700;">발행 ${escapeHtml(n.date)}</span>
               </div>
               <div style="font-size:14px; font-weight:700; color:#0f172a; line-height:1.35;">${escapeHtml(n.title)}</div>
             </div>

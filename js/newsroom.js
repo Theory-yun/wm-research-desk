@@ -58,7 +58,7 @@ export function renderNewsroom() {
           <div class="news-meta-info">
             <div style="display:flex; align-items:center; gap:8px;">
               <span class="news-press">${escapeHtml(n.press)}</span>
-              <span style="font-weight:700; color:#334155;">원문 출고일: ${escapeHtml(n.date)}</span>
+              <span style="font-weight:700; color:#334155;">발행 ${escapeHtml(n.date)}</span>
             </div>
             <div style="display:flex; gap:6px;">
               <button type="button" class="btn-news-util ${scrapped ? "scrapped" : ""}" data-action="scrap" data-news-title="${escapeHtml(n.title)}">${scrapped ? "★ 스크랩됨" : "☆ 스크랩"}</button>
@@ -121,7 +121,7 @@ export function initNewsroomEvents() {
       StorageUtil.set(LOCAL_STORAGE_KEYS.scrapMap, STATE.scrapMap);
       renderNewsroom();
     } else if (btn.dataset.action === "copy") {
-      const msg = `📰 [J의 WM Research Desk 마켓 브리핑]\n■ ${item.title}\n• 분류: ${(item.tags || []).join(", ")} | 언론사: ${item.press} (출고일: ${item.date})\n🔗 원문: ${item.shortUrl || item.url}`;
+      const msg = `📰 [J의 WM Research Desk 마켓 브리핑]\n■ ${item.title}\n• 분류: ${(item.tags || []).join(", ")} | 언론사: ${item.press} (발행: ${item.date})\n🔗 원문: ${item.shortUrl || item.url}`;
       navigator.clipboard?.writeText(msg).then(() => alert("기사 브리핑 문구가 복사되었습니다."));
     }
   });

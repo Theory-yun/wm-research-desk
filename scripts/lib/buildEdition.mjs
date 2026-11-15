@@ -7,6 +7,7 @@ import { clusterStories, rankClusters, aiMergeAndClassify, aiClassifyTitles, key
 import { generateBriefingSummary } from "./summarize.mjs";
 import { buildAssetChecks } from "./assetChecks.mjs";
 import { attachShortUrls } from "./shortUrl.mjs";
+import { verifyStoryTimes } from "./articleTime.mjs";
 import { kstStamp, kstDateKey } from "./fetchUtil.mjs";
 import { FO_QUERY_RULES, NEWS_ARCHIVE_MAX_AGE_DAYS, NEWS_ARCHIVE_MAX_ITEMS, SUMMARY_CANDIDATE_NEWS_COUNT, TOP_NEWS_COUNT } from "./config.mjs";
 
@@ -104,7 +105,11 @@ export async function buildEdition({ edition, directFeeds, queryRules, pbNotesPa
     })
     // 에디션 성격에 맞는 이야기 먼저(모닝=해외, 이브닝=국내), 그 안에서 보도 언론사 수 → 최신순
     .sort((a, b) => focusRank(a) - focusRank(b) || b.coverage - a.coverage || b.latestTs - a.latestTs);
-  const topNews = stories.slice(0, TOP_NEWS_COUNT).map(({ latestTs, ...n }) => n);
+  // 구글 뉴스 RSS 시각은 '수정·재노출' 시각인 경우가 많아 원문 발행 시각으로 바로잡고, 실제로 오래된 기사는 뺌
+  const headStories = stories.slice(0, TOP_NEWS_COUNT + 6).map(({ latestTs, ...n }) => n);
+  let verified = await verifyStoryTimes(headStories, { maxAgeHours: 72 });
+  if (verified.length < Math.min(5, headStories.length)) verified = headStories; // 확인 과정 이상 시 원래 목록 사용
+  const topNews = verified.slice(0, TOP_NEWS_COUNT);
   const candidateNews = stories.slice(0, SUMMARY_CANDIDATE_NEWS_COUNT);
   console.log(`필독 뉴스: 후보 ${pool.length}건 → 이야기 ${stories.length}개 (분야 판정: ${groups ? "AI" : "키워드 규칙"})`);
   topNews.forEach((n, i) => console.log(`  ${i + 1}. [${n.scope ?? "-"}·${n.coverage}곳] [${n.tags.join(",")}] ${n.title.slice(0, 50)}`));

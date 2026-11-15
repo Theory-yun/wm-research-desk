@@ -1,5 +1,6 @@
 import { fetchWithRetry } from "./fetchUtil.mjs";
 import { keywordClassify } from "./newsIntel.mjs";
+import { urlDateTs } from "./articleTime.mjs";
 
 function decodeEntities(str) {
   if (!str) return "";
@@ -92,15 +93,19 @@ function parseRssXml(xmlText, fallbackCat, fallbackPress) {
     }
     if (!press) press = "경제뉴스";
 
-    const ts = parsePubDate(pubDateRaw);
+    let ts = parsePubDate(pubDateRaw);
     if (!ts || !title || !isDirectArticleUrl(link)) return;
+    // RSS 시각이 '수정 시각'이라 원문 URL 속 날짜보다 하루 이상 늦으면 URL 날짜를 발행일로 사용
+    const uts = urlDateTs(link);
+    const dateOnly = uts && uts < ts - 86400000;
+    if (dateOnly) ts = uts;
 
     out.push({
       title,
       press,
       url: link,
       timestamp: ts,
-      date: kstFormat(ts),
+      date: dateOnly ? kstFormat(ts).slice(0, 10) : kstFormat(ts),
       tags: classifyTags(title, fallbackCat),
     });
   });
