@@ -42,7 +42,10 @@ async function loadBls() {
   for (const s of res.Results.series) {
     const key = Object.keys(BLS_SERIES).find((k) => BLS_SERIES[k] === s.seriesID);
     map[key] = {};
-    for (const d of s.data) if (/^M\d\d$/.test(d.period) && d.period !== "M13") map[key][`${d.year}-${d.period.slice(1)}`] = Number(d.value);
+    for (const d of s.data) {
+      const v = Number(d.value); // 미발표 월은 "-" 등으로 오므로 숫자가 아니면 건너뜀(예: 2025년 10월 셧다운으로 미발표)
+      if (/^M\d\d$/.test(d.period) && d.period !== "M13" && Number.isFinite(v)) map[key][`${d.year}-${d.period.slice(1)}`] = v;
+    }
   }
   return (blsCache = map);
 }
@@ -63,12 +66,25 @@ async function cpiResult(ev) {
   const { y, m } = refMonthOf(ev);
   const cur = ym(y, m), prev = ym(y, m - 1), yago = ym(y - 1, m);
   const v = (s, k) => b[s]?.[k];
-  if ([v("cpiSA", cur), v("cpiSA", prev), v("cpiNSA", cur), v("cpiNSA", yago), v("coreSA", cur), v("coreSA", prev), v("coreNSA", cur), v("coreNSA", yago)].some((x) => x == null)) return null;
-  const hY = v("cpiNSA", cur) / v("cpiNSA", yago) - 1, hM = v("cpiSA", cur) / v("cpiSA", prev) - 1;
-  const cY = v("coreNSA", cur) / v("coreNSA", yago) - 1, cM = v("coreSA", cur) / v("coreSA", prev) - 1;
+  const has = (...xs) => xs.every((x) => Number.isFinite(x));
+  // 해당 월 지수가 아직 없으면(미발표) 다음 실행 때 재시도
+  if (!has(v("cpiSA", cur), v("coreSA", cur))) return null;
+  const mom = has(v("cpiSA", prev), v("coreSA", prev))
+    ? `전월비(계절조정): 헤드라인 ${pct(v("cpiSA", cur) / v("cpiSA", prev) - 1)}, 근원 ${pct(v("coreSA", cur) / v("coreSA", prev) - 1)}`
+    : null;
+  const yoyOk = has(v("cpiNSA", cur), v("cpiNSA", yago), v("coreNSA", cur), v("coreNSA", yago));
+  const headline = yoyOk
+    ? `헤드라인 CPI 전년비 ${pct(v("cpiNSA", cur) / v("cpiNSA", yago) - 1)} · 근원 CPI 전년비 ${pct(v("coreNSA", cur) / v("coreNSA", yago) - 1)}`
+    : mom
+      ? mom.replace("전월비(계절조정): ", "CPI 전월비 ")
+      : null;
+  if (!headline) return null;
   return {
-    headline: `헤드라인 CPI 전년비 ${pct(hY)} · 근원 CPI 전년비 ${pct(cY)}`,
-    details: [`전월비(계절조정): 헤드라인 ${pct(hM)}, 근원 ${pct(cM)}`, `${y}년 ${m}월 지표 · BLS 공식 지수로 계산(발표 수치와 반올림 차이가 있을 수 있음)`],
+    headline,
+    details: [
+      yoyOk ? mom : `전년 같은 달(${y - 1}년 ${m}월) 지수가 BLS에서 발표되지 않아 전년비는 BLS 보도자료 원문을 확인하세요.`,
+      `${y}년 ${m}월 지표 · BLS 공식 지수로 계산(발표 수치와 반올림 차이가 있을 수 있음)`,
+    ].filter(Boolean),
     method: "official",
     sourceName: "BLS — Consumer Price Index",
     sourceUrl: "https://www.bls.gov/cpi/",
@@ -80,13 +96,13 @@ async function jobsResult(ev) {
   const { y, m } = refMonthOf(ev);
   const cur = ym(y, m), prev = ym(y, m - 1), yago = ym(y - 1, m);
   const p = b.payrolls ?? {}, u = b.unemp ?? {}, a = b.ahe ?? {};
-  if ([p[cur], p[prev], u[cur], a[cur], a[prev], a[yago]].some((x) => x == null)) return null;
+  if (![p[cur], p[prev], u[cur], a[cur], a[prev], a[yago]].every((x) => Number.isFinite(x))) return null;
   const chg = p[cur] - p[prev]; // 천 명 단위
   return {
     headline: `비농업 고용 ${chg >= 0 ? "+" : ""}${(chg / 10).toFixed(1)}만 명 · 실업률 ${u[cur].toFixed(1)}%`,
     details: [
       `평균 시간당 임금: 전월비 ${pct(a[cur] / a[prev] - 1)}, 전년비 ${pct(a[cur] / a[yago] - 1)}`,
-      `${y}년 ${m}월 지표 · 이후 발표에서 수정될 수 있음`,
+      `${y}년 ${m}월 지표 · 수집 시점의 BLS 수치(이후 발표에서 수정될 수 있음)`,
     ],
     method: "official",
     sourceName: "BLS — Employment Situation",
@@ -102,38 +118,45 @@ const frac = (s) => {
   return (Number(w) + num / den).toFixed(2);
 };
 
-async function fomcResult(ev) {
+async function fomcStatementUrl(ev) {
+  // 연준 성명서 주소는 날짜 규칙이 고정돼 있음(monetaryYYYYMMDDa.htm). 실패하면 RSS에서 찾음.
+  const direct = `https://www.federalreserve.gov/newsevents/pressreleases/monetary${ev.date.replaceAll("-", "")}a.htm`;
+  const html = await fetchWithRetry(direct, { responseType: "text", timeoutMs: 10000, retries: 1, noRetryStatuses: [404] });
+  if (html && /federal funds rate/i.test(html)) return { url: direct, html };
   const rss = await fetchWithRetry("https://www.federalreserve.gov/feeds/press_monetary.xml", { responseType: "text", timeoutMs: 10000 });
-  if (!rss) return null;
-  const items = rss.match(/<item>[\s\S]*?<\/item>/g) ?? [];
+  const items = rss?.match(/<item>[\s\S]*?<\/item>/g) ?? [];
   const target = items.find((it) => {
     const d = new Date(it.match(/<pubDate>(.*?)<\/pubDate>/)?.[1] ?? "");
-    const etDate = d.toLocaleDateString("en-CA", { timeZone: "America/New_York" });
-    return etDate === ev.date && /FOMC statement/i.test(it);
+    return d.toLocaleDateString("en-CA", { timeZone: "America/New_York" }) === ev.date && /FOMC statement/i.test(it);
   });
-  if (!target) return null;
-  const link = target.match(/<link>(.*?)<\/link>/)?.[1]?.trim();
-  const html = link ? await fetchWithRetry(link, { responseType: "text", timeoutMs: 10000 }) : null;
-  if (!html) return null;
-  const text = html.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ");
+  const link = target?.match(/<link>(.*?)<\/link>/)?.[1]?.trim();
+  const html2 = link ? await fetchWithRetry(link, { responseType: "text", timeoutMs: 10000 }) : null;
+  return html2 ? { url: link, html: html2 } : null;
+}
+
+async function fomcResult(ev) {
+  const page = await fomcStatementUrl(ev);
+  if (!page) return null;
+  const text = page.html.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ");
   const rng = text.match(/target range for the federal funds rate (?:at|to) (\d+(?:-\d\/\d)?) to (\d+(?:-\d\/\d)?) percent/i);
   if (!rng) return null;
   const decision = /decided to (?:maintain|keep)/i.test(text) ? "동결" : /decided to lower/i.test(text) ? "인하" : /decided to raise/i.test(text) ? "인상" : null;
   if (!decision) return null;
-  const against = text.match(/Voting against (?:the|this) action (?:were|was) ([^.]+)\./i)?.[1];
+  // "Voting against this action was Stephen I. Miran, who preferred ..." — 중간 이니셜의 마침표에서 잘리지 않게
+  const against = text.match(/Voting against (?:the|this) action (?:were|was):? (.+?)(?:, who |; |\. [A-Z][a-z])/i)?.[1];
   return {
     headline: `기준금리 ${decision} — 연방기금금리 목표 범위 ${frac(rng[1])}~${frac(rng[2])}%`,
     details: [against ? `반대 의견: ${against.trim()}` : "반대 의견 없음(성명서 기준)"],
     method: "official",
     sourceName: "Federal Reserve — FOMC 성명서",
-    sourceUrl: link,
+    sourceUrl: page.url,
   };
 }
 
 /* ----------------------------- 한은·ECB·BOJ (뉴스 + AI) ----------------------------- */
 const NEWS_QUERIES = {
   bok: { q: "한국은행 기준금리 금통위", lang: "ko", who: "한국은행 금융통화위원회 기준금리 결정" },
-  ecb: { q: "ECB 기준금리 결정", lang: "ko", who: "유럽중앙은행(ECB) 통화정책회의 금리 결정" },
+  ecb: { q: "ECB interest rates decision deposit rate", lang: "en", who: "유럽중앙은행(ECB) 통화정책회의 금리 결정" },
   boj: { q: "일본은행 금리 결정", lang: "ko", who: "일본은행(BOJ) 금융정책결정회의 금리 결정" },
 };
 
