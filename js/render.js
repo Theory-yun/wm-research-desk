@@ -1,7 +1,7 @@
 import { STATE, currentEditionData, escapeHtml, StorageUtil } from "./state.js";
 import { renderMacroCalendar, renderUpcomingStrip } from "./macroCalendar.js";
 import { renderArchivePicker } from "./archive.js";
-import { TAG_CLASS_MAP, LOCAL_STORAGE_KEYS, TOP5_DEFAULT_COUNT } from "./config.js";
+import { TAG_CLASS_MAP, LOCAL_STORAGE_KEYS, TOP5_DEFAULT_COUNT, tagBadge } from "./config.js";
 import { isKrxOpenNow } from "./util.js";
 
 const $ = (id) => document.getElementById(id);
@@ -130,16 +130,11 @@ function renderIssues(data) {
   talkEl.setAttribute("contenteditable", "false");
 }
 
-/* ----------------------------- Top 뉴스 (로컬 클릭 가중치로 개인화) ----------------------------- */
+/* ----------------------------- Top 뉴스 ----------------------------- */
+// 순서는 서버가 정한 "같은 사건을 보도한 언론사 수" 순위를 그대로 따릅니다(모든 PB에게 같은 순서).
 export function getTop5News(count = TOP5_DEFAULT_COUNT) {
   const data = currentEditionData();
-  if (!data) return [];
-  const scored = (data.topNews || []).map((n) => {
-    const clicks = STATE.clickMap[n.title] || 0;
-    return { ...n, _score: clicks * 10 };
-  });
-  scored.sort((a, b) => b._score - a._score || b.timestamp - a.timestamp);
-  return scored.slice(0, count);
+  return data ? (data.topNews || []).slice(0, count) : [];
 }
 
 export function recordNewsClick(title) {
@@ -161,8 +156,11 @@ function renderTop5News() {
       const rCls = idx < 2 ? "rank-badge top-rank" : "rank-badge";
       const tags = (n.tags || [])
         .slice(0, 2)
-        .map((t) => `<span class="badge-tag ${tagClass(t)}">${escapeHtml(t)}</span>`)
+        .map((t) => tagBadge(t, escapeHtml))
         .join("");
+      const coverage = n.coverage
+        ? `<span class="coverage-chip" title="${escapeHtml((n.outlets || []).join(", "))}">📰 ${n.coverage}개 언론 보도</span>`
+        : "";
       return `
         <a href="${encodeURI(n.url)}" target="_blank" rel="noopener noreferrer" class="top5-news-item" data-news-title="${escapeHtml(n.title)}">
           <div style="display:flex; align-items:center; gap:12px; flex:1; min-width:0;">
@@ -170,6 +168,7 @@ function renderTop5News() {
             <div style="flex:1; min-width:0;">
               <div style="display:flex; align-items:center; gap:6px; margin-bottom:3px; flex-wrap:wrap;">
                 ${tags}
+                ${coverage}
                 <span style="font-size:11.5px; font-weight:800; color:#004B49;">${escapeHtml(n.press)}</span>
                 <span style="font-size:11px; color:#475569; font-weight:700;">원문 출고: ${escapeHtml(n.date)}</span>
               </div>

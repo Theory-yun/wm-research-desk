@@ -1,5 +1,5 @@
 import { fetchWithRetry } from "./fetchUtil.mjs";
-import { KEYWORD_TAGS } from "./config.mjs";
+import { keywordClassify } from "./newsIntel.mjs";
 
 function decodeEntities(str) {
   if (!str) return "";
@@ -29,13 +29,9 @@ function isDirectArticleUrl(url) {
 }
 
 function classifyTags(title, fallbackCat) {
-  const matched = new Set();
-  if (fallbackCat) matched.add(fallbackCat);
-  KEYWORD_TAGS.forEach((rule) => {
-    if (rule.keywords.some((kw) => title.includes(kw))) matched.add(rule.cat);
-  });
-  const arr = Array.from(matched);
-  return arr.length > 0 ? arr.slice(0, 3) : [fallbackCat || "매크로"];
+  // 1차 분류(키워드 규칙). 최종 분야는 빌드 단계에서 Gemini가 기사 내용으로 다시 판정합니다(newsIntel.mjs).
+  const cats = keywordClassify(title);
+  return cats.length ? cats : [fallbackCat || "매크로"];
 }
 
 function parsePubDate(raw) {
@@ -81,7 +77,15 @@ function parseRssXml(xmlText, fallbackCat, fallbackPress) {
     // "제목 - 언론사" 패턴에서 언론사명을 분리 (구글 뉴스 RSS 등)
     if (!fallbackPress && title.lastIndexOf(" - ") !== -1) {
       const candidate = title.slice(title.lastIndexOf(" - ") + 3).trim();
-      if (candidate.length <= 18) {
+      if (/^https?:\/\//.test(candidate)) {
+        // "제목 - https://www.언론사.com/" 형태: 주소에서 언론사 도메인만 남기고 제목에서 떼어냄
+        try {
+          press = press || new URL(candidate).hostname.replace(/^www\./, "");
+        } catch {
+          /* noop */
+        }
+        title = title.slice(0, title.lastIndexOf(" - ")).trim();
+      } else if (candidate.length <= 18) {
         press = press || candidate;
         title = title.slice(0, title.lastIndexOf(" - ")).trim();
       }
@@ -148,11 +152,3 @@ export function mergeAndDedupe(existingItems, newItemsBatches, { maxAgeDays = 30
  * (기존 버전의 클릭수 가중치는 서버에는 없으므로, 프론트에서 로컬 클릭 가중치를
  *  추가로 얹어 개인화합니다. 여기서는 "공통 기준선"만 계산합니다.)
  */
-export function rankNews(items, count) {
-  const scored = items.map((a) => {
-    const bonus = a.tags.length * 3 + (a.tags.includes("TAX") || a.tags.includes("매크로") ? 4 : 2);
-    return { ...a, score: bonus };
-  });
-  scored.sort((a, b) => b.score - a.score || b.timestamp - a.timestamp);
-  return scored.slice(0, count);
-}

@@ -1,5 +1,5 @@
 import { STATE, escapeHtml, StorageUtil } from "./state.js";
-import { TAG_CLASS_MAP, LOCAL_STORAGE_KEYS, NEWSROOM_PAGE_SIZE } from "./config.js";
+import { TAG_CLASS_MAP, LOCAL_STORAGE_KEYS, NEWSROOM_PAGE_SIZE, tagBadge } from "./config.js";
 import { recordNewsClick } from "./render.js";
 
 const $ = (id) => document.getElementById(id);
@@ -49,7 +49,7 @@ export function renderNewsroom() {
 
   box.innerHTML = visible
     .map((n) => {
-      const tags = (n.tags || []).map((t) => `<span class="badge-tag ${tagClass(t)}">${escapeHtml(t)}</span>`).join("");
+      const tags = (n.tags || []).map((t) => tagBadge(t, escapeHtml)).join("");
       const scrapped = !!STATE.scrapMap[n.title];
       return `
         <article class="news-card-item">

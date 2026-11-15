@@ -96,7 +96,7 @@ function buildPrompt({ edition, market, candidateNews, pbNotes }) {
     .join("\n");
 
   const newsLines = candidateNews
-    .map((n, i) => `${i + 1}. [${n.tags.join(",")}] ${n.title} (${n.press}, ${n.date})`)
+    .map((n, i) => `${i + 1}. [${n.tags.join(",")}] ${n.title} (${n.press}, ${n.date}${n.coverage ? `, ${n.coverage}개 언론 보도` : ""})`)
     .join("\n");
 
   const editionGuide =
@@ -110,7 +110,7 @@ ${editionGuide}
 [오늘의 시장 지표] (이 숫자만 사용하세요. 새 숫자를 만들지 마세요)
 ${marketLines}
 
-[수집된 뉴스 헤드라인 후보] (이 중에서 PB 관점으로 가장 중요한 것을 골라 반영하세요)
+[수집된 뉴스 헤드라인 후보] (많은 언론이 보도한 순서입니다. 이 중에서 PB 관점으로 가장 중요한 것을 골라 반영하세요)
 ${newsLines}
 
 ${pbNotes ? `[본사 참고 메모]\n${pbNotes}\n` : ""}

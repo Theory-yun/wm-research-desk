@@ -15,13 +15,29 @@ export const DATA_FILES = {
 /** 지난 브리핑 파일 경로 (예: data/archive/morning-2026-11-14.json) */
 export const archiveFile = (edition, date) => `data/archive/${edition.toLowerCase()}-${date}.json`;
 
+// 뉴스 분야(서버의 scripts/lib/newsIntel.mjs NEWS_CATEGORIES와 같은 이름)
 export const TAG_CLASS_MAP = {
   "매크로": "tag-macro",
-  "TAX": "tag-tax",
-  "부동산": "tag-estate",
+  "증시": "tag-equity",
+  "채권·금리": "tag-bond",
   "외환": "tag-forex",
+  "원자재": "tag-commodity",
+  "부동산": "tag-estate",
+  "TAX": "tag-tax",
   "대체투자": "tag-alt",
 };
+export const TAG_ICON = {
+  "매크로": "🌐",
+  "증시": "📈",
+  "채권·금리": "🏦",
+  "외환": "💱",
+  "원자재": "🛢️",
+  "부동산": "🏢",
+  "TAX": "⚖️",
+  "대체투자": "💎",
+};
+/** 분야 배지 HTML (아이콘 + 이름) */
+export const tagBadge = (t, esc) => `<span class="badge-tag ${TAG_CLASS_MAP[t] || "tag-macro"}">${TAG_ICON[t] ?? ""} ${esc(t)}</span>`;
 
 export const LOCAL_STORAGE_KEYS = {
   newsClicks: "wm_desk_news_clicks_v1",

@@ -100,7 +100,7 @@ export function renderMacroCalendar() {
   for (let n = 1; n <= rem; n++) html += `<div class="cal-day-cell other-month"><div class="cal-day-num">${n}</div></div>`;
   grid.innerHTML = html;
 
-  list.innerHTML = !monthEvents.length
+  list.innerHTML = `<div class="mc-list-wrap">` + (!monthEvents.length
     ? `<div class="mc-empty">이 달에는 표시할 일정이 없습니다.</div>`
     : `<div class="mc-list-head">${m + 1}월 일정 <strong>${monthEvents.length}</strong>건 <span>· 눌러서 상세 보기</span></div>` +
       `<div class="mc-list-scroll">` +
@@ -117,7 +117,7 @@ export function renderMacroCalendar() {
             </button>`;
         })
         .join("") +
-      `</div>`;
+      `</div>`) + `</div>`;
 
   wireEventsOnce();
 }

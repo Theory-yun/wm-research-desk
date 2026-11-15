@@ -2,7 +2,8 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { collectCoreMarket } from "./market.mjs";
-import { fetchGoogleNewsQuery, fetchRssFeed, mergeAndDedupe, rankNews } from "./news.mjs";
+import { fetchGoogleNewsQuery, fetchRssFeed, mergeAndDedupe } from "./news.mjs";
+import { clusterStories, rankClusters, aiMergeAndClassify, aiClassifyTitles, keywordClassify } from "./newsIntel.mjs";
 import { generateBriefingSummary } from "./summarize.mjs";
 import { kstStamp, kstDateKey } from "./fetchUtil.mjs";
 import { FO_QUERY_RULES, NEWS_ARCHIVE_MAX_AGE_DAYS, NEWS_ARCHIVE_MAX_ITEMS, SUMMARY_CANDIDATE_NEWS_COUNT, TOP_NEWS_COUNT } from "./config.mjs";
@@ -73,18 +74,54 @@ export async function buildEdition({ edition, directFeeds, queryRules, pbNotesPa
   const freshCount = batches.reduce((sum, b) => sum + b.length, 0);
   console.log(`신규 수집 뉴스: ${freshCount}건 (중복 제거 전)`);
 
-  // 3) 뉴스룸 탭용 누적 아카이브에 병합 (모닝/이브닝 공통 저장소)
+  // 3) 이번 에디션 필독 뉴스: "같은 사건을 보도한 언론사 수"(외부 노출 정도) 기준
+  const editionFresh = mergeAndDedupe([], batches, { maxAgeDays: NEWS_ARCHIVE_MAX_AGE_DAYS });
+  const nowMs = Date.now();
+  let pool = editionFresh.filter((n) => nowMs - n.timestamp < 36 * 3600e3);
+  if (pool.length < 20) pool = editionFresh; // 주말 등 기사가 적으면 범위를 넓힘
+  const clusters = rankClusters(clusterStories(pool)).slice(0, 40);
+  const groups = await aiMergeAndClassify(clusters, { label: `${edition} 필독 뉴스` });
+  const stories = (groups ?? clusters.map((c) => ({ clusters: [c], cats: [], relevant: true })))
+    .filter((g) => g.relevant)
+    .map((g) => {
+      const items = g.clusters.flatMap((c) => c.items);
+      const outlets = [...new Set(items.map((i) => i.press).filter(Boolean))];
+      const rep = [...g.clusters].sort((a, b) => b.outlets.length - a.outlets.length)[0].rep;
+      const tags = g.cats.length ? g.cats : keywordClassify(rep.title);
+      return {
+        ...rep,
+        tags: tags.length ? tags : rep.tags,
+        tagSource: g.cats.length ? "ai" : "keyword",
+        coverage: outlets.length,
+        outlets: outlets.slice(0, 6),
+        latestTs: Math.max(...items.map((i) => i.timestamp)),
+      };
+    })
+    .sort((a, b) => b.coverage - a.coverage || b.latestTs - a.latestTs);
+  const topNews = stories.slice(0, TOP_NEWS_COUNT).map(({ latestTs, ...n }) => n);
+  const candidateNews = stories.slice(0, SUMMARY_CANDIDATE_NEWS_COUNT);
+  console.log(`필독 뉴스: 후보 ${pool.length}건 → 이야기 ${stories.length}개 (분야 판정: ${groups ? "AI" : "키워드 규칙"})`);
+  topNews.forEach((n, i) => console.log(`  ${i + 1}. [${n.coverage}곳] [${n.tags.join(",")}] ${n.title.slice(0, 50)}`));
+
+  // 4) 뉴스룸 탭용 누적 아카이브에 병합 + 아직 AI 분야 판정을 안 받은 기사 판정
   const mergedArchive = mergeAndDedupe(archive.items, batches, { maxAgeDays: NEWS_ARCHIVE_MAX_AGE_DAYS }).slice(
     0,
     NEWS_ARCHIVE_MAX_ITEMS
   );
+  const storyTags = new Map(topNews.concat(candidateNews).map((n) => [n.url, n.tags]));
+  const pending = mergedArchive.filter((n) => n.tagSource !== "ai").slice(0, 180);
+  const aiTags = await aiClassifyTitles(pending.map((n) => n.title), { label: `${edition} 뉴스룸 분야` });
+  pending.forEach((n, i) => {
+    const t = aiTags?.get(i);
+    if (t) Object.assign(n, { tags: t.cats, tagSource: "ai", ...(t.relevant ? {} : { lowRelevance: true }) });
+    else if (storyTags.has(n.url)) Object.assign(n, { tags: storyTags.get(n.url) });
+    else {
+      const k = keywordClassify(n.title);
+      if (k.length) n.tags = k;
+    }
+  });
   writeJson(archivePath, { updatedAt: new Date().toISOString(), items: mergedArchive });
-  console.log(`뉴스 아카이브: 총 ${mergedArchive.length}건 보관 중`);
-
-  // 4) 이번 에디션에 쓸 뉴스 후보 (이번에 새로 모은 것 중심으로 랭킹)
-  const editionFresh = mergeAndDedupe([], batches, { maxAgeDays: NEWS_ARCHIVE_MAX_AGE_DAYS });
-  const candidateNews = rankNews(editionFresh, SUMMARY_CANDIDATE_NEWS_COUNT);
-  const topNews = rankNews(editionFresh, TOP_NEWS_COUNT);
+  console.log(`뉴스 아카이브: 총 ${mergedArchive.length}건 보관 (이번에 AI 분야 판정 ${aiTags?.size ?? 0}건)`);
 
   // 5) AI 요약 (키 없음/호출 실패 시 자동으로 규칙 기반 폴백 — summarize.mjs 참고)
   let pbNotes = "";
