@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-15T07:45:42.153Z",
+  "updatedAt": "2026-11-15T07:48:11.842Z",
   "items": [
     {
       "title": "“美 AI 투자붐, 2028년 전후 조정 가능성…반도체 의존도 높은 韓 대비해야”",
@@ -96,6 +96,18 @@
       "tags": [
         "매크로"
       ]
+    },
+    {
+      "title": "[뉴욕환시-주간] 매파 연준 속 맥 못추는 유로…日 '160엔' 개입 경계감",
+      "press": "KB Think",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1ZaGdHaFV0aFpqZGwtTWwtRnFMd0dlSTdHdGFqdWM4R19yODZRUWFLV19DWVkydnp5cDhINWI5VG9kQ2FkZFpDdE1qQ2tlMzdPSFlCV0M5ZmRmTFIwVFhnT1RsU01qZU10X1RvR0VfQmJYUQ?oc=5",
+      "timestamp": 1794724974000,
+      "date": "2026.11.15 15:42",
+      "tags": [
+        "외환",
+        "매크로"
+      ],
+      "tagSource": "ai"
     },
     {
       "title": "[뉴욕채권-주간] 인플레 위기감 짙어진 연준…'AI 테마' 향방도 주목",
@@ -2765,17 +2777,6 @@
       "date": "2026.11.14 15:00",
       "tags": [
         "TAX"
-      ],
-      "tagSource": "ai"
-    },
-    {
-      "title": "“60억 반포 아파트도 ‘미달 흑역사’ 있었다”…청약 부진 단지들 다시볼까",
-      "press": "매일경제",
-      "url": "https://www.mk.co.kr/news/realestate/12208864",
-      "timestamp": 1794635096000,
-      "date": "2026.11.14 14:44",
-      "tags": [
-        "부동산"
       ],
       "tagSource": "ai"
     }
