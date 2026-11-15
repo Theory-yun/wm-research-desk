@@ -1,0 +1,24 @@
+name: Gemini API 진단 (수동 실행 전용)
+
+# 데이터 파일을 수정하거나 커밋하지 않는 읽기 전용 점검 워크플로입니다.
+# Actions 탭 → 이 워크플로 → Run workflow 로 실행하고 로그를 확인하세요.
+on:
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+jobs:
+  diagnose:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Gemini 키/모델 진단
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}
+        run: node scripts/diagnose-gemini.mjs
