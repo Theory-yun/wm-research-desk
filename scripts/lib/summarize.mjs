@@ -29,7 +29,7 @@ export async function generateBriefingSummary({ edition, market, candidateNews, 
     if (r) {
       return {
         issues: r.data.issues.slice(0, 3),
-        talkingPoint: String(r.data.talkingPoint),
+        talkingPoint: cleanTalkingPoint(r.data.talkingPoint),
         summarySource: "ai-gemini",
         summaryModel: r.model,
       };
@@ -40,7 +40,7 @@ export async function generateBriefingSummary({ edition, market, candidateNews, 
   if (process.env.ANTHROPIC_API_KEY) {
     try {
       const parsed = await callClaude(prompt);
-      return { issues: parsed.issues.slice(0, 3), talkingPoint: String(parsed.talkingPoint), summarySource: "ai-claude" };
+      return { issues: parsed.issues.slice(0, 3), talkingPoint: cleanTalkingPoint(parsed.talkingPoint), summarySource: "ai-claude" };
     } catch (err) {
       console.error(`[summarize] Claude API 호출 실패: ${err.message}`);
     }
@@ -82,6 +82,23 @@ async function callClaude(prompt) {
   return parsed;
 }
 
+/**
+ * AI가 지시를 어기고 넣은 인사말·권유형 문장을 제거합니다.
+ *  - 맨 앞의 "대표님, 안녕하십니까." 같은 인사 문장
+ *  - "~권해드립니다 / ~추천드립니다 / ~하시길 바랍니다"로 끝나는 권유 문장
+ */
+export function cleanTalkingPoint(text) {
+  const sentences = String(text ?? "")
+    .trim()
+    .split(/(?<=[.!?。])\s+/);
+  const kept = sentences.filter(
+    (s, i) =>
+      !(i === 0 && /안녕하(십니까|세요)/.test(s)) &&
+      !/(권해\s?드립니다|권합니다|추천\s?드립니다|추천합니다|하시길\s?바랍니다|하시기\s?바랍니다)[.!]?$/.test(s)
+  );
+  return kept.join(" ").replace(/^(대표님|회장님|고객님|손님|사장님)[,\s]+/, "").trim();
+}
+
 function isValidSummary(parsed) {
   return Array.isArray(parsed?.issues) && parsed.issues.length > 0 && !!parsed.talkingPoint;
 }
@@ -119,6 +136,8 @@ ${pbNotes ? `[본사 참고 메모]\n${pbNotes}\n` : ""}
 1. 위 뉴스·지표 중에서 패밀리오피스 PB가 손님에게 꼭 전달해야 할 핵심 이슈 3개를 뽑아 간결하게 정리하세요.
 2. 각 이슈는 cat(이슈 구분 라벨), tag(한 줄 숫자 요약, 예: "S&P500 -0.51% · 나스닥 -1.07%"), title(기사형 제목), desc(2~3문장 설명)으로 구성하세요.
 3. 전체를 아우르는 "손님 브리핑 종합 요약"(talkingPoint)을 3~5문장으로 작성하세요. 숫자는 위에서 준 값만 사용하세요.
+   - 인사말("대표님, 안녕하십니까" 등)·호칭·맺음말 없이 바로 시장 내용으로 시작하세요. PB가 그대로 복사해 쓰는 본문입니다.
+   - "~하시길 권해드립니다", "~하세요" 같은 투자 권유·행동 지시 표현은 쓰지 말고, 사실과 주목할 점만 쓰세요.
 4. 반드시 아래 JSON 스키마로만, 다른 텍스트 없이 응답하세요.
 
 {

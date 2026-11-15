@@ -458,7 +458,7 @@ body.modal-open { overflow: hidden; }
 /* =========================================================================
    7. PDF 리포트 (2페이지 공식 보고서)
    ========================================================================= */
-#formal-pdf-report-wrapper { display: none; background: #ffffff; color: var(--text-main); width: 790px; margin: 0 auto; }
+#formal-pdf-report-wrapper { display: none; background: #ffffff; color: var(--text-main); width: 1123px; margin: 0 auto; }
 .pdf-report-page { padding: 24px 28px; background: #ffffff; }
 .pdf-page-break { page-break-before: always; break-before: page; }
 .pdf-cover-banner { background: linear-gradient(135deg, var(--hana-deep) 0%, var(--hana-green) 70%, var(--hana-dark) 100%); color: #ffffff; border-radius: 12px; padding: 26px 28px; border-bottom: 5px solid var(--hana-gold); margin-bottom: 20px; }
@@ -597,3 +597,88 @@ body.modal-open { overflow: hidden; }
 .alloc-btn.active span { color: var(--hana-gold); }
 .ratio-seg { min-width: 0; }
 .ratio-seg span { overflow: hidden; text-overflow: ellipsis; }
+
+/* 상단 로고 = 종합 대시보드 링크 */
+.brand-home-link { text-decoration: none; color: inherit; cursor: pointer; }
+.brand-home-link:hover .brand-title { opacity: .85; }
+.brand-home-link:focus-visible { outline: 2px solid var(--hana-gold); outline-offset: 4px; border-radius: 6px; }
+
+/* =========================================================================
+   손님용 PDF — A4 가로 1페이지 (297×210mm ≈ 1123×794px)
+   ========================================================================= */
+.rp-page { width: 1123px; height: 794px; box-sizing: border-box; padding: 18px 22px 12px; background: #fff; color: #0f172a; display: flex; flex-direction: column; gap: 8px; overflow: hidden; font-family: "Pretendard", "Noto Sans KR", sans-serif; }
+.rp-header { display: flex; justify-content: space-between; align-items: center; background: var(--hana-green); color: #fff; border-radius: 10px; padding: 8px 16px; border-bottom: 3px solid var(--hana-gold); }
+.rp-brand { display: flex; align-items: center; gap: 10px; }
+.rp-badge { background: var(--hana-gold); color: #002E2C; font-size: 10.5px; font-weight: 800; padding: 3px 8px; border-radius: 4px; letter-spacing: .06em; }
+.rp-title { font-size: 19px; font-weight: 800; }
+.rp-edition { font-size: 12px; font-weight: 700; color: #fde68a; border: 1px solid rgba(253,230,138,.5); border-radius: 999px; padding: 2px 9px; }
+.rp-meta { font-size: 11.5px; color: #e2e8f0; }
+.rp-meta b { color: #fff; }
+
+.rp-tiles { display: grid; grid-template-columns: repeat(6, 1fr); gap: 8px; }
+.rp-tile { border: 1px solid #e2e8f0; border-radius: 8px; padding: 5px 10px; background: #f8fafc; }
+.rp-tile-name { font-size: 11px; font-weight: 700; color: #475569; }
+.rp-tile-price { font-size: 15.5px; font-weight: 800; font-variant-numeric: tabular-nums; line-height: 1.2; }
+.rp-tile-chg { font-size: 11.5px; font-weight: 800; font-variant-numeric: tabular-nums; color: #475569; }
+.rp-tile-chg.up { color: #dc2626; }
+.rp-tile-chg.down { color: #2563eb; }
+
+.rp-grid { flex: 1; min-height: 0; display: grid; grid-template-columns: repeat(6, 1fr); grid-template-rows: 1.12fr 1fr; gap: 8px; }
+.rp-grid > .rp-box { grid-column: span 2; }
+.rp-grid > .rp-alloc, .rp-grid > .rp-week { grid-column: span 3; }
+.rp-box { border: 1px solid #e2e8f0; border-radius: 10px; padding: 8px 11px; overflow: hidden; display: flex; flex-direction: column; gap: 5px; }
+.rp-box h3 { margin: 0; font-size: 13px; font-weight: 800; color: var(--hana-green); display: flex; align-items: baseline; gap: 6px; border-bottom: 2px solid var(--hana-gold-light); padding-bottom: 5px; }
+.rp-box h3 > span { background: var(--hana-gold); color: #002E2C; font-size: 10.5px; border-radius: 4px; padding: 1px 6px; }
+.rp-box h3 small { margin-left: auto; font-size: 10px; font-weight: 600; color: #94a3b8; }
+.rp-num { flex: none; display: inline-flex; align-items: center; justify-content: center; width: 18px; height: 18px; border-radius: 4px; background: var(--hana-green); color: #fff; font-size: 10.5px; font-weight: 800; }
+.rp-num.gold { background: var(--hana-gold); color: #002E2C; }
+
+.rp-issue { border-left: 3px solid var(--hana-green); padding: 0 0 0 8px; }
+.rp-issue-head { display: flex; align-items: center; gap: 6px; font-size: 10.5px; font-weight: 800; }
+.rp-issue-cat { color: var(--hana-green); }
+.rp-issue-tag { color: #b45309; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+.rp-issue-title { font-size: 12px; font-weight: 800; margin: 1px 0; line-height: 1.3; }
+.rp-issue-desc { font-size: 10.6px; color: #475569; line-height: 1.4; }
+
+.rp-summary { background: var(--hana-gold-light); border-color: rgba(197,160,89,.55); }
+.rp-summary p { margin: 0; font-size: 12px; line-height: 1.62; color: #1e293b; }
+
+.rp-news { display: flex; align-items: flex-start; gap: 8px; padding: 4px 2px; border-bottom: 1px dashed #e2e8f0; text-decoration: none; color: inherit; }
+.rp-news:last-child { border-bottom: none; }
+.rp-news-body { flex: 1; min-width: 0; display: flex; flex-direction: column; }
+.rp-news-title { font-size: 11.8px; font-weight: 700; color: #0f172a; line-height: 1.35; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; text-decoration: underline; text-decoration-color: #cbd5e1; text-underline-offset: 2px; }
+.rp-news-meta { font-size: 10px; color: #64748b; margin-top: 1px; }
+.rp-link { flex: none; font-size: 10px; font-weight: 800; color: #047857; }
+
+.rp-alloc-bar { display: flex; gap: 3px; border-radius: 6px; overflow: hidden; color: #fff; font-size: 10.5px; font-weight: 800; }
+.rp-alloc-bar > div { padding: 4px 6px; white-space: nowrap; overflow: hidden; }
+.rp-alloc-bar .seg-safe { background: #0e7490; }
+.rp-alloc-bar .seg-core { background: var(--hana-green); }
+.rp-alloc-bar .seg-satellite { background: #b45309; }
+.rp-alloc-row { border-bottom: 1px dashed #e2e8f0; padding-bottom: 3px; }
+.rp-alloc-name { font-size: 11.5px; font-weight: 800; color: var(--hana-green); }
+.rp-alloc-name b { color: #0f172a; margin-left: 2px; }
+.rp-alloc-text { font-size: 10.4px; color: #334155; line-height: 1.38; margin-top: 1px; }
+.rp-lv { font-size: 9.5px; font-weight: 800; border-radius: 999px; padding: 1px 6px; margin-left: 4px; }
+.rp-lv.lv-high { background: #fee2e2; color: #b91c1c; }
+.rp-lv.lv-mid { background: #fef3c7; color: #92400e; }
+.rp-lv.lv-low { background: #f1f5f9; color: #64748b; }
+.rp-rebal { font-size: 10.5px; color: #7c2d12; background: #fff7ed; border-radius: 6px; padding: 4px 7px; line-height: 1.4; }
+
+.rp-ev { width: 100%; border-collapse: collapse; font-size: 11.2px; }
+.rp-ev td { padding: 4px 6px; border-bottom: 1px solid #f1f5f9; vertical-align: middle; }
+.rp-ev tr:nth-child(even) td { background: #f8fafc; }
+.rp-ev-date { font-weight: 800; color: var(--hana-green); white-space: nowrap; width: 62px; }
+.rp-ev-pill { font-size: 10px; font-weight: 800; border-radius: 4px; padding: 1px 6px; white-space: nowrap; }
+.rp-ev-pill.cat-rate { background: #dbeafe; color: #1e3a8a; }
+.rp-ev-pill.cat-data { background: #e0f2fe; color: #0369a1; }
+.rp-ev-pill.cat-politics { background: #f3e8ff; color: #6b21a8; }
+.rp-ev-pill.cat-market { background: #f1f5f9; color: #475569; }
+.rp-ev-pill.cat-derivatives { background: #fef3c7; color: #92400e; }
+.rp-ev-pill.cat-earnings { background: #dcfce7; color: #166534; }
+.rp-ev-name { font-weight: 700; }
+.rp-ev-res { font-weight: 700; color: #047857; }
+.rp-ev-time { color: #64748b; white-space: nowrap; font-size: 10.5px; }
+.rp-more, .rp-empty { font-size: 10.5px; color: #94a3b8; }
+.rp-footer { font-size: 9.5px; color: #64748b; line-height: 1.45; border-top: 1px solid #e2e8f0; padding-top: 6px; }
+.rp-box > * { flex-shrink: 0; } /* 내용이 많을 때 막대 등 요소가 납작하게 줄어들지 않도록 */

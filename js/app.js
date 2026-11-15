@@ -43,6 +43,13 @@ function wireUpStaticEvents() {
   $("btn-pdf-download").addEventListener("click", downloadPdf);
   $("btn-goto-newsroom").addEventListener("click", () => switchTab("tab-newsroom"));
 
+  // 상단 HANA Family Office / WM RESEARCH DESK 클릭 → 종합 대시보드
+  $("brand-home-link").addEventListener("click", (e) => {
+    e.preventDefault();
+    switchTab("tab-dashboard");
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+
   // 예시 배분 모델 선택 (선택값은 이 브라우저에 저장)
   $("alloc-picker").addEventListener("click", (e) => {
     const b = e.target.closest("[data-alloc]");
