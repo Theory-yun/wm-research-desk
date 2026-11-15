@@ -1,0 +1,242 @@
+{
+  "edition": "EVENING",
+  "generatedAt": "2026-11-15T05:23:48.618Z",
+  "generatedAtKST": "2026.11.15 14:23",
+  "sourceStatus": {
+    "market": "ok",
+    "news": "ok",
+    "summary": "ai-gemini",
+    "summaryModel": "gemini-3.5-flash"
+  },
+  "market": [
+    {
+      "key": "KOSPI",
+      "name": "코스피",
+      "group": "domestic",
+      "priceStr": "5,290.53",
+      "diffStr": "▼ -52.20",
+      "changePct": -0.98,
+      "asOfLocal": "국내 정규장 기준",
+      "asOfKst": "한국 정규장 15:30 마감",
+      "stale": false,
+      "updatedAt": "2026-11-15T05:22:43.046Z"
+    },
+    {
+      "key": "KOSDAQ",
+      "name": "코스닥",
+      "group": "domestic",
+      "priceStr": "699.66",
+      "diffStr": "▲ +3.13",
+      "changePct": 0.45,
+      "asOfLocal": "국내 정규장 기준",
+      "asOfKst": "한국 정규장 15:30 마감",
+      "stale": false,
+      "updatedAt": "2026-11-15T05:22:43.046Z"
+    },
+    {
+      "key": "SP500",
+      "name": "S&P 500",
+      "group": "global",
+      "priceStr": "7,561.67",
+      "diffStr": "▼ -30.73",
+      "changePct": -0.4,
+      "asOfLocal": "현지 11.13 16:00 마감",
+      "asOfKst": "한국 11.14 06:00 마감",
+      "stale": false,
+      "updatedAt": "2026-11-15T05:22:43.046Z"
+    },
+    {
+      "key": "NASDAQ",
+      "name": "나스닥",
+      "group": "global",
+      "priceStr": "25,136.27",
+      "diffStr": "▼ -229.82",
+      "changePct": -0.91,
+      "asOfLocal": "현지 11.13 16:00 마감",
+      "asOfKst": "한국 11.14 06:00 마감",
+      "stale": false,
+      "updatedAt": "2026-11-15T05:22:43.046Z"
+    },
+    {
+      "key": "SOX",
+      "name": "필라델피아 반도체",
+      "group": "global",
+      "priceStr": "10,146.32",
+      "diffStr": "▼ -360.35",
+      "changePct": -3.43,
+      "asOfLocal": "현지 11.13 16:00 마감",
+      "asOfKst": "한국 11.14 06:00 마감",
+      "stale": false,
+      "updatedAt": "2026-11-15T05:22:43.046Z"
+    },
+    {
+      "key": "USDKRW",
+      "name": "원/달러 환율",
+      "group": "fx",
+      "priceStr": "1,336.20",
+      "diffStr": "▼ -26.50",
+      "changePct": -1.94,
+      "asOfLocal": "집계 기준 확인 중",
+      "asOfKst": "집계 기준 확인 중",
+      "stale": false,
+      "updatedAt": "2026-11-15T05:22:43.046Z"
+    }
+  ],
+  "issues": [
+    {
+      "cat": "국내증시",
+      "tag": "코스피 5,290.53 · 환율 1,336.20원",
+      "title": "코스피 5,290.53선 하락 마감…시장 관심은 엔비디아 실적으로",
+      "desc": "금일 코스피는 5,290.53(▼ -0.98%)으로 하락 마감한 반면 코스닥은 699.66(▲ 0.45%)으로 소폭 상승했습니다. 시장 참가자들은 향후 지수 방향성을 결정짓는 핵심 요소로 엔비디아 실적을 주목하고 있습니다."
+    },
+    {
+      "cat": "TAX·승계",
+      "tag": "삼성전자 1,115만 주 증여",
+      "title": "이재용 회장, 홍라희 전 관장에게 삼성전자 1,115만 주 증여받아",
+      "desc": "이재용 회장이 홍라희 전 관장으로부터 삼성전자 1,115만 주를 수증받으면서 이에 따른 증여세 규모가 주목받고 있습니다. 대기업 가문의 대규모 지분 증여는 향후 자산 승계 및 세무 전략 측면에서 UHNW 손님들의 관심이 높은 이슈입니다."
+    },
+    {
+      "cat": "부동산·채권",
+      "tag": "PF 대출 8,900억 원대 축소",
+      "title": "롯데건설, 부동산 PF 대출 규모 8,900억 원대로 감축",
+      "desc": "롯데건설이 부동산 PF 대출을 8,900억 원대로 축소하며 재무 건전화 조치를 이어가고 있습니다. 건설업계 전반의 우발채무 리스크 관리와 대출 축소 흐름은 채권 및 부동산 시장 전반의 안정화 여부를 판가름할 요인입니다."
+    }
+  ],
+  "talkingPoint": "오늘 국내 증시는 코스피가 5,290.53(▼ -0.98%)으로 약세를 보인 반면 코스닥은 699.66(▲ 0.45%)으로 혼조세를 나타냈으며, 원/달러 환율은 1,336.20원(▼ -1.94%)으로 하락 마감했습니다. 시장 전반은 엔비디아 실적 발표를 관건으로 보며 조심스러운 흐름을 이어가고 있습니다. 세무 및 자산 관리 측면에서는 이재용 회장의 삼성전자 1,115만 주 증여 이슈와 롯데건설의 PF 대출 8,900억 원대 축소 소식이 주목받았습니다. 주요 기업 실적과 자산 승계 관련 세무 동향을 계속해서 면밀히 모니터링할 필요가 있습니다.",
+  "topNews": [
+    {
+      "title": "송파 풍납극동아파트, 최고 40층 598가구로 재건축",
+      "press": "Chosunbiz",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPeWtkVHdiN1duMEw3empJNzJMcmExYVMxdE9zRU15LVJmLXZUVzN0cTE4c09pVV80TDhDdDFSYnZkamxtUFVkNUx2MzhUTlNoTlhSRlZ2LUg4cWJOU3NvOE9EQ2NRYlpDVWlRV1BJenQ2dGE3dWRfZ015RWJscU1CZUpneVZZLUN2azRDTWR4eVNLSjc0cU5hc9IBrAFBVV95cUxNUWVtUmlwRnEyeUdnU1VJcFpBUDF3NlhyMDJKZ2N0WmxNVThHVmJibVhiV2kySjFVak0wVTFlazZhU2FDOXEySUp5N0RYQmE4blFRUFAzZ3VVeU5JMXNWX1pEWkgwNjUzWUJwWU1hWVhZcEw4SVJYOVIwUC10blE5dllEX01JVDJLNUV1WW02VlItTTNYV3N5Y1I3TzJlbkYwU3FqYlI5dW9Jbi1U?oc=5",
+      "timestamp": 1794710160000,
+      "date": "2026.11.15 11:36",
+      "tags": [
+        "부동산"
+      ],
+      "tagSource": "ai",
+      "coverage": 4,
+      "outlets": [
+        "Chosunbiz",
+        "한국경제",
+        "연합뉴스",
+        "매일경제"
+      ]
+    },
+    {
+      "title": "등락 후 상승한 코스피...\"엔비디아 실적이 관건\"",
+      "press": "YTN",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFAzcXRxN2VnN2tMNkt0Zmh0MVlNMnlhTGtXS09GTlJoUWhBc3h2ZEV1a21PQnVXamtxU19PS1F4eGluc1l1TzFYUlNOMThiRFBNTy0tdFZmNlExV1JYakE?oc=5",
+      "timestamp": 1794716460000,
+      "date": "2026.11.15 13:21",
+      "tags": [
+        "증시"
+      ],
+      "tagSource": "ai",
+      "coverage": 4,
+      "outlets": [
+        "YTN",
+        "브릿지경제",
+        "뉴스투데이",
+        "연합뉴스"
+      ]
+    },
+    {
+      "title": "홍라희에 '삼전 1115만주' 받은 이재용…증여세는 얼마?",
+      "press": "이데일리",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOWG5wSTBnT3E1SUZLaGU3X1RnVTBYbm1ZX3JLWFFEZUJ6MjU4b3pBazRFaEZkQll1UGVXRjNOZlFmMHU0eGYzX21NYzJMV3E0M3ZKX1ZLU1QzcXB2NEc2Wl9Td0lvUzBMSTFNLWdDNWc5VEl4bFpCY1lIeE8tX0xpTQ?oc=5",
+      "timestamp": 1794655720000,
+      "date": "2026.11.14 20:28",
+      "tags": [
+        "TAX"
+      ],
+      "tagSource": "ai",
+      "coverage": 4,
+      "outlets": [
+        "이데일리",
+        "문화일보",
+        "파이낸셜뉴스",
+        "한국경제"
+      ]
+    },
+    {
+      "title": "재경부, AI 부정행위 세무사 수석 합격증 효력 정지 검토",
+      "press": "파이낸셜뉴스",
+      "url": "https://www.fnnews.com/news/202611151255150716",
+      "timestamp": 1794714975000,
+      "date": "2026.11.15 12:56",
+      "tags": [
+        "TAX"
+      ],
+      "tagSource": "ai",
+      "coverage": 2,
+      "outlets": [
+        "파이낸셜뉴스",
+        "연합뉴스"
+      ]
+    },
+    {
+      "title": "\"3년 걸릴 군함을 1년 만에\"…HD현대 '무인수상함' 진수식 현장 가보니 [르포]",
+      "press": "한국경제",
+      "url": "https://www.hankyung.com/article/202611157179i",
+      "timestamp": 1794716627000,
+      "date": "2026.11.15 13:23",
+      "tags": [
+        "매크로"
+      ],
+      "tagSource": "ai",
+      "coverage": 2,
+      "outlets": [
+        "한국경제",
+        "파이낸셜뉴스"
+      ]
+    },
+    {
+      "title": "코인원 \"외주업체 해킹으로 이름·계좌번호 등 고객 정보 유출\"",
+      "press": "한국경제",
+      "url": "https://www.hankyung.com/article/2026111570777",
+      "timestamp": 1794709101000,
+      "date": "2026.11.15 11:18",
+      "tags": [
+        "대체투자"
+      ],
+      "tagSource": "ai",
+      "coverage": 2,
+      "outlets": [
+        "한국경제",
+        "연합뉴스"
+      ]
+    },
+    {
+      "title": "군인 ‘빚투’ 확산에 현역병 대부업 신용대출 막는다",
+      "press": "매일경제",
+      "url": "https://www.mk.co.kr/news/economy/12209129",
+      "timestamp": 1794711660000,
+      "date": "2026.11.15 12:01",
+      "tags": [
+        "채권·금리"
+      ],
+      "tagSource": "ai",
+      "coverage": 2,
+      "outlets": [
+        "매일경제",
+        "연합뉴스"
+      ]
+    },
+    {
+      "title": "무보, 슬로바키아 수출입은행과 맞손…韓 원전기업 유럽 진출 지원",
+      "press": "파이낸셜뉴스",
+      "url": "https://www.fnnews.com/news/202611151000103158",
+      "timestamp": 1794705041000,
+      "date": "2026.11.15 10:10",
+      "tags": [
+        "매크로"
+      ],
+      "tagSource": "ai",
+      "coverage": 2,
+      "outlets": [
+        "파이낸셜뉴스",
+        "연합뉴스"
+      ]
+    }
+  ]
+}
