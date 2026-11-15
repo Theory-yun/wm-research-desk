@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-15T23:36:34.247Z",
+  "updatedAt": "2026-11-15T23:39:57.487Z",
   "items": [
     {
       "title": "[오늘 증시 동향] 미국 나스닥 약세에 반도체주 부담…AI 투자 불확실성과 금리 전망 주목",
@@ -22,6 +22,18 @@
       "tags": [
         "외환",
         "증시"
+      ],
+      "tagSource": "ai"
+    },
+    {
+      "title": "[모닝 경제 브리핑] 美 증시, 연준 매파 발언에 금리 상승…반도체 3%대 급락에 나스닥 0.9%↓",
+      "press": "프리진경제",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE93S2ItTUV6empKWWotRUllOTZtaVNvUHN5TTJqQ1J5MS1OVkpYWTV3bFFESEVOTDNQSEk2MGR5cElNeHFqX1N5RC1EaVRUUmlFWUh5LWE0Z2pOdmI4d2tFT0tNUjF4dTliZ3hqSA?oc=5",
+      "timestamp": 1794785122000,
+      "date": "2026.11.16 08:25",
+      "tags": [
+        "증시",
+        "채권·금리"
       ],
       "tagSource": "ai"
     },
@@ -2793,16 +2805,6 @@
         "증시"
       ],
       "tagSource": "ai"
-    },
-    {
-      "title": "내년부터 산재 은폐·안전수칙 위반 신고에 최대 500만원",
-      "press": "연합뉴스",
-      "url": "https://www.yna.co.kr/view/AKR20261113146300530",
-      "timestamp": 1794690361000,
-      "date": "2026.11.15 06:06",
-      "tags": [
-        "매크로"
-      ]
     }
   ]
 }
