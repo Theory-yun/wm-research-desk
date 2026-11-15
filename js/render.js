@@ -185,24 +185,66 @@ function renderTop5News() {
 /* ----------------------------- 포트폴리오 체크포인트 ----------------------------- */
 const LEVEL_CLASS = { "변동 큼": "lv-high", "주목": "lv-mid", "평이": "lv-low" };
 
-function renderPortfolio() {
+/** 브리핑 데이터를 '모델별' 형태로 맞춰줌 (구형 3:4:3 단일 데이터도 표준형으로 표시) */
+function normalizeAssetChecks(ac) {
+  if (!ac?.cards?.length) return null;
+  if (ac.framework === "models") return ac;
+  if (ac.framework === "3:4:3")
+    return {
+      ...ac,
+      models: [{ key: "standard", name: "표준형", icon: "⚖️", ratios: { safe: 30, core: 40, satellite: 30 } }],
+      defaultModel: "standard",
+      cards: ac.cards.map((c) => ({ ...c, texts: { standard: { headline: c.headline, insight: c.insight, check: c.check } } })),
+      rebalance: { standard: ac.rebalance },
+    };
+  return null;
+}
+
+/** 화면·PDF 공용: 지금 선택된 모델 기준의 카드 목록 */
+export function currentAllocation() {
+  const ac = normalizeAssetChecks(currentEditionData()?.assetChecks);
+  if (!ac) return null;
+  const model = ac.models.find((m) => m.key === STATE.allocModel) ?? ac.models.find((m) => m.key === ac.defaultModel) ?? ac.models[0];
+  return {
+    ac,
+    model,
+    cards: ac.cards.map((c) => ({ ...c, ratio: model.ratios[c.key], ...(c.texts?.[model.key] ?? {}) })),
+    rebalance: ac.rebalance?.[model.key] ?? null,
+  };
+}
+
+export function renderPortfolio() {
   const grid = $("portfolio-cards-grid");
   if (!grid) return;
-  const ac = currentEditionData()?.assetChecks;
   const extra = $("ac-extra");
   const bar = $("ac-ratio-bar");
-  if (!ac?.cards?.length || ac.framework !== "3:4:3") {
-    grid.innerHTML = `<div class="ac-empty">다음 브리핑 생성부터 3:4:3 바구니별 시사점이 표시됩니다.</div>`;
-    if (extra) extra.innerHTML = "";
-    if (bar) bar.innerHTML = "";
+  const picker = $("alloc-picker");
+  const cur = currentAllocation();
+  if (!cur) {
+    grid.innerHTML = `<div class="ac-empty">다음 브리핑 생성부터 배분 모델별 시사점이 표시됩니다.</div>`;
+    [extra, bar, picker].forEach((el) => el && (el.innerHTML = ""));
     return;
   }
+  const { ac, model, cards, rebalance } = cur;
+  const ratioStr = (m) => `${m.ratios.safe / 10}:${m.ratios.core / 10}:${m.ratios.satellite / 10}`;
+
+  if (picker)
+    picker.innerHTML =
+      `<span class="alloc-label">예시 배분 모델</span>` +
+      ac.models
+        .map(
+          (m) => `<button type="button" class="alloc-btn ${m.key === model.key ? "active" : ""}" data-alloc="${m.key}" aria-pressed="${m.key === model.key}">
+            ${m.icon} ${escapeHtml(m.name)} <span>${ratioStr(m)}</span></button>`
+        )
+        .join("");
+
   if (bar)
-    bar.innerHTML = ac.cards
-      .map((c) => `<div class="ratio-seg seg-${c.key}" style="flex:${c.target}"><b>${c.target}%</b> ${c.icon} ${escapeHtml(c.name)}</div>`)
+    bar.innerHTML = cards
+      // 비중이 작은 칸은 폭이 좁아 이름이 잘리므로 퍼센트만 표시(이름은 마우스를 올리면 보임)
+      .map((c) => `<div class="ratio-seg seg-${c.key}" style="flex:${c.ratio}" title="${escapeHtml(c.name)} ${c.ratio}%"><b>${c.ratio}%</b>${c.ratio >= 20 ? ` <span>${c.icon} ${escapeHtml(c.name)}</span>` : ""}</div>`)
       .join("");
 
-  grid.innerHTML = ac.cards
+  grid.innerHTML = cards
     .map((c) => {
       const market = c.market
         .map((m) => `<span class="ac-mkt ${m.changePct > 0 ? "up" : m.changePct < 0 ? "down" : ""}">${escapeHtml(m.name)} ${m.changePct > 0 ? "+" : ""}${escapeHtml(m.changePct)}%</span>`)
@@ -216,20 +258,20 @@ function renderPortfolio() {
       return `
         <article class="ac-card card-${c.key}">
           <div class="ac-head">
-            <span class="ac-name">${c.icon} ${escapeHtml(c.name)} <span class="ac-target">기준 ${c.target}%</span></span>
+            <span class="ac-name">${c.icon} ${escapeHtml(c.name)} <span class="ac-target">비중 ${c.ratio}%</span></span>
             <span class="ac-level ${LEVEL_CLASS[c.level] ?? ""}">${escapeHtml(c.level)}</span>
           </div>
           <div class="ac-role">${escapeHtml(c.role)}</div>
-          <div class="ac-headline">${escapeHtml(c.headline)}</div>
-          <p class="ac-check"><span class="lb-insight">오늘의 시사점</span>${escapeHtml(c.insight)}</p>
-          <p class="ac-check"><span>확인할 것</span>${escapeHtml(c.check)}</p>
-          ${market || events || news ? `<div class="ac-basis"><div class="ac-basis-label">근거</div>${market ? `<div class="ac-mkts">${market}</div>` : ""}${events}${news}</div>` : ""}
+          <div class="ac-headline">${escapeHtml(c.headline ?? "")}</div>
+          <p class="ac-check"><span class="lb-insight">오늘의 시사점</span>${escapeHtml(c.insight ?? "")}</p>
+          <p class="ac-check"><span>확인할 것</span>${escapeHtml(c.check ?? "")}</p>
+          ${market || events || news ? `<div class="ac-basis"><div class="ac-basis-label">근거 (모든 모델 공통)</div>${market ? `<div class="ac-mkts">${market}</div>` : ""}${events}${news}</div>` : ""}
         </article>`;
     })
     .join("");
 
   if (extra) {
-    const reb = ac.rebalance ? `<div class="ac-rebalance">⚖️ <b>리밸런싱 점검</b> ${escapeHtml(ac.rebalance)}</div>` : "";
+    const reb = rebalance ? `<div class="ac-rebalance">⚖️ <b>리밸런싱 점검</b> ${escapeHtml(rebalance)}</div>` : "";
     const tax = (ac.taxNews ?? []).length
       ? `<div class="ac-tax"><span>🏢⚖️ 세무·부동산 참고</span>${ac.taxNews
           .map((n) => `<a href="${encodeURI(n.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(n.title)} <em>${n.coverage}곳</em></a>`)

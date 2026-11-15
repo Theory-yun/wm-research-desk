@@ -54,6 +54,7 @@ export const STATE = {
   newsVisibleCount: 10,
 
   insightFilter: "ALL",
+  allocModel: StorageUtil.get(LOCAL_STORAGE_KEYS.allocModel, "standard"),
 
   clickMap: StorageUtil.get(LOCAL_STORAGE_KEYS.newsClicks, {}),
   scrapMap: StorageUtil.get(LOCAL_STORAGE_KEYS.scrapMap, {}),

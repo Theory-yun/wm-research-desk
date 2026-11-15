@@ -1,4 +1,5 @@
 import { STATE, currentEditionData, escapeHtml } from "./state.js";
+import { currentAllocation } from "./render.js";
 import { getTop5News } from "./render.js";
 
 const $ = (id) => document.getElementById(id);
@@ -77,11 +78,12 @@ function buildFormalPdfHtml() {
     )
     .join("");
 
-  const pfRows = (data.assetChecks?.framework === "3:4:3" ? data.assetChecks.cards : [])
+  const alloc = currentAllocation();
+  const pfRows = (alloc?.cards ?? [])
     .map(
       (c) => `
       <div style="border:1px solid #cbd5e1; border-top:3px solid #004B49; border-radius:8px; padding:11px;">
-        <div style="font-size:11.5px; font-weight:800; color:#004B49; margin-bottom:4px;">${c.icon} ${escapeHtml(c.name)} (기준 ${c.target}%) · ${escapeHtml(c.level)}</div>
+        <div style="font-size:11.5px; font-weight:800; color:#004B49; margin-bottom:4px;">${c.icon} ${escapeHtml(c.name)} (비중 ${c.ratio}%) · ${escapeHtml(c.level)}</div>
         <div style="font-size:12.5px; font-weight:800; margin-bottom:5px;">${escapeHtml(c.headline)}</div>
         <div style="font-size:11.5px; color:#334155; line-height:1.45; margin-bottom:4px;">${escapeHtml(c.insight)}</div>
         <div style="font-size:11.5px; color:#047857; line-height:1.45;">확인할 것: ${escapeHtml(c.check)}</div>
@@ -120,7 +122,7 @@ function buildFormalPdfHtml() {
       </div>
       <div class="pdf-sec-title"><span>03. 손님 필독 마켓 뉴스</span></div>
       ${top5Html}
-      ${pfRows ? `<div class="pdf-sec-title"><span>04. 3:4:3 자산배분 점검 — 안전자산 30% · 시장 추종 40% · 초과 수익 30% (투자 권유 아님)</span></div>
+      ${pfRows ? `<div class="pdf-sec-title"><span>04. 자산배분 점검 — ${escapeHtml(alloc?.model?.name ?? "")} 예시 모델(안전자산 ${alloc?.model?.ratios?.safe ?? ""}% · 시장 추종 ${alloc?.model?.ratios?.core ?? ""}% · 초과 수익 ${alloc?.model?.ratios?.satellite ?? ""}%) · 투자 권유 아님</span></div>
       <div style="display:grid; grid-template-columns:repeat(3, 1fr); gap:10px; margin-bottom:14px;">${pfRows}</div>` : ""}
       <div style="margin-top:16px; padding-top:10px; border-top:1px solid #cbd5e1; font-size:10px; color:#64748b; line-height:1.5;">
         <strong>[Compliance Notice | 하나증권 패밀리오피스 안내사항]</strong> 본 보고서는 하나증권 패밀리오피스 손님의 자산관리 이해를 돕기 위해 시장 정보와 정규장 마감 데이터를 바탕으로 자동 생성되었으며(AI 요약 포함), 투자 결과에 대한 법적 책임 소재의 증빙자료로 사용될 수 없습니다. 손님 전달 전 PB의 사실 확인을 권장합니다.
