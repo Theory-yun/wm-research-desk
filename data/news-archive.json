@@ -1,6 +1,41 @@
 {
-  "updatedAt": "2026-11-15T05:27:51.210Z",
+  "updatedAt": "2026-11-15T05:54:10.970Z",
   "items": [
+    {
+      "title": "연준 AI 투자 과열 경고…부채·보증 3조 달러 넘나",
+      "press": "자본시장뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE53THNYMVRxbXE1NUcza2tBSHBTUG9sMTVoNXRwYjJJMEFUaTh2bms4cVhCc2Q5UDhZUnhQRXp3NGlrcGUtdE1YTzJzWGJmUk93RG9GaXBnb1YxODJfRlpFLXFXY1pGLVk?oc=5",
+      "timestamp": 1794720758000,
+      "date": "2026.11.15 14:32",
+      "tags": [
+        "매크로",
+        "채권·금리"
+      ],
+      "tagSource": "ai"
+    },
+    {
+      "title": "[금시세] 국제 금값 순금 18k 등 가격은 얼마?",
+      "press": "게임톡",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5UX3llOWRKTEdFS0JncXY5QTJ3MzhVQmJQMVNycDZ4Zkh5al92bEJMSzBvdnRuM1FkZHktTTBKTXFHcV9QdkhRdHNnQ2dzUDB6MWhiZWwxNXZteFJfY2NDYkl3cFd4TWpVVE5jUA?oc=5",
+      "timestamp": 1794720665000,
+      "date": "2026.11.15 14:31",
+      "tags": [
+        "원자재"
+      ],
+      "tagSource": "ai"
+    },
+    {
+      "title": "미 10월 CPI 0.4%↑·근원 0.3%↑…12월 FOMC 인상폭 쟁점, 10년물 5.15%",
+      "press": "ISSUE ON (이슈온)",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBjRXVMdXNlV2ZxMXdmSEFPbHRhZEt4Sk5QQ3V2clZEcllyU3VaSmo5emFqd0o0d1VqdEhHYVowcXAyaDNJWWxLa1NCcWI1YkVOY0R0LTkwNk1ZeFlBUy1oZWh4M1ZyeWViRk9n?oc=5",
+      "timestamp": 1794720052000,
+      "date": "2026.11.15 14:20",
+      "tags": [
+        "매크로",
+        "채권·금리"
+      ],
+      "tagSource": "ai"
+    },
     {
       "title": "이형일 경제부총리, 세무사시험 AI 부정행위 사건에 직무유기 고발돼",
       "press": "연합뉴스",
@@ -1795,7 +1830,8 @@
       "date": "2026.11.15 05:36",
       "tags": [
         "매크로"
-      ]
+      ],
+      "tagSource": "ai"
     },
     {
       "title": "강달러에 다시 고개 든 환율…1340원대 재진입하나?",
@@ -2132,7 +2168,8 @@
       "date": "2026.11.14 18:00",
       "tags": [
         "매크로"
-      ]
+      ],
+      "tagSource": "ai"
     },
     {
       "title": "K뷰티 전용 ETF 뉴욕증시 상장…투자 흥행으로 이어질까",
@@ -2723,38 +2760,6 @@
         "부동산"
       ],
       "tagSource": "ai"
-    },
-    {
-      "title": "“차에서 내리다 손목 부러졌어요”…보험 전문가도 보험금 거절당했다, 왜? [어쩌다 세상이]",
-      "press": "매일경제",
-      "url": "https://www.mk.co.kr/news/economy/12208824",
-      "timestamp": 1794620529000,
-      "date": "2026.11.14 10:42",
-      "tags": [
-        "매크로"
-      ]
-    },
-    {
-      "title": "\"집 팔고 나가라는 거냐\"…은마 '4.6억 청구서'에 부글부글 [이슬기의 새집다오]",
-      "press": "한국경제",
-      "url": "https://www.hankyung.com/article/2026111348856",
-      "timestamp": 1794619801000,
-      "date": "2026.11.14 10:30",
-      "tags": [
-        "부동산",
-        "TAX"
-      ],
-      "tagSource": "ai"
-    },
-    {
-      "title": "[연합뉴스 이 시각 헤드라인] - 10:30",
-      "press": "연합뉴스",
-      "url": "https://www.yna.co.kr/view/AKR20261114025200011",
-      "timestamp": 1794619800000,
-      "date": "2026.11.14 10:30",
-      "tags": [
-        "매크로"
-      ]
     }
   ]
 }
