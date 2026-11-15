@@ -1,6 +1,6 @@
 {
   "note": "curated=true 는 PB가 고른 연례 핵심 리포트(고정), 나머지는 scripts/build-insights.mjs가 매일 자동 수집합니다.",
-  "updatedAt": "2026-11-15T04:54:21.900Z",
+  "updatedAt": "2026-11-15T04:55:14.632Z",
   "categories": [
     "글로벌 F/O 동향",
     "국내 부자·웰스 리포트",
@@ -134,6 +134,19 @@
     },
     {
       "stars": "★★★★★",
+      "category": "자산배분·시장 전망",
+      "title": "골드만 삭스, 2027년 전망에서 안정적 성장 예측 및 AI 거래 경고",
+      "desc": "골드만 삭스의 2027년 전망을 통해 안정적 성장세 예측과 AI 관련 자산 거래의 위험 요소를 파악할 수 있습니다.",
+      "org": "Crypto Briefing",
+      "date": "2026.11.15",
+      "ts": 1794672291000,
+      "btnText": "🔗 원문 보기",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFAzU3h2TUdlb29Qd0FBazJrcml2bjM1Zlk4S1pwbjM5aHNBcHJuV3FYQ2V2QlMwQjcydkFQWkwzdW0zOThRSlVsNEJLUDJsRFVQRktGNTNzV0pHMk53eTNDaHlucXFDWWdmQjBVRnVlcw?oc=5",
+      "lang": "en",
+      "classifiedBy": "AI(gemini-3.5-flash-lite)"
+    },
+    {
+      "stars": "★★★★★",
       "category": "대체투자·사모시장",
       "title": "세계 부호 290가문 조사…대체투자 비중 60%, 전통자산 첫 추월",
       "desc": "글로벌 초고액자산가 가문들의 대체투자 비중이 전통자산을 추월했다는 조사 결과로, 자산배분 전략 수립 시 시사점을 제공합니다.",
@@ -143,6 +156,19 @@
       "btnText": "🔗 원문 보기",
       "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5ESlNPbjUydzlSVE5BRUJqOVNIVjNvWVprcy1pcVZzek1UV3FmR2o0SEx0ZzRQWXVZYmpNa0d6ajZqZ1hSSW9vb1A0OThMMEZrQmFCYjMtVWhGMmd5bENZQjFJRXRxbmV6TTZXdEFqX0c1TnNYQ1M0ctIBeEFVX3lxTE5ESlNPbjUydzlSVE5BRUJqOVNIVjNvWVprcy1pcVZzek1UV3FmR2o0SEx0ZzRQWXVZYmpNa0d6ajZqZ1hSSW9vb1A0OThMMEZrQmFCYjMtVWhGMmd5bENZQjFJRXRxbmV6TTZXdEFqX0c1TnNYQ1M0cg?oc=5",
       "lang": "ko",
+      "classifiedBy": "AI(gemini-3.5-flash-lite)"
+    },
+    {
+      "stars": "★★★★☆",
+      "category": "자산배분·시장 전망",
+      "title": "골드만 삭스 2027년 전망: 글로벌 GDP 2.8% 전망, AI 설비투자 1조 8천억 달러 도달, 그러나 세 가지 주요 위험 대두",
+      "desc": "골드만 삭스의 2027년 거시경제 전망, AI 설비투자 규모 및 주요 리스크 요인을 확인할 수 있습니다.",
+      "org": "BigGo Finance",
+      "date": "2026.11.14",
+      "ts": 1794619500000,
+      "btnText": "🔗 원문 보기",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE14WUhzd05ScjU2YmQ1S196N2hvS0pOOW1uMjIwczUwS2VaalVxNEV4VFc1eElEb3N1NDhPNmhETmVCdy1SdFNwTkN6X2k5Mmg0dFdTUTIzRkk5M2x5d3hFUWZlNEdIeDM2U3oteTFGOXRYckgxNFE?oc=5",
+      "lang": "en",
       "classifiedBy": "AI(gemini-3.5-flash-lite)"
     },
     {
@@ -168,32 +194,6 @@
       "ts": 1794382723000,
       "btnText": "🔗 원문 보기",
       "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFB3TlJlcG1SVnFZZTVnNnBYa0tIUkEtakNEMzdVOF9WX0s5TFUyRmZxWVF0NTUzblB5ZDFjWXBzRWtZNmZ0eWdBRV9SMUJ2M29EcHE5VUhqdjBGN2FhMHVLNXJvX0I1TDUweW1kRA?oc=5",
-      "lang": "ko",
-      "classifiedBy": "AI(gemini-3.5-flash-lite)"
-    },
-    {
-      "stars": "★★★★★",
-      "category": "자산배분·시장 전망",
-      "title": "신한證, 12일까지 금융시장포럼…내년 경제·금융시장 전망",
-      "desc": "금융시장 포럼에서 다뤄진 경제 및 금융시장 전반의 전망을 고객 브리핑 자료로 활용할 수 있습니다.",
-      "org": "뉴시스",
-      "date": "2026.11.11",
-      "ts": 1794379210000,
-      "btnText": "🔗 원문 보기",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBHMXF5d01lUHR2N3JqLWlaaGdhSjJLeUE2VjdxVGNaY3gyM1FiZHVycGlGS1o2aEtRMWtIcHBnQzRlTENZX0RlSXpHblBZYjc0c1B1clZzdzVfd0RVLVdWbtIBeEFVX3lxTE5COV9KZTd2U0pzYTJkMWZWZnBZTHJEZUNYUGVmUUptZFJFamhfeW5CWExoN29NTkJCeHB6NkhsdGtFN0h6ZjFQcU9ra3BxZWo3VFRBSWROeW9YMDNucEQtZkJYUWdFOXhkSlVfWmh5QTBlYWRrcHBuXw?oc=5",
-      "lang": "ko",
-      "classifiedBy": "AI(gemini-3.5-flash-lite)"
-    },
-    {
-      "stars": "★★★★☆",
-      "category": "자산배분·시장 전망",
-      "title": "신한투자증권, 내년 투자전략 공개…“AI 성장 기대 넘어 수익성 따질 때”",
-      "desc": "향후 시장 전망에서 AI 투자에 대한 성장 기대보다는 실질적인 수익성 검증이 중요하다는 투자 전략을 담고 있습니다.",
-      "org": "매일경제 마켓",
-      "date": "2026.11.11",
-      "ts": 1794378548000,
-      "btnText": "🔗 원문 보기",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFAyS1h0X3lIYm9wUlFKS3YxY0cwUzdrbkRpWXVUVlFmT1NuYWdmYVpVTGFqQVZveGF1MmRIQUVpbl8wT1AxOVJPLWJzUlJmNU4zUUE?oc=5",
       "lang": "ko",
       "classifiedBy": "AI(gemini-3.5-flash-lite)"
     },
@@ -289,6 +289,19 @@
       "classifiedBy": "AI(gemini-3.5-flash-lite)"
     },
     {
+      "stars": "★★★★☆",
+      "category": "국내 부자·웰스 리포트",
+      "title": "연방준비제도 새 부의 보고서에서 가장 충격적인 한 줄: 고등학교 졸업장이 없는 가계의 중간 순자산 55% 감소",
+      "desc": "미국 연방준비제도의 새로운 자산 보고서를 통해 계층별·학력별 가계 순자산 증감 통계를 확인할 수 있습니다.",
+      "org": "24/7 Wall St.",
+      "date": "2026.11.02",
+      "ts": 1793606400000,
+      "btnText": "🔗 원문 보기",
+      "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxNdGdWTE5GV3VkZnZhUzlnYUtneEh1RERka2xFQThmVGIyRmR1OFhPLTF1NWwtRzdLMTA1NWtzaWU2N1V4SUhXMENhUHItWjVXM3U1SGxVSW1Bbm9hWjhVUFIzY0pObm1aUUh4X2thdUZQMkhPd0lTbFZwM0M4aGl2RFRyZmxVRzdmQnpkZHZPYkN6cG9VVmR3c0F3WmlBZDY5TEFoTWRheVI2dHQ3WEdSeHBCRzFVTWdpZ0tkd055YlphOFhyWDViaDAzN0s3WEpPbG1NWmlfQ1Q5QkltSFhyeE5Kem1IY19mb0psQmZjdWQzWnNMeFZ4VDIxMXNXdVg2VlJRTEJZNXc?oc=5",
+      "lang": "en",
+      "classifiedBy": "AI(gemini-3.5-flash-lite)"
+    },
+    {
       "stars": "★★★★★",
       "category": "승계·세무·신탁",
       "title": "가업상속공제 개편 ‘얻는 것’보다 ‘잃는 것’ 더 많아",
@@ -380,6 +393,19 @@
       "classifiedBy": "AI(gemini-3.5-flash-lite)"
     },
     {
+      "stars": "★★★★☆",
+      "category": "자산배분·시장 전망",
+      "title": "2026년 4분기 시장 전망: 회복력이 커지는 위험을 만나다 - 이스트스프링 인베스트먼트",
+      "desc": "이스트스프링 인베스트먼트의 4분기 시장 전망을 통해 경제 회복력과 잠재적 위험 요소를 점검할 수 있습니다.",
+      "org": "Eastspring Investments",
+      "date": "2026.10.23",
+      "ts": 1792728437000,
+      "btnText": "🔗 원문 보기",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQZ0VuU3lZcWJGVXJuZWl4dEFZWlFNdG40MzB3LXhabW5nREVjczg4dFVGeHNXNTJsOWFpTVczVDRPYWVCUzZjZjY5OEJEbzAwSzh4LXRvLXdtZVc2NTRONnU3MWxnRnhYa1ByT0U2NlpFVGp0ak0ybFBtMFlLSFJXaTRpbG5uX1Zxd3BmUzNoeEVtQlhSbDVvc3JIME82UTZwN0tWak52MU5qQQ?oc=5",
+      "lang": "en",
+      "classifiedBy": "AI(gemini-3.5-flash-lite)"
+    },
+    {
       "stars": "★★★★★",
       "category": "글로벌 F/O 동향",
       "title": "“패밀리오피스는 프라이버시를 최우선으로 여겨야 한다” – 서밋 보고서",
@@ -447,6 +473,32 @@
     {
       "stars": "★★★★★",
       "category": "글로벌 F/O 동향",
+      "title": "아시아 초고액자산가 차세대, 가문 사업 매각 후 계획에 가장 발언권 적어: 줄리어스 베어",
+      "desc": "줄리어스 베어의 조사 결과로 아시아 초고액자산가 가문의 승계 및 세대 간 의사결정 구조를 이해할 수 있습니다.",
+      "org": "The Business Times",
+      "date": "2026.10.20",
+      "ts": 1792479600000,
+      "btnText": "🔗 원문 보기",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNbl94R0VmSjdvdVRDcnlCMUJEaW5TWngyaVkxNnNoSmFFVGhyZ3VDMlVLZEVDRkJhT3d3OURpcllpbkg1VUF5dDl1Z3VKR0xDR0k3bGJOaXhvaFZ5alJuRng5NWFSM2tOYy1XSWxHRkdBTVNQbjhlVGxzYWVpb2FwMlhYV1FXQjdVOGdSeUxMaEdZYktDV0g4SHJuMF9veDlPYWR0Qy12YVVtdEhFRFJiT0M3Q0c2aml0OGRyc1N0ZUtSLUM3cm5HMDI0eVVqbTgyY2xxVw?oc=5",
+      "lang": "en",
+      "classifiedBy": "AI(gemini-3.5-flash-lite)"
+    },
+    {
+      "stars": "★★★★★",
+      "category": "자산배분·시장 전망",
+      "title": "J.P. 모간, 10~15년간 60/40 포트폴리오 7.0% 수익률 전망하는 2027 장기 자본시장 가정 프로젝트 발표",
+      "desc": "J.P. 모간이 발표한 장기 자본시장 가정(LTCMA)을 통해 향후 10~15년간 전통 자산배분 포트폴리오의 기대 수익률을 전망할 수 있습니다.",
+      "org": "Investing News Network",
+      "date": "2026.10.19",
+      "ts": 1792393200000,
+      "btnText": "🔗 원문 보기",
+      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPUFYxbWhld1hrVWpYZjNfVnFNR2d6V25RQTlzVkFWc1JVZTN3aXhneUg2ZXlvZnZIUVpjcURYYXNSNEhkVVFzcks1Tm0tUEUyczdCem8wUWc2Qm1UeTRaZmthOF9xVzdBVTYzeXM4dnI2Vk9VVHl5aldzWUhMSm1neEFiVVZrMm40dVRLal9zVGEyRnA5M09zUVdvMTl5SDduMWdFSXdlUDhOWEZVSzBpQUR5WFBDS2p5bVI0Wi1nWUxkOUQyazFVZkEwc0tqTEpfZmhXbTdGQVNCTTAzcDJicQ?oc=5",
+      "lang": "en",
+      "classifiedBy": "AI(gemini-3.5-flash-lite)"
+    },
+    {
+      "stars": "★★★★★",
+      "category": "글로벌 F/O 동향",
       "title": "외부 자본에 문을 여는 패밀리오피스, 그리고 새로운 의무들",
       "desc": "패밀리오피스가 외부 자본을 유치함에 따라 직면하는 새로운 구조적 변화와 책임에 대한 동향입니다.",
       "org": "Crain Currency",
@@ -471,6 +523,19 @@
       "classifiedBy": "AI(gemini-3.5-flash-lite)"
     },
     {
+      "stars": "★★★★☆",
+      "category": "글로벌 F/O 동향",
+      "title": "인도 기업가 74% 해외 거주 계획, 싱가포르가 1위",
+      "desc": "인도 기업가의 해외 거주 및 이민 트렌드와 선호 국가 순위를 보여주는 조사 결과입니다.",
+      "org": "Business Standard",
+      "date": "2026.09.30",
+      "ts": 1790751600000,
+      "btnText": "🔗 원문 보기",
+      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOY2VRakZNNUdWNWcyN2ExczJQeDZmRmp0QVB0VjRPSzZwS0JKZHFJb09fMHZSOE51UDVrd3llQnlhNjlGRS13M0NlTjQ2S2xQaGhVMUcxaXR0RWNLYzctZ3pOYTdwWGN4X1hRYW0xcVFUNlZ4TXF0UWhmUDkxN2ZQRFozZ3I4TGNoQm5jXzVnZ1NjcGEySktYV2xWUTlBV0xlWVVUM1lQei1nMU1oV004TUU3cGFVUUEweHpheUQ5UU5wQnp6WXVqak9ZTnFPSUlybGdXcnkxMUVvZXFvaEhGQ09qb9IB6AFBVV95cUxOQ2hWZUItN1NPZGZnejNmRURMX2ppVDBZVzdaSExjcTBfbVJXNlZBUVBMWlUzTmhFWDFTNl9DYnEwR1VxTFljZUJISnB0c19LRUpIMTktNWNYWWsyNEpmRDZGT3ZZYjhCc290WDlxVmR4RHh3aV8zRm9KQmxMU09ueHRFMlRVX0o0Tmoxdm1aZkxLUXNUX29sUUxvVE9wLUVMeTA2OGl5bk1DTU1oaW5QbFh6V0tUdi0yMm1IX21nNXVidThjakNXaDk4MTFrMkdFSm1iODU2MXg5UE9HMEdBa1ZVUk90VlQ5?oc=5",
+      "lang": "en",
+      "classifiedBy": "AI(gemini-3.5-flash-lite)"
+    },
+    {
       "stars": "★★★★★",
       "category": "국내 부자·웰스 리포트",
       "title": "글로벌 웰스 리포트 2026",
@@ -480,6 +545,32 @@
       "ts": 1790665200000,
       "btnText": "🔗 원문 보기",
       "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQUGtwSHVNcVR0cHZSeThPLS1JOGxrcDFBNXZIUzFuVy0xTFJJUC1JMWNROEU3TUxkR2Z3ajdzVzdjQ01VUWRTQUtuUnhER0t2enVBWHJIaTZ1RVp4ZXNPVmplQ1htUVJuSnVFdl9mbWRVZ0MzRkhBaG40Z1llMm5aLUtEMjIwTVRIYmZYRmptenVQQkRkNXpDaFZWdndTVkRSclFHeVRqQQ?oc=5",
+      "lang": "en",
+      "classifiedBy": "AI(gemini-3.5-flash-lite)"
+    },
+    {
+      "stars": "★★★★★",
+      "category": "국내 부자·웰스 리포트",
+      "title": "2026년 글로벌 기업가 자산 보고서 (Ipsos)",
+      "desc": "Ipsos가 발표한 2026년 글로벌 기업가 자산 보고서로 초고액자산가 가문 트렌드를 파악할 수 있습니다.",
+      "org": "Ipsos",
+      "date": "2026.09.25",
+      "ts": 1790319600000,
+      "btnText": "🔗 원문 보기",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBHUXZVYWFoVVhVenFrLTljWGVieWg4Tm04RE1DeW5ZVHYzR2k5dUFjUTQ0N3E5NmNuR0g4MXU4WURSbGd5dGFZeHVNY3ctdk5JWG1IM2dRLTkxSHVQV2l4NHlJQXI0b2Z2RUNtTjgwbmRFM0gtSnYtVA?oc=5",
+      "lang": "en",
+      "classifiedBy": "AI(gemini-3.5-flash-lite)"
+    },
+    {
+      "stars": "★★★★☆",
+      "category": "글로벌 F/O 동향",
+      "title": "움직이는 패밀리오피스에게 비즈니스 항공이 점점 더 중요한 우선순위가 되고 있다 – 에어버스 설문조사",
+      "desc": "에어버스 설문조사 결과로 패밀리오피스의 라이프스타일 및 자산관리 트렌드를 파악할 수 있습니다.",
+      "org": "Family Wealth Report",
+      "date": "2026.09.24",
+      "ts": 1790233200000,
+      "btnText": "🔗 원문 보기",
+      "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxOcjlOUWozamlrQzFBdUNIbHRVX19YZDlnSUZFSFY2LWFjYnZaaF9XSHRkdE1LOFZkZHVLa1BMNm1iOGN1ZURvaWhyeUZya1FraHczdUNFVTczanJDanFRMU03bndQa3RDaDhpNEpzQnd6R0NWZUZaazZBSXM1c3JKVmNVakd0bDVhLXFfbTZnOWRMdTJ6eVJQbmdTclZmMUI0X1c2UVdkQ0FIR2s2Zjkwd2wwZlExMF9XV0ZfdDJ6dGV5dWlCZGxJUEU4RkNwREtBT1U4Vy1KcE5rdEVURkt4OExXSU92VWxDY1VRZmFn?oc=5",
       "lang": "en",
       "classifiedBy": "AI(gemini-3.5-flash-lite)"
     }
