@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-15T07:19:10.950Z",
+  "updatedAt": "2026-11-15T07:22:00.979Z",
   "items": [
     {
       "title": "[이번주 증시] 'AI 투심' 살아날까…엔비디아 실적·앤트로픽 IPO '주목'",
@@ -21,6 +21,60 @@
       "tags": [
         "매크로"
       ]
+    },
+    {
+      "title": "[단독] 머스크 이어 박현주도 ‘젠슨황 복귀 청원’ 동참…“사임 너무 성급”",
+      "press": "매일경제",
+      "url": "https://www.mk.co.kr/news/stock/12209229",
+      "timestamp": 1794725622000,
+      "date": "2026.11.15 15:53",
+      "tags": [
+        "증시"
+      ],
+      "tagSource": "ai"
+    },
+    {
+      "title": "[부동산 심머니] 정부 힘실린 공공, 서울시가 밀어주는 민간 … 장위 재개발 속도전",
+      "press": "매일경제",
+      "url": "https://www.mk.co.kr/news/realestate/12209228",
+      "timestamp": 1794725592000,
+      "date": "2026.11.15 15:53",
+      "tags": [
+        "부동산"
+      ],
+      "tagSource": "ai"
+    },
+    {
+      "title": "[부동산 손품노트] '닥공' 발표보다 정비사업 일정표 확인하라 … 서울 집값 핵심변수 총정리",
+      "press": "매일경제",
+      "url": "https://www.mk.co.kr/news/realestate/12209227",
+      "timestamp": 1794725591000,
+      "date": "2026.11.15 15:53",
+      "tags": [
+        "부동산"
+      ],
+      "tagSource": "ai"
+    },
+    {
+      "title": "[표] 이번주 머니 캘린더",
+      "press": "매일경제",
+      "url": "https://www.mk.co.kr/news/stock/12209222",
+      "timestamp": 1794725573000,
+      "date": "2026.11.15 15:52",
+      "tags": [
+        "매크로"
+      ]
+    },
+    {
+      "title": "최대주주 지분 50% 이상인데 저PBR株 명단, 단독 공개합니다",
+      "press": "매일경제",
+      "url": "https://www.mk.co.kr/news/stock/12209219",
+      "timestamp": 1794725211000,
+      "date": "2026.11.15 15:46",
+      "tags": [
+        "증시"
+      ],
+      "tagSource": "ai"
     },
     {
       "title": "투모로우바이투게더 연준 \"1년간 2컴백·월드투어…어려운 걸 우리가 해냈다\"",
@@ -97,6 +151,27 @@
       "date": "2026.11.15 15:13",
       "tags": [
         "증시"
+      ],
+      "tagSource": "ai"
+    },
+    {
+      "title": "젠슨 황 불륜 파문에 흔적 지운 美 식당…논란 일자 \"다시 설치\"",
+      "press": "한국경제",
+      "url": "https://www.hankyung.com/article/2026111572737",
+      "timestamp": 1794723145000,
+      "date": "2026.11.15 15:12",
+      "tags": [
+        "매크로"
+      ]
+    },
+    {
+      "title": "\"AI로 세무사 수석 합격\" 충격 자백…정부 결국 '칼 빼들었다'",
+      "press": "한국경제",
+      "url": "https://www.hankyung.com/article/202611157276i",
+      "timestamp": 1794722829000,
+      "date": "2026.11.15 15:07",
+      "tags": [
+        "TAX"
       ],
       "tagSource": "ai"
     },
@@ -2701,85 +2776,6 @@
       "date": "2026.11.14 14:44",
       "tags": [
         "TAX"
-      ],
-      "tagSource": "ai"
-    },
-    {
-      "title": "\"저렴한 약값에 한국어 상담까지\"…日 비만약 원정처방 마케팅 활발",
-      "press": "한국경제",
-      "url": "https://www.hankyung.com/article/2026111464627",
-      "timestamp": 1794633792000,
-      "date": "2026.11.14 14:23",
-      "tags": [
-        "매크로"
-      ]
-    },
-    {
-      "title": "美 뉴욕증시에 K뷰티 ETF 상장…한국 화장품·의료미용 기업 투자",
-      "press": "한스경제",
-      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9iblRnZ0d1RnQ2NHpTNHNKNGRESGFKTERmd2F0RVBhWTRzQUJUbFNNX1JwYndxSVBVQXpoaVJFMms5c1QtNE5VRXpwdDJHWWFfQzNsb1NVSkFfMVBZekNCeFpzYmxfNk9VR1NV0gFvQVVfeXFMT0FMeHpjZmwtS3JHXzRkOUNpYXl1ektqVWFycllia2NxUjEtVmJtNWVESjVjZ2dqdUs3a0R4MUUtUGdhdEQ5QllSNlRlSzNvZFpzTDFBQU5JZUk5bWEySkxOdHdxQk4xcHJ6T3RxZzQw?oc=5",
-      "timestamp": 1794633398000,
-      "date": "2026.11.14 14:16",
-      "tags": [
-        "증시",
-        "대체투자"
-      ],
-      "tagSource": "ai"
-    },
-    {
-      "title": "급락 딛고 반등한 코스피…다음주 '엔비디아·연준' 변수 주목",
-      "press": "데일리한국",
-      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE55TDI4T0RuUTZUVHhuRmtGX1poV3VXcUVKTTEwQ1hhU3E3WnN6X2FvZ0ljdzc3RXpVVDZ6S1d3XzZIb3VvMDRWVUVQb2RNQVNhR2t0U3U2S043TEF2T004T3pqbTNqVmZYLXdST1RkSdIBc0FVX3lxTFB3T3Jfdzh1YlRZbUZ4dl90LWxLT3dLc0UxNV81OGQ2ZjlGZldqSVJCR0doS3gzOGxuRWs0VktKR2dQejBxV2VDOWZsYjhuS0dHQ3U1d0tsVDIwYURQOGVKN0VOSjE5SHlsemxXRHltQXVTSjQ?oc=5",
-      "timestamp": 1794632400000,
-      "date": "2026.11.14 14:00",
-      "tags": [
-        "증시",
-        "매크로"
-      ],
-      "tagSource": "ai"
-    },
-    {
-      "title": "시장은 12월에 연준 금리 인상을 예상",
-      "press": "IDNFinancials",
-      "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxPSW9GZmdrMy1uRDFUaTFZRkZfanM3c2lUTTYwNTdDUEx4ZVhBblkzaHE1NUdoeXE1VmZzT0h6M2lHMlV3cTF4ZkR0c19GTGJEcDZZQ2xMdjBGRk1YWTNfaGdvcGEyWWhrWTkwTjN6cVZFUFlSWHpOeTNkM3VlaW5OYndWc3QyTUdLYXRaNEdULXZCT2lLNGtwbDc3NllrV2lrOFp2dEpqc0g0RThtOFRHMERKNVozQTM4Q2doR1Vza2YwR1NRVW9laGZUanR6RUpmcXJ2NXI5SVVfenlvMDVoREptNDNMYXgzTXBxVjlUTTNXUTczbkNKVnZrcmlsUHNlNVNuXzVYRWY?oc=5",
-      "timestamp": 1794632400000,
-      "date": "2026.11.14 14:00",
-      "tags": [
-        "채권·금리",
-        "매크로"
-      ],
-      "tagSource": "ai"
-    },
-    {
-      "title": "\"파격가에 의료통역 지원까지\"…비만약 원정처방 마케팅 확산",
-      "press": "연합뉴스",
-      "url": "https://www.yna.co.kr/view/AKR20261113174400017",
-      "timestamp": 1794630600000,
-      "date": "2026.11.14 13:30",
-      "tags": [
-        "매크로"
-      ]
-    },
-    {
-      "title": "뉴욕증시, 엔비디아 여파에 혼조 마감…“다우 0.10%↑·나스닥 0.91%↓”",
-      "press": "파이낸셜투데이",
-      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE85dUFQWDA4S0lzX2lBWVRPbGZONFp1VWRidXo0dzFYZlZrdXAyRDRxTmlPWHoteVZjOGJscnFEbE93MVluYXNDZU1sWC1PQTRaTHVsUEZJeHhVWGtxR0hnaHBYMnd0RzRtWXfSAW5BVV95cUxPU05kYmVBUFVrVTBjc1pCbXhEU3Vzd0N5a3k2bUg2S2VmeFBWR01rWk12RU0xUklMMGRIcElQMmU1ank5MGI4VnYyV2FueVlncE5BaVYxZW1VN19uSmhncWNsM05JcEFOaEtqYVdPdw?oc=5",
-      "timestamp": 1794629807000,
-      "date": "2026.11.14 13:16",
-      "tags": [
-        "증시"
-      ],
-      "tagSource": "ai"
-    },
-    {
-      "title": "“송파 집 한 채가 전분데…웬 상속세” 팔아서 노후자금으로 쓸까, 지분 증여로 세금 아낄까 [이보소]",
-      "press": "헤럴드경제",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1vNkRNRUZPaUVMV2N5b2w4ZjV3T3VtNEpEZlNMMHNUU3NDV1czVVlQVlljbFdzSElralJXNTZITXdTSkZ5VHlZa2VxbHhZeWszeXV5MFhR?oc=5",
-      "timestamp": 1794629400000,
-      "date": "2026.11.14 13:10",
-      "tags": [
-        "TAX",
-        "부동산"
       ],
       "tagSource": "ai"
     }
