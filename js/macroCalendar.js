@@ -270,7 +270,7 @@ function wireEventsOnce() {
     const target = e.target.closest("[data-date]");
     if (target) openDayModal(target.dataset.date);
   };
-  ["macro-calendar-grid", "macro-event-detail-list", "upcoming-strip"].forEach((id) => $(id)?.addEventListener("click", onPick));
+  ["macro-calendar-grid", "macro-event-detail-list", "upcoming-strip", "portfolio-cards-grid"].forEach((id) => $(id)?.addEventListener("click", onPick));
   $("macro-calendar-grid").addEventListener("keydown", (e) => {
     if (e.key === "Enter" || e.key === " ") {
       e.preventDefault();

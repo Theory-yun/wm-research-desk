@@ -31,7 +31,7 @@ export function escapeHtml(str) {
 /**
  * 앱 전역 상태.
  * - morningData / eveningData: data/*.json에서 불러온 에디션별 브리핑
- * - newsArchive / insights / portfolioNotes / macro(매크로 캘린더): 공용 데이터
+ * - newsArchive / insights / houseView(본사 하우스뷰, 선택) / macro(매크로 캘린더): 공용 데이터
  * - edition: 현재 화면에 표시 중인 에디션 ('MORNING' | 'EVENING')
  * - clickMap / scrapMap: 브라우저 로컬 개인화(이 기기에서만 유지됨)
  */
@@ -40,7 +40,7 @@ export const STATE = {
   eveningData: null,
   newsArchive: [],
   insights: [],
-  portfolioNotes: [],
+  houseView: null,
   macro: null,
   autoEvents: [], // DART 등에서 자동 수집한 일정(실적 등)
   eventResults: {}, // 일정 결과 { [eventId]: {...} }

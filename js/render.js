@@ -183,22 +183,51 @@ function renderTop5News() {
 }
 
 /* ----------------------------- 포트폴리오 체크포인트 ----------------------------- */
+const LEVEL_CLASS = { "변동 큼": "lv-high", "주목": "lv-mid", "평이": "lv-low" };
+
+/** 본사 하우스뷰(선택): 기준일이 있고 해당 자산군 stance가 있을 때만 표시, 30일 경과 시 경고 */
+function houseViewChip(key) {
+  const hv = STATE.houseView;
+  const v = hv?.views?.[key];
+  if (!hv?.asOf || !v?.stance) return "";
+  const days = Math.floor((Date.now() - new Date(`${hv.asOf}T00:00:00+09:00`).getTime()) / 86400e3);
+  const stale = days > 30 ? `<span class="ac-hv-stale">⚠ 기준일 ${days}일 경과</span>` : "";
+  return `<div class="ac-hv"><span class="ac-hv-label">본사 하우스뷰</span> <strong>${escapeHtml(v.stance)}</strong>
+    <span class="ac-hv-date">(${escapeHtml(hv.asOf)} 기준${hv.source ? ` · ${escapeHtml(hv.source)}` : ""})</span>${stale}
+    ${v.comment ? `<div class="ac-hv-comment">${escapeHtml(v.comment)}</div>` : ""}</div>`;
+}
+
 function renderPortfolio() {
   const grid = $("portfolio-cards-grid");
   if (!grid) return;
-  grid.innerHTML = STATE.portfolioNotes
-    .map(
-      (pf) => `
-      <div class="pf-strategy-card" style="border-top: 3px solid ${escapeHtml(pf.color || "#004B49")};">
-        <div class="pf-card-head">
-          <span class="pf-asset-badge" style="color:${escapeHtml(pf.color || "#004B49")};">${escapeHtml(pf.badge)}</span>
-          <span class="pf-stance-tag">${escapeHtml(pf.stance)}</span>
-        </div>
-        <div class="pf-card-headline">${escapeHtml(pf.headline)}</div>
-        <p class="pf-card-body">${escapeHtml(pf.body)}</p>
-      </div>
-    `
-    )
+  const ac = currentEditionData()?.assetChecks;
+  if (!ac?.cards?.length) {
+    grid.innerHTML = `<div class="ac-empty">다음 브리핑 생성부터 자산군별 점검 포인트가 표시됩니다.</div>`;
+    return;
+  }
+  grid.innerHTML = ac.cards
+    .map((c) => {
+      const market = c.market
+        .map((m) => `<span class="ac-mkt ${m.changePct > 0 ? "up" : m.changePct < 0 ? "down" : ""}">${escapeHtml(m.name)} ${m.changePct > 0 ? "+" : ""}${escapeHtml(m.changePct)}%</span>`)
+        .join("");
+      const events = c.events
+        .map((e) => `<button type="button" class="ac-ev" data-date="${escapeHtml(e.date)}"><b>${e.dday === 0 ? "D-DAY" : `D-${e.dday}`}</b> ${escapeHtml(e.when)} ${escapeHtml(e.label)}</button>`)
+        .join("");
+      const news = c.news
+        .map((n) => `<a class="ac-news" href="${encodeURI(n.url)}" target="_blank" rel="noopener noreferrer">📰 ${escapeHtml(n.title)} <em>${n.coverage}곳</em></a>`)
+        .join("");
+      return `
+        <article class="ac-card">
+          <div class="ac-head">
+            <span class="ac-name">${c.icon} ${escapeHtml(c.name)}</span>
+            <span class="ac-level ${LEVEL_CLASS[c.level] ?? ""}">${escapeHtml(c.level)}</span>
+          </div>
+          <div class="ac-headline">${escapeHtml(c.headline)}</div>
+          <p class="ac-check"><span>확인할 것</span>${escapeHtml(c.check)}</p>
+          ${houseViewChip(c.key)}
+          ${market || events || news ? `<div class="ac-basis"><div class="ac-basis-label">근거</div>${market ? `<div class="ac-mkts">${market}</div>` : ""}${events}${news}</div>` : ""}
+        </article>`;
+    })
     .join("");
 }
 

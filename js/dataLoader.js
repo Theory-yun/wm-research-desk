@@ -22,12 +22,12 @@ export async function fetchJson(url) {
  * 하나라도 실패해도 나머지 탭은 정상 동작하도록 각각 독립적으로 처리합니다.
  */
 export async function loadAllData() {
-  const [morning, evening, newsArchive, insights, portfolioNotes, macroEvents, autoEvents, eventResults, archiveIndex] = await Promise.all([
+  const [morning, evening, newsArchive, insights, houseView, macroEvents, autoEvents, eventResults, archiveIndex] = await Promise.all([
     fetchJson(DATA_FILES.morning),
     fetchJson(DATA_FILES.evening),
     fetchJson(DATA_FILES.newsArchive),
     fetchJson(DATA_FILES.insights),
-    fetchJson(DATA_FILES.portfolioNotes),
+    fetchJson(DATA_FILES.houseView),
     fetchJson(DATA_FILES.macroEvents),
     fetchJson(DATA_FILES.autoEvents),
     fetchJson(DATA_FILES.eventResults),
@@ -38,7 +38,7 @@ export async function loadAllData() {
   STATE.eveningData = evening;
   STATE.newsArchive = newsArchive?.items ?? [];
   STATE.insights = insights?.items ?? [];
-  STATE.portfolioNotes = portfolioNotes?.items ?? [];
+  STATE.houseView = houseView ?? null;
   STATE.macro = macroEvents ?? null; // { coverage, kinds, items, ... }
   STATE.autoEvents = autoEvents?.items ?? [];
   STATE.eventResults = eventResults?.results ?? {};

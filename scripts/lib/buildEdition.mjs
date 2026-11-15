@@ -5,6 +5,7 @@ import { collectCoreMarket } from "./market.mjs";
 import { fetchGoogleNewsQuery, fetchRssFeed, mergeAndDedupe } from "./news.mjs";
 import { clusterStories, rankClusters, aiMergeAndClassify, aiClassifyTitles, keywordClassify } from "./newsIntel.mjs";
 import { generateBriefingSummary } from "./summarize.mjs";
+import { buildAssetChecks } from "./assetChecks.mjs";
 import { kstStamp, kstDateKey } from "./fetchUtil.mjs";
 import { FO_QUERY_RULES, NEWS_ARCHIVE_MAX_AGE_DAYS, NEWS_ARCHIVE_MAX_ITEMS, SUMMARY_CANDIDATE_NEWS_COUNT, TOP_NEWS_COUNT } from "./config.mjs";
 
@@ -143,6 +144,14 @@ export async function buildEdition({ edition, directFeeds, queryRules, pbNotesPa
   });
   console.log(`요약 생성 방식: ${summary.summarySource}${summary.summaryModel ? ` (${summary.summaryModel})` : ""}`);
 
+  // 5-1) 오늘의 자산군별 점검 포인트 (근거: 시세·필독 뉴스·다가오는 일정)
+  let assetChecks = null;
+  try {
+    assetChecks = await buildAssetChecks({ edition, market, stories, dataDir: DATA_DIR });
+  } catch (err) {
+    console.error("[자산군 점검] 생성 실패(생략):", err.message);
+  }
+
   // 6) 최종 JSON 작성 (latest + 날짜별 아카이브 둘 다 저장 → 추후 "지난 브리핑 다시보기" 기능 확장 가능)
   const now = new Date();
   const payload = {
@@ -159,6 +168,7 @@ export async function buildEdition({ edition, directFeeds, queryRules, pbNotesPa
     issues: summary.issues,
     talkingPoint: summary.talkingPoint,
     topNews: topNews.length ? topNews : previous?.topNews ?? [],
+    assetChecks: assetChecks ?? previous?.assetChecks ?? null,
   };
 
   writeJson(latestPath, payload);
