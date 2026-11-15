@@ -1,7 +1,7 @@
 {
   "edition": "EVENING",
-  "generatedAt": "2026-11-15T05:27:27.213Z",
-  "generatedAtKST": "2026.11.15 14:27",
+  "generatedAt": "2026-11-15T06:17:55.316Z",
+  "generatedAtKST": "2026.11.15 15:17",
   "sourceStatus": {
     "market": "ok",
     "news": "ok",
@@ -19,7 +19,7 @@
       "asOfLocal": "국내 정규장 기준",
       "asOfKst": "한국 정규장 15:30 마감",
       "stale": false,
-      "updatedAt": "2026-11-15T05:27:03.790Z"
+      "updatedAt": "2026-11-15T06:16:23.281Z"
     },
     {
       "key": "KOSDAQ",
@@ -31,7 +31,7 @@
       "asOfLocal": "국내 정규장 기준",
       "asOfKst": "한국 정규장 15:30 마감",
       "stale": false,
-      "updatedAt": "2026-11-15T05:27:03.790Z"
+      "updatedAt": "2026-11-15T06:16:23.281Z"
     },
     {
       "key": "SP500",
@@ -43,7 +43,7 @@
       "asOfLocal": "현지 11.13 16:00 마감",
       "asOfKst": "한국 11.14 06:00 마감",
       "stale": false,
-      "updatedAt": "2026-11-15T05:27:03.790Z"
+      "updatedAt": "2026-11-15T06:16:23.281Z"
     },
     {
       "key": "NASDAQ",
@@ -55,7 +55,7 @@
       "asOfLocal": "현지 11.13 16:00 마감",
       "asOfKst": "한국 11.14 06:00 마감",
       "stale": false,
-      "updatedAt": "2026-11-15T05:27:03.790Z"
+      "updatedAt": "2026-11-15T06:16:23.281Z"
     },
     {
       "key": "SOX",
@@ -67,7 +67,7 @@
       "asOfLocal": "현지 11.13 16:00 마감",
       "asOfKst": "한국 11.14 06:00 마감",
       "stale": false,
-      "updatedAt": "2026-11-15T05:27:03.790Z"
+      "updatedAt": "2026-11-15T06:16:23.281Z"
     },
     {
       "key": "USDKRW",
@@ -79,31 +79,52 @@
       "asOfLocal": "집계 기준 확인 중",
       "asOfKst": "집계 기준 확인 중",
       "stale": false,
-      "updatedAt": "2026-11-15T05:27:03.790Z"
+      "updatedAt": "2026-11-15T06:16:23.281Z"
     }
   ],
   "issues": [
     {
-      "cat": "증시 동향",
-      "tag": "코스피 5,290.53 (-0.98%) · 코스닥 699.66 (+0.45%)",
-      "title": "코스피 5,290선 하락 마감…시장 시선은 엔비디아 실적으로",
-      "desc": "오늘 코스피는 전일 대비 0.98% 하락한 5,290.53으로 마감한 반면 코스닥은 0.45% 상승한 699.66을 기록했습니다. 필라델피아 반도체 지수가 -3.43% 하락하는 등 글로벌 기술주 약세의 여파를 받았으며, 향후 국내 증시의 향방은 엔비디아 실적 발표가 관건이 될 전망입니다."
+      "cat": "증시/수급",
+      "tag": "코스피 5,290.53 (-0.98%) · 외국인 5,000억 이상 순매도",
+      "title": "코스피, 장중 5500선 돌파 후 외국인 순매도에 5290.53 마감",
+      "desc": "금일 코스피는 장중 5500선을 넘어서기도 했으나 외국인의 5000억원 넘는 순매도 여파로 0.98% 하락한 5290.53에 마감했습니다. 반면 코스닥은 0.45% 상승한 699.66으로 장을 마쳤습니다. 필라델피아 반도체 지수(-3.43%) 등 미 주요 지수 하락 속에서 외국인 수급 이탈이 코스피 하락을 이끌었습니다."
     },
     {
-      "cat": "자산승계·TAX",
-      "tag": "삼성전자 1,115만 주 증여",
-      "title": "이재용 회장, 홍라희 여사로부터 삼전 1,115만 주 증여받아",
-      "desc": "이재용 회장이 홍라희 여사로부터 삼성전자 주식 1,115만 주를 증여받으면서 이에 따른 증여세 규모에 시장의 관심이 쏠리고 있습니다. 대주주 가문의 지분 이전 및 관련 과세 이슈는 초고액자산가 손님의 자산승계 전략 시 주요 참고 사례가 됩니다."
+      "cat": "기업/외환",
+      "tag": "원/달러 1,336.20 (-1.94%) · PF 대출 8900억대 축소",
+      "title": "원화 강세 영향 및 롯데그룹 계열사 재무·실적 변동",
+      "desc": "원/달러 환율이 1,336.20원으로 1.94% 하락(원화 강세)한 가운데, 롯데칠성은 원화 강세 등에 힘입어 4분기 이익 컨센서스가 70% 상향되었습니다. 한편 롯데건설은 PF 대출을 8900억원대로 축소하며 재무 건전성 관리에 나섰습니다."
     },
     {
-      "cat": "부동산·채권",
-      "tag": "롯데건설 PF 대출 8,900억 원대 축소",
-      "title": "롯데건설, PF 대출 8,900억 원대로 축소하며 리스크 경감",
-      "desc": "롯데건설이 부동산 PF 대출 규모를 8,900억 원대로 대폭 축소하며 재무 건전성 확보에 나섰습니다. 건설업계 전반의 PF 리스크 관리와 유동성 확보 작업이 이어지는 가운데 시장의 우려를 완화시키는 요인으로 작용하고 있습니다."
+      "cat": "TAX/승계",
+      "tag": "주식 2.6조원 수증 · 세금 1.6조원",
+      "title": "이재용 회장, 1115만 주 수증…세금만 1.6조원 달해",
+      "desc": "이재용 회장이 어머니에게 1115만 주(약 2.6조원 상당)를 넘겨받으면서 부담해야 할 세금이 1.6조원에 달하는 것으로 나타났습니다. 초고액자산가 가문의 대규모 주식 승계에 따른 과세 규모가 주목받고 있습니다."
     }
   ],
-  "talkingPoint": "오늘 국내 증시는 코스피가 5,290.53(▼ -0.98%)으로 하락한 반면, 코스닥은 699.66(▲ +0.45%)으로 상승 마감하며 혼조세를 보였습니다. 미 필라델피아 반도체 지수가 -3.43% 하락하며 기술주 전반에 부담을 주었으나, 원/달러 환율이 1,336.20원(▼ -1.94%)으로 크게 떨어지며 원화 강세를 보였습니다. 시장 참여자들은 향후 엔비디아 실적 발표를 주요 분수령으로 보고 있으며, 이재용 회장의 삼성전자 주식 1,115만 주 증여 및 롯데건설의 PF 대출 8,900억 원대 축소 등 개별 기업 이슈에도 주목하고 있습니다.",
+  "talkingPoint": "오늘 코스피는 장중 5500선을 넘어섰으나 외국인의 5000억원 넘는 순매도로 0.98% 하락한 5290.53에 마감했으며, 코스닥은 0.45% 상승한 699.66을 기록했습니다. 원/달러 환율은 1,336.20원으로 1.94% 하락(원화 강세)하며 롯데칠성의 4분기 이익 컨센서스가 70% 상향되는 등 기업 실적 환경에 긍정적 요인으로 작용했습니다. 한편 롯데건설의 PF 대출 8900억원대 축소 발표와 이재용 회장이 2.6조원 규모 주식(1115만 주)을 수증받아 1.6조원의 세금이 발생하는 등 재무·승계 관련 이슈도 부각되었습니다. 외국인 수급 방향성과 환율 변동이 각 산업 및 기업 재무에 미치는 영향을 계속해서 점검해 드리겠습니다.",
   "topNews": [
+    {
+      "title": "코스피 장중 5500 넘었다 0.98%↓ 5290.53 마감…외국인 5000억원 넘게 순매도",
+      "press": "ISSUE ON (이슈온)",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1LaFdqUVBzSEZuR0xEVFcyWHNQQzkwc2p0RFVTZjIzYzFCVDhxMW01VTdaanVJQ2poLW5BcUlMWkl4eUhCYUozZGJ5MEUwZG9LRHNZSk5aS3lpUUZHeHJfUVM2UmFNaUV5ZjBR?oc=5",
+      "timestamp": 1794720039000,
+      "date": "2026.11.15 14:20",
+      "tags": [
+        "증시"
+      ],
+      "tagSource": "ai",
+      "coverage": 8,
+      "scope": "국내",
+      "outlets": [
+        "연합뉴스",
+        "ISSUE ON (이슈온)",
+        "한국경제",
+        "K뉴스통신",
+        "문화일보",
+        "매일경제"
+      ]
+    },
     {
       "title": "송파 풍납극동아파트, 최고 40층 598가구로 재건축",
       "press": "Chosunbiz",
@@ -124,50 +145,81 @@
       ]
     },
     {
-      "title": "홍라희에 '삼전 1115만주' 받은 이재용…증여세는 얼마?",
-      "press": "이데일리",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOWG5wSTBnT3E1SUZLaGU3X1RnVTBYbm1ZX3JLWFFEZUJ6MjU4b3pBazRFaEZkQll1UGVXRjNOZlFmMHU0eGYzX21NYzJMV3E0M3ZKX1ZLU1QzcXB2NEc2Wl9Td0lvUzBMSTFNLWdDNWc5VEl4bFpCY1lIeE8tX0xpTQ?oc=5",
-      "timestamp": 1794655720000,
-      "date": "2026.11.14 20:28",
+      "title": "재경부 \"세무사 수석 합격 효력정지 논의\"…\"회계사 1차 불합격\"(종합)",
+      "press": "연합뉴스",
+      "url": "https://www.yna.co.kr/view/AKR20261115021952002",
+      "timestamp": 1794719932000,
+      "date": "2026.11.15 14:18",
       "tags": [
         "TAX"
-      ],
-      "tagSource": "ai",
-      "coverage": 4,
-      "scope": "국내",
-      "outlets": [
-        "이데일리",
-        "문화일보",
-        "파이낸셜뉴스",
-        "한국경제"
-      ]
-    },
-    {
-      "title": "군인 ‘빚투’ 확산에 현역병 대부업 신용대출 막는다",
-      "press": "매일경제",
-      "url": "https://www.mk.co.kr/news/economy/12209129",
-      "timestamp": 1794711660000,
-      "date": "2026.11.15 12:01",
-      "tags": [
-        "채권·금리"
       ],
       "tagSource": "ai",
       "coverage": 2,
       "scope": "국내",
       "outlets": [
-        "매일경제",
+        "연합뉴스",
+        "파이낸셜뉴스"
+      ]
+    },
+    {
+      "title": "[현장] \"예쁜지보다 안전부터\"…참사 딛고 입주 앞둔 화정 아이파크",
+      "press": "연합뉴스",
+      "url": "https://www.yna.co.kr/view/AKR20261115028000054",
+      "timestamp": 1794718195000,
+      "date": "2026.11.15 13:49",
+      "tags": [
+        "부동산"
+      ],
+      "tagSource": "ai",
+      "coverage": 2,
+      "scope": "국내",
+      "outlets": [
+        "연합뉴스",
+        "매일경제"
+      ]
+    },
+    {
+      "title": "코인원 \"외주업체 해킹으로 이름·계좌번호 등 고객 정보 유출\"",
+      "press": "한국경제",
+      "url": "https://www.hankyung.com/article/2026111570777",
+      "timestamp": 1794709101000,
+      "date": "2026.11.15 11:18",
+      "tags": [
+        "대체투자"
+      ],
+      "tagSource": "ai",
+      "coverage": 2,
+      "scope": "국내",
+      "outlets": [
+        "한국경제",
         "연합뉴스"
       ]
     },
     {
-      "title": "노후자금 고민했는데…15조9000억 몰린 연금상품의 비밀",
-      "press": "한국경제",
-      "url": "https://www.hankyung.com/article/202611157096i",
-      "timestamp": 1794715492000,
-      "date": "2026.11.15 13:04",
+      "title": "무보, 슬로바키아 수출입은행과 맞손…韓 원전기업 유럽 진출 지원",
+      "press": "파이낸셜뉴스",
+      "url": "https://www.fnnews.com/news/202611151000103158",
+      "timestamp": 1794705041000,
+      "date": "2026.11.15 10:10",
       "tags": [
-        "대체투자",
-        "채권·금리"
+        "매크로"
+      ],
+      "tagSource": "ai",
+      "coverage": 2,
+      "scope": "국내",
+      "outlets": [
+        "파이낸셜뉴스",
+        "연합뉴스"
+      ]
+    },
+    {
+      "title": "캐나다 시민권자의 한국 땅 상속, 유언장대로 될까",
+      "press": "한국경제",
+      "url": "https://www.hankyung.com/article/202611107435i",
+      "timestamp": 1794722402000,
+      "date": "2026.11.15 15:00",
+      "tags": [
+        "TAX"
       ],
       "tagSource": "ai",
       "coverage": 1,
@@ -177,31 +229,13 @@
       ]
     },
     {
-      "title": "원화 강세에 '캪틴큐'까지…롯데칠성, 4분기 이익 컨센서스 70%↑",
-      "press": "한국경제",
-      "url": "https://www.hankyung.com/article/202611157097i",
-      "timestamp": 1794715287000,
-      "date": "2026.11.15 13:01",
-      "tags": [
-        "증시",
-        "외환"
-      ],
-      "tagSource": "ai",
-      "coverage": 1,
-      "scope": "국내",
-      "outlets": [
-        "한국경제"
-      ]
-    },
-    {
-      "title": "롯데건설, PF 대출 8900억대로 축소",
+      "title": "[단독]국내생산촉진세제 놓고...정부 통상리스크 점검",
       "press": "매일경제",
-      "url": "https://www.mk.co.kr/news/realestate/12209145",
-      "timestamp": 1794714864000,
-      "date": "2026.11.15 12:54",
+      "url": "https://www.mk.co.kr/news/economy/12209180",
+      "timestamp": 1794721226000,
+      "date": "2026.11.15 14:40",
       "tags": [
-        "부동산",
-        "채권·금리"
+        "매크로"
       ],
       "tagSource": "ai",
       "coverage": 1,
@@ -209,41 +243,161 @@
       "outlets": [
         "매일경제"
       ]
-    },
-    {
-      "title": "한국 '고해상도 신축성 디스플레이' 특허출원 세계 1위",
-      "press": "연합뉴스",
-      "url": "https://www.yna.co.kr/view/AKR20261113129900063",
-      "timestamp": 1794711609000,
-      "date": "2026.11.15 12:00",
-      "tags": [
-        "증시"
-      ],
-      "tagSource": "ai",
-      "coverage": 1,
-      "scope": "국내",
-      "outlets": [
-        "연합뉴스"
-      ]
-    },
-    {
-      "title": "등락 후 상승한 코스피...\"엔비디아 실적이 관건\"",
-      "press": "YTN",
-      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFAzcXRxN2VnN2tMNkt0Zmh0MVlNMnlhTGtXS09GTlJoUWhBc3h2ZEV1a21PQnVXamtxU19PS1F4eGluc1l1TzFYUlNOMThiRFBNTy0tdFZmNlExV1JYakE?oc=5",
-      "timestamp": 1794716460000,
-      "date": "2026.11.15 13:21",
-      "tags": [
-        "증시"
-      ],
-      "tagSource": "ai",
-      "coverage": 4,
-      "scope": "해외",
-      "outlets": [
-        "YTN",
-        "브릿지경제",
-        "뉴스투데이",
-        "연합뉴스"
-      ]
     }
-  ]
+  ],
+  "assetChecks": {
+    "framework": "3:4:3",
+    "generatedAt": "2026-11-15T06:17:55.316Z",
+    "model": "gemini-3.5-flash",
+    "cards": [
+      {
+        "key": "safe",
+        "name": "안전자산",
+        "target": 30,
+        "icon": "🛡️",
+        "role": "예금·국채·우량채·달러·금 등 자산을 지키는 바구니",
+        "market": [
+          {
+            "name": "원/달러 환율",
+            "priceStr": "1,336.20",
+            "changePct": -1.94
+          }
+        ],
+        "events": [
+          {
+            "date": "2026-11-26",
+            "kind": "bok",
+            "dday": 11,
+            "label": "한국은행 금통위 (통화정책방향 결정회의)",
+            "when": "11/26(목)"
+          }
+        ],
+        "news": [
+          {
+            "title": "원화 강세에 '캪틴큐'까지…롯데칠성, 4분기 이익 컨센서스 70%↑",
+            "url": "https://www.hankyung.com/article/202611157097i",
+            "press": "한국경제",
+            "coverage": 1
+          },
+          {
+            "title": "“아들이 빚쟁이로 전역했습니다”…현역장병 대부업 신용대출 막는다",
+            "url": "https://www.mk.co.kr/news/economy/12209129",
+            "press": "매일경제",
+            "coverage": 1
+          }
+        ],
+        "level": "변동 큼",
+        "headline": "환율 1336.20원 하락 및 D-11 한은 금통위",
+        "insight": "원/달러 환율이 1,336.20원으로 1.94% 하락한 가운데 11월 26일 한국은행 금통위 일정이 다가오고 있습니다. 환율 변동과 통화정책 일정이 달러 및 채권 등 안전자산 평가액에 영향을 주고 있습니다.",
+        "check": "원화 강세 흐름과 금통위 일정을 앞두고 포트폴리오 내 달러 자산 및 채권의 평가액 변동 상황을 점검할 필요가 있습니다.",
+        "textBy": "ai"
+      },
+      {
+        "key": "core",
+        "name": "시장 추종",
+        "target": 40,
+        "icon": "📊",
+        "role": "국내·해외 지수 ETF·분산 펀드로 시장 수익을 따라가는 바구니",
+        "market": [
+          {
+            "name": "코스피",
+            "priceStr": "5,290.53",
+            "changePct": -0.98
+          },
+          {
+            "name": "코스닥",
+            "priceStr": "699.66",
+            "changePct": 0.45
+          },
+          {
+            "name": "S&P 500",
+            "priceStr": "7,561.67",
+            "changePct": -0.4
+          },
+          {
+            "name": "나스닥",
+            "priceStr": "25,136.27",
+            "changePct": -0.91
+          }
+        ],
+        "events": [
+          {
+            "date": "2026-11-20",
+            "kind": "us_opex",
+            "dday": 5,
+            "label": "미국 월물 옵션 만기일",
+            "when": "11/20(금)"
+          }
+        ],
+        "news": [
+          {
+            "title": "코스피 장중 5500 넘었다 0.98%↓ 5290.53 마감…외국인 5000억원 넘게 순매도",
+            "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1LaFdqUVBzSEZuR0xEVFcyWHNQQzkwc2p0RFVTZjIzYzFCVDhxMW01VTdaanVJQ2poLW5BcUlMWkl4eUhCYUozZGJ5MEUwZG9LRHNZSk5aS3lpUUZHeHJfUVM2UmFNaUV5ZjBR?oc=5",
+            "press": "ISSUE ON (이슈온)",
+            "coverage": 8
+          },
+          {
+            "title": "무보, 슬로바키아 수출입은행과 맞손…韓 원전기업 유럽 진출 지원",
+            "url": "https://www.fnnews.com/news/202611151000103158",
+            "press": "파이낸셜뉴스",
+            "coverage": 2
+          }
+        ],
+        "level": "평이",
+        "headline": "미국 월물 옵션 만기일 D-5",
+        "insight": "주요 지수 흐름과 만기·지수 변경 일정을 확인하세요.",
+        "check": "지수형 상품의 국가·업종 분산 상태와 3:4:3 기준 비중 이탈 여부를 확인하세요.",
+        "textBy": "rule"
+      },
+      {
+        "key": "satellite",
+        "name": "초과 수익",
+        "target": 30,
+        "icon": "🚀",
+        "role": "개별 종목·테마·원자재·대체투자로 추가 수익을 노리는 바구니",
+        "market": [
+          {
+            "name": "필라델피아 반도체",
+            "priceStr": "10,146.32",
+            "changePct": -3.43
+          }
+        ],
+        "events": [],
+        "news": [
+          {
+            "title": "코인원 \"외주업체 해킹으로 이름·계좌번호 등 고객 정보 유출\"",
+            "url": "https://www.hankyung.com/article/2026111570777",
+            "press": "한국경제",
+            "coverage": 2
+          },
+          {
+            "title": "중기부, '모두의 창업' 정보유출 업체 선정 취소 등 제재 검토",
+            "url": "https://www.yna.co.kr/view/AKR20261115029100030",
+            "press": "연합뉴스",
+            "coverage": 1
+          }
+        ],
+        "level": "변동 큼",
+        "headline": "필라델피아 반도체 3.43% 하락 및 해킹 이슈",
+        "insight": "필라델피아 반도체 지수가 10,146.32로 3.43% 하락하고 코인원 고객 정보 유출 등 관련 악재가 발생했습니다. 반도체 테마 및 가상자산/대체투자 관련 포지션의 변동성이 확대되는 상황입니다.",
+        "check": "반도체 지수 급락과 코인원 정보 유출 이슈가 초과 수익 자산군 내 관련 종목 및 대체투자 자산에 미친 영향을 확인할 필요가 있습니다.",
+        "textBy": "ai"
+      }
+    ],
+    "rebalance": "오늘 안전자산·초과 수익 바구니의 시장 변동이 커서, 손님 포트폴리오가 3:4:3 기준 비중에서 벗어났을 수 있습니다. 허용 범위 이탈 여부를 점검하세요.",
+    "taxNews": [
+      {
+        "title": "송파 풍납극동아파트, 최고 40층 598가구로 재건축",
+        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPeWtkVHdiN1duMEw3empJNzJMcmExYVMxdE9zRU15LVJmLXZUVzN0cTE4c09pVV80TDhDdDFSYnZkamxtUFVkNUx2MzhUTlNoTlhSRlZ2LUg4cWJOU3NvOE9EQ2NRYlpDVWlRV1BJenQ2dGE3dWRfZ015RWJscU1CZUpneVZZLUN2azRDTWR4eVNLSjc0cU5hc9IBrAFBVV95cUxNUWVtUmlwRnEyeUdnU1VJcFpBUDF3NlhyMDJKZ2N0WmxNVThHVmJibVhiV2kySjFVak0wVTFlazZhU2FDOXEySUp5N0RYQmE4blFRUFAzZ3VVeU5JMXNWX1pEWkgwNjUzWUJwWU1hWVhZcEw4SVJYOVIwUC10blE5dllEX01JVDJLNUV1WW02VlItTTNYV3N5Y1I3TzJlbkYwU3FqYlI5dW9Jbi1U?oc=5",
+        "press": "Chosunbiz",
+        "coverage": 4
+      },
+      {
+        "title": "재경부 \"세무사 수석 합격 효력정지 논의\"…\"회계사 1차 불합격\"(종합)",
+        "url": "https://www.yna.co.kr/view/AKR20261115021952002",
+        "press": "연합뉴스",
+        "coverage": 2
+      }
+    ]
+  }
 }
