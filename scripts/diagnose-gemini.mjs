@@ -48,7 +48,7 @@ async function main() {
   console.log(`길이: ${RAW_KEY.length}자 (공백 제거 후 ${key.length}자)`);
   console.log(`앞뒤 공백/줄바꿈 포함: ${RAW_KEY !== key ? "⚠️ 예 — 붙여넣을 때 공백이 같이 들어갔습니다" : "아니오"}`);
   console.log(`따옴표 포함: ${/["']/.test(key) ? "⚠️ 예 — 따옴표 없이 키만 넣어야 합니다" : "아니오"}`);
-  console.log(`'AIza'로 시작(Google AI Studio 표준 키 형식): ${key.startsWith("AIza") ? "예" : "⚠️ 아니오 — 다른 종류의 키일 수 있습니다"}`);
+  console.log(`키 접두어 형식: ${key.startsWith("AIza") ? "AIza(기존형)" : "신규 형식(아래 2번 결과로 유효성 판단)"}`);
 
   line("2. 모델 목록 조회 (키 유효성)");
   const list = await call(`${BASE}/models?pageSize=200`, { headers: { "x-goog-api-key": key } }, 20000);
@@ -67,29 +67,43 @@ async function main() {
 
   line("3. 모델별 테스트 호출 (짧은 프롬프트)");
   const candidates = [...new Set([
-    process.env.GEMINI_MODEL || "gemini-flash-latest",
-    "gemini-flash-latest",
+    process.env.GEMINI_MODEL || "gemini-flash-lite-latest",
     "gemini-flash-lite-latest",
-    "gemini-2.5-flash",
-    "gemini-2.5-flash-lite",
-    ...available.filter((n) => /flash/i.test(n) && !/image|tts|audio|live|embedding/i.test(n)).slice(0, 4),
-  ])];
+    "gemini-flash-latest",
+    "gemini-3.8-flash",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite",
+  ])].filter((m) => available.length === 0 || available.includes(m));
+
+  // 실제 브리핑과 비슷한 분량의 프롬프트(뉴스 헤드라인 15건 + 지표)로 소요시간을 측정합니다.
+  const headlines = Array.from({ length: 15 }, (_, i) => `- [언론사${i + 1}] 글로벌 증시와 금리, 환율 관련 테스트 헤드라인 ${i + 1}`).join("\n");
+  const realisticPrompt =
+    `[시장 지표]\n- 코스피: 5,290.53 (▼ -52.20, -0.98%)\n- S&P500: 7,561.67 (-0.4%)\n\n[뉴스 헤드라인]\n${headlines}\n\n` +
+    `아래 JSON 스키마로만 답하세요: {"issues":[{"tag":"","title":"","body":""}],"talkingPoint":""} — issues는 3개, 각 body 2문장.`;
 
   for (const model of candidates) {
     const body = {
-      contents: [{ role: "user", parts: [{ text: '다음 JSON만 출력: {"ok":true}' }] }],
-      generationConfig: { responseMimeType: "application/json", maxOutputTokens: 256 },
+      contents: [{ role: "user", parts: [{ text: realisticPrompt }] }],
+      generationConfig: { responseMimeType: "application/json", maxOutputTokens: 4096 },
     };
     const r = await call(
       `${BASE}/models/${model}:generateContent`,
       { method: "POST", headers: { "x-goog-api-key": key, "content-type": "application/json" }, body: JSON.stringify(body) },
-      60000
+      45000
     );
     let detail = "";
     if (r.status === 200) {
       const j = JSON.parse(r.text);
       const out = j?.candidates?.[0]?.content?.parts?.map((p) => p.text).join("") ?? "";
-      detail = `응답="${out.slice(0, 60)}" finishReason=${j?.candidates?.[0]?.finishReason} 모델버전=${j?.modelVersion ?? "-"}`;
+      let schemaOk = false;
+      try {
+        const parsed = JSON.parse(out);
+        schemaOk = Array.isArray(parsed.issues) && parsed.issues.length > 0 && !!parsed.talkingPoint;
+      } catch {
+        /* noop */
+      }
+      detail = `스키마 ${schemaOk ? "✅" : "❌"} · finishReason=${j?.candidates?.[0]?.finishReason} · 실제모델=${j?.modelVersion ?? "-"} · 출력 ${out.length}자`;
     } else {
       detail = googleErrorMessage(r.text);
     }
