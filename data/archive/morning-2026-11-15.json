@@ -1,0 +1,212 @@
+{
+  "edition": "MORNING",
+  "generatedAt": "2026-11-15T04:14:55.713Z",
+  "generatedAtKST": "2026.11.15 13:14",
+  "sourceStatus": {
+    "market": "ok",
+    "news": "ok",
+    "summary": "ai-gemini",
+    "summaryModel": "gemini-3.5-flash"
+  },
+  "market": [
+    {
+      "key": "KOSPI",
+      "name": "코스피",
+      "group": "domestic",
+      "priceStr": "5,290.53",
+      "diffStr": "▼ -52.20",
+      "changePct": -0.98,
+      "asOfLocal": "국내 정규장 기준",
+      "asOfKst": "한국 정규장 15:30 마감",
+      "stale": false,
+      "updatedAt": "2026-11-15T04:14:39.539Z"
+    },
+    {
+      "key": "KOSDAQ",
+      "name": "코스닥",
+      "group": "domestic",
+      "priceStr": "699.66",
+      "diffStr": "▲ +3.13",
+      "changePct": 0.45,
+      "asOfLocal": "국내 정규장 기준",
+      "asOfKst": "한국 정규장 15:30 마감",
+      "stale": false,
+      "updatedAt": "2026-11-15T04:14:39.539Z"
+    },
+    {
+      "key": "SP500",
+      "name": "S&P 500",
+      "group": "global",
+      "priceStr": "7,561.67",
+      "diffStr": "▼ -30.73",
+      "changePct": -0.4,
+      "asOfLocal": "현지 11.13 16:00 마감",
+      "asOfKst": "한국 11.14 06:00 마감",
+      "stale": false,
+      "updatedAt": "2026-11-15T04:14:39.539Z"
+    },
+    {
+      "key": "NASDAQ",
+      "name": "나스닥",
+      "group": "global",
+      "priceStr": "25,136.27",
+      "diffStr": "▼ -229.82",
+      "changePct": -0.91,
+      "asOfLocal": "현지 11.13 16:00 마감",
+      "asOfKst": "한국 11.14 06:00 마감",
+      "stale": false,
+      "updatedAt": "2026-11-15T04:14:39.539Z"
+    },
+    {
+      "key": "SOX",
+      "name": "필라델피아 반도체",
+      "group": "global",
+      "priceStr": "10,146.32",
+      "diffStr": "▼ -360.35",
+      "changePct": -3.43,
+      "asOfLocal": "현지 11.13 16:00 마감",
+      "asOfKst": "한국 11.14 06:00 마감",
+      "stale": false,
+      "updatedAt": "2026-11-15T04:14:39.539Z"
+    },
+    {
+      "key": "USDKRW",
+      "name": "원/달러 환율",
+      "group": "fx",
+      "priceStr": "1,336.20",
+      "diffStr": "▼ -26.50",
+      "changePct": -1.94,
+      "asOfLocal": "집계 기준 확인 중",
+      "asOfKst": "집계 기준 확인 중",
+      "stale": false,
+      "updatedAt": "2026-11-15T04:14:39.539Z"
+    }
+  ],
+  "issues": [
+    {
+      "cat": "글로벌 증시·AI",
+      "tag": "S&P500 -0.4% · 나스닥 -0.91% · 필라델피아 반도체 -3.43%",
+      "title": "미 연준 AI 열풍 리스크 경고 속 반도체주 중심 뉴욕증시 약세",
+      "desc": "미 연준이 AI 데이터센터 관련 장부 밖 약정이 3조 달러에 달하고 자산 고평가 위험이 있다고 경고했습니다. 이에 따라 필라델피아 반도체 지수가 3.43% 하락하는 등 나스닥과 S&P 500 지수가 모두 내림세로 마감했습니다."
+    },
+    {
+      "cat": "매크로·대체투자",
+      "tag": "미 국채금리 5.15% · 금값 3,900달러 하회",
+      "title": "미 국채금리 5.15% 상승 및 달러 강세…국제 금시세 급락",
+      "desc": "미국 국채금리가 5.15%까지 상승하고 달러 강세가 이어지며 온스당 3,900달러를 하회하는 등 금값이 4개월 내 최대 주간 낙폭을 기록했습니다. 미 연준의 금리 전망 및 실질금리 방향성이 향후 시장 반등의 관건이 될 것으로 보입니다."
+    },
+    {
+      "cat": "국내 증시·외환",
+      "tag": "코스피 5,290.53(-0.98%) · 원/달러 1,336.20(-1.94%)",
+      "title": "코스피 1% 가까이 하락…수입물가는 1.8% 감소",
+      "desc": "국내 정규장에서 코스피는 5,290.53으로 하락 마감한 반면 코스닥은 699.66으로 강보합을 나타냈습니다. 원/달러 환율과 유가 하락 영향으로 10월 수입물가는 1.8% 감소했으나 반도체 강세에 힘입어 수출물가는 0.7% 상승했습니다."
+    }
+  ],
+  "talkingPoint": "간밤 뉴욕증시는 미 연준의 AI 데이터센터 부채 3조 달러 경고 및 자산 고평가 우려 속에 나스닥(-0.91%)과 필라델피아 반도체 지수(-3.43%)를 중심으로 하락했습니다. 미 국채금리가 5.15%로 오르고 달러 강세가 이어지면서 국제 금값은 온스당 3,900달러 선을 하회했습니다. 국내 정규장의 경우 코스피는 5,290.53(-0.98%)으로 하락 마감했으며 원/달러 환율은 1,336.20원(-1.94%)을 기록했습니다. 금일 국내 장은 미 연준의 AI 관련 자산 고평가 경고에 따른 기술주 변동성에 유의하며 보수적 관점에서 대응할 필요가 있습니다.",
+  "topNews": [
+    {
+      "title": "환율·유가 하락에 수입물가 1.8%↓... 반도체 강세에 수출물가 ‘반등’",
+      "press": "충남일보",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE85bzlWdDM1WXdCWWVTSHBXZDBpMnZPTnJWZDE0Mm96LVI4cEk3c3kxcmdaMjI3SXBsRkM3UjJFN1RJOTJ5eDJxTTIxM3JiTU9MRGg2elQtTmRHUi01dGFvUjY0V2xBTGdOUEg3Y1VHbE05ejQ?oc=5",
+      "timestamp": 1794701533000,
+      "date": "2026.11.15 09:12",
+      "tags": [
+        "외환",
+        "매크로",
+        "대체투자"
+      ],
+      "score": 13
+    },
+    {
+      "title": "[뉴욕 금·채권·달러] 미 국채금리 5.15% 상승·달러 강세…금값, 4개월내 최대 주간 낙폭",
+      "press": "블록미디어",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1MWGM4NEtjc2Y5cDJVNjlaX2IwVk42ODlFR3dyenNmYmt5ZmxzSHgteWFpUEpkSHcyUmgtcTBZb0ZkVWFTbjN6TktXNmQyNDgyRUYzQW9xZjk?oc=5",
+      "timestamp": 1794606669000,
+      "date": "2026.11.14 06:51",
+      "tags": [
+        "대체투자",
+        "매크로",
+        "외환"
+      ],
+      "score": 13
+    },
+    {
+      "title": "국제 금시세 전망, 3900달러 반등…미 국채금리 5%에 금값 불안",
+      "press": "톱스타뉴스",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE54Y1dCNWxPNEdXNzhIZnluYjNrZkR6cExSeUVIdmVzWnZNUUpwOUFCZU9LS21mYThvaE4tb09vTExWbTV5UllhcXhaTHJ3SWI1SnhISTF3dl9EaUNGT0gxUXBVZzJxUXdfWE9rZUZ0UzBsUQ?oc=5",
+      "timestamp": 1794573554000,
+      "date": "2026.11.13 21:39",
+      "tags": [
+        "대체투자",
+        "매크로",
+        "외환"
+      ],
+      "score": 13
+    },
+    {
+      "title": "유가 뛰고 달러 강세까지…원·달러 환율 6원 상승, 코스피 1% 가까이 하락",
+      "press": "베타뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9GYmNWRnZySVZWVXU0NUdGbmNXR3ZOcVZqYllxZ0NJa0NuUUJpbGdnOC1BUnBwdHNnMFJLcldod0N0UF85RU1VVHcyR1ZTNGNBYk11cDllUUdpeHFMTk5EZ2d5TVk?oc=5",
+      "timestamp": 1794558415000,
+      "date": "2026.11.13 17:26",
+      "tags": [
+        "외환",
+        "매크로",
+        "대체투자"
+      ],
+      "score": 13
+    },
+    {
+      "title": "코스피, 젠슨 황 사임·유가 급등에 1% 하락…코스닥은 강보합 마감",
+      "press": "청년일보",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5aNUJIZm5NdlBUUFIwR3IyNHNIZ0xFZDFWOW9CSGhOa19UdndwUzJjSmFWZ1Bzb21wbDlNNTltMVYxa0xMWHFDUnlhMzB4WnYwdmJTVG1scVEzeUJBXzlCYnNjRHhkNkU?oc=5",
+      "timestamp": 1794556062000,
+      "date": "2026.11.13 16:47",
+      "tags": [
+        "외환",
+        "매크로",
+        "대체투자"
+      ],
+      "score": 13
+    },
+    {
+      "title": "[환율마감] 원·달러 5거래일만 반등, 유가·미국채 금리 급등",
+      "press": "이투데이",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFB2WDVXRnFiTWZHRTNFLWRMNk9vTl9JU2V3aGVEeWFBdmFNR0J6SjlMYVhRbmJDa0xPckF6UDV3VUZLRnRzMXoxc0VEdEJ6Q3hxLVUxOUZtV2pYSXNKY19VdnpZcll0anV6dTRfcThfWDdla3F5?oc=5",
+      "timestamp": 1794553800000,
+      "date": "2026.11.13 16:10",
+      "tags": [
+        "외환",
+        "매크로",
+        "대체투자"
+      ],
+      "score": 13
+    },
+    {
+      "title": "환율·유가 하락에 10월 수입물가 1.8%↓…수출물가는 0.7%↑",
+      "press": "동양뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFAtRnFVN2Iza3J2azhnd1VHd3BYMWp5V2F4Z3JGWm9FWG91RGZ1STcyZ3RiQkl4X1NyVmlQeGRkdnFjR3hnc3Y2eVF4eHFmX2ZwVGUxdTU5Z3Q2dmtOUEp0SGg3ZGNTdDMxWWc?oc=5",
+      "timestamp": 1794551604000,
+      "date": "2026.11.13 15:33",
+      "tags": [
+        "외환",
+        "매크로",
+        "대체투자"
+      ],
+      "score": 13
+    },
+    {
+      "title": "[국제/금융] 세계 금값 온스당 3,900달러 하회… 달러 강세·Fed 금리 인상 기대에 107달러 급락",
+      "press": "굿모닝베트남미디어",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1Qa0hUVkV2UnBjYmxOSlVTYXRMZU5LMDBsLWIwTTVTOFRyeUJvMHkxQWZDRXFpcjdsWjB3OHB3elkyZk1xR1hqcTdDSDN6MnFpSW84MkdMTDlSUno5SktiaTl2ZHdwNHRQcDhScTVFZFY?oc=5",
+      "timestamp": 1794546737000,
+      "date": "2026.11.13 14:12",
+      "tags": [
+        "대체투자",
+        "매크로",
+        "외환"
+      ],
+      "score": 13
+    }
+  ]
+}
