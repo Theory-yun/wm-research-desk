@@ -1,5 +1,6 @@
 import { STATE, currentEditionData, escapeHtml, StorageUtil } from "./state.js";
-import { renderMacroCalendar } from "./macroCalendar.js";
+import { renderMacroCalendar, renderUpcomingStrip } from "./macroCalendar.js";
+import { renderArchivePicker } from "./archive.js";
 import { TAG_CLASS_MAP, LOCAL_STORAGE_KEYS, TOP5_DEFAULT_COUNT } from "./config.js";
 import { isKrxOpenNow } from "./util.js";
 
@@ -208,8 +209,16 @@ export function renderDashboard() {
   $("btn-ed-morning")?.classList.toggle("active", STATE.edition === "MORNING");
   $("btn-ed-evening")?.classList.toggle("active", STATE.edition === "EVENING");
 
+  // 에디션 데이터와 무관한 영역은 항상 그립니다.
+  renderArchivePicker();
+  renderUpcomingStrip();
+  renderPortfolio();
+  renderMacroCalendar();
+
   if (!data) {
-    $("edition-main-heading").textContent = "데이터를 불러오지 못했습니다.";
+    $("edition-main-heading").textContent = STATE.archiveView
+      ? `이 날짜에는 ${STATE.edition === "MORNING" ? "모닝" : "이브닝"} 브리핑이 없습니다. 다른 에디션을 선택해 주세요.`
+      : "데이터를 불러오지 못했습니다.";
     return;
   }
 
@@ -217,8 +226,6 @@ export function renderDashboard() {
   renderTiles(data);
   renderIssues(data);
   renderTop5News();
-  renderPortfolio();
-  renderMacroCalendar();
   renderTicker();
 }
 

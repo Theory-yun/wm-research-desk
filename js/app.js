@@ -6,6 +6,7 @@ import { renderInsights, initInsightEvents } from "./insight.js";
 import { renderBoard, initBoardEvents } from "./board.js";
 import { copyKakaoBriefing, downloadPdf } from "./pdfExport.js";
 import { defaultEditionByTime, formatKstDate } from "./util.js";
+import { selectArchiveDate } from "./archive.js";
 
 const $ = (id) => document.getElementById(id);
 
@@ -39,6 +40,15 @@ function wireUpStaticEvents() {
   $("btn-copy-kakao").addEventListener("click", copyKakaoBriefing);
   $("btn-pdf-download").addEventListener("click", downloadPdf);
   $("btn-goto-newsroom").addEventListener("click", () => switchTab("tab-newsroom"));
+
+  // 지난 브리핑 다시보기
+  $("archive-date-select").addEventListener("change", async (e) => {
+    if (await selectArchiveDate(e.target.value)) renderDashboard();
+  });
+  $("btn-archive-latest").addEventListener("click", async () => {
+    await selectArchiveDate("");
+    renderDashboard();
+  });
 
   $("btn-reload-data").addEventListener("click", async () => {
     const btn = $("btn-reload-data");

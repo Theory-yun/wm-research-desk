@@ -7,7 +7,13 @@ export const DATA_FILES = {
   insights: "data/insights.json",
   portfolioNotes: "data/portfolio-notes.json",
   macroEvents: "data/macro-events.json",
+  autoEvents: "data/auto-events.json",
+  eventResults: "data/event-results.json",
+  archiveIndex: "data/archive/index.json",
 };
+
+/** 지난 브리핑 파일 경로 (예: data/archive/morning-2026-11-14.json) */
+export const archiveFile = (edition, date) => `data/archive/${edition.toLowerCase()}-${date}.json`;
 
 export const TAG_CLASS_MAP = {
   "매크로": "tag-macro",

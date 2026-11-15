@@ -1,7 +1,7 @@
 import { DATA_FILES } from "./config.js";
 import { STATE } from "./state.js";
 
-async function fetchJson(url) {
+export async function fetchJson(url) {
   try {
     // 캐시 버스팅: GitHub Pages의 CDN 캐시 때문에 새로 커밋된 데이터가 바로 안 보이는 것을 방지
     const res = await fetch(`${url}?t=${Date.now()}`, { cache: "no-store" });
@@ -22,13 +22,16 @@ async function fetchJson(url) {
  * 하나라도 실패해도 나머지 탭은 정상 동작하도록 각각 독립적으로 처리합니다.
  */
 export async function loadAllData() {
-  const [morning, evening, newsArchive, insights, portfolioNotes, macroEvents] = await Promise.all([
+  const [morning, evening, newsArchive, insights, portfolioNotes, macroEvents, autoEvents, eventResults, archiveIndex] = await Promise.all([
     fetchJson(DATA_FILES.morning),
     fetchJson(DATA_FILES.evening),
     fetchJson(DATA_FILES.newsArchive),
     fetchJson(DATA_FILES.insights),
     fetchJson(DATA_FILES.portfolioNotes),
     fetchJson(DATA_FILES.macroEvents),
+    fetchJson(DATA_FILES.autoEvents),
+    fetchJson(DATA_FILES.eventResults),
+    fetchJson(DATA_FILES.archiveIndex),
   ]);
 
   STATE.morningData = morning;
@@ -37,4 +40,8 @@ export async function loadAllData() {
   STATE.insights = insights?.items ?? [];
   STATE.portfolioNotes = portfolioNotes?.items ?? [];
   STATE.macro = macroEvents ?? null; // { coverage, kinds, items, ... }
+  STATE.autoEvents = autoEvents?.items ?? [];
+  STATE.eventResults = eventResults?.results ?? {};
+  STATE.archiveIndex = archiveIndex?.dates ?? [];
+  STATE.insightCategories = insights?.categories ?? [];
 }

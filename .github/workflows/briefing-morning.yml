@@ -35,13 +35,6 @@ jobs:
           ANTHROPIC_MODEL: ${{ vars.ANTHROPIC_MODEL }}
         run: node scripts/build-morning.mjs
 
-      - name: F/O 리포트 아카이브 보강 (주 1회 또는 수동 실행 시)
-        if: github.event.schedule == '30 21 * * 0' || github.event_name == 'workflow_dispatch'
-        env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-        run: node scripts/build-insights.mjs
 
       - name: 변경사항 커밋 & 푸시 (충돌 시 리베이스 재시도)
         run: |

@@ -26,6 +26,24 @@ function writeJson(filePath, obj) {
 }
 
 /**
+ * data/archive/ 의 날짜별 브리핑 파일 목록을 index.json으로 정리합니다.
+ * (정적 사이트는 폴더 목록을 직접 읽을 수 없으므로, "지난 브리핑 다시보기" 화면이 이 목록을 사용합니다.)
+ */
+export function writeArchiveIndex() {
+  const byDate = {};
+  for (const f of fs.readdirSync(ARCHIVE_DIR)) {
+    const m = f.match(/^(morning|evening)-(\d{4}-\d{2}-\d{2})\.json$/);
+    if (!m) continue;
+    (byDate[m[2]] = byDate[m[2]] || []).push(m[1]);
+  }
+  const dates = Object.keys(byDate)
+    .sort()
+    .reverse()
+    .map((date) => ({ date, editions: byDate[date].sort().reverse() })); // morning 먼저
+  writeJson(path.join(ARCHIVE_DIR, "index.json"), { updatedAt: new Date().toISOString(), dates });
+}
+
+/**
  * 모닝/이브닝 에디션 공통 빌드 로직.
  * build-morning.mjs / build-evening.mjs는 이 함수에 "에디션별 설정"만 넘겨서 호출합니다.
  * → 로직은 한 곳(여기)에만 있으므로, 향후 수정할 때 두 곳을 중복 수정할 필요가 없습니다.
@@ -104,6 +122,7 @@ export async function buildEdition({ edition, directFeeds, queryRules, pbNotesPa
 
   writeJson(latestPath, payload);
   writeJson(path.join(ARCHIVE_DIR, `${edition.toLowerCase()}-${kstDateKey(now)}.json`), payload);
+  writeArchiveIndex();
 
   console.log(`=== [${edition}] 완료 → ${latestPath} ===\n`);
   return payload;

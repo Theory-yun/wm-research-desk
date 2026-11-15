@@ -1,0 +1,31 @@
+{
+  "note": "캘린더 일정의 결과. 대부분 scripts/collect-calendar.mjs가 자동으로 채우며, method가 manual인 항목은 사람이 직접 입력한 것입니다. status가 final이면 다시 덮어쓰지 않습니다.",
+  "updatedAt": "2026-11-15T04:46:26.886Z",
+  "results": {
+    "2026-10-22|bok": {
+      "status": "final",
+      "headline": "기준금리 동결 — 연 3.00%",
+      "details": [
+        "금통위원 7명 전원 동결 찬성",
+        "7·8월 연속 인상 이후 첫 동결"
+      ],
+      "method": "manual",
+      "sourceName": "KDI 경제정보센터 — 한국은행 통화정책방향(2026.10.22)",
+      "sourceUrl": "https://eiec.kdi.re.kr/policy/materialView.do?num=288401",
+      "collectedAt": "2026-11-15T05:00:00Z"
+    },
+    "2026-11-03|midterm": {
+      "status": "final",
+      "headline": "AP 집계(한국시간 11/15 13:40 기준): 하원 민주당 256석·공화당 169석 당선",
+      "details": [
+        "상원: 민주당 총 55석·공화당 총 44석 (AP 집계, 비개선 의석 포함, 11/15 13:39 기준)",
+        "AP 집계상 하원 10석·상원 1석은 아직 어느 정당에도 당선으로 집계되지 않았습니다.",
+        "집계 시점 이후 수치가 바뀔 수 있습니다."
+      ],
+      "method": "manual",
+      "sourceName": "The Associated Press (AP) 선거 결과",
+      "sourceUrl": "https://apnews.com",
+      "collectedAt": "2026-11-15T04:40:00Z"
+    }
+  }
+}

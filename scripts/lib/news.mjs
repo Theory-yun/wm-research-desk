@@ -110,8 +110,9 @@ export async function fetchRssFeed(url, cat, press) {
   return parseRssXml(xml, cat, press);
 }
 
-export async function fetchGoogleNewsQuery(query, cat) {
-  const url = `https://news.google.com/rss/search?q=${encodeURIComponent(query)}&hl=ko&gl=KR&ceid=KR:ko`;
+export async function fetchGoogleNewsQuery(query, cat, { lang = "ko" } = {}) {
+  const loc = lang === "en" ? "hl=en-US&gl=US&ceid=US:en" : "hl=ko&gl=KR&ceid=KR:ko";
+  const url = `https://news.google.com/rss/search?q=${encodeURIComponent(query)}&${loc}`;
   return fetchRssFeed(url, cat);
 }
 

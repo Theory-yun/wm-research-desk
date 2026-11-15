@@ -471,3 +471,50 @@ body.modal-open { overflow: hidden; }
 
 .no-print {}
 @media print { .no-print { display: none !important; } }
+
+/* =========================================================================
+   다가오는 빅이벤트 띠 / 지난 브리핑 / 캘린더 결과 / F/O Insight 보강
+   ========================================================================= */
+.archive-picker { display: inline-flex; align-items: center; gap: 4px; margin-left: 6px; font-size: 13px; }
+.archive-picker select { border: 1px solid var(--border-color); border-radius: 6px; padding: 5px 8px; font-size: 12.5px; font-family: inherit; background: #fff; color: var(--text-main); max-width: 210px; }
+.archive-banner { display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap; background: #fff7ed; border: 1px solid #fdba74; color: #9a3412; border-radius: 10px; padding: 10px 14px; margin-bottom: 12px; font-size: 13px; font-weight: 700; }
+.archive-banner[hidden] { display: none; }
+.archive-banner button { border: none; background: #9a3412; color: #fff; font-weight: 700; font-size: 12px; padding: 6px 10px; border-radius: 6px; cursor: pointer; font-family: inherit; }
+
+.upcoming-strip { display: flex; align-items: center; gap: 10px; background: #fff; border: 1px solid var(--border-color); border-left: 4px solid var(--hana-gold); border-radius: 10px; padding: 8px 12px; margin-bottom: 14px; overflow: hidden; }
+.up-title { font-size: 12.5px; font-weight: 800; color: var(--hana-green); white-space: nowrap; }
+.up-empty { font-size: 12.5px; color: #94a3b8; }
+.up-items { display: flex; gap: 6px; overflow-x: auto; scrollbar-width: thin; padding-bottom: 2px; }
+.up-item { display: inline-flex; align-items: center; gap: 5px; border: 1px solid var(--border-color); background: var(--bg-subtle); border-radius: 999px; padding: 4px 10px 4px 4px; cursor: pointer; white-space: nowrap; font-family: inherit; font-size: 12px; }
+.up-item:hover { border-color: var(--hana-gold); background: #fff; }
+.up-item.is-today { border-color: var(--hana-gold); background: var(--hana-gold-light); }
+.up-dday { background: var(--hana-green); color: #fff; font-weight: 800; font-size: 10.5px; border-radius: 999px; padding: 2px 7px; }
+.up-item.is-today .up-dday { background: #b45309; }
+.up-date { font-weight: 700; color: var(--text-body); }
+@media (max-width: 640px) { .upcoming-strip { flex-direction: column; align-items: flex-start; } .up-items { max-width: 100%; } }
+
+.mc-legend-filters { display: inline-flex; flex-wrap: wrap; gap: 6px; }
+.mc-filter { border: none; cursor: pointer; font-family: inherit; font-size: 11px; padding: 3px 8px; }
+.mc-filter.is-off { opacity: .35; text-decoration: line-through; }
+.mc-pill.cat-derivatives { background: #fef3c7; color: #92400e; }
+.mc-pill.cat-earnings { background: #dcfce7; color: #166534; }
+.mc-done { font-style: normal; margin-left: 3px; color: #047857; font-weight: 900; }
+.mc-list-scroll { display: flex; flex-direction: column; gap: 8px; max-height: 520px; overflow-y: auto; padding-right: 2px; }
+.mc-card-result { display: block; font-weight: 600; font-size: 11.5px; color: #047857; margin-top: 2px; }
+
+.mc-result { margin-top: 10px; border: 1px solid #a7f3d0; background: #ecfdf5; border-radius: 8px; padding: 10px 12px; }
+.mc-result.is-pending { border-color: var(--border-color); background: var(--bg-subtle); color: #64748b; font-size: 12.5px; }
+.mc-result-label { font-size: 11px; font-weight: 800; color: #047857; letter-spacing: .02em; margin-bottom: 2px; }
+.mc-result.is-pending .mc-result-label { color: #64748b; }
+.mc-result-headline { font-weight: 800; color: #064e3b; font-size: 14px; }
+.mc-result ul { margin: 4px 0 0; padding-left: 18px; font-size: 12.5px; }
+.mc-result-meta { margin-top: 6px !important; font-size: 11px; color: #64748b; }
+.mc-result-meta a { color: var(--hana-green); font-weight: 700; }
+
+.ins-section td { background: var(--bg-subtle); font-weight: 800; color: var(--hana-green); font-size: 12.5px; padding: 8px 12px !important; }
+.ins-title { font-weight: 800; color: #0f172a; margin-bottom: 4px; font-size: 14px; }
+.ins-desc { font-size: 12.2px; color: #475569; line-height: 1.45; }
+.ins-meta { font-size: 11px; color: #94a3b8; margin-top: 4px; }
+.ins-badge { display: inline-block; font-size: 10.5px; font-weight: 800; border-radius: 4px; padding: 1px 6px; margin-right: 6px; vertical-align: 1px; }
+.ins-curated { background: var(--hana-gold-light); color: #92400e; border: 1px solid rgba(197,160,89,.4); }
+.ins-new { background: #fee2e2; color: #b91c1c; }

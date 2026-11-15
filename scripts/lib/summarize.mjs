@@ -1,16 +1,6 @@
 import { fetchWithRetry } from "./fetchUtil.mjs";
+import { geminiJson, extractJson } from "./gemini.mjs";
 
-// Gemini 모델 후보 — 위에서부터 순서대로 시도하고, 실패(503 수요 폭주·404 단종·타임아웃)하면 즉시 다음 모델로 넘어갑니다.
-// 2026-11-15 진단 결과(실제 브리핑 크기 프롬프트, 이 저장소의 키 기준):
-//   gemini-flash-latest      → 45~60초 무응답 (기존 실패 원인)
-//   gemini-3.8-flash         → 503 high demand
-//   gemini-3.5-flash         → ✅ 약 9초
-//   gemini-3.5-flash-lite    → ✅ 약 2초
-//   gemini-2.5-flash(-lite)  → 404 신규 사용자 제공 종료
-// 버전 고정 모델이 언젠가 단종돼도 마지막 "-latest" 별칭이 받쳐주도록 별칭을 끝에 둡니다.
-// 저장소 variable GEMINI_MODEL을 지정하면 그 모델을 맨 앞에서 먼저 시도합니다.
-const GEMINI_MODEL_CHAIN = ["gemini-3.5-flash", "gemini-3.5-flash-lite", "gemini-flash-lite-latest", "gemini-3.1-flash-lite"];
-const GEMINI_PER_MODEL_TIMEOUT_MS = 30000;
 const DEFAULT_CLAUDE_MODEL = "claude-sonnet-4-5-20250929"; // 운영 전 Anthropic 콘솔에서 최신 모델ID 확인 권장
 
 const SYSTEM_PROMPT =
@@ -35,21 +25,16 @@ export async function generateBriefingSummary({ edition, market, candidateNews, 
   const prompt = buildPrompt({ edition, market, candidateNews, pbNotes });
 
   if (process.env.GEMINI_API_KEY) {
-    const chain = [...new Set([process.env.GEMINI_MODEL, ...GEMINI_MODEL_CHAIN].filter(Boolean))];
-    for (const model of chain) {
-      try {
-        const parsed = await callGemini(prompt, model);
-        console.log(`[summarize] Gemini 요약 성공: ${model}`);
-        return {
-          issues: parsed.issues.slice(0, 3),
-          talkingPoint: String(parsed.talkingPoint),
-          summarySource: "ai-gemini",
-          summaryModel: model,
-        };
-      } catch (err) {
-        console.error(`[summarize] Gemini(${model}) 실패 → 다음 후보 시도: ${err.message}`);
-      }
+    const r = await geminiJson({ prompt, system: SYSTEM_PROMPT, validate: isValidSummary, label: "summarize" });
+    if (r) {
+      return {
+        issues: r.data.issues.slice(0, 3),
+        talkingPoint: String(r.data.talkingPoint),
+        summarySource: "ai-gemini",
+        summaryModel: r.model,
+      };
     }
+    console.error("[summarize] Gemini 후보 모델 모두 실패");
   }
 
   if (process.env.ANTHROPIC_API_KEY) {
@@ -65,42 +50,6 @@ export async function generateBriefingSummary({ edition, market, candidateNews, 
     console.warn("[summarize] GEMINI_API_KEY/ANTHROPIC_API_KEY가 모두 설정되지 않아 규칙 기반 폴백 요약을 사용합니다.");
   }
   return { ...fallbackSummary({ edition, market, candidateNews }), summarySource: "fallback" };
-}
-
-async function callGemini(prompt, model) {
-  const apiKey = process.env.GEMINI_API_KEY;
-
-  // maxOutputTokens를 넉넉하게 잡아둡니다: 최신 Gemini 모델은 기본적으로 내부 "thinking"을 하는데,
-  // 이 추론 토큰도 같은 토큰 예산을 나눠 쓰기 때문에 예산이 너무 작으면 실제 답변이 비어버릴 수 있습니다.
-  // (모델 세대마다 thinking 끄는 파라미터 이름이 달라 - 2.5는 thinkingBudget, 3.x는 thinkingLevel -
-  //  잘못 섞으면 400 에러가 나므로, thinking을 직접 끄는 대신 예산/타임아웃을 넉넉히 주는 방식으로 대응합니다.)
-  const body = {
-    contents: [{ role: "user", parts: [{ text: prompt }] }],
-    systemInstruction: { parts: [{ text: SYSTEM_PROMPT }] },
-    generationConfig: { responseMimeType: "application/json", maxOutputTokens: 8192 },
-  };
-
-  // 모델당 1회 재시도(3초 후)만 하고, 그래도 안 되면 다음 모델로 넘어갑니다.
-  // (한 모델에 오래 매달리기보다 다른 모델로 빨리 갈아타는 편이 성공률이 높다는 것이 진단 결과입니다.)
-  const res = await fetchWithRetry(`https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`, {
-    timeoutMs: GEMINI_PER_MODEL_TIMEOUT_MS,
-    retries: 1,
-    backoffMs: 3000,
-    noRetryStatuses: [400, 401, 403, 404], // 키·모델 문제는 재시도해도 같으므로 즉시 다음 모델로
-    headers: {
-      "x-goog-api-key": apiKey,
-      "content-type": "application/json",
-    },
-    method: "POST",
-    body: JSON.stringify(body),
-    responseType: "json",
-  });
-
-  if (!res) throw new Error("응답 없음(위 fetchWithRetry 로그 참고)");
-  const text = res?.candidates?.[0]?.content?.parts?.map((p) => p.text ?? "").join("");
-  const parsed = extractJson(text);
-  validateSchema(parsed);
-  return parsed;
 }
 
 async function callClaude(prompt) {
@@ -133,25 +82,12 @@ async function callClaude(prompt) {
   return parsed;
 }
 
-function validateSchema(parsed) {
-  if (!parsed?.issues || !Array.isArray(parsed.issues) || parsed.issues.length === 0 || !parsed.talkingPoint) {
-    throw new Error("AI 응답 스키마가 예상과 다릅니다.");
-  }
+function isValidSummary(parsed) {
+  return Array.isArray(parsed?.issues) && parsed.issues.length > 0 && !!parsed.talkingPoint;
 }
 
-function extractJson(text) {
-  if (!text) return null;
-  try {
-    return JSON.parse(text);
-  } catch {
-    const m = text.match(/\{[\s\S]*\}/);
-    if (!m) return null;
-    try {
-      return JSON.parse(m[0]);
-    } catch {
-      return null;
-    }
-  }
+function validateSchema(parsed) {
+  if (!isValidSummary(parsed)) throw new Error("AI 응답 스키마가 예상과 다릅니다.");
 }
 
 function buildPrompt({ edition, market, candidateNews, pbNotes }) {

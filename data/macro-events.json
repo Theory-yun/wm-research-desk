@@ -9,13 +9,16 @@
     "US": "미국",
     "KR": "한국",
     "EU": "유로존",
-    "JP": "일본"
+    "JP": "일본",
+    "GL": "글로벌"
   },
   "categories": {
     "rate": "금리 결정",
     "data": "경제 지표",
     "politics": "정치·선거",
-    "market": "증시 일정"
+    "market": "증시 일정",
+    "derivatives": "만기·지수변경",
+    "earnings": "기업 실적"
   },
   "kinds": {
     "fomc": {
@@ -149,6 +152,195 @@
         "name": "한국거래소(KRX)",
         "url": "https://www.krx.co.kr"
       }
+    },
+    "kr_expiry": {
+      "region": "KR",
+      "category": "derivatives",
+      "label": "옵션만기",
+      "name": "KOSPI200 옵션 만기일",
+      "about": "KOSPI200 옵션의 매월 최종거래일로, 매월 둘째 목요일입니다(휴장일이면 직전 거래일).",
+      "why": "만기 직전 차익거래·옵션 포지션 정리 물량이 장 마감 무렵 몰리면서 지수 변동성이 커질 수 있습니다.",
+      "pbCheck": [
+        "만기일 장 마감 무렵 대형주 중심의 프로그램 매매 변동성에 유의합니다.",
+        "단기 등락을 추세 전환으로 해석하지 않도록 손님께 미리 안내합니다."
+      ],
+      "source": {
+        "name": "한국거래소(KRX) 파생상품 시장",
+        "url": "https://www.krx.co.kr"
+      }
+    },
+    "kr_quad": {
+      "region": "KR",
+      "category": "derivatives",
+      "label": "동시만기",
+      "name": "KOSPI200 선물·옵션 동시만기일",
+      "about": "3·6·9·12월 둘째 목요일(휴장일이면 직전 거래일)에 지수 선물·옵션과 개별주식 선물·옵션이 함께 만기를 맞습니다.",
+      "why": "선물 롤오버와 차익거래 청산이 겹쳐 거래대금이 급증하고, 장 마감 동시호가에서 지수가 크게 흔들릴 수 있습니다. 6·12월은 KOSPI200 정기변경과도 맞물립니다.",
+      "pbCheck": [
+        "외국인 선물 롤오버 여부와 프로그램 매매 동향을 확인합니다.",
+        "6·12월은 다음 거래일 KOSPI200 구성종목 변경 적용 — 편입·편출 종목 보유 여부를 점검합니다."
+      ],
+      "source": {
+        "name": "한국거래소(KRX) 파생상품 시장",
+        "url": "https://www.krx.co.kr"
+      }
+    },
+    "us_opex": {
+      "region": "US",
+      "category": "derivatives",
+      "label": "옵션만기",
+      "name": "미국 월물 옵션 만기일",
+      "about": "미국 상장 주식·지수 월물 옵션이 매월 셋째 금요일(휴장일이면 직전 거래일)에 만기를 맞습니다.",
+      "why": "옵션 거래 규모가 커지면서 만기 전후 대형 기술주와 지수의 단기 변동성에 영향을 줍니다.",
+      "pbCheck": [
+        "만기 주간에는 단기 변동성을 과도하게 해석하지 않도록 안내합니다."
+      ],
+      "source": {
+        "name": "NYSE 거래일·휴장일",
+        "url": "https://www.nyse.com/markets/hours-calendars"
+      }
+    },
+    "us_quad": {
+      "region": "US",
+      "category": "derivatives",
+      "label": "쿼드위칭",
+      "name": "미국 쿼드러플 위칭 (분기 동시만기)",
+      "about": "3·6·9·12월 셋째 금요일(휴장일이면 직전 거래일)에 주가지수 선물·옵션과 개별주식 선물·옵션이 동시에 만기를 맞습니다.",
+      "why": "연중 거래량이 가장 많은 날 중 하나로, S&P500 분기 리밸런싱과도 겹쳐 장 마감 무렵 변동성이 커질 수 있습니다.",
+      "pbCheck": [
+        "미국 장 마감은 한국시간 토요일 새벽 — 다음 주 월요일 브리핑에서 영향을 확인합니다.",
+        "지수 리밸런싱 대상 종목의 종가 변동에 유의합니다."
+      ],
+      "source": {
+        "name": "NYSE 거래일·휴장일",
+        "url": "https://www.nyse.com/markets/hours-calendars"
+      }
+    },
+    "kospi200_rebal": {
+      "region": "KR",
+      "category": "derivatives",
+      "label": "지수변경",
+      "name": "KOSPI200 정기변경 적용일",
+      "about": "KOSPI200 구성종목 정기변경이 6·12월 선물·옵션 동시만기 다음 거래일부터 적용됩니다. 편입·편출 종목은 그 이전에 한국거래소가 발표합니다.",
+      "why": "지수를 추종하는 패시브 자금이 편입 종목을 사고 편출 종목을 팔기 때문에, 해당 종목의 수급과 주가에 영향을 줍니다.",
+      "pbCheck": [
+        "거래소 발표 편입·편출 종목과 손님 보유 종목이 겹치는지 확인합니다.",
+        "리밸런싱 매매는 보통 적용 전날(동시만기일) 종가에 집중됩니다."
+      ],
+      "source": {
+        "name": "한국거래소(KRX)",
+        "url": "https://www.krx.co.kr"
+      }
+    },
+    "kr_holiday": {
+      "region": "KR",
+      "category": "market",
+      "label": "휴장",
+      "name": "국내 증시 휴장일",
+      "about": "공휴일로 한국거래소 유가증권·코스닥·파생상품 시장이 쉽니다.",
+      "why": "휴장일 전후로 결제일이 밀리고, 휴장 중 해외 시장 변동이 다음 거래일에 한꺼번에 반영될 수 있습니다.",
+      "pbCheck": [
+        "매매 결제일(T+2) 계산 시 휴장일을 제외합니다.",
+        "연휴가 길면 연휴 전 포지션·현금 비중을 손님과 미리 점검합니다."
+      ],
+      "source": {
+        "name": "우주항공청 월력요항 · 한국거래소",
+        "url": "https://www.krx.co.kr"
+      }
+    },
+    "kr_late_open": {
+      "region": "KR",
+      "category": "market",
+      "label": "개장지연",
+      "name": "국내 증시 개장 시각 변경",
+      "about": "수능일 등 특별한 날에는 한국거래소가 정규장 개장·마감 시각을 늦춥니다.",
+      "why": "평소와 거래 시간이 달라 주문 시각 안내에 주의가 필요합니다.",
+      "pbCheck": [
+        "예약 주문·장 시작 직후 주문 시각을 손님께 미리 안내합니다."
+      ],
+      "source": {
+        "name": "한국거래소 공지",
+        "url": "https://www.krx.co.kr"
+      }
+    },
+    "us_holiday": {
+      "region": "US",
+      "category": "market",
+      "label": "휴장",
+      "name": "미국 증시 휴장일",
+      "about": "뉴욕증권거래소(NYSE)와 나스닥이 휴장합니다.",
+      "why": "미국 시장이 쉬는 날은 글로벌 거래량이 줄고, 국내 증시도 방향성 재료가 적어 거래가 한산해지는 경향이 있습니다.",
+      "pbCheck": [
+        "미국 주식·ETF 주문과 해외 결제일 일정을 확인합니다."
+      ],
+      "source": {
+        "name": "NYSE Holidays & Trading Hours",
+        "url": "https://www.nyse.com/markets/hours-calendars"
+      }
+    },
+    "us_early_close": {
+      "region": "US",
+      "category": "market",
+      "label": "조기폐장",
+      "name": "미국 증시 조기 폐장",
+      "about": "미국 증시가 동부시간 오후 1시에 조기 마감합니다.",
+      "why": "거래 시간이 짧고 거래량이 적어 가격이 작은 주문에도 크게 움직일 수 있습니다.",
+      "pbCheck": [
+        "미국 주식 주문 마감 시각(한국시간 다음 날 새벽 3시)을 안내합니다."
+      ],
+      "source": {
+        "name": "NYSE Holidays & Trading Hours",
+        "url": "https://www.nyse.com/markets/hours-calendars"
+      }
+    },
+    "msci_announce": {
+      "region": "GL",
+      "category": "derivatives",
+      "label": "MSCI 발표",
+      "name": "MSCI 분기 지수 리뷰 결과 발표",
+      "about": "MSCI가 분기마다 글로벌 지수(신흥국·선진국 등) 구성종목 변경 결과를 발표합니다.",
+      "why": "MSCI 지수를 따르는 글로벌 패시브 자금 규모가 커서, 한국 종목의 편입·편출이 외국인 수급에 직접 영향을 줍니다.",
+      "pbCheck": [
+        "한국 종목 편입·편출 명단과 손님 보유 종목을 대조합니다.",
+        "실제 매매는 적용일 직전 거래일 종가에 집중됩니다."
+      ],
+      "caveat": "MSCI는 일정을 변경할 권리가 있으며, 변경 시 사전 공지합니다.",
+      "source": {
+        "name": "MSCI Index Review",
+        "url": "https://www.msci.com/index-review"
+      }
+    },
+    "msci_effective": {
+      "region": "GL",
+      "category": "derivatives",
+      "label": "MSCI 적용",
+      "name": "MSCI 분기 리뷰 적용일",
+      "about": "분기 리뷰에서 발표된 MSCI 지수 구성 변경이 이날부터 적용됩니다(직전 거래일 종가 기준 반영).",
+      "why": "적용 직전 거래일 장 마감 동시호가에 패시브 자금 매매가 몰려 편입·편출 종목과 대형주 종가가 크게 움직일 수 있습니다.",
+      "pbCheck": [
+        "적용 직전 거래일 종가 무렵 외국인 매매 규모를 확인합니다."
+      ],
+      "source": {
+        "name": "MSCI Index Review",
+        "url": "https://www.msci.com/index-review"
+      }
+    },
+    "earnings_kr": {
+      "region": "KR",
+      "category": "earnings",
+      "label": "실적",
+      "name": "코스피 시총 상위 기업 실적 발표",
+      "about": "코스피 시가총액 상위 10개 기업의 실적 발표(잠정실적 공시·실적발표 예고·기업설명회) 일정입니다. 기업이 금융감독원 전자공시(DART)에 공시하면 자동으로 반영됩니다.",
+      "why": "시총 상위 기업은 코스피 지수 비중이 커서, 실적이 예상치를 벗어나면 지수 전체 방향과 외국인 수급이 크게 흔들릴 수 있습니다.",
+      "pbCheck": [
+        "시장 예상치(컨센서스) 대비 영업이익 서프라이즈 여부를 확인합니다.",
+        "반도체 등 업종 대표주의 가이던스는 관련 업종 전체 투자 심리에 영향을 줍니다."
+      ],
+      "caveat": "아직 공시되지 않은 일정은 표시되지 않습니다. 공시가 나오면 다음 자동 수집 때 반영됩니다.",
+      "source": {
+        "name": "금융감독원 전자공시시스템(DART)",
+        "url": "https://dart.fss.or.kr"
+      }
     }
   },
   "items": [
@@ -159,10 +351,24 @@
       "timeKst": "10/2(금) 21:30 발표"
     },
     {
+      "date": "2026-10-08",
+      "kind": "kr_expiry",
+      "meeting": "10월물 최종거래일",
+      "timeKst": "10/8(목) 장 마감(15:20) 전후 변동성 유의",
+      "auto": "rule"
+    },
+    {
       "date": "2026-10-14",
       "kind": "cpi_us",
       "meeting": "9월 지표",
       "timeKst": "10/14(수) 21:30 발표"
+    },
+    {
+      "date": "2026-10-16",
+      "kind": "us_opex",
+      "meeting": "10월물 만기",
+      "timeKst": "미국 장 마감 시 (한국시간 다음 날 새벽)",
+      "auto": "rule"
     },
     {
       "date": "2026-10-22",
@@ -208,11 +414,60 @@
       "timeKst": "11/10(화) 22:30 발표"
     },
     {
+      "date": "2026-11-11",
+      "kind": "msci_announce",
+      "meeting": "2026년 11월 리뷰",
+      "timeKst": "현지 장 마감 후 발표 (한국시간 다음 날 새벽~오전 확인)",
+      "auto": "rule"
+    },
+    {
+      "date": "2026-11-12",
+      "kind": "kr_expiry",
+      "meeting": "11월물 최종거래일",
+      "timeKst": "11/12(목) 장 마감(15:20) 전후 변동성 유의",
+      "auto": "rule"
+    },
+    {
+      "date": "2026-11-19",
+      "kind": "kr_late_open",
+      "meeting": "대학수학능력시험일 — 정규장 10:00~16:30 (1시간 순연)",
+      "timeKst": "11/19(목) 개장 시각 변경",
+      "auto": "rule"
+    },
+    {
+      "date": "2026-11-20",
+      "kind": "us_opex",
+      "meeting": "11월물 만기",
+      "timeKst": "미국 장 마감 시 (한국시간 다음 날 새벽)",
+      "auto": "rule"
+    },
+    {
       "date": "2026-11-26",
       "kind": "bok",
       "meeting": "11월 26일",
       "timeKst": "11/26(목) 오전 10시 전후 결정 발표",
       "highlight": "한은 수정 경제전망(성장률·물가) 발표 회차"
+    },
+    {
+      "date": "2026-11-26",
+      "kind": "us_holiday",
+      "meeting": "Thanksgiving Day",
+      "timeKst": "미국 증시 종일 휴장",
+      "auto": "rule"
+    },
+    {
+      "date": "2026-11-27",
+      "kind": "us_early_close",
+      "meeting": "추수감사절 다음 날 — 13:00 ET 조기 폐장",
+      "timeKst": "한국시간 다음 날 새벽 3시 조기 마감",
+      "auto": "rule"
+    },
+    {
+      "date": "2026-12-01",
+      "kind": "msci_effective",
+      "meeting": "2026년 11월 리뷰 적용",
+      "timeKst": "적용일 직전 거래일 종가 기준으로 지수 반영",
+      "auto": "rule"
     },
     {
       "date": "2026-12-04",
@@ -234,6 +489,20 @@
       "timeKst": "12/10(목) 22:30 발표"
     },
     {
+      "date": "2026-12-10",
+      "kind": "kr_quad",
+      "meeting": "12월물 최종거래일",
+      "timeKst": "12/10(목) 장 마감(15:20) 전후 변동성 유의",
+      "auto": "rule"
+    },
+    {
+      "date": "2026-12-11",
+      "kind": "kospi200_rebal",
+      "meeting": "12월 동시만기(12/10(목)) 다음 거래일",
+      "timeKst": "12/11(금) 개장부터 새 구성종목 적용",
+      "auto": "rule"
+    },
+    {
       "date": "2026-12-17",
       "kind": "ecb",
       "meeting": "12월 16~17일",
@@ -247,10 +516,52 @@
       "timeKst": "12/18(금) 발표 시각 미공지 (통상 정오 전후)"
     },
     {
+      "date": "2026-12-18",
+      "kind": "us_quad",
+      "meeting": "12월물 만기",
+      "timeKst": "미국 장 마감 시 (한국시간 다음 날 새벽)",
+      "auto": "rule"
+    },
+    {
+      "date": "2026-12-24",
+      "kind": "us_early_close",
+      "meeting": "크리스마스 이브 — 13:00 ET 조기 폐장",
+      "timeKst": "한국시간 다음 날 새벽 3시 조기 마감",
+      "auto": "rule"
+    },
+    {
+      "date": "2026-12-25",
+      "kind": "kr_holiday",
+      "meeting": "성탄절",
+      "timeKst": "12/25(금) 종일 휴장",
+      "auto": "rule"
+    },
+    {
+      "date": "2026-12-25",
+      "kind": "us_holiday",
+      "meeting": "Christmas Day",
+      "timeKst": "미국 증시 종일 휴장",
+      "auto": "rule"
+    },
+    {
       "date": "2026-12-31",
       "kind": "krx_close",
       "meeting": "2026년 마지막 거래일: 12/30(수)",
       "timeKst": "12/31(목) 종일 휴장"
+    },
+    {
+      "date": "2027-01-01",
+      "kind": "kr_holiday",
+      "meeting": "신정",
+      "timeKst": "1/1(금) 종일 휴장",
+      "auto": "rule"
+    },
+    {
+      "date": "2027-01-01",
+      "kind": "us_holiday",
+      "meeting": "New Year's Day",
+      "timeKst": "미국 증시 종일 휴장",
+      "auto": "rule"
     },
     {
       "date": "2027-01-08",
@@ -269,6 +580,27 @@
       "kind": "bok",
       "meeting": "1월 14일",
       "timeKst": "1/14(목) 오전 10시 전후 결정 발표"
+    },
+    {
+      "date": "2027-01-14",
+      "kind": "kr_expiry",
+      "meeting": "1월물 최종거래일",
+      "timeKst": "1/14(목) 장 마감(15:20) 전후 변동성 유의",
+      "auto": "rule"
+    },
+    {
+      "date": "2027-01-15",
+      "kind": "us_opex",
+      "meeting": "1월물 만기",
+      "timeKst": "미국 장 마감 시 (한국시간 다음 날 새벽)",
+      "auto": "rule"
+    },
+    {
+      "date": "2027-01-18",
+      "kind": "us_holiday",
+      "meeting": "Martin Luther King Jr. Day",
+      "timeKst": "미국 증시 종일 휴장",
+      "auto": "rule"
     },
     {
       "date": "2027-01-22",
@@ -296,10 +628,52 @@
       "timeKst": "2/5(금) 22:30 발표"
     },
     {
+      "date": "2027-02-08",
+      "kind": "kr_holiday",
+      "meeting": "설날",
+      "timeKst": "2/8(월) 종일 휴장",
+      "auto": "rule"
+    },
+    {
+      "date": "2027-02-09",
+      "kind": "kr_holiday",
+      "meeting": "설날 대체공휴일",
+      "timeKst": "2/9(화) 종일 휴장",
+      "auto": "rule"
+    },
+    {
+      "date": "2027-02-09",
+      "kind": "msci_announce",
+      "meeting": "2027년 2월 리뷰",
+      "timeKst": "현지 장 마감 후 발표 (한국시간 다음 날 새벽~오전 확인)",
+      "auto": "rule"
+    },
+    {
       "date": "2027-02-11",
       "kind": "cpi_us",
       "meeting": "1월 지표",
       "timeKst": "2/11(목) 22:30 발표"
+    },
+    {
+      "date": "2027-02-11",
+      "kind": "kr_expiry",
+      "meeting": "2월물 최종거래일",
+      "timeKst": "2/11(목) 장 마감(15:20) 전후 변동성 유의",
+      "auto": "rule"
+    },
+    {
+      "date": "2027-02-15",
+      "kind": "us_holiday",
+      "meeting": "Washington's Birthday",
+      "timeKst": "미국 증시 종일 휴장",
+      "auto": "rule"
+    },
+    {
+      "date": "2027-02-19",
+      "kind": "us_opex",
+      "meeting": "2월물 만기",
+      "timeKst": "미국 장 마감 시 (한국시간 다음 날 새벽)",
+      "auto": "rule"
     },
     {
       "date": "2027-02-25",
@@ -307,6 +681,20 @@
       "meeting": "2월 25일",
       "timeKst": "2/25(목) 오전 10시 전후 결정 발표",
       "highlight": "한은 수정 경제전망(성장률·물가) 발표 회차"
+    },
+    {
+      "date": "2027-03-01",
+      "kind": "kr_holiday",
+      "meeting": "삼일절",
+      "timeKst": "3/1(월) 종일 휴장",
+      "auto": "rule"
+    },
+    {
+      "date": "2027-03-01",
+      "kind": "msci_effective",
+      "meeting": "2027년 2월 리뷰 적용",
+      "timeKst": "적용일 직전 거래일 종가 기준으로 지수 반영",
+      "auto": "rule"
     },
     {
       "date": "2027-03-05",
@@ -319,6 +707,13 @@
       "kind": "cpi_us",
       "meeting": "2월 지표",
       "timeKst": "3/10(수) 22:30 발표"
+    },
+    {
+      "date": "2027-03-11",
+      "kind": "kr_quad",
+      "meeting": "3월물 최종거래일",
+      "timeKst": "3/11(목) 장 마감(15:20) 전후 변동성 유의",
+      "auto": "rule"
     },
     {
       "date": "2027-03-17",
@@ -341,10 +736,31 @@
       "highlight": "ECB 경제전망 발표 회차"
     },
     {
+      "date": "2027-03-19",
+      "kind": "us_quad",
+      "meeting": "3월물 만기",
+      "timeKst": "미국 장 마감 시 (한국시간 다음 날 새벽)",
+      "auto": "rule"
+    },
+    {
+      "date": "2027-03-26",
+      "kind": "us_holiday",
+      "meeting": "Good Friday",
+      "timeKst": "미국 증시 종일 휴장",
+      "auto": "rule"
+    },
+    {
       "date": "2027-04-02",
       "kind": "jobs_us",
       "meeting": "3월 지표",
       "timeKst": "4/2(금) 21:30 발표"
+    },
+    {
+      "date": "2027-04-08",
+      "kind": "kr_expiry",
+      "meeting": "4월물 최종거래일",
+      "timeKst": "4/8(목) 장 마감(15:20) 전후 변동성 유의",
+      "auto": "rule"
     },
     {
       "date": "2027-04-09",
@@ -357,6 +773,13 @@
       "kind": "cpi_us",
       "meeting": "3월 지표",
       "timeKst": "4/13(화) 21:30 발표"
+    },
+    {
+      "date": "2027-04-16",
+      "kind": "us_opex",
+      "meeting": "4월물 만기",
+      "timeKst": "미국 장 마감 시 (한국시간 다음 날 새벽)",
+      "auto": "rule"
     },
     {
       "date": "2027-04-28",
@@ -378,10 +801,31 @@
       "timeKst": "4/29(목) 21:15 결정 발표 (기자회견 30분 후)"
     },
     {
+      "date": "2027-05-03",
+      "kind": "kr_holiday",
+      "meeting": "노동절 대체공휴일",
+      "timeKst": "5/3(월) 종일 휴장",
+      "auto": "rule"
+    },
+    {
+      "date": "2027-05-05",
+      "kind": "kr_holiday",
+      "meeting": "어린이날",
+      "timeKst": "5/5(수) 종일 휴장",
+      "auto": "rule"
+    },
+    {
       "date": "2027-05-07",
       "kind": "jobs_us",
       "meeting": "4월 지표",
       "timeKst": "5/7(금) 21:30 발표"
+    },
+    {
+      "date": "2027-05-10",
+      "kind": "msci_announce",
+      "meeting": "2027년 5월 리뷰",
+      "timeKst": "현지 장 마감 후 발표 (한국시간 다음 날 새벽~오전 확인)",
+      "auto": "rule"
     },
     {
       "date": "2027-05-12",
@@ -390,11 +834,46 @@
       "timeKst": "5/12(수) 21:30 발표"
     },
     {
+      "date": "2027-05-12",
+      "kind": "kr_expiry",
+      "meeting": "5월물 최종거래일 (원래 5/13(목)이 휴장이라 직전 거래일로 당겨짐)",
+      "timeKst": "5/12(수) 장 마감(15:20) 전후 변동성 유의",
+      "auto": "rule"
+    },
+    {
+      "date": "2027-05-13",
+      "kind": "kr_holiday",
+      "meeting": "부처님오신날",
+      "timeKst": "5/13(목) 종일 휴장",
+      "auto": "rule"
+    },
+    {
+      "date": "2027-05-21",
+      "kind": "us_opex",
+      "meeting": "5월물 만기",
+      "timeKst": "미국 장 마감 시 (한국시간 다음 날 새벽)",
+      "auto": "rule"
+    },
+    {
       "date": "2027-05-27",
       "kind": "bok",
       "meeting": "5월 27일",
       "timeKst": "5/27(목) 오전 10시 전후 결정 발표",
       "highlight": "한은 수정 경제전망(성장률·물가) 발표 회차"
+    },
+    {
+      "date": "2027-05-28",
+      "kind": "msci_effective",
+      "meeting": "2027년 5월 리뷰 적용",
+      "timeKst": "적용일 직전 거래일 종가 기준으로 지수 반영",
+      "auto": "rule"
+    },
+    {
+      "date": "2027-05-31",
+      "kind": "us_holiday",
+      "meeting": "Memorial Day",
+      "timeKst": "미국 증시 종일 휴장",
+      "auto": "rule"
     },
     {
       "date": "2027-06-04",
@@ -423,16 +902,58 @@
       "highlight": "ECB 경제전망 발표 회차"
     },
     {
+      "date": "2027-06-10",
+      "kind": "kr_quad",
+      "meeting": "6월물 최종거래일",
+      "timeKst": "6/10(목) 장 마감(15:20) 전후 변동성 유의",
+      "auto": "rule"
+    },
+    {
       "date": "2027-06-11",
       "kind": "boj",
       "meeting": "6월 10~11일",
       "timeKst": "6/11(금) 발표 시각 미공지 (통상 정오 전후)"
     },
     {
+      "date": "2027-06-11",
+      "kind": "kospi200_rebal",
+      "meeting": "6월 동시만기(6/10(목)) 다음 거래일",
+      "timeKst": "6/11(금) 개장부터 새 구성종목 적용",
+      "auto": "rule"
+    },
+    {
+      "date": "2027-06-17",
+      "kind": "us_quad",
+      "meeting": "6월물 만기 (원래 6/18(금)이 휴장이라 직전 거래일로 당겨짐)",
+      "timeKst": "미국 장 마감 시 (한국시간 다음 날 새벽)",
+      "auto": "rule"
+    },
+    {
+      "date": "2027-06-18",
+      "kind": "us_holiday",
+      "meeting": "Juneteenth (observed)",
+      "timeKst": "미국 증시 종일 휴장",
+      "auto": "rule"
+    },
+    {
       "date": "2027-07-02",
       "kind": "jobs_us",
       "meeting": "6월 지표",
       "timeKst": "7/2(금) 21:30 발표"
+    },
+    {
+      "date": "2027-07-05",
+      "kind": "us_holiday",
+      "meeting": "Independence Day (observed)",
+      "timeKst": "미국 증시 종일 휴장",
+      "auto": "rule"
+    },
+    {
+      "date": "2027-07-08",
+      "kind": "kr_expiry",
+      "meeting": "7월물 최종거래일",
+      "timeKst": "7/8(목) 장 마감(15:20) 전후 변동성 유의",
+      "auto": "rule"
     },
     {
       "date": "2027-07-14",
@@ -445,6 +966,20 @@
       "kind": "bok",
       "meeting": "7월 15일",
       "timeKst": "7/15(목) 오전 10시 전후 결정 발표"
+    },
+    {
+      "date": "2027-07-16",
+      "kind": "us_opex",
+      "meeting": "7월물 만기",
+      "timeKst": "미국 장 마감 시 (한국시간 다음 날 새벽)",
+      "auto": "rule"
+    },
+    {
+      "date": "2027-07-19",
+      "kind": "kr_holiday",
+      "meeting": "제헌절 대체공휴일",
+      "timeKst": "7/19(월) 종일 휴장",
+      "auto": "rule"
     },
     {
       "date": "2027-07-22",
@@ -478,6 +1013,34 @@
       "timeKst": "8/11(수) 21:30 발표"
     },
     {
+      "date": "2027-08-12",
+      "kind": "kr_expiry",
+      "meeting": "8월물 최종거래일",
+      "timeKst": "8/12(목) 장 마감(15:20) 전후 변동성 유의",
+      "auto": "rule"
+    },
+    {
+      "date": "2027-08-12",
+      "kind": "msci_announce",
+      "meeting": "2027년 8월 리뷰",
+      "timeKst": "현지 장 마감 후 발표 (한국시간 다음 날 새벽~오전 확인)",
+      "auto": "rule"
+    },
+    {
+      "date": "2027-08-16",
+      "kind": "kr_holiday",
+      "meeting": "광복절 대체공휴일",
+      "timeKst": "8/16(월) 종일 휴장",
+      "auto": "rule"
+    },
+    {
+      "date": "2027-08-20",
+      "kind": "us_opex",
+      "meeting": "8월물 만기",
+      "timeKst": "미국 장 마감 시 (한국시간 다음 날 새벽)",
+      "auto": "rule"
+    },
+    {
       "date": "2027-08-26",
       "kind": "bok",
       "meeting": "8월 26일",
@@ -485,10 +1048,24 @@
       "highlight": "한은 수정 경제전망(성장률·물가) 발표 회차"
     },
     {
+      "date": "2027-09-01",
+      "kind": "msci_effective",
+      "meeting": "2027년 8월 리뷰 적용",
+      "timeKst": "적용일 직전 거래일 종가 기준으로 지수 반영",
+      "auto": "rule"
+    },
+    {
       "date": "2027-09-03",
       "kind": "jobs_us",
       "meeting": "8월 지표",
       "timeKst": "9/3(금) 21:30 발표"
+    },
+    {
+      "date": "2027-09-06",
+      "kind": "us_holiday",
+      "meeting": "Labor Day",
+      "timeKst": "미국 증시 종일 휴장",
+      "auto": "rule"
     },
     {
       "date": "2027-09-09",
@@ -498,10 +1075,24 @@
       "highlight": "ECB 경제전망 발표 회차"
     },
     {
+      "date": "2027-09-09",
+      "kind": "kr_quad",
+      "meeting": "9월물 최종거래일",
+      "timeKst": "9/9(목) 장 마감(15:20) 전후 변동성 유의",
+      "auto": "rule"
+    },
+    {
       "date": "2027-09-14",
       "kind": "cpi_us",
       "meeting": "8월 지표",
       "timeKst": "9/14(화) 21:30 발표"
+    },
+    {
+      "date": "2027-09-14",
+      "kind": "kr_holiday",
+      "meeting": "추석 연휴",
+      "timeKst": "9/14(화) 종일 휴장",
+      "auto": "rule"
     },
     {
       "date": "2027-09-15",
@@ -511,10 +1102,38 @@
       "highlight": "경제전망(SEP)·점도표 발표 회차"
     },
     {
+      "date": "2027-09-15",
+      "kind": "kr_holiday",
+      "meeting": "추석",
+      "timeKst": "9/15(수) 종일 휴장",
+      "auto": "rule"
+    },
+    {
+      "date": "2027-09-16",
+      "kind": "kr_holiday",
+      "meeting": "추석 연휴",
+      "timeKst": "9/16(목) 종일 휴장",
+      "auto": "rule"
+    },
+    {
+      "date": "2027-09-17",
+      "kind": "us_quad",
+      "meeting": "9월물 만기",
+      "timeKst": "미국 장 마감 시 (한국시간 다음 날 새벽)",
+      "auto": "rule"
+    },
+    {
       "date": "2027-09-22",
       "kind": "boj",
       "meeting": "9월 21~22일",
       "timeKst": "9/22(수) 발표 시각 미공지 (통상 정오 전후)"
+    },
+    {
+      "date": "2027-10-04",
+      "kind": "kr_holiday",
+      "meeting": "개천절 대체공휴일",
+      "timeKst": "10/4(월) 종일 휴장",
+      "auto": "rule"
     },
     {
       "date": "2027-10-08",
@@ -523,16 +1142,37 @@
       "timeKst": "10/8(금) 21:30 발표"
     },
     {
+      "date": "2027-10-11",
+      "kind": "kr_holiday",
+      "meeting": "한글날 대체공휴일",
+      "timeKst": "10/11(월) 종일 휴장",
+      "auto": "rule"
+    },
+    {
       "date": "2027-10-14",
       "kind": "cpi_us",
       "meeting": "9월 지표",
       "timeKst": "10/14(목) 21:30 발표"
     },
     {
+      "date": "2027-10-14",
+      "kind": "kr_expiry",
+      "meeting": "10월물 최종거래일",
+      "timeKst": "10/14(목) 장 마감(15:20) 전후 변동성 유의",
+      "auto": "rule"
+    },
+    {
       "date": "2027-10-15",
       "kind": "bok",
       "meeting": "10월 15일",
       "timeKst": "10/15(금) 오전 10시 전후 결정 발표"
+    },
+    {
+      "date": "2027-10-15",
+      "kind": "us_opex",
+      "meeting": "10월물 만기",
+      "timeKst": "미국 장 마감 시 (한국시간 다음 날 새벽)",
+      "auto": "rule"
     },
     {
       "date": "2027-10-27",
@@ -566,11 +1206,53 @@
       "timeKst": "11/10(수) 22:30 발표"
     },
     {
+      "date": "2027-11-11",
+      "kind": "kr_expiry",
+      "meeting": "11월물 최종거래일",
+      "timeKst": "11/11(목) 장 마감(15:20) 전후 변동성 유의",
+      "auto": "rule"
+    },
+    {
+      "date": "2027-11-11",
+      "kind": "msci_announce",
+      "meeting": "2027년 11월 리뷰",
+      "timeKst": "현지 장 마감 후 발표 (한국시간 다음 날 새벽~오전 확인)",
+      "auto": "rule"
+    },
+    {
+      "date": "2027-11-19",
+      "kind": "us_opex",
+      "meeting": "11월물 만기",
+      "timeKst": "미국 장 마감 시 (한국시간 다음 날 새벽)",
+      "auto": "rule"
+    },
+    {
       "date": "2027-11-25",
       "kind": "bok",
       "meeting": "11월 25일",
       "timeKst": "11/25(목) 오전 10시 전후 결정 발표",
       "highlight": "한은 수정 경제전망(성장률·물가) 발표 회차"
+    },
+    {
+      "date": "2027-11-25",
+      "kind": "us_holiday",
+      "meeting": "Thanksgiving Day",
+      "timeKst": "미국 증시 종일 휴장",
+      "auto": "rule"
+    },
+    {
+      "date": "2027-11-26",
+      "kind": "us_early_close",
+      "meeting": "추수감사절 다음 날 — 13:00 ET 조기 폐장",
+      "timeKst": "한국시간 다음 날 새벽 3시 조기 마감",
+      "auto": "rule"
+    },
+    {
+      "date": "2027-12-01",
+      "kind": "msci_effective",
+      "meeting": "2027년 11월 리뷰 적용",
+      "timeKst": "적용일 직전 거래일 종가 기준으로 지수 반영",
+      "auto": "rule"
     },
     {
       "date": "2027-12-03",
@@ -586,10 +1268,24 @@
       "highlight": "경제전망(SEP)·점도표 발표 회차"
     },
     {
+      "date": "2027-12-09",
+      "kind": "kr_quad",
+      "meeting": "12월물 최종거래일",
+      "timeKst": "12/9(목) 장 마감(15:20) 전후 변동성 유의",
+      "auto": "rule"
+    },
+    {
       "date": "2027-12-10",
       "kind": "cpi_us",
       "meeting": "11월 지표",
       "timeKst": "12/10(금) 22:30 발표"
+    },
+    {
+      "date": "2027-12-10",
+      "kind": "kospi200_rebal",
+      "meeting": "12월 동시만기(12/9(목)) 다음 거래일",
+      "timeKst": "12/10(금) 개장부터 새 구성종목 적용",
+      "auto": "rule"
     },
     {
       "date": "2027-12-16",
@@ -603,6 +1299,27 @@
       "kind": "boj",
       "meeting": "12월 16~17일",
       "timeKst": "12/17(금) 발표 시각 미공지 (통상 정오 전후)"
+    },
+    {
+      "date": "2027-12-17",
+      "kind": "us_quad",
+      "meeting": "12월물 만기",
+      "timeKst": "미국 장 마감 시 (한국시간 다음 날 새벽)",
+      "auto": "rule"
+    },
+    {
+      "date": "2027-12-24",
+      "kind": "us_holiday",
+      "meeting": "Christmas Day (observed)",
+      "timeKst": "미국 증시 종일 휴장",
+      "auto": "rule"
+    },
+    {
+      "date": "2027-12-27",
+      "kind": "kr_holiday",
+      "meeting": "성탄절 대체공휴일",
+      "timeKst": "12/27(월) 종일 휴장",
+      "auto": "rule"
     },
     {
       "date": "2027-12-31",

@@ -42,6 +42,10 @@ export const STATE = {
   insights: [],
   portfolioNotes: [],
   macro: null,
+  autoEvents: [], // DART 등에서 자동 수집한 일정(실적 등)
+  eventResults: {}, // 일정 결과 { [eventId]: {...} }
+  archiveIndex: [], // 지난 브리핑 날짜 목록 [{date, editions:[...]}]
+  archiveView: null, // 지난 브리핑 보는 중이면 { date, morning, evening }
 
   edition: "MORNING",
   isEditing: false,
@@ -57,5 +61,6 @@ export const STATE = {
 };
 
 export function currentEditionData() {
-  return STATE.edition === "MORNING" ? STATE.morningData : STATE.eveningData;
+  const src = STATE.archiveView ?? { morning: STATE.morningData, evening: STATE.eveningData };
+  return STATE.edition === "MORNING" ? src.morning : src.evening;
 }
