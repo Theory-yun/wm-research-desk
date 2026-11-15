@@ -1,6 +1,28 @@
 {
-  "updatedAt": "2026-11-15T06:19:19.739Z",
+  "updatedAt": "2026-11-15T06:39:06.000Z",
   "items": [
+    {
+      "title": "투모로우바이투게더 연준 \"1년 2컴백, 그 어려운 걸 해냅니다\"[스타현장]",
+      "press": "스타뉴스",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBTYWR2VkQyd3BKaDFUMGFRZ3NmQjdkVzA4Nl9tVGdINnZZYzZJcUo5V1d4dURkRUdralVJcDh4a0Q5UHFoSWdYUG9DYTQySnd1c0hENDFfdzRHOHNWSnBvemV1OUl2Q3YtcWxpODhtck9sby1M?oc=5",
+      "timestamp": 1794724138000,
+      "date": "2026.11.15 15:28",
+      "tags": [
+        "매크로"
+      ]
+    },
+    {
+      "title": "[서학개미 레이더] 비트코인(BTC) 6만 2,000달러 밀려, 앤스로픽(ANT) IPO 앞두고 자금 이동",
+      "press": "코인리더스",
+      "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE9TeU5rOVlWTlZJaWhfR05UUWRHSlRUQmQtM29ZQ2tlaC0wd2VBRXNWeFA3QTVkdXdzSFNZNFRQSzUzckgwT0NiZUtB?oc=5",
+      "timestamp": 1794723442000,
+      "date": "2026.11.15 15:17",
+      "tags": [
+        "대체투자",
+        "증시"
+      ],
+      "tagSource": "ai"
+    },
     {
       "title": "AI가 끌고 제약·상사가 밀고…日 주요 상장사 순익 6년 연속 최대 전망",
       "press": "매일경제",
@@ -9,6 +31,30 @@
       "date": "2026.11.15 15:13",
       "tags": [
         "증시"
+      ],
+      "tagSource": "ai"
+    },
+    {
+      "title": "엔비디아 실적·앤트로픽 상장 겹친다…뉴욕증시 'AI 빅위크'",
+      "press": "www.ebn.co.kr",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9mNDRqTmtCNzU2aGFlbTNuanVDTnNRY2VndnZNZ1FRdVRYdjB1OXpmY3pRWk5nM0dLTUtHQmVQcjNUQ1ZCZGl3SUxtUmQ4cFlBOWlYZXpUeEpXbGZEbzNGNmVuUkxfcHY0?oc=5",
+      "timestamp": 1794722727000,
+      "date": "2026.11.15 15:05",
+      "tags": [
+        "증시",
+        "대체투자"
+      ],
+      "tagSource": "ai"
+    },
+    {
+      "title": "시바이누(SHIB) 0.000003700달러 지지선 지킬까…연준 긴축 우려에 밈코인 약세",
+      "press": "코인리더스",
+      "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE5ac29ORlN2cXRhMFJYeFBFck9wYmJFakdMT2xKNlBEVDc2YVpBZXZLYk1YcGc3VzJYY253eEFYNlk1bUx3SzhkQnlB?oc=5",
+      "timestamp": 1794722625000,
+      "date": "2026.11.15 15:03",
+      "tags": [
+        "대체투자",
+        "매크로"
       ],
       "tagSource": "ai"
     },
@@ -32,6 +78,18 @@
       "tags": [
         "매크로"
       ]
+    },
+    {
+      "title": "연준의 금융안정성 조사에서 AI 관련 위험이 가장 큰 비중을 차지했습니다.",
+      "press": "Vietnam.vn",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQN3l0Zl9EWkZzVDNUQ2xQWW5nNzhwSmgzVnhkS2c3RGI1Sm1uUXhmVklENlY2a2VYaFdGY2I2U1RjUE5sTlQ0RkstbXllOEpxbGk1NTlOdTlHRWM0WUFCREpOYTZvWHI4b0hpSFRBQ2pWX0pmRk1iZWVXdzRkRVgtNWx4ek5sUQ?oc=5",
+      "timestamp": 1794722343000,
+      "date": "2026.11.15 14:59",
+      "tags": [
+        "매크로",
+        "증시"
+      ],
+      "tagSource": "ai"
     },
     {
       "title": "집값 뛰자 ‘50년 주담대’ 늘어나는 일본…은퇴 뒤 빚 감당할까",
@@ -76,6 +134,18 @@
       "date": "2026.11.15 14:31",
       "tags": [
         "원자재"
+      ],
+      "tagSource": "ai"
+    },
+    {
+      "title": "한국은행, 금 ETF 보유량 40.8% 확대했지만…금값 하락에 평가액 325억원 감소 추정",
+      "press": "중앙이코노미뉴스",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE80TzF2eWFxN1U5U0IwdmpZMENvdVQzcjN2Y1ZPN1l2QTN3bURzVWJITjRzdlZySWZ1eE9DZGNORnRfUzN3dXhnSG9xZHZXLVdpUUwxOWlBcURJeU1oQzlBMXBVaEdfWDlPd09yVWJueHo4UQ?oc=5",
+      "timestamp": 1794720600000,
+      "date": "2026.11.15 14:30",
+      "tags": [
+        "원자재",
+        "채권·금리"
       ],
       "tagSource": "ai"
     },
@@ -185,6 +255,18 @@
       "date": "2026.11.15 13:49",
       "tags": [
         "부동산"
+      ],
+      "tagSource": "ai"
+    },
+    {
+      "title": "美 연준 조사 응답자 87%, AI를 금융 시스템 최대 위험으로 지목",
+      "press": "AI 매터스",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9aWVZTLXVqUzdTV2kxNUxKbGxfaEVZUVA2MS1SLWI4eGdDQkV0ZWN6djBOMjc3Y2JHZ1NPU3dNOExaNlRzOFNfVks2QUZNTjEzNGZ3bg?oc=5",
+      "timestamp": 1794718041000,
+      "date": "2026.11.15 13:47",
+      "tags": [
+        "매크로",
+        "증시"
       ],
       "tagSource": "ai"
     },
@@ -1370,6 +1452,17 @@
       "tagSource": "ai"
     },
     {
+      "title": "[오늘의 금값시세] 2026년 11월 15일 g당 168,340.0원·1돈 631,275원…국제 금 보합",
+      "press": "민심뉴스",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5DT01rX3c4dlhCYmE4T29NMk43UF9Gb0F1ajctVTJneHlIczRwZlVkanV1TE9BblYxT2MwVnA5bGJDelFENjFVUkVueWhGLUtUMlFxclRDVk5YTXBFT1REOEpOcDJETVJmeUY2T3Z3?oc=5",
+      "timestamp": 1794700844000,
+      "date": "2026.11.15 09:00",
+      "tags": [
+        "원자재"
+      ],
+      "tagSource": "ai"
+    },
+    {
       "title": "[게시판] 우리은행, 자원순환 캠페인으로 폐전자제품 85t 수거",
       "press": "연합뉴스",
       "url": "https://www.yna.co.kr/view/AKR20261113160400002",
@@ -2171,6 +2264,18 @@
       "tagSource": "ai"
     },
     {
+      "title": "주간 전망: 엔비디아의 블록버스터급 3분기 실적 발표에 이어 美 10월 소매판매, FOMC 의사록 및 월마트 실적 잇따라",
+      "press": "TradingKey",
+      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQVHNsSl9pR25tTjlEMnhPTXhKUldidEczVWVjbnVNSlpFdXNfUWFTQWZFX3lGem0xRlB4emQzVTA0LVRxOVAzWEhhZENfdlVJOVhyQ0RYU1JGTU5pUFRGZjZuQW04YkF2a21YUjNuQVFOY29FWUJxQVdrNDYzcnp6TjF4dTNRc3FFdXRhSVF2WTZzWjRJa2NfRHlEVEtkaEFadWJkSTJ0TTBkZE5nX3lBZFVsM25hdTk5QTZUSy1makQ3U3oxSFozckU3cUM4aWZ0eUF2WEdQSTJEV3hLUVFNMXhVQ182Zw?oc=5",
+      "timestamp": 1794661200000,
+      "date": "2026.11.14 22:00",
+      "tags": [
+        "증시",
+        "매크로"
+      ],
+      "tagSource": "ai"
+    },
+    {
       "title": "“한때 국민 자격증이었는데”…공인중개사들이 한숨 쉬는 이유",
       "press": "매일경제",
       "url": "https://www.mk.co.kr/news/realestate/12209023",
@@ -2666,105 +2771,6 @@
       "date": "2026.11.14 12:00",
       "tags": [
         "증시"
-      ],
-      "tagSource": "ai"
-    },
-    {
-      "title": "뉴욕증시 혼조…반도체주 약세에 나스닥 0.9%↓",
-      "press": "코리아리포트",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1zclVlQW1uZmNJVHA1X2JoaU4xaFBmc19GRmU1QUJ0cHBYVXFPRU5vSmphLXZWMGJhQkFLeWtmQmRVS3RJcXE2cGstSDQ2WlZUSWY0RW92QWZZaHd6X1VmWm9lU190ZVhkbjMyTmJ2YWc?oc=5",
-      "timestamp": 1794624884000,
-      "date": "2026.11.14 11:54",
-      "tags": [
-        "증시"
-      ],
-      "tagSource": "ai"
-    },
-    {
-      "title": "뉴욕증시 기술주 약세 속 혼조···국제유가도 ‘널뛰기’",
-      "press": "에너지경제신문",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9rMHF5SWdyWGhiWnB0X3NhNHRrUTd4WGJHVFN1bFpORnJja1NyR04zcVdnU0xsZ0lVRGl1T1BzaWRsZXdGRExhdFpNNWY3czg0ejNfWW9ld0xwM0k?oc=5",
-      "timestamp": 1794624343000,
-      "date": "2026.11.14 11:45",
-      "tags": [
-        "증시",
-        "원자재"
-      ],
-      "tagSource": "ai"
-    },
-    {
-      "title": "두산건설, 3분기 영업이익 271억원…전년 대비 40% 감소",
-      "press": "연합뉴스",
-      "url": "https://www.yna.co.kr/view/AKR20261114029100003",
-      "timestamp": 1794624255000,
-      "date": "2026.11.14 11:44",
-      "tags": [
-        "증시"
-      ],
-      "tagSource": "ai"
-    },
-    {
-      "title": "[금시세] 국제 금값 18k 등 얼마?",
-      "press": "게임톡",
-      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE93TERIdGhueXluRHBZbkp1ZjN2OEdJQmVRckMwQkVLbFY5ZktHYzZnTFFTS2NKaktybjRNYVo0N3BJUnZBYVpwcUh5eVZGWmZQaXNWSjFhU2ZaRnBVMFhqSFhqTF9NWEc1bGNBVQ?oc=5",
-      "timestamp": 1794624033000,
-      "date": "2026.11.14 11:40",
-      "tags": [
-        "원자재"
-      ],
-      "tagSource": "ai"
-    },
-    {
-      "title": "오늘 금값·금한돈시세, 순금 살까 팔까…매매 가격 차이 확인",
-      "press": "키즈맘",
-      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5ITHFYMExMVHRaY09KZVloUkpGb1VRUThNOW5keG9VaTRrV2docVF2RjRVRXpLb2w1VWNpaF9GbkJkRjB6Um1JM3pobWtTTUxGQ1E5SmZ3RXlOcVZ5LUgyMHNoS0MyLVdi?oc=5",
-      "timestamp": 1794623806000,
-      "date": "2026.11.14 11:36",
-      "tags": [
-        "원자재"
-      ],
-      "tagSource": "ai"
-    },
-    {
-      "title": "모두의창업 또 정보 유출에 참가자 '부글'…\"경위·보상 밝혀야\"",
-      "press": "연합뉴스",
-      "url": "https://www.yna.co.kr/view/AKR20261114026000030",
-      "timestamp": 1794622496000,
-      "date": "2026.11.14 11:14",
-      "tags": [
-        "매크로"
-      ]
-    },
-    {
-      "title": "“10년 모은 4억이 1억으로…” 반도체 레버리지 투자에 무너진 30대 직장인의 눈물",
-      "press": "매일경제",
-      "url": "https://www.mk.co.kr/news/stock/12208838",
-      "timestamp": 1794621944000,
-      "date": "2026.11.14 11:05",
-      "tags": [
-        "증시"
-      ],
-      "tagSource": "ai"
-    },
-    {
-      "title": "성남시, 내달 10일 채용박람회…참여기업 20개사 모집",
-      "press": "연합뉴스",
-      "url": "https://www.yna.co.kr/view/AKR20261113134700061",
-      "timestamp": 1794621600000,
-      "date": "2026.11.14 11:00",
-      "tags": [
-        "매크로"
-      ]
-    },
-    {
-      "title": "국제 금값, 미국 인플레이션 지표 발표 후 온스당 104달러 급락",
-      "press": "씬짜오베트남",
-      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE5LdWdrTUs0U1gyNklRS2llbk1SZUF4bnc4ZUl2TzRBUnNHMHg4UHhyai0tdzNfOVdwMU1UYTJsVzZtVDhDYUNjNA?oc=5",
-      "timestamp": 1794621487000,
-      "date": "2026.11.14 10:58",
-      "tags": [
-        "원자재",
-        "매크로"
       ],
       "tagSource": "ai"
     }
