@@ -22,12 +22,27 @@ jobs:
       - name: 체크아웃
         uses: actions/checkout@v4
 
+      - name: 이미 생성됐는지 확인 (예비 예약 실행이 늦게 돌 때 중복 생성 방지)
+        id: gate
+        env:
+          EVENT: ${{ github.event_name }}
+        run: |
+          RUN=true
+          if [ "$EVENT" = "schedule" ] && [ -f data/morning-latest.json ]; then
+            AGE=$(node -e "const d=require('./data/morning-latest.json');const t=Date.parse(d.generatedAt||0);process.stdout.write(String(Math.round((Date.now()-t)/60000)))")
+            echo "최근 생성 후 경과: ${AGE}분"
+            if [ "$AGE" -lt 180 ]; then RUN=false; echo "::notice title=건너뜀::정시 실행(Cloudflare 예약)으로 이미 생성되어 이번 예비 실행은 건너뜁니다"; fi
+          fi
+          echo "run=$RUN" >> "$GITHUB_OUTPUT"
+
       - name: Node.js 설정
+        if: steps.gate.outputs.run == 'true'
         uses: actions/setup-node@v4
         with:
           node-version: "20"
 
       - name: 글로벌 모닝 브리핑 데이터 생성 (시세 + 뉴스 + AI 요약)
+        if: steps.gate.outputs.run == 'true'
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}
@@ -37,9 +52,11 @@ jobs:
 
 
       - name: 데이터 무결성 점검 (문제 있으면 Actions 화면에 경고 표시)
+        if: steps.gate.outputs.run == 'true'
         run: |
           node scripts/validate-data.mjs || echo "::warning title=데이터 점검::오류가 발견되었습니다. 이 단계 로그를 확인하세요."
 
       - name: 변경사항 커밋 & 푸시 (동시 실행 시 안전 재시도)
+        if: steps.gate.outputs.run == 'true'
         run: |
           bash scripts/ci/commit-push.sh "chore(data): 모닝 브리핑 자동 갱신 [$(date -u +'%Y-%m-%d %H:%M UTC')]"

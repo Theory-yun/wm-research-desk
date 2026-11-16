@@ -20,12 +20,53 @@ function cors(req, env) {
 const json = (req, env, body, status = 200, extra = {}) =>
   new Response(JSON.stringify(body), { status, headers: { "Content-Type": "application/json; charset=utf-8", ...cors(req, env), ...extra } });
 
+/* ============================== 정시 실행 ============================== */
+// Cloudflare 예약(cron) → GitHub Actions 워크플로 실행 요청. 토큰: DISPATCH_TOKEN (이 저장소 Actions 쓰기 권한만)
+const SCHEDULE_TO_WORKFLOW = {
+  "30 21 * * SUN,MON,TUE,WED,THU": "briefing-morning.yml",
+  "0 7 * * MON,TUE,WED,THU,FRI": "briefing-evening.yml",
+};
+const REPO = "Theory-yun/wm-research-desk";
+
+async function dispatchWorkflow(env, workflow) {
+  if (!env.DISPATCH_TOKEN) {
+    console.log(`[정시 실행] DISPATCH_TOKEN 없음 — ${workflow} 요청 생략`);
+    return false;
+  }
+  for (let attempt = 1; attempt <= 3; attempt++) {
+    const r = await fetch(`https://api.github.com/repos/${REPO}/actions/workflows/${workflow}/dispatches`, {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${env.DISPATCH_TOKEN}`,
+        Accept: "application/vnd.github+json",
+        "X-GitHub-Api-Version": "2022-11-28",
+        "User-Agent": "wm-desk-api",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ ref: "main" }),
+    });
+    if (r.status === 204) {
+      console.log(`[정시 실행] ${workflow} 실행 요청 성공`);
+      return true;
+    }
+    console.log(`[정시 실행] ${workflow} 요청 실패 ${r.status} (${attempt}/3): ${(await r.text()).slice(0, 200)}`);
+    await new Promise((res) => setTimeout(res, 3000 * attempt));
+  }
+  return false;
+}
+
 export default {
+  async scheduled(event, env, ctx) {
+    const wf = SCHEDULE_TO_WORKFLOW[event.cron];
+    if (wf) ctx.waitUntil(dispatchWorkflow(env, wf));
+  },
+
   async fetch(req, env, ctx) {
     const url = new URL(req.url);
     if (req.method === "OPTIONS") return new Response(null, { headers: cors(req, env) });
     try {
-      if (url.pathname === "/health") return json(req, env, { ok: true, gemini: Boolean(env.GEMINI_API_KEY), time: new Date().toISOString() });
+      if (url.pathname === "/health")
+        return json(req, env, { ok: true, gemini: Boolean(env.GEMINI_API_KEY), dispatch: Boolean(env.DISPATCH_TOKEN), time: new Date().toISOString() });
       if (url.pathname === "/quotes" && req.method === "GET") return await quotes(req, env, ctx);
       if (url.pathname === "/pb-rewrite" && req.method === "POST") return await pbRewrite(req, env);
       return json(req, env, { error: "not_found" }, 404);
