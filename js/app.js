@@ -1,6 +1,6 @@
 import { STATE } from "./state.js";
 import { loadAllData } from "./dataLoader.js";
-import { renderDashboard, renderTicker, currentDataFile } from "./render.js";
+import { renderDashboard, renderTicker, renderTiles, currentDataFile } from "./render.js";
 import { initLiveApi, requestPbRewrite } from "./liveApi.js";
 import { renderNewsroom, initNewsroomEvents } from "./newsroom.js";
 import { renderInsights, initInsightEvents } from "./insight.js";
@@ -136,7 +136,10 @@ async function init() {
     fetchJson("./data/market-holidays.json").then(setMarketHolidays).catch(() => {}),
   ]);
   // 실시간 티커 (중계 서버가 있을 때만)
-  initLiveApi(() => renderTicker()).catch(() => {});
+  initLiveApi(() => {
+    renderTicker();
+    renderTiles();
+  }).catch(() => {});
 
   renderDashboard();
   renderNewsroom();

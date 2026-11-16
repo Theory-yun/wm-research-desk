@@ -24,29 +24,62 @@ function statusBadgeLabel(status) {
   }
 }
 
+/* ----------------------------- 최신 시세 (티커·핵심지표 공용) ----------------------------- */
+const fmt2 = (v) => Number(v).toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+const hhmm = (iso) => new Intl.DateTimeFormat("ko-KR", { timeZone: "Asia/Seoul", hour: "2-digit", minute: "2-digit", hour12: false }).format(new Date(iso));
+const isOpenFor = (m) => (m.key === "USDKRW" ? isFxOpenNow() : m.group === "domestic" ? isKrxOpenNow() : isUsOpenNow());
+function mdOf(tradedAt) {
+  const t = String(tradedAt ?? "").match(/(\d{4})-(\d{2})-(\d{2})/);
+  return t ? `${t[2]}.${t[3]}` : null;
+}
+
+/**
+ * 화면에 보여줄 지표: 브리핑 수집 값 대신 '지금 기준 최신 값'.
+ *  1) 중계 서버 시세 — 장중이면 실시간, 마감 후면 그날 종가 (장 시작 전 0% 값은 쓰지 않음)
+ *  2) 없으면 모닝·이브닝 중 더 나중에 수집된 값
+ * 지난 브리핑을 보는 중에는 그날 수집 값 그대로. 브리핑 요약·카톡·이미지는 각 브리핑 수집 값 기준.
+ */
+export function latestMarket(data) {
+  if (!data?.market) return [];
+  if (STATE.archiveView) return data.market;
+  const other = data === STATE.morningData ? STATE.eveningData : STATE.morningData;
+  const newerOther = other?.generatedAt && Date.parse(other.generatedAt) > Date.parse(data.generatedAt ?? 0) ? other : null;
+  return data.market.map((m) => {
+    const open = isOpenFor(m);
+    const q = STATE.live?.items?.[m.key];
+    const usable = q && Number.isFinite(q.price) && (open || q.diff !== 0 || q.pct !== 0);
+    if (usable) {
+      const up = q.pct >= 0;
+      const md = mdOf(q.tradedAt);
+      return {
+        ...m,
+        priceStr: fmt2(q.price),
+        diffStr: `${up ? "▲" : "▼"} ${fmt2(Math.abs(q.diff))}`,
+        changePct: Number(q.pct.toFixed(2)),
+        stale: false,
+        live: true,
+        asOfLocal: open ? "실시간" : "최신 종가",
+        asOfKst: open ? `실시간 ${hhmm(STATE.live.updatedAt)} 기준` : `${md ? `${md} ` : ""}마감 기준`,
+      };
+    }
+    const alt = newerOther?.market?.find((x) => x.key === m.key && !x.stale);
+    return alt ? { ...alt, group: m.group } : m;
+  });
+}
+
 /* ----------------------------- 상단 티커 ----------------------------- */
 export function renderTicker() {
   const track = $("wm-ticker-track");
   const data = currentEditionData();
   if (!track || !data) return;
 
-  const collected = data.generatedAtKST ? `브리핑 수집 ${data.generatedAtKST} 기준` : "";
-  const fmt2 = (v) => Number(v).toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-  const liveAt = STATE.live?.updatedAt
-    ? new Intl.DateTimeFormat("ko-KR", { timeZone: "Asia/Seoul", hour: "2-digit", minute: "2-digit", hour12: false }).format(new Date(STATE.live.updatedAt))
-    : null;
-  const buildItem = (m0) => {
-    const open = m0.key === "USDKRW" ? isFxOpenNow() : m0.group === "domestic" ? isKrxOpenNow() : isUsOpenNow();
-    // 장중이고 실시간 값이 있으면 그 값으로(지난 브리핑 보기 중에는 수집 값 그대로)
-    const lq = !STATE.archiveView && open ? STATE.live?.items?.[m0.key] : null;
-    const m = lq && Number.isFinite(lq.price)
-      ? { ...m0, priceStr: fmt2(lq.price), diffStr: fmt2(Math.abs(lq.diff)), changePct: Number(lq.pct.toFixed(2)), stale: false }
-      : m0;
+  const buildItem = (m) => {
+    const open = isOpenFor(m);
     const isUp = m.changePct >= 0;
     const dir = m.stale ? "wm-flat" : isUp ? "wm-up" : "wm-down";
     const arrow = m.stale ? "•" : isUp ? "▲" : "▼";
-    const when = lq ? `실시간 ${liveAt} 기준` : collected;
-    const status = `<span class="wm-mkt-dot ${open ? "is-open" : "is-closed"}" role="img" aria-label="${open ? "장중" : "마감"}" title="${open ? "장중" : "마감"}${when ? ` · ${when}` : ""}"></span>`;
+    const when = m.live ? m.asOfKst : `브리핑 수집 ${data.generatedAtKST} 기준`;
+    const status = `<span class="wm-mkt-dot ${open ? "is-open" : "is-closed"}" role="img" aria-label="${open ? "장중" : "마감"}" title="${open ? "장중" : "마감"} · ${escapeHtml(when)}"></span>`;
     return `
       <div class="wm-ticker-item">
         ${m.stale ? '<span class="wm-stale-dot" title="갱신 실패"></span>' : ""}
@@ -56,17 +89,16 @@ export function renderTicker() {
       </div>
     `;
   };
-
-  const cycle = data.market.map(buildItem).join("");
+  const cycle = latestMarket(data).map(buildItem).join("");
   track.innerHTML = cycle + cycle;
 }
 
 /* ----------------------------- 6개 핵심 지표 타일 ----------------------------- */
-function renderTiles(data) {
+export function renderTiles(data = currentEditionData()) {
   const grid = $("dashboard-6tiles-grid");
-  if (!grid) return;
+  if (!grid || !data) return;
 
-  grid.innerHTML = data.market
+  grid.innerHTML = latestMarket(data)
     .map((item) => {
       const isUp = item.changePct >= 0;
       const theme = item.stale ? "theme-stale" : isUp ? "theme-up" : "theme-down";
@@ -81,7 +113,7 @@ function renderTiles(data) {
             <div class="info-asset-title">${escapeHtml(item.name)}</div>
             <div class="info-big-price">${escapeHtml(item.priceStr)}</div>
             <div class="info-delta-row">
-              <span class="info-diff-pt">${escapeHtml(item.diffStr)}</span>
+              <span class="info-diff-pt">${escapeHtml(String(item.diffStr).replace(/^([▲▼])\s*[-+]?/, "$1 "))}</span>
               <span class="info-pct-pill">${pct}</span>
             </div>
           </div>
