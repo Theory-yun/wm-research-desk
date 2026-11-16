@@ -240,7 +240,7 @@ export function renderPortfolio() {
       const market = (c.market ?? [])
         .map(
           (m) =>
-            `<span class="ac-mkt ${m.changePct > 0 ? "up" : m.changePct < 0 ? "down" : ""}"><b>${escapeHtml(m.name)}</b> ${escapeHtml(m.priceStr ?? "")}${escapeHtml(m.unit ?? "")} <em>${escapeHtml(fmtPct(m.changePct))}</em></span>`
+            `<span class="ac-mkt ${m.changePct > 0 ? "up" : m.changePct < 0 ? "down" : ""}"><b>${escapeHtml(m.name)}</b> ${escapeHtml(m.priceStr ?? "")}${escapeHtml(m.unit ?? "")} <em>${escapeHtml(m.chgStr ?? fmtPct(m.changePct))}</em></span>`
         )
         .join("");
       const events = (c.events ?? [])

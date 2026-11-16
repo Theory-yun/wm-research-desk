@@ -87,7 +87,7 @@ function levelOf(cls, { marketLines, events, news }) {
   return "평이";
 }
 
-const fmtChg = (m) => `${m.changePct >= 0 ? "+" : ""}${m.changePct}%`;
+const fmtChg = (m) => m.chgStr ?? `${m.changePct >= 0 ? "+" : ""}${m.changePct}%`;
 
 export async function buildAssetChecks({ edition, market, extraMarket = [], stories, dataDir, sessionContext = "" }) {
   const todayIso = new Date(Date.now() + 9 * 3600e3).toISOString().slice(0, 10);
@@ -110,7 +110,7 @@ export async function buildAssetChecks({ edition, market, extraMarket = [], stor
     const card = {
       key: cls.key,
       name: cls.name,
-      market: marketLines.map((m) => ({ key: m.key, name: m.name, priceStr: m.priceStr, changePct: m.changePct, unit: m.unit ?? "" })),
+      market: marketLines.map((m) => ({ key: m.key, name: m.name, priceStr: m.priceStr, changePct: m.changePct, unit: m.unit ?? "", ...(m.chgStr ? { chgStr: m.chgStr } : {}) })),
       events: evs,
       news,
     };

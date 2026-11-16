@@ -239,6 +239,8 @@ export async function collectExtraMarket() {
           priceStr: formatNum(q.price, s.dec, s.dec),
           changePct: Number(q.pct.toFixed(2)),
           diff: Number(q.diff.toFixed(s.dec + 1)),
+          // 금리는 등락률(%)보다 bp 변화가 의미 있음: 5.10% → 5.15% = +5bp
+          ...(s.unit === "%" ? { chgStr: `${q.diff >= 0 ? "+" : ""}${Math.round(q.diff * 100)}bp` } : {}),
           stale: false,
         };
       } catch {
@@ -247,6 +249,6 @@ export async function collectExtraMarket() {
     })
   );
   const ok = out.filter(Boolean);
-  console.log(`[추가 지표] ${ok.length}/${EXTRA_SYMBOLS.length}개 수집: ${ok.map((m) => `${m.name} ${m.priceStr}${m.unit}(${m.changePct}%)`).join(", ")}`);
+  console.log(`[추가 지표] ${ok.length}/${EXTRA_SYMBOLS.length}개 수집: ${ok.map((m) => `${m.name} ${m.priceStr}${m.unit}(${m.chgStr ?? `${m.changePct}%`})`).join(", ")}`);
   return ok;
 }

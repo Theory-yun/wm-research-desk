@@ -181,7 +181,7 @@ function buildPrompt({ edition, market, extraMarket = [], upcoming = [], candida
     .join("\n");
 
   const extraLines = extraMarket
-    .map((m) => `- ${m.name}: ${m.priceStr}${m.unit ?? ""} (${m.changePct >= 0 ? "+" : ""}${m.changePct}%)`)
+    .map((m) => `- ${m.name}: ${m.priceStr}${m.unit ?? ""} (${m.chgStr ?? `${m.changePct >= 0 ? "+" : ""}${m.changePct}%`})`)
     .join("\n");
   const eventLines = upcoming
     .slice(0, 12)
@@ -220,6 +220,7 @@ ${pbNotes ? `[본사 참고 메모]\n${pbNotes}\n` : ""}
    - 단락 제목·번호·글머리표·별표(*)·굵게(**) 같은 기호는 쓰지 말고 문장으로만 쓰세요. 카카오톡에 그대로 붙여 넣는 본문입니다.
    - 인사말("대표님, 안녕하십니까" 등)·호칭·맺음말 없이 바로 시장 내용으로 시작하세요.
    - "~하시길 권해드립니다", "~하세요" 같은 투자 권유·행동 지시 표현은 쓰지 말고, 사실과 해석, 주목할 점만 쓰세요.
+   - "비중 점검이 요구됩니다", "포트폴리오 조정이 필요합니다"처럼 매매·비중 조정을 암시하는 표현도 쓰지 말고, 지켜볼 변수와 그 이유로 마무리하세요.
 4. 반드시 아래 JSON 스키마로만, 다른 텍스트 없이 응답하세요.
 
 {
