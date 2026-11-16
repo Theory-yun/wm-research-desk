@@ -5,7 +5,7 @@ import { initLiveApi, requestPbRewrite } from "./liveApi.js";
 import { renderNewsroom, initNewsroomEvents } from "./newsroom.js";
 import { renderInsights, initInsightEvents } from "./insight.js";
 import { renderBoard, initBoardEvents } from "./board.js";
-import { shareKakaoBriefing, downloadBriefingImage } from "./pdfExport.js";
+import { shareKakaoBriefing, shareCardNews } from "./pdfExport.js";
 import { defaultEditionByTime, formatKstDate, setMarketHolidays } from "./util.js";
 import { fetchJson } from "./dataLoader.js";
 import { selectArchiveDate } from "./archive.js";
@@ -86,7 +86,7 @@ function wireUpStaticEvents() {
     }
   });
   $("btn-copy-kakao").addEventListener("click", shareKakaoBriefing);
-  $("btn-image-download").addEventListener("click", downloadBriefingImage);
+  $("btn-cardnews").addEventListener("click", shareCardNews);
   $("btn-goto-newsroom").addEventListener("click", () => switchTab("tab-newsroom"));
 
   // 상단 J's WM RESEARCH DESK 클릭 → 종합 대시보드

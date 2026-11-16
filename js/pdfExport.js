@@ -309,3 +309,173 @@ export async function downloadBriefingImage() {
     btn.disabled = false;
   }
 }
+
+/* =========================================================================
+   카드뉴스 6장 (1080×1350) — 받는 사람이 휴대폰에서 바로 읽기 쉽게 큰 글씨로 나눠 공유
+   1 손님 브리핑 · 2 핵심 이슈 · 3 필독 뉴스 · 4 자산별 시사점 · 5 주요 지표 · 6 이번 주 일정 + 인사말
+   숫자·문구는 해당 브리핑 수집 기준(PB의 생각 반영본이 있으면 그 요약)
+   ========================================================================= */
+const CN_GREETING = "늘 믿고 함께해 주셔서 감사합니다.\n궁금하신 점은 언제든 편하게 연락 주십시오.";
+
+function cardShell(i, edLabel, title, body) {
+  return `<section class="cn-card">
+    <header class="cn-top"><span class="cn-brand">J's WM RESEARCH DESK</span><span class="cn-pg">${i} / 6</span></header>
+    <div class="cn-head"><div class="cn-ed">${escapeHtml(edLabel)}</div><h2 class="cn-title">${title}</h2></div>
+    <div class="cn-body">${body}</div>
+    <footer class="cn-foot">시장 데이터·보도 기반 참고 자료이며 투자 권유가 아닙니다.</footer>
+  </section>`;
+}
+
+export function buildCardNewsHtml() {
+  const data = currentEditionData();
+  if (!data) return [];
+  const isMorning = STATE.edition === "MORNING";
+  const sess = globalSessionLabel(data);
+  const [y, mo, d] = String(data.generatedAtKST).split(/[.\s]/);
+  const dateLabel = `${Number(mo)}월 ${Number(d)}일`;
+  const edLabel = `${dateLabel} ${isMorning ? "모닝 브리핑" : "이브닝 브리핑"} · ${isMorning ? (sess.overnight ? "간밤 글로벌" : `${sess.label} 글로벌`) : "오늘 국내 시장"}`;
+  const pbApplied = Boolean(STATE.pbOverride);
+
+  // 1. 손님 브리핑
+  const paras = talkingText(data).split(/\n\s*\n/).map((p) => p.trim()).filter(Boolean);
+  const c1 = cardShell(1, edLabel, `손님 브리핑${pbApplied ? ' <span class="cn-badge">PB 의견 반영</span>' : ""}`,
+    `<div class="cn-summary">${paras.map((p) => `<p>${escapeHtml(p)}</p>`).join("")}</div>`);
+
+  // 2. 핵심 이슈
+  const NUM = ["1", "2", "3"];
+  const c2 = cardShell(2, edLabel, "오늘의 핵심 이슈",
+    (data.issues ?? []).slice(0, 3).map((it, i) => `<div class="cn-issue">
+      <div class="cn-issue-n">${NUM[i]}</div>
+      <div><div class="cn-issue-cat">${escapeHtml(it.cat ?? "")}</div><div class="cn-issue-title">${escapeHtml(it.title)}</div><div class="cn-issue-desc">${escapeHtml(it.desc ?? "")}</div></div>
+    </div>`).join(""));
+
+  // 3. 필독 뉴스
+  const news = getTop5News(5);
+  const c3 = cardShell(3, edLabel, isMorning ? "손님 필독 글로벌 뉴스" : "손님 필독 국내 뉴스",
+    news.map((n, i) => `<div class="cn-news">
+      <div class="cn-news-n">${i + 1}</div>
+      <div><div class="cn-news-title">${escapeHtml(n.title)}</div>
+      <div class="cn-news-meta">${escapeHtml(n.press)}${n.coverage ? ` · ${n.coverage}개 언론 보도` : ""}${n.shortUrl ? ` · <b>${escapeHtml(n.shortUrl.replace(/^https?:\/\//, ""))}</b>` : ""}</div></div>
+    </div>`).join("") + `<div class="cn-note">링크 주소는 함께 보내드리는 카톡 메시지에서 누르실 수 있습니다.</div>`);
+
+  // 4. 자산별 시사점
+  const lvCls = (l) => (l === "변동 큼" ? "high" : l === "주목" ? "mid" : "low");
+  const assets = currentAssetInsights(data)?.cards ?? [];
+  const c4 = cardShell(4, edLabel, "자산별 시사점",
+    assets.map((c) => `<div class="cn-asset">
+      <div class="cn-asset-head"><span>${ASSET_EMOJI[c.key] ?? ""} ${escapeHtml(c.name)}</span><span class="cn-lv lv-${lvCls(c.level)}">${escapeHtml(c.level ?? "")}</span></div>
+      <div class="cn-asset-text">${escapeHtml(c.headline ?? "")}</div>
+    </div>`).join(""));
+
+  // 5. 주요 지표 (브리핑 수집 기준)
+  const pctTxt = (v) => `${v > 0 ? "+" : ""}${v}%`;
+  const big = (data.market ?? []).map((m) => {
+    const cls = m.changePct > 0 ? "up" : m.changePct < 0 ? "down" : "";
+    return `<div class="cn-mkt"><div class="cn-mkt-name">${escapeHtml(m.name)}</div><div class="cn-mkt-price">${escapeHtml(m.priceStr)}</div><div class="cn-mkt-chg ${cls}">${m.changePct > 0 ? "▲" : m.changePct < 0 ? "▼" : "·"} ${pctTxt(m.changePct)}</div></div>`;
+  }).join("");
+  const extra = (data.extraMarket ?? []).map((m) => {
+    const cls = m.changePct > 0 ? "up" : m.changePct < 0 ? "down" : "";
+    return `<div class="cn-ex"><span>${escapeHtml(m.name)}</span><b>${escapeHtml(m.priceStr)}${escapeHtml(m.unit ?? "")}</b><em class="${cls}">${escapeHtml(m.chgStr ?? pctTxt(m.changePct))}</em></div>`;
+  }).join("");
+  const c5 = cardShell(5, edLabel, "주요 지표",
+    `<div class="cn-mkt-grid">${big}</div>${extra ? `<div class="cn-ex-wrap"><div class="cn-sub">참고 지표</div>${extra}</div>` : ""}<div class="cn-note">${escapeHtml(data.generatedAtKST)} 수집 기준</div>`);
+
+  // 6. 이번 주 일정 + 인사말
+  const wk = thisWeekEvents();
+  const regionShort = { US: "미국", KR: "한국", EU: "유럽", JP: "일본", GL: "" };
+  const fmt = (iso) => { const t = new Date(`${iso}T00:00:00Z`); return `${t.getUTCMonth() + 1}/${t.getUTCDate()} (${WD[t.getUTCDay()]})`; };
+  const evs = wk.items.slice(0, 7).map((e) => {
+    const k = wk.kinds[e.kind];
+    return `<div class="cn-ev"><span class="cn-ev-d">${fmt(e.date)}</span><span class="cn-ev-t">${regionShort[k.region] ? `<i>${regionShort[k.region]}</i>` : ""}${escapeHtml(e.title ?? k.name)}</span></div>`;
+  }).join("") || `<div class="cn-note">등록된 주요 일정이 없습니다.</div>`;
+  const c6 = cardShell(6, edLabel, wk.label.replace("주요 일정", "핵심 일정"),
+    `<div class="cn-evs">${evs}</div><div class="cn-greet">${escapeHtml(CN_GREETING).replace(/\n/g, "<br>")}<div class="cn-sign">J's WM RESEARCH DESK</div></div>`);
+
+  return [c1, c2, c3, c4, c5, c6];
+}
+
+/** 카드 본문이 넘치면 글자 크기를 줄여 맞춤 */
+function fitCard(card) {
+  const body = card.querySelector(".cn-body");
+  let size = 34;
+  body.style.fontSize = `${size}px`;
+  while (body.scrollHeight > body.clientHeight + 1 && size > 22) {
+    size -= 1;
+    body.style.fontSize = `${size}px`;
+  }
+}
+
+/** 카드뉴스 6장 생성 → 휴대폰은 공유창(카톡에 6장 한 번에), PC는 미리보기 창에서 저장 */
+export async function shareCardNews() {
+  const btn = $("btn-cardnews");
+  if (!window.html2canvas) {
+    alert("이미지 생성 도구를 불러오는 중입니다. 잠시 후 다시 눌러 주세요.");
+    return;
+  }
+  const cards = buildCardNewsHtml();
+  if (!cards.length) return;
+  const orig = btn?.textContent;
+  if (btn) { btn.disabled = true; btn.textContent = "만드는 중…"; }
+  const overlay = Object.assign(document.createElement("div"), { className: "cn-overlay", textContent: "카드뉴스 6장을 만들고 있습니다…" });
+  document.body.appendChild(overlay);
+  const stage = Object.assign(document.createElement("div"), { className: "cn-stage" });
+  document.body.appendChild(stage);
+  const prevScroll = window.scrollY;
+  window.scrollTo(0, 0);
+
+  const data = currentEditionData();
+  const stamp = data.generatedAtKST.replace(/[.\s:]/g, "");
+  const files = [];
+  try {
+    if (document.fonts?.ready) await document.fonts.ready;
+    for (let i = 0; i < cards.length; i++) {
+      stage.innerHTML = cards[i];
+      const el = stage.firstElementChild;
+      fitCard(el);
+      const canvas = await window.html2canvas(el, { scale: 1, useCORS: true, backgroundColor: "#FFFDF8", scrollX: 0, scrollY: 0, width: 1080, height: 1350 });
+      const blob = await new Promise((res) => canvas.toBlob(res, "image/jpeg", 0.92));
+      files.push(new File([blob], `WMdesk_${stamp}_${i + 1}.jpg`, { type: "image/jpeg" }));
+    }
+  } catch (err) {
+    alert(`카드뉴스를 만들지 못했습니다: ${err.message}`);
+    return;
+  } finally {
+    stage.remove();
+    overlay.remove();
+    window.scrollTo(0, prevScroll);
+    if (btn) { btn.disabled = false; btn.textContent = orig; }
+  }
+
+  if (isMobile() && navigator.canShare?.({ files })) {
+    try {
+      await navigator.share({ files, title: "J's WM RESEARCH DESK 브리핑" });
+      return;
+    } catch (e) {
+      if (e?.name === "AbortError") return;
+    }
+  }
+  openCardNewsPreview(files);
+}
+
+/** 미리보기 창: 6장 보기 + 한 장씩/모두 저장 */
+function openCardNewsPreview(files) {
+  const urls = files.map((f) => URL.createObjectURL(f));
+  const modal = document.createElement("div");
+  modal.className = "cn-modal";
+  modal.setAttribute("role", "dialog");
+  modal.setAttribute("aria-label", "카드뉴스 미리보기");
+  modal.innerHTML = `<div class="cn-modal-box">
+      <div class="cn-modal-head"><b>카드뉴스 6장</b><span>휴대폰에서 누르면 카카오톡으로 바로 공유할 수 있습니다.</span>
+        <button type="button" class="hdr-btn hdr-btn-primary" data-act="all">모두 저장</button>
+        <button type="button" class="hdr-btn" data-act="close" aria-label="닫기">닫기</button></div>
+      <div class="cn-modal-grid">${urls.map((u, i) => `<a href="${u}" download="${files[i].name}" title="이 장 저장"><img src="${u}" alt="카드뉴스 ${i + 1}번"></a>`).join("")}</div>
+    </div>`;
+  const close = () => { modal.remove(); setTimeout(() => urls.forEach((u) => URL.revokeObjectURL(u)), 1000); };
+  modal.addEventListener("click", (e) => {
+    const act = e.target?.dataset?.act;
+    if (e.target === modal || act === "close") close();
+    if (act === "all") files.forEach((f, i) => setTimeout(() => { const a = Object.assign(document.createElement("a"), { href: urls[i], download: f.name }); document.body.appendChild(a); a.click(); a.remove(); }, i * 400));
+  });
+  document.addEventListener("keydown", function esc(e) { if (e.key === "Escape") { close(); document.removeEventListener("keydown", esc); } });
+  document.body.appendChild(modal);
+}

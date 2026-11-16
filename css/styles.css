@@ -869,3 +869,60 @@ a { color: inherit; }
 .pb-view-status { margin: 0; font-size: 12.5px; color: var(--accent-text); min-height: 1em; }
 .pb-applied-badge { margin-left: 8px; font-size: 11px; font-weight: 700; color: #191307; background: var(--gold-text); border-radius: 999px; padding: 2px 8px; vertical-align: middle; }
 .pb-view-panel[hidden] { display: none !important; }
+
+/* ===== 카드뉴스 6장 (1080×1350, 손님 공유용 — 밝은 바탕·큰 글씨) ===== */
+.cn-stage { position: absolute; left: 0; top: 0; z-index: 9998; }
+.cn-overlay { position: fixed; inset: 0; z-index: 9999; background: rgba(8, 16, 18, .92); color: #E8EEEC; display: flex; align-items: center; justify-content: center; font-size: 18px; font-weight: 600; }
+.cn-card { width: 1080px; height: 1350px; box-sizing: border-box; display: flex; flex-direction: column; background: #FFFDF8; color: #1A1F2B; font-family: 'IBM Plex Sans KR', 'Pretendard', 'Noto Sans KR', sans-serif; word-break: keep-all; overflow-wrap: anywhere; }
+.cn-top { display: flex; justify-content: space-between; align-items: center; background: #0F3D3A; color: #F3E3BD; padding: 30px 64px; font-size: 26px; font-weight: 700; letter-spacing: .05em; }
+.cn-pg { font-family: var(--font-num); color: #C9D8D5; letter-spacing: 0; font-weight: 500; }
+.cn-head { padding: 44px 64px 22px; border-bottom: 3px solid #E9DFC9; }
+.cn-ed { font-size: 26px; color: #8A6A2F; font-weight: 600; }
+.cn-title { margin: 10px 0 0; font-size: 60px; line-height: 1.2; font-weight: 700; letter-spacing: -.02em; color: #0F3D3A; }
+.cn-badge { display: inline-block; vertical-align: middle; font-size: 24px; background: #C9A45C; color: #1B1407; border-radius: 999px; padding: 4px 16px; margin-left: 10px; letter-spacing: 0; }
+.cn-body { flex: 1; min-height: 0; overflow: hidden; padding: 34px 64px 20px; font-size: 34px; line-height: 1.6; display: flex; flex-direction: column; gap: .7em; }
+.cn-foot { padding: 20px 64px 30px; font-size: 20px; color: #6B7280; border-top: 1px solid #ECE6DA; }
+.cn-summary p { margin: 0 0 .75em; color: #1E2430; }
+.cn-summary p:last-child { margin-bottom: 0; }
+.cn-issue { display: flex; gap: .6em; padding-bottom: .6em; border-bottom: 2px solid #F0EADF; }
+.cn-issue:last-child { border-bottom: 0; }
+.cn-issue-n, .cn-news-n { flex: none; width: 1.5em; height: 1.5em; border-radius: 50%; background: #0F3D3A; color: #F3E3BD; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: .9em; margin-top: .1em; }
+.cn-issue-cat { font-size: .7em; font-weight: 700; color: #8A6A2F; }
+.cn-issue-title { font-size: 1.08em; font-weight: 700; line-height: 1.4; margin-top: .1em; }
+.cn-issue-desc { font-size: .85em; color: #3E4654; line-height: 1.55; margin-top: .25em; }
+.cn-news { display: flex; gap: .55em; padding-bottom: .55em; border-bottom: 2px solid #F0EADF; }
+.cn-news:last-of-type { border-bottom: 0; }
+.cn-news-title { font-weight: 600; line-height: 1.42; }
+.cn-news-meta { font-size: .66em; color: #5B6472; margin-top: .2em; }
+.cn-news-meta b { font-family: var(--font-num); color: #0F3D3A; }
+.cn-note { font-size: .62em; color: #6B7280; margin-top: auto; }
+.cn-asset { padding: .45em .7em; border-radius: 14px; background: #F6F1E6; }
+.cn-asset-head { display: flex; justify-content: space-between; align-items: center; font-size: .78em; font-weight: 700; color: #0F3D3A; }
+.cn-lv { font-size: .8em; border-radius: 999px; padding: .1em .7em; }
+.cn-lv.lv-high { background: #FBE3D7; color: #9A3412; } .cn-lv.lv-mid { background: #F7ECCF; color: #7A5410; } .cn-lv.lv-low { background: #E3EEEC; color: #2F5F59; }
+.cn-asset-text { font-size: .86em; font-weight: 600; line-height: 1.4; margin-top: .15em; }
+.cn-mkt-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .45em; }
+.cn-mkt { background: #F6F1E6; border-radius: 16px; padding: .45em .65em; }
+.cn-mkt-name { font-size: .66em; color: #5B6472; font-weight: 600; }
+.cn-mkt-price { font-family: var(--font-num); font-size: 1.15em; font-weight: 600; line-height: 1.3; }
+.cn-mkt-chg { font-family: var(--font-num); font-size: .78em; font-weight: 600; color: #5B6472; }
+.cn-mkt-chg.up, .cn-ex em.up { color: #D12F2F; } .cn-mkt-chg.down, .cn-ex em.down { color: #1F5FBF; }
+.cn-ex-wrap { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .15em 1em; font-size: .7em; }
+.cn-sub { grid-column: 1 / -1; font-weight: 700; color: #8A6A2F; }
+.cn-ex { display: flex; gap: .4em; align-items: baseline; border-bottom: 1px solid #ECE6DA; padding: .2em 0; }
+.cn-ex span { color: #3E4654; flex: 1; } .cn-ex b { font-family: var(--font-num); font-weight: 600; } .cn-ex em { font-family: var(--font-num); font-style: normal; font-weight: 600; min-width: 4.2em; text-align: right; }
+.cn-evs { display: flex; flex-direction: column; gap: .35em; }
+.cn-ev { display: flex; gap: .7em; align-items: baseline; border-bottom: 2px solid #F0EADF; padding-bottom: .35em; }
+.cn-ev-d { flex: none; width: 6.4em; white-space: nowrap; font-family: var(--font-num); font-size: .82em; font-weight: 600; color: #0F3D3A; }
+.cn-ev-t { font-size: .9em; font-weight: 600; line-height: 1.4; }
+.cn-ev-t i { font-style: normal; font-size: .72em; background: #0F3D3A; color: #F3E3BD; border-radius: 6px; padding: .05em .45em; margin-right: .45em; vertical-align: .12em; }
+.cn-greet { margin-top: auto; background: #0F3D3A; color: #F3EFE6; border-radius: 20px; padding: .8em 1em; font-size: .86em; line-height: 1.6; }
+.cn-sign { margin-top: .5em; font-size: .7em; color: #E3C27A; font-weight: 700; letter-spacing: .05em; }
+.cn-modal { position: fixed; inset: 0; z-index: 9999; background: rgba(5, 10, 12, .8); display: flex; align-items: center; justify-content: center; padding: 20px; }
+.cn-modal-box { background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; max-width: 1100px; width: 100%; max-height: 92vh; overflow: auto; padding: 16px; }
+.cn-modal-head { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-bottom: 12px; color: var(--text-body); font-size: 13px; }
+.cn-modal-head b { color: var(--text-main); font-size: 16px; }
+.cn-modal-head span { margin-right: auto; }
+.cn-modal-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
+.cn-modal-grid img { width: 100%; display: block; border-radius: 8px; }
+@media (max-width: 760px) { .cn-modal-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }

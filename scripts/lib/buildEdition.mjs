@@ -190,6 +190,7 @@ export async function buildEdition({ edition, directFeeds, queryRules, pbNotesPa
       ...(summary.summaryModel ? { summaryModel: summary.summaryModel } : {}),
     },
     market,
+    extraMarket,
     issues: summary.issues,
     talkingPoint: summary.talkingPoint,
     topNews: topNews.length ? topNews : previous?.topNews ?? [],
