@@ -16,4 +16,4 @@ SITE_BASE = "https://theory-yun.github.io/wm-research-desk"
 #   21:30 UTC 일~목 = 한국 06:30 월~금 (모닝)
 #   07:00 UTC 월~금 = 한국 16:00 월~금 (이브닝)
 [triggers]
-crons = ["30 21 * * SUN,MON,TUE,WED,THU", "0 7 * * MON,TUE,WED,THU,FRI", "20 8 * * *"]
+crons = ["30 21 * * SUN,MON,TUE,WED,THU", "0 7 * * MON,TUE,WED,THU,FRI"]

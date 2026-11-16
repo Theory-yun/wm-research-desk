@@ -28,7 +28,6 @@ function workflowForTime(ts) {
   const h = d.getUTCHours();
   if (h === 21) return "briefing-morning.yml"; // 한국 06:30
   if (h === 7 && d.getUTCMinutes() < 30) return "briefing-evening.yml"; // 한국 16:00
-  if (h === 8) return "diagnose-gemini.yml"; // 임시: 정시 실행 연결 시험
   return null;
 }
 const REPO = "Theory-yun/wm-research-desk";
