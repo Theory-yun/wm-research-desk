@@ -25,6 +25,7 @@ const json = (req, env, body, status = 200, extra = {}) =>
 const SCHEDULE_TO_WORKFLOW = {
   "30 21 * * SUN,MON,TUE,WED,THU": "briefing-morning.yml",
   "0 7 * * MON,TUE,WED,THU,FRI": "briefing-evening.yml",
+  "55 07 * * *": "diagnose-gemini.yml", // 임시: 정시 실행 연결 시험
 };
 const REPO = "Theory-yun/wm-research-desk";
 
