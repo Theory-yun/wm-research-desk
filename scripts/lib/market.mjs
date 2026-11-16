@@ -91,7 +91,17 @@ async function fetchYahooMeta(symbol) {
   if (!result?.meta) return null;
 
   const cur = result.meta.regularMarketPrice;
-  const prev = result.meta.chartPreviousClose ?? result.meta.previousClose;
+  // chartPreviousClose는 '조회 기간(5일) 시작 전' 종가라 전일 대비가 아님 →
+  // 일봉 종가 배열에서 마지막 거래일 직전 종가를 사용
+  const closes = (result.indicators?.quote?.[0]?.close ?? []).filter((v) => Number.isFinite(v));
+  let prev = null;
+  if (closes.length >= 2) {
+    const last = closes[closes.length - 1];
+    // 마지막 봉 = 현재가(오늘/마지막 거래일 봉) → 그 전 봉이 전일 종가
+    // 마지막 봉이 현재가와 다르면(오늘 봉이 아직 없음) 마지막 봉이 전일 종가
+    prev = Math.abs(last - cur) / Math.max(1e-9, Math.abs(cur)) < 0.003 ? closes[closes.length - 2] : last;
+  }
+  prev = prev ?? result.meta.previousClose ?? null;
   if (cur == null || prev == null) return null;
 
   const diff = cur - prev;
