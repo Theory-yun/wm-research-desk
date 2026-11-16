@@ -1,11 +1,11 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { collectCoreMarket } from "./market.mjs";
+import { collectCoreMarket, collectExtraMarket } from "./market.mjs";
 import { fetchGoogleNewsQuery, fetchRssFeed, mergeAndDedupe } from "./news.mjs";
 import { clusterStories, rankClusters, aiMergeAndClassify, aiClassifyTitles, keywordClassify } from "./newsIntel.mjs";
-import { generateBriefingSummary } from "./summarize.mjs";
-import { buildAssetChecks } from "./assetChecks.mjs";
+import { generateBriefingSummary, buildSessionContext } from "./summarize.mjs";
+import { buildAssetChecks, upcomingEvents } from "./assetChecks.mjs";
 import { attachShortUrls } from "./shortUrl.mjs";
 import { verifyStoryTimes } from "./articleTime.mjs";
 import { kstStamp, kstDateKey } from "./fetchUtil.mjs";
@@ -144,9 +144,26 @@ export async function buildEdition({ edition, directFeeds, queryRules, pbNotesPa
     /* 본사 메모 파일이 없으면 생략 */
   }
 
+  // 요약·자산별 시사점 분석용 추가 지표(금리·달러·금·유가·비트코인)와 2주 내 일정
+  let extraMarket = [];
+  try {
+    extraMarket = await collectExtraMarket();
+  } catch (err) {
+    console.error("[추가 지표] 수집 실패(생략):", err.message);
+  }
+  const todayIso = new Date(Date.now() + 9 * 3600e3).toISOString().slice(0, 10);
+  let upcoming = [];
+  try {
+    upcoming = upcomingEvents(DATA_DIR, todayIso, 10);
+  } catch {
+    /* 일정 파일 없으면 생략 */
+  }
+
   const summary = await generateBriefingSummary({
     edition,
     market,
+    extraMarket,
+    upcoming,
     candidateNews: candidateNews.length ? candidateNews : previous?.topNews ?? [],
     pbNotes,
   });
@@ -155,7 +172,7 @@ export async function buildEdition({ edition, directFeeds, queryRules, pbNotesPa
   // 5-1) 오늘의 자산군별 점검 포인트 (근거: 시세·필독 뉴스·다가오는 일정)
   let assetChecks = null;
   try {
-    assetChecks = await buildAssetChecks({ edition, market, stories, dataDir: DATA_DIR });
+    assetChecks = await buildAssetChecks({ edition, market, extraMarket, stories, dataDir: DATA_DIR, sessionContext: buildSessionContext(edition, market) });
   } catch (err) {
     console.error("[자산군 점검] 생성 실패(생략):", err.message);
   }

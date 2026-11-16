@@ -1,8 +1,6 @@
 import { STATE } from "./state.js";
 import { loadAllData } from "./dataLoader.js";
-import { renderDashboard, toggleEditBriefing, renderPortfolio } from "./render.js";
-import { StorageUtil } from "./state.js";
-import { LOCAL_STORAGE_KEYS } from "./config.js";
+import { renderDashboard, toggleEditBriefing } from "./render.js";
 import { renderNewsroom, initNewsroomEvents } from "./newsroom.js";
 import { renderInsights, initInsightEvents } from "./insight.js";
 import { renderBoard, initBoardEvents } from "./board.js";
@@ -49,15 +47,6 @@ function wireUpStaticEvents() {
     e.preventDefault();
     switchTab("tab-dashboard");
     window.scrollTo({ top: 0, behavior: "smooth" });
-  });
-
-  // 예시 배분 모델 선택 (선택값은 이 브라우저에 저장)
-  $("alloc-picker").addEventListener("click", (e) => {
-    const b = e.target.closest("[data-alloc]");
-    if (!b) return;
-    STATE.allocModel = b.dataset.alloc;
-    StorageUtil.set(LOCAL_STORAGE_KEYS.allocModel, STATE.allocModel);
-    renderPortfolio();
   });
 
   // 지난 브리핑 다시보기

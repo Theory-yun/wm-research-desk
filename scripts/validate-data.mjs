@@ -81,7 +81,18 @@ function checkEdition(f, ed) {
         else if (ADVICE.test(`${t.headline} ${t.insight} ${t.check}`)) err(f, `${m.name}·${c.name} 투자 권유 표현 포함`);
         else if (BAD_TEXT.test(`${t.headline}${t.insight}${t.check}`)) err(f, `${m.name}·${c.name} 문구 이상값`);
       }
+  } else if (ac.framework === "assets") {
+    if ((ac.cards ?? []).length < 4) err(f, `자산별 시사점 카드 ${ac.cards?.length ?? 0}개`);
+    for (const c of ac.cards ?? []) {
+      const t = `${c.headline ?? ""} ${c.analysis ?? ""} ${c.watch ?? ""}`;
+      if (!c.headline || !c.analysis) err(f, `${c.name} 시사점 문구 누락`);
+      else if (ADVICE.test(t)) err(f, `${c.name} 투자 권유 표현 포함`);
+      else if (BAD_TEXT.test(t) || /\*/.test(t)) err(f, `${c.name} 문구 이상값(기호 포함)`);
+    }
+    const ai = (ac.cards ?? []).filter((c) => c.textBy === "ai").length;
+    if (ai < (ac.cards ?? []).length) warn(f, `자산별 시사점 AI 문구 ${ai}/${ac.cards.length} (나머지는 규칙 기반)`);
   }
+  if (/\*/.test(ed.talkingPoint ?? "")) err(f, "talkingPoint에 * 기호 포함");
   return cov;
 }
 

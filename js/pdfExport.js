@@ -1,30 +1,70 @@
 import { STATE, currentEditionData, escapeHtml } from "./state.js";
-import { currentAllocation, globalSessionLabel } from "./render.js";
+import { currentAssetInsights, globalSessionLabel } from "./render.js";
 import { getTop5News } from "./render.js";
 
 const $ = (id) => document.getElementById(id);
 
-export function copyKakaoBriefing() {
+/** 지표 한 줄 요약: "코스피 5,290.53 (-0.98%)" */
+const mktShort = (m) => `${m.name} ${m.priceStr} (${m.changePct > 0 ? "+" : ""}${m.changePct}%)`;
+
+/** 화면의 브리핑 요약(편집했으면 편집본). 단락 줄바꿈 유지 */
+function talkingText(data) {
+  const el = $("edition-talking-point");
+  const t = (el?.innerText ?? "").replace(/\n{3,}/g, "\n\n").trim();
+  return t || data.talkingPoint || "";
+}
+
+/**
+ * 손님 전달용 카톡 문구 — 마크다운 기호(*) 없이 읽기 쉬운 순수 텍스트.
+ * 순서: 종합 요약 → 핵심 이슈 → 필독 뉴스 → 자산별 시사점(한 줄씩) → 지표(간단히)
+ */
+export function buildKakaoText() {
   const data = currentEditionData();
-  if (!data) return;
-  const icon = STATE.edition === "MORNING" ? "🌅" : "🌇";
+  if (!data) return "";
+  const isMorning = STATE.edition === "MORNING";
+  const sess = globalSessionLabel(data);
+  const title = isMorning ? `모닝 브리핑 (${sess.overnight ? "간밤 글로벌" : `${sess.label} 글로벌`})` : "이브닝 브리핑 (당일 국내)";
+  const line = "──────────";
 
-  const lines = data.market
-    .map((item) => {
-      const isUp = item.changePct >= 0;
-      const sign = `${isUp ? "+" : ""}${item.changePct}%`;
-      return `${isUp ? "📈" : "📉"} *${item.name}*: ${item.priceStr} (${item.diffStr} / ${sign})\n   🕒 ${item.asOfKst}`;
-    })
-    .join("\n");
-
-  const issues = data.issues.map((i, idx) => `${idx + 1}️⃣ *[${i.tag}]* ${i.title}\n   └ ${i.desc}`).join("\n\n");
-  const top5 = getTop5News()
-    .map((n, i) => `📌 *${i + 1}. ${n.title}* (${n.press} | ${n.date})\n   🔗 ${n.shortUrl || n.url}`)
+  const issues = (data.issues ?? []).map((i, idx) => `${idx + 1}. ${i.title}\n   ${i.desc}`).join("\n\n");
+  const news = getTop5News()
+    .map((n, i) => `${i + 1}. ${n.title}\n   ${n.press} · ${n.date}\n   ${n.shortUrl || n.url}`)
     .join("\n\n");
-  const talking = $("edition-talking-point")?.textContent.trim() ?? data.talkingPoint;
+  const assets = (currentAssetInsights(data)?.cards ?? [])
+    .filter((c) => c.headline && !/^뚜렷한 신호 없음/.test(c.headline))
+    .map((c) => `· ${c.name}: ${c.headline}`)
+    .join("\n");
+  const kr = data.market.filter((m) => m.group === "domestic").map(mktShort).join(" / ");
+  const gl = data.market.filter((m) => m.group !== "domestic").map(mktShort).join(" / ");
 
-  const msg = `🏛️ *[J's WM RESEARCH DESK 마켓 브리핑]*\n${icon} *기준:* ${data.generatedAtKST} (${STATE.edition === "MORNING" ? "모닝 · 글로벌" : "이브닝 · 국내"})\n━━━━━━━━━━━━━━━━━━\n\n📊 *1. 핵심 지표 (요약)*\n${lines}\n\n🔥 *2. 핵심 마켓 이슈*\n${issues}\n\n💡 *3. 손님 브리핑 종합 요약*\n${talking}\n\n📰 *4. 손님 필독 인기 뉴스*\n${top5}\n\n━━━━━━━━━━━━━━━━━━\n💼 *J's WM RESEARCH DESK*\n※ 본 자료는 PB 상담 보조용이며 법적 책임 증빙자료로 사용될 수 없습니다.`;
+  return [
+    `[J's WM RESEARCH DESK] ${title}`,
+    `${data.generatedAtKST} 기준`,
+    "",
+    "■ 브리핑 요약",
+    talkingText(data),
+    "",
+    line,
+    "■ 핵심 이슈",
+    issues,
+    "",
+    line,
+    "■ 필독 뉴스",
+    news,
+    ...(assets ? ["", line, "■ 자산별 시사점", assets] : []),
+    "",
+    line,
+    "■ 주요 지표",
+    kr,
+    gl,
+    "",
+    "※ 시장 데이터와 보도를 바탕으로 자동 작성된 참고 자료이며 투자 권유가 아닙니다.",
+  ].join("\n");
+}
 
+export function copyKakaoBriefing() {
+  const msg = buildKakaoText();
+  if (!msg) return;
   navigator.clipboard?.writeText(msg).then(() => alert("손님 카톡 브리핑 문구가 복사되었습니다. 채팅방에 붙여넣기(Ctrl+V) 하세요."));
 }
 
@@ -59,86 +99,88 @@ function thisWeekEvents() {
 
 export function buildFormalPdfHtml() {
   const data = currentEditionData();
-  const talking = $("edition-talking-point")?.textContent.trim() || data.talkingPoint;
+  const talking = talkingText(data);
   const top5 = getTop5News(5);
   const isMorning = STATE.edition === "MORNING";
-  const edTitle = isMorning ? `모닝 · ${globalSessionLabel(data).overnight ? "간밤" : globalSessionLabel(data).label} 글로벌` : "이브닝 · 당일 국내";
+  const sess = globalSessionLabel(data);
+  const edTitle = isMorning ? `모닝 · ${sess.overnight ? "간밤" : sess.label} 글로벌` : "이브닝 · 당일 국내";
   const printed = kstNow();
   const printedStr = `${printed.getUTCFullYear()}.${String(printed.getUTCMonth() + 1).padStart(2, "0")}.${String(printed.getUTCDate()).padStart(2, "0")} ${String(printed.getUTCHours()).padStart(2, "0")}:${String(printed.getUTCMinutes()).padStart(2, "0")}`;
 
-  // 1) 핵심 지표
-  const tiles = data.market
-    .map((m) => {
-      const up = m.changePct > 0, down = m.changePct < 0;
-      return `<div class="rp-tile">
-        <div class="rp-tile-name">${escapeHtml(m.name)}</div>
-        <div class="rp-tile-price">${escapeHtml(m.priceStr)}</div>
-        <div class="rp-tile-chg ${up ? "up" : down ? "down" : ""}">${escapeHtml(m.diffStr)} (${up ? "+" : ""}${escapeHtml(m.changePct)}%)</div>
-      </div>`;
-    })
-    .join("");
+  // 01 손님 브리핑 요약 (단락 유지, 너무 길면 마지막 단락부터 자름)
+  let budget = 980;
+  const paras = talking.split(/\n\s*\n/).map((p) => p.trim()).filter(Boolean).map((p) => {
+    const t = budget <= 0 ? "" : clip(p, budget);
+    budget -= p.length;
+    return t;
+  }).filter(Boolean);
+  const summaryHtml = paras.map((p) => `<p>${escapeHtml(p)}</p>`).join("");
 
-  // 2) 주요 이슈
+  // 02 주요 이슈
   const issues = data.issues
     .slice(0, 3)
     .map(
       (iss, i) => `<div class="rp-issue">
-        <div class="rp-issue-head"><span class="rp-num">${i + 1}</span><span class="rp-issue-cat">${escapeHtml(clip(iss.cat, 14))}</span><span class="rp-issue-tag">${escapeHtml(clip(iss.tag, 40))}</span></div>
-        <div class="rp-issue-title">${escapeHtml(clip(iss.title, 46))}</div>
-        <div class="rp-issue-desc">${escapeHtml(clip(iss.desc, 72))}</div>
+        <div class="rp-issue-head"><span class="rp-num">${i + 1}</span><span class="rp-issue-cat">${escapeHtml(clip(iss.cat, 16))}</span></div>
+        <div class="rp-issue-title">${escapeHtml(clip(iss.title, 44))}</div>
+        <div class="rp-issue-desc">${escapeHtml(clip(iss.desc, 96))}</div>
       </div>`
     )
     .join("");
 
-  // 4) 필독 뉴스 (원문 링크)
+  // 03 필독 뉴스 (원문 링크)
   const news = top5
     .map(
       (n, i) => `<a class="rp-news" href="${encodeURI(n.url)}" target="_blank" rel="noopener noreferrer">
         <span class="rp-num ${i < 2 ? "gold" : ""}">${i + 1}</span>
         <span class="rp-news-body">
-          <span class="rp-news-title">${escapeHtml(clip(n.title, 40))}</span>
-          <span class="rp-news-meta">${escapeHtml((n.tags || []).slice(0, 2).join("·"))} · ${escapeHtml(n.press)}${n.coverage ? ` · ${n.coverage}개 언론 보도` : ""}</span>
+          <span class="rp-news-title">${escapeHtml(clip(n.title, 36))}</span>
+          <span class="rp-news-meta">${escapeHtml(n.press)}${n.coverage ? ` · ${n.coverage}개 언론 보도` : ""}</span>
         </span>
         <span class="rp-link">원문 ↗</span>
       </a>`
     )
     .join("");
 
-  // 5) 자산배분 (현재 선택된 모델)
-  const alloc = currentAllocation();
-  const allocHtml = alloc
-    ? `<div class="rp-alloc-bar">${alloc.cards
-        .map((c) => `<div class="seg-${c.key}" style="flex:${c.ratio}">${c.ratio}%${c.ratio >= 20 ? ` ${escapeHtml(c.name)}` : ""}</div>`)
-        .join("")}</div>
-      ${alloc.cards
+  // 04 자산별 시사점
+  const lvClass = (l) => (l === "변동 큼" ? "high" : l === "주목" ? "mid" : "low");
+  const assets = currentAssetInsights(data)?.cards ?? [];
+  const assetsHtml = assets.length
+    ? assets
         .map(
-          (c) => `<div class="rp-alloc-row">
-            <div class="rp-alloc-name">${c.icon} ${escapeHtml(c.name)} <b>${c.ratio}%</b> <span class="rp-lv lv-${c.level === "변동 큼" ? "high" : c.level === "주목" ? "mid" : "low"}">${escapeHtml(c.level)}</span></div>
-            <div class="rp-alloc-text"><b>${escapeHtml(clip(c.headline, 38))}</b> — ${escapeHtml(clip(c.check, 46))}</div>
+          (c) => `<div class="rp-asset">
+            <div class="rp-asset-name">${escapeHtml(c.name)} <span class="rp-lv lv-${lvClass(c.level)}">${escapeHtml(c.level ?? "")}</span></div>
+            <div class="rp-asset-text">${escapeHtml(clip(c.headline, 40))}</div>
           </div>`
         )
-        .join("")}
-      ${alloc.rebalance ? `<div class="rp-rebal">⚖️ ${escapeHtml(clip(alloc.rebalance, 84))}</div>` : ""}`
-    : `<div class="rp-empty">자산배분 점검 데이터가 없습니다.</div>`;
+        .join("")
+    : `<div class="rp-empty">자산별 시사점 데이터가 없습니다.</div>`;
 
-  // 6) 이번 주 주요 일정
+  // 05 이번 주 주요 일정
   const wk = thisWeekEvents();
   const regionShort = { US: "美", KR: "韓", EU: "EU", JP: "日", GL: "" };
   const fmt = (iso) => {
     const d = new Date(`${iso}T00:00:00Z`);
     return `${d.getUTCMonth() + 1}/${d.getUTCDate()}(${WD[d.getUTCDay()]})`;
   };
-  const evRows = wk.items.slice(0, 9).map((e) => {
+  const MAX_EV = 7;
+  const evRows = wk.items.slice(0, MAX_EV).map((e) => {
     const k = wk.kinds[e.kind];
     const res = STATE.eventResults?.[e.id ?? `${e.date}|${e.kind}`];
     return `<tr>
       <td class="rp-ev-date">${fmt(e.date)}</td>
-      <td><span class="rp-ev-pill cat-${k.category}">${escapeHtml(`${regionShort[k.region] ?? ""} ${e.company ?? k.label}`.trim())}</span></td>
-      <td class="rp-ev-name">${escapeHtml(clip(e.title ?? k.name, 30))}${res ? `<span class="rp-ev-res"> → ${escapeHtml(clip(res.headline, 34))}</span>` : ""}</td>
-      <td class="rp-ev-time">${escapeHtml(clip(e.timeKst ?? "", 26))}</td>
+      <td class="rp-ev-name"><span class="rp-ev-pill cat-${k.category}">${escapeHtml(regionShort[k.region] ?? "")}</span> ${escapeHtml(clip(e.title ?? k.name, 22))}${res ? `<span class="rp-ev-res"> → ${escapeHtml(clip(res.headline, 20))}</span>` : ""}</td>
     </tr>`;
   });
-  const more = wk.items.length > 9 ? `<div class="rp-more">외 ${wk.items.length - 9}건 — 대시보드 캘린더 참고</div>` : "";
+  const more = wk.items.length > MAX_EV ? `<div class="rp-more">외 ${wk.items.length - MAX_EV}건 — 대시보드 캘린더 참고</div>` : "";
+
+  // 하단: 주요 지표 한 줄
+  const mkt = data.market
+    .map((m) => {
+      const cls = m.changePct > 0 ? "up" : m.changePct < 0 ? "down" : "";
+      return `<span><b>${escapeHtml(m.name)}</b> ${escapeHtml(m.priceStr)} <em class="${cls}">${m.changePct > 0 ? "+" : ""}${escapeHtml(m.changePct)}%</em></span>`;
+    })
+    .join("");
 
   return `
     <div class="rp-page">
@@ -147,32 +189,31 @@ export function buildFormalPdfHtml() {
         <div class="rp-meta">데이터 기준 <b>${escapeHtml(data.generatedAtKST)}</b> · 출력 ${escapeHtml(printedStr)}</div>
       </header>
 
-      <section class="rp-tiles">${tiles}</section>
-
-      <div class="rp-grid">
-        <section class="rp-box">
-          <h3><span>01</span> 주요 이슈</h3>
+      <div class="rp-grid2">
+        <section class="rp-box rp-summary rp-a">
+          <h3><span>01</span> 손님 브리핑 요약</h3>
+          <div class="rp-summary-body">${summaryHtml}</div>
+        </section>
+        <section class="rp-box rp-b">
+          <h3><span>02</span> 핵심 이슈</h3>
           ${issues}
         </section>
-        <section class="rp-box rp-summary">
-          <h3><span>02</span> 손님 브리핑 요약</h3>
-          <p>${escapeHtml(clip(talking, 360))}</p>
-        </section>
-        <section class="rp-box">
-          <h3><span>03</span> 손님 필독 뉴스 <small>보도 언론사 수 기준 · 제목 클릭 시 원문</small></h3>
+        <section class="rp-box rp-c">
+          <h3><span>03</span> 손님 필독 뉴스 <small>제목 클릭 시 원문</small></h3>
           ${news}
         </section>
-        <section class="rp-box rp-alloc">
-          <h3><span>04</span> 자산배분 점검 <small>${escapeHtml(alloc?.model?.name ?? "")} 예시 모델 ${alloc ? `${alloc.model.ratios.safe}:${alloc.model.ratios.core}:${alloc.model.ratios.satellite}` : ""}</small></h3>
-          ${allocHtml}
+        <section class="rp-box rp-d">
+          <h3><span>04</span> 자산별 시사점</h3>
+          <div class="rp-assets">${assetsHtml}</div>
         </section>
-        <section class="rp-box rp-week">
-          <h3><span>05</span> ${wk.label} <small>${fmt(wk.from)} ~ ${fmt(wk.to)} · 날짜는 현지 기준</small></h3>
-          ${evRows.length ? `<table class="rp-ev"><tbody>${evRows.join("")}</tbody></table>${more}` : `<div class="rp-empty">이번 주 등록된 주요 일정이 없습니다.</div>`}
+        <section class="rp-box rp-e">
+          <h3><span>05</span> ${wk.label} <small>${fmt(wk.from)}~${fmt(wk.to)}</small></h3>
+          ${evRows.length ? `<table class="rp-ev"><tbody>${evRows.join("")}</tbody></table>${more}` : `<div class="rp-empty">등록된 주요 일정이 없습니다.</div>`}
         </section>
       </div>
 
-      <footer class="rp-footer">본 자료는 J's WM RESEARCH DESK가 PB 상담 참고용으로 시장 데이터와 공시·보도를 바탕으로 자동 생성(AI 요약 포함)되었습니다. 자산배분 모델은 예시이며 투자 권유가 아니고, 투자 결과에 대한 법적 책임의 증빙자료로 사용될 수 없습니다. 손님 전달 전 PB의 확인을 권장합니다.</footer>
+      <div class="rp-mktline"><span class="rp-mkt-label">주요 지표</span>${mkt}</div>
+      <footer class="rp-footer">본 자료는 J's WM RESEARCH DESK가 PB 상담 참고용으로 시장 데이터와 공시·보도를 바탕으로 자동 생성(AI 요약 포함)되었으며, 투자 권유가 아니고 투자 결과에 대한 법적 책임의 증빙자료로 사용될 수 없습니다. 손님 전달 전 PB의 확인을 권장합니다.</footer>
     </div>
   `;
 }

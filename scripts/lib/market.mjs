@@ -203,3 +203,40 @@ export async function collectCoreMarket(previousMarket = []) {
 
   return results;
 }
+
+/**
+ * 자산별 시사점 분석용 추가 지표 (화면 타일에는 쓰지 않음).
+ * Yahoo Finance 일봉 메타 — 실패한 항목은 조용히 빠집니다(분석은 있는 근거로만 진행).
+ */
+const EXTRA_SYMBOLS = [
+  { key: "US10Y", name: "미 10년물 금리", yahoo: "^TNX", unit: "%", dec: 2 },
+  { key: "US5Y", name: "미 5년물 금리", yahoo: "^FVX", unit: "%", dec: 2 },
+  { key: "DXY", name: "달러인덱스", yahoo: "DX-Y.NYB", unit: "", dec: 2 },
+  { key: "USDJPY", name: "엔/달러", yahoo: "JPY=X", unit: "엔", dec: 2 },
+  { key: "GOLD", name: "금", yahoo: "GC=F", unit: "달러", dec: 1 },
+  { key: "WTI", name: "WTI 유가", yahoo: "CL=F", unit: "달러", dec: 2 },
+  { key: "BTC", name: "비트코인", yahoo: "BTC-USD", unit: "달러", dec: 0 },
+];
+
+export async function collectExtraMarket() {
+  const out = await Promise.all(
+    EXTRA_SYMBOLS.map(async (s) => {
+      try {
+        const q = await fetchYahooMeta(s.yahoo);
+        if (!q || !Number.isFinite(q.price)) return null;
+        return {
+          key: s.key, name: s.name, unit: s.unit,
+          priceStr: formatNum(q.price, s.dec, s.dec),
+          changePct: Number(q.pct.toFixed(2)),
+          diff: Number(q.diff.toFixed(s.dec + 1)),
+          stale: false,
+        };
+      } catch {
+        return null;
+      }
+    })
+  );
+  const ok = out.filter(Boolean);
+  console.log(`[추가 지표] ${ok.length}/${EXTRA_SYMBOLS.length}개 수집: ${ok.map((m) => `${m.name} ${m.priceStr}${m.unit}(${m.changePct}%)`).join(", ")}`);
+  return ok;
+}

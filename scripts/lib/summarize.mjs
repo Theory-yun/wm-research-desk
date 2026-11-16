@@ -21,14 +21,14 @@ const SYSTEM_PROMPT =
  *  - 제공자 선택은 환경변수 존재 여부로만 결정합니다(GEMINI_API_KEY가 있으면 Gemini를 먼저 시도) —
  *    두 키를 동시에 넣어두면 Gemini 장애 시 Claude로 자동 전환되는 이중 안전망이 됩니다.
  */
-export async function generateBriefingSummary({ edition, market, candidateNews, pbNotes }) {
-  const prompt = buildPrompt({ edition, market, candidateNews, pbNotes });
+export async function generateBriefingSummary({ edition, market, extraMarket = [], upcoming = [], candidateNews, pbNotes }) {
+  const prompt = buildPrompt({ edition, market, extraMarket, upcoming, candidateNews, pbNotes });
 
   if (process.env.GEMINI_API_KEY) {
     const r = await geminiJson({ prompt, system: SYSTEM_PROMPT, validate: isValidSummary, label: "summarize" });
     if (r) {
       return {
-        issues: r.data.issues.slice(0, 3),
+        issues: cleanIssues(r.data.issues),
         talkingPoint: cleanTalkingPoint(r.data.talkingPoint),
         summarySource: "ai-gemini",
         summaryModel: r.model,
@@ -40,7 +40,7 @@ export async function generateBriefingSummary({ edition, market, candidateNews, 
   if (process.env.ANTHROPIC_API_KEY) {
     try {
       const parsed = await callClaude(prompt);
-      return { issues: parsed.issues.slice(0, 3), talkingPoint: cleanTalkingPoint(parsed.talkingPoint), summarySource: "ai-claude" };
+      return { issues: cleanIssues(parsed.issues), talkingPoint: cleanTalkingPoint(parsed.talkingPoint), summarySource: "ai-claude" };
     } catch (err) {
       console.error(`[summarize] Claude API 호출 실패: ${err.message}`);
     }
@@ -88,16 +88,40 @@ async function callClaude(prompt) {
  *  - "~권해드립니다 / ~추천드립니다 / ~하시길 바랍니다"로 끝나는 권유 문장
  */
 export function cleanTalkingPoint(text) {
-  const sentences = String(text ?? "")
-    .trim()
-    .split(/(?<=[.!?。])\s+/);
-  const kept = sentences.filter(
-    (s, i) =>
-      !(i === 0 && /안녕하(십니까|세요)/.test(s)) &&
-      !/(권해\s?드립니다|권합니다|추천\s?드립니다|추천합니다|하시길\s?바랍니다|하시기\s?바랍니다)[.!]?$/.test(s)
-  );
-  return kept.join(" ").replace(/^(대표님|회장님|고객님|손님|사장님)[,\s]+/, "").trim();
+  // 마크다운 강조(*, **, _, #)·글머리표 제거 — 카톡·PDF에 그대로 붙여 넣는 본문이라 기호가 남으면 읽기 어려움
+  const plain = String(text ?? "")
+    .replace(/\r/g, "")
+    .replace(/\*\*?([^*]+)\*\*?/g, "$1")
+    .replace(/[*#`]+/g, "")
+    .replace(/^\s*[-•·]\s+/gm, "")
+    .trim();
+  const paragraphs = plain
+    .split(/\n\s*\n|\n/)
+    .map((p) => p.trim())
+    // 단락 제목 같은 짧은 줄(문장부호 없이 끝나는 20자 미만)은 제거
+    .filter((p) => p && !(p.length < 20 && !/[.!?。]$/.test(p)));
+  const out = paragraphs
+    .map((para) =>
+      para
+        .split(/(?<=[.!?。])\s+/)
+        .map((s) => s.replace(/^(대표님|회장님|고객님|손님|사장님)[,\s]+/, "").trim())
+        .filter(
+          (s) =>
+            s &&
+            !/^안녕하(십니까|세요)[.!]?$/.test(s) &&
+            !/(권해\s?드립니다|권합니다|추천\s?드립니다|추천합니다|하시길\s?바랍니다|하시기\s?바랍니다)[.!]?$/.test(s)
+        )
+        .join(" ")
+    )
+    .filter(Boolean);
+  return out.join("\n\n");
 }
+
+/** 이슈 제목·설명에서도 마크다운 기호 제거 */
+function cleanText(t) {
+  return String(t ?? "").replace(/\*\*?([^*]+)\*\*?/g, "$1").replace(/[*#`]+/g, "").trim();
+}
+const cleanIssues = (issues) => issues.slice(0, 3).map((i) => ({ cat: cleanText(i.cat), tag: cleanText(i.tag), title: cleanText(i.title), desc: cleanText(i.desc) }));
 
 function isValidSummary(parsed) {
   return Array.isArray(parsed?.issues) && parsed.issues.length > 0 && !!parsed.talkingPoint;
@@ -151,9 +175,17 @@ export function buildSessionContext(edition, market, now = new Date()) {
   return `[시점 안내] (아래 날짜 규칙을 반드시 지키세요)\n${lines.join("\n")}${rules.length ? "\n" + rules.map((r) => `· ${r}`).join("\n") : ""}`;
 }
 
-function buildPrompt({ edition, market, candidateNews, pbNotes }) {
+function buildPrompt({ edition, market, extraMarket = [], upcoming = [], candidateNews, pbNotes }) {
   const marketLines = market
     .map((m) => `- ${m.name}: ${m.priceStr} (${m.diffStr}, ${m.changePct}%) [${m.asOfKst}]${m.stale ? " ※갱신 실패, 이전 값" : ""}`)
+    .join("\n");
+
+  const extraLines = extraMarket
+    .map((m) => `- ${m.name}: ${m.priceStr}${m.unit ?? ""} (${m.changePct >= 0 ? "+" : ""}${m.changePct}%)`)
+    .join("\n");
+  const eventLines = upcoming
+    .slice(0, 12)
+    .map((e) => `- ${e.when} (D-${e.dday}) ${e.label}`)
     .join("\n");
 
   const newsLines = candidateNews
@@ -173,7 +205,7 @@ ${buildSessionContext(edition, market)}
 [오늘의 시장 지표] (이 숫자만 사용하세요. 새 숫자를 만들지 마세요)
 ${marketLines}
 
-[수집된 뉴스 헤드라인 후보] (많은 언론이 보도한 순서입니다. 이 중에서 PB 관점으로 가장 중요한 것을 골라 반영하세요)
+${extraLines ? `[참고 지표] (금리·달러·원자재·가상자산, 직전 거래일 기준. 해석에 활용하되 이 숫자만 사용)\n${extraLines}\n\n` : ""}${eventLines ? `[다가오는 주요 일정]\n${eventLines}\n\n` : ""}[수집된 뉴스 헤드라인 후보] (많은 언론이 보도한 순서입니다. 이 중에서 PB 관점으로 가장 중요한 것을 골라 반영하세요)
 ${newsLines}
 
 ${pbNotes ? `[본사 참고 메모]\n${pbNotes}\n` : ""}
@@ -181,9 +213,13 @@ ${pbNotes ? `[본사 참고 메모]\n${pbNotes}\n` : ""}
 [요청사항]
 1. 위 뉴스·지표 중에서 패밀리오피스 PB가 손님에게 꼭 전달해야 할 핵심 이슈 3개를 뽑아 간결하게 정리하세요.
 2. 각 이슈는 cat(이슈 구분 라벨), tag(한 줄 숫자 요약, 예: "S&P500 -0.51% · 나스닥 -1.07%"), title(기사형 제목), desc(2~3문장 설명)으로 구성하세요.
-3. 전체를 아우르는 "손님 브리핑 종합 요약"(talkingPoint)을 3~5문장으로 작성하세요. 숫자는 위에서 준 값만 사용하세요.
-   - 인사말("대표님, 안녕하십니까" 등)·호칭·맺음말 없이 바로 시장 내용으로 시작하세요. PB가 그대로 복사해 쓰는 본문입니다.
-   - "~하시길 권해드립니다", "~하세요" 같은 투자 권유·행동 지시 표현은 쓰지 말고, 사실과 주목할 점만 쓰세요.
+3. 전체를 아우르는 "손님 브리핑 종합 요약"(talkingPoint)을 깊이 있게 작성하세요. 세 단락, 단락 사이는 빈 줄("\n\n")로 구분하고 전체 9~12문장(공백 포함 600~900자).
+   - 1단락 [시장 흐름]: 주요 지수·환율이 어떻게 움직였는지 숫자로 정리.
+   - 2단락 [배경과 해석]: 왜 그렇게 움직였는지 원인(정책·실적·수급·지정학 등)과 자산 간 연결(금리 ↔ 달러 ↔ 성장주, 유가 ↔ 물가 등)을 [참고 지표]와 뉴스로 설명.
+   - 3단락 [앞으로 볼 것]: [다가오는 주요 일정] 중 시장에 중요한 것을 날짜와 함께 짚고, 손님 자산에 어떤 점을 확인하면 좋을지 관점 제시.
+   - 단락 제목·번호·글머리표·별표(*)·굵게(**) 같은 기호는 쓰지 말고 문장으로만 쓰세요. 카카오톡에 그대로 붙여 넣는 본문입니다.
+   - 인사말("대표님, 안녕하십니까" 등)·호칭·맺음말 없이 바로 시장 내용으로 시작하세요.
+   - "~하시길 권해드립니다", "~하세요" 같은 투자 권유·행동 지시 표현은 쓰지 말고, 사실과 해석, 주목할 점만 쓰세요.
 4. 반드시 아래 JSON 스키마로만, 다른 텍스트 없이 응답하세요.
 
 {

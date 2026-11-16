@@ -197,102 +197,81 @@ function renderTop5News() {
     .join("");
 }
 
-/* ----------------------------- 포트폴리오 체크포인트 ----------------------------- */
+/* ----------------------------- 자산별 시사점 ----------------------------- */
 const LEVEL_CLASS = { "변동 큼": "lv-high", "주목": "lv-mid", "평이": "lv-low" };
+const ASSET_ICON = {
+  kr_equity: "🇰🇷", us_equity: "🌐", bonds: "🏦", fx: "💱", commodities: "🛢️", alternatives: "🏢",
+  safe: "🛡️", core: "📊", satellite: "🚀",
+};
 
-/** 브리핑 데이터를 '모델별' 형태로 맞춰줌 (구형 3:4:3 단일 데이터도 표준형으로 표시) */
-function normalizeAssetChecks(ac) {
+/**
+ * 화면·PDF 공용: 자산별 시사점 카드 목록.
+ * 지난 브리핑(배분 모델 방식) 데이터도 표준형 문구로 바꿔 같은 모양으로 보여줍니다.
+ */
+export function currentAssetInsights(data = currentEditionData()) {
+  const ac = data?.assetChecks;
   if (!ac?.cards?.length) return null;
-  if (ac.framework === "models") return ac;
-  if (ac.framework === "3:4:3")
-    return {
-      ...ac,
-      models: [{ key: "standard", name: "표준형", icon: "⚖️", ratios: { safe: 30, core: 40, satellite: 30 } }],
-      defaultModel: "standard",
-      cards: ac.cards.map((c) => ({ ...c, texts: { standard: { headline: c.headline, insight: c.insight, check: c.check } } })),
-      rebalance: { standard: ac.rebalance },
-    };
-  return null;
-}
-
-/** 화면·PDF 공용: 지금 선택된 모델 기준의 카드 목록 */
-export function currentAllocation() {
-  const ac = normalizeAssetChecks(currentEditionData()?.assetChecks);
-  if (!ac) return null;
-  const model = ac.models.find((m) => m.key === STATE.allocModel) ?? ac.models.find((m) => m.key === ac.defaultModel) ?? ac.models[0];
+  if (ac.framework === "assets") return { cards: ac.cards, taxNews: ac.taxNews ?? [] };
+  const pick = (c) => c.texts?.standard ?? c.texts?.[Object.keys(c.texts ?? {})[0]] ?? c;
   return {
-    ac,
-    model,
-    cards: ac.cards.map((c) => ({ ...c, ratio: model.ratios[c.key], ...(c.texts?.[model.key] ?? {}) })),
-    rebalance: ac.rebalance?.[model.key] ?? null,
+    cards: ac.cards.map((c) => {
+      const t = pick(c);
+      return { ...c, headline: t.headline, analysis: t.insight, watch: t.check };
+    }),
+    taxNews: ac.taxNews ?? [],
   };
 }
+
+const fmtPct = (v) => `${v > 0 ? "+" : ""}${v}%`;
 
 export function renderPortfolio() {
   const grid = $("portfolio-cards-grid");
   if (!grid) return;
   const extra = $("ac-extra");
-  const bar = $("ac-ratio-bar");
-  const picker = $("alloc-picker");
-  const cur = currentAllocation();
+  const cur = currentAssetInsights();
   if (!cur) {
-    grid.innerHTML = `<div class="ac-empty">다음 브리핑 생성부터 배분 모델별 시사점이 표시됩니다.</div>`;
-    [extra, bar, picker].forEach((el) => el && (el.innerHTML = ""));
+    grid.innerHTML = `<div class="ac-empty">다음 브리핑 생성부터 자산별 시사점이 표시됩니다.</div>`;
+    if (extra) extra.innerHTML = "";
     return;
   }
-  const { ac, model, cards, rebalance } = cur;
-  const ratioStr = (m) => `${m.ratios.safe / 10}:${m.ratios.core / 10}:${m.ratios.satellite / 10}`;
 
-  if (picker)
-    picker.innerHTML =
-      `<span class="alloc-label">예시 배분 모델</span>` +
-      ac.models
+  grid.innerHTML = cur.cards
+    .map((c) => {
+      const market = (c.market ?? [])
         .map(
-          (m) => `<button type="button" class="alloc-btn ${m.key === model.key ? "active" : ""}" data-alloc="${m.key}" aria-pressed="${m.key === model.key}">
-            ${m.icon} ${escapeHtml(m.name)} <span>${ratioStr(m)}</span></button>`
+          (m) =>
+            `<span class="ac-mkt ${m.changePct > 0 ? "up" : m.changePct < 0 ? "down" : ""}"><b>${escapeHtml(m.name)}</b> ${escapeHtml(m.priceStr ?? "")}${escapeHtml(m.unit ?? "")} <em>${escapeHtml(fmtPct(m.changePct))}</em></span>`
         )
         .join("");
-
-  if (bar)
-    bar.innerHTML = cards
-      // 비중이 작은 칸은 폭이 좁아 이름이 잘리므로 퍼센트만 표시(이름은 마우스를 올리면 보임)
-      .map((c) => `<div class="ratio-seg seg-${c.key}" style="flex:${c.ratio}" title="${escapeHtml(c.name)} ${c.ratio}%"><b>${c.ratio}%</b>${c.ratio >= 20 ? ` <span>${c.icon} ${escapeHtml(c.name)}</span>` : ""}</div>`)
-      .join("");
-
-  grid.innerHTML = cards
-    .map((c) => {
-      const market = c.market
-        .map((m) => `<span class="ac-mkt ${m.changePct > 0 ? "up" : m.changePct < 0 ? "down" : ""}">${escapeHtml(m.name)} ${m.changePct > 0 ? "+" : ""}${escapeHtml(m.changePct)}%</span>`)
-        .join("");
-      const events = c.events
+      const events = (c.events ?? [])
+        .slice(0, 2)
         .map((e) => `<button type="button" class="ac-ev" data-date="${escapeHtml(e.date)}"><b>${e.dday === 0 ? "D-DAY" : `D-${e.dday}`}</b> ${escapeHtml(e.when)} ${escapeHtml(e.label)}</button>`)
         .join("");
-      const news = c.news
-        .map((n) => `<a class="ac-news" href="${encodeURI(n.url)}" target="_blank" rel="noopener noreferrer">📰 ${escapeHtml(n.title)} <em>${n.coverage}곳</em></a>`)
+      const news = (c.news ?? [])
+        .slice(0, 2)
+        .map((n) => `<a class="ac-news" href="${encodeURI(n.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(n.title)} <em>${n.coverage}곳</em></a>`)
         .join("");
       return `
         <article class="ac-card card-${c.key}">
           <div class="ac-head">
-            <span class="ac-name">${c.icon} ${escapeHtml(c.name)} <span class="ac-target">비중 ${c.ratio}%</span></span>
-            <span class="ac-level ${LEVEL_CLASS[c.level] ?? ""}">${escapeHtml(c.level)}</span>
+            <span class="ac-name">${ASSET_ICON[c.key] ?? ""} ${escapeHtml(c.name)}</span>
+            <span class="ac-level ${LEVEL_CLASS[c.level] ?? ""}">${escapeHtml(c.level ?? "")}</span>
           </div>
-          <div class="ac-role">${escapeHtml(c.role)}</div>
+          ${market ? `<div class="ac-mkts">${market}</div>` : ""}
           <div class="ac-headline">${escapeHtml(c.headline ?? "")}</div>
-          <p class="ac-check"><span class="lb-insight">오늘의 시사점</span>${escapeHtml(c.insight ?? "")}</p>
-          <p class="ac-check"><span>확인할 것</span>${escapeHtml(c.check ?? "")}</p>
-          ${market || events || news ? `<div class="ac-basis"><div class="ac-basis-label">근거 (모든 모델 공통)</div>${market ? `<div class="ac-mkts">${market}</div>` : ""}${events}${news}</div>` : ""}
+          <p class="ac-analysis">${escapeHtml(c.analysis ?? "")}</p>
+          ${c.watch ? `<p class="ac-watch"><span>앞으로 볼 것</span>${escapeHtml(c.watch)}</p>` : ""}
+          ${events || news ? `<div class="ac-basis">${events}${news}</div>` : ""}
         </article>`;
     })
     .join("");
 
   if (extra) {
-    const reb = rebalance ? `<div class="ac-rebalance">⚖️ <b>리밸런싱 점검</b> ${escapeHtml(rebalance)}</div>` : "";
-    const tax = (ac.taxNews ?? []).length
-      ? `<div class="ac-tax"><span>🏢⚖️ 세무·부동산 참고</span>${ac.taxNews
+    extra.innerHTML = cur.taxNews.length
+      ? `<div class="ac-tax"><span>🏢⚖️ 세무·부동산 참고</span>${cur.taxNews
           .map((n) => `<a href="${encodeURI(n.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(n.title)} <em>${n.coverage}곳</em></a>`)
           .join("")}</div>`
       : "";
-    extra.innerHTML = reb + tax;
   }
 }
 
