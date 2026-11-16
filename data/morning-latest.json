@@ -1,7 +1,7 @@
 {
   "edition": "MORNING",
-  "generatedAt": "2026-11-16T02:20:04.520Z",
-  "generatedAtKST": "2026.11.16 11:20",
+  "generatedAt": "2026-11-16T02:23:31.415Z",
+  "generatedAtKST": "2026.11.16 11:23",
   "sourceStatus": {
     "market": "ok",
     "news": "ok",
@@ -19,7 +19,7 @@
       "asOfLocal": "국내 정규장 기준",
       "asOfKst": "한국 정규장 11.13 15:30 마감",
       "stale": false,
-      "updatedAt": "2026-11-16T02:18:47.430Z"
+      "updatedAt": "2026-11-16T02:22:34.954Z"
     },
     {
       "key": "KOSDAQ",
@@ -31,7 +31,7 @@
       "asOfLocal": "국내 정규장 기준",
       "asOfKst": "한국 정규장 11.13 15:30 마감",
       "stale": false,
-      "updatedAt": "2026-11-16T02:18:47.430Z"
+      "updatedAt": "2026-11-16T02:22:34.954Z"
     },
     {
       "key": "SP500",
@@ -43,7 +43,7 @@
       "asOfLocal": "현지 11.13 16:00 마감",
       "asOfKst": "한국 11.14 06:00 마감",
       "stale": false,
-      "updatedAt": "2026-11-16T02:18:47.430Z"
+      "updatedAt": "2026-11-16T02:22:34.954Z"
     },
     {
       "key": "NASDAQ",
@@ -55,7 +55,7 @@
       "asOfLocal": "현지 11.13 16:00 마감",
       "asOfKst": "한국 11.14 06:00 마감",
       "stale": false,
-      "updatedAt": "2026-11-16T02:18:47.430Z"
+      "updatedAt": "2026-11-16T02:22:34.954Z"
     },
     {
       "key": "SOX",
@@ -67,42 +67,42 @@
       "asOfLocal": "현지 11.13 16:00 마감",
       "asOfKst": "한국 11.14 06:00 마감",
       "stale": false,
-      "updatedAt": "2026-11-16T02:18:47.430Z"
+      "updatedAt": "2026-11-16T02:22:34.954Z"
     },
     {
       "key": "USDKRW",
       "name": "원/달러 환율",
       "group": "fx",
-      "priceStr": "1,334.59",
-      "diffStr": "▼ -9.25",
-      "changePct": -0.69,
+      "priceStr": "1,334.88",
+      "diffStr": "▲ +1.10",
+      "changePct": 0.08,
       "asOfLocal": "집계 기준 확인 중",
       "asOfKst": "집계 기준 확인 중",
       "stale": false,
-      "updatedAt": "2026-11-16T02:18:47.430Z"
+      "updatedAt": "2026-11-16T02:22:34.954Z"
     }
   ],
   "issues": [
     {
-      "cat": "매크로·금리",
-      "tag": "美 10년물 5.15% · 달러인덱스 103.42",
-      "title": "미 연준 자산가치 고평가 경고 속 국채 금리·달러 강세",
-      "desc": "미국 연방준비제도가 AI 열광 등에 따른 자산가치 고평가 가능성을 지적한 가운데, 주말 사이 미국 국채 금리와 달러인덱스가 오름세를 보였습니다. 미 10년물 금리는 5.15%로 상승했고 달러인덱스는 103.42를 기록하며 환율과 증시 상방을 제약하는 요소로 작용하고 있습니다."
+      "cat": "매크로/채권",
+      "tag": "미 10년물 5.15% · 필라델피아 반도체 -3.43%",
+      "title": "美 연준 AI 자산 고평가 경고…성장주·반도체주 약세",
+      "desc": "주말 사이 미국 연방준비제도가 AI 열풍 등으로 자산 가치가 고평가되었다는 경고를 내놓으면서 기술주 전반에 부담으로 작용했습니다. 11월 13일(금) 미 10년물 국채 금리가 5.15%로 상승한 가운데 필라델피아 반도체 지수는 3.43% 하락하며 기술주 조정세를 이끌었습니다."
     },
     {
-      "cat": "글로벌 증시",
-      "tag": "필라델피아 반도체 -3.43% · 나스닥 -0.91%",
-      "title": "반도체주 중심으로 뉴욕증시 조정…엔비디아 실적 주시",
-      "desc": "11월 13일(금) 뉴욕증시는 기술주를 중심으로 약세를 보이며 나스닥과 S&P 500이 각각 0.91%, 0.40% 하락했고 필라델피아 반도체 지수는 3.43% 급락했습니다. 엔비디아 실적 발표와 앤트로픽 상장 이슈가 향후 코스피 및 글로벌 반도체 투자심리의 향방을 가를 주요 변수로 꼽힙니다."
+      "cat": "증시/기업",
+      "tag": "코스피 5,290.53 · 나스닥 -0.91%",
+      "title": "엔비디아 실적과 AI 이슈 부각…국내 증시 방향성 주목",
+      "desc": "엔비디아 실적 발표와 앤트로픽 상장 등 글로벌 AI 관련 주요 이벤트에 글로벌 증시의 시선이 집중되고 있습니다. 11월 13일(금) 코스피는 0.98% 하락한 5,290.53으로 마감했으나, AI 공급망 관련 핵심 기업들의 방향성에 따라 금주 향방이 결정될 전망입니다."
     },
     {
-      "cat": "원자재·대체자산",
-      "tag": "WTI 88.22달러 · 금 3,885.0달러",
-      "title": "유가 상승 및 금·비트코인 하락 등 원자재 변동성 확대",
-      "desc": "중동 지정학적 긴장 속에 WTI 유가는 88.22달러로 2.53% 상승한 반면, 금 선물 가격은 3,885.0달러로 3.6% 하락했습니다. 비트코인 역시 65,026달러로 8.85% 급락하며 고금리와 강달러 환경 속 위험자산 및 안전자산 전반의 변동성이 확대되는 모습입니다."
+      "cat": "외환/원자재",
+      "tag": "원/달러 1,334.88원 · WTI 88.08달러",
+      "title": "원/달러 환율 1,330원대 횡보…국제유가 하락세 진정",
+      "desc": "원/달러 환율은 미국 물가 우려에 따른 달러 강세 기조 속에 1,334.88원으로 상승 흐름을 이어가고 있습니다. 주말 사이 이란의 미국 기지 공격 이슈 속에 WTI 유가는 88.08달러를 기록하며 하락세를 진정시키는 모습을 보였습니다."
     }
   ],
-  "talkingPoint": "11월 13일(금) 코스피는 5,290.53으로 0.98% 하락 마감한 반면 코스닥은 699.66으로 0.45% 상승했습니다. 현지시간 11월 13일(금) 뉴욕증시는 S&P 500이 7,561.67로 0.40% 내렸고, 나스닥은 25,136.27로 0.91% 하락했으며 필라델피아 반도체 지수는 3.43% 급락했습니다. 원/달러 환율은 1,334.59원으로 0.69% 내렸으나, 달러인덱스가 103.42로 1.16% 오르는 등 강달러 기조는 지속되고 있습니다.\n\n주말 사이 미 연준이 AI 열광 등에 따른 자산가치 고평가 우려를 제기하면서 시장의 경계감이 한층 커졌습니다. 이에 따라 미 10년물 국채 금리가 5.15%로 상승하고 달러 강세가 이어지며 기술주와 반도체 섹터에 유동성 부담을 가했습니다. 금리가 오르고 달러가 힘을 받으면서 금 가격은 3,885.0달러로 3.6% 하락했고 비트코인은 65,026달러로 8.85% 하락한 반면, WTI 유가는 88.22달러로 2.53% 오르며 물가 상방 압력을 높이고 있습니다.\n\n금주에는 11월 18일(수) 삼성전자 기업설명회(IR)와 엔비디아 실적 발표 등 국내외 반도체 대장주의 모멘텀 확인이 예정되어 있습니다. 아울러 11월 19일(목) 국내 증시 개장 시각 변경과 11월 20일(금) 미국 월물 옵션 만기일을 앞두고 단기 수급 변동성이 커질 수 있습니다. 이어 11월 26일(목) 한국은행 금통위와 미국 증시 휴장 등 굵직한 통화정책 및 휴장 일정이 대기 중이므로 포트폴리오 내 고금리·고환율 노출 위험을 점검할 시점입니다.",
+  "talkingPoint": "11월 13일(금) 뉴욕증시는 나스닥 지수가 0.91% 하락한 25,136.27, S&P 500 지수가 0.4% 내린 7,561.67로 마감했으며 특히 필라델피아 반도체 지수가 3.43% 급락했습니다. 같은 날 코스피는 0.98% 내린 5,290.53을 기록한 반면 코스닥은 0.45% 상승한 699.66으로 장을 마쳤습니다. 서울 외환시장에서 원/달러 환율은 0.08% 오른 1,334.88원에 집계되며 상승 흐름을 보였습니다.\n\n주말 사이 미국 연방준비제도가 AI 열풍에 따른 자산 가치 고평가 위험을 지적한 점이 투자심리를 위축시켰습니다. 11월 13일(금) 미국 10년물 국채 금리가 5.15%로 상승하고 달러인덱스가 103.41을 기록하는 등 통화 긴축 경계감이 강해지며 성장주와 기술주의 밸류에이션 부담이 가중되었습니다. 국제유가는 이란의 미국 기지 공격 소식 속에 WTI 기준 88.08달러를 기록하며 하락세를 진정시켰고 금값은 3,884.5달러 선에서 소폭 조정을 받았습니다.\n\n이번 주에는 11월 18일(수) 삼성전자 기업설명회(IR)와 11월 20일(금) 미국 월물 옵션 만기일 등 주요 이벤트가 예정되어 있습니다. 11월 19일(목) 국내 증시 개장 시각 변경 및 11월 26일(목) 한국은행 금통위 통화정책방향 결정회의를 앞두고 금리와 환율 변동성에 따른 수급 변화를 주시할 필요가 있습니다. 글로벌 AI 테마의 고평가 논란과 주요 IT 기업 실적 공개를 앞두고 반도체 및 핵심 수출주 위주의 자산 비중 점검이 요구되는 시점입니다.",
   "topNews": [
     {
       "title": "엔비디아 실적, 앤트로픽 상장에 쏠린 눈...코스피 방향 가른다",
@@ -114,7 +114,7 @@
         "증시"
       ],
       "tagSource": "ai",
-      "coverage": 19,
+      "coverage": 18,
       "scope": "해외",
       "outlets": [
         "비즈워치",
@@ -139,7 +139,7 @@
         "채권·금리"
       ],
       "tagSource": "ai",
-      "coverage": 12,
+      "coverage": 15,
       "scope": "해외",
       "outlets": [
         "연합인포맥스",
@@ -153,6 +153,31 @@
       "timeSource": "meta",
       "googleUrl": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9vc0N5TnBTVEJoN1pUVzNZMjZTZ2dOZXpGOWZNQlZfWHdyRWxhdEhhZGx0cDJGTks1WGxTaS1jeGl6UTFqb0pmalA2TE5NbHhRQmg2cHJXbVA4NjdZTk9PaGhYa1NkcWVDQ1FoRXlFRms?oc=5",
       "shortUrl": "https://is.gd/GBWMW1"
+    },
+    {
+      "title": "한은, 금 ETF 41% 늘렸는데…금값 부진에 평가액 325억 원 감소",
+      "press": "글로벌이코노믹",
+      "url": "https://www.g-enews.com/article/General-News/2026/11/20261115180706931e30fcb1ba8_1",
+      "timestamp": 1794733881000,
+      "date": "2026.11.15 18:11",
+      "tags": [
+        "원자재"
+      ],
+      "tagSource": "ai",
+      "coverage": 8,
+      "scope": "해외",
+      "outlets": [
+        "글로벌이코노믹",
+        "중앙이코노미뉴스",
+        "SBS Biz",
+        "www.dt.co.kr",
+        "재경일보",
+        "CBC뉴스"
+      ],
+      "rssDate": "2026.11.15 18:11",
+      "timeSource": "meta",
+      "googleUrl": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQM2IwbkxUMEQybFE4cXF1LWpQQm42Mm5BVF9oYU5OamtFcVBVV25aRW9sME9RanVMdVdrVnF6V3MwX3kydXZ6SDA0NmdBdkNhVERmRmtwSF9tRjhwRzhMUG9DSEZxcjQwUWxBN1hiSExSR3M5SWhfVnJsanhVOGlFYUFDU0RCYWdLNmc?oc=5",
+      "shortUrl": "https://is.gd/MbNrh4"
     },
     {
       "title": "11/16 [뉴욕증시 마감브리핑]",
@@ -175,28 +200,6 @@
       "timeSource": "rss",
       "googleUrl": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQd00zYzBDX3MxUGNVMkFfSkNSVGV3azZmb2ZpLWZtTWF1SWw0czc3VnRZWC00Z29KcXEzSFN1bENZUy1UcV9tV2dqWHJRZGxPcS1EZDR0d1BZR1lwdmo5dE9SWW5IcU9NTndiRFJYVjJLTGFqeml3djhxREZlZFV2SkVfdjd3aDZ2d0kw?oc=5",
       "shortUrl": "https://is.gd/IcruUR"
-    },
-    {
-      "title": "국제금값 3900달러 공방…추가 하락 경계",
-      "press": "글로벌이코노믹",
-      "url": "https://www.g-enews.com/article/Global-Biz/2026/11/2026111521354664879a1f309431_1",
-      "timestamp": 1794762000000,
-      "date": "2026.11.16 02:00",
-      "tags": [
-        "원자재"
-      ],
-      "tagSource": "ai",
-      "coverage": 3,
-      "scope": "해외",
-      "outlets": [
-        "글로벌이코노믹",
-        "CBC뉴스",
-        "톱스타뉴스"
-      ],
-      "rssDate": "2026.11.16 02:00",
-      "timeSource": "meta",
-      "googleUrl": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPY0JDT3ZxTExRLTBvYWxIMHdGckRLbzhSME1KNjJRemI3OFZkRF9JRmQxTk42WnVtVVNTT3RsZnRldWxvM2UzMGhGczVjTkZkSUFvNmtYZUtiWmpGUk1ta3RJOG9YeEF1N19ybEE0b2c0dm95VWlrdlZTUHh2M1pJQmlNSTgzTjJ4?oc=5",
-      "shortUrl": "https://is.gd/dmLTeB"
     },
     {
       "title": "한국 화장품·미용 테마 ETF 뉴욕증시 상장",
@@ -239,6 +242,26 @@
       "shortUrl": "https://is.gd/61H3tg"
     },
     {
+      "title": "\"2027년 S&P500 9,500선 전망…미국 증시 우위 지속\"",
+      "press": "뉴스투데이",
+      "url": "https://www.news2day.co.kr/article/20261116500080",
+      "timestamp": 1794789960000,
+      "date": "2026.11.16 09:46",
+      "tags": [
+        "증시"
+      ],
+      "tagSource": "ai",
+      "coverage": 1,
+      "scope": "해외",
+      "outlets": [
+        "뉴스투데이"
+      ],
+      "rssDate": "2026.11.16 09:46",
+      "timeSource": "meta",
+      "googleUrl": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFB1dUZHMUlESldvQXF5eUxqNW5KTWlFLWV6SXJjQkVxM2J3QWRUSW5abGZJbHpvY2pseEJsNkpsOUJHQy1NNFRNdk92djJMTGFQSEQ2NjI1X2IxMHJaTUE?oc=5",
+      "shortUrl": "https://is.gd/3ONhm7"
+    },
+    {
       "title": "국제유가, 이란의 美 기지 공격에 하락세 진정…브렌트유 96달러선",
       "press": "블루밍비트",
       "url": "https://bloomingbit.io/feed/news/124498",
@@ -257,36 +280,11 @@
       "timeSource": "meta",
       "googleUrl": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1kUXg0WkF3Qk1fbjd2eFlOWlhhMW1yR19ZajU0RE9nTXNiNVBNQURTYmRJNThUbE1wamI5UE0tZ19yWlhYSGdsZGVPemx5anU5?oc=5",
       "shortUrl": "https://is.gd/zKmOqb"
-    },
-    {
-      "title": "환율, 1330원대 중반서 횡보…美 물가 부담에 달러 강세 지속",
-      "press": "뉴스투데이",
-      "url": "https://www.news2day.co.kr/article/20261116500134",
-      "timestamp": 1794790500000,
-      "date": "2026.11.16 09:55",
-      "tags": [
-        "외환"
-      ],
-      "tagSource": "ai",
-      "coverage": 8,
-      "scope": "국내",
-      "outlets": [
-        "뉴스투데이",
-        "뉴시스",
-        "아주경제",
-        "얼리어답터뉴스",
-        "자본시장뉴스",
-        "오피니언뉴스"
-      ],
-      "rssDate": "2026.11.16 09:55",
-      "timeSource": "meta",
-      "googleUrl": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1ySTNVeWlvN0ZwdEVhRW9ORlp1SXprQ28xUTRSMk9PQm5vQi1sU2pUS2VOUE5OdmtUZjVqVGVGa0M4bW5mbW0tM3M5OGlqYllsLUZ4TVN1eGx1SzI4OHc?oc=5",
-      "shortUrl": "https://is.gd/Hus2FR"
     }
   ],
   "assetChecks": {
     "framework": "assets",
-    "generatedAt": "2026-11-16T02:20:04.520Z",
+    "generatedAt": "2026-11-16T02:23:31.415Z",
     "model": "gemini-3.5-flash",
     "cards": [
       {
@@ -339,16 +337,16 @@
             "coverage": 8
           },
           {
-            "title": "[포토] 코스피·코스닥 상승… 원/달러 환율 하락 출발",
-            "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5LNGlvX3YzOHpnUkJnRXZVdkJSSnc4QkFBTnlFX3BsNnpON3lpM055OTZhTlozOUtMOUZ5M3ZBT010dFMwMFNXM2hMdEVKUzZncVBiQkxiSjdPeno2VTJkOVNOeG9tUmV6ZWc?oc=5",
-            "press": "천지일보",
-            "coverage": 1
+            "title": "나스닥 23시간 거래 임박…국내 증시 자금이탈 변수 될까?",
+            "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1kUFdublNZNWJTS0xQc3g4ckVJN3hmb1MzRmg5eWtEY1E5RUptOG1GeWNZVlpzU1Uta0VDVDFZX0Z3SUR4OVhOMUFmYndibGd6cFJvMEhKdVFuejYtQWR4Y3MyWTB1UzVZRXZENg?oc=5",
+            "press": "ER 이코노믹리뷰",
+            "coverage": 2
           }
         ],
         "level": "주목",
-        "headline": "코스피·코스닥 혼조세 속 환율 및 주요 IR 일정 주목",
-        "analysis": "11월 13일(금) 코스피는 5,290.53으로 0.98% 하락한 반면 코스닥은 699.66으로 0.45% 상승하며 혼조세로 마감했습니다. 주말 사이 원/달러 환율 하락 소식과 함께 안정적인 자금 유입을 보이는 ACE 미국 대표지수 채권혼합형 ETF의 연초 이후 자금 유입액이 1조 원을 돌파했습니다.",
-        "watch": "11월 18일(수) 삼성전자 기업설명회(IR)와 11월 19일(목) 국내 증시 개장 시각 변경에 따른 수급 영향을 점검할 필요가 있습니다.",
+        "headline": "코스피 5,290선 하락 속 11월 18일 삼성전자 IR 주시",
+        "analysis": "11월 13일(금) 코스피는 0.98% 하락한 5,290.53으로 마감한 반면 코스닥은 0.45% 상승한 699.66을 기록했습니다. 나스닥의 23시간 거래 추진 소식으로 자금 이탈 변수가 부각되었으나, 국내 시장에서는 미국 대표지수 채권혼합형 ETF로 연초 이후 1조 원 넘는 자금이 유입되었습니다.",
+        "watch": "오는 11월 18일(수) 삼성전자 기업설명회(IR)와 11월 19일(목) 국내 증시 개장 시각 변경 일정을 주시할 필요가 있습니다.",
         "textBy": "ai"
       },
       {
@@ -405,7 +403,7 @@
             "title": "엔비디아 실적, 앤트로픽 상장에 쏠린 눈...코스피 방향 가른다",
             "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9oYUtYUlpsNFpPb1FZNTZFU0VfZVc1M2YxYW83cEt4VmhsaHZrMGFjWkhUREo1UGxZN0ZXUmxTSllZd1I2OEdTNU5pV0ZYVGpELXRpQmhPS09tRGRyb2VuMU5hVEtkdk1id1E?oc=5",
             "press": "비즈워치",
-            "coverage": 19
+            "coverage": 18
           },
           {
             "title": "11/16 [뉴욕증시 마감브리핑]",
@@ -427,9 +425,9 @@
           }
         ],
         "level": "변동 큼",
-        "headline": "반도체 지수 급락 속 기술주 약세 및 옵션 만기 대기",
-        "analysis": "11월 13일(금) 뉴욕증시는 필라델피아 반도체 지수가 3.43% 급락하고 나스닥이 25,136.27로 0.91% 하락하는 등 대형 기술주 중심으로 약세를 보였습니다. S&P 500 지수도 7,561.67로 0.4% 하락한 가운데, 시장에서는 엔비디아 실적과 앤트로픽 상장 이슈에 시선이 쏠리고 있습니다.",
-        "watch": "11월 20일(금) 미국 월물 옵션 만기일을 앞두고 기술주 변동성 확대 여부를 지속적으로 살펴야 합니다.",
+        "headline": "반도체주 약세로 나스닥 하락, 11월 20일 옵션 만기 주시",
+        "analysis": "11월 13일(금) 뉴욕증시는 필라델피아 반도체 지수가 3.43% 급락하면서 나스닥(-0.91%)과 S&P 500(-0.40%)이 동반 하락했습니다. 엔비디아 실적과 앤트로픽 상장 이슈에 관심이 쏠린 가운데, 시장에서는 11월 6일 VIX 정점 이후 반등 가능성 의견도 제기되었습니다.",
+        "watch": "11월 20일(금) 미국 월물 옵션 만기일을 앞두고 증시 변동성 확대 여부를 확인할 필요가 있습니다.",
         "textBy": "ai"
       },
       {
@@ -440,14 +438,14 @@
             "key": "US10Y",
             "name": "미 10년물 금리",
             "priceStr": "5.15",
-            "changePct": 5.96,
+            "changePct": 1,
             "unit": "%"
           },
           {
             "key": "US5Y",
             "name": "미 5년물 금리",
             "priceStr": "4.98",
-            "changePct": 6.91,
+            "changePct": 0.73,
             "unit": "%"
           }
         ],
@@ -465,13 +463,19 @@
             "title": "美 연준 \"AI 열광 등에 자산가치 고평가\"",
             "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9vc0N5TnBTVEJoN1pUVzNZMjZTZ2dOZXpGOWZNQlZfWHdyRWxhdEhhZGx0cDJGTks1WGxTaS1jeGl6UTFqb0pmalA2TE5NbHhRQmg2cHJXbVA4NjdZTk9PaGhYa1NkcWVDQ1FoRXlFRms?oc=5",
             "press": "연합인포맥스",
-            "coverage": 12
+            "coverage": 15
+          },
+          {
+            "title": "[부동산VIEW] 한강벨트로 번지는 아파트값 하락세, 미국 연준·전세 시장·민주당을 눈여겨 봐야",
+            "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBBZFZ4SFNjN1haUEZkUC1DdW5ObXhlVmxfclZEak4zbXNQclBkYjVHaWxoNzY4LWJjbHpydURYYnpQZ3Z5QTdrTVpmc0JPa0lMeFcyT1djdnFzWjRLbGY0YjU2YUtqVzlNOU8wQVcyNHA3UDg?oc=5",
+            "press": "비즈니스포스트",
+            "coverage": 1
           }
         ],
-        "level": "변동 큼",
-        "headline": "미 국채 금리 급등과 연준의 자산 고평가 경고",
-        "analysis": "11월 13일(금) 미 10년물 국채 금리가 5.15%로 5.96% 상승했고 5년물 금리도 4.98%로 6.91% 오르는 등 채권 금리가 급등했습니다. 주말 사이 미 연준이 AI 열광 등에 따른 자산가치 고평가 우려를 제기하면서 채권 시장의 금리 상방 압력이 강화되었습니다.",
-        "watch": "11월 26일(목) 한국은행 금통위 통화정책방향 결정회의를 앞두고 미 연준의 자산가격 평가 발언 추이를 주시해야 합니다.",
+        "level": "주목",
+        "headline": "미 국채 금리 상승 및 연준의 AI 자산 고평가 경고",
+        "analysis": "미국 국채 금리는 10년물이 5.15%(+1%), 5년물이 4.98%(+0.73%)로 상방 압력을 받았습니다. 주말 사이 미국 연준이 AI 열광 등에 따른 자산가치 고평가 우려를 지적하면서 금리 상승세에 영향을 미쳤습니다.",
+        "watch": "11월 26일(목) 예정된 한국은행 금통위의 통화정책방향 결정 회의를 점검해야 합니다.",
         "textBy": "ai"
       },
       {
@@ -481,22 +485,22 @@
           {
             "key": "USDKRW",
             "name": "원/달러 환율",
-            "priceStr": "1,334.59",
-            "changePct": -0.69,
+            "priceStr": "1,334.88",
+            "changePct": 0.08,
             "unit": ""
           },
           {
             "key": "DXY",
             "name": "달러인덱스",
-            "priceStr": "103.42",
-            "changePct": 1.16,
+            "priceStr": "103.41",
+            "changePct": 0,
             "unit": ""
           },
           {
             "key": "USDJPY",
             "name": "엔/달러",
             "priceStr": "159.78",
-            "changePct": 1.13,
+            "changePct": -0.06,
             "unit": "엔"
           }
         ],
@@ -514,13 +518,13 @@
             "title": "환율, 1330원대 중반서 횡보…美 물가 부담에 달러 강세 지속",
             "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1ySTNVeWlvN0ZwdEVhRW9ORlp1SXprQ28xUTRSMk9PQm5vQi1sU2pUS2VOUE5OdmtUZjVqVGVGa0M4bW5mbW0tM3M5OGlqYllsLUZ4TVN1eGx1SzI4OHc?oc=5",
             "press": "뉴스투데이",
-            "coverage": 8
+            "coverage": 9
           }
         ],
-        "level": "변동 큼",
-        "headline": "달러인덱스 상승 속 원/달러 환율 1,330원대 횡보",
-        "analysis": "미국 물가 부담에 따른 달러 강세가 지속되면서 달러인덱스가 103.42로 1.16% 상승하고 엔/달러 환율도 159.78엔으로 1.13% 올랐습니다. 11월 13일(금) 원/달러 환율은 1,334.59원으로 0.69% 하락하며 1,330원대 중반에서 횡보하는 흐름을 보였습니다.",
-        "watch": "11월 26일(목) 한국은행 금통위를 앞두고 글로벌 달러 강세가 원/달러 환율 추가 향방에 미칠 영향을 점검해야 합니다.",
+        "level": "주목",
+        "headline": "원/달러 환율 1,330원대 중반 횡보 및 달러 강세 유지",
+        "analysis": "원/달러 환율은 미국 물가 부담에 따른 달러 강세 기조 속에 1,334.88원(+0.08%)으로 1,330원대 중반에서 횡보했습니다. 달러인덱스는 103.41(+0%)로 보합세를 유지했고 엔/달러 환율은 159.78엔(-0.06%)을 기록했습니다.",
+        "watch": "11월 26일(목) 한국은행 금통위 결과에 따른 한미 금리 차와 환율 변동성을 확인할 필요가 있습니다.",
         "textBy": "ai"
       },
       {
@@ -530,15 +534,15 @@
           {
             "key": "GOLD",
             "name": "금",
-            "priceStr": "3,885.0",
-            "changePct": -3.6,
+            "priceStr": "3,884.5",
+            "changePct": -0.05,
             "unit": "달러"
           },
           {
             "key": "WTI",
             "name": "WTI 유가",
-            "priceStr": "88.22",
-            "changePct": 2.53,
+            "priceStr": "88.08",
+            "changePct": -0.54,
             "unit": "달러"
           }
         ],
@@ -548,13 +552,7 @@
             "title": "한은, 금 ETF 41% 늘렸는데…금값 부진에 평가액 325억 원 감소",
             "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQM2IwbkxUMEQybFE4cXF1LWpQQm42Mm5BVF9oYU5OamtFcVBVV25aRW9sME9RanVMdVdrVnF6V3MwX3kydXZ6SDA0NmdBdkNhVERmRmtwSF9tRjhwRzhMUG9DSEZxcjQwUWxBN1hiSExSR3M5SWhfVnJsanhVOGlFYUFDU0RCYWdLNmc?oc=5",
             "press": "글로벌이코노믹",
-            "coverage": 7
-          },
-          {
-            "title": "국제금값 3900달러 공방…추가 하락 경계",
-            "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPY0JDT3ZxTExRLTBvYWxIMHdGckRLbzhSME1KNjJRemI3OFZkRF9JRmQxTk42WnVtVVNTT3RsZnRldWxvM2UzMGhGczVjTkZkSUFvNmtYZUtiWmpGUk1ta3RJOG9YeEF1N19ybEE0b2c0dm95VWlrdlZTUHh2M1pJQmlNSTgzTjJ4?oc=5",
-            "press": "글로벌이코노믹",
-            "coverage": 3
+            "coverage": 8
           },
           {
             "title": "국제유가, 이란의 美 기지 공격에 하락세 진정…브렌트유 96달러선",
@@ -563,10 +561,10 @@
             "coverage": 1
           }
         ],
-        "level": "변동 큼",
-        "headline": "국제 금값 3.6% 급락 및 지정학적 이슈에 따른 유가 상승",
-        "analysis": "국제 금 가격은 3,885.0달러로 3.6% 하락하며 3,900달러 선 밑으로 내려앉아 부진한 흐름을 이어갔습니다. 반면 WTI 유가는 이란의 미 기지 공격 소식에 하락세를 진정시키며 88.22달러로 2.53% 상승 마감했습니다.",
-        "watch": "중동 지정학적 리스크에 따른 유가 변동과 달러 강세에 따른 금 가격의 3,900달러선 공방을 주시해야 합니다.",
+        "level": "주목",
+        "headline": "금·유가 소폭 약세 속 지정학적 이슈로 유가 하락세 진정",
+        "analysis": "금 가격은 3,884.5달러(-0.05%)로 약세를 보였으며 WTI 유가는 88.08달러(-0.54%)로 내렸습니다. 다만 주말 사이 이란의 미 기지 공격 소식이 전해지며 브렌트유가 96달러선을 기록하는 등 유가 하락세가 진정되는 모습을 보였습니다.",
+        "watch": "중동 지역의 지정학적 리스크 변화와 원자재 가격 추이를 지속적으로 관찰해야 합니다.",
         "textBy": "ai"
       },
       {
@@ -576,8 +574,8 @@
           {
             "key": "BTC",
             "name": "비트코인",
-            "priceStr": "65,026",
-            "changePct": -8.85,
+            "priceStr": "65,049",
+            "changePct": 1.44,
             "unit": "달러"
           }
         ],
@@ -588,18 +586,12 @@
             "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE0wNl9YY3pIWUx1dEt5V3FaQ1g3ZUVzU1ZxT21mNEJXMVBGa2c1cjl4SDdDSzcwLWZIUWlSY0hRXzRKS0U3VlpNYW9hY2c3UTRrVkVEWUZWRERVV2NROE90SWIxWGQ?oc=5",
             "press": "서울경제TV",
             "coverage": 3
-          },
-          {
-            "title": "[부동산VIEW] 한강벨트로 번지는 아파트값 하락세, 미국 연준·전세 시장·민주당을 눈여겨 봐야",
-            "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBBZFZ4SFNjN1haUEZkUC1DdW5ObXhlVmxfclZEak4zbXNQclBkYjVHaWxoNzY4LWJjbHpydURYYnpQZ3Z5QTdrTVpmc0JPa0lMeFcyT1djdnFzWjRLbGY0YjU2YUtqVzlNOU8wQVcyNHA3UDg?oc=5",
-            "press": "비즈니스포스트",
-            "coverage": 1
           }
         ],
-        "level": "변동 큼",
-        "headline": "비트코인 8.85% 급락 및 수도권 아파트값 하락세 확대",
-        "analysis": "비트코인 가격이 65,026달러로 8.85% 급락하며 가상자산 시장의 변동성이 가중되었습니다. 부동산 시장에서는 한강벨트로 아파트값 하락세가 번지는 가운데 순자산 구조에 따른 상속세 부담 차이가 주요 이슈로 부각되었습니다.",
-        "watch": "미 연준 금리 향방과 전세 시장 움직임에 따른 주택 시장 하락세 지속 여부를 점검할 필요가 있습니다.",
+        "level": "평이",
+        "headline": "비트코인 65,000달러선 회복 및 부동산 상속세 반응 차이",
+        "analysis": "비트코인은 65,049달러(+1.44%)로 상승세를 나타냈습니다. 부동산 시장에서는 순자산 규모가 유사하더라도 서울 지역 자산 보유 여부에 따라 상속세 부담 체감이 다르게 형성되고 있습니다.",
+        "watch": "가상자산 시장으로의 자금 유입 흐름과 함께 부동산 세제 관련 시장 반응을 주시할 필요가 있습니다.",
         "textBy": "ai"
       }
     ],

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-16T02:19:12.054Z",
+  "updatedAt": "2026-11-16T02:23:00.897Z",
   "items": [
     {
       "title": "1340원대 다시 넘보는 환율…미 연준 금리 인상 전망에 상승 압력",
@@ -132,6 +132,18 @@
       "tagSource": "ai"
     },
     {
+      "title": "美재무 \"유가 하락하는데 과도한 금리 인상 안 돼\"…연준에 신중론",
+      "press": "뉴시스",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBHTHMxMzVLSXMxUzVQRkgxQTBPbEhycDJyLUF6N2NXbjRhY0VYa19vM0xDcjJTcncyTTZyUlRyUDZic1dKSl9EYlRlNi1aYXVQd1NWZlM2VGpZZUdfSTctNtIBeEFVX3lxTFBweFcwdllySU8wWk9NN04yZnYwV1F6OWhrNGFESzY5N2R1c0FxdGVreVFxWG1ocEtGMU9LZl92WGpQR1Y3N0pzOV9WU3BSOUVqczh1SUwwQ0JGZXNpUVlUVk9HeVJUY21aMkJxYk92MU9wTmdDWWkwTA?oc=5",
+      "timestamp": 1794792704000,
+      "date": "2026.11.16 10:31",
+      "tags": [
+        "매크로",
+        "채권·금리"
+      ],
+      "tagSource": "ai"
+    },
+    {
       "title": "알리안츠 \"연준, 금리 세 번 더 올린 뒤 2028년 말 3.75%까지 인하\"",
       "press": "연합인포맥스",
       "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1ybFdnRFU5TXVqNTNaX0MwRGpNaldTejRGOEZwcWgwcGZwSEYxLV9RQ3c2N1RnaU8tRF9hNkJEb3BsUGJfakMzSFdvdlFkeXhGamtRblltQ3hwQjB4VkxBeGFoNklfcjdqckZHOUxMRWHSAXRBVV95cUxOZWt4LW5GY3g5VDF2M2lwcUh3NEpzOXBKUVhfV1cyajEzZFdnUlI2QnNqNldXUzhlcEZqQkszMHFVS0VMZS1DVkRkRDJGUnFRSll3UzZQUmZDeC1STFFyX0lyaVFiWm9FWUZZeTVkYjlnUnJ2QQ?oc=5",
@@ -163,6 +175,18 @@
       "tags": [
         "증시",
         "채권·금리"
+      ],
+      "tagSource": "ai"
+    },
+    {
+      "title": "美 연준, AI·데이터센터 레버리지·밸류에이션 경고",
+      "press": "메디컬투데이",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9DazFzYkVCUFI0V190ODJLcWU3UGhjNnNVWVlldjJUeWpLdXN0STRIUEhka19JSUtCSzJmZ2YtbGZfV1pxU3F0U0J2ZEVOM0xtRG1JTnZVSnBYZkEyLVVDYi1sWTRWNG1pb3NVNA?oc=5",
+      "timestamp": 1794791259000,
+      "date": "2026.11.16 10:07",
+      "tags": [
+        "매크로",
+        "증시"
       ],
       "tagSource": "ai"
     },
@@ -1176,6 +1200,29 @@
       "tags": [
         "TAX",
         "부동산"
+      ],
+      "tagSource": "ai"
+    },
+    {
+      "title": "이번주 3대 이슈, 엔비디아·연준·앤트로픽…디지털자산 변동성 키울 것",
+      "press": "블록미디어",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE8tZnFsdzE3QThGVmJ1WXM5UXNYdDZMZWNlWWRodi1mRnVhUTMzNkR5Wl96d3FmZmszWlR5empYTndaN29RY20zOGVCcmRLOGwwMWN0VW5MZVQ?oc=5",
+      "timestamp": 1794753043000,
+      "date": "2026.11.15 23:30",
+      "tags": [
+        "증시",
+        "대체투자"
+      ],
+      "tagSource": "ai"
+    },
+    {
+      "title": "앤트로픽 19일 나스닥 입성, 청약 6배 몰렸지만 9개월 순손실 1,040억 달러",
+      "press": "위키트리",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBNWHAteXZ3US1RaEFXNmp5WWdiRDREU3U3QW5GQmN1V0xXRTNIS1NvbnhXOF82Z2tnelFkQlQ0aVBEaVRjWEhzZlk0d0szQVhnaFpVelV3?oc=5",
+      "timestamp": 1794750660000,
+      "date": "2026.11.15 22:51",
+      "tags": [
+        "증시"
       ],
       "tagSource": "ai"
     },
@@ -2783,51 +2830,6 @@
       "tags": [
         "매크로"
       ]
-    },
-    {
-      "title": "美 연준 \"AI 열풍에 자산 고평가\"…3조달러 인프라 빚 폭탄 '경고'",
-      "press": "아시아경제",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1OSjMzX182RUlWVkx5MWNBbkhzYjBNWTA2QnExMmlWWWFnZjF1OVpRQUE2NHRwS21SWS1id1BGcmJNM0E3V0FQQnZpYlBKQnlfdHVmZ18wWEhlUmlPZmh5Qw?oc=5",
-      "timestamp": 1794705477000,
-      "date": "2026.11.15 10:17",
-      "tags": [
-        "매크로",
-        "증시"
-      ],
-      "tagSource": "ai"
-    },
-    {
-      "title": "세무사 수석합격자, AI 부정행위 시인…경찰에 자수",
-      "press": "연합뉴스",
-      "url": "https://www.yna.co.kr/view/AKR20261115016200530",
-      "timestamp": 1794705338000,
-      "date": "2026.11.15 10:15",
-      "tags": [
-        "TAX"
-      ],
-      "tagSource": "ai"
-    },
-    {
-      "title": "\"믿을 건 대표지수뿐\"...연금개미, 반도체 팔고 S&P500 샀다",
-      "press": "한국경제",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFA2R1J2Zm1qeFVfZGswNmQ5ZWU2UkZfeEpTQnRCRXBuYWdfdE1ROHl5c3hKTEVPU3ZuZ0JUT1c4dnNpQ2JkZjNpYnBncWx5c2FwUDM0SFBZTFZVUQ?oc=5",
-      "timestamp": 1794705183000,
-      "date": "2026.11.15 10:13",
-      "tags": [
-        "증시"
-      ],
-      "tagSource": "ai"
-    },
-    {
-      "title": "무보, 슬로바키아 수출입은행과 맞손…韓 원전기업 유럽 진출 지원",
-      "press": "파이낸셜뉴스",
-      "url": "https://www.fnnews.com/news/202611151000103158",
-      "timestamp": 1794705041000,
-      "date": "2026.11.15 10:10",
-      "tags": [
-        "매크로"
-      ],
-      "tagSource": "ai"
     }
   ]
 }
