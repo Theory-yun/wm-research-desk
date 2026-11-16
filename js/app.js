@@ -56,8 +56,9 @@ function wireUpStaticEvents() {
   input.addEventListener("input", () => ($("pb-view-count").textContent = `${input.value.length} / 600`));
   $("btn-pb-reset").addEventListener("click", () => {
     STATE.pbOverride = null;
-    status.textContent = "AI가 정리한 원본 요약으로 되돌렸습니다.";
+    status.textContent = "";
     renderDashboard();
+    openPanel(false);
   });
   $("btn-pb-apply").addEventListener("click", async () => {
     const view = input.value.trim();
@@ -74,7 +75,8 @@ function wireUpStaticEvents() {
       const r = await requestPbRewrite(view, file);
       STATE.pbOverride = { file, talkingPoint: r.talkingPoint, pbView: view };
       renderDashboard();
-      status.textContent = "반영했습니다. 카톡 복사·PDF에도 이 요약이 들어갑니다. 새로고침하면 AI 원본으로 돌아갑니다.";
+      status.textContent = "";
+      openPanel(false); // 입력 내용은 남겨 두어 다시 열면 이어서 고칠 수 있음
       document.querySelector(".pb-talking-box")?.scrollIntoView({ behavior: "smooth", block: "center" });
     } catch (err) {
       status.textContent = `반영하지 못했습니다: ${err.message}`;
