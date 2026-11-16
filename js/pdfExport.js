@@ -4,6 +4,8 @@ import { getTop5News } from "./render.js";
 
 const $ = (id) => document.getElementById(id);
 
+const ASSET_EMOJI = { kr_equity: "🇰🇷", us_equity: "🌐", bonds: "🏦", fx: "💱", commodities: "🛢️", alternatives: "🏢" };
+
 /** 지표 한 줄 요약: "코스피 5,290.53 (-0.98%)" */
 const mktShort = (m) => `${m.name} ${m.priceStr} (${m.changePct > 0 ? "+" : ""}${m.changePct}%)`;
 
@@ -25,36 +27,41 @@ export function buildKakaoText() {
   const sess = globalSessionLabel(data);
   const title = isMorning ? `모닝 브리핑 (${sess.overnight ? "간밤 글로벌" : `${sess.label} 글로벌`})` : "이브닝 브리핑 (당일 국내)";
   const line = "──────────";
+  // 카톡에서 그대로 보이는 숫자 이모지 (10 넘으면 일반 숫자)
+  const NUM = ["1️⃣", "2️⃣", "3️⃣", "4️⃣", "5️⃣", "6️⃣", "7️⃣", "8️⃣", "9️⃣", "🔟"];
+  const num = (i) => NUM[i] ?? `${i + 1}.`;
 
-  const issues = (data.issues ?? []).map((i, idx) => `${idx + 1}. ${i.title}\n   ${i.desc}`).join("\n\n");
+  const issues = (data.issues ?? []).map((i, idx) => `${num(idx)} ${i.title}\n${i.desc}`).join("\n\n");
   const news = getTop5News()
-    .map((n, i) => `${i + 1}. ${n.title}\n   ${n.press} · ${n.date}\n   ${n.shortUrl || n.url}`)
+    .map((n, i) => `${num(i)} ${n.title}\n${n.press} · ${n.date}\n🔗 ${n.shortUrl || n.url}`)
     .join("\n\n");
   const assets = (currentAssetInsights(data)?.cards ?? [])
     .filter((c) => c.headline && !/^뚜렷한 신호 없음/.test(c.headline))
-    .map((c) => `· ${c.name}: ${c.headline}`)
+    .map((c) => `${ASSET_EMOJI[c.key] ?? "▪️"} ${c.name}: ${c.headline}`)
     .join("\n");
-  const kr = data.market.filter((m) => m.group === "domestic").map(mktShort).join(" / ");
-  const gl = data.market.filter((m) => m.group !== "domestic").map(mktShort).join(" / ");
+  const mk = (m) => `${m.changePct > 0 ? "🔺" : m.changePct < 0 ? "🔽" : "▫️"} ${mktShort(m)}`;
+  const kr = data.market.filter((m) => m.group === "domestic").map(mk).join("\n");
+  const gl = data.market.filter((m) => m.group !== "domestic").map(mk).join("\n");
 
   return [
-    `[J's WM RESEARCH DESK] ${title}`,
-    `${data.generatedAtKST} 기준`,
+    `🏛️ J's WM RESEARCH DESK`,
+    `${isMorning ? "🌅" : "🌇"} ${title}`,
+    `🕒 ${data.generatedAtKST} 기준`,
     "",
-    "■ 브리핑 요약",
+    "📝 브리핑 요약",
     talkingText(data),
     "",
     line,
-    "■ 핵심 이슈",
+    "🔥 핵심 이슈",
     issues,
     "",
     line,
-    "■ 필독 뉴스",
+    "📰 필독 뉴스",
     news,
-    ...(assets ? ["", line, "■ 자산별 시사점", assets] : []),
+    ...(assets ? ["", line, "💼 자산별 시사점", assets] : []),
     "",
     line,
-    "■ 주요 지표",
+    "📊 주요 지표",
     kr,
     gl,
     "",
