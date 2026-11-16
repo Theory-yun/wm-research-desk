@@ -416,12 +416,12 @@ function weekEvents(offset) {
 }
 
 function cardShell(i, top, edLabel, title, body) {
-  return `<section class="cn-card">
-    <header class="cn-top"><span class="cn-brand">${escapeHtml(top)}</span><span class="cn-pg">${i} / 6</span></header>
-    <div class="cn-head"><div class="cn-ed">${escapeHtml(edLabel)}</div><h2 class="cn-title">${title}</h2></div>
+  return `<section class="cn-card"><div class="cn-frame">
+    <header class="cn-top"><span class="cn-brand">${escapeHtml(top)}</span><span class="cn-pg">${String(i).padStart(2, "0")} <i>/ 06</i></span></header>
+    <div class="cn-head"><div class="cn-ed">${escapeHtml(edLabel)}</div><h2 class="cn-title">${title}</h2><div class="cn-rule"></div></div>
     <div class="cn-body">${body}</div>
     <footer class="cn-foot">시장 데이터·보도 기반 참고 자료이며 투자 권유가 아닙니다.</footer>
-  </section>`;
+  </div></section>`;
 }
 
 export function buildCardNewsHtml(pbName = "") {
@@ -539,7 +539,7 @@ export async function shareCardNews() {
       stage.innerHTML = cards[i];
       const el = stage.firstElementChild;
       fitCard(el);
-      const canvas = await window.html2canvas(el, { scale: 1, useCORS: true, backgroundColor: "#FFFDF8", scrollX: 0, scrollY: 0, width: 1080, height: 1350 });
+      const canvas = await window.html2canvas(el, { scale: 1, useCORS: true, backgroundColor: "#0A2B28", scrollX: 0, scrollY: 0, width: 1080, height: 1350 });
       const blob = await new Promise((res) => canvas.toBlob(res, "image/jpeg", 0.92));
       files.push(new File([blob], `WMdesk_${stamp}_${i + 1}.jpg`, { type: "image/jpeg" }));
     }
