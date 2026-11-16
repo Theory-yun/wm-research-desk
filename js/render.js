@@ -2,7 +2,7 @@ import { STATE, currentEditionData, escapeHtml, StorageUtil } from "./state.js";
 import { renderMacroCalendar, renderUpcomingStrip } from "./macroCalendar.js";
 import { renderArchivePicker } from "./archive.js";
 import { TAG_CLASS_MAP, LOCAL_STORAGE_KEYS, TOP5_DEFAULT_COUNT, tagBadge } from "./config.js";
-import { isKrxOpenNow } from "./util.js";
+import { isKrxOpenNow, isUsOpenNow, isFxOpenNow } from "./util.js";
 
 const $ = (id) => document.getElementById(id);
 
@@ -30,22 +30,17 @@ export function renderTicker() {
   const data = currentEditionData();
   if (!track || !data) return;
 
-  const krxOpen = isKrxOpenNow();
-
+  const collected = data.generatedAtKST ? `표시 값은 ${data.generatedAtKST} 수집 기준` : "";
   const buildItem = (m) => {
     const isUp = m.changePct >= 0;
     const dir = m.stale ? "wm-flat" : isUp ? "wm-up" : "wm-down";
     const arrow = m.stale ? "•" : isUp ? "▲" : "▼";
-    const liveBadge =
-      m.group === "domestic"
-        ? krxOpen
-          ? "LIVE"
-          : "장마감"
-        : "해외마감";
+    const open = m.key === "USDKRW" ? isFxOpenNow() : m.group === "domestic" ? isKrxOpenNow() : isUsOpenNow();
+    const status = `<span class="wm-mkt-dot ${open ? "is-open" : "is-closed"}" role="img" aria-label="${open ? "장중" : "마감"}" title="${open ? "장중" : "마감"}${collected ? ` · ${collected}` : ""}"></span>`;
     return `
       <div class="wm-ticker-item">
         ${m.stale ? '<span class="wm-stale-dot" title="갱신 실패"></span>' : ""}
-        <span class="wm-ticker-name">[${liveBadge}] ${escapeHtml(m.name)}</span>
+        ${status}<span class="wm-ticker-name">${escapeHtml(m.name)}</span>
         <span class="${dir}">${escapeHtml(m.priceStr)}</span>
         <span class="${dir}">${arrow} ${escapeHtml(String(m.diffStr).replace(/^[▲▼]\s*/, ""))} (${m.changePct >= 0 ? "+" : ""}${m.changePct}%)</span>
       </div>
@@ -103,14 +98,34 @@ function renderDataStatusBadge(data) {
 }
 
 /* ----------------------------- 핵심 이슈 3건 + 종합 멘트 ----------------------------- */
+const WD_KO = ["일", "월", "화", "수", "목", "금", "토"];
+/**
+ * 모닝 브리핑이 다루는 미국 장이 '간밤'인지(전날 거래), 주말·휴장을 건넌 '직전 거래일'인지.
+ * 반환: { overnight: boolean, label: "간밤" | "11.13(금) 장 이후" }
+ */
+export function globalSessionLabel(data) {
+  const us = (data?.market ?? []).find((m) => m.key === "SP500")?.asOfLocal ?? "";
+  const m = us.match(/(\d{2})\.(\d{2})/);
+  const gen = new Date(new Date(data?.generatedAt ?? Date.now()).getTime() + 9 * 3600e3);
+  if (!m) return { overnight: true, label: "간밤" };
+  const today = Date.UTC(gen.getUTCFullYear(), gen.getUTCMonth(), gen.getUTCDate());
+  let usDay = Date.UTC(gen.getUTCFullYear(), Number(m[1]) - 1, Number(m[2]));
+  if (usDay > today) usDay = Date.UTC(gen.getUTCFullYear() - 1, Number(m[1]) - 1, Number(m[2]));
+  const gap = Math.round((today - usDay) / 86400e3);
+  if (gap <= 1) return { overnight: true, label: "간밤" };
+  return { overnight: false, label: `${m[1]}.${m[2]}(${WD_KO[new Date(usDay).getUTCDay()]}) 이후` };
+}
+
 function renderIssues(data) {
   const editionLabel = STATE.edition === "MORNING" ? "🌅 모닝 (글로벌 · 장 개장 전)" : "🌇 이브닝 (국내 · 장 종료 후)";
   $("edition-badge-tag").textContent = `${data.generatedAtKST} · ${editionLabel}`;
   $("edition-main-heading").textContent =
-    STATE.edition === "MORNING" ? "간밤 글로벌 핵심 이슈 & 손님 브리핑 종합 요약" : "당일 대한민국 핵심 이슈 & 손님 브리핑 종합 요약";
+    STATE.edition === "MORNING"
+      ? `${globalSessionLabel(data).overnight ? "간밤" : `직전 거래일 ${globalSessionLabel(data).label}`} 글로벌 핵심 이슈 & 손님 브리핑 종합 요약`
+      : "당일 대한민국 핵심 이슈 & 손님 브리핑 종합 요약";
   $("edition-auto-time-note").textContent =
     STATE.edition === "MORNING"
-      ? "✔ 매일 06:30(KST) 간밤 글로벌 시장 기준 자동 생성"
+      ? "✔ 매일 06:30(KST) 직전 글로벌 거래일 기준 자동 생성"
       : "✔ 매일 16:05(KST) 국내 장 마감 기준 자동 생성";
 
   $("edition-issues-container").innerHTML = data.issues

@@ -29,7 +29,7 @@ export const ASSET_GROUPS = [
     name: "안전자산",
     target: 30,
     icon: "🛡️",
-    role: "예금·국채·우량채·달러·금 등 자산을 지키는 바구니",
+    role: "예금·국채·우량채·달러·금 등 자산을 지키는 자산군",
     tags: ["채권·금리", "외환"],
     kinds: ["fomc", "bok", "ecb", "boj", "cpi_us", "jobs_us"],
     market: ["USDKRW"],
@@ -39,7 +39,7 @@ export const ASSET_GROUPS = [
     name: "시장 추종",
     target: 40,
     icon: "📊",
-    role: "국내·해외 지수 ETF·분산 펀드로 시장 수익을 따라가는 바구니",
+    role: "국내·해외 지수 ETF·분산 펀드로 시장 수익을 따라가는 자산군",
     tags: ["증시", "매크로"],
     kinds: ["kr_quad", "kr_expiry", "us_quad", "us_opex", "msci_announce", "msci_effective", "kospi200_rebal"],
     market: ["KOSPI", "KOSDAQ", "SP500", "NASDAQ"],
@@ -49,7 +49,7 @@ export const ASSET_GROUPS = [
     name: "초과 수익",
     target: 30,
     icon: "🚀",
-    role: "개별 종목·테마·원자재·대체투자로 추가 수익을 노리는 바구니",
+    role: "개별 종목·테마·원자재·대체투자로 추가 수익을 노리는 자산군",
     tags: ["원자재", "대체투자"],
     kinds: ["earnings_kr"],
     market: ["SOX"],
@@ -153,7 +153,7 @@ export async function buildAssetChecks({ edition, market, stories, dataDir }) {
   for (const m of ALLOCATION_MODELS) {
     const hit = cards.filter((c) => c.level === "변동 큼" && m.ratios[c.key] >= 20);
     rebalance[m.key] = hit.length
-      ? `오늘 ${hit.map((c) => `${c.name}(${m.ratios[c.key]}%)`).join("·")} 바구니의 시장 변동이 커서, ${m.name} 기준 비중(${ratioText(m)})에서 벗어났을 수 있습니다. 허용 범위 이탈 여부를 점검하세요.`
+      ? `오늘 ${hit.map((c) => `${c.name}(${m.ratios[c.key]}%)`).join("·")} 자산의 시세 변동이 커서, ${m.name} 기준 비중(${ratioText(m)})에서 벗어났을 수 있습니다. 허용 범위 이탈 여부를 점검하세요.`
       : null;
   }
 
@@ -171,19 +171,20 @@ export async function buildAssetChecks({ edition, market, stories, dataDir }) {
 
   const r = await geminiJson({
     label: `${edition} 배분 모델 점검`,
-    prompt: `당신은 패밀리오피스 PB의 리서치 보조입니다. 손님 자산은 세 바구니(안전자산 safe · 시장 추종 core · 초과 수익 satellite)로 나눠 관리하며,
+    prompt: `당신은 패밀리오피스 PB의 리서치 보조입니다. 손님 자산은 세 가지 자산 유형(안전자산 safe · 시장 추종 core · 초과 수익 satellite)로 나눠 관리하며,
 아래 세 가지 예시 배분 모델이 있습니다. 비율은 고정이며 바꾸라고 하지 않습니다.
 ${ALLOCATION_MODELS.map((m) => `- ${m.key} (${m.name}): 안전자산 ${m.ratios.safe}% · 시장 추종 ${m.ratios.core}% · 초과 수익 ${m.ratios.satellite}%`).join("\n")}
 
-같은 '근거'를 모델별 비중에 맞게 해석하세요. 비중이 큰 바구니는 더 구체적으로, 비중이 작은 바구니는 포트폴리오 전체 영향이 제한적이라는 관점으로 짧게 쓰세요.
+같은 '근거'를 모델별 비중에 맞게 해석하세요. 비중이 큰 자산 유형은 더 구체적으로, 비중이 작은 자산 유형은 포트폴리오 전체 영향이 제한적이라는 관점으로 짧게 쓰세요.
 (예: 같은 반도체 급락도 공격형의 초과 수익 50%에서는 핵심 점검 사항이지만, 안전 추구형의 10%에서는 영향이 제한적)
 
 규칙:
 - 근거에 없는 숫자·사실을 만들지 마세요.
 - 매수·매도·비중 확대/축소/조절·추천 등 투자 의견이나 권유 표현은 쓰지 마세요. '시사점'과 '확인할 것'만 쓰세요.
-- headline: 그 모델에서 이 바구니의 핵심 한 줄(35자 이내)
-- insight: 오늘 시장이 이 모델의 이 바구니에 주는 시사점 1~2문장
+- headline: 그 모델에서 이 자산 유형의 핵심 한 줄(35자 이내)
+- insight: 오늘 시장이 이 모델의 이 자산 유형에 주는 시사점 1~2문장
 - check: PB가 확인할 구체적 항목 1문장
+- '바구니'라는 표현은 쓰지 말고 '안전자산', '시장 추종 자산', '초과 수익 자산'처럼 자산 유형 이름으로 쓰세요.
 - 근거가 없으면 headline은 "특이 신호 없음 — 정기 점검 유지"로 쓰세요.
 
 ${brief}

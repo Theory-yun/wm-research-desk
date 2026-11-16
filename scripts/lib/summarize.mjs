@@ -107,6 +107,50 @@ function validateSchema(parsed) {
   if (!isValidSummary(parsed)) throw new Error("AI 응답 스키마가 예상과 다릅니다.");
 }
 
+const WD = ["일", "월", "화", "수", "목", "금", "토"];
+
+/** 'MM.DD' 라벨 → 올해(또는 작년) Date(UTC 자정) */
+function mdToDate(md, ref) {
+  const m = String(md || "").match(/(\d{2})\.(\d{2})/);
+  if (!m) return null;
+  let d = new Date(Date.UTC(ref.getUTCFullYear(), Number(m[1]) - 1, Number(m[2])));
+  if (d > ref) d = new Date(Date.UTC(ref.getUTCFullYear() - 1, Number(m[1]) - 1, Number(m[2])));
+  return d;
+}
+const fmtMd = (d) => `${d.getUTCMonth() + 1}월 ${d.getUTCDate()}일(${WD[d.getUTCDay()]})`;
+
+/**
+ * 시점 안내: 마지막으로 열린 미국·한국 장의 날짜와, 그것이 '간밤/오늘'인지 여부.
+ * 주말·휴장 다음 날에 "간밤 뉴욕증시는…"처럼 어제 장이 열린 듯 쓰는 문제를 막습니다.
+ */
+export function buildSessionContext(edition, market, now = new Date()) {
+  const kstNow = new Date(now.getTime() + 9 * 3600e3);
+  const today = new Date(Date.UTC(kstNow.getUTCFullYear(), kstNow.getUTCMonth(), kstNow.getUTCDate()));
+  const days = (d) => Math.round((today - d) / 86400e3);
+  const us = market.find((m) => m.key === "SP500")?.asOfLocal;
+  const kr = market.find((m) => m.key === "KOSPI")?.asOfKst;
+  const usDate = mdToDate(us, today);
+  const krDate = mdToDate(kr, today) ?? (edition === "EVENING" ? today : null);
+  const lines = [`- 오늘(한국): ${fmtMd(today)}`];
+  const rules = [];
+  if (usDate) {
+    const gap = days(usDate);
+    lines.push(`- 미국 증시 마지막 거래일(현지): ${fmtMd(usDate)} — 오늘 기준 ${gap}일 전`);
+    if (edition === "MORNING" && gap === 1) {
+      rules.push(`미국 시장은 '간밤'이라고 써도 됩니다(${fmtMd(usDate)} 거래).`);
+    } else {
+      rules.push(`미국 증시 수치는 '간밤'·'어젯밤'이라고 쓰지 말고 반드시 "${usDate.getUTCMonth() + 1}월 ${usDate.getUTCDate()}일(${WD[usDate.getUTCDay()]}) 뉴욕증시는"처럼 거래일 날짜를 밝히세요. 그 사이는 주말 또는 휴장이었습니다.`);
+      rules.push(`마지막 거래일 이후(주말·휴장 중)에 나온 뉴스는 "주말 사이", "연휴 기간"처럼 시점을 밝혀 별도로 정리하고, 이번 주 장에 영향을 줄 만한 것을 우선하세요.`);
+    }
+  }
+  if (krDate) {
+    const gap = days(krDate);
+    lines.push(`- 한국 증시 마지막 거래일: ${fmtMd(krDate)}${gap === 0 ? " — 오늘" : ` — 오늘 기준 ${gap}일 전`}`);
+    if (edition === "MORNING" && gap > 1) rules.push(`국내 증시 수치는 '전일'이라고 쓰지 말고 "${krDate.getUTCMonth() + 1}월 ${krDate.getUTCDate()}일(${WD[krDate.getUTCDay()]}) 코스피는"처럼 날짜를 밝히세요.`);
+  }
+  return `[시점 안내] (아래 날짜 규칙을 반드시 지키세요)\n${lines.join("\n")}${rules.length ? "\n" + rules.map((r) => `· ${r}`).join("\n") : ""}`;
+}
+
 function buildPrompt({ edition, market, candidateNews, pbNotes }) {
   const marketLines = market
     .map((m) => `- ${m.name}: ${m.priceStr} (${m.diffStr}, ${m.changePct}%) [${m.asOfKst}]${m.stale ? " ※갱신 실패, 이전 값" : ""}`)
@@ -118,11 +162,13 @@ function buildPrompt({ edition, market, candidateNews, pbNotes }) {
 
   const editionGuide =
     edition === "MORNING"
-      ? "모닝 에디션입니다. 대한민국 장 개장 전 시점이며, 간밤 글로벌(미국/유럽/아시아) 시장 이슈를 중심으로 작성하세요. 손님이 출근길에 읽고 '오늘 국내 장에서 뭘 주목해야 하는지' 감을 잡을 수 있어야 합니다."
+      ? "모닝 에디션입니다. 대한민국 장 개장 전 시점이며, 직전 글로벌(미국/유럽/아시아) 시장 이슈를 중심으로 작성하세요(‘간밤’ 표현은 [시점 안내] 규칙을 따르세요). 손님이 출근길에 읽고 '오늘 국내 장에서 뭘 주목해야 하는지' 감을 잡을 수 있어야 합니다."
       : "이브닝 에디션입니다. 대한민국 장 종료 후 시점이며, 당일 국내 증시·수급·업종 이슈를 중심으로 작성하세요. 손님에게 '오늘 장이 왜 이렇게 끝났는지'를 설명할 수 있어야 합니다.";
 
   return `[에디션] ${edition}
 ${editionGuide}
+
+${buildSessionContext(edition, market)}
 
 [오늘의 시장 지표] (이 숫자만 사용하세요. 새 숫자를 만들지 마세요)
 ${marketLines}

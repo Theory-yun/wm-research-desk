@@ -1,5 +1,5 @@
 import { STATE, currentEditionData, escapeHtml } from "./state.js";
-import { currentAllocation } from "./render.js";
+import { currentAllocation, globalSessionLabel } from "./render.js";
 import { getTop5News } from "./render.js";
 
 const $ = (id) => document.getElementById(id);
@@ -62,7 +62,7 @@ export function buildFormalPdfHtml() {
   const talking = $("edition-talking-point")?.textContent.trim() || data.talkingPoint;
   const top5 = getTop5News(5);
   const isMorning = STATE.edition === "MORNING";
-  const edTitle = isMorning ? "모닝 · 간밤 글로벌" : "이브닝 · 당일 국내";
+  const edTitle = isMorning ? `모닝 · ${globalSessionLabel(data).overnight ? "간밤" : globalSessionLabel(data).label} 글로벌` : "이브닝 · 당일 국내";
   const printed = kstNow();
   const printedStr = `${printed.getUTCFullYear()}.${String(printed.getUTCMonth() + 1).padStart(2, "0")}.${String(printed.getUTCDate()).padStart(2, "0")} ${String(printed.getUTCHours()).padStart(2, "0")}:${String(printed.getUTCMinutes()).padStart(2, "0")}`;
 

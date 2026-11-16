@@ -7,7 +7,8 @@ import { renderNewsroom, initNewsroomEvents } from "./newsroom.js";
 import { renderInsights, initInsightEvents } from "./insight.js";
 import { renderBoard, initBoardEvents } from "./board.js";
 import { copyKakaoBriefing, downloadPdf } from "./pdfExport.js";
-import { defaultEditionByTime, formatKstDate } from "./util.js";
+import { defaultEditionByTime, formatKstDate, setMarketHolidays } from "./util.js";
+import { fetchJson } from "./dataLoader.js";
 import { selectArchiveDate } from "./archive.js";
 
 const $ = (id) => document.getElementById(id);
@@ -94,7 +95,10 @@ async function init() {
   STATE.edition = defaultEditionByTime();
 
   wireUpStaticEvents();
-  await loadAllData();
+  await Promise.all([
+    loadAllData(),
+    fetchJson("./data/market-holidays.json").then(setMarketHolidays).catch(() => {}),
+  ]);
 
   renderDashboard();
   renderNewsroom();

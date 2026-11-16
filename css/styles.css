@@ -818,3 +818,7 @@ a { color: inherit; }
   .archive-picker select { flex: 1; min-width: 0; }
 }
 .rp-page td, .rp-page th { color: inherit; }
+/* 티커 장 상태: 마감 = 빨간 점, 장중 = 초록 점 */
+.wm-mkt-dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; margin-right: 6px; flex: none; vertical-align: middle; }
+.wm-mkt-dot.is-closed { background: #F2554B; }
+.wm-mkt-dot.is-open { background: #34D399; box-shadow: 0 0 0 3px rgba(52, 211, 153, .18); }
