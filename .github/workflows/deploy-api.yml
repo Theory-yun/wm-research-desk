@@ -66,6 +66,9 @@ jobs:
           sleep 5
           echo "== /health"; curl -s "$URL/health"; echo
           echo "== /quotes"; curl -s "$URL/quotes" | head -c 1500; echo
+          echo "== /pb-rewrite (동작 확인 1회)"
+          curl -s -X POST "$URL/pb-rewrite" -H "Origin: https://theory-yun.github.io" -H "Content-Type: application/json" \
+            -d '{"pbView":"금리 정점 통과 가능성을 높게 보며 반도체 조정은 실적 확인 전 단기 변동으로 판단합니다.","file":"data/morning-latest.json"}' | head -c 2500; echo
           printf '{\n  "apiBase": "%s",\n  "deployedAt": "%s"\n}\n' "$URL" "$(date -u +%Y-%m-%dT%H:%M:%SZ)" > data/api-config.json
           cat data/api-config.json
 
