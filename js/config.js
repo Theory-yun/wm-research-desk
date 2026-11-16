@@ -43,7 +43,8 @@ export const LOCAL_STORAGE_KEYS = {
   scrapMap: "wm_desk_scrap_map_v1",
   boardPosts: "wm_desk_board_posts_v1",
   editionOverride: "wm_desk_edition_override_v1",
-  allocModel: "wm_desk_alloc_model_v1", // 사용자가 고른 예시 배분 모델(이 브라우저에만 저장)
+  allocModel: "wm_desk_alloc_model_v1", // (사용 안 함) 예전 배분 모델 선택값
+  pbName: "wm_desk_pb_name_v1", // 공유 시 넣을 PB 이름(이 브라우저에만 저장)
 };
 
 export const TOP5_DEFAULT_COUNT = 5;

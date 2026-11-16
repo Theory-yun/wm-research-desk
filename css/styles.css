@@ -926,3 +926,20 @@ a { color: inherit; }
 .cn-modal-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
 .cn-modal-grid img { width: 100%; display: block; border-radius: 8px; }
 @media (max-width: 760px) { .cn-modal-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+/* 카드뉴스 v2: 하이라이트·종가일·금주/차주·PB 이름 */
+.cn-card mark.hl-n { background: none; color: #B4541A; font-weight: 700; padding: 0; }
+.cn-card b.hl-k { font-weight: 700; color: #0F3D3A; }
+.cn-mkt-name { display: flex; justify-content: space-between; gap: .4em; }
+.cn-mkt-date { font-weight: 500; color: #8A6A2F; font-size: .9em; white-space: nowrap; }
+.cn-wk { display: flex; flex-direction: column; gap: .3em; }
+.cn-wk-h { font-size: .78em; font-weight: 700; color: #FFFDF8; background: #0F3D3A; border-radius: 10px; padding: .15em .6em; align-self: flex-start; }
+.cn-wk-h span { font-family: var(--font-num); font-weight: 500; color: #E3C27A; margin-left: .4em; font-size: .9em; }
+.cn-ev.past { opacity: .5; }
+.cn-ev-none { font-size: .72em; color: #6B7280; padding: .2em 0; }
+.cn-greet { font-size: .72em; }
+.pbname-box { background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; padding: 20px; width: min(440px, 100%); display: flex; flex-direction: column; gap: 10px; color: var(--text-body); }
+.pbname-box b { color: var(--text-main); font-size: 16px; }
+.pbname-box p { margin: 0; font-size: 13px; line-height: 1.6; }
+.pbname-box em { font-style: normal; color: var(--gold-text); }
+.pbname-box input { font: inherit; font-size: 16px; padding: 10px 12px; min-height: 44px; }
+.pbname-actions { display: flex; gap: 8px; justify-content: flex-end; flex-wrap: wrap; }
