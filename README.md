@@ -214,3 +214,13 @@ node scripts/build-evening.mjs
 - 모든 워크플로는 마지막에 `node scripts/validate-data.mjs`로 데이터를 점검하고, 문제가 있으면 Actions 화면에 경고를 남깁니다.
 - 데이터가 push되면 GitHub Pages가 자동으로 사이트를 다시 배포합니다.
 - 사람이 해야 하는 일: 매년 새 공식 일정(FOMC·금통위·CPI 등)과 휴장일 추가 — 수록 범위 3개월 전부터 점검 스크립트가 경고합니다.
+
+## 중계 서버 (실시간 티커 · PB의 생각)
+
+`worker/` 폴더의 Cloudflare Workers(무료)가 두 가지를 맡습니다.
+- 상단 티커 실시간 시세(장중 1분 간격, 30초 캐시)
+- "PB의 생각" 반영: PB가 입력한 하우스뷰 + 그날 브리핑 데이터를 Gemini로 종합해 손님 브리핑 요약을 다시 작성
+  (서버가 사이트의 공개 데이터 파일을 직접 읽어 근거로 사용, 접속당 시간당 10회 제한, 결과는 브라우저 메모리에만 보관)
+
+배포: GitHub Secrets에 `CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID`를 등록하면
+`중계 서버 배포` 워크플로가 배포하고 주소를 `data/api-config.json`에 기록합니다. Gemini 키는 기존 `GEMINI_API_KEY`를 그대로 사용합니다.

@@ -1,7 +1,7 @@
 import { STATE, currentEditionData, escapeHtml, StorageUtil } from "./state.js";
 import { renderMacroCalendar, renderUpcomingStrip } from "./macroCalendar.js";
 import { renderArchivePicker } from "./archive.js";
-import { TAG_CLASS_MAP, LOCAL_STORAGE_KEYS, TOP5_DEFAULT_COUNT, tagBadge } from "./config.js";
+import { TAG_CLASS_MAP, LOCAL_STORAGE_KEYS, TOP5_DEFAULT_COUNT, tagBadge, archiveFile } from "./config.js";
 import { isKrxOpenNow, isUsOpenNow, isFxOpenNow } from "./util.js";
 
 const $ = (id) => document.getElementById(id);
@@ -30,13 +30,23 @@ export function renderTicker() {
   const data = currentEditionData();
   if (!track || !data) return;
 
-  const collected = data.generatedAtKST ? `표시 값은 ${data.generatedAtKST} 수집 기준` : "";
-  const buildItem = (m) => {
+  const collected = data.generatedAtKST ? `브리핑 수집 ${data.generatedAtKST} 기준` : "";
+  const fmt2 = (v) => Number(v).toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  const liveAt = STATE.live?.updatedAt
+    ? new Intl.DateTimeFormat("ko-KR", { timeZone: "Asia/Seoul", hour: "2-digit", minute: "2-digit", hour12: false }).format(new Date(STATE.live.updatedAt))
+    : null;
+  const buildItem = (m0) => {
+    const open = m0.key === "USDKRW" ? isFxOpenNow() : m0.group === "domestic" ? isKrxOpenNow() : isUsOpenNow();
+    // 장중이고 실시간 값이 있으면 그 값으로(지난 브리핑 보기 중에는 수집 값 그대로)
+    const lq = !STATE.archiveView && open ? STATE.live?.items?.[m0.key] : null;
+    const m = lq && Number.isFinite(lq.price)
+      ? { ...m0, priceStr: fmt2(lq.price), diffStr: fmt2(Math.abs(lq.diff)), changePct: Number(lq.pct.toFixed(2)), stale: false }
+      : m0;
     const isUp = m.changePct >= 0;
     const dir = m.stale ? "wm-flat" : isUp ? "wm-up" : "wm-down";
     const arrow = m.stale ? "•" : isUp ? "▲" : "▼";
-    const open = m.key === "USDKRW" ? isFxOpenNow() : m.group === "domestic" ? isKrxOpenNow() : isUsOpenNow();
-    const status = `<span class="wm-mkt-dot ${open ? "is-open" : "is-closed"}" role="img" aria-label="${open ? "장중" : "마감"}" title="${open ? "장중" : "마감"}${collected ? ` · ${collected}` : ""}"></span>`;
+    const when = lq ? `실시간 ${liveAt} 기준` : collected;
+    const status = `<span class="wm-mkt-dot ${open ? "is-open" : "is-closed"}" role="img" aria-label="${open ? "장중" : "마감"}" title="${open ? "장중" : "마감"}${when ? ` · ${when}` : ""}"></span>`;
     return `
       <div class="wm-ticker-item">
         ${m.stale ? '<span class="wm-stale-dot" title="갱신 실패"></span>' : ""}
@@ -141,7 +151,9 @@ function renderIssues(data) {
     .join("");
 
   const talkEl = $("edition-talking-point");
-  talkEl.textContent = data.talkingPoint;
+  const pb = STATE.pbOverride && STATE.pbOverride.file === currentDataFile() ? STATE.pbOverride : null;
+  talkEl.textContent = pb ? pb.talkingPoint : data.talkingPoint;
+  $("pb-applied-badge")?.toggleAttribute("hidden", !pb);
   talkEl.setAttribute("contenteditable", "false");
 }
 
@@ -299,6 +311,13 @@ export function renderDashboard() {
   renderIssues(data);
   renderTop5News();
   renderTicker();
+}
+
+/** 지금 보고 있는 브리핑의 데이터 파일 경로 (PB의 생각 반영 시 서버에 전달) */
+export function currentDataFile() {
+  return STATE.archiveView
+    ? archiveFile(STATE.edition, STATE.archiveView.date)
+    : `data/${STATE.edition === "MORNING" ? "morning" : "evening"}-latest.json`;
 }
 
 export function toggleEditBriefing() {

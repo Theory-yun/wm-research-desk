@@ -1,0 +1,13 @@
+# J's WM RESEARCH DESK 중계 서버 (Cloudflare Workers, 무료 플랜)
+#  - GET  /quotes     : 상단 티커·핵심지표 실시간 시세 (30초 캐시)
+#  - POST /pb-rewrite : "PB의 생각"을 반영한 손님 브리핑 요약 재작성 (Gemini)
+#  - GET  /health     : 상태 확인
+# 배포는 GitHub Actions(.github/workflows/deploy-api.yml)가 자동으로 합니다.
+name = "wm-desk-api"
+main = "src/index.js"
+compatibility_date = "2026-01-01"
+workers_dev = true
+
+[vars]
+SITE_ORIGIN = "https://theory-yun.github.io"
+SITE_BASE = "https://theory-yun.github.io/wm-research-desk"
