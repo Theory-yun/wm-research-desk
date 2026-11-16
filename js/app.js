@@ -5,7 +5,7 @@ import { initLiveApi, requestPbRewrite } from "./liveApi.js";
 import { renderNewsroom, initNewsroomEvents } from "./newsroom.js";
 import { renderInsights, initInsightEvents } from "./insight.js";
 import { renderBoard, initBoardEvents } from "./board.js";
-import { copyKakaoBriefing, downloadPdf } from "./pdfExport.js";
+import { shareKakaoBriefing, downloadBriefingImage } from "./pdfExport.js";
 import { defaultEditionByTime, formatKstDate, setMarketHolidays } from "./util.js";
 import { fetchJson } from "./dataLoader.js";
 import { selectArchiveDate } from "./archive.js";
@@ -85,8 +85,8 @@ function wireUpStaticEvents() {
       btn.textContent = "반영하기";
     }
   });
-  $("btn-copy-kakao").addEventListener("click", copyKakaoBriefing);
-  $("btn-pdf-download").addEventListener("click", downloadPdf);
+  $("btn-copy-kakao").addEventListener("click", shareKakaoBriefing);
+  $("btn-image-download").addEventListener("click", downloadBriefingImage);
   $("btn-goto-newsroom").addEventListener("click", () => switchTab("tab-newsroom"));
 
   // 상단 J's WM RESEARCH DESK 클릭 → 종합 대시보드

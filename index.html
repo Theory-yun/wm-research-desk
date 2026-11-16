@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" defer></script>
+  <script src="./js/vendor/html2canvas.min.js" defer></script>
 </head>
 <body>
 
@@ -17,7 +17,7 @@
     <div id="wm-ticker-track" class="wm-ticker-track"></div>
   </div>
 
-  <!-- 헤더: 브랜드 · 메뉴 · 에디션 전환 · 카톡/PDF 한 줄 (모바일: 메뉴는 하단 탭) -->
+  <!-- 헤더: 브랜드 · 메뉴 · 에디션 전환 · 카톡 공유/이미지 한 줄 (모바일: 메뉴는 하단 탭) -->
   <header class="main-header">
     <div class="header-inner">
       <a href="#tab-dashboard" class="brand-title-group brand-home-link" id="brand-home-link" title="종합 대시보드로 이동">
@@ -37,8 +37,8 @@
           <button type="button" id="btn-ed-evening" class="ed-pill-btn" data-edition="EVENING" title="이브닝 · 장 종료 후 · 국내">PM 이브닝</button>
         </div>
         <div class="hdr-actions">
-          <button type="button" class="hdr-btn" id="btn-copy-kakao">카톡 복사</button>
-          <button type="button" class="hdr-btn hdr-btn-primary" id="btn-pdf-download">PDF</button>
+          <button type="button" class="hdr-btn" id="btn-copy-kakao" title="문구 복사 + 휴대폰에서는 공유창(카카오톡) 열기">카톡 공유</button>
+          <button type="button" class="hdr-btn hdr-btn-primary" id="btn-image-download" title="손님용 브리핑을 가로 1장 이미지로 저장·공유">이미지</button>
         </div>
       </div>
     </div>

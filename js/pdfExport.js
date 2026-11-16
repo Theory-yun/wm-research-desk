@@ -69,11 +69,41 @@ export function buildKakaoText() {
   ].join("\n");
 }
 
-export function copyKakaoBriefing() {
+/** 휴대폰(터치 기기) 여부 — 공유창은 휴대폰에서만 띄움(PC 카카오톡은 공유 대상에 잘 나오지 않음) */
+const isMobile = () => /Android|iPhone|iPad|iPod/i.test(navigator.userAgent) || (navigator.maxTouchPoints > 1 && /Macintosh/.test(navigator.userAgent));
+
+async function copyText(text) {
+  try {
+    await navigator.clipboard.writeText(text);
+    return true;
+  } catch {
+    // 일부 인앱 브라우저용 대체 복사
+    const ta = Object.assign(document.createElement("textarea"), { value: text });
+    ta.style.cssText = "position:fixed;opacity:0";
+    document.body.appendChild(ta);
+    ta.select();
+    const ok = document.execCommand?.("copy");
+    ta.remove();
+    return Boolean(ok);
+  }
+}
+
+/** 카톡 공유: 문구를 복사하고, 휴대폰이면 공유창(카카오톡 선택 → 바로 입력됨)을 띄움 */
+export async function shareKakaoBriefing() {
   const msg = buildKakaoText();
   if (!msg) return;
-  navigator.clipboard?.writeText(msg).then(() => alert("손님 카톡 브리핑 문구가 복사되었습니다. 채팅방에 붙여넣기(Ctrl+V) 하세요."));
+  const copied = await copyText(msg);
+  if (isMobile() && navigator.share) {
+    try {
+      await navigator.share({ text: msg });
+      return;
+    } catch (e) {
+      if (e?.name === "AbortError") return; // 사용자가 공유창을 닫음 (문구는 이미 복사됨)
+    }
+  }
+  alert(copied ? "손님 카톡 브리핑 문구가 복사되었습니다. 카카오톡 채팅방에 붙여넣기(Ctrl+V) 하세요." : "복사하지 못했습니다. 다시 시도해 주세요.");
 }
+export const copyKakaoBriefing = shareKakaoBriefing;
 
 const WD = ["일", "월", "화", "수", "목", "금", "토"];
 const clip = (t, n) => {
@@ -142,9 +172,9 @@ export function buildFormalPdfHtml() {
         <span class="rp-num ${i < 2 ? "gold" : ""}">${i + 1}</span>
         <span class="rp-news-body">
           <span class="rp-news-title">${escapeHtml(clip(n.title, 36))}</span>
-          <span class="rp-news-meta">${escapeHtml(n.press)}${n.coverage ? ` · ${n.coverage}개 언론 보도` : ""}</span>
+          <span class="rp-news-meta">${escapeHtml(n.press)}${n.coverage ? ` · ${n.coverage}개 언론 보도` : ""}${n.shortUrl ? ` · ${escapeHtml(n.shortUrl.replace(/^https?:\/\//, ""))}` : ""}</span>
         </span>
-        <span class="rp-link">원문 ↗</span>
+        
       </a>`
     )
     .join("");
@@ -206,7 +236,7 @@ export function buildFormalPdfHtml() {
           ${issues}
         </section>
         <section class="rp-box rp-c">
-          <h3><span>03</span> 손님 필독 뉴스 <small>제목 클릭 시 원문</small></h3>
+          <h3><span>03</span> 손님 필독 뉴스 <small>링크 주소로 원문 확인</small></h3>
           ${news}
         </section>
         <section class="rp-box rp-d">
@@ -225,50 +255,57 @@ export function buildFormalPdfHtml() {
   `;
 }
 
-export async function downloadPdf() {
-  if (STATE.isEditing) document.getElementById("btn-edit-briefing").click();
+/** 손님용 브리핑을 가로 1장 이미지(PNG)로 생성 — PC는 내려받기, 휴대폰은 공유창(카카오톡 등) */
+export async function downloadBriefingImage() {
   const wrap = $("formal-pdf-report-wrapper");
-  const btn = $("btn-pdf-download");
+  const btn = $("btn-image-download");
   if (!wrap || !btn) return;
-
-  const orig = btn.innerHTML;
-  btn.innerHTML = "⏳ <span>보고서 조판중...</span>";
+  if (!window.html2canvas) {
+    alert("이미지 생성 도구를 불러오는 중입니다. 잠시 후 다시 눌러 주세요.");
+    return;
+  }
+  const orig = btn.textContent;
+  btn.textContent = "이미지 생성 중…";
   btn.disabled = true;
 
   wrap.innerHTML = buildFormalPdfHtml();
-  // 화면 가운데 정렬 상태로 캡처하면 왼쪽이 잘리므로, 출력 동안만 가운데 정렬을 풀고 스크롤을 맨 위로 올립니다.
   const prevScroll = window.scrollY;
   window.scrollTo(0, 0);
   Object.assign(wrap.style, { display: "block", margin: "0" });
 
   const data = currentEditionData();
-  const edTag = STATE.edition === "MORNING" ? "0_Morning" : "1_Evening";
-  const fName = `Js_WM_RESEARCH_DESK_마켓브리핑_${data.generatedAtKST.replace(/[.\s:]/g, "")}_${edTag}.pdf`;
+  const edTag = STATE.edition === "MORNING" ? "Morning" : "Evening";
+  const fName = `Js_WM_RESEARCH_DESK_브리핑_${data.generatedAtKST.replace(/[.\s:]/g, "")}_${edTag}.png`;
 
-  if (window.html2pdf) {
-    try {
-      await window
-        .html2pdf()
-        .set({
-          margin: [0, 0, 0, 0],
-          filename: fName,
-          enableLinks: true,
-          image: { type: "jpeg", quality: 0.98 },
-          html2canvas: { scale: 2, useCORS: true, backgroundColor: "#ffffff", scrollX: 0, scrollY: 0 },
-          jsPDF: { unit: "mm", format: "a4", orientation: "landscape" },
-          pagebreak: { mode: ["avoid-all"] },
-        })
-        .from(wrap)
-        .save();
-    } catch {
-      window.print();
+  try {
+    if (document.fonts?.ready) await document.fonts.ready;
+    const canvas = await window.html2canvas(wrap.querySelector(".rp-page"), { scale: 2, useCORS: true, backgroundColor: "#ffffff", scrollX: 0, scrollY: 0 });
+    const blob = await new Promise((res) => canvas.toBlob(res, "image/png"));
+    const file = new File([blob], fName, { type: "image/png" });
+    let shared = false;
+    if (isMobile() && navigator.canShare?.({ files: [file] })) {
+      try {
+        await navigator.share({ files: [file], title: "J's WM RESEARCH DESK 브리핑" });
+        shared = true;
+      } catch (e) {
+        shared = e?.name === "AbortError";
+      }
     }
-  } else {
-    window.print();
+    if (!shared) {
+      const url = URL.createObjectURL(blob);
+      const a = Object.assign(document.createElement("a"), { href: url, download: fName });
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      setTimeout(() => URL.revokeObjectURL(url), 5000);
+    }
+  } catch (err) {
+    alert(`이미지를 만들지 못했습니다: ${err.message}`);
+  } finally {
+    Object.assign(wrap.style, { display: "none", margin: "" });
+    wrap.innerHTML = "";
+    window.scrollTo(0, prevScroll);
+    btn.textContent = orig;
+    btn.disabled = false;
   }
-
-  Object.assign(wrap.style, { display: "none", margin: "" });
-  window.scrollTo(0, prevScroll);
-  btn.innerHTML = orig;
-  btn.disabled = false;
 }
