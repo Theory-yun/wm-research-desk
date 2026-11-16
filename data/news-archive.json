@@ -1,6 +1,545 @@
 {
-  "updatedAt": "2026-11-15T23:39:57.487Z",
+  "updatedAt": "2026-11-16T01:27:52.420Z",
   "items": [
+    {
+      "title": "알리안츠 \"연준, 금리 세 번 더 올린 뒤 2028년 말 3.75%까지 인하\"",
+      "press": "연합인포맥스",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1ybFdnRFU5TXVqNTNaX0MwRGpNaldTejRGOEZwcWgwcGZwSEYxLV9RQ3c2N1RnaU8tRF9hNkJEb3BsUGJfakMzSFdvdlFkeXhGamtRblltQ3hwQjB4VkxBeGFoNklfcjdqckZHOUxMRWHSAXRBVV95cUxOZWt4LW5GY3g5VDF2M2lwcUh3NEpzOXBKUVhfV1cyajEzZFdnUlI2QnNqNldXUzhlcEZqQkszMHFVS0VMZS1DVkRkRDJGUnFRSll3UzZQUmZDeC1STFFyX0lyaVFiWm9FWUZZeTVkYjlnUnJ2QQ?oc=5",
+      "timestamp": 1794791855000,
+      "date": "2026.11.16 10:17",
+      "tags": [
+        "채권·금리",
+        "매크로"
+      ],
+      "tagSource": "ai"
+    },
+    {
+      "title": "시장이 과민 반응...톰 리 \"VIX 정점 11월 6일, 15% 반등 온다\"",
+      "press": "코인리더스",
+      "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE5TLU1WSnpxbm9lWWtYUWRPSTRMdVpPd0ZRSkRtZ0NkbURWdFVGY3UyTml3VXA2OElLYlpIbTI3ZGYwbXVCRzJROEZB?oc=5",
+      "timestamp": 1794791400000,
+      "date": "2026.11.16 10:10",
+      "tags": [
+        "증시"
+      ],
+      "tagSource": "ai"
+    },
+    {
+      "title": "오늘 금값·금시세, 순금 한 돈 사고팔 때 13.5% 차이…한은 금 ETF 평가액도 감소",
+      "press": "키즈맘",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5vcHQwWjdsaFJLMU1XZU9jYV9LOGVoTDZSeHdmNlY2TUo5SE5RcW9pcWpkN09DS0Q0eWJIc2Rhd3JFbENwRzRtSDNwcnZ4SHpQejVpR2hhMWVYYy1WNzIzLTdFYjJUWnFT?oc=5",
+      "timestamp": 1794790884000,
+      "date": "2026.11.16 10:01",
+      "tags": [
+        "원자재"
+      ],
+      "tagSource": "ai"
+    },
+    {
+      "title": "환율, 1330원대 중반서 횡보…美 물가 부담에 달러 강세 지속",
+      "press": "뉴스투데이",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1ySTNVeWlvN0ZwdEVhRW9ORlp1SXprQ28xUTRSMk9PQm5vQi1sU2pUS2VOUE5OdmtUZjVqVGVGa0M4bW5mbW0tM3M5OGlqYllsLUZ4TVN1eGx1SzI4OHc?oc=5",
+      "timestamp": 1794790500000,
+      "date": "2026.11.16 09:55",
+      "tags": [
+        "외환",
+        "매크로"
+      ],
+      "tagSource": "ai"
+    },
+    {
+      "title": "'젠슨 황 CEO 물러난 뒤 처음 맞는 실적 발표…연준 의사록 주목",
+      "press": "시사뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE81cHdScW5vWnBMalJzVUFQUVAxa2VGMTQ4Uk50ZlpzaVkwR3BFS1lWNTFuTkFWXzUtenhzVmZqczZFWk9zQ3ZEbDc4SE83WmtwZUxJenR4YkF6VFhybXRjRFloUQ?oc=5",
+      "timestamp": 1794790479000,
+      "date": "2026.11.16 09:54",
+      "tags": [
+        "증시",
+        "채권·금리"
+      ],
+      "tagSource": "ai"
+    },
+    {
+      "title": "\"2027년 S&P500 9,500선 전망…미국 증시 우위 지속\"",
+      "press": "뉴스투데이",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFB1dUZHMUlESldvQXF5eUxqNW5KTWlFLWV6SXJjQkVxM2J3QWRUSW5abGZJbHpvY2pseEJsNkpsOUJHQy1NNFRNdk92djJMTGFQSEQ2NjI1X2IxMHJaTUE?oc=5",
+      "timestamp": 1794789960000,
+      "date": "2026.11.16 09:46",
+      "tags": [
+        "증시"
+      ],
+      "tagSource": "ai"
+    },
+    {
+      "title": "엔비디아 실적, 앤트로픽 상장에 쏠린 눈...코스피 방향 가른다",
+      "press": "비즈워치",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9oYUtYUlpsNFpPb1FZNTZFU0VfZVc1M2YxYW83cEt4VmhsaHZrMGFjWkhUREo1UGxZN0ZXUmxTSllZd1I2OEdTNU5pV0ZYVGpELXRpQmhPS09tRGRyb2VuMU5hVEtkdk1id1E?oc=5",
+      "timestamp": 1794789663000,
+      "date": "2026.11.16 09:41",
+      "tags": [
+        "증시"
+      ],
+      "tagSource": "ai"
+    },
+    {
+      "title": "[오늘 금시세] 금 한돈 62만8천원대…1년 최저가와 3.5% 차이",
+      "press": "톱스타뉴스",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9qV1BLWVNYQTUyMjdodlo5U1lQNS1YNGNnVXlTSzRmLW5nZXFGbm5vUGdCU0dRcUotQVRTMjBleTkzazJJU0Vpb1Z0dHJqc29UWktQTzA5QXhZTmVNUmlBdXhjbDlQNDFTVFA4dGpmbm9OUQ?oc=5",
+      "timestamp": 1794789622000,
+      "date": "2026.11.16 09:40",
+      "tags": [
+        "원자재"
+      ],
+      "tagSource": "ai"
+    },
+    {
+      "title": "환율, 1330원대 등락…강달러·외국인 매도에 상승 압력",
+      "press": "아주경제",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFB6NVJTMWVlZ0h4cVF2UHRDdlllRGpzbFRzdFBLazltTFVCR3FCdnNyN29XYThORk5qQ0V3Mld6clFvNmxtc1Y1dlM4OV9jcW1odW05T051ckVKd9IBWEFVX3lxTE1ObXdfWFkybnJoMkQ3RFdONENmaTFoQWZ5ZVNlaURreXlkWU1oQmlpNnFCZkNsVFdqZU5YSld5akZFdzV1YkFnbmxCWVZjRElxYnlVSDY5NHY?oc=5",
+      "timestamp": 1794789395000,
+      "date": "2026.11.16 09:36",
+      "tags": [
+        "외환"
+      ],
+      "tagSource": "ai"
+    },
+    {
+      "title": "국제유가, 이란의 美 기지 공격에 하락세 진정…브렌트유 96달러선",
+      "press": "블루밍비트",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1kUXg0WkF3Qk1fbjd2eFlOWlhhMW1yR19ZajU0RE9nTXNiNVBNQURTYmRJNThUbE1wamI5UE0tZ19yWlhYSGdsZGVPemx5anU5?oc=5",
+      "timestamp": 1794789240000,
+      "date": "2026.11.16 09:34",
+      "tags": [
+        "원자재"
+      ],
+      "tagSource": "ai"
+    },
+    {
+      "title": "캔자스시티 연은 총재 \"인플레 여전히 과열…연준 할 일 남아\" - 머니투데이",
+      "press": "머니투데이",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1TUXdSSERxOVo3NGJUU0lnM0FOVGJ1YWJkakQzMllmY3hLT2ZVVV9yWHNtU2NqeHRiUEM0SUNhWWVWM0lzWkhlQTdUclFJeElIcG5EOUU4ZGlldlAwVnVOUUVXSlc5eDQ3Q1hhaVFobTBXWXZrbGfSAXtBVV95cUxPcFhCTEx0TGlCSDhnc3lCdV9MUDAtZXV0ZEhWTkZIcVlTbzc0dERuWDZfRm4yRFM5TnVWVzNZQjlvaHhBNWpWRUlhM3VtcGVRUVVuNlI1d0tpcFFSd0dHYkFrb2J6cE5QeU93YkJaTk13enlpM1haNUhvRzQ?oc=5",
+      "timestamp": 1794789198000,
+      "date": "2026.11.16 09:33",
+      "tags": [
+        "채권·금리",
+        "매크로"
+      ],
+      "tagSource": "ai"
+    },
+    {
+      "title": "KB자산운용, 美 대표지수 ETF 매수 이벤트",
+      "press": "PRESS9",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5DQzQ1UURuR0NkZ3hIWTJHN2hNMHRJOTNCSmRRWHRobWE4M1pOVWhBTDVLQkw5TDM4UU1VVGpVck5NWnAySlRCa3l6SDRMZzZUS09Za1BuaVpIOHdFbkhYeEcyQ2w?oc=5",
+      "timestamp": 1794789000000,
+      "date": "2026.11.16 09:30",
+      "tags": [
+        "매크로"
+      ]
+    },
+    {
+      "title": "[위클리오늘] 서울 집주인, 상속세 더 낮게 원한다…적정 최고세율은 30%",
+      "press": "위클리오늘",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5lZ3pkOXBpazFuanBaOU5XOGNHeWN5STdFZURUMEd6WUZ6U2trTG9QZDdmSVNudFRGdTdreHZkMEFrTVlHUDNLZVJWTW9QTWlPNzMySFRMTTQ4dVZkMzFrRFE3cFRQQk9qdjQwWUV3?oc=5",
+      "timestamp": 1794789000000,
+      "date": "2026.11.16 09:30",
+      "tags": [
+        "TAX",
+        "부동산"
+      ],
+      "tagSource": "ai"
+    },
+    {
+      "title": "이번 주 다우·나스닥100·S&P 500 향방은? 미국 증시 핵심 변수 총정리",
+      "press": "Benzinga",
+      "url": "https://news.google.com/rss/articles/CBMiwgJBVV95cUxQUEI0TGpyYjFULUFBYlowb3Iyb2dyWm5VS09wd0pER0RBU092aVVMcmYzbTZjQjR4b1pDa25vWGlhX3ItR3MtdjNjX0I5WklNeGlqTEQ5MEdRNUlmUG1nWEl3NlExcWFRZUlUTURtRVdqc1BwXzdLcm9vLWpYQ3NPS0dOTDNDdlFlNll5ZlVlYlFNUzBQVVNFSE9yWkY0R3kybk1iX0Mtek53OWhiZjhnbFppSGdWdlRNSXNaS1RvRU90eFZ0a1c0ZjFzczNib242WmlnNlNpbmxnSG5nMUhFZDVwdEZ0ZzU1d2FfTmNMUThxdE5UbmdibmVscU5hMG1iNk5kR3lOaWp6eWh4NXNEc0RnUzBmTE9uQlZHeWFxNFVVeC1abVFlZ2FCMklPbHkyVlpfTnpHeWdLOHRPVU5TanB3?oc=5",
+      "timestamp": 1794788924000,
+      "date": "2026.11.16 09:28",
+      "tags": [
+        "증시"
+      ],
+      "tagSource": "ai"
+    },
+    {
+      "title": "KB운용 '최저 보수' 앞세워 美대표지수 2종 ETF 연말 이벤트",
+      "press": "KB Think",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE16bFAwX3FwT3RFNGZBM1VuNkRCM25KSXNRRGptdnJONjBkbElqSTY3ekFTQ2lOMVFvX3RUN3ZnTWNOZkhGUkVNQnFMZENJbnpEeVNLN2NqSVAxRlRNZHYyemV0Yk1wTUZvZFEwcXZNcnJGUQ?oc=5",
+      "timestamp": 1794788732000,
+      "date": "2026.11.16 09:25",
+      "tags": [
+        "매크로"
+      ]
+    },
+    {
+      "title": "[외환] 강달러 대외여건에도 원화는 무덤덤…2.00원↓",
+      "press": "KB Think",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9hS0g3ekdUVVpvQ3BRQjRZaGtYdjJlMnBpV2VWRV8teHFnXy1oVU1ncnFyeThjbkFTYWZEZ0I4cXdaUlVWaElOQWcxb1NhSlNiM25KVFZMZDE0bmV2ZEV1b0Y1UjBYQUZjNGUwUWZKN3JiUQ?oc=5",
+      "timestamp": 1794788662000,
+      "date": "2026.11.16 09:24",
+      "tags": [
+        "외환"
+      ],
+      "tagSource": "ai"
+    },
+    {
+      "title": "iM증권 \"이번주 환율 1320~1360원 전망, 미 국채금리 추가 상승 여부 주목\"",
+      "press": "비즈니스포스트",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE8yclphVExIX0U3N2dTZHNOenU5R19NNHZwT2FNbW5hN1BpN2tfcTZrMmZmQmxOTDVZTFFDOV94Nm9JZDJReU1xX2ZabUYyOTNPWktaUXBPMGt5RmFFT3ZmRDI1LU1RbkQybzBOV21GNHMtQmc?oc=5",
+      "timestamp": 1794788575000,
+      "date": "2026.11.16 09:22",
+      "tags": [
+        "외환",
+        "채권·금리"
+      ],
+      "tagSource": "ai"
+    },
+    {
+      "title": "\"달러 강세에도 수급은 원활…주간 환율 1320~1360원\"",
+      "press": "뉴스투데이",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1TTVU5V0otaW5KenhVbS1fZDdDZHdhbExQby1XQ0U2THV6bUxWTUtJdDB2ZXgtVmtkM0tYSGJzMDBLYU43dUhISkNZMzJqZ1lzYWVPYW9mRkVIWmRfMVE?oc=5",
+      "timestamp": 1794788520000,
+      "date": "2026.11.16 09:22",
+      "tags": [
+        "외환"
+      ],
+      "tagSource": "ai"
+    },
+    {
+      "title": "[주간환율전망] 강달러에도 1330원대…엔비디아가 변수",
+      "press": "자본시장뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBCaFBGc0Y1YjRfVlFqVGY2NWlNZDcyN3lhNTJIUldGZFVPV2F5Yl8yQk1nc3lQdFc1Zi1XNHF4Z2V3SXJNVmI1bjFqMlVDemtiQ280RFRDd0JNS1Z5WTJNNlRwV3I4WDQ?oc=5",
+      "timestamp": 1794788502000,
+      "date": "2026.11.16 09:21",
+      "tags": [
+        "외환",
+        "증시"
+      ],
+      "tagSource": "ai"
+    },
+    {
+      "title": "원·달러 환율, 0.9원 내린 1335.8원",
+      "press": "Chosunbiz",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQd3QwZ01JbzNCZG9zQU9zdG11NHA4a3E0aUMxYW9pQXpJcnV0OG82VWVNYU5takZRcExoMnVRYTM4aG5MQ0laeV9MYnZ3Z1BhS0JaLVFmSTM2NnJzS1JpRUNTUE5Ucm1KSGJSM2lSZkdVSkRrN2FYQlRORkgwYWRRMDJDNGRLd9IBmgFBVV95cUxPRTFEWVJUNllTa3NxRktxQjV0UW9MMEkzcnk2cUNPSFZPNlhzaHVscmFYWGtONWJaQVhKa1I5YnFOSVBES3lxVnN3d21XR3QzUWZJenJvVlc1cU51Z2NjQnBOS0l1OHJFRXVNZW5GWEZzajREeGY0YnoxZ3ZadXhvOTBGYXB5c0lhcnBRUmNEbTlOeUZJRmpMODZB?oc=5",
+      "timestamp": 1794788220000,
+      "date": "2026.11.16 09:17",
+      "tags": [
+        "외환"
+      ],
+      "tagSource": "ai"
+    },
+    {
+      "title": "미국 S&P500·나스닥100 채권혼합 ETF, 올해 1조원 유입 : 금융",
+      "press": "재경일보",
+      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1QUmtGUENCVTlHM0VxQUl0bGQ0R2tNZGJmUzN2b1VxdkgtcXZZZEdHTG1Ha2JYWmd6YXhYT2dPMEFDZ2IwOVpqNlJDOA?oc=5",
+      "timestamp": 1794788167000,
+      "date": "2026.11.16 09:16",
+      "tags": [
+        "증시",
+        "채권·금리"
+      ],
+      "tagSource": "ai"
+    },
+    {
+      "title": "[오늘 금시세]급락했던 금값 ‘반등’…국내 금 0.23% ↑",
+      "press": "남도일보",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1BT3RnclBTREJGQVYtOHg5MmR3S01EdVpsa2F2SnE4MklaTzJrR01IZmYxaTVjcDNEQVJwVnpvVV9mcDVZSUE4ZVA5Q1NhMjlHaXhNUFdHZlNkTzRUZno3bkh5VGZpNzViSXQ4TdIBcEFVX3lxTE85VWJiWEI3R2wyZUUyYUhSMWN5c1RyZHAyeTRJVGIwMXFXU0JuV1cwQXRnd1ZfMlp2OTFuYzE4dE9TME8yNUx2V0s3UnE3ZUxFME9GR09JOHZCRTJPQWswUkVSa0ljM2l2U1RkdWVZNlk?oc=5",
+      "timestamp": 1794788100000,
+      "date": "2026.11.16 09:15",
+      "tags": [
+        "원자재"
+      ],
+      "tagSource": "ai"
+    },
+    {
+      "title": "국민 평균 선호 상속세 최고세율은 30%… 현행 최고세율 과 20%p 간극",
+      "press": "파이낸스투데이",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9QNXlwVEc5MEctQWcwTWFzc2RNTGk3OGJBalYxQjhNM0ttU0dZQjhoSU9USG5pUkwzMHJBVm1EUU5ycW1yRmVoR2FPaXRYU3NQOS1KWFpiV2plYXlmX2ZlTzB2OXJ0T05LdDRwUg?oc=5",
+      "timestamp": 1794788056000,
+      "date": "2026.11.16 09:14",
+      "tags": [
+        "TAX"
+      ],
+      "tagSource": "ai"
+    },
+    {
+      "title": "연준, 2027년 10월 금리 표결 폐지…워시, 연방공개시장위원회 소통 간소화 - 뉴스 및 통계",
+      "press": "IndexBox",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPeVFMLWNwdVlEdEU1NVZlcVBPc1dqOHpvVXM5YzUtZWlFa3pSQkpwVjZXRTJGT1F0QUZzXzBvLUJIUGgtRjBrYU9JWjFOSWlBcGMtZDltT25TUm1fSDY2R3FBWkNyVFYzVkVzblV4OExWRm0wOWhIZ2JTQ3o5NUxqMWgxaGUzQWpabGsySlJ3VjFOLW0walQwdlBpSzd4WTlfMlRLdkVONDZ4U1pJTGRVYQ?oc=5",
+      "timestamp": 1794787862000,
+      "date": "2026.11.16 09:11",
+      "tags": [
+        "채권·금리",
+        "매크로"
+      ],
+      "tagSource": "ai"
+    },
+    {
+      "title": "한투운용 ACE 美대표지수 채권혼합형 ETF 2종, 올해 자금유입 1조 돌파",
+      "press": "매일경제 마켓",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBEdno5QWJELW1rRVpZOE1mVjNuSmxMaWVpakYzY1NXVGcwaHRCZUhPSmxWdFZuRXFtbnZocExWVUxDR2lqcEVoQ0dlOXhJcFBQbkE?oc=5",
+      "timestamp": 1794787851000,
+      "date": "2026.11.16 09:10",
+      "tags": [
+        "증시",
+        "채권·금리"
+      ],
+      "tagSource": "ai"
+    },
+    {
+      "title": "[오늘 주요 경제·암호화폐 일정] 케빈 워시 연준 이사 연설 外",
+      "press": "블루밍비트",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5JUWRVVVoxOWpBUHhHU3R5TEloQUVNVjQ5UmlKdGo4UE5hQW50bVNEZ2xHcUtDWVloNG9yZ1BLbV9TZTRsUjJvbDcwTEFuOXBi?oc=5",
+      "timestamp": 1794787778000,
+      "date": "2026.11.16 09:09",
+      "tags": [
+        "채권·금리",
+        "대체투자"
+      ],
+      "tagSource": "ai"
+    },
+    {
+      "title": "한국투자신탁운용, 美 대표지수 채권혼합 ETF 2종에 올해 1조원 유입",
+      "press": "브릿지경제",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5mcFJ2VktlMFNZSUY2SmlGWXl0RmZnNjViQjBQN3p5bzdDODJNRkwxd2liMnFBTEdLQTBKRjQyMXRjZmFFRC1ndnpJeVpycjRqRno5cEVxU1I0QQ?oc=5",
+      "timestamp": 1794787740000,
+      "date": "2026.11.16 09:09",
+      "tags": [
+        "증시",
+        "채권·금리"
+      ],
+      "tagSource": "ai"
+    },
+    {
+      "title": "[쩐의흔적] 홍라희가 이재용에게 건넨 삼성전자 주식 2조3209억원어치…증여세는 얼마일까",
+      "press": "더퍼블릭",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5zRlY5bkZDSTdoSjI5UTZpczVWR2dBT1VLbTl6cDJ4d2ZCa3BSNTU1RjBoSnh4T2ludXFLY3ZnbXhGRDFzX0N6Nk1VR3U4SzRaTWhmY0VJbmFXOWxndl9RNWI0VEtEVWdMQmF30gFvQVVfeXFMUDQ5YVdQTXpVTWRFME5Bd01Fc0VwdGlhUzRZNnZSTEVXdFZETFEtUFFVUWlJc3cwU3ZtcVFWczljak1sRldZZ000elVoREtDSGpKR2YxZXJrVTJsMUVGSmprYmI5NHo5TVBVSW4wYjV3?oc=5",
+      "timestamp": 1794787726000,
+      "date": "2026.11.16 09:08",
+      "tags": [
+        "TAX",
+        "증시"
+      ],
+      "tagSource": "ai"
+    },
+    {
+      "title": "[e마켓오프닝] 美 반도체지수 3.4% 급락···코스피 외국인 매매 향방은",
+      "press": "시사저널e",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBkMVRfaXBZZmRqZEoyeHpHUzRnVVB0NUstQllWWEFfQlFkYktQeVZ0cG1NbzdfQlpVQ2ZKMkV6ekR0ZGVienZfRHpmY3pMMWkyWEh2OHhnMHhQWGduZENXcGJuSm1CX19vLUJYeGZWQ1h5QQ?oc=5",
+      "timestamp": 1794787641000,
+      "date": "2026.11.16 09:07",
+      "tags": [
+        "증시"
+      ],
+      "tagSource": "ai"
+    },
+    {
+      "title": "나스닥 상장사 DFDV, 우선주 발행으로 솔라나 3500개 추가 매입 여력 확보",
+      "press": "블록체인투데이",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1UN2VTazBBMmhVdzRkWXBTTFVYc0U2aXozYjB5em9sT1pFWVhSZkNqYjJyRUhPRU5oMUJpVENTbFFaekZnNlVUalpNclZIZDFsVF9MclVuYk45bFJTQUJ6SnVXWkF4TVVwZm9Oa2Judm8?oc=5",
+      "timestamp": 1794787636000,
+      "date": "2026.11.16 09:07",
+      "tags": [
+        "대체투자",
+        "증시"
+      ],
+      "tagSource": "ai"
+    },
+    {
+      "title": "“서울 집 있으면 상속세 낮게”…순자산 비슷해도 세율 선호에 차이",
+      "press": "서울경제TV",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE0wNl9YY3pIWUx1dEt5V3FaQ1g3ZUVzU1ZxT21mNEJXMVBGa2c1cjl4SDdDSzcwLWZIUWlSY0hRXzRKS0U3VlpNYW9hY2c3UTRrVkVEWUZWRERVV2NROE90SWIxWGQ?oc=5",
+      "timestamp": 1794787397000,
+      "date": "2026.11.16 09:03",
+      "tags": [
+        "TAX",
+        "부동산"
+      ],
+      "tagSource": "ai"
+    },
+    {
+      "title": "뉴욕증시, 반도체 약세에 혼조…엔비디아 실적·앤트로픽 상장 앞둔 'AI 슈퍼위크'",
+      "press": "뉴스톱",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE4xcFVnNFFGUm52QXRmaTA5LU5rc3BkdHlzdlpJTHBlWlBwUk5Vd3pudDEzdjBILUNZU3ZBNDFpMHYxdzlpOFNSczhYUVR2dUplSk8zOUJ1bjRnaE5oZDF2OG1RZ1cwQmFDdFBCTVRrYw?oc=5",
+      "timestamp": 1794787367000,
+      "date": "2026.11.16 09:02",
+      "tags": [
+        "증시"
+      ],
+      "tagSource": "ai"
+    },
+    {
+      "title": "[오늘의 금값시세] 2026년 11월 16일 g당 168,200.0원·1돈 630,750원…국제 금 상승",
+      "press": "민심뉴스",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE4xdDhuTlhJczZPNmJVaEU4bXhoS2V4endOTDQ3ck5xMFFkYjhTb3VMTy1ndHRDR21YQjdUbGw2b0h4bzdiR3BIZFExZFJ4WlNzdGFtU2VrQ0RjUXRpQUM2dTczd2VBc295LXI1bUp3?oc=5",
+      "timestamp": 1794787239000,
+      "date": "2026.11.16 09:00",
+      "tags": [
+        "원자재"
+      ],
+      "tagSource": "ai"
+    },
+    {
+      "title": "한투운용 '미국채혼합 ETF 2종', 올해 유입액 1조원 돌파",
+      "press": "뉴시스",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE90enA0VTVtd2pGYVhXQ0dWUzN1Y3QxMnE5aFVzMGMzNnJOZXI0YmN2ajlmYUIydTRVbG9rWHA1cmQzQWRvTlVDZjB2XzRUOHpSSkFQbmdZV0JPT0hFZEFtWNIBeEFVX3lxTE9fdVFVWUd6WUFvdWo5RVlPbUdveGpRTC1EV0pxWmFCd1c1dmlZcXVVLXRObVEyaFFCR2ktY0pRWW5oMEhobWRNbTluRzJsN1h4WVQ0NWJKbVYwa0pMZ3ZSeVQxMmkxdFg5UXpab3Uwb2ppMTFJbjRWcw?oc=5",
+      "timestamp": 1794787233000,
+      "date": "2026.11.16 09:00",
+      "tags": [
+        "증시",
+        "채권·금리"
+      ],
+      "tagSource": "ai"
+    },
+    {
+      "title": "한투운용 “ACE 美 대표지수 채권혼합 ETF 2종에 올해 1조 유입”",
+      "press": "서울경제",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE16UDJiaWNqdndqdmNhZmRpbkx4UGVqWkFLOHpvNl9ackZfWDYzSEVXOEpoQVpRUE5RcWhndnhKOU1MMTVzVHY3YkR6T1ZfdVVrQ3fSAVNBVV95cUxNZk81em5vVDZiM1Bfa0tRSkFhR1lYcGNpam9mY0hyTktjcURCR19jVHRNU0Y4TnA3VU82VjZ5ajdORjVzSXhnNldlR1NVM2lRdVNCbw?oc=5",
+      "timestamp": 1794787232000,
+      "date": "2026.11.16 09:00",
+      "tags": [
+        "증시",
+        "채권·금리"
+      ],
+      "tagSource": "ai"
+    },
+    {
+      "title": "[주간 뉴욕증시]'젠슨 황 사임 후 엔비디아 첫 실적…연준 의사록 주목",
+      "press": "뉴시스",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9BeVBDVlFCSkR1MHZVeHYwVGlFeU5TR3pUSHRKQTR6MWVtXy01TWRicWg5QUVhMzNNV1VNNUpxakxaOERLVHByTnBXV3h3UlhNUXF6UmJqU3N1NmZZVmZPRw?oc=5",
+      "timestamp": 1794787187000,
+      "date": "2026.11.16 08:59",
+      "tags": [
+        "증시",
+        "채권·금리"
+      ],
+      "tagSource": "ai"
+    },
+    {
+      "title": "“이번주엔 앞길 좀 트일까요”…엔비디아에 미중회담·앤트로픽 IPO까지",
+      "press": "매일경제 마켓",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9tY3owU3NNNFppazhSa29IUGR0eU9SbWV4RS0xTEdSNUhMUVROOEZIZnAtMFBfTlRqTGJCbDJSai1xMmFGTHVrcG5DR203VDc1amc?oc=5",
+      "timestamp": 1794787134000,
+      "date": "2026.11.16 08:58",
+      "tags": [
+        "증시"
+      ],
+      "tagSource": "ai"
+    },
+    {
+      "title": "한투운용, 美대표지수 채권혼합형 ETF 2종 연초 이후 1조원 유입",
+      "press": "연합뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9YaWFLZzhNWVAyaGNfTE9JOU90blFUSFBNcUVuRk5ZR0o5TVZXWjBiWXdBM0pxdUoyNTd1bG85Q0FpRC0wZGRvbDM0eGJFUjFpdU9RYUlUZXpsZGPSAWBBVV95cUxQQ3cxUGJlQlBDN2xmQURWQ0NXQnRJQ1JLeGxlc1l2T0JxdlVGV0tNT0ZTM0pmNFhsT3hURXpTOWJnNTZ6LUR0OVJiTGtWTzJsa3I1X1VYeGRZbjY5a1kwRXE?oc=5",
+      "timestamp": 1794786964000,
+      "date": "2026.11.16 08:56",
+      "tags": [
+        "증시",
+        "채권·금리"
+      ],
+      "tagSource": "ai"
+    },
+    {
+      "title": "[뉴욕증시 금주전망] 젠슨 황 떠난 엔비디아 첫 실적…앤트로픽 IPO도 주목",
+      "press": "굿모닝경제",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1mVWtUSmZCUFhkbWtMSndqV1U0eER6NkxVM0RuVjQwWXY0bXJXSWxOU3h2dGdPZXhNamJDekZJTk0wM0VNSnEwQzZQZm5ubGhZMXB4bVVDa1BSZnJRTk9LV3pQWVlpamppY2pZaA?oc=5",
+      "timestamp": 1794786900000,
+      "date": "2026.11.16 08:55",
+      "tags": [
+        "증시"
+      ],
+      "tagSource": "ai"
+    },
+    {
+      "title": "서울 집주인은 달랐다…순자산 같아도 낮은 상속세율 선호",
+      "press": "한국경제",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5IVE1yRXVwUDByV2hRQ0tVX0stQjZJUHk1bHlBSC1CbVZ0WC1oWjZPS2QzQmxrVWNrY25VLXVGWXBkcTF2andoVUp6MjB1Q3lrNXNBM09ueUhMQQ?oc=5",
+      "timestamp": 1794786699000,
+      "date": "2026.11.16 08:51",
+      "tags": [
+        "TAX",
+        "부동산"
+      ],
+      "tagSource": "ai"
+    },
+    {
+      "title": "미국·영국 ‘저채용·저해고’ 고착…연준·영란은행, 생산성 저하 경고",
+      "press": "아시아투데이",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE4xX2VNUm5YaDVpNmtHYlJKVmxYQndoNjFIVTVvZlJSTFBkRXRuMDZpOUlIQjJxYUFKWDdtdUdQQ3ZQbFZvYzRzbXRFTDk4cml2czR4WHhTWW9feUtsUDdFeW5Ub0tUSHEtejVlaWhR?oc=5",
+      "timestamp": 1794786615000,
+      "date": "2026.11.16 08:50",
+      "tags": [
+        "매크로",
+        "채권·금리"
+      ],
+      "tagSource": "ai"
+    },
+    {
+      "title": "KB운용, 'RISE 미국S&P500·나스닥100' 매수 인증 이벤트",
+      "press": "아시아경제",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9PMERoZWVUdnY3OHg1U3FQY2NsejZCbXhfejdPbVRJRVZKY1FVbUp5OFE0YTBOZzhONVJkUXFDRmYtLVBsTzVNV1FXRk5RWTRXVU5rdU5CMThTRWRjNEJqN2pB?oc=5",
+      "timestamp": 1794786540000,
+      "date": "2026.11.16 08:49",
+      "tags": [
+        "증시"
+      ]
+    },
+    {
+      "title": "[서학개미 생존공식] 12월 금리 인상 확률 90%에 육박… 워시 입에 쏠린 월요일 미장",
+      "press": "코인리더스",
+      "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE80cTBDQ0xlbE5ndDh1ejVyZU8tZ1kybHVnSGtoYmEzZk0yZEVMdnc4NmNERGtmSTcyNWZCOHVleVhZUGtRMDQ3TDVR?oc=5",
+      "timestamp": 1794786440000,
+      "date": "2026.11.16 08:47",
+      "tags": [
+        "채권·금리",
+        "증시"
+      ],
+      "tagSource": "ai"
+    },
+    {
+      "title": "'ACE 美대표지수 채혼형' ETF 2종, 연초 이후 1조 이상 자금유입",
+      "press": "아시아경제",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1NOTJya3ZvLWRDN2VLSXZBbkVOVGlYUlRPSWhpX3ZLNV9RSDNhYzBlT2k3N1p4T0FoTk5iWThCblBRcDVhdjBURk9zdDJTNkhOZnFoQlFCX0JZbmxDWHNtaXpn?oc=5",
+      "timestamp": 1794786180000,
+      "date": "2026.11.16 08:43",
+      "tags": [
+        "증시",
+        "채권·금리"
+      ],
+      "tagSource": "ai"
+    },
+    {
+      "title": "美 연준 슈미드 \"인플레이션 여전히 높아…물가 안정 위해 추가 대응 필요\"",
+      "press": "블루밍비트",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE02clFaOE1xMU1jcG10Ulo1anJLWDRtLW5mZU9nMmp0VXRMVTVpR2lVal9wa2tKdkE4RmlSMmhpN2pwdDBfTE9heHd3cUd3SGhU?oc=5",
+      "timestamp": 1794786138000,
+      "date": "2026.11.16 08:42",
+      "tags": [
+        "채권·금리",
+        "매크로"
+      ],
+      "tagSource": "ai"
+    },
+    {
+      "title": "뉴욕증시 선물 소폭 상승…엔비디아 실적·앤트로픽 상장 앞두고 관망",
+      "press": "뉴스1",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5QMDJWZ0RZcllaV3VST3E2NFJMc2ZLaWJRc0YySkhqb1Z3OXB3SVJDa3pIVkVDb1pCLW40aE4zdDYxQTZtb0IwczA2TEZvNHd2bUZBWnpCWmtGUUE4bzNBVFZoWk44U2M?oc=5",
+      "timestamp": 1794785981000,
+      "date": "2026.11.16 08:39",
+      "tags": [
+        "증시"
+      ],
+      "tagSource": "ai"
+    },
+    {
+      "title": "한투운용, 미국 대표지수 채권혼합 ETF 2종에 올해 1조원 몰려",
+      "press": "이투데이",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9LVDYzMEV2LXdzX2hFZTFETDU1VjFQWVVyaTBMX29PTGdxVVowbVViOW1md2N6Nl9pdnFITkZkbmZHSFZUQW9LcjNqT2Rpb1BFMDVmcTk4QnlYbDBjVGRBa2w0dDRoQjlJMFluYkNB?oc=5",
+      "timestamp": 1794785940000,
+      "date": "2026.11.16 08:39",
+      "tags": [
+        "증시",
+        "채권·금리"
+      ],
+      "tagSource": "ai"
+    },
     {
       "title": "[오늘 증시 동향] 미국 나스닥 약세에 반도체주 부담…AI 투자 불확실성과 금리 전망 주목",
       "press": "톱뉴스",
@@ -10,6 +549,18 @@
       "tags": [
         "증시",
         "채권·금리"
+      ],
+      "tagSource": "ai"
+    },
+    {
+      "title": "미 재무장관과 연준, 금리 인상에 대한 견해 엇갈려",
+      "press": "IDNFinancials",
+      "url": "https://news.google.com/rss/articles/CBMi0AJBVV95cUxPQjA5UVlZVER3Z0hadnRiUmlDeVByX0puSlNzR3NzWXl1R3J1X3NrX2hOTG94cG5QT2NUeXdMZVQzempXQ1U2SVgxa2oxUlZ0bTg0LTIwc2xkZVdLQl8xamxLcFNWRF9DeHMxeXpTX0gtZXA2Szg5SGxwNGpzRFlnLW1pYmxwdm1paG82TC1Ka1V6d1dnZUk1TklnMHZwZDY3QzZXdEg4TVp4MmpUSHE0cUlrWVNINDVMeHkyTUdfSmJENnVzdFVnY2NzMDZQZUstTW93bVJGTV9yaldpM3JVYTh3eUpvUmgwTk1TOEowNnp3QjdoLXRBZ2M5VWs1NWlVUVhOVnYycUFEaFVZVFdBbUdZYnRYOC1rc052Umo1bDZzQU9mZFItVTdNLWFyRWk5NUdydHY1ekE4dVhaMVlkS3B4WV93YklIbmlfRnEtS1U?oc=5",
+      "timestamp": 1794785400000,
+      "date": "2026.11.16 08:30",
+      "tags": [
+        "채권·금리",
+        "매크로"
       ],
       "tagSource": "ai"
     },
@@ -258,11 +809,33 @@
       "tagSource": "ai"
     },
     {
+      "title": "[뉴욕증시 주간전망(16~20일)] ‘AI 빅위크’에 투자자들 주목",
+      "press": "미주조선일보",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5qcmRKTDRvNl9iLVFITGRCUXZjRW5LSDdnNFNhTWo5Yjg5d1lGVUxzaEhiNnNMTzNyUFdMV3NWdFhoNGJrRTNCQ2UwSTBNd1R4YmN1LVFMYWtBQ01ibjlONklsOU4wcTlMa1VzVlVqbGR5RWNQakE?oc=5",
+      "timestamp": 1794780599000,
+      "date": "2026.11.16 07:09",
+      "tags": [
+        "증시"
+      ],
+      "tagSource": "ai"
+    },
+    {
       "title": "11/16 [뉴욕증시 마감브리핑]",
       "press": "네이버 프리미엄콘텐츠",
       "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQd00zYzBDX3MxUGNVMkFfSkNSVGV3azZmb2ZpLWZtTWF1SWw0czc3VnRZWC00Z29KcXEzSFN1bENZUy1UcV9tV2dqWHJRZGxPcS1EZDR0d1BZR1lwdmo5dE9SWW5IcU9NTndiRFJYVjJLTGFqeml3djhxREZlZFV2SkVfdjd3aDZ2d0kw?oc=5",
       "timestamp": 1794780278000,
       "date": "2026.11.16 07:04",
+      "tags": [
+        "증시"
+      ],
+      "tagSource": "ai"
+    },
+    {
+      "title": "나스닥 23시간 거래 임박…국내 증시 자금이탈 변수 될까?",
+      "press": "ER 이코노믹리뷰",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1kUFdublNZNWJTS0xQc3g4ckVJN3hmb1MzRmg5eWtEY1E5RUptOG1GeWNZVlpzU1Uta0VDVDFZX0Z3SUR4OVhOMUFmYndibGd6cFJvMEhKdVFuejYtQWR4Y3MyWTB1UzVZRXZENg?oc=5",
+      "timestamp": 1794779400000,
+      "date": "2026.11.16 06:50",
       "tags": [
         "증시"
       ],
@@ -450,6 +1023,18 @@
       "tags": [
         "TAX",
         "부동산"
+      ],
+      "tagSource": "ai"
+    },
+    {
+      "title": "주간 프리뷰 | 엔비디아 실적 발표, Anthropic 나스닥 상장; predict.fun(PREDICT) TGE 진행",
+      "press": "PANews",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1wamliMzdzSWNCYktKUjJuTHhmdXo3dVdoUjZ0dnhJc1R5ZURnZTM2eThHZGZoRTZnZGxNZzFZdmlxM2FvUDVCb18xOVN4MmlTSkZBenFEUERaSjZtVG5lN2FlbE9Zb3RrN0dfU3lSVVJjTXB1c0RZZThadzFPSnc?oc=5",
+      "timestamp": 1794745611000,
+      "date": "2026.11.15 21:26",
+      "tags": [
+        "증시",
+        "대체투자"
       ],
       "tagSource": "ai"
     },
@@ -1040,6 +1625,17 @@
       "title": "엔비디아 실적에 쏠린 눈…코스피 6000선 회복할까[주간증시전망]",
       "press": "이데일리",
       "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxObVhpQ3dWNExmUWpEaEdwUkpfdlFKZFQ4dkJjWGFXR3JybkhvLWIyaF90dmZOaGRDOFFkOW42dmtDU0YxaElpaDF5TklVNmdpbm9ua1NPOUhuMjJOMUhVMWtfTzBIb2pCeTc0RXplOS1EWnMyeDByR1A2bnVCamtfbA?oc=5",
+      "timestamp": 1794718998000,
+      "date": "2026.11.15 14:03",
+      "tags": [
+        "증시"
+      ],
+      "tagSource": "ai"
+    },
+    {
+      "title": "엔비디아 실적에 쏠린 눈…코스피 6000선 회복할까",
+      "press": "마켓인",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE4yaXdXbWNRZE4xVDhpMkZwMVVvQlMtNTBETzQxLXAxVWhqa1p5Rkc5Y2ZXaDJUY2FfZlJfaWJVWGxsclJNVEtQUVU4WEVJR3Z0RDRrdTRkX0gwX1cyRjZwUnVQMGpoZ0NiSTBhazgxT1duMjg?oc=5",
       "timestamp": 1794718998000,
       "date": "2026.11.15 14:03",
       "tags": [
@@ -1865,8 +2461,9 @@
       "timestamp": 1794708003000,
       "date": "2026.11.15 11:00",
       "tags": [
-        "매크로"
-      ]
+        "대체투자"
+      ],
+      "tagSource": "ai"
     },
     {
       "title": "해수부, '연안선박 현대화 펀드' 지원 대상자 공모",
@@ -2222,587 +2819,6 @@
       "tags": [
         "증시",
         "매크로"
-      ],
-      "tagSource": "ai"
-    },
-    {
-      "title": "AI 거품 꺼지면 금융시장 충격…美 연준, 3조달러 부채 위험 경고",
-      "press": "SBS Biz",
-      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBCSTlYbEdUVmFjd1h3NG5jS0tJQlBsQ1JTQ1g2b3ljbEpvRzZydkg4eU1yaUIxcThZZFdKd24zaFZLMklVWl91VkVNSDZnUFhOQy040gFYQVVfeXFMTU1ONjNmSWZCWmlheUdQbWVTdzFSY2o1Tk1XSWVETGViMEt4SUE4SDQtd1ZwcVpXR3EzOVJsVUtTalBtR2pHVHV4WFFrc3BJRm1ZSU9ybm4zdw?oc=5",
-      "timestamp": 1794702420000,
-      "date": "2026.11.15 09:27",
-      "tags": [
-        "매크로",
-        "증시"
-      ],
-      "tagSource": "ai"
-    },
-    {
-      "title": "무보, 슬로바키아 수출입은행과 원전·에너지 금융협력 강화",
-      "press": "연합뉴스",
-      "url": "https://www.yna.co.kr/view/AKR20261115013600003",
-      "timestamp": 1794702324000,
-      "date": "2026.11.15 09:25",
-      "tags": [
-        "매크로"
-      ],
-      "tagSource": "ai"
-    },
-    {
-      "title": "美 연준, AI發 금융 위험 경고… “순환금융도 위험 요인”",
-      "press": "Chosunbiz",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQUkZya0xDaUdaMWloUlRsdEt2c1Bwd0xCQ0hKWnhTeFlNdlhtVF9ZOFg0NFR2SEFLRjdCQ0tESGZ1U0ljNVU5aW9LUm80Rzc4RlYtSFBlV1JGZEFRQldJMzNua29ZMDNMYi1LNzBQZXh6TDVLSWNpai03SWFJRGtHLWkxQXhZM0s0WF9odnNJVEY5WV9xV3JNdXBVMjI2UdIBsgFBVV95cUxPRzY2QktzVENvQV93M1Z1MVhERTktZTE3SDJGQ0V2NUVfM3hTeEZCSFQ1ZjF6LTVsOW93ZVItb0MyZTN1ZGhFZG1ZcDZlbGlQUk1WLXRMUG5iU1haVlBWaHYwX0p4WmZGV0tXcmdLTXQzeFU0LWxTc3MwR0NvbXp4aFI1SnA0M2h4cGItcHBoWWdqYnNkV3lxMWNZSmd6M3BXVXFuVUV1MVRBcEp1cWQxOEp3?oc=5",
-      "timestamp": 1794702300000,
-      "date": "2026.11.15 09:25",
-      "tags": [
-        "매크로",
-        "증시"
-      ],
-      "tagSource": "ai"
-    },
-    {
-      "title": "[주간증시전망] ‘젠슨 황 리스크’에 반등 꺾인 코스피…엔비디아 실적 주목",
-      "press": "브릿지경제",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9pVjBLNWdXV2xpVGk1aEVnemJLUDJGb1BhMV9QRmNOLVhBOWtUYTNkR1RPckFMVHFBYTA0dVV1SW9QdzRySE80TGdlUmdWR0VJbkVPbkZORzFXUQ?oc=5",
-      "timestamp": 1794701880000,
-      "date": "2026.11.15 09:18",
-      "tags": [
-        "증시"
-      ],
-      "tagSource": "ai"
-    },
-    {
-      "title": "한-투르크메니스탄 세관상호지원협정 발효…무역·통관 협력",
-      "press": "연합뉴스",
-      "url": "https://www.yna.co.kr/view/AKR20261115013300002",
-      "timestamp": 1794701798000,
-      "date": "2026.11.15 09:16",
-      "tags": [
-        "매크로"
-      ],
-      "tagSource": "ai"
-    },
-    {
-      "title": "설립 공식 바뀌는 中 대학…생수 팔아 번 돈으로 세운다 [차이나 워치]",
-      "press": "한국경제",
-      "url": "https://www.hankyung.com/article/202611134679i",
-      "timestamp": 1794701701000,
-      "date": "2026.11.15 09:15",
-      "tags": [
-        "증시"
-      ],
-      "tagSource": "ai"
-    },
-    {
-      "title": "중앙그룹 ‘회생 4개사’ 설명회서 매각 윤곽…휘닉스중앙은 본입찰 [M&A복덕방]",
-      "press": "매일경제",
-      "url": "https://www.mk.co.kr/news/stock/12209084",
-      "timestamp": 1794701650000,
-      "date": "2026.11.15 09:14",
-      "tags": [
-        "대체투자"
-      ],
-      "tagSource": "ai"
-    },
-    {
-      "title": "철거 앞둔 정릉골…박경리가 ‘토지’ 써내려간 가옥 보존한다",
-      "press": "매일경제",
-      "url": "https://www.mk.co.kr/news/realestate/12209082",
-      "timestamp": 1794701646000,
-      "date": "2026.11.15 09:14",
-      "tags": [
-        "부동산"
-      ],
-      "tagSource": "ai",
-      "lowRelevance": true
-    },
-    {
-      "title": "“신용대출, 빨리 철회해도 연 12% 금리”…시중은행, 이자로 18억 벌었다",
-      "press": "매일경제",
-      "url": "https://www.mk.co.kr/news/economy/12209081",
-      "timestamp": 1794701644000,
-      "date": "2026.11.15 09:14",
-      "tags": [
-        "채권·금리"
-      ],
-      "tagSource": "ai"
-    },
-    {
-      "title": "환율·유가 하락에 수입물가 1.8%↓... 반도체 강세에 수출물가 ‘반등’",
-      "press": "충남일보",
-      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE85bzlWdDM1WXdCWWVTSHBXZDBpMnZPTnJWZDE0Mm96LVI4cEk3c3kxcmdaMjI3SXBsRkM3UjJFN1RJOTJ5eDJxTTIxM3JiTU9MRGg2elQtTmRHUi01dGFvUjY0V2xBTGdOUEg3Y1VHbE05ejQ?oc=5",
-      "timestamp": 1794701533000,
-      "date": "2026.11.15 09:12",
-      "tags": [
-        "매크로",
-        "외환"
-      ],
-      "tagSource": "ai"
-    },
-    {
-      "title": "담양 전원주택단지 주차장 부지에 음식점 입점…주민 반발",
-      "press": "연합뉴스",
-      "url": "https://www.yna.co.kr/view/AKR20261113138100054",
-      "timestamp": 1794701100000,
-      "date": "2026.11.15 09:05",
-      "tags": [
-        "부동산"
-      ],
-      "tagSource": "ai"
-    },
-    {
-      "title": "美 연준, AI 데이터센터 `순환금융` 경고…첨단 컴퓨팅 부채 발행 6800억달러",
-      "press": "디지털데일리",
-      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5BeHkzc195SlBuOVdkaXhKQjZpbjFYUEhvcFd0M0E5Z1dtcUcwUzdKYnVhLTF1Y3VNc1RBaGZqekFIZmZCRFpFQ243TU8zMEZqY1J0NWZHa0MzOTQ5ZmYxM3hpV1g?oc=5",
-      "timestamp": 1794701024000,
-      "date": "2026.11.15 09:03",
-      "tags": [
-        "증시",
-        "매크로"
-      ],
-      "tagSource": "ai"
-    },
-    {
-      "title": "[오늘의 금값시세] 2026년 11월 15일 g당 168,340.0원·1돈 631,275원…국제 금 보합",
-      "press": "민심뉴스",
-      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5DT01rX3c4dlhCYmE4T29NMk43UF9Gb0F1ajctVTJneHlIczRwZlVkanV1TE9BblYxT2MwVnA5bGJDelFENjFVUkVueWhGLUtUMlFxclRDVk5YTXBFT1REOEpOcDJETVJmeUY2T3Z3?oc=5",
-      "timestamp": 1794700844000,
-      "date": "2026.11.15 09:00",
-      "tags": [
-        "원자재"
-      ],
-      "tagSource": "ai"
-    },
-    {
-      "title": "[게시판] 우리은행, 자원순환 캠페인으로 폐전자제품 85t 수거",
-      "press": "연합뉴스",
-      "url": "https://www.yna.co.kr/view/AKR20261113160400002",
-      "timestamp": 1794700804000,
-      "date": "2026.11.15 09:00",
-      "tags": [
-        "매크로"
-      ]
-    },
-    {
-      "title": "국민은행 \"영업점 방문 없이 상속 서류 접수·예금 지급\"",
-      "press": "연합뉴스",
-      "url": "https://www.yna.co.kr/view/AKR20261114042900002",
-      "timestamp": 1794700803000,
-      "date": "2026.11.15 09:00",
-      "tags": [
-        "TAX"
-      ],
-      "tagSource": "ai"
-    },
-    {
-      "title": "인플레 압력에 DAT 악재까지…비트코인, 3개월 만에 7만달러 아래로",
-      "press": "한국경제",
-      "url": "https://www.hankyung.com/article/202611135509i",
-      "timestamp": 1794700802000,
-      "date": "2026.11.15 09:00",
-      "tags": [
-        "대체투자",
-        "매크로"
-      ],
-      "tagSource": "ai"
-    },
-    {
-      "title": "CEO의 가장 큰 리스크는 CEO 자신이다[김문경의 리더십테크](32)",
-      "press": "파이낸셜뉴스",
-      "url": "https://www.fnnews.com/news/202611131405424882",
-      "timestamp": 1794700800000,
-      "date": "2026.11.15 09:00",
-      "tags": [
-        "매크로"
-      ]
-    },
-    {
-      "title": "[정비사업탐방] 명일우성, 997가구로 탈바꿈…명일동 일대 재건축 ‘잰걸음’",
-      "press": "매일일보",
-      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1COFJrLW1RV0tRRlFIXzVwY2o5Rmk2SGQtanR6WjI1ZFA4WlhBYkJ1MzNDVTZiRFpoY21GQ3JVaS1WWHctdnM3Yy12ZFZzNm03U0ZuNFZtX2Y0VTBzZHRkWE5QVXk?oc=5",
-      "timestamp": 1794700800000,
-      "date": "2026.11.15 09:00",
-      "tags": [
-        "부동산"
-      ],
-      "tagSource": "ai"
-    },
-    {
-      "title": "[기획] 재개발·재건축 16곳 특별점검…공사비·조합 비리에 '칼날'",
-      "press": "매일일보",
-      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1oQ1BfQVVVd2l5MlMzZXhMNHFxZFAtWEtoNVhIQTl0dFd1TkNjUlltb1V3MkVhUGZxYnlOOF9QWFg4dDZvaXNnTzhSMHo2bHBMQS00WVlNVUJ2TE4tcnphSFVUQ18?oc=5",
-      "timestamp": 1794700800000,
-      "date": "2026.11.15 09:00",
-      "tags": [
-        "부동산"
-      ],
-      "tagSource": "ai"
-    },
-    {
-      "title": "미국 연준, AI발 자산가치 고평가·부채급증 우려",
-      "press": "KBS 뉴스",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5vTm1DbEM4dTJLMkNhTWhpeEFGNHNHVC01dndyZUVua2E2ZlZoZFhQUFJjYkttNkhTV1hzcFAxM3JiR0RxTmxEWFdfQ3FFbDVnTW5nZ3BnVk5ISlE?oc=5",
-      "timestamp": 1794700620000,
-      "date": "2026.11.15 08:57",
-      "tags": [
-        "매크로",
-        "증시"
-      ],
-      "tagSource": "ai"
-    },
-    {
-      "title": "AI 빚더미·순환 금융 경고한 미 연준… “1990년대 닷컴 버블 닮았다”",
-      "press": "이로운넷",
-      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9PNWs3TVQ1V05RcXlFalRjOVZVUTBWaHpjLWpHR0hzR3BwV25SYU56MUJFdGo3XzZ4UEtRUzVIY2VUMVdjdGJJalQ5NVdyeUhacjFBSlBVVU5PUDFMWndDZWlzTDUyUQ?oc=5",
-      "timestamp": 1794700500000,
-      "date": "2026.11.15 08:55",
-      "tags": [
-        "증시",
-        "매크로"
-      ],
-      "tagSource": "ai"
-    },
-    {
-      "title": "연준, AI 열풍에 금융위기 위험 경고…부채 3조달러 : 금융",
-      "press": "재경일보",
-      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5iUWJYd1B0YTNTLTNHVURsblBQdUZxa0lzbGZ5TDBvNDBQdERFdzVWM3d5X2hPdUpHbFdKaENyQkRoWGp5V0dab2loOA?oc=5",
-      "timestamp": 1794700500000,
-      "date": "2026.11.15 08:55",
-      "tags": [
-        "증시",
-        "매크로"
-      ],
-      "tagSource": "ai"
-    },
-    {
-      "title": "美연준, AI발 금융위험 경고…자산가치 고평가·부채급증 우려",
-      "press": "매일경제 마켓",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1QVnoteFVNdkhnelNhNnpvbU5MUnppaVM5UnoxTnRiQWVCMUxTaXJqZk81ZVpfMXVxYTdTcVVqUDdvZWp0Y2tnMDNieC0wbnZYVlE?oc=5",
-      "timestamp": 1794700043000,
-      "date": "2026.11.15 08:47",
-      "tags": [
-        "증시",
-        "매크로"
-      ],
-      "tagSource": "ai"
-    },
-    {
-      "title": "원하는 유형을 찾는 나이아가라 카지노 버스 검색 도움말",
-      "press": "belpostel.com",
-      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFA4bmVPSmt6Wm1FZzg0aTgtVjdEMF9jeEhDQnc1eUZFcTZmQUp4RzdpV1BuS0ctY2U1TXRmRHRHSk9lTDh6NmpNV0VEVHlhSHlOamw5MkItX2g?oc=5",
-      "timestamp": 1794699975000,
-      "date": "2026.11.15 08:46",
-      "tags": [
-        "매크로"
-      ]
-    },
-    {
-      "title": "스페이스X, 우주선 본체 사상 첫 회수…완전재사용 로켓 예고",
-      "press": "한국경제",
-      "url": "https://www.hankyung.com/article/2026111568607",
-      "timestamp": 1794699900000,
-      "date": "2026.11.15 08:45",
-      "tags": [
-        "대체투자"
-      ],
-      "tagSource": "ai"
-    },
-    {
-      "title": "AI 기술주, 언제 사야 하나 [조윤남의 사이클투자]",
-      "press": "한국경제",
-      "url": "https://www.hankyung.com/article/202611107544i",
-      "timestamp": 1794699356000,
-      "date": "2026.11.15 08:35",
-      "tags": [
-        "증시"
-      ],
-      "tagSource": "ai"
-    },
-    {
-      "title": "[마켓 뷰] 코스피 반등엔 팔고 엔비디아 하락엔 사고…갈림길 선 개미들",
-      "press": "https://www.moneystorm.kr/",
-      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5Wd0ZNdGladE5zNWU2MFNZZC1MSjdzNlZ2Yk9TaWRZTVhjNW5UMm1FQ2V5cmQwbUlMSkRRak84ODd3djdUaGpOWURIQ01LZ2RnSHZBdmlBNGYyWnNwdnktVElVeFpBQUtQOGc?oc=5",
-      "timestamp": 1794699064000,
-      "date": "2026.11.15 08:31",
-      "tags": [
-        "증시"
-      ],
-      "tagSource": "ai"
-    },
-    {
-      "title": "[증시전망] 젠슨 황 없는 엔비디아 실적은...앤트로픽 IPO도 주목",
-      "press": "디지털투데이",
-      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBVSkFoNldiS3V0NVVaUHhJN3F5YThoTHlCSjdEZmtlTGtBWGkyUkF4aHpONkkxMjJCZE1aU1VVSWxJOHV2NTdtU1ZmLV9uMjl0T0xrYnhUTmUzX3FjTGM1S0JaNmgzNk5kM0xOa3A0djhsSzg?oc=5",
-      "timestamp": 1794699000000,
-      "date": "2026.11.15 08:30",
-      "tags": [
-        "증시"
-      ],
-      "tagSource": "ai"
-    },
-    {
-      "title": "코스피 4.56% 반등에도 불안한 증시…엔비디아發 AI 리스크 확산",
-      "press": "산경투데이",
-      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBhVlRQTjVLZ3FITUlpbV9qSEw4dGZVdTFlOE0yb1otX2lab0R3M21mTGRwLTRDOGxUYWQ4VThGVlRQV2JzN05na2x6eTNyLTlSMFZ0a0dDY3cxZUgxeHpJc01SazhYM0xPazVMNFNDUGItV29x0gF0QVVfeXFMUGFWVFBONUtncUhNSWltX2pITDh0ZlV1MWU4TTJvWi1faVpvRHczbWZMZHAtNEM4bFRhZDhVOEZWVFBXYnM3TmdrbHp5M3ItOVIwVnRrR0NjdzFlSDF4eklzTVJrOFgzTE9rNUw0U0NQYi1Xb3E?oc=5",
-      "timestamp": 1794698913000,
-      "date": "2026.11.15 08:28",
-      "tags": [
-        "증시"
-      ],
-      "tagSource": "ai"
-    },
-    {
-      "title": "금시세 주간 전망, 4.6% 하락 뒤 반등 열쇠는 실질금리",
-      "press": "톱스타뉴스",
-      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5kNlR3NDlvQVcyRFJxbnFmbU5oWmdMVUJSQ1pTTm0zakFRYWs2ZXJtOGYzU2ZxOGdyTUVLdkNGUTdYcklyamdTUmhoMHZsQWd3QlI5NVlHODNuM2pOZVZZb2pSSmpSeXctRHdxaTMzUnZXQQ?oc=5",
-      "timestamp": 1794697678000,
-      "date": "2026.11.15 08:07",
-      "tags": [
-        "원자재",
-        "채권·금리"
-      ],
-      "tagSource": "ai"
-    },
-    {
-      "title": "주택공급 속도내는 정부…수도권 전세수급은 여전히 불균형",
-      "press": "연합뉴스",
-      "url": "https://www.yna.co.kr/view/AKR20261115004300003",
-      "timestamp": 1794697551000,
-      "date": "2026.11.15 08:05",
-      "tags": [
-        "부동산"
-      ],
-      "tagSource": "ai"
-    },
-    {
-      "title": "\"높아도 낮아도 걱정\"…1,330원대 환율 적정 수준은",
-      "press": "KB Think",
-      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFA1aExRQjlKOUU0QUlLeGE0LXlyald4c1c4WEcxOEJFcS1EMEVjdEo5X1MxR01rYkxnTGxLUzc2SlBpTWp3TndRQ0tzelRHc29KUFB5YlBsb3VqaWNYeUNrWDB4alJpMGh3X1pKSk5VUU90dw?oc=5",
-      "timestamp": 1794697501000,
-      "date": "2026.11.15 08:05",
-      "tags": [
-        "외환"
-      ],
-      "tagSource": "ai"
-    },
-    {
-      "title": "[머니 확률표] 월러 '50bp 인상 검토' 발언…연준 12월 빅스텝 확률 9%",
-      "press": "코인리더스",
-      "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE56OVhpZUZCOXNUTzhnbkx0SUFqZzV5WFZwQzMtWVhxRzc2dDBMRjlhRjlXSDEwYkZJV1J1NTZwelc2T1FlRlF3SlR3?oc=5",
-      "timestamp": 1794697472000,
-      "date": "2026.11.15 08:04",
-      "tags": [
-        "채권·금리"
-      ],
-      "tagSource": "ai"
-    },
-    {
-      "title": "변동성 장세 지속…'젠슨 황 퇴진' 엔비디아 실적에 쏠리는 눈 [주간전망]",
-      "press": "한국경제",
-      "url": "https://www.hankyung.com/article/2026111355876",
-      "timestamp": 1794697208000,
-      "date": "2026.11.15 08:00",
-      "tags": [
-        "증시"
-      ],
-      "tagSource": "ai"
-    },
-    {
-      "title": "\"커피만 파는 줄 알았는데\"…600만개 불티나게 팔린 메뉴 [장서우의 하입:hype]",
-      "press": "한국경제",
-      "url": "https://www.hankyung.com/article/202611156682i",
-      "timestamp": 1794697205000,
-      "date": "2026.11.15 08:00",
-      "tags": [
-        "증시"
-      ],
-      "tagSource": "ai"
-    },
-    {
-      "title": "자녀 둘 아빠는 16만원 번다…바뀌는 연말정산 절세법",
-      "press": "한국경제",
-      "url": "https://www.hankyung.com/article/202611135532i",
-      "timestamp": 1794697202000,
-      "date": "2026.11.15 08:00",
-      "tags": [
-        "TAX"
-      ],
-      "tagSource": "ai"
-    },
-    {
-      "title": "웹툰작가·배달기사·검침원…공통소망은 '표준계약서 의무화'",
-      "press": "연합뉴스",
-      "url": "https://www.yna.co.kr/view/AKR20261114048800004",
-      "timestamp": 1794697201000,
-      "date": "2026.11.15 08:00",
-      "tags": [
-        "매크로"
-      ]
-    },
-    {
-      "title": "\"주식 사려고 빚 냈어요\"…7조 폭풍매수 몰린 '두 종목'",
-      "press": "한국경제",
-      "url": "https://www.hankyung.com/article/2026111567997",
-      "timestamp": 1794696869000,
-      "date": "2026.11.15 07:54",
-      "tags": [
-        "증시"
-      ],
-      "tagSource": "ai"
-    },
-    {
-      "title": "\"한국 IP 대역 유망\"…북한 라자루스, 국내 서버 30곳 노렸다",
-      "press": "연합뉴스",
-      "url": "https://www.yna.co.kr/view/AKR20261114033800017",
-      "timestamp": 1794696300000,
-      "date": "2026.11.15 07:45",
-      "tags": [
-        "매크로"
-      ]
-    },
-    {
-      "title": "엔비디아 투자자, 젠슨황 복귀 요구 서한…\"AI산업 후퇴 우려\"",
-      "press": "한국경제",
-      "url": "https://www.hankyung.com/article/2026111567957",
-      "timestamp": 1794696272000,
-      "date": "2026.11.15 07:44",
-      "tags": [
-        "증시"
-      ],
-      "tagSource": "ai"
-    },
-    {
-      "title": "\"주가 빠질 때 사야\" 빚투 나선 개미들…마통 44조 넘었다",
-      "press": "한국경제",
-      "url": "https://www.hankyung.com/article/2026111567887",
-      "timestamp": 1794695474000,
-      "date": "2026.11.15 07:31",
-      "tags": [
-        "증시"
-      ],
-      "tagSource": "ai"
-    },
-    {
-      "title": "\"예약 열자마자 난리\"…2030 홀린 '추억의 캐릭터' 뭐길래 [박수림의 요즘 여기]",
-      "press": "한국경제",
-      "url": "https://www.hankyung.com/article/202611135618g",
-      "timestamp": 1794695402000,
-      "date": "2026.11.15 07:30",
-      "tags": [
-        "증시"
-      ],
-      "tagSource": "ai"
-    },
-    {
-      "title": "[뉴욕증시-주간전망] 엔비디아 실적에 앤트로픽 상장…'AI 빅위크'",
-      "press": "연합인포맥스",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1vNU9MWDJPNThrVkpHMFdSRGpBZHdIRzJHb3NEbjdHVlpMQW1seW1VZ0RWYmxpTTJiMF9vcUoxYkoxckM4R3Q3bnl4NlIwZVgxTURyNTlka1JLZl81N29DWXkzcmQ1MWFKbUlpRnZyQy0?oc=5",
-      "timestamp": 1794693616000,
-      "date": "2026.11.15 07:00",
-      "tags": [
-        "증시",
-        "대체투자"
-      ],
-      "tagSource": "ai"
-    },
-    {
-      "title": "할리데이비슨 소유한 체납자…경기도, 전수조사로 9억 징수",
-      "press": "연합뉴스",
-      "url": "https://www.yna.co.kr/view/AKR20261113129600061",
-      "timestamp": 1794693615000,
-      "date": "2026.11.15 07:00",
-      "tags": [
-        "TAX"
-      ],
-      "tagSource": "ai",
-      "lowRelevance": true
-    },
-    {
-      "title": "\"이제 와서 2억 더 내라고?\"…서초 아파트 주민들 '날벼락' [김용우의 각개전투]",
-      "press": "한국경제",
-      "url": "https://www.hankyung.com/article/202611146307i",
-      "timestamp": 1794693601000,
-      "date": "2026.11.15 07:00",
-      "tags": [
-        "부동산",
-        "TAX"
-      ],
-      "tagSource": "ai"
-    },
-    {
-      "title": "‘젠슨 황’ 사임에 코스피도 안갯속…엔비디아 실적, 반등 가를까[선데이 머니카페]",
-      "press": "서울경제",
-      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBTREhlYV9NeFFrT2VpTlhZa3lDdElRM0lpc3pIOF80RnZUR3dRSDdVbHRxQUpOMmZFaGNtSFh4WWtJOG83SnViLW9JZW9NUTdKbkVv0gFTQVVfeXFMUFNESGVhX014UWtPZWlOWFlreUN0SVEzSWlzekg4XzRGdlRHd1FIN1VsdHFBSk4yZkVoY21IWHhZa0k4bzdKdWItb0llb01RN0puRW8?oc=5",
-      "timestamp": 1794693600000,
-      "date": "2026.11.15 07:00",
-      "tags": [
-        "증시"
-      ],
-      "tagSource": "ai"
-    },
-    {
-      "title": "나스닥 23시간 거래 D-3주…\"美투자 확대\" \"국내 영향 제한적\"",
-      "press": "연합뉴스",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5CLUc2OWJoU3c0NF9KYjVXSm5uRW1saU5UcXlKT3MwZXRRWjlpRFhRVWpDN2NyQlhYOWE0dDB1VkVIMGRkejJ2cG9OWUVTMzBObTBjOXd3NVhGMmvSAWBBVV95cUxNam1HV2QwTENuRzNaUzhoRzFFQVY3SVF1VXNEaG1fV2lhU1F6Sm1TMHpnV1hFVlZfUDIycXdqUjZMR2ZaM3J6M21qRnNSMmp3eGp4NjdrejdJQTRPOHdrNlE?oc=5",
-      "timestamp": 1794691500000,
-      "date": "2026.11.15 06:25",
-      "tags": [
-        "증시"
-      ],
-      "tagSource": "ai"
-    },
-    {
-      "title": "\"ESG 지배구조 개선 이끈 주주권리…배당·자사주 득점 늘었다\"",
-      "press": "연합뉴스",
-      "url": "https://www.yna.co.kr/view/AKR20261114022300008",
-      "timestamp": 1794691200000,
-      "date": "2026.11.15 06:20",
-      "tags": [
-        "증시"
-      ],
-      "tagSource": "ai"
-    },
-    {
-      "title": "물가 잡으려 묶어둔 석유·전기·가스요금…커지는 청구서",
-      "press": "연합뉴스",
-      "url": "https://www.yna.co.kr/view/AKR20261113178000003",
-      "timestamp": 1794691020000,
-      "date": "2026.11.15 06:17",
-      "tags": [
-        "매크로"
-      ],
-      "tagSource": "ai"
-    },
-    {
-      "title": "[AI프리즘] AI로 일자리 170만개 늘지만…5명 중 1명 직무 바뀐다",
-      "press": "연합뉴스",
-      "url": "https://www.yna.co.kr/view/AKR20261113151600017",
-      "timestamp": 1794690901000,
-      "date": "2026.11.15 06:15",
-      "tags": [
-        "매크로"
-      ],
-      "tagSource": "ai"
-    },
-    {
-      "title": "씨 마른 강남권 분양에…서울 1순위 청약자 4년만에 최저",
-      "press": "연합뉴스",
-      "url": "https://www.yna.co.kr/view/AKR20261114036200003",
-      "timestamp": 1794690900000,
-      "date": "2026.11.15 06:15",
-      "tags": [
-        "부동산"
-      ],
-      "tagSource": "ai"
-    },
-    {
-      "title": "'빚투' 자금 30%가 삼전·닉스에 집중…변동성 더 키웠다",
-      "press": "연합뉴스",
-      "url": "https://www.yna.co.kr/view/AKR20261114028800008",
-      "timestamp": 1794690600000,
-      "date": "2026.11.15 06:10",
-      "tags": [
-        "증시"
       ],
       "tagSource": "ai"
     }

@@ -1,7 +1,7 @@
 {
   "edition": "MORNING",
-  "generatedAt": "2026-11-15T23:40:28.796Z",
-  "generatedAtKST": "2026.11.16 08:40",
+  "generatedAt": "2026-11-16T01:28:26.731Z",
+  "generatedAtKST": "2026.11.16 10:28",
   "sourceStatus": {
     "market": "ok",
     "news": "ok",
@@ -19,7 +19,7 @@
       "asOfLocal": "국내 정규장 기준",
       "asOfKst": "한국 정규장 11.13 15:30 마감",
       "stale": false,
-      "updatedAt": "2026-11-15T23:39:36.543Z"
+      "updatedAt": "2026-11-16T01:27:17.207Z"
     },
     {
       "key": "KOSDAQ",
@@ -31,7 +31,7 @@
       "asOfLocal": "국내 정규장 기준",
       "asOfKst": "한국 정규장 11.13 15:30 마감",
       "stale": false,
-      "updatedAt": "2026-11-15T23:39:36.543Z"
+      "updatedAt": "2026-11-16T01:27:17.207Z"
     },
     {
       "key": "SP500",
@@ -43,7 +43,7 @@
       "asOfLocal": "현지 11.13 16:00 마감",
       "asOfKst": "한국 11.14 06:00 마감",
       "stale": false,
-      "updatedAt": "2026-11-15T23:39:36.543Z"
+      "updatedAt": "2026-11-16T01:27:17.207Z"
     },
     {
       "key": "NASDAQ",
@@ -55,7 +55,7 @@
       "asOfLocal": "현지 11.13 16:00 마감",
       "asOfKst": "한국 11.14 06:00 마감",
       "stale": false,
-      "updatedAt": "2026-11-15T23:39:36.543Z"
+      "updatedAt": "2026-11-16T01:27:17.207Z"
     },
     {
       "key": "SOX",
@@ -67,119 +67,140 @@
       "asOfLocal": "현지 11.13 16:00 마감",
       "asOfKst": "한국 11.14 06:00 마감",
       "stale": false,
-      "updatedAt": "2026-11-15T23:39:36.543Z"
+      "updatedAt": "2026-11-16T01:27:17.207Z"
     },
     {
       "key": "USDKRW",
       "name": "원/달러 환율",
       "group": "fx",
-      "priceStr": "1,335.74",
-      "diffStr": "▼ -26.96",
-      "changePct": -1.98,
+      "priceStr": "1,334.98",
+      "diffStr": "▼ -8.86",
+      "changePct": -0.66,
       "asOfLocal": "집계 기준 확인 중",
       "asOfKst": "집계 기준 확인 중",
       "stale": false,
-      "updatedAt": "2026-11-15T23:39:36.543Z"
+      "updatedAt": "2026-11-16T01:27:17.207Z"
     }
   ],
   "issues": [
     {
-      "cat": "증시·반도체",
-      "tag": "필라델피아 반도체 -3.43% · 나스닥 -0.91%",
-      "title": "미국 반도체주 급락 및 연준의 AI 자산 고평가 경고",
-      "desc": "간밤 뉴욕증시에서 필라델피아 반도체 지수가 3.43% 급락하며 나스닥(-0.91%)과 S&P 500(-0.4%)의 하락을 이끌었습니다. 미 연준은 AI 열풍에 따른 자산 고평가 가능성과 3조 달러 규모의 인프라 부채 리스크에 대해 경고했습니다. 이에 따라 오늘 국내 장에서도 반도체 및 주요 기술주에 대한 심리적 부담이 이어질 수 있습니다."
+      "cat": "미국 증시·AI",
+      "tag": "나스닥 -0.91% · 필라델피아 반도체 -3.43%",
+      "title": "연준 고평가 경고 속 뉴욕증시 반도체주 약세",
+      "desc": "11월 13일(금) 뉴욕증시는 미 연준의 AI 자산가치 고평가 경고와 인플레이션 경계감 속에 나스닥이 25,136.27로 -0.91%, 필라델피아 반도체 지수가 10,146.32로 -3.43% 하락했습니다. 주말 사이 캔자스시티 연은 총재는 인플레이션 과열을 지적하며 연준의 대응 여지가 남았음을 언급했습니다. 시장은 이번 주 공개될 엔비디아 실적과 앤트로픽 상장 이슈가 증시 방향을 가를 핵심 변수가 될 것으로 전망하고 있습니다."
     },
     {
-      "cat": "매크로·연준",
-      "tag": "원/달러 환율 1,335.74원 · 인플레 경계",
-      "title": "연은 총재의 인플레이션 경고와 통화정책 경계감",
-      "desc": "캔자스시티 연은 총재가 인플레이션이 지나치게 높다며 연준이 해야 할 일이 남아있다고 언급해 금리 관련 경계감을 높였습니다. 인플레이션 경계감과 연준 당국자들의 발언 속에 시장 내 불확실성이 상존하고 있습니다. 원/달러 환율은 1,335.74원을 나타내며 외환 시장의 변동성 도 함께 주시할 대목입니다."
+      "cat": "국내 증시·외환",
+      "tag": "코스피 5,290.53 · 환율 1,334.98원",
+      "title": "코스피 5,290선 후퇴 및 환율 1,330원대 횡보",
+      "desc": "11월 13일(금) 코스피는 5,290.53(▼ -52.20, -0.98%)으로 하락 마감한 반면 코스닥은 699.66(▲ +3.13, 0.45%)으로 소폭 상승했습니다. 원/달러 환율은 1,334.98(▼ -8.86, -0.66%)로 하락 마감했으나 미국 물가 부담에 따른 강달러 기조 속에 1,330원대 중반에서 횡보하는 흐름을 나타내고 있습니다. 글로벌 반도체 지수 하락 여파가 11월 16일(월) 개장하는 국내 증시에 영향을 미칠지가 주시됩니다."
     },
     {
-      "cat": "증시·이벤트",
-      "tag": "엔비디아 실적 · 앤트로픽 상장 대기",
-      "title": "엔비디아 실적 발표 및 앤트로픽 상장 'AI 빅위크' 진입",
-      "desc": "이번 주는 엔비디아의 실적 발표와 앤트로픽 상장 일정이 겹치는 글로벌 'AI 빅위크'에 돌입합니다. 시장은 해당 이벤트 결과에 따라 AI 및 기술주 전반의 주가 방향성이 결정될 것으로 주목하고 있습니다. 한편 뉴욕증시에는 한국 화장품 및 미용 테마 ETF가 상장되는 등 테마성 이슈도 포착되었습니다."
+      "cat": "원자재·대체투자",
+      "tag": "브렌트유 96달러선 · 금값 3,900달러선",
+      "title": "국제유가 하락세 진정 및 금값 3,900달러 공방",
+      "desc": "주말 사이 국제유가는 이란의 미 기지 공격 소식 여파로 브렌트유가 96달러선을 나타내며 하락세가 진정되는 양상을 보였습니다. 국제금값은 3,900달러 선에서 공방을 벌이며 추가 하락에 대한 경계감이 지속되는 상황입니다. 한국은행의 금 ETF 보유량은 41% 늘어났으나 금값 부진으로 평가액이 325억 원 감소한 점도 함께 확인되었습니다."
     }
   ],
-  "talkingPoint": "간밤 뉴욕증시는 필라델피아 반도체 지수가 -3.43% 급락하고 연준의 AI 자산 고평가 경고가 겹치며 나스닥(-0.91%)과 S&P 500(-0.4%)이 약세를 보였습니다. 캔자스시티 연은 총재의 인플레이션 관련 경고로 매크로 경계감이 지속되는 가운데 시장은 엔비디아 실적과 앤트로픽 상장이 예정된 AI 빅위크 결과를 대기하고 있습니다. 전일 코스피가 5,290.53(-0.98%)으로 마감한 상황에서 미 반도체주 하락 여파에 따른 국내 IT 대형주의 수급 변동성과 원/달러 환율(1,335.74원) 추이를 정밀히 살펴볼 필요가 있습니다.",
+  "talkingPoint": "11월 13일(금) 뉴욕증시는 미 연준의 AI 자산 고평가 경고와 반도체주 약세로 나스닥(-0.91%)과 필라델피아 반도체 지수(-3.43%)가 하락 마감했습니다. 11월 13일(금) 코스피 역시 5,290.53(-0.98%)으로 하락한 가운데 원/달러 환율은 1,334.98원을 기록하며 1,330원대 중반 횡보세를 이어가고 있습니다. 주말 사이 연준 인사들의 인플레이션 과열 발언이 이어진 한편, 국제유가는 브렌트유 96달러선에서 하락세가 진정되었습니다. 금주 국내 증시는 엔비디아 실적 발표와 앤트로픽 상장 이슈가 방향성을 결정짓는 주요 분수령이 될 것으로 관측됩니다.",
   "topNews": [
     {
-      "title": "엔비디아 실적·앤트로픽 상장 겹친다…뉴욕증시 'AI 빅위크'",
-      "press": "www.ebn.co.kr",
-      "url": "https://www.ebn.co.kr/news/articleView.html?idxno=1731705",
-      "timestamp": 1794722727000,
-      "date": "2026.11.15 15:05",
+      "title": "엔비디아 실적, 앤트로픽 상장에 쏠린 눈...코스피 방향 가른다",
+      "press": "비즈워치",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9oYUtYUlpsNFpPb1FZNTZFU0VfZVc1M2YxYW83cEt4VmhsaHZrMGFjWkhUREo1UGxZN0ZXUmxTSllZd1I2OEdTNU5pV0ZYVGpELXRpQmhPS09tRGRyb2VuMU5hVEtkdk1id1E?oc=5",
+      "timestamp": 1794789663000,
+      "date": "2026.11.16 09:41",
       "tags": [
-        "증시"
+        "증시",
+        "매크로"
       ],
       "tagSource": "ai",
       "coverage": 16,
       "scope": "해외",
       "outlets": [
+        "비즈워치",
+        "뉴스톱",
+        "뉴스1",
         "메디컬투데이",
         "www.ebn.co.kr",
-        "연합인포맥스",
-        "매일경제 마켓",
-        "파이낸셜뉴스",
-        "이투데이"
+        "마켓인"
       ],
-      "rssDate": "2026.11.15 15:05",
-      "timeSource": "meta",
-      "googleUrl": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9mNDRqTmtCNzU2aGFlbTNuanVDTnNRY2VndnZNZ1FRdVRYdjB1OXpmY3pRWk5nM0dLTUtHQmVQcjNUQ1ZCZGl3SUxtUmQ4cFlBOWlYZXpUeEpXbGZEbzNGNmVuUkxfcHY0?oc=5",
-      "shortUrl": "https://is.gd/6pquDK"
+      "rssDate": "2026.11.16 09:41",
+      "timeSource": "rss",
+      "shortUrl": "https://is.gd/l5UxpS"
     },
     {
-      "title": "캔자스시티 연은 총재 \"인플레 지나치게 높아…연준, 해야 할 일 있어\"",
+      "title": "美 연준 \"AI 열광 등에 자산가치 고평가\"",
       "press": "연합인포맥스",
-      "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4444836",
-      "timestamp": 1794780451000,
-      "date": "2026.11.16 07:07",
+      "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4444822",
+      "timestamp": 1794724524000,
+      "date": "2026.11.15 15:35",
       "tags": [
-        "채권·금리",
         "매크로"
       ],
       "tagSource": "ai",
-      "coverage": 10,
+      "coverage": 6,
       "scope": "해외",
       "outlets": [
         "연합인포맥스",
-        "Investing.com 한국어",
-        "뉴닉",
-        "스페셜경제",
-        "프리진경제",
-        "KB Think"
+        "매일경제",
+        "조선일보",
+        "KBS 뉴스",
+        "서울경제",
+        "Chosunbiz"
       ],
-      "rssDate": "2026.11.16 07:07",
+      "rssDate": "2026.11.15 15:35",
       "timeSource": "meta",
-      "googleUrl": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5mNkl0V3Aza1JDNjkzYXRFQWxfNDN5c0RwMEQ5MlpNTmFTdXNhaE1pTVJtZ1NBQjBFTFZFemdMdGlsV2paRkxrQlZFM2dMQ0xGOG5ULVAxb2dFMHVlQ3dZYmJIR0UxVkhkMTFBTnFSRHM?oc=5",
-      "shortUrl": "https://is.gd/HzkftU"
+      "googleUrl": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9vc0N5TnBTVEJoN1pUVzNZMjZTZ2dOZXpGOWZNQlZfWHdyRWxhdEhhZGx0cDJGTks1WGxTaS1jeGl6UTFqb0pmalA2TE5NbHhRQmg2cHJXbVA4NjdZTk9PaGhYa1NkcWVDQ1FoRXlFRms?oc=5",
+      "shortUrl": "https://is.gd/GBWMW1"
     },
     {
-      "title": "美 연준 \"AI 열풍에 자산 고평가\"…3조달러 인프라 빚 폭탄 '경고'",
-      "press": "아시아경제",
-      "url": "https://www.asiae.co.kr/article/2026111510175677135",
-      "timestamp": 1794705476000,
-      "date": "2026.11.15 10:17",
+      "title": "캔자스시티 연은 총재 \"인플레 여전히 과열…연준 할 일 남아\" - 머니투데이",
+      "press": "머니투데이",
+      "url": "https://www.mt.co.kr/index.php/world/2026/11/16/2026111607514073570",
+      "timestamp": 1794789198000,
+      "date": "2026.11.16 09:33",
       "tags": [
         "매크로",
+        "채권·금리"
+      ],
+      "tagSource": "ai",
+      "coverage": 5,
+      "scope": "해외",
+      "outlets": [
+        "머니투데이",
+        "연합인포맥스",
+        "Investing.com 한국어",
+        "IndexBox",
+        "블루밍비트"
+      ],
+      "rssDate": "2026.11.16 09:33",
+      "timeSource": "meta",
+      "googleUrl": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1TUXdSSERxOVo3NGJUU0lnM0FOVGJ1YWJkakQzMllmY3hLT2ZVVV9yWHNtU2NqeHRiUEM0SUNhWWVWM0lzWkhlQTdUclFJeElIcG5EOUU4ZGlldlAwVnVOUUVXSlc5eDQ3Q1hhaVFobTBXWXZrbGfSAXtBVV95cUxPcFhCTEx0TGlCSDhnc3lCdV9MUDAtZXV0ZEhWTkZIcVlTbzc0dERuWDZfRm4yRFM5TnVWVzNZQjlvaHhBNWpWRUlhM3VtcGVRUVVuNlI1d0tpcFFSd0dHYkFrb2J6cE5QeU93YkJaTk13enlpM1haNUhvRzQ?oc=5",
+      "shortUrl": "https://is.gd/kNEjwt"
+    },
+    {
+      "title": "시장이 과민 반응...톰 리 \"VIX 정점 11월 6일, 15% 반등 온다\"",
+      "press": "코인리더스",
+      "url": "https://www.coinreaders.com/270519",
+      "timestamp": 1794791400000,
+      "date": "2026.11.16 10:10",
+      "tags": [
         "증시"
       ],
       "tagSource": "ai",
-      "coverage": 8,
+      "coverage": 4,
       "scope": "해외",
       "outlets": [
-        "아시아경제",
-        "연합인포맥스",
-        "연합뉴스TV",
-        "서울경제",
-        "Chosunbiz",
-        "매일경제"
+        "코인리더스",
+        "네이버 프리미엄콘텐츠",
+        "뉴스투데이",
+        "Benzinga"
       ],
-      "rssDate": "2026.11.16 07:13",
+      "rssDate": "2026.11.16 10:10",
       "timeSource": "meta",
-      "googleUrl": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1OSjMzX182RUlWVkx5MWNBbkhzYjBNWTA2QnExMmlWWWFnZjF1OVpRQUE2NHRwS21SWS1id1BGcmJNM0E3V0FQQnZpYlBKQnlfdHVmZ18wWEhlUmlPZmh5Qw?oc=5",
-      "shortUrl": "https://is.gd/wLFEoj"
+      "googleUrl": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE5TLU1WSnpxbm9lWWtYUWRPSTRMdVpPd0ZRSkRtZ0NkbURWdFVGY3UyTml3VXA2OElLYlpIbTI3ZGYwbXVCRzJROEZB?oc=5",
+      "shortUrl": "https://is.gd/61H3tg"
     },
     {
       "title": "국제금값 3900달러 공방…추가 하락 경계",
@@ -191,11 +212,12 @@
         "원자재"
       ],
       "tagSource": "ai",
-      "coverage": 2,
+      "coverage": 3,
       "scope": "해외",
       "outlets": [
         "글로벌이코노믹",
-        "CBC뉴스"
+        "CBC뉴스",
+        "톱스타뉴스"
       ],
       "rssDate": "2026.11.16 02:00",
       "timeSource": "meta",
@@ -203,99 +225,74 @@
       "shortUrl": "https://is.gd/dmLTeB"
     },
     {
-      "title": "한국 화장품·미용 테마 ETF 뉴욕증시 상장",
-      "press": "뉴스1",
-      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9uZ0k2SndMc055MGlYTG9VWVRPZmlsdEk1dzFIUmszUTNnQWp3TjlfLXZZckJvQ2J0NzBSYVRHMDAwS2pteFdUSF9TQQ?oc=5",
-      "timestamp": 1794724101000,
-      "date": "2026.11.15 15:28",
-      "tags": [
-        "증시"
-      ],
-      "tagSource": "ai",
-      "coverage": 2,
-      "scope": "해외",
-      "outlets": [
-        "뉴스1",
-        "머니투데이"
-      ],
-      "rssDate": "2026.11.15 15:28",
-      "timeSource": "rss",
-      "shortUrl": "https://is.gd/vA2neX"
-    },
-    {
-      "title": "원·달러 환율, 1337.6원…달러, 美 인플레이션 경계 속 강세",
-      "press": "조세일보",
-      "url": "http://www.joseilbo.com/news/htmls/2026/11/20261116579669.html",
-      "timestamp": 1794783247000,
-      "date": "2026.11.16 07:54",
-      "tags": [
-        "외환"
-      ],
-      "tagSource": "ai",
-      "coverage": 7,
-      "scope": "국내",
-      "outlets": [
-        "조세일보",
-        "뉴시스",
-        "뉴스핌",
-        "이데일리",
-        "이투데이",
-        "KB Think"
-      ],
-      "rssDate": "2026.11.16 07:54",
-      "timeSource": "meta",
-      "googleUrl": "https://news.google.com/rss/articles/CBMib0FVX3lxTE92SkN3a2ZxaWJCamVRMDVLaG10QVk3ckI5ZVpacFB2S1FfMmhmX0RzSXgxUUtQXzZzNzd1aDVmdnd2VTMySEg2VjhTcVlLaGJMTWZzblQtSVN6RDVQaEQ3OVZDYWpwZDdMYWxtLWFVSQ?oc=5",
-      "shortUrl": "https://is.gd/eaYY9r"
-    },
-    {
-      "title": "한은, 금 ETF 41% 늘렸는데…금값 부진에 평가액 325억 원 감소",
-      "press": "글로벌이코노믹",
-      "url": "https://www.g-enews.com/article/General-News/2026/11/20261115180706931e30fcb1ba8_1",
-      "timestamp": 1794733881000,
-      "date": "2026.11.15 18:11",
+      "title": "국제유가, 이란의 美 기지 공격에 하락세 진정…브렌트유 96달러선",
+      "press": "블루밍비트",
+      "url": "https://bloomingbit.io/feed/news/124498",
+      "timestamp": 1794789240000,
+      "date": "2026.11.16 09:34",
       "tags": [
         "원자재"
       ],
       "tagSource": "ai",
-      "coverage": 4,
-      "scope": "국내",
+      "coverage": 1,
+      "scope": "해외",
       "outlets": [
-        "글로벌이코노믹",
-        "중앙이코노미뉴스",
-        "SBS Biz",
-        "www.dt.co.kr"
+        "블루밍비트"
       ],
-      "rssDate": "2026.11.15 18:11",
+      "rssDate": "2026.11.16 09:34",
       "timeSource": "meta",
-      "googleUrl": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQM2IwbkxUMEQybFE4cXF1LWpQQm42Mm5BVF9oYU5OamtFcVBVV25aRW9sME9RanVMdVdrVnF6V3MwX3kydXZ6SDA0NmdBdkNhVERmRmtwSF9tRjhwRzhMUG9DSEZxcjQwUWxBN1hiSExSR3M5SWhfVnJsanhVOGlFYUFDU0RCYWdLNmc?oc=5",
-      "shortUrl": "https://is.gd/MbNrh4"
+      "googleUrl": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1kUXg0WkF3Qk1fbjd2eFlOWlhhMW1yR19ZajU0RE9nTXNiNVBNQURTYmRJNThUbE1wamI5UE0tZ19yWlhYSGdsZGVPemx5anU5?oc=5",
+      "shortUrl": "https://is.gd/zKmOqb"
     },
     {
-      "title": "'서울 집값이 상속세율 선호에 미치는 영향, 연구 결과는?'",
-      "press": "공감신문",
-      "url": "https://www.gokorea.kr/news/articleView.html?idxno=885775",
-      "timestamp": 1794784092000,
-      "date": "2026.11.16 08:08",
+      "title": "나스닥 상장사 DFDV, 우선주 발행으로 솔라나 3500개 추가 매입 여력 확보",
+      "press": "블록체인투데이",
+      "url": "https://blockchaintoday.co.kr/news/articleView.html?idxno=66773",
+      "timestamp": 1794787636000,
+      "date": "2026.11.16 09:07",
       "tags": [
-        "TAX"
+        "대체투자"
       ],
       "tagSource": "ai",
-      "coverage": 3,
+      "coverage": 1,
+      "scope": "해외",
+      "outlets": [
+        "블록체인투데이"
+      ],
+      "rssDate": "2026.11.16 09:07",
+      "timeSource": "meta",
+      "googleUrl": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1UN2VTazBBMmhVdzRkWXBTTFVYc0U2aXozYjB5em9sT1pFWVhSZkNqYjJyRUhPRU5oMUJpVENTbFFaekZnNlVUalpNclZIZDFsVF9MclVuYk45bFJTQUJ6SnVXWkF4TVVwZm9Oa2Judm8?oc=5",
+      "shortUrl": "https://is.gd/BLO4X8"
+    },
+    {
+      "title": "한투운용 ACE 美대표지수 채권혼합형 ETF 2종, 올해 자금유입 1조 돌파",
+      "press": "매일경제 마켓",
+      "url": "https://stock.mk.co.kr/news/view/1199240",
+      "timestamp": 1794787851000,
+      "date": "2026.11.16 09:10",
+      "tags": [
+        "증시"
+      ],
+      "tagSource": "ai",
+      "coverage": 10,
       "scope": "국내",
       "outlets": [
-        "공감신문",
+        "매일경제 마켓",
+        "브릿지경제",
+        "뉴시스",
+        "서울경제",
         "연합뉴스",
-        "신아일보"
+        "아시아경제"
       ],
-      "rssDate": "2026.11.16 08:08",
-      "timeSource": "meta",
-      "googleUrl": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBUZ1ktd3NySkQ5ZDBfWmpOUmRsN25OY3I5T0VFUFV2RTc2RXlndnV3SW5jYjUtQkNEbFotZjBTTjBXOTdoa0pXS2RzY25NYU5FRkEzR25RNlZmQ29LOFBick9KMldFTWRk?oc=5",
-      "shortUrl": "https://is.gd/tmzzVt"
+      "rssDate": "2026.11.16 09:10",
+      "timeSource": "rss",
+      "googleUrl": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBEdno5QWJELW1rRVpZOE1mVjNuSmxMaWVpakYzY1NXVGcwaHRCZUhPSmxWdFZuRXFtbnZocExWVUxDR2lqcEVoQ0dlOXhJcFBQbkE?oc=5",
+      "shortUrl": "https://is.gd/Q4dnro"
     }
   ],
   "assetChecks": {
     "framework": "models",
-    "generatedAt": "2026-11-15T23:40:28.796Z",
+    "generatedAt": "2026-11-16T01:28:26.731Z",
     "model": "gemini-3.5-flash",
     "models": [
       {
@@ -336,12 +333,12 @@
         "name": "안전자산",
         "target": 30,
         "icon": "🛡️",
-        "role": "예금·국채·우량채·달러·금 등 자산을 지키는 바구니",
+        "role": "예금·국채·우량채·달러·금 등 자산을 지키는 자산군",
         "market": [
           {
             "name": "원/달러 환율",
-            "priceStr": "1,335.74",
-            "changePct": -1.98
+            "priceStr": "1,334.98",
+            "changePct": -0.66
           }
         ],
         "events": [
@@ -355,36 +352,36 @@
         ],
         "news": [
           {
-            "title": "캔자스시티 연은 총재 \"인플레 지나치게 높아…연준, 해야 할 일 있어\"",
-            "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5mNkl0V3Aza1JDNjkzYXRFQWxfNDN5c0RwMEQ5MlpNTmFTdXNhaE1pTVJtZ1NBQjBFTFZFemdMdGlsV2paRkxrQlZFM2dMQ0xGOG5ULVAxb2dFMHVlQ3dZYmJIR0UxVkhkMTFBTnFSRHM?oc=5",
-            "press": "연합인포맥스",
-            "coverage": 10
+            "title": "환율, 1330원대 중반서 횡보…美 물가 부담에 달러 강세 지속",
+            "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1ySTNVeWlvN0ZwdEVhRW9ORlp1SXprQ28xUTRSMk9PQm5vQi1sU2pUS2VOUE5OdmtUZjVqVGVGa0M4bW5mbW0tM3M5OGlqYllsLUZ4TVN1eGx1SzI4OHc?oc=5",
+            "press": "뉴스투데이",
+            "coverage": 8
           },
           {
-            "title": "원·달러 환율, 1337.6원…달러, 美 인플레이션 경계 속 강세",
-            "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE92SkN3a2ZxaWJCamVRMDVLaG10QVk3ckI5ZVpacFB2S1FfMmhmX0RzSXgxUUtQXzZzNzd1aDVmdnd2VTMySEg2VjhTcVlLaGJMTWZzblQtSVN6RDVQaEQ3OVZDYWpwZDdMYWxtLWFVSQ?oc=5",
-            "press": "조세일보",
-            "coverage": 7
+            "title": "캔자스시티 연은 총재 \"인플레 여전히 과열…연준 할 일 남아\" - 머니투데이",
+            "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1TUXdSSERxOVo3NGJUU0lnM0FOVGJ1YWJkakQzMllmY3hLT2ZVVV9yWHNtU2NqeHRiUEM0SUNhWWVWM0lzWkhlQTdUclFJeElIcG5EOUU4ZGlldlAwVnVOUUVXSlc5eDQ3Q1hhaVFobTBXWXZrbGfSAXtBVV95cUxPcFhCTEx0TGlCSDhnc3lCdV9MUDAtZXV0ZEhWTkZIcVlTbzc0dERuWDZfRm4yRFM5TnVWVzNZQjlvaHhBNWpWRUlhM3VtcGVRUVVuNlI1d0tpcFFSd0dHYkFrb2J6cE5QeU93YkJaTk13enlpM1haNUhvRzQ?oc=5",
+            "press": "머니투데이",
+            "coverage": 5
           }
         ],
-        "level": "변동 큼",
+        "level": "주목",
         "texts": {
           "conservative": {
-            "headline": "환율 변동과 연준 인플레 경고 속 한은 금통위 대기",
-            "insight": "원/달러 환율이 1,335.74원(-1.98%)을 기록하고 캔자스시티 연은 총재의 인플레이션 경고 및 달러 강세 보도가 잇따르고 있습니다. 70% 비중을 차지하는 핵심 바구니인 만큼 11월 26일 예정된 한국은행 금통위와 연준 통화정책 관련 흐름을 정밀하게 살필 필요가 있습니다.",
-            "check": "원/달러 환율 동향과 11/26 한국은행 금통위 일정에 따른 안전자산 변동성을 점검합니다.",
+            "headline": "70% 비중의 안전자산, 환율 및 금통위 중심 점검",
+            "insight": "연준 총재의 인플레 과열 경고와 원/달러 환율(1,334.98원) 횡보 속에서 높은 비중을 차지하는 안전자산의 변동성 관리가 중요합니다. D-10일 남은 한국은행 금통위의 통화정책 방향을 주시할 필요가 있습니다.",
+            "check": "원/달러 환율 추이 및 D-10 한국은행 금통위 결정 방향을 확인합니다.",
             "textBy": "ai"
           },
           "standard": {
-            "headline": "환율 하락과 미 연준 매파 발언 동향",
-            "insight": "원/달러 환율 1,335.74원 도달 및 연준의 인플레이션 경계 발언이 지속되고 있습니다. 30% 비중을 구성하는 안전자산 영역에서 11/26 한은 금통위를 앞둔 금리 및 환율 변동에 유의합니다.",
-            "check": "원/달러 환율 추이와 11/26 한은 금통위 관련 외환시장 신호를 점검합니다.",
+            "headline": "환율 횡보 및 연준 발언 속 안전자산 추이 관망",
+            "insight": "원/달러 환율이 1,334.98원을 기록하고 연준의 인플레 경고가 지속되는 상황에서 30% 비중의 안전자산 현황을 파악할 필요가 있습니다.",
+            "check": "원/달러 환율 횡보세 지속 여부와 D-10 한국은행 금통위 일정을 확인합니다.",
             "textBy": "ai"
           },
           "aggressive": {
-            "headline": "환율 변동과 연준 발언의 제한적 영향",
-            "insight": "원/달러 환율 변동(-1.98%)과 연준의 인플레이션 언급이 있으나, 10% 최소 비중인 안전자산이 포트폴리오 전체에 미치는 영향은 적습니다. 11/26 한은 금통위 일정을 참고 수준으로 확인합니다.",
-            "check": "11/26 한은 금통위 일정 및 원/달러 환율 변동을 단순 확인합니다.",
+            "headline": "10% 비중으로 환율 및 금통위 영향 포트폴리오 내 제한적",
+            "insight": "원/달러 환율(1,334.98원) 변동과 한국은행 금통위 D-10일 일정이 있으나, 10% 낮은 비중으로 포트폴리오 전체 영향은 제한적입니다.",
+            "check": "D-10 한국은행 금통위 통화정책 결정 회의 일정을 확인합니다.",
             "textBy": "ai"
           }
         }
@@ -394,7 +391,7 @@
         "name": "시장 추종",
         "target": 40,
         "icon": "📊",
-        "role": "국내·해외 지수 ETF·분산 펀드로 시장 수익을 따라가는 바구니",
+        "role": "국내·해외 지수 ETF·분산 펀드로 시장 수익을 따라가는 자산군",
         "market": [
           {
             "name": "코스피",
@@ -428,36 +425,36 @@
         ],
         "news": [
           {
-            "title": "엔비디아 실적·앤트로픽 상장 겹친다…뉴욕증시 'AI 빅위크'",
-            "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9mNDRqTmtCNzU2aGFlbTNuanVDTnNRY2VndnZNZ1FRdVRYdjB1OXpmY3pRWk5nM0dLTUtHQmVQcjNUQ1ZCZGl3SUxtUmQ4cFlBOWlYZXpUeEpXbGZEbzNGNmVuUkxfcHY0?oc=5",
-            "press": "www.ebn.co.kr",
+            "title": "엔비디아 실적, 앤트로픽 상장에 쏠린 눈...코스피 방향 가른다",
+            "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9oYUtYUlpsNFpPb1FZNTZFU0VfZVc1M2YxYW83cEt4VmhsaHZrMGFjWkhUREo1UGxZN0ZXUmxTSllZd1I2OEdTNU5pV0ZYVGpELXRpQmhPS09tRGRyb2VuMU5hVEtkdk1id1E?oc=5",
+            "press": "비즈워치",
             "coverage": 16
           },
           {
-            "title": "美 연준 \"AI 열풍에 자산 고평가\"…3조달러 인프라 빚 폭탄 '경고'",
-            "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1OSjMzX182RUlWVkx5MWNBbkhzYjBNWTA2QnExMmlWWWFnZjF1OVpRQUE2NHRwS21SWS1id1BGcmJNM0E3V0FQQnZpYlBKQnlfdHVmZ18wWEhlUmlPZmh5Qw?oc=5",
-            "press": "아시아경제",
-            "coverage": 8
+            "title": "한투운용 ACE 美대표지수 채권혼합형 ETF 2종, 올해 자금유입 1조 돌파",
+            "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBEdno5QWJELW1rRVpZOE1mVjNuSmxMaWVpakYzY1NXVGcwaHRCZUhPSmxWdFZuRXFtbnZocExWVUxDR2lqcEVoQ0dlOXhJcFBQbkE?oc=5",
+            "press": "매일경제 마켓",
+            "coverage": 10
           }
         ],
         "level": "주목",
         "texts": {
           "conservative": {
-            "headline": "미·국내 주요 지수 약세 및 AI 과열 경고",
-            "insight": "코스피(-0.98%)와 나스닥(-0.91%) 등 지수가 하락하고 연준의 AI 자산 고평가 경고가 발표되었습니다. 전체 포트폴리오 내 20% 비중으로 영향은 제한적이나 11/20 미국 옵션 만기일과 엔비디아 실적 일정을 관망합니다.",
-            "check": "11/20 미국 옵션 만기일 및 주요 지수 하락 추이를 점검합니다.",
+            "headline": "지수 하락세나 20% 비중으로 포트폴리오 영향 제한적",
+            "insight": "코스피(-0.98%) 및 나스닥(-0.91%) 하락과 D-4 미국 옵션 만기일 일정이 있으나, 20% 비중 수준에서는 포트폴리오 전체 영향이 다소 제한적입니다.",
+            "check": "D-4 미국 월물 옵션 만기일과 엔비디아 실적 이슈를 확인합니다.",
             "textBy": "ai"
           },
           "standard": {
-            "headline": "지수 약세와 연준의 AI 자산 고평가 경고",
-            "insight": "코스피(-0.98%), 나스닥(-0.91%) 하락과 더불어 연준의 3조 달러 AI 인프라 빚 경고가 발표되었습니다. 40%의 비중을 차지하는 시장 추종 바구니 특성상 엔비디아 실적과 11/20 미국 옵션 만기일에 따른 시장 동향을 주시해야 합니다.",
-            "check": "11/20 미국 옵션 만기일 및 연준 경고에 따른 글로벌 지수 변동성을 점검합니다.",
+            "headline": "주요 지수 약세와 옵션 만기일 앞두고 변동성 주시",
+            "insight": "코스피(-0.98%)와 나스닥(-0.91%)의 동반 약세 및 D-4 미국 옵션 만기일 도래는 40% 비중의 시장 추종 자산에 변동성 요인으로 작용합니다.",
+            "check": "엔비디아 실적 발표와 D-4 미국 월물 옵션 만기 영향을 확인합니다.",
             "textBy": "ai"
           },
           "aggressive": {
-            "headline": "글로벌 지수 하락과 AI 빅위크 변동성",
-            "insight": "나스닥(-0.91%), 코스피(-0.98%) 약세 속에 엔비디아 실적과 앤트로픽 상장 이슈가 중첩되어 있습니다. 40% 비중의 핵심 바구니로서 연준의 AI 자산 고평가 경고와 11/20 미국 옵션 만기일 영향도를 점검합니다.",
-            "check": "연준의 자산 고평가 경고 속 11/20 미 옵션 만기일 전후 지수 추이를 점검합니다.",
+            "headline": "미 옵션 만기 및 지수 하락에 따른 시장 방향성 점검",
+            "insight": "나스닥(-0.91%)과 코스피(-0.98%) 지수 약세 속에 40% 비중의 시장 추종 자산은 D-4 미국 옵션 만기일과 엔비디아 실적 결과에 영향을 받습니다.",
+            "check": "D-4 미국 월물 옵션 만기일과 주요 지수 변동 추이를 확인합니다.",
             "textBy": "ai"
           }
         }
@@ -467,7 +464,7 @@
         "name": "초과 수익",
         "target": 30,
         "icon": "🚀",
-        "role": "개별 종목·테마·원자재·대체투자로 추가 수익을 노리는 바구니",
+        "role": "개별 종목·테마·원자재·대체투자로 추가 수익을 노리는 자산군",
         "market": [
           {
             "name": "필라델피아 반도체",
@@ -489,49 +486,49 @@
             "title": "한은, 금 ETF 41% 늘렸는데…금값 부진에 평가액 325억 원 감소",
             "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQM2IwbkxUMEQybFE4cXF1LWpQQm42Mm5BVF9oYU5OamtFcVBVV25aRW9sME9RanVMdVdrVnF6V3MwX3kydXZ6SDA0NmdBdkNhVERmRmtwSF9tRjhwRzhMUG9DSEZxcjQwUWxBN1hiSExSR3M5SWhfVnJsanhVOGlFYUFDU0RCYWdLNmc?oc=5",
             "press": "글로벌이코노믹",
-            "coverage": 4
+            "coverage": 7
           },
           {
             "title": "국제금값 3900달러 공방…추가 하락 경계",
             "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPY0JDT3ZxTExRLTBvYWxIMHdGckRLbzhSME1KNjJRemI3OFZkRF9JRmQxTk42WnVtVVNTT3RsZnRldWxvM2UzMGhGczVjTkZkSUFvNmtYZUtiWmpGUk1ta3RJOG9YeEF1N19ybEE0b2c0dm95VWlrdlZTUHh2M1pJQmlNSTgzTjJ4?oc=5",
             "press": "글로벌이코노믹",
-            "coverage": 2
+            "coverage": 3
           }
         ],
         "level": "변동 큼",
         "texts": {
           "conservative": {
-            "headline": "반도체·금값 부진에도 포트폴리오 영향 제한적",
-            "insight": "필라델피아 반도체 지수가 3.43% 하락하고 국제 금값이 3,900달러 선에서 부진을 보이고 있습니다. 다만 10%의 낮은 비중으로 인해 전체 포트폴리오에 미치는 파급력은 미미한 수준입니다.",
-            "check": "11/18 삼성전자 IR과 국제 금값 시세 흐름을 단순 확인합니다.",
+            "headline": "반도체 급락에도 10% 비중으로 전체 영향 극히 제한적",
+            "insight": "필라델피아 반도체 지수(-3.43%) 급락 및 국제 금값 부진 이슈가 존재하지만, 10% 낮은 비중으로 인해 전체 포트폴리오에 미치는 영향은 극히 ограничен적입니다.",
+            "check": "D-2 삼성전자 IR 일정 및 반도체 지수 변동을 확인합니다.",
             "textBy": "ai"
           },
           "standard": {
-            "headline": "반도체 지수 급락 및 금 평가손실 우려",
-            "insight": "필라델피아 반도체 지수가 10,146.32(-3.43%)로 급락하고 금값 하락에 따른 한은의 금 ETF 평가액 감소 소식이 전해졌습니다. 30% 비중인 초과 수익 바구니의 리스크 관리를 위해 11/18 삼성전자 IR 등 개별 이슈 조사가 필요합니다.",
-            "check": "11/18 삼성전자 IR 발표 내용과 필라델피아 반도체 지수의 추가 변동을 점검합니다.",
+            "headline": "반도체 지수 약세 및 금값 부진에 따른 영향 모니터링",
+            "insight": "필라델피아 반도체 지수(-3.43%) 하락과 금 부진에 따른 평가액 325억 원 감소 이슈는 30% 비중의 초과 수익 자산 변동성에 직접 반영될 수 있습니다.",
+            "check": "D-2 삼성전자 IR 및 국제 금값 3,900달러 공방 흐름을 확인합니다.",
             "textBy": "ai"
           },
           "aggressive": {
-            "headline": "반도체 -3.43% 급락 및 금값 부진 집중 점검",
-            "insight": "필라델피아 반도체 지수가 -3.43% 급락하고 국제 금값이 3,900달러 선 공방을 벌이는 등 변동성이 확대되었습니다. 포트폴리오의 50%를 차지하는 최대 비중 바구니이므로 11/18 삼성전자 IR과 원자재 및 반도체 섹터의 신호를 밀착 확인해야 합니다.",
-            "check": "필라델피아 반도체 지수 급락(-3.43%) 및 11/18 삼성전자 IR 상세 내용을 점검합니다.",
+            "headline": "반도체 지수 -3.43% 급락 및 금값 부진 핵심 점검",
+            "insight": "50%의 가장 큰 비중을 차지하는 초과 수익 자산 특성상 필라델피아 반도체 지수(-3.43%) 급락과 금값 부진(평가액 325억 원 감소)은 핵심 점검 요인입니다.",
+            "check": "D-2 삼성전자 IR 발표 및 필라델피아 반도체 지수의 추가 변동을 확인합니다.",
             "textBy": "ai"
           }
         }
       }
     ],
     "rebalance": {
-      "conservative": "오늘 안전자산(70%) 바구니의 시장 변동이 커서, 안전 추구형 기준 비중(70:20:10)에서 벗어났을 수 있습니다. 허용 범위 이탈 여부를 점검하세요.",
-      "standard": "오늘 안전자산(30%)·초과 수익(30%) 바구니의 시장 변동이 커서, 표준형 기준 비중(30:40:30)에서 벗어났을 수 있습니다. 허용 범위 이탈 여부를 점검하세요.",
-      "aggressive": "오늘 초과 수익(50%) 바구니의 시장 변동이 커서, 공격형 기준 비중(10:40:50)에서 벗어났을 수 있습니다. 허용 범위 이탈 여부를 점검하세요."
+      "conservative": null,
+      "standard": "오늘 초과 수익(30%) 자산의 시세 변동이 커서, 표준형 기준 비중(30:40:30)에서 벗어났을 수 있습니다. 허용 범위 이탈 여부를 점검하세요.",
+      "aggressive": "오늘 초과 수익(50%) 자산의 시세 변동이 커서, 공격형 기준 비중(10:40:50)에서 벗어났을 수 있습니다. 허용 범위 이탈 여부를 점검하세요."
     },
     "taxNews": [
       {
-        "title": "'서울 집값이 상속세율 선호에 미치는 영향, 연구 결과는?'",
-        "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBUZ1ktd3NySkQ5ZDBfWmpOUmRsN25OY3I5T0VFUFV2RTc2RXlndnV3SW5jYjUtQkNEbFotZjBTTjBXOTdoa0pXS2RzY25NYU5FRkEzR25RNlZmQ29LOFBick9KMldFTWRk?oc=5",
-        "press": "공감신문",
-        "coverage": 3
+        "title": "“서울 집 있으면 상속세 낮게”…순자산 비슷해도 세율 선호에 차이",
+        "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE0wNl9YY3pIWUx1dEt5V3FaQ1g3ZUVzU1ZxT21mNEJXMVBGa2c1cjl4SDdDSzcwLWZIUWlSY0hRXzRKS0U3VlpNYW9hY2c3UTRrVkVEWUZWRERVV2NROE90SWIxWGQ?oc=5",
+        "press": "서울경제TV",
+        "coverage": 4
       }
     ]
   }
