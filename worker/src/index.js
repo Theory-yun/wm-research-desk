@@ -22,11 +22,15 @@ const json = (req, env, body, status = 200, extra = {}) =>
 
 /* ============================== 정시 실행 ============================== */
 // Cloudflare 예약(cron) → GitHub Actions 워크플로 실행 요청. 토큰: DISPATCH_TOKEN (이 저장소 Actions 쓰기 권한만)
-const SCHEDULE_TO_WORKFLOW = {
-  "30 21 * * SUN,MON,TUE,WED,THU": "briefing-morning.yml",
-  "0 7 * * MON,TUE,WED,THU,FRI": "briefing-evening.yml",
-  "55 07 * * *": "diagnose-gemini.yml", // 임시: 정시 실행 연결 시험
-};
+// 예약 시각(UTC)으로 어떤 브리핑인지 판단 — cron 문자열 표기 차이에 영향받지 않게
+function workflowForTime(ts) {
+  const d = new Date(ts);
+  const h = d.getUTCHours();
+  if (h === 21) return "briefing-morning.yml"; // 한국 06:30
+  if (h === 7 && d.getUTCMinutes() < 30) return "briefing-evening.yml"; // 한국 16:00
+  if (h === 8) return "diagnose-gemini.yml"; // 임시: 정시 실행 연결 시험
+  return null;
+}
 const REPO = "Theory-yun/wm-research-desk";
 
 async function dispatchWorkflow(env, workflow) {
@@ -58,7 +62,8 @@ async function dispatchWorkflow(env, workflow) {
 
 export default {
   async scheduled(event, env, ctx) {
-    const wf = SCHEDULE_TO_WORKFLOW[event.cron];
+    const wf = workflowForTime(event.scheduledTime);
+    console.log(`[정시 실행] cron="${event.cron}" → ${wf ?? "(대상 없음)"}`);
     if (wf) ctx.waitUntil(dispatchWorkflow(env, wf));
   },
 
