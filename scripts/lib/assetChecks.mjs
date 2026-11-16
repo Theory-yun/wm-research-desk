@@ -153,7 +153,7 @@ export async function buildAssetChecks({ edition, market, stories, dataDir }) {
   for (const m of ALLOCATION_MODELS) {
     const hit = cards.filter((c) => c.level === "변동 큼" && m.ratios[c.key] >= 20);
     rebalance[m.key] = hit.length
-      ? `오늘 ${hit.map((c) => `${c.name}(${m.ratios[c.key]}%)`).join("·")} 자산의 시세 변동이 커서, ${m.name} 기준 비중(${ratioText(m)})에서 벗어났을 수 있습니다. 허용 범위 이탈 여부를 점검하세요.`
+      ? `직전 거래일 ${hit.map((c) => `${c.name}(${m.ratios[c.key]}%)`).join("·")} 자산의 시세 변동이 커서, ${m.name} 기준 비중(${ratioText(m)})에서 벗어났을 수 있습니다. 허용 범위 이탈 여부를 점검하세요.`
       : null;
   }
 
