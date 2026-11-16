@@ -1,6 +1,6 @@
 {
   "note": "curated=true 는 PB가 고른 연례 핵심 리포트(고정), 나머지는 scripts/build-insights.mjs가 매일 자동 수집합니다.",
-  "updatedAt": "2026-11-15T22:40:46.650Z",
+  "updatedAt": "2026-11-16T10:25:06.617Z",
   "categories": [
     "글로벌 F/O 동향",
     "국내 부자·웰스 리포트",
@@ -122,6 +122,32 @@
     {
       "stars": "★★★★☆",
       "category": "자산배분·시장 전망",
+      "title": "LGT 웰스 매니지먼트, 시장 매도세 이후 위험 노출 확대",
+      "desc": "시장 매도세 이후 자산운용사의 리스크 익스포저 조정 동향입니다.",
+      "org": "InvestorDaily",
+      "date": "2026.11.16",
+      "ts": 1794813573000,
+      "btnText": "🔗 원문 보기",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOLWNQVmtHZm5JQ2JaNUNVZUdNLXF1dzRQOEFRMjVTT08xdUZmMjdKdWRWVHpzOGcteXZuM09fVWY2S2VjMEMxT2FFVTFqai1acHRlT3l2NldnZlpDODVWWmp5MW53cWZBMGoxakl3dEJUQk10aGhENnh2U0J6SzFQOE5qd1JKUk1KZVdObnhTSXRLVGE0UWYzSDRCM29aUQ?oc=5",
+      "lang": "en",
+      "classifiedBy": "AI(gemini-3.5-flash-lite)"
+    },
+    {
+      "stars": "★★★★☆",
+      "category": "자산배분·시장 전망",
+      "title": "모건 스탠리, 2027년 미국 주식 낙관… S&P 500 목표치 8,700으로 상향, 15% 상승 여력 시사",
+      "desc": "모건 스탠리의 2027년 미국 주식 시장 자산배분 전망 및 지수 목표 상향 조정입니다.",
+      "org": "BigGo Finance",
+      "date": "2026.11.16",
+      "ts": 1794801300000,
+      "btnText": "🔗 원문 보기",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5IYUpMUGRVRm1WVWdka1VFbGpsVXQ1Zmg0enhqX1hOWm5HcFdSaFNnTE8yNG5fdE0wM0xSZ0p4ckxmc25laHFTRk10allOMlJrc2xJN0M1S0hUQlFiNWtOVlZpa1hsMDNJUUs0bTYxUkFiZklweHc?oc=5",
+      "lang": "en",
+      "classifiedBy": "AI(gemini-3.5-flash-lite)"
+    },
+    {
+      "stars": "★★★★☆",
+      "category": "자산배분·시장 전망",
       "title": "[마켓스토리] 롤러코스터 탔던 올해 코스피…내년 투자 전략은?",
       "desc": "국내 주식시장의 연간 흐름을 복기하고 다가오는 해의 국내 증시 투자 전략을 세우는 데 도움을 줍니다.",
       "org": "연합뉴스",
@@ -238,6 +264,19 @@
     },
     {
       "stars": "★★★★★",
+      "category": "승계·세무·신탁",
+      "title": "10년 버티고 카페 물려주던 시대는 끝?…가업승계 증여 ‘20년’으로 강화",
+      "desc": "가업승계 증여 요건이 20년으로 강화되는 세법·제도 변화를 다룹니다.",
+      "org": "세정일보",
+      "date": "2026.11.12",
+      "ts": 1794435506000,
+      "btnText": "🔗 원문 보기",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBsUjRXY3lHU0tkckthUDZCNVJSbnd0RDNZWEJqQjFfenhpVmVhb2ZhajZPX1FjVTEzbzRYQmVvTGdPbjZUQ1BScHFLdmdCRW8tWW9SUTlGYVhFSEZYdWMzNGdSX2p0MVB6UGhDSg?oc=5",
+      "lang": "ko",
+      "classifiedBy": "AI(gemini-3.5-flash-lite)"
+    },
+    {
+      "stars": "★★★★★",
       "category": "자산배분·시장 전망",
       "title": "신한투자증권, 2027년 금융시장 전망 공개…“AI 성장보다 실질 수익성 주목”",
       "desc": "AI 섹터의 실질 수익성 검증을 강조한 시장 전망으로 리스크 관리 중심의 투자 조언에 유용합니다.",
@@ -246,6 +285,19 @@
       "ts": 1794382723000,
       "btnText": "🔗 원문 보기",
       "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFB3TlJlcG1SVnFZZTVnNnBYa0tIUkEtakNEMzdVOF9WX0s5TFUyRmZxWVF0NTUzblB5ZDFjWXBzRWtZNmZ0eWdBRV9SMUJ2M29EcHE5VUhqdjBGN2FhMHVLNXJvX0I1TDUweW1kRA?oc=5",
+      "lang": "ko",
+      "classifiedBy": "AI(gemini-3.5-flash-lite)"
+    },
+    {
+      "stars": "★★★☆☆",
+      "category": "글로벌 F/O 동향",
+      "title": "비트멕스, 몬테레이 패밀리 오피스 & 투자자 서밋 2026 에메랄드 스폰서로 선정",
+      "desc": "패밀리오피스 및 투자자 서밋 행사 관련 글로벌 동향입니다.",
+      "org": "Traders Union",
+      "date": "2026.11.11",
+      "ts": 1794331463000,
+      "btnText": "🔗 원문 보기",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQSlBrYkVlWFRZZ2w5cmJhT1FybHBsMU5XcDczbDJBVnJETXF0SGhNQ2l0S3cxVFhjbUlGZm5NWFZkZU03YzlUYWQyMHVJOWJxTktDNUtCZWNJSmhFc3o0RXIwQ214Y0JRaHEyb3dFaEZ6el9QS2NYbkVmZFhsaExNQm5zVFhBSFV1MXduSDZic3YwSnZESWhhajZDM2UxX2E5UExqS21R?oc=5",
       "lang": "ko",
       "classifiedBy": "AI(gemini-3.5-flash-lite)"
     },
@@ -273,6 +325,19 @@
       "btnText": "🔗 원문 보기",
       "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9oS055MzhyRUhETUxfYTNPVGNQSnlXcWpTaF9vV0p0WEg4MTlnZmF6dHdRN3FCbGViVWM0Z3JJdE95Y3h1X3paWnJtdVM1SzZsRTFRdDZLWUpNU3hJUlJwZ0NxOFBOSHFTNTZ1V3BmZVUtUQ?oc=5",
       "lang": "ko",
+      "classifiedBy": "AI(gemini-3.5-flash-lite)"
+    },
+    {
+      "stars": "★★★★☆",
+      "category": "글로벌 F/O 동향",
+      "title": "2026 가을 프라이빗 웰스 전망",
+      "desc": "초고액자산가 자산관리 및 프라이빗 웰스 부문의 시즌별 전망입니다.",
+      "org": "Markets Group",
+      "date": "2026.11.10",
+      "ts": 1794273990000,
+      "btnText": "🔗 원문 보기",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOVFNvMUVHQk53b1RKdFF6SVFCVHMwSGFqNVFpeFppa2tBSkxsdWJITVoxSU56NktaYWFpeERmTlJCcWdxZ1loVFRhMFJha3RWZnRTU2ZYYzhGTkwtd3BKbUJRamJvMDkxUUJYdUpNM0JLRVBzWEpHbTZEaS12TlhUNGw3ZUFoVWNp?oc=5",
+      "lang": "en",
       "classifiedBy": "AI(gemini-3.5-flash-lite)"
     },
     {
@@ -325,6 +390,19 @@
       "btnText": "🔗 원문 보기",
       "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9EMlp4Rl9kcHpRV3B1bXFFQVVNYVcwZzdHNmU3VndMU2RFdlRtNTBkNkpsUFZmd2hJN2laZFlmZlRlYXZhUzFPMmw3UGM1ajdQU3dfd3d3TFlrbHRSb0NQU0llbTFZSG1wckE?oc=5",
       "lang": "ko",
+      "classifiedBy": "AI(gemini-3.5-flash-lite)"
+    },
+    {
+      "stars": "★★★★☆",
+      "category": "글로벌 F/O 동향",
+      "title": "국제 프라이빗 뱅크: 패밀리오피스 포럼 2026 - JP모간 프라이빗 뱅크",
+      "desc": "JP모간 프라이빗 뱅크가 참여하는 패밀리오피스 포럼 관련 글로벌 동향입니다.",
+      "org": "J.P. Morgan Private Bank",
+      "date": "2026.11.07",
+      "ts": 1794032360000,
+      "btnText": "🔗 원문 보기",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQQmFubV9WbEZCaHdYU3U4aTBMZ2l2dEVXTE1QZUVpb19UUGJYTmFEODlvUkg3Z2JQdG1Kb3IyLUtKS0dmOXd3bk5sQmZwNmtlaTV4Y25WNE1OZjNFY3FycGltZzg5dUlJYnFRNVMxOEwzN0R6ZXpXRGRqSXpWcXJpSmJOakhJYUNtYzY4TWIwMS1QWjJtTjVFOERPTWNoN01kQkE?oc=5",
+      "lang": "en",
       "classifiedBy": "AI(gemini-3.5-flash-lite)"
     },
     {
@@ -446,14 +524,14 @@
     },
     {
       "stars": "★★★★☆",
-      "category": "글로벌 F/O 동향",
-      "title": "연준의 새로운 부의 보고서에서 가장 충격적인 내용 고등학교 졸업장 없는 가족들의 중위 순자산 55퍼센트 감소",
-      "desc": "연준의 자산 보고서를 통해 계층별 자산 및 순자산 변동 추이를 분석한 내용입니다.",
-      "org": "Yahoo Finance",
+      "category": "국내 부자·웰스 리포트",
+      "title": "연방준비제도 새 부의 보고서에서 가장 충격적인 한 줄: 고등학교 학력이 없는 가족들의 평균 순자산이 55% 감소했다",
+      "desc": "연방준비제도의 부의 보고서 통계 데이터를 통한 계층별 자산 변화 분석입니다.",
+      "org": "24/7 Wall St.",
       "date": "2026.11.02",
       "ts": 1793606400000,
       "btnText": "🔗 원문 보기",
-      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNdTVyY0g4TjFvUi01SURqTlBUR0gyQlRCQkhOYnY0cHRXQ0ZYamNLUXU2Y2RBa1c5M3hXbnlKSlF1bTQ5NjV6WFE0VUFUYlVETUM0TzI3TFVCem96Qm9CWHBfLXBmUXZzMVFQd1poVlFKYXd3VE9Pa3FEcHVMRUtUY3BTLUNJNmNvLTl5aTBoQ0s?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxNdGdWTE5GV3VkZnZhUzlnYUtneEh1RERka2xFQThmVGIyRmR1OFhPLTF1NWwtRzdLMTA1NWtzaWU2N1V4SUhXMENhUHItWjVXM3U1SGxVSW1Bbm9hWjhVUFIzY0pObm1aUUh4X2thdUZQMkhPd0lTbFZwM0M4aGl2RFRyZmxVRzdmQnpkZHZPYkN6cG9VVmR3c0F3WmlBZDY5TEFoTWRheVI2dHQ3WEdSeHBCRzFVTWdpZ0tkd055YlphOFhyWDViaDAzN0s3WEpPbG1NWmlfQ1Q5QkltSFhyeE5Kem1IY19mb0psQmZjdWQzWnNMeFZ4VDIxMXNXdVg2VlJRTEJZNXc?oc=5",
       "lang": "en",
       "classifiedBy": "AI(gemini-3.5-flash-lite)"
     },
@@ -575,6 +653,19 @@
       "classifiedBy": "AI(gemini-3.5-flash-lite)"
     },
     {
+      "stars": "★★★★☆",
+      "category": "대체투자·사모시장",
+      "title": "CNBC | 투자자들이 버블을 논하는 동안 사모펀드가 국방 기술에 수십억 달러를 쏟아붓고 있다",
+      "desc": "방산 기술 분야로 향하는 사모펀드 대체투자 시장 동향입니다.",
+      "org": "White & Case LLP",
+      "date": "2026.10.26",
+      "ts": 1792998000000,
+      "btnText": "🔗 원문 보기",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNR01Ga28zbDRjbnVWNER3SWFacllPWk9FbDJRRERDQ2tIblFTcjdDcWRqcGtEX2hqSXBfV010Tno1N1V6UXE3QUN1SDBOTnRnU21jMlN4eVFfUUNnVTBoM2Uzb3g0T2I5dzU4ai01SE04WXB4akdZcU1uM09PSVBFY0NiSlA4ZGxQd09xc2p1RjRaMW81MFJQNUt4amJUWFp6WkRGcGVpRl9fRFRH?oc=5",
+      "lang": "en",
+      "classifiedBy": "AI(gemini-3.5-flash-lite)"
+    },
+    {
       "stars": "★★★☆☆",
       "category": "글로벌 F/O 동향",
       "title": "중동 기반 패밀리오피스 글로벌 사모투자 책임자 임명",
@@ -584,6 +675,19 @@
       "ts": 1792998000000,
       "btnText": "🔗 원문 보기",
       "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNeGFpRTRTTE9TZnB6NzgwX3R3eHFISjMzUWdLRDNDSXRDMnN0a3YyU245bWdJWlB0ZEJwaHBUdmZvVEFOSldocC1GLTJDQi1WblBndEo4SFVzNlN4R1REYVp6cFVIU2xkSENHWEJHeVNkSndKWTlXNjVEeTJBUGpaUmtHd1dzcDdZWmh1alVOQUpvQ0l2MTA4WW9wbmxpdXFMcURpU1o0bXRURFYwRVpXWjFRYTJxeTNndWc?oc=5",
+      "lang": "en",
+      "classifiedBy": "AI(gemini-3.5-flash-lite)"
+    },
+    {
+      "stars": "★★★★☆",
+      "category": "글로벌 F/O 동향",
+      "title": "패밀리오피스 딜 메이킹: 신뢰가 실사를 대신할 때, 실제로 누가 책임을 지는가?",
+      "desc": "패밀리오피스 투자 집행 시 신뢰와 실사 책임에 관한 글로벌 인사이트입니다.",
+      "org": "Crain Currency",
+      "date": "2026.10.23",
+      "ts": 1792738800000,
+      "btnText": "🔗 원문 보기",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQWWNYaDN6Q2hKMEtZMFJaT0ZMSGRNdnUtM2xndjFLMzdfOWxod2F5UE1ZVzF2cW9kdmk1M3hhUUtiRnk3NkgtUTNWYWxQTHpjVW54VFZqeW5vLUFjVTNBUVkySnFwVFMyUG54ZTJFcFFsNm1CZ01vb2V1OTJyZjdBMXRpb3pSOTNPeTM3NkJB?oc=5",
       "lang": "en",
       "classifiedBy": "AI(gemini-3.5-flash-lite)"
     },
@@ -640,6 +744,19 @@
       "classifiedBy": "AI(gemini-3.5-flash-lite)"
     },
     {
+      "stars": "★★★★☆",
+      "category": "글로벌 F/O 동향",
+      "title": "차세대 리더가 패밀리오피스를 재편하고 있다 – 뱅크 오브 아메리카",
+      "desc": "뱅크 오브 아메리카가 분석한 패밀리오피스 차세대 리더 관련 동향입니다.",
+      "org": "Family Wealth Report",
+      "date": "2026.10.22",
+      "ts": 1792652400000,
+      "btnText": "🔗 원문 보기",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNRFdFR0M5cnJybjEyeHh5VkhOcllCMzNsTjVybXdzNEZBWkN3RmlmbmQtaUVCQWVDQkhadFhITHVmRjVhangxVUNoc2pWdGp1V2RVUDM3bERXQTdsR1duWVdKNTZ1Y053blpmRmFGdGR2NjFydlV5XzRIbmplOGIxNVQ4bjRGY1dLbzFJYUU3Z2QyLXNoQ2kybGVxSUdnYTR4T1VnNXo1QUg3b1dJOGxqQlhOZDlJLXc?oc=5",
+      "lang": "en",
+      "classifiedBy": "AI(gemini-3.5-flash-lite)"
+    },
+    {
       "stars": "★★★★★",
       "category": "자산배분·시장 전망",
       "title": "JP모건, 장기 자본시장 수익률 전망 상향 조정",
@@ -662,19 +779,6 @@
       "ts": 1792566000000,
       "btnText": "🔗 원문 보기",
       "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNQTc4NkpZNUJCS3dPQklxWG1MeERWQnlwek1EeEJNbkRMbHhoQ3lfaDFwM3Q2eURLaGJwZzlpWmdyRTNCR2VaWEE3UnVqSU9ZT2lfS2o1U24zVnM2WkV5Y0REWjlXbmlwaUpBYzRJOGh4V2NSRW9VOHViY0xNMkk1X0lHbWZDaVF0Nl9DbWxHNmRISTY1ZkNKYTl1ekRoSzRHc294REN3X2dybFluNnZ2SmRmMVdkaEh2OUwyVmoybjVuNHdFUWRsblhibkZPMHRUaE9YcXViUFJfeTcxVFYwUjlfdTJxZw?oc=5",
-      "lang": "en",
-      "classifiedBy": "AI(gemini-3.5-flash-lite)"
-    },
-    {
-      "stars": "★★★★★",
-      "category": "글로벌 F/O 동향",
-      "title": "뱅크오브아메리카 패밀리오피스 연구: 패밀리오피스를 재편하는 차세대",
-      "desc": "차세대 가업 승계자들이 글로벌 패밀리오피스의 성격과 운영 방식을 어떻게 바꾸고 있는지 분석한 연구입니다.",
-      "org": "The Cannata Report -",
-      "date": "2026.10.21",
-      "ts": 1792566000000,
-      "btnText": "🔗 원문 보기",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1vODMwRzh2SW1VUzhqWEpQamN2bkVNZHljYlZWSC1pck9aenBvQ2k5WVAyOVlFTHgyZXJOLUU4MG9Zc2l4Q0UwU3ZmY2ZQeEFFMVhVd0ZIQVhKZkN1MTRRcUY3djEzRGZ5NDlYRVFIRDRKNF9RV1dxOHlLYmt2dWM?oc=5",
       "lang": "en",
       "classifiedBy": "AI(gemini-3.5-flash-lite)"
     },
@@ -792,97 +896,6 @@
       "ts": 1792134000000,
       "btnText": "🔗 원문 보기",
       "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNU1dtd2h2YlVPQjRIYzJPaU9wUG5ydEJzcUZ6VUFPN2pZTl90SXl6cmZkeHUxbzRGM2VldHQxdWtuckdiUmZiNWQyTDJRZW1pa3ZXNUl3aVc3UGluMHYxM2kxX2phLXgxbWJLN3FWRjAyekZGZ2tzS1NFTDMxMTMzenY2dW9ZTHJqSy1icE80RC1TS25EVTBBdjJGMjZsSzhBY0E?oc=5",
-      "lang": "en",
-      "classifiedBy": "AI(gemini-3.5-flash-lite)"
-    },
-    {
-      "stars": "★★★★☆",
-      "category": "국내 부자·웰스 리포트",
-      "title": "하나증권, 패밀리오피스 첫 10개 가문 선정 초고액자산가 맞춤형 자산관리 강화",
-      "desc": "초고액자산가 맞춤형 자산관리 강화를 위한 패밀리오피스 가문 선정 및 서비스 현황을 보여줍니다.",
-      "org": "폴리뉴스 Polinews",
-      "date": "2026.10.13",
-      "ts": 1791874800000,
-      "btnText": "🔗 원문 보기",
-      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE56akh1QTBDU29qdjZnb2hZTElYMG1ac2V4MmZtU3dnN2lPTmctQ1J3Qk1lLWJWRWdmcFVNLXNnRjkzTGFjQUItT0VKNTNvVW5TTUFqbVZXYUJHX25aQXVLWWVuQWQ2X19FTV9lTEZn?oc=5",
-      "lang": "ko",
-      "classifiedBy": "AI(gemini-3.5-flash-lite)"
-    },
-    {
-      "stars": "★★★★☆",
-      "category": "대체투자·사모시장",
-      "title": "골드만 '사모대출 시장 어려움에도 대체투자 수요는 여전'",
-      "desc": "사모대출 시장의 환경 변화 속에서도 대체투자에 대한 지속적인 수요를 확인할 수 있는 동향입니다.",
-      "org": "KB Think",
-      "date": "2026.10.07",
-      "ts": 1791356400000,
-      "btnText": "🔗 원문 보기",
-      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9qMFRIMHAyWVNGTXlSbkI1a2w0OTNNSG5YOFI4VUl1a2xCUjJiN3RpNnBlcGxYeDZmcWZUQVhXTUI1VDdGal9rZlFtcnU1OWR0czNnWlN0V2hZeU1zRXlyVFBpZXY1V1ZpemdWRTZCMGphQQ?oc=5",
-      "lang": "ko",
-      "classifiedBy": "AI(gemini-3.5-flash-lite)"
-    },
-    {
-      "stars": "★★★★☆",
-      "category": "글로벌 F/O 동향",
-      "title": "인도 기업가 74% 해외 거주 계획, 싱가포르가 1위",
-      "desc": "인도 기업가의 해외 거주 및 이민 트렌드와 선호 국가 순위를 보여주는 조사 결과입니다.",
-      "org": "Business Standard",
-      "date": "2026.09.30",
-      "ts": 1790751600000,
-      "btnText": "🔗 원문 보기",
-      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOY2VRakZNNUdWNWcyN2ExczJQeDZmRmp0QVB0VjRPSzZwS0JKZHFJb09fMHZSOE51UDVrd3llQnlhNjlGRS13M0NlTjQ2S2xQaGhVMUcxaXR0RWNLYzctZ3pOYTdwWGN4X1hRYW0xcVFUNlZ4TXF0UWhmUDkxN2ZQRFozZ3I4TGNoQm5jXzVnZ1NjcGEySktYV2xWUTlBV0xlWVVUM1lQei1nMU1oV004TUU3cGFVUUEweHpheUQ5UU5wQnp6WXVqak9ZTnFPSUlybGdXcnkxMUVvZXFvaEhGQ09qb9IB6AFBVV95cUxOQ2hWZUItN1NPZGZnejNmRURMX2ppVDBZVzdaSExjcTBfbVJXNlZBUVBMWlUzTmhFWDFTNl9DYnEwR1VxTFljZUJISnB0c19LRUpIMTktNWNYWWsyNEpmRDZGT3ZZYjhCc290WDlxVmR4RHh3aV8zRm9KQmxMU09ueHRFMlRVX0o0Tmoxdm1aZkxLUXNUX29sUUxvVE9wLUVMeTA2OGl5bk1DTU1oaW5QbFh6V0tUdi0yMm1IX21nNXVidThjakNXaDk4MTFrMkdFSm1iODU2MXg5UE9HMEdBa1ZVUk90VlQ5?oc=5",
-      "lang": "en",
-      "classifiedBy": "AI(gemini-3.5-flash-lite)"
-    },
-    {
-      "stars": "★★★★★",
-      "category": "국내 부자·웰스 리포트",
-      "title": "글로벌 웰스 리포트 2026",
-      "desc": "전 세계 자산 및 부유층 동향을 거시적으로 파악할 수 있는 글로벌 자산관리 통계 보고서입니다.",
-      "org": "Allianz.com",
-      "date": "2026.09.29",
-      "ts": 1790665200000,
-      "btnText": "🔗 원문 보기",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQUGtwSHVNcVR0cHZSeThPLS1JOGxrcDFBNXZIUzFuVy0xTFJJUC1JMWNROEU3TUxkR2Z3ajdzVzdjQ01VUWRTQUtuUnhER0t2enVBWHJIaTZ1RVp4ZXNPVmplQ1htUVJuSnVFdl9mbWRVZ0MzRkhBaG40Z1llMm5aLUtEMjIwTVRIYmZYRmptenVQQkRkNXpDaFZWdndTVkRSclFHeVRqQQ?oc=5",
-      "lang": "en",
-      "classifiedBy": "AI(gemini-3.5-flash-lite)"
-    },
-    {
-      "stars": "★★★★★",
-      "category": "글로벌 F/O 동향",
-      "title": "대규모 부의 이전이 도래하고 있다 – 다만 그 누구도 예상하지 못한 방식으로",
-      "desc": "예상과 다른 양상으로 전개되는 글로벌 대규모 부의 이전 현상을 다룬 리포트입니다.",
-      "org": "Family Wealth Report",
-      "date": "2026.09.25",
-      "ts": 1790319600000,
-      "btnText": "🔗 원문 보기",
-      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQNk1oNzg2aHVMazV1SHZ2TkJTcGt0RlFfX2IxMVY3OHBBb0VUNndpbi1vam96R0R1dF9oVEY3RGxZajFtd05PYzJ2QVRQemI4RmNMS3c4UTRlc2dFbWhRV05vck1yVUxkNVpLOWZ0b1RGUU9DeVBRUjBRdDlvbzFLVXhCT0Y0bzI2ZmN6SFVJZGFwVEhSOXE5OEdwd3pId2FaN2N3czN0UGxwMWhWR0xpM2NQTDVSaEEtMHFaY0UwQk9PWGpvZS16WnFLNXFjQjN5d1FJ?oc=5",
-      "lang": "en",
-      "classifiedBy": "AI(gemini-3.5-flash-lite)"
-    },
-    {
-      "stars": "★★★★★",
-      "category": "국내 부자·웰스 리포트",
-      "title": "2026년 글로벌 기업가 자산 보고서 (Ipsos)",
-      "desc": "Ipsos가 발표한 2026년 글로벌 기업가 자산 보고서로 초고액자산가 가문 트렌드를 파악할 수 있습니다.",
-      "org": "Ipsos",
-      "date": "2026.09.25",
-      "ts": 1790319600000,
-      "btnText": "🔗 원문 보기",
-      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBHUXZVYWFoVVhVenFrLTljWGVieWg4Tm04RE1DeW5ZVHYzR2k5dUFjUTQ0N3E5NmNuR0g4MXU4WURSbGd5dGFZeHVNY3ctdk5JWG1IM2dRLTkxSHVQV2l4NHlJQXI0b2Z2RUNtTjgwbmRFM0gtSnYtVA?oc=5",
-      "lang": "en",
-      "classifiedBy": "AI(gemini-3.5-flash-lite)"
-    },
-    {
-      "stars": "★★★★☆",
-      "category": "글로벌 F/O 동향",
-      "title": "움직이는 패밀리오피스에게 비즈니스 항공이 점점 더 중요한 우선순위가 되고 있다 – 에어버스 설문조사",
-      "desc": "에어버스 설문조사 결과로 패밀리오피스의 라이프스타일 및 자산관리 트렌드를 파악할 수 있습니다.",
-      "org": "Family Wealth Report",
-      "date": "2026.09.24",
-      "ts": 1790233200000,
-      "btnText": "🔗 원문 보기",
-      "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxOcjlOUWozamlrQzFBdUNIbHRVX19YZDlnSUZFSFY2LWFjYnZaaF9XSHRkdE1LOFZkZHVLa1BMNm1iOGN1ZURvaWhyeUZya1FraHczdUNFVTczanJDanFRMU03bndQa3RDaDhpNEpzQnd6R0NWZUZaazZBSXM1c3JKVmNVakd0bDVhLXFfbTZnOWRMdTJ6eVJQbmdTclZmMUI0X1c2UVdkQ0FIR2s2Zjkwd2wwZlExMF9XV0ZfdDJ6dGV5dWlCZGxJUEU4RkNwREtBT1U4Vy1KcE5rdEVURkt4OExXSU92VWxDY1VRZmFn?oc=5",
       "lang": "en",
       "classifiedBy": "AI(gemini-3.5-flash-lite)"
     }
