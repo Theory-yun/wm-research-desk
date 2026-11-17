@@ -1,6 +1,6 @@
 {
   "note": "curated=true 는 PB가 고른 연례 핵심 리포트(고정), 나머지는 scripts/build-insights.mjs가 매일 자동 수집합니다.",
-  "updatedAt": "2026-11-16T22:48:06.892Z",
+  "updatedAt": "2026-11-17T09:36:37.511Z",
   "categories": [
     "글로벌 F/O 동향",
     "국내 부자·웰스 리포트",
@@ -118,6 +118,32 @@
       "btnText": "🔗 원문 자료실",
       "url": "https://www2.deloitte.com/global/en/pages/deloitte-private/articles/family-office-insights-series.html",
       "curated": true
+    },
+    {
+      "stars": "★★★★☆",
+      "category": "자산배분·시장 전망",
+      "title": "NH투자증권, 2027년 코스피 목표치 9,200 제시 및 AI와 비AI 동반 성장 전망",
+      "desc": "국내 증권사의 2027년 지수 전망 및 주도주 변화에 대한 자산배분·시장 전망 데이터입니다.",
+      "org": "BigGo Finance",
+      "date": "2026.11.17",
+      "ts": 1794878760000,
+      "btnText": "🔗 원문 보기",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5uUlh1a2JPejRqYTdsMVJJRzNkSm5vTGJTYjJnLTdDbW1POVdjYWFMMjNHeExWQm9VeXlOT0lMM09PRlhxY1Nmb1Q2c0c5WEl5RFo5WFFxcHo5ZmVwLS12VHpGM1h3clVFbVRweXVtOWFuNzA3X1E?oc=5",
+      "lang": "en",
+      "classifiedBy": "AI(gemini-3.5-flash-lite)"
+    },
+    {
+      "stars": "★★★★☆",
+      "category": "국내 부자·웰스 리포트",
+      "title": "한화생명, 젊은 부자 보고서 ‘자산이전 편’ 발간",
+      "desc": "3040 젊은 부유층의 자산 이전 트렌드와 선호 투자처를 분석한 보고서 결과입니다.",
+      "org": "보험신보",
+      "date": "2026.11.17",
+      "ts": 1794877200000,
+      "btnText": "🔗 원문 보기",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1PdnFEOXpzQzl1a2cydV9rNjJGQl9tX0ZnbzhxOFlsb3lod3prNmdlZVFaa3RFY3JiMmFkaXlZdGZhUlh0Mlhpb0JvdXlIZmxwcXZub09pc1cwdHhfVnE5MUJTVkNWTWd0UWo0?oc=5",
+      "lang": "ko",
+      "classifiedBy": "AI(gemini-3.5-flash-lite)"
     },
     {
       "stars": "★★★★★",
@@ -871,32 +897,6 @@
       "btnText": "🔗 원문 보기",
       "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQb1J1WmxENjVuRVVXS09zM3hCRDZVRXVEczBVLXphQUFZdFRldV9LelJzRmdJSzdqMWNuaE5ZcWMwXzVrdThzQklhYnE5QjFEb051NlJVTkpieUg5WTlERVhvSV9pLVAzNkxRY0NwNlNSZ1dpbmtCYWhzLS03dVFuWlhHYTYzZw?oc=5",
       "lang": "ko",
-      "classifiedBy": "AI(gemini-3.5-flash-lite)"
-    },
-    {
-      "stars": "★★★★★",
-      "category": "글로벌 F/O 동향",
-      "title": "아시아 초고액자산가 차세대, 가문 사업 매각 후 계획에 가장 발언권 적어: 줄리어스 베어",
-      "desc": "줄리어스 베어의 조사 결과로 아시아 초고액자산가 가문의 승계 및 세대 간 의사결정 구조를 이해할 수 있습니다.",
-      "org": "The Business Times",
-      "date": "2026.10.20",
-      "ts": 1792479600000,
-      "btnText": "🔗 원문 보기",
-      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNbl94R0VmSjdvdVRDcnlCMUJEaW5TWngyaVkxNnNoSmFFVGhyZ3VDMlVLZEVDRkJhT3d3OURpcllpbkg1VUF5dDl1Z3VKR0xDR0k3bGJOaXhvaFZ5alJuRng5NWFSM2tOYy1XSWxHRkdBTVNQbjhlVGxzYWVpb2FwMlhYV1FXQjdVOGdSeUxMaEdZYktDV0g4SHJuMF9veDlPYWR0Qy12YVVtdEhFRFJiT0M3Q0c2aml0OGRyc1N0ZUtSLUM3cm5HMDI0eVVqbTgyY2xxVw?oc=5",
-      "lang": "en",
-      "classifiedBy": "AI(gemini-3.5-flash-lite)"
-    },
-    {
-      "stars": "★★★★☆",
-      "category": "글로벌 F/O 동향",
-      "title": "패밀리오피스의 부상 글로벌 자본시장의 새로운 파워 플레이어",
-      "desc": "글로벌 자본시장 내에서 패밀리오피스의 영향력 확대와 부상 배경을 짚어봅니다.",
-      "org": "Livewire Markets",
-      "date": "2026.10.19",
-      "ts": 1792393200000,
-      "btnText": "🔗 원문 보기",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQaHd2eUlNMTJqSjhyb3Y4eS0yU19tcXg3N3poOGxkcm9XZk1Td25UbzEyVXRvOFB2Um0tUnk1MmIzQWQtcW96eXU0VHo4NzcxYjdmVnRwanRlZE5oQVdTOU95V1NUMEpuVlVVNmZKZmRmV2hoLWd1ZTlGU3NkWTVZWFRkZE5LUVRublVaZ2JMOWNDbjhfRlYzNFBBZXYtXzhwVUk5b2gwY1dvaGhGdkJHY0VFMlZSUQ?oc=5",
-      "lang": "en",
       "classifiedBy": "AI(gemini-3.5-flash-lite)"
     }
   ]
