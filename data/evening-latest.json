@@ -1,257 +1,266 @@
 {
   "edition": "EVENING",
-  "generatedAt": "2026-11-16T07:17:03.609Z",
-  "generatedAtKST": "2026.11.16 16:17",
+  "generatedAt": "2026-11-17T07:02:11.034Z",
+  "generatedAtKST": "2026.11.17 16:02",
   "sourceStatus": {
     "market": "ok",
     "news": "ok",
     "summary": "ai-gemini",
-    "summaryModel": "gemini-3.5-flash"
+    "summaryModel": "gemini-3.5-flash-lite"
   },
   "market": [
     {
       "key": "KOSPI",
       "name": "코스피",
       "group": "domestic",
-      "priceStr": "5,100.50",
-      "diffStr": "▼ -190.03",
-      "changePct": -3.59,
+      "priceStr": "4,968.48",
+      "diffStr": "▼ -132.02",
+      "changePct": -2.59,
       "asOfLocal": "국내 정규장 기준",
-      "asOfKst": "한국 정규장 11.16 15:30 마감",
+      "asOfKst": "한국 정규장 11.17 15:30 마감",
       "stale": false,
-      "updatedAt": "2026-11-16T07:15:47.423Z"
+      "updatedAt": "2026-11-17T07:00:46.851Z"
     },
     {
       "key": "KOSDAQ",
       "name": "코스닥",
       "group": "domestic",
-      "priceStr": "665.65",
-      "diffStr": "▼ -34.01",
-      "changePct": -4.86,
+      "priceStr": "650.06",
+      "diffStr": "▼ -15.59",
+      "changePct": -2.34,
       "asOfLocal": "국내 정규장 기준",
-      "asOfKst": "한국 정규장 11.16 15:30 마감",
+      "asOfKst": "한국 정규장 11.17 15:30 마감",
       "stale": false,
-      "updatedAt": "2026-11-16T07:15:47.423Z"
+      "updatedAt": "2026-11-17T07:00:46.851Z"
     },
     {
       "key": "SP500",
       "name": "S&P 500",
       "group": "global",
-      "priceStr": "7,561.67",
-      "diffStr": "▼ -30.73",
-      "changePct": -0.4,
-      "asOfLocal": "현지 11.13 16:00 마감",
-      "asOfKst": "한국 11.14 06:00 마감",
+      "priceStr": "7,416.59",
+      "diffStr": "▼ -145.08",
+      "changePct": -1.92,
+      "asOfLocal": "현지 11.16 16:00 마감",
+      "asOfKst": "한국 11.17 06:00 마감",
       "stale": false,
-      "updatedAt": "2026-11-16T07:15:47.423Z"
+      "updatedAt": "2026-11-17T07:00:46.851Z"
     },
     {
       "key": "NASDAQ",
       "name": "나스닥",
       "group": "global",
-      "priceStr": "25,136.27",
-      "diffStr": "▼ -229.82",
-      "changePct": -0.91,
-      "asOfLocal": "현지 11.13 16:00 마감",
-      "asOfKst": "한국 11.14 06:00 마감",
+      "priceStr": "24,509.76",
+      "diffStr": "▼ -626.52",
+      "changePct": -2.49,
+      "asOfLocal": "현지 11.16 16:00 마감",
+      "asOfKst": "한국 11.17 06:00 마감",
       "stale": false,
-      "updatedAt": "2026-11-16T07:15:47.423Z"
+      "updatedAt": "2026-11-17T07:00:46.851Z"
     },
     {
       "key": "SOX",
       "name": "필라델피아 반도체",
       "group": "global",
-      "priceStr": "10,146.32",
-      "diffStr": "▼ -360.35",
-      "changePct": -3.43,
-      "asOfLocal": "현지 11.13 16:00 마감",
-      "asOfKst": "한국 11.14 06:00 마감",
+      "priceStr": "9,610.65",
+      "diffStr": "▼ -535.67",
+      "changePct": -5.28,
+      "asOfLocal": "현지 11.16 16:00 마감",
+      "asOfKst": "한국 11.17 06:00 마감",
       "stale": false,
-      "updatedAt": "2026-11-16T07:15:47.423Z"
+      "updatedAt": "2026-11-17T07:00:46.851Z"
     },
     {
       "key": "USDKRW",
       "name": "원/달러 환율",
       "group": "fx",
-      "priceStr": "1,334.96",
-      "diffStr": "▲ +1.18",
-      "changePct": 0.09,
+      "priceStr": "1,337.43",
+      "diffStr": "▲ +4.18",
+      "changePct": 0.31,
       "asOfLocal": "집계 기준 확인 중",
       "asOfKst": "집계 기준 확인 중",
       "stale": false,
-      "updatedAt": "2026-11-16T07:15:47.423Z"
+      "updatedAt": "2026-11-17T07:00:46.851Z"
+    }
+  ],
+  "extraMarket": [
+    {
+      "key": "US10Y",
+      "name": "미 10년물 금리",
+      "unit": "%",
+      "priceStr": "5.12",
+      "changePct": -0.64,
+      "diff": -0.033,
+      "chgStr": "-3bp",
+      "stale": false
+    },
+    {
+      "key": "US5Y",
+      "name": "미 5년물 금리",
+      "unit": "%",
+      "priceStr": "4.94",
+      "changePct": -0.92,
+      "diff": -0.046,
+      "chgStr": "-5bp",
+      "stale": false
+    },
+    {
+      "key": "DXY",
+      "name": "달러인덱스",
+      "unit": "",
+      "priceStr": "103.50",
+      "changePct": -0.05,
+      "diff": -0.051,
+      "stale": false
+    },
+    {
+      "key": "USDJPY",
+      "name": "엔/달러",
+      "unit": "엔",
+      "priceStr": "159.24",
+      "changePct": -0.34,
+      "diff": -0.543,
+      "stale": false
+    },
+    {
+      "key": "GOLD",
+      "name": "금",
+      "unit": "달러",
+      "priceStr": "3,874.9",
+      "changePct": 0.57,
+      "diff": 21.9,
+      "stale": false
+    },
+    {
+      "key": "WTI",
+      "name": "WTI 유가",
+      "unit": "달러",
+      "priceStr": "85.03",
+      "changePct": -0.8,
+      "diff": -0.69,
+      "stale": false
+    },
+    {
+      "key": "BTC",
+      "name": "비트코인",
+      "unit": "달러",
+      "priceStr": "64,537",
+      "changePct": -1.18,
+      "diff": -768.4,
+      "stale": false
     }
   ],
   "issues": [
     {
       "cat": "국내증시",
-      "tag": "코스피 -3.59% · 외국인 1.7조 순매도",
-      "title": "코스피 3%대 급락 5,100선 후퇴…외국인 1.7조 원 대규모 순매도",
-      "desc": "11월 16일(월) 코스피는 외국인 순매도세가 집중되며 3.59% 하락한 5,100.50에 마감했습니다. 코스닥 역시 4.86% 내린 665.65를 기록하며 위험자산 선호 심리가 급격히 위축되었습니다. 11월 13일(금) 미국 필라델피아 반도체 지수 급락(-3.43%)과 미국 10년물 국채 금리 상승(5.15%)이 국내 증시에 직접적인 부담으로 작용했습니다."
+      "tag": "코스피 4,968.48 (-2.59%)",
+      "title": "코스피, 외국인 매도 공세에 5000선 내주며 9개월여 만에 최저치 기록",
+      "desc": "11월 17일 코스피는 외국인 매도세가 집중되면서 전 거래일 대비 132.02포인트 하락한 4,968.48에 마감하며 5000선을 내주었습니다. 코스닥 역시 650.06으로 2.34% 하락 마감했습니다. 11월 16일 뉴욕증시 하락세의 여파와 외국인 자금 이탈이 겹치며 국내 증시 전반에 강한 하방 압력이 가해졌습니다."
     },
     {
-      "cat": "금리·부동산",
-      "tag": "코픽스 2년 8개월래 최고 · 미 10년물 5.15%",
-      "title": "신규 코픽스 2년 8개월 만에 최고치 기록…주택담보대출 금리 상승세",
-      "desc": "신규 취급액 기준 코픽스가 2년 8개월 만에 최고 수준으로 오르며 주택담보대출 변동금리의 상방 압력이 강해지고 있습니다. 미국 10년물 국채 금리가 5.15%로 5bp 상승하는 등 시장 금리 고공행진이 국내 자금 조달 비용으로 연결되고 있습니다. 대출 금리 상승은 자산 시장 전반의 유동성 흐름에 제약 요인으로 작용하고 있습니다."
+      "cat": "글로벌증시",
+      "tag": "나스닥 -2.49% · 필라델피아 반도체 -5.28%",
+      "title": "11월 16일 뉴욕증시 기술주 중심 급락 및 반도체 지수 약세",
+      "desc": "11월 16일 뉴욕증시에서 S&P 500은 -1.92%, 나스닥은 -2.49% 하락하며 장을 마쳤습니다. 특히 필라델피아 반도체 지수가 -5.28% 급락하며 글로벌 기술주와 반도체 섹터 전반의 투자 심리를 위축시켰습니다. 미 10년물 금리는 5.12%로 소폭 하락했으나 위험자산 회피 성향이 우세했습니다."
     },
     {
-      "cat": "기업실적",
-      "tag": "LS 3분기 영업익 +90% · AI 인프라",
-      "title": "전력망 슈퍼사이클 진입…LS 3분기 영업이익 전년 대비 90% 급증",
-      "desc": "전력 인프라 확충과 AI 데이터센터 수요 증가에 힘입어 LS의 3분기 영업이익이 전년 동기 대비 90% 폭증했습니다. 글로벌 대체투자운용사 블랙스톤 또한 AI 인프라와 한국 제조업을 주요 투자가치로 꼽는 등 관련 산업의 성장성이 확인되고 있습니다. 지수 하락세 속에서도 전력 및 AI 인프라 공급망의 견조한 실적 모멘텀이 주목받고 있습니다."
+      "cat": "거시경제",
+      "tag": "IMF 韓 성장률 3.9% 상향",
+      "title": "IMF, 한국 올해 경제성장률 3.9%로 상향 조정 및 잠재성장률 2.5% 기대",
+      "desc": "국제통화기금(IMF)이 한국의 경제성장률을 3.9%로 상향 조정하고 잠재성장률도 2.5% 수준을 기대한다고 밝혔습니다. 대외 증시 하락과 외국인 매도세 속에서도 거시경제 기초체력에 대한 긍정적 평가는 이어지고 있습니다. 원/달러 환율은 1,337.43원으로 소폭 상승 마감했습니다."
     }
   ],
-  "talkingPoint": "11월 16일(월) 국내 증시는 대규모 외국인 매도세가 출회되며 대폭 하락 마감했습니다. 코스피 지수는 전 거래일 대비 3.59% 내린 5,100.50을 기록했고, 코스닥 지수는 4.86% 급락한 665.65로 장을 마쳤습니다. 서울 외환시장에서 원/달러 환율은 전일 대비 1.18원 오른 1,334.96원에 집계되며 상승 흐름을 나타냈습니다. 외국인 투자자가 코스피 시장에서 1.7조 원 규모를 순매도하며 지수 하락을 주도했습니다.\n\n이번 하락세는 11월 13일(금) 뉴욕증시에서 필라델피아 반도체 지수가 3.43% 급락하고 나스닥 지수가 0.91% 내리는 등 글로벌 기술주 약세가 영향을 미쳤습니다. 여기에 미국 10년물 국채 금리가 5.15%로 5bp 상승하고 5년물 금리도 4.98%로 오르는 등 채권 금리가 강세를 보이며 고금리 장기화 우려가 반영되었습니다. 국내에서는 신규 취급액 기준 코픽스가 2년 8개월 만에 최고치를 기록하는 등 자금 조달 비용 상승에 대한 부담이 가중되었습니다. 다만 글로벌 시장에서 AI 인프라 투자 지속에 따른 LS의 3분기 영업이익 90% 급증 등 실적 모멘텀이 유효한 개별 업종은 차별화된 흐름을 보였습니다.\n\n당분간 고금리와 환율 변동성이 국내 증시 수급에 미칠 영향에 주목할 필요가 있습니다. 오는 11월 18일(수) 삼성전자 기업설명회(IR)에서 발표될 반도체 업황 전망과 투자 계획이 기술주 전반의 투심에 핵심 변수로 작용할 것으로 보입니다. 또한 11월 19일(목) 국내 증시 개장 시각 변경과 11월 20일(금) 미국 월물 옵션 만기일 등 수급 변곡점이 예정되어 있습니다. 아울러 11월 26일(목) 예정된 한국은행 금통위의 통화정책방향 결정을 앞두고 시장 금리와 코픽스 추이가 국내 금융시장에 미치는 파급력을 다각도로 관찰하는 것이 중요합니다.",
+  "talkingPoint": "11월 17일 코스피는 전 거래일 대비 2.59% 하락한 4,968.48로 마감하며 9개월여 만에 5000선을 내주었고 코스닥도 650.06으로 2.34% 내렸습니다. 원/달러 환율은 1,337.43원으로 4.18원 상승했습니다.\n\n이번 하락은 11월 16일 뉴욕증시에서 S&P 500이 1.92%, 나스닥이 2.49% 하락하고 필라델피아 반도체 지수가 5.28% 급락한 충격이 국내로 고스란히 전해진 결과입니다. 미 10년물 금리는 5.12%로 3bp 하락하고 달러인덱스도 103.50으로 약세를 보였으나, 글로벌 기술주 중심의 매물이 출애되며 국내 증시에서도 외국인 중심의 강한 매도세가 나타났습니다.\n\n오는 11월 18일 삼성전자 기업설명회와 11월 26일 한국은행 금통위의 통화정책방향 결정회의를 앞두고 있습니다. 다가오는 일정 속에서 국내외 실적 발표와 통화정책 변화가 증시 수급에 미치는 영향을 차분히 관찰할 시점입니다.",
   "topNews": [
     {
-      "title": "코스피 3%대 급락하며 5100선 후퇴…외국인 1.7조 순매도",
-      "press": "서울경제TV",
-      "url": "https://www.sentv.co.kr/article/view/sentv202611160186",
-      "timestamp": 1794812569000,
-      "date": "2026.11.16 16:02",
+      "title": "코스피, 외국인 매도에 5000선 내줘…9개월여 만에 최저",
+      "press": "포커스타임즈",
+      "url": "https://focustimes.co.kr/View.aspx?No=4316811",
+      "timestamp": 1794898330000,
+      "date": "2026.11.17 15:52",
       "tags": [
         "증시"
       ],
       "tagSource": "ai",
-      "coverage": 13,
+      "coverage": 27,
       "scope": "국내",
       "outlets": [
-        "서울경제TV",
-        "한국경제",
-        "뉴스1",
-        "https://www.2news.co.kr/",
+        "포커스타임즈",
         "연합뉴스",
-        "www.ebn.co.kr"
+        "위키트리",
+        "매일경제",
+        "브릿지경제",
+        "산경투데이"
       ],
-      "rssDate": "2026.11.16 16:02",
-      "timeSource": "meta",
-      "googleUrl": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE16a0JkSDJVQUNyUzZ4SGJyMXBMV0ZfSGZQVVpQUHE2R1YxdEhLMDhKQ01WSE9FRHpkTGZNRW1rXzRTbmNnd2w5Mm8zRlBHWTY2Zk9fS01meUNtSDVsZldRWkM1NXg?oc=5",
-      "shortUrl": "https://is.gd/rP7Rat"
+      "rssDate": "2026.11.17 15:52",
+      "timeSource": "rss",
+      "googleUrl": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9udlg2Ym9ncHVTSXpHMk1VdnN4SGJPb09DWDV4a2VCTFk2WERLSXRuME5pNzJnY1Y0bkRXRmhrR3FGaXFWR0FDWlVBa1lSUzQya3owWERkaS0?oc=5",
+      "shortUrl": "https://is.gd/zK9RjP"
     },
     {
-      "title": "대우건설, 여의도 화랑아파트 재건축 수주…’써밋 더 한강' 제안",
-      "press": "뉴스웍스",
-      "url": "https://www.newsworks.co.kr/news/articleView.html?idxno=903232",
-      "timestamp": 1794811558000,
-      "date": "2026.11.16 15:45",
+      "title": "대우건설, 여의도 화랑 재건축 수주…'써밋 더 한강' 탈바꿈",
+      "press": "한국경제",
+      "url": "https://www.hankyung.com/article/202611169461i",
+      "timestamp": 1794787200000,
+      "date": "2026.11.16 09:00",
       "tags": [
         "부동산"
+      ],
+      "tagSource": "ai",
+      "coverage": 5,
+      "scope": "국내",
+      "outlets": [
+        "한국경제",
+        "중앙신문",
+        "뉴스웍스",
+        "매일경제",
+        "매일일보"
+      ],
+      "rssDate": "2026.11.16 16:28",
+      "timeSource": "meta",
+      "shortUrl": "https://is.gd/gQXM08"
+    },
+    {
+      "title": "IMF, 韓 성장률 3.9%로 상향.. 잠재성장률도 2.5% 기대",
+      "press": "파이낸셜뉴스",
+      "url": "https://www.fnnews.com/news/202611171521322601",
+      "timestamp": 1794896732000,
+      "date": "2026.11.17 15:25",
+      "tags": [
+        "매크로"
       ],
       "tagSource": "ai",
       "coverage": 4,
       "scope": "국내",
       "outlets": [
-        "뉴스웍스",
-        "매일경제",
+        "파이낸셜뉴스",
         "연합뉴스",
-        "매일일보"
+        "한국경제",
+        "매일경제"
       ],
-      "rssDate": "2026.11.16 15:45",
+      "rssDate": "2026.11.17 15:25",
       "timeSource": "meta",
-      "googleUrl": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBoZFluQnhXeFhfLWlZOVZBeXdRUDFmUFFSYXhEQ2hvdDNPMjZGUXg4ZG5keUxydGRvenBBZVJOUGt3eHM5R0w0LURDOXZiUmFfNTVoeWxydTY0RE1qN2VfRm9SS1BsYUc2VDBqQ2FDc9IBc0FVX3lxTE5SdGZLdkJzVVdJZVgwWTBMNW1QTm9PV25xNXRvQng3SjF4UWdXTjVWc0NGeDMwenRXRGNpS204Ylg2RUJLdF9WRE8tVWxJQmRYMXk4azJPQloyUzctMnpGQVVDT2x1aUJBNS1PLU5rSlBtNWM?oc=5",
-      "shortUrl": "https://is.gd/RFBxNH"
+      "shortUrl": "https://is.gd/Y9bOEk"
     },
     {
-      "title": "“주담대 금리 다시 들썩인다”…신규 코픽스 2년 8개월 만에 최고",
-      "press": "매일경제",
-      "url": "https://www.mk.co.kr/news/economy/12209978",
-      "timestamp": 1794811763000,
-      "date": "2026.11.16 15:49",
+      "title": "동부건설, 3분기 누적 영업이익 428억…1년 새 147% 늘었다",
+      "press": "한국경제",
+      "url": "https://www.hankyung.com/article/202611171962i",
+      "timestamp": 1794873600000,
+      "date": "2026.11.17 09:00",
       "tags": [
-        "채권·금리",
-        "부동산"
+        "증시"
       ],
       "tagSource": "ai",
-      "coverage": 2,
+      "coverage": 3,
       "scope": "국내",
       "outlets": [
+        "한국경제",
         "매일경제",
         "연합뉴스"
       ],
-      "rssDate": "2026.11.16 15:49",
+      "rssDate": "2026.11.17 14:20",
       "timeSource": "meta",
-      "shortUrl": "https://is.gd/MeG5fo"
-    },
-    {
-      "title": "오뚜기, 3분기 영업이익 363억원…작년 동기 대비 34.5% 감소",
-      "press": "연합뉴스",
-      "url": "https://www.yna.co.kr/view/AKR20261116124800030",
-      "timestamp": 1794810305000,
-      "date": "2026.11.16 15:25",
-      "tags": [
-        "증시"
-      ],
-      "tagSource": "ai",
-      "coverage": 2,
-      "scope": "국내",
-      "outlets": [
-        "연합뉴스",
-        "한국경제"
-      ],
-      "rssDate": "2026.11.16 15:25",
-      "timeSource": "meta",
-      "shortUrl": "https://is.gd/FXoL2M"
-    },
-    {
-      "title": "이도에스테이트, 애비슨영 손잡고 상업용 부동산 공략 확대",
-      "press": "연합뉴스",
-      "url": "https://www.yna.co.kr/view/AKR20261116100100003",
-      "timestamp": 1794805439000,
-      "date": "2026.11.16 14:03",
-      "tags": [
-        "부동산"
-      ],
-      "tagSource": "ai",
-      "coverage": 2,
-      "scope": "국내",
-      "outlets": [
-        "연합뉴스",
-        "매일경제"
-      ],
-      "rssDate": "2026.11.16 14:03",
-      "timeSource": "meta",
-      "shortUrl": "https://is.gd/HTyVto"
-    },
-    {
-      "title": "중흥토건 ‘에코델타시티 중흥S-클래스 리버시티’ 선착순 동·호 지정 계약",
-      "press": "매일경제",
-      "url": "https://www.mk.co.kr/news/realestate/12209864",
-      "timestamp": 1794804539000,
-      "date": "2026.11.16 13:48",
-      "tags": [
-        "부동산"
-      ],
-      "tagSource": "ai",
-      "coverage": 2,
-      "scope": "국내",
-      "outlets": [
-        "매일경제",
-        "한국경제"
-      ],
-      "rssDate": "2026.11.16 13:48",
-      "timeSource": "meta",
-      "shortUrl": "https://is.gd/m6uZh6"
-    },
-    {
-      "title": "앤트로픽 상장 D-3…지분 가치 재조명에 반등하는 SKT 주가",
-      "press": "매일경제",
-      "url": "https://www.mk.co.kr/news/stock/12209726",
-      "timestamp": 1794793274000,
-      "date": "2026.11.16 10:41",
-      "tags": [
-        "증시"
-      ],
-      "tagSource": "ai",
-      "coverage": 2,
-      "scope": "국내",
-      "outlets": [
-        "매일경제",
-        "한국경제"
-      ],
-      "rssDate": "2026.11.16 10:41",
-      "timeSource": "meta",
-      "shortUrl": "https://is.gd/3xXtWU"
+      "shortUrl": "https://is.gd/zyi8I0"
     },
     {
       "title": "“서울 집 있으면 상속세 낮게”…순자산 비슷해도 세율 선호에 차이",
@@ -264,22 +273,83 @@
         "부동산"
       ],
       "tagSource": "ai",
-      "coverage": 2,
+      "coverage": 3,
       "scope": "국내",
       "outlets": [
         "서울경제TV",
+        "SBS Biz",
         "연합뉴스"
       ],
       "rssDate": "2026.11.16 09:03",
       "timeSource": "meta",
       "googleUrl": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE0wNl9YY3pIWUx1dEt5V3FaQ1g3ZUVzU1ZxT21mNEJXMVBGa2c1cjl4SDdDSzcwLWZIUWlSY0hRXzRKS0U3VlpNYW9hY2c3UTRrVkVEWUZWRERVV2NROE90SWIxWGQ?oc=5",
       "shortUrl": "https://is.gd/bjg078"
+    },
+    {
+      "title": "로보티즈, 3분기 적자 전환에 장 초반 9%대 급락",
+      "press": "한국경제",
+      "url": "https://www.hankyung.com/article/2026111711056",
+      "timestamp": 1794873600000,
+      "date": "2026.11.17 09:00",
+      "tags": [
+        "증시"
+      ],
+      "tagSource": "ai",
+      "coverage": 2,
+      "scope": "국내",
+      "outlets": [
+        "연합뉴스",
+        "한국경제"
+      ],
+      "rssDate": "2026.11.17 09:48",
+      "timeSource": "meta",
+      "shortUrl": "https://is.gd/SZoYNN"
+    },
+    {
+      "title": "외국환시세(11월17일·15:30 기준가)",
+      "press": "연합뉴스",
+      "url": "https://www.yna.co.kr/view/AKR20261117128400002",
+      "timestamp": 1794897313000,
+      "date": "2026.11.17 15:35",
+      "tags": [
+        "외환"
+      ],
+      "tagSource": "ai",
+      "coverage": 2,
+      "scope": "국내",
+      "outlets": [
+        "연합뉴스",
+        "한국경제"
+      ],
+      "rssDate": "2026.11.17 15:35",
+      "timeSource": "meta",
+      "shortUrl": "https://is.gd/lKxpWR"
+    },
+    {
+      "title": "대우건설, 양천구 신월시영 재건축에 美 디자인그룹 '저디'와 협력",
+      "press": "한국경제",
+      "url": "https://www.hankyung.com/article/202611171175i",
+      "timestamp": 1794873600000,
+      "date": "2026.11.17 09:00",
+      "tags": [
+        "부동산"
+      ],
+      "tagSource": "ai",
+      "coverage": 2,
+      "scope": "국내",
+      "outlets": [
+        "한국경제",
+        "매일일보"
+      ],
+      "rssDate": "2026.11.17 14:25",
+      "timeSource": "meta",
+      "shortUrl": "https://is.gd/XwUNWI"
     }
   ],
   "assetChecks": {
     "framework": "assets",
-    "generatedAt": "2026-11-16T07:17:03.609Z",
-    "model": "gemini-3.5-flash",
+    "generatedAt": "2026-11-17T07:02:11.034Z",
+    "model": "gemini-3.5-flash-lite",
     "cards": [
       {
         "key": "kr_equity",
@@ -288,15 +358,15 @@
           {
             "key": "KOSPI",
             "name": "코스피",
-            "priceStr": "5,100.50",
-            "changePct": -3.59,
+            "priceStr": "4,968.48",
+            "changePct": -2.59,
             "unit": ""
           },
           {
             "key": "KOSDAQ",
             "name": "코스닥",
-            "priceStr": "665.65",
-            "changePct": -4.86,
+            "priceStr": "650.06",
+            "changePct": -2.34,
             "unit": ""
           }
         ],
@@ -304,55 +374,55 @@
           {
             "date": "2026-11-18",
             "kind": "earnings_kr",
-            "dday": 2,
+            "dday": 1,
             "label": "삼성전자 기업설명회(IR)",
             "when": "11/18(수)"
           },
           {
             "date": "2026-11-19",
             "kind": "kr_late_open",
-            "dday": 3,
+            "dday": 2,
             "label": "국내 증시 개장 시각 변경",
             "when": "11/19(목)"
           },
           {
             "date": "2026-11-26",
             "kind": "bok",
-            "dday": 10,
+            "dday": 9,
             "label": "한국은행 금통위 (통화정책방향 결정회의)",
             "when": "11/26(목)"
           }
         ],
         "news": [
           {
-            "title": "코스피 3%대 급락하며 5100선 후퇴…외국인 1.7조 순매도",
-            "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE16a0JkSDJVQUNyUzZ4SGJyMXBMV0ZfSGZQVVpQUHE2R1YxdEhLMDhKQ01WSE9FRHpkTGZNRW1rXzRTbmNnd2w5Mm8zRlBHWTY2Zk9fS01meUNtSDVsZldRWkM1NXg?oc=5",
-            "press": "서울경제TV",
-            "coverage": 13
+            "title": "코스피, 외국인 매도에 5000선 내줘…9개월여 만에 최저",
+            "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9udlg2Ym9ncHVTSXpHMk1VdnN4SGJPb09DWDV4a2VCTFk2WERLSXRuME5pNzJnY1Y0bkRXRmhrR3FGaXFWR0FDWlVBa1lSUzQya3owWERkaS0?oc=5",
+            "press": "포커스타임즈",
+            "coverage": 27
           },
           {
-            "title": "오뚜기, 3분기 영업이익 363억원…작년 동기 대비 34.5% 감소",
-            "url": "https://www.yna.co.kr/view/AKR20261116124800030",
-            "press": "연합뉴스",
+            "title": "동부건설, 3분기 누적 영업이익 428억…1년 새 147% 늘었다",
+            "url": "https://www.hankyung.com/article/202611171962i",
+            "press": "한국경제",
+            "coverage": 3
+          },
+          {
+            "title": "로보티즈, 3분기 적자 전환에 장 초반 9%대 급락",
+            "url": "https://www.hankyung.com/article/2026111711056",
+            "press": "한국경제",
             "coverage": 2
           },
           {
-            "title": "앤트로픽 상장 D-3…지분 가치 재조명에 반등하는 SKT 주가",
-            "url": "https://www.mk.co.kr/news/stock/12209726",
-            "press": "매일경제",
-            "coverage": 2
-          },
-          {
-            "title": "KB증권 “삼성전자, 탈엔비디아 시대 최대 수혜주”",
-            "url": "https://www.mk.co.kr/news/stock/12209588",
-            "press": "매일경제",
+            "title": "서진시스템, 3분기 매출 196% 증가…영업이익 387억원 흑자전환",
+            "url": "https://www.hankyung.com/article/202611171688i",
+            "press": "한국경제",
             "coverage": 2
           }
         ],
         "level": "변동 큼",
-        "headline": "외국인 1.7조 순매도 속 코스피·코스닥 급락",
-        "analysis": "11월 16일(월) 코스피는 외국인의 1.7조 원 순매도 여파로 3.59% 급락한 5,100.50에 마감했으며 코스닥도 4.86% 하락한 665.65를 기록했습니다. 실적 면에서는 오뚜기의 3분기 영업이익이 전년 동기 대비 34.5% 감소한 363억 원을 기록한 반면, SKT 주가는 앤트로픽 상장에 따른 지분 가치 재조명 기대감으로 반등했습니다.",
-        "watch": "오는 11월 18일(수) 삼성전자 기업설명회(IR)와 11월 26일(목) 한국은행 금통위 결과를 주시할 필요가 있습니다.",
+        "headline": "외국인 매도에 코스피 5000선 하회",
+        "analysis": "11월 17일(화) 코스피는 외국인 매도세에 2.59% 하락한 4,968.48을 기록하며 9개월여 만에 최저치로 내려앉았고 코스닥도 2.34% 내린 650.06으로 마감했다. 동부건설과 서진시스템 등 일부 기업은 3분기 호실적을 보였으나 로보티즈가 적자 전환으로 급락하는 등 종목별 차별화가 나타났다.",
+        "watch": "오는 11월 18일 예정된 삼성전자 기업설명회(IR)와 11월 19일 국내 증시 개장 시각 변경 일정이 주요 변수다.",
         "textBy": "ai"
       },
       {
@@ -362,22 +432,22 @@
           {
             "key": "SP500",
             "name": "S&P 500",
-            "priceStr": "7,561.67",
-            "changePct": -0.4,
+            "priceStr": "7,416.59",
+            "changePct": -1.92,
             "unit": ""
           },
           {
             "key": "NASDAQ",
             "name": "나스닥",
-            "priceStr": "25,136.27",
-            "changePct": -0.91,
+            "priceStr": "24,509.76",
+            "changePct": -2.49,
             "unit": ""
           },
           {
             "key": "SOX",
             "name": "필라델피아 반도체",
-            "priceStr": "10,146.32",
-            "changePct": -3.43,
+            "priceStr": "9,610.65",
+            "changePct": -5.28,
             "unit": ""
           }
         ],
@@ -385,30 +455,37 @@
           {
             "date": "2026-11-20",
             "kind": "us_opex",
-            "dday": 4,
+            "dday": 3,
             "label": "미국 월물 옵션 만기일",
             "when": "11/20(금)"
           },
           {
             "date": "2026-11-26",
             "kind": "us_holiday",
-            "dday": 10,
+            "dday": 9,
             "label": "미국 증시 휴장일",
             "when": "11/26(목)"
           },
           {
             "date": "2026-11-27",
             "kind": "us_early_close",
-            "dday": 11,
+            "dday": 10,
             "label": "미국 증시 조기 폐장",
             "when": "11/27(금)"
           }
         ],
-        "news": [],
+        "news": [
+          {
+            "title": "트럼프도 젠슨 황 지지했지만…엔비디아 이사회 '요지부동'",
+            "url": "https://www.hankyung.com/article/202611170796i",
+            "press": "한국경제",
+            "coverage": 2
+          }
+        ],
         "level": "변동 큼",
-        "headline": "반도체주 약세 여파로 나스닥·S&P 500 조정",
-        "analysis": "11월 13일(금) 뉴욕증시는 필라델피아 반도체 지수가 3.43% 급락하면서 기술주 중심의 나스닥 지수가 0.91% 내린 25,136.27에 마감했습니다. S&P 500 지수 역시 반도체 업종 조정 영향으로 0.4% 하락한 7,561.67을 기록했습니다.",
-        "watch": "오는 11월 20일(금) 미국 월물 옵션 만기일을 앞두고 증시 변동성 확대 여부를 점검해야 합니다.",
+        "headline": "뉴욕증시, 반도체 중심 큰 폭 하락",
+        "analysis": "11월 16일(월) 뉴욕증시는 S&P 500이 1.92%, 나스닥이 2.49% 하락한 가운데 필라델피아 반도체 지수가 5.28% 급락하며 큰 조정을 받았다. 엔비디아 이사회의 지배구조 관련 논란 등이 전해진 가운데 기술주 전반에 하방 압력이 가해졌다.",
+        "watch": "오는 11월 20일 예정된 미국 월물 옵션 만기일의 수급 변화를 지켜봐야 한다.",
         "textBy": "ai"
       },
       {
@@ -418,47 +495,53 @@
           {
             "key": "US10Y",
             "name": "미 10년물 금리",
-            "priceStr": "5.15",
-            "changePct": 1,
+            "priceStr": "5.12",
+            "changePct": -0.64,
             "unit": "%",
-            "chgStr": "+5bp"
+            "chgStr": "-3bp"
           },
           {
             "key": "US5Y",
             "name": "미 5년물 금리",
-            "priceStr": "4.98",
-            "changePct": 0.73,
+            "priceStr": "4.94",
+            "changePct": -0.92,
             "unit": "%",
-            "chgStr": "+4bp"
+            "chgStr": "-5bp"
           }
         ],
         "events": [
           {
             "date": "2026-11-26",
             "kind": "bok",
-            "dday": 10,
+            "dday": 9,
             "label": "한국은행 금통위 (통화정책방향 결정회의)",
             "when": "11/26(목)"
           }
         ],
         "news": [
           {
-            "title": "“주담대 금리 다시 들썩인다”…신규 코픽스 2년 8개월 만에 최고",
-            "url": "https://www.mk.co.kr/news/economy/12209978",
-            "press": "매일경제",
+            "title": "IMF, 韓 성장률 3.9%로 상향.. 잠재성장률도 2.5% 기대",
+            "url": "https://www.fnnews.com/news/202611171521322601",
+            "press": "파이낸셜뉴스",
+            "coverage": 4
+          },
+          {
+            "title": "KB증권, 토큰증권 기반 채권 발행·상환 실증",
+            "url": "https://www.hankyung.com/article/2026111713496",
+            "press": "한국경제",
             "coverage": 2
           },
           {
-            "title": "존 그레이 “AI 인프라·韓 제조업 … 블랙스톤이 베팅하는 두 가지”",
-            "url": "https://www.mk.co.kr/news/stock/12210018",
-            "press": "매일경제",
-            "coverage": 1
+            "title": "KIEP, 내년 세계경제 3.2% 성장 전망…\"AI투자 시험대\"",
+            "url": "https://www.yna.co.kr/view/AKR20261117109400002",
+            "press": "연합뉴스",
+            "coverage": 2
           }
         ],
         "level": "평이",
-        "headline": "미 국채 금리 상승과 국내 주담대 금리 자극",
-        "analysis": "11월 13일(금) 미국 10년물 국채 금리가 5.15%로 5bp 상승하고 5년물 금리도 4.98%로 4bp 오르는 등 금리 상방 압력이 지속되었습니다. 국내 시장에서는 신규 코픽스 금리가 2년 8개월 만에 최고치를 기록하며 주택담보대출 금리가 다시 들썩이는 모습입니다.",
-        "watch": "오는 11월 26일(목) 한국은행 금통위 통화정책방향 결정회의의 금리 향방을 지켜볼 필요가 있습니다.",
+        "headline": "미국 국채 금리 하락 및 IMF 성장률 상향",
+        "analysis": "미 10년물 금리는 5.12%(-3bp), 5년물 금리는 4.94%(-5bp)로 하락세를 보였다. 한편 IMF가 한국의 성장률을 3.9%로 상향하고 잠재성장률을 2.5스로 기대한다는 소식이 전해졌으나, 국내 채권 시장은 글로벌 금리 움직임과 통화정책 경계감을 함께 반영하고 있다.",
+        "watch": "오는 11월 26일 예정된 한국은행 금통위의 통화정책방향 결정회의 결과가 핵심 변수다.",
         "textBy": "ai"
       },
       {
@@ -468,22 +551,22 @@
           {
             "key": "USDKRW",
             "name": "원/달러 환율",
-            "priceStr": "1,334.96",
-            "changePct": 0.09,
+            "priceStr": "1,337.43",
+            "changePct": 0.31,
             "unit": ""
           },
           {
             "key": "DXY",
             "name": "달러인덱스",
-            "priceStr": "103.44",
-            "changePct": 0.03,
+            "priceStr": "103.50",
+            "changePct": -0.05,
             "unit": ""
           },
           {
             "key": "USDJPY",
             "name": "엔/달러",
-            "priceStr": "159.48",
-            "changePct": -0.25,
+            "priceStr": "159.24",
+            "changePct": -0.34,
             "unit": "엔"
           }
         ],
@@ -491,16 +574,29 @@
           {
             "date": "2026-11-26",
             "kind": "bok",
-            "dday": 10,
+            "dday": 9,
             "label": "한국은행 금통위 (통화정책방향 결정회의)",
             "when": "11/26(목)"
           }
         ],
-        "news": [],
+        "news": [
+          {
+            "title": "외국환시세(11월17일·15:30 기준가)",
+            "url": "https://www.yna.co.kr/view/AKR20261117128400002",
+            "press": "연합뉴스",
+            "coverage": 2
+          },
+          {
+            "title": "달러 19개월만에 최고치 또 경신…환율 1,330원대 후반으로 상승",
+            "url": "https://www.yna.co.kr/view/AKR20261117129700002",
+            "press": "연합뉴스",
+            "coverage": 1
+          }
+        ],
         "level": "평이",
-        "headline": "달러 강보합 속 원/달러 환율 소폭 상승",
-        "analysis": "11월 16일(월) 원/달러 환율은 전일 대비 0.09% 상승한 1,334.96원에 마감했습니다. 미 국채 금리 상승과 연동해 달러인덱스가 103.44(+0.03%)로 소폭 오른 반면, 엔/달러 환율은 159.48엔(-0.25%)으로 하락했습니다.",
-        "watch": "11월 26일(목) 예정된 한국은행 금통위의 통화정책 결정이 원/달러 환율에 미칠 영향을 점검할 필요가 있습니다.",
+        "headline": "원/달러 환율 상승 및 달러 강세 지속",
+        "analysis": "11월 17일(화) 원/달러 환율은 0.31% 오른 1,337.43원을 기록하며 1,330원대 후반으로 올라섰다. 달러인덱스는 103.50으로 소폭 내렸으나 달러화는 여전히 높은 수준을 유지하며 환율 상승 압력으로 작용했다.",
+        "watch": "오는 11월 26일 개최되는 한국은행 금통위 전까지 국내외 통화정책 차별화와 환율 추이를 주시해야 한다.",
         "textBy": "ai"
       },
       {
@@ -510,24 +606,24 @@
           {
             "key": "GOLD",
             "name": "금",
-            "priceStr": "3,857.1",
-            "changePct": -0.75,
+            "priceStr": "3,874.9",
+            "changePct": 0.57,
             "unit": "달러"
           },
           {
             "key": "WTI",
             "name": "WTI 유가",
-            "priceStr": "89.09",
-            "changePct": 0.6,
+            "priceStr": "85.03",
+            "changePct": -0.8,
             "unit": "달러"
           }
         ],
         "events": [],
         "news": [],
         "level": "평이",
-        "headline": "금 가격 소폭 하락, WTI 유가 89달러선 상승",
-        "analysis": "미 국채 금리와 달러화의 강보합 흐름 속에서 금 선물 가격은 3,857.1달러로 0.75% 하락했습니다. 반면 WTI 유가는 전 거래일 대비 0.6% 상승한 89.09달러를 기록하며 오름세를 보였습니다.",
-        "watch": "주요 통화 가치 변동과 글로벌 금리 동향이 원자재 시장에 미치는 파급 효과를 지속 파악해야 합니다.",
+        "headline": "금 가격 상승 속 유가 소폭 하락",
+        "analysis": "금 가격은 0.57% 오른 3,874.9달러를 기록하며 안전자산 선호 심리를 반영했고, WTI 유가는 0.8% 하락한 85.03달러를 기록했다. 달러화의 흐름과 위험자산 변동성에 따라 원자재 가격이 엇갈린 움직임을 보였다.",
+        "watch": "글로벌 매크로 지표 변화와 증시 변동성에 따른 원자재 가격의 방향성을 점검해야 한다.",
         "textBy": "ai"
       },
       {
@@ -537,57 +633,57 @@
           {
             "key": "BTC",
             "name": "비트코인",
-            "priceStr": "64,503",
-            "changePct": -1.23,
+            "priceStr": "64,537",
+            "changePct": -1.18,
             "unit": "달러"
           }
         ],
         "events": [],
         "news": [
           {
-            "title": "대우건설, 여의도 화랑아파트 재건축 수주…’써밋 더 한강' 제안",
-            "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBoZFluQnhXeFhfLWlZOVZBeXdRUDFmUFFSYXhEQ2hvdDNPMjZGUXg4ZG5keUxydGRvenBBZVJOUGt3eHM5R0w0LURDOXZiUmFfNTVoeWxydTY0RE1qN2VfRm9SS1BsYUc2VDBqQ2FDc9IBc0FVX3lxTE5SdGZLdkJzVVdJZVgwWTBMNW1QTm9PV25xNXRvQng3SjF4UWdXTjVWc0NGeDMwenRXRGNpS204Ylg2RUJLdF9WRE8tVWxJQmRYMXk4azJPQloyUzctMnpGQVVDT2x1aUJBNS1PLU5rSlBtNWM?oc=5",
-            "press": "뉴스웍스",
-            "coverage": 4
-          },
-          {
-            "title": "이도에스테이트, 애비슨영 손잡고 상업용 부동산 공략 확대",
-            "url": "https://www.yna.co.kr/view/AKR20261116100100003",
-            "press": "연합뉴스",
-            "coverage": 2
-          },
-          {
-            "title": "중흥토건 ‘에코델타시티 중흥S-클래스 리버시티’ 선착순 동·호 지정 계약",
-            "url": "https://www.mk.co.kr/news/realestate/12209864",
-            "press": "매일경제",
-            "coverage": 2
+            "title": "대우건설, 여의도 화랑 재건축 수주…'써밋 더 한강' 탈바꿈",
+            "url": "https://www.hankyung.com/article/202611169461i",
+            "press": "한국경제",
+            "coverage": 5
           },
           {
             "title": "“서울 집 있으면 상속세 낮게”…순자산 비슷해도 세율 선호에 차이",
             "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE0wNl9YY3pIWUx1dEt5V3FaQ1g3ZUVzU1ZxT21mNEJXMVBGa2c1cjl4SDdDSzcwLWZIUWlSY0hRXzRKS0U3VlpNYW9hY2c3UTRrVkVEWUZWRERVV2NROE90SWIxWGQ?oc=5",
             "press": "서울경제TV",
+            "coverage": 3
+          },
+          {
+            "title": "대우건설, 양천구 신월시영 재건축에 美 디자인그룹 '저디'와 협력",
+            "url": "https://www.hankyung.com/article/202611171175i",
+            "press": "한국경제",
+            "coverage": 2
+          },
+          {
+            "title": "아파트 리모델링, 동의율 75%→70%로 낮춘다…내년 1월 시행",
+            "url": "https://www.hankyung.com/article/2026111716917",
+            "press": "한국경제",
             "coverage": 2
           }
         ],
-        "level": "평이",
-        "headline": "비트코인 약세 및 여의도 재건축 수주 움직임",
-        "analysis": "가상자산 시장에서 비트코인은 1.23% 하락한 64,503달러를 기록하며 조정을 받았습니다. 부동산 시장에서는 대우건설의 여의도 화랑아파트 재건축 수주 제안 등 서울 핵심 지역 개발과 상업용 부동산 마케팅 확대 소식이 전해졌습니다.",
-        "watch": "가상자산 변동성 추이와 함께 서울 부동산 재건축 수주 동향 및 세제 영향 여부를 점검할 필요가 있습니다.",
+        "level": "주목",
+        "headline": "비트코인 하락 및 정비사업 규제 완화 추진",
+        "analysis": "비트코인은 1.18% 하락한 64,537달러를 기록하며 조정을 받았다. 부동산 부문에서는 아파트 리모델링 동의율 요건이 70%로 낮아지는 제도 변경과 함께 대우건설의 여의도 화랑 재건축 수주 등 정비사업 소식이 이어졌다.",
+        "watch": "내년 1월 시행을 앞둔 아파트 리모델링 동의율 완화 등 부동산 제도 변화와 가상자산 수급을 주목해야 한다.",
         "textBy": "ai"
       }
     ],
     "taxNews": [
       {
-        "title": "대우건설, 여의도 화랑아파트 재건축 수주…’써밋 더 한강' 제안",
-        "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBoZFluQnhXeFhfLWlZOVZBeXdRUDFmUFFSYXhEQ2hvdDNPMjZGUXg4ZG5keUxydGRvenBBZVJOUGt3eHM5R0w0LURDOXZiUmFfNTVoeWxydTY0RE1qN2VfRm9SS1BsYUc2VDBqQ2FDc9IBc0FVX3lxTE5SdGZLdkJzVVdJZVgwWTBMNW1QTm9PV25xNXRvQng3SjF4UWdXTjVWc0NGeDMwenRXRGNpS204Ylg2RUJLdF9WRE8tVWxJQmRYMXk4azJPQloyUzctMnpGQVVDT2x1aUJBNS1PLU5rSlBtNWM?oc=5",
-        "press": "뉴스웍스",
-        "coverage": 4
+        "title": "대우건설, 여의도 화랑 재건축 수주…'써밋 더 한강' 탈바꿈",
+        "url": "https://www.hankyung.com/article/202611169461i",
+        "press": "한국경제",
+        "coverage": 5
       },
       {
-        "title": "“주담대 금리 다시 들썩인다”…신규 코픽스 2년 8개월 만에 최고",
-        "url": "https://www.mk.co.kr/news/economy/12209978",
-        "press": "매일경제",
-        "coverage": 2
+        "title": "“서울 집 있으면 상속세 낮게”…순자산 비슷해도 세율 선호에 차이",
+        "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE0wNl9YY3pIWUx1dEt5V3FaQ1g3ZUVzU1ZxT21mNEJXMVBGa2c1cjl4SDdDSzcwLWZIUWlSY0hRXzRKS0U3VlpNYW9hY2c3UTRrVkVEWUZWRERVV2NROE90SWIxWGQ?oc=5",
+        "press": "서울경제TV",
+        "coverage": 3
       }
     ]
   }
