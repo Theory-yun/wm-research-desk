@@ -1,6 +1,6 @@
 {
   "note": "curated=true 는 PB가 고른 연례 핵심 리포트(고정), 나머지는 scripts/build-insights.mjs가 매일 자동 수집합니다.",
-  "updatedAt": "2026-11-17T09:36:37.511Z",
+  "updatedAt": "2026-11-17T22:55:40.213Z",
   "categories": [
     "글로벌 F/O 동향",
     "국내 부자·웰스 리포트",
@@ -118,6 +118,32 @@
       "btnText": "🔗 원문 자료실",
       "url": "https://www2.deloitte.com/global/en/pages/deloitte-private/articles/family-office-insights-series.html",
       "curated": true
+    },
+    {
+      "stars": "★★★★☆",
+      "category": "자산배분·시장 전망",
+      "title": "월스트리트의 2027년 S&P 500 전망 엇갈려: 웰스파고 8,200 대 모건스탠리 8,700",
+      "desc": "주요 글로벌 금융사의 2027년 S&P 500 지수 전망치와 시각 차이를 비교합니다.",
+      "org": "BigGo Finance",
+      "date": "2026.11.18",
+      "ts": 1794953100000,
+      "btnText": "🔗 원문 보기",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBiYTltNjFfT0ZoNFBGa01TTy1uTEdCcExLZk5KNzdKMW9sV05uT3IzdnpBa3VwT1IzcHM4SUVyN1I0amcxeldaVlJFNmJMZ3VNTEZjQldWaXdMUXRENE1adjI0NURTZ0pFYmRzNjVHQVRCbE9mNlE?oc=5",
+      "lang": "en",
+      "classifiedBy": "AI(gemini-3.5-flash-lite)"
+    },
+    {
+      "stars": "★★★★☆",
+      "category": "자산배분·시장 전망",
+      "title": "티로우프라이스 전문가들, 글로벌 금융시장을 위한 2027년 전망 공유",
+      "desc": "글로벌 금융시장의 향후 흐름과 주요 자산군별 2027년 전망을 공유합니다.",
+      "org": "PR Newswire",
+      "date": "2026.11.18",
+      "ts": 1794936600000,
+      "btnText": "🔗 원문 보기",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQWGRhRHVWRWI5Z2JYNWVjTlF5NVdNVGhvRXRvMWdjRHU4UmxBeVJmbDQ1Q1VLakM4VmlSZmxXSEhFQ25EUS1Ma0VFc2RFVVRhSDhrQmhFTUMzc3ZpY0RDLXNsN2N5eFNyRTlycEM1U2JhUzVXWUtPbHQ0TWdlalNZaTJ2N3ExelVYcXgzRk9xWnBGTTc1dnF6NG5nX2xnbVBLRzRRUjI4NGpFS0h6aDg3OU5fX1RGVW14SUxhMDFzSmMwUQ?oc=5",
+      "lang": "en",
+      "classifiedBy": "AI(gemini-3.5-flash-lite)"
     },
     {
       "stars": "★★★★☆",
@@ -460,6 +486,19 @@
     {
       "stars": "★★★★☆",
       "category": "자산배분·시장 전망",
+      "title": "11월 미국 주식시장 전망: 2026년 남은 기간 포트폴리오 포지셔닝 방법",
+      "desc": "연말까지의 미국 주식시장 대응과 포트폴리오 조정 전략을 다룬 전망입니다.",
+      "org": "Morningstar",
+      "date": "2026.11.06",
+      "ts": 1793952000000,
+      "btnText": "🔗 원문 보기",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNLTBzVlJUNDJiazlQdkE4WVBCNVFGQ0w3YVZfak1VdUlyeFBoR1hfTk44dU53cDJoSkVnbURmM0ZJdkZTb21mVHNvWk5vR21RVW1kWDdGb2pOeGtLNVBpNVlZbGpaOEcxOEhBOXhSQ3NMcFVQUnBadEFYUkl0ZG1fVUcwV1FfWnJreDJLMDl4Z2FOMFBEUXUxT05zQ09YUjh0NXhEV3A2ek0xOWpSOWRXNVFIRVFuV1YwbWFVbA?oc=5",
+      "lang": "en",
+      "classifiedBy": "AI(gemini-3.5-flash-lite)"
+    },
+    {
+      "stars": "★★★★☆",
+      "category": "자산배분·시장 전망",
       "title": "올 214조 외인 순매도 미국이 최다 아니었네…영국계가 절반 차지",
       "desc": "외국인 순매도 자금 중 영국계 자금이 절반을 차지하는 등 국가별 수급 통계를 확인할 수 있습니다.",
       "org": "매일경제 마켓",
@@ -572,19 +611,6 @@
       "btnText": "🔗 원문 보기",
       "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE8yMlJBUm82SW00eC1ibk9ONFd2WWFvY1RuTjA4TUE1Z2xldjlWOUlLN0pQMHAtSWRfOXR1MjkxVnhnd00ybXVlU2ZMN214N00tSVVmRHFHeS11ZUpRend4U3U4VGlYN01lU2FFTWtjQkVKcHM?oc=5",
       "lang": "ko",
-      "classifiedBy": "AI(gemini-3.5-flash-lite)"
-    },
-    {
-      "stars": "★★★★☆",
-      "category": "자산배분·시장 전망",
-      "title": "11월 주식시장 전망: 2026년 남은 기간 포트폴리오 포지셔닝 방법",
-      "desc": "2026년 잔여 기간 동안 주식시장 포트폴리오를 어떻게 구성할지에 대한 자산배분 전망입니다.",
-      "org": "Morningstar",
-      "date": "2026.11.03",
-      "ts": 1793692800000,
-      "btnText": "🔗 원문 보기",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQaVVWZXNxSXFDUmhYbGJFZjZIWlV0MElvbDZUc0pBR01Vbk44REpJVTZoRVdtdlpoc2hlNG1yYkdFbkYxR283alo3Q29raGk3bTBPMWZPS3lJblo3TERFdmZwSmRmb1A5YmkydURqbFRiY3JvQ0xqU1hlbzY2T21iY2lsSFN0NWNFXzBLUW1ad1l2OUoxcmRaOFBmUkZBQ0xfbTNHejJDa1J0a2ZN?oc=5",
-      "lang": "en",
       "classifiedBy": "AI(gemini-3.5-flash-lite)"
     },
     {
@@ -870,32 +896,6 @@
       "ts": 1792566000000,
       "btnText": "🔗 원문 보기",
       "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBybjh6alJxRjUzODRPS09DTEVFTmN0LVR5Y202Mnh3RUdGbjNBeEM5VHVnMC1hY0FSQkIwWlprTkV4dEVaVGJfY2Njdjd4dEQyMHJTdm9mN2JvelNhMnQycG1LRWloVm1ZLXRYd0NWdUQ?oc=5",
-      "lang": "ko",
-      "classifiedBy": "AI(gemini-3.5-flash-lite)"
-    },
-    {
-      "stars": "★★★★★",
-      "category": "글로벌 F/O 동향",
-      "title": "패밀리오피스는 인프라를 선호하고 사모대출은 유지한다고 블랙록이 밝혔다",
-      "desc": "글로벌 패밀리오피스들이 인프라 자산에 대한 선호도를 높이고 사모대출 투자는 유지하고 있다는 자산배분 동향입니다.",
-      "org": "InvestmentNews",
-      "date": "2026.10.21",
-      "ts": 1792566000000,
-      "btnText": "🔗 원문 보기",
-      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNSm9FM1hNSllYdi1uelZPTnhqQkdzV1ZYRjFwb0E3a2R1c1NDQ3N1cXlud2tucmZVSHQ4c2FqZGRYa2ZPOC1jaTBVSlZudC1kcW9lbmkwRWVWUm5FQUhDSEdwWG4yamRhRmN5Nml2YnVlNDZoMTdiU0YwblRUOW80dlE1aDBVVWNhN3pWZmphTXRrQjBEb09VVjdkeVdlT2x0ekE5cFlTTU5rd3Z6RlNoYWlvQkZydzhoN0VmbGM4UEx0ZzR5cEVGZDlR?oc=5",
-      "lang": "en",
-      "classifiedBy": "AI(gemini-3.5-flash-lite)"
-    },
-    {
-      "stars": "★★★★☆",
-      "category": "승계·세무·신탁",
-      "title": "초부유층 사이의 상속 이전 문제를 둘러싼 불안감.",
-      "desc": "초부유층 사이에서 상속 이전 문제와 관련해 불안감이 대두되고 있음을 다룬 내용입니다.",
-      "org": "Vietnam.vn",
-      "date": "2026.10.20",
-      "ts": 1792479600000,
-      "btnText": "🔗 원문 보기",
-      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQb1J1WmxENjVuRVVXS09zM3hCRDZVRXVEczBVLXphQUFZdFRldV9LelJzRmdJSzdqMWNuaE5ZcWMwXzVrdThzQklhYnE5QjFEb051NlJVTkpieUg5WTlERVhvSV9pLVAzNkxRY0NwNlNSZ1dpbmtCYWhzLS03dVFuWlhHYTYzZw?oc=5",
       "lang": "ko",
       "classifiedBy": "AI(gemini-3.5-flash-lite)"
     }
