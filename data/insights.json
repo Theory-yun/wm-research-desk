@@ -1,6 +1,6 @@
 {
   "note": "curated=true 는 PB가 고른 연례 핵심 리포트(고정), 나머지는 scripts/build-insights.mjs가 매일 자동 수집합니다.",
-  "updatedAt": "2026-11-17T22:55:40.213Z",
+  "updatedAt": "2026-11-18T09:34:28.978Z",
   "categories": [
     "글로벌 F/O 동향",
     "국내 부자·웰스 리포트",
@@ -121,6 +121,32 @@
     },
     {
       "stars": "★★★★☆",
+      "category": "국내 부자·웰스 리포트",
+      "title": "한화생명, 젊은 부자 보고서 '자산이전 편' 발간",
+      "desc": "국내 젊은 부자층의 자산 이전 트렌드와 방향성을 다룬 신규 보고서입니다.",
+      "org": "일간투데이",
+      "date": "2026.11.18",
+      "ts": 1794978618000,
+      "btnText": "🔗 원문 보기",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE10dmpMeTA4Z2FPd2dSNi1NUG9xTmxaSkx4V0hzUXd2bjl0WktaQTRZRks4TC16Skp2ckx1dUdkMmVrSjJCVDZId0paOGI5MGxkMHJaQXdXdjZEMkFNcHh1S1l1M3B1eGd3d2xF?oc=5",
+      "lang": "ko",
+      "classifiedBy": "AI(gemini-3.5-flash-lite)"
+    },
+    {
+      "stars": "★★★★☆",
+      "category": "자산배분·시장 전망",
+      "title": "채권이 제 역할을 다시 하다 | 2027 글로벌 시장 전망",
+      "desc": "2027년 글로벌 금융시장 전망에서 채권의 역할과 자산배분 시사점을 다룹니다.",
+      "org": "T. Rowe Price",
+      "date": "2026.11.18",
+      "ts": 1794962958000,
+      "btnText": "🔗 원문 보기",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOS0NUVEFiMWtTODYxZjBRUkw2NldjbFlIc1BRcEtvTDU5X2VZRjFUems2dDBPYVFSMGV6SlhGLU0wSHFqMkpMTzdjV0s2ODdDRWdHVDh5Rm1nanlrQnpGdWtCbzJ0SjNyNk9nS3U0SGkwQkQ3di1hcDlXelJCTmpiY0d1UnpEblF3TnBFa1pmdWJSZmRFUmllTFhDWnc1cG9iLVZXOXJtTnpaaUQtZWtXc09HalZOMmFXbmJUeG9OeW9lMUF4aXEzM1VR?oc=5",
+      "lang": "en",
+      "classifiedBy": "AI(gemini-3.5-flash-lite)"
+    },
+    {
+      "stars": "★★★★☆",
       "category": "자산배분·시장 전망",
       "title": "월스트리트의 2027년 S&P 500 전망 엇갈려: 웰스파고 8,200 대 모건스탠리 8,700",
       "desc": "주요 글로벌 금융사의 2027년 S&P 500 지수 전망치와 시각 차이를 비교합니다.",
@@ -135,13 +161,13 @@
     {
       "stars": "★★★★☆",
       "category": "자산배분·시장 전망",
-      "title": "티로우프라이스 전문가들, 글로벌 금융시장을 위한 2027년 전망 공유",
-      "desc": "글로벌 금융시장의 향후 흐름과 주요 자산군별 2027년 전망을 공유합니다.",
-      "org": "PR Newswire",
+      "title": "티로우프라이스 전문가들, 2027년 글로벌 금융시장 전망 공유",
+      "desc": "글로벌 운용사의 2027년 금융시장 전망 및 투자 전략을 제시합니다.",
+      "org": "Quantisnow",
       "date": "2026.11.18",
-      "ts": 1794936600000,
+      "ts": 1794937160000,
       "btnText": "🔗 원문 보기",
-      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQWGRhRHVWRWI5Z2JYNWVjTlF5NVdNVGhvRXRvMWdjRHU4UmxBeVJmbDQ1Q1VLakM4VmlSZmxXSEhFQ25EUS1Ma0VFc2RFVVRhSDhrQmhFTUMzc3ZpY0RDLXNsN2N5eFNyRTlycEM1U2JhUzVXWUtPbHQ0TWdlalNZaTJ2N3ExelVYcXgzRk9xWnBGTTc1dnF6NG5nX2xnbVBLRzRRUjI4NGpFS0h6aDg3OU5fX1RGVW14SUxhMDFzSmMwUQ?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQVjc1YkpuNTRlOTNFdUhTSEcxcndlRmhVZUdER1Rwd2FhTU1KM0RwOFdSb0xHY2VIQzQ5MjBiSGkwMnpEcU9tSVJVSDBtaklSamYzYi05b3RNZndhZS1TMTZQY1hxSmV2SDlLM1ZKUkc2anN3dlNheVc2eTRzdG9lTmlfQzVISHpCSXU1VkhFd2NqWURRb1pLZmJ4b3hOT2FU?oc=5",
       "lang": "en",
       "classifiedBy": "AI(gemini-3.5-flash-lite)"
     },
@@ -156,19 +182,6 @@
       "btnText": "🔗 원문 보기",
       "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5uUlh1a2JPejRqYTdsMVJJRzNkSm5vTGJTYjJnLTdDbW1POVdjYWFMMjNHeExWQm9VeXlOT0lMM09PRlhxY1Nmb1Q2c0c5WEl5RFo5WFFxcHo5ZmVwLS12VHpGM1h3clVFbVRweXVtOWFuNzA3X1E?oc=5",
       "lang": "en",
-      "classifiedBy": "AI(gemini-3.5-flash-lite)"
-    },
-    {
-      "stars": "★★★★☆",
-      "category": "국내 부자·웰스 리포트",
-      "title": "한화생명, 젊은 부자 보고서 ‘자산이전 편’ 발간",
-      "desc": "3040 젊은 부유층의 자산 이전 트렌드와 선호 투자처를 분석한 보고서 결과입니다.",
-      "org": "보험신보",
-      "date": "2026.11.17",
-      "ts": 1794877200000,
-      "btnText": "🔗 원문 보기",
-      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1PdnFEOXpzQzl1a2cydV9rNjJGQl9tX0ZnbzhxOFlsb3lod3prNmdlZVFaa3RFY3JiMmFkaXlZdGZhUlh0Mlhpb0JvdXlIZmxwcXZub09pc1cwdHhfVnE5MUJTVkNWTWd0UWo0?oc=5",
-      "lang": "ko",
       "classifiedBy": "AI(gemini-3.5-flash-lite)"
     },
     {
@@ -239,13 +252,13 @@
     {
       "stars": "★★★★★",
       "category": "대체투자·사모시장",
-      "title": "세계 부호 290가문 조사…대체투자 비중 60%, 전통자산 첫 추월",
-      "desc": "글로벌 초고액자산가 가문들의 대체투자 비중이 전통자산을 추월했다는 조사 결과로, 자산배분 전략 수립 시 시사점을 제공합니다.",
+      "title": "세계 부호 290개 가문 조사…대체투자 비중 60%, 전통자산 첫 추월",
+      "desc": "초고액자산가 가문의 자산배분에서 대체투자가 전통자산을 처음으로 추월하고 과반을 차지함을 보여주는 통계입니다.",
       "org": "뉴시스",
       "date": "2026.11.14",
       "ts": 1794648406000,
       "btnText": "🔗 원문 보기",
-      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5ESlNPbjUydzlSVE5BRUJqOVNIVjNvWVprcy1pcVZzek1UV3FmR2o0SEx0ZzRQWXVZYmpNa0d6ajZqZ1hSSW9vb1A0OThMMEZrQmFCYjMtVWhGMmd5bENZQjFJRXRxbmV6TTZXdEFqX0c1TnNYQ1M0ctIBeEFVX3lxTE5ESlNPbjUydzlSVE5BRUJqOVNIVjNvWVprcy1pcVZzek1UV3FmR2o0SEx0ZzRQWXVZYmpNa0d6ajZqZ1hSSW9vb1A0OThMMEZrQmFCYjMtVWhGMmd5bENZQjFJRXRxbmV6TTZXdEFqX0c1TnNYQ1M0cg?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFA2bDIxdlJvM2NqYmR1aUNLV25KcktNMHZsSFZiR2pUcWRrNmFNN2NlcktodklTU2tlLVpxVkZ1aFRDMU5CckFPb05oejRLTG9WSDJwcjdBN0t2UzVaenNZdtIBeEFVX3lxTE5ESlNPbjUydzlSVE5BRUJqOVNIVjNvWVprcy1pcVZzek1UV3FmR2o0SEx0ZzRQWXVZYmpNa0d6ajZqZ1hSSW9vb1A0OThMMEZrQmFCYjMtVWhGMmd5bENZQjFJRXRxbmV6TTZXdEFqX0c1TnNYQ1M0cg?oc=5",
       "lang": "ko",
       "classifiedBy": "AI(gemini-3.5-flash-lite)"
     },
@@ -771,6 +784,19 @@
     },
     {
       "stars": "★★★★☆",
+      "category": "자산배분·시장 전망",
+      "title": "2026년 4분기 시장 전망: 회복력이 커지는 리스크를 만나다 - 동스프링 인베스트먼트",
+      "desc": "4분기 거시경제 회복력과 잠재적 리스크 요인을 분석한 시장 전망 보고서입니다.",
+      "org": "Eastspring Investments",
+      "date": "2026.10.23",
+      "ts": 1792743338000,
+      "btnText": "🔗 원문 보기",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPQUNvaHZqNk41V1lWeXo1bUF3dTJBVVN1LTB6NU42V2wyNEV1b1p2N1h0RjJKWFI1ak5GVVRaLUdDc19PNWJmRVFEMjRmUkNBbUJ4d3NJeXZhX1otS241TjZRUEtVTkZXc0dyOTRhV3dKNE1DeG9nNlZkcWJSZUdwTDgwTFdSdWpON25ZTWI3UFFSN0loUi03NzVtdlhlRDJuWWxDcFdhNVY5djFWRkE?oc=5",
+      "lang": "en",
+      "classifiedBy": "AI(gemini-3.5-flash-lite)"
+    },
+    {
+      "stars": "★★★★☆",
       "category": "글로벌 F/O 동향",
       "title": "패밀리오피스 딜 메이킹: 신뢰가 실사를 대신할 때, 실제로 누가 책임을 지는가?",
       "desc": "패밀리오피스 투자 집행 시 신뢰와 실사 책임에 관한 글로벌 인사이트입니다.",
@@ -823,19 +849,6 @@
     },
     {
       "stars": "★★★★☆",
-      "category": "자산배분·시장 전망",
-      "title": "2026년 4분기 시장 전망: 회복력이 커지는 위험을 만나다 - 이스트스프링 인베스트먼트",
-      "desc": "이스트스프링 인베스트먼트의 4분기 시장 전망을 통해 경제 회복력과 잠재적 위험 요소를 점검할 수 있습니다.",
-      "org": "Eastspring Investments",
-      "date": "2026.10.23",
-      "ts": 1792728437000,
-      "btnText": "🔗 원문 보기",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQZ0VuU3lZcWJGVXJuZWl4dEFZWlFNdG40MzB3LXhabW5nREVjczg4dFVGeHNXNTJsOWFpTVczVDRPYWVCUzZjZjY5OEJEbzAwSzh4LXRvLXdtZVc2NTRONnU3MWxnRnhYa1ByT0U2NlpFVGp0ak0ybFBtMFlLSFJXaTRpbG5uX1Zxd3BmUzNoeEVtQlhSbDVvc3JIME82UTZwN0tWak52MU5qQQ?oc=5",
-      "lang": "en",
-      "classifiedBy": "AI(gemini-3.5-flash-lite)"
-    },
-    {
-      "stars": "★★★★☆",
       "category": "글로벌 F/O 동향",
       "title": "차세대 리더가 패밀리오피스를 재편하고 있다 – 뱅크 오브 아메리카",
       "desc": "뱅크 오브 아메리카가 분석한 패밀리오피스 차세대 리더 관련 동향입니다.",
@@ -844,6 +857,19 @@
       "ts": 1792652400000,
       "btnText": "🔗 원문 보기",
       "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNRFdFR0M5cnJybjEyeHh5VkhOcllCMzNsTjVybXdzNEZBWkN3RmlmbmQtaUVCQWVDQkhadFhITHVmRjVhangxVUNoc2pWdGp1V2RVUDM3bERXQTdsR1duWVdKNTZ1Y053blpmRmFGdGR2NjFydlV5XzRIbmplOGIxNVQ4bjRGY1dLbzFJYUU3Z2QyLXNoQ2kybGVxSUdnYTR4T1VnNXo1QUg3b1dJOGxqQlhOZDlJLXc?oc=5",
+      "lang": "en",
+      "classifiedBy": "AI(gemini-3.5-flash-lite)"
+    },
+    {
+      "stars": "★★★★☆",
+      "category": "글로벌 F/O 동향",
+      "title": "블랙록: 패밀리오피스, 인프라 선호하고 사모신용 유지",
+      "desc": "글로벌 패밀리오피스의 인프라 투자 선호와 사모신용 유지 성향을 보여주는 동향입니다.",
+      "org": "InvestmentNews",
+      "date": "2026.10.21",
+      "ts": 1792566000000,
+      "btnText": "🔗 원문 보기",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNSm9FM1hNSllYdi1uelZPTnhqQkdzV1ZYRjFwb0E3a2R1c1NDQ3N1cXlud2tucmZVSHQ4c2FqZGRYa2ZPOC1jaTBVSlZudC1kcW9lbmkwRWVWUm5FQUhDSEdwWG4yamRhRmN5Nml2YnVlNDZoMTdiU0YwblRUOW80dlE1aDBVVWNhN3pWZmphTXRrQjBEb09VVjdkeVdlT2x0ekE5cFlTTU5rd3Z6RlNoYWlvQkZydzhoN0VmbGM4UEx0ZzR5cEVGZDlR?oc=5",
       "lang": "en",
       "classifiedBy": "AI(gemini-3.5-flash-lite)"
     },
@@ -871,32 +897,6 @@
       "btnText": "🔗 원문 보기",
       "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNQTc4NkpZNUJCS3dPQklxWG1MeERWQnlwek1EeEJNbkRMbHhoQ3lfaDFwM3Q2eURLaGJwZzlpWmdyRTNCR2VaWEE3UnVqSU9ZT2lfS2o1U24zVnM2WkV5Y0REWjlXbmlwaUpBYzRJOGh4V2NSRW9VOHViY0xNMkk1X0lHbWZDaVF0Nl9DbWxHNmRISTY1ZkNKYTl1ekRoSzRHc294REN3X2dybFluNnZ2SmRmMVdkaEh2OUwyVmoybjVuNHdFUWRsblhibkZPMHRUaE9YcXViUFJfeTcxVFYwUjlfdTJxZw?oc=5",
       "lang": "en",
-      "classifiedBy": "AI(gemini-3.5-flash-lite)"
-    },
-    {
-      "stars": "★★★★★",
-      "category": "대체투자·사모시장",
-      "title": "오코리안 설문조사, 프라이빗 시장으로 향하는 프라이빗뱅크 및 패밀리오피스 자본 증가 지목",
-      "desc": "프라이빗뱅크와 패밀리오피스의 자금이 사모시장(Private Markets)으로 지속적으로 유입되고 있음을 시사하는 조사 결과입니다.",
-      "org": "Hubbis",
-      "date": "2026.10.21",
-      "ts": 1792566000000,
-      "btnText": "🔗 원문 보기",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOT3dSWnZnUDFGRlZOTFB1Mm5Fa0dBbThGOW1lOXFUZXlNM3JwendSRTgtSEdfTFFmajBJa19tMTNlX1dKZXR5el9mcGJJUnFORmdXN1lRbWJ5WXVvQVhVRS1PV01JN1JrS3VMWC1JNHhiOWpQNTczRUZjM1NzSXAxVjgwU1laY1REMzFaQ1FPLUZNbVpOQmQ2WHpwMWxEcC1IVEc1SG9xQmxGUzJ5eHF2ZGt0cEtkQQ?oc=5",
-      "lang": "en",
-      "classifiedBy": "AI(gemini-3.5-flash-lite)"
-    },
-    {
-      "stars": "★★★★☆",
-      "category": "승계·세무·신탁",
-      "title": "초고액 자산가 후계자 66% '부의 승계 준비 부족'",
-      "desc": "초고액자산가 가문의 차세대 후계자 다수가 부의 승계 준비가 부족하다고 응답하여, 가문 승계 컨설팅의 필요성을 보여줍니다.",
-      "org": "연합인포맥스",
-      "date": "2026.10.21",
-      "ts": 1792566000000,
-      "btnText": "🔗 원문 보기",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBybjh6alJxRjUzODRPS09DTEVFTmN0LVR5Y202Mnh3RUdGbjNBeEM5VHVnMC1hY0FSQkIwWlprTkV4dEVaVGJfY2Njdjd4dEQyMHJTdm9mN2JvelNhMnQycG1LRWloVm1ZLXRYd0NWdUQ?oc=5",
-      "lang": "ko",
       "classifiedBy": "AI(gemini-3.5-flash-lite)"
     }
   ]
