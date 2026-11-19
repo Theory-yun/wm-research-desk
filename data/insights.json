@@ -1,6 +1,6 @@
 {
   "note": "curated=true 는 PB가 고른 연례 핵심 리포트(고정), 나머지는 scripts/build-insights.mjs가 매일 자동 수집합니다.",
-  "updatedAt": "2026-11-19T09:38:36.083Z",
+  "updatedAt": "2026-11-19T22:50:29.414Z",
   "categories": [
     "글로벌 F/O 동향",
     "국내 부자·웰스 리포트",
@@ -122,6 +122,19 @@
     {
       "stars": "★★★★★",
       "category": "자산배분·시장 전망",
+      "title": "다각화에 대한 기대치 재설정 | 2027 글로벌 시장 전망",
+      "desc": "자산배분 전략 수립 시 참고할 수 있는 글로벌 자산운용사의 중장기 시장 전망 보고서입니다.",
+      "org": "T. Rowe Price",
+      "date": "2026.11.19",
+      "ts": 1795070511000,
+      "btnText": "🔗 원문 보기",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQX0dFOE9LdEM2UEw1UlBIMXpSSXZBNDUxM21XU2NpSFpVQjNfWWt0RXduZllFcE05WURQMzZoY01lZXlReGNnaFNJVmNxaGVEaHJwUEd1TTdUbGpHb1FjVGFLM2FocW5rRjN4d1NoM1JzREFFQ1VMTDR2ajdwclBXSW9xZzloaklNOFZNY00xX1lucE52SmhUbzlUOVBlN19JWXdaOVk1dnV4M1czMkxleHZLU1ZocW1tZzVYd3d3Sy1RQmhn?oc=5",
+      "lang": "en",
+      "classifiedBy": "AI(gemini-3.5-flash-lite)"
+    },
+    {
+      "stars": "★★★★★",
+      "category": "자산배분·시장 전망",
       "title": "2027년 시장 전망: 주식이 주도하다 (모건스탠리)",
       "desc": "모건스탠리가 발표한 2027년 글로벌 시장 전망으로 주식 자산 중심의 포트폴리오 재편 시 참고할 수 있습니다.",
       "org": "Morgan Stanley",
@@ -168,19 +181,6 @@
       "ts": 1794970943000,
       "btnText": "🔗 원문 보기",
       "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPMDZRcFBWNlp4emdkc1E5SFlXaGlwbmw3WE1vazRvZDB2UzNfbDZZTk0yMzRncmxYNlBaRUl3empDSURZUndJTWpvY05SdlF6VU9Kck4wdEFMdXhFTmphSk56bW12dy13RWdUOWtrNWNfNldCZ0pZV0xMbHBpbXZYMTM3OUdqRDZCRFhQbkszcUNpZ0F2LXA5MG9acjNWRzhyNk5LQURNbXBOU1duTHd1U3lLU25IT0VsRVVXTkJzYlZQZTEyRHpkNHN3?oc=5",
-      "lang": "en",
-      "classifiedBy": "AI(gemini-3.5-flash-lite)"
-    },
-    {
-      "stars": "★★★★★",
-      "category": "자산배분·시장 전망",
-      "title": "다각화를 위한 기대치 재설정 | 2027년 글로벌 시장 전망 (티로우프라이스)",
-      "desc": "2027년 글로벌 시장을 맞아 포트폴리오 다각화 전략과 투자 기대치를 재조정하는 데 참고할 수 있는 전망 자료입니다.",
-      "org": "T. Rowe Price",
-      "date": "2026.11.18",
-      "ts": 1794962958000,
-      "btnText": "🔗 원문 보기",
-      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQaUpPc3ctd2Q5SElZOW0waUVmX1F2NWxIZE81b1VXNkRHaWNOYkNuZjQ1QnZFeXBiWGF1bDNxTFFmN2pfa2U4enBydEc2M3hhTVRUUnRHdjVWbXpqV1VXbXYwVklWV2I2SU1NN21JbUxCZHo2d3BOV1ktc2pvbTl6b3RWT3lWMDVUdEE3QUlKa2VGcGMwMU1kNEk5LVlKdHN1V1NhaG45T01oeFlzWkpTZXpKamhJa0t0QUFPNkhabk1LTnpHc1AwQmluUWFJakZTQ0gtQ0xuUQ?oc=5",
       "lang": "en",
       "classifiedBy": "AI(gemini-3.5-flash-lite)"
     },
@@ -757,6 +757,19 @@
       "classifiedBy": "AI(gemini-3.5-flash-lite)"
     },
     {
+      "stars": "★★★★☆",
+      "category": "글로벌 F/O 동향",
+      "title": "모건스탠리 패밀리오피스, 운영 프레임워크 발표",
+      "desc": "모건스탠리 패밀리오피스의 운영 체계와 관련된 리서치 내용입니다.",
+      "org": "Family Wealth Report",
+      "date": "2026.10.28",
+      "ts": 1793170800000,
+      "btnText": "🔗 원문 보기",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOWm5CZzBvUnBPRFFwMEpvd1EzWFhDM1VGZkMtT2czb1VaaDZpNGZWbkNvbldoYUVsN1NvNXZCSjFCdHpOT3R1WHRYUGFMRnV5YWdJenRpUm9ySWJaU3JHN291bXVuT1AzOWIzbzVYX05GS2FFOUNIR3lINW1TM3hWTkdqSFFtSmNvWlozMTEtc3kyLXhiVGNPSS01U19KWjMtMmc4TFBySQ?oc=5",
+      "lang": "en",
+      "classifiedBy": "AI(gemini-3.5-flash-lite)"
+    },
+    {
       "stars": "★★★★★",
       "category": "글로벌 F/O 동향",
       "title": "인구통계 변화와 시장 복잡성이 패밀리오피스를 변화시키고 있다",
@@ -883,19 +896,6 @@
       "ts": 1792652400000,
       "btnText": "🔗 원문 보기",
       "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNRFdFR0M5cnJybjEyeHh5VkhOcllCMzNsTjVybXdzNEZBWkN3RmlmbmQtaUVCQWVDQkhadFhITHVmRjVhangxVUNoc2pWdGp1V2RVUDM3bERXQTdsR1duWVdKNTZ1Y053blpmRmFGdGR2NjFydlV5XzRIbmplOGIxNVQ4bjRGY1dLbzFJYUU3Z2QyLXNoQ2kybGVxSUdnYTR4T1VnNXo1QUg3b1dJOGxqQlhOZDlJLXc?oc=5",
-      "lang": "en",
-      "classifiedBy": "AI(gemini-3.5-flash-lite)"
-    },
-    {
-      "stars": "★★★★★",
-      "category": "글로벌 F/O 동향",
-      "title": "블랙록: 패밀리오피스, 인프라 투자 선호하고 사모신용 유지",
-      "desc": "패밀리오피스들이 인프라 투자에 관심을 보이고 사모신용은 유지하고 있다는 블랙록의 조사 결과입니다.",
-      "org": "InvestmentNews",
-      "date": "2026.10.21",
-      "ts": 1792566000000,
-      "btnText": "🔗 원문 보기",
-      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNSm9FM1hNSllYdi1uelZPTnhqQkdzV1ZYRjFwb0E3a2R1c1NDQ3N1cXlud2tucmZVSHQ4c2FqZGRYa2ZPOC1jaTBVSlZudC1kcW9lbmkwRWVWUm5FQUhDSEdwWG4yamRhRmN5Nml2YnVlNDZoMTdiU0YwblRUOW80dlE1aDBVVWNhN3pWZmphTXRrQjBEb09VVjdkeVdlT2x0ekE5cFlTTU5rd3Z6RlNoYWlvQkZydzhoN0VmbGM4UEx0ZzR5cEVGZDlR?oc=5",
       "lang": "en",
       "classifiedBy": "AI(gemini-3.5-flash-lite)"
     }
