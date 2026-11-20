@@ -994,3 +994,40 @@ a { color: inherit; }
 .cn-ev-none { color: rgba(245,241,230,.6); }
 .cn-greet { background: rgba(201,164,92,.1); border: 1px solid rgba(201,164,92,.55); color: #F5F1E6; }
 .cn-sign { color: #F2C96B; }
+
+/* ===== 카드뉴스 모닝(낮) 테마: 아이보리 바탕 · 딥그린 포인트 · 골드 선 ===== */
+.cn-card.cn-day { background: #FBF8F1; background-image: radial-gradient(circle at 88% 0%, rgba(201,164,92,.18), rgba(201,164,92,0) 42%), linear-gradient(180deg, #FFFDF8 0%, #FBF8F1 60%, #F5EFE2 100%); color: #1A1F2B; }
+.cn-day .cn-frame { border-color: #0F3D3A; box-shadow: inset 0 0 0 7px #FBF8F1, inset 0 0 0 8px rgba(201,164,92,.7); }
+.cn-day .cn-top { color: #0F3D3A; }
+.cn-day .cn-pg { color: #0F3D3A; }
+.cn-day .cn-pg i { color: rgba(15,61,58,.45); }
+.cn-day .cn-ed { color: #8A6A2F; }
+.cn-day .cn-title { color: #0F3D3A; }
+.cn-day .cn-rule { background: #C9A45C; }
+.cn-day .cn-body, .cn-day .cn-summary p { color: #1E2430; }
+.cn-day .cn-foot { color: #6B7280; border-top-color: rgba(15,61,58,.15); }
+.cn-day mark.hl-n { color: #0F6A5F; }
+.cn-day b.hl-k { color: #0F3D3A; }
+.cn-day .cn-issue, .cn-day .cn-news, .cn-day .cn-ev, .cn-day .cn-ex { border-bottom-color: rgba(15,61,58,.12); }
+.cn-day .cn-issue-n, .cn-day .cn-news-n { background: #0F3D3A; color: #F3E3BD; }
+.cn-day .cn-issue-cat { color: #8A6A2F; }
+.cn-day .cn-issue-title, .cn-day .cn-news-title, .cn-day .cn-asset-text, .cn-day .cn-mkt-price, .cn-day .cn-ev-t, .cn-day .cn-ex b { color: #1A1F2B; }
+.cn-day .cn-issue-desc, .cn-day .cn-mkt-name, .cn-day .cn-mkt-chg, .cn-day .cn-ex span { color: #3E4654; }
+.cn-day .cn-news-meta { color: #5B6472; }
+.cn-day .cn-news-meta b { color: #0F6A5F; }
+.cn-day .cn-note, .cn-day .cn-ev-none { color: #6B7280; }
+.cn-day .cn-asset, .cn-day .cn-mkt { background: #FFFFFF; border-color: rgba(15,61,58,.16); }
+.cn-day .cn-asset-head { color: #0F3D3A; }
+.cn-day .cn-lv.lv-high { background: #FBE3D7; color: #9A3412; }
+.cn-day .cn-lv.lv-mid { background: #F7ECCF; color: #7A5410; }
+.cn-day .cn-lv.lv-low { background: #E3EEEC; color: #2F5F59; }
+.cn-day .cn-mkt-date, .cn-day .cn-sub { color: #8A6A2F; }
+.cn-day .cn-mkt-chg.up, .cn-day .cn-ex em.up { color: #C62828; }
+.cn-day .cn-mkt-chg.down, .cn-day .cn-ex em.down { color: #1F5FBF; }
+.cn-day .cn-wk-h { background: #0F3D3A; border-color: #0F3D3A; color: #F3E3BD; }
+.cn-day .cn-wk-h span { color: #E3C27A; }
+.cn-day .cn-ev-d { color: #0F3D3A; }
+.cn-day .cn-ev-t i { background: rgba(15,61,58,.1); color: #0F3D3A; }
+.cn-day .cn-greet { background: #0F3D3A; border-color: #0F3D3A; color: #F3EFE6; }
+.cn-day .cn-sign { color: #E3C27A; }
+.cn-day .cn-badge { background: #0F3D3A; color: #F3E3BD; }

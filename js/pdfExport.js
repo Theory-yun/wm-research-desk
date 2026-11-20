@@ -416,7 +416,9 @@ function weekEvents(offset) {
 }
 
 function cardShell(i, top, edLabel, title, body) {
-  return `<section class="cn-card"><div class="cn-frame">
+  // 모닝 = 낮(밝은 바탕·딥그린 포인트), 이브닝 = 밤(딥그린 바탕·골드)
+  const theme = STATE.edition === "MORNING" ? "cn-day" : "cn-night";
+  return `<section class="cn-card ${theme}"><div class="cn-frame">
     <header class="cn-top"><span class="cn-brand">${escapeHtml(top)}</span><span class="cn-pg">${String(i).padStart(2, "0")} <i>/ 06</i></span></header>
     <div class="cn-head"><div class="cn-ed">${escapeHtml(edLabel)}</div><h2 class="cn-title">${title}</h2><div class="cn-rule"></div></div>
     <div class="cn-body">${body}</div>
@@ -539,7 +541,7 @@ export async function shareCardNews() {
       stage.innerHTML = cards[i];
       const el = stage.firstElementChild;
       fitCard(el);
-      const canvas = await window.html2canvas(el, { scale: 1, useCORS: true, backgroundColor: "#0A2B28", scrollX: 0, scrollY: 0, width: 1080, height: 1350 });
+      const canvas = await window.html2canvas(el, { scale: 1, useCORS: true, backgroundColor: STATE.edition === "MORNING" ? "#FBF8F1" : "#0A2B28", scrollX: 0, scrollY: 0, width: 1080, height: 1350 });
       const blob = await new Promise((res) => canvas.toBlob(res, "image/jpeg", 0.92));
       files.push(new File([blob], `WMdesk_${stamp}_${i + 1}.jpg`, { type: "image/jpeg" }));
     }
