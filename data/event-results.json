@@ -1,6 +1,6 @@
 {
   "note": "캘린더 일정의 결과. 대부분 scripts/collect-calendar.mjs가 자동으로 채우며, method가 manual인 항목은 사람이 직접 입력한 것입니다. status가 final이면 다시 덮어쓰지 않습니다.",
-  "updatedAt": "2026-11-19T22:50:24.725Z",
+  "updatedAt": "2026-11-20T09:34:06.554Z",
   "results": {
     "2026-10-22|bok": {
       "status": "final",

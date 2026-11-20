@@ -1,6 +1,6 @@
 {
   "note": "curated=true 는 PB가 고른 연례 핵심 리포트(고정), 나머지는 scripts/build-insights.mjs가 매일 자동 수집합니다.",
-  "updatedAt": "2026-11-19T22:50:29.414Z",
+  "updatedAt": "2026-11-20T09:34:11.600Z",
   "categories": [
     "글로벌 F/O 동향",
     "국내 부자·웰스 리포트",
@@ -130,6 +130,19 @@
       "btnText": "🔗 원문 보기",
       "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQX0dFOE9LdEM2UEw1UlBIMXpSSXZBNDUxM21XU2NpSFpVQjNfWWt0RXduZllFcE05WURQMzZoY01lZXlReGNnaFNJVmNxaGVEaHJwUEd1TTdUbGpHb1FjVGFLM2FocW5rRjN4d1NoM1JzREFFQ1VMTDR2ajdwclBXSW9xZzloaklNOFZNY00xX1lucE52SmhUbzlUOVBlN19JWXdaOVk1dnV4M1czMkxleHZLU1ZocW1tZzVYd3d3Sy1RQmhn?oc=5",
       "lang": "en",
+      "classifiedBy": "AI(gemini-3.5-flash-lite)"
+    },
+    {
+      "stars": "★★★★☆",
+      "category": "대체투자·사모시장",
+      "title": "해외 부동산 대체투자 잔액 줄었지만…EOD 규모는 증가",
+      "desc": "해외 부동산 대체투자 잔액 감소와 EOD 규모 증가 추세를 다룬 시장 동향 데이터입니다.",
+      "org": "조세일보",
+      "date": "2026.11.19",
+      "ts": 1795037400000,
+      "btnText": "🔗 원문 보기",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1DblUtVDVmbXljcHJwc0FTQzJhbFJtbDRJNEpqUHFmNnNoeE9FbHl2LWVkWWVETnp5WGMxLUFYUk4wMG1xRlMxZ21LaHAyS3ViWG9TRDVaZ1k5dlZNWDJBRnZ4VUZCN3V4aGl5N3lkVGF4cXVK?oc=5",
+      "lang": "ko",
       "classifiedBy": "AI(gemini-3.5-flash-lite)"
     },
     {
@@ -883,19 +896,6 @@
       "ts": 1792738800000,
       "btnText": "🔗 원문 보기",
       "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPaUNHcnBPQzdjbm94QzBhRjhIMDlkQi1aalpmTlBxbzJMNGZ5TTdlSlBWWWdZQVZWNVZHM25nbHNnN2hlY1JyNXZuS2pxZTJaODJwdkhwbXI0eEZvRy02dVhTMzlQb2xTTkJkYlFtMmItT1RfWjdMSU1ETDByN01nYnAzOWE1czBXX2hNRGtwWHpkN1pITGJjT0xvMEdOM0tCQkVBbDg4TdIBrAFBVV95cUxNWjhUblQzOGJDOVFEbDhsWk92SG5EdjZMdnRINnF2V2MwWDBtTEcwR1k3Szh2ZzZIQ3U0Vzhwai12eXpwaE1QQWx1MHN6WVRVYklIdWs2b3A0Yy1rdENrS01adl9GLTdMVHZOUHV4YkpaRllnajJ0TzdTQWtTNEZrb25wR3ZxQTVBcm1vdWU3ZFg1SEg1UEp1UFYwcWsxME4yUlRtSktxdnctQ0Jo?oc=5",
-      "lang": "en",
-      "classifiedBy": "AI(gemini-3.5-flash-lite)"
-    },
-    {
-      "stars": "★★★★☆",
-      "category": "글로벌 F/O 동향",
-      "title": "차세대 리더가 패밀리오피스를 재편하고 있다 – 뱅크 오브 아메리카",
-      "desc": "뱅크 오브 아메리카가 분석한 패밀리오피스 차세대 리더 관련 동향입니다.",
-      "org": "Family Wealth Report",
-      "date": "2026.10.22",
-      "ts": 1792652400000,
-      "btnText": "🔗 원문 보기",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNRFdFR0M5cnJybjEyeHh5VkhOcllCMzNsTjVybXdzNEZBWkN3RmlmbmQtaUVCQWVDQkhadFhITHVmRjVhangxVUNoc2pWdGp1V2RVUDM3bERXQTdsR1duWVdKNTZ1Y053blpmRmFGdGR2NjFydlV5XzRIbmplOGIxNVQ4bjRGY1dLbzFJYUU3Z2QyLXNoQ2kybGVxSUdnYTR4T1VnNXo1QUg3b1dJOGxqQlhOZDlJLXc?oc=5",
       "lang": "en",
       "classifiedBy": "AI(gemini-3.5-flash-lite)"
     }
