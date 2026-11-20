@@ -1,0 +1,695 @@
+{
+  "edition": "EVENING",
+  "generatedAt": "2026-11-20T07:03:31.640Z",
+  "generatedAtKST": "2026.11.20 16:03",
+  "sourceStatus": {
+    "market": "ok",
+    "news": "ok",
+    "summary": "ai-gemini",
+    "summaryModel": "gemini-3.5-flash-lite"
+  },
+  "market": [
+    {
+      "key": "KOSPI",
+      "name": "코스피",
+      "group": "domestic",
+      "priceStr": "4,869.96",
+      "diffStr": "▼ -267.93",
+      "changePct": -5.21,
+      "asOfLocal": "국내 정규장 기준",
+      "asOfKst": "한국 정규장 11.20 15:30 마감",
+      "stale": false,
+      "updatedAt": "2026-11-20T07:00:50.140Z"
+    },
+    {
+      "key": "KOSDAQ",
+      "name": "코스닥",
+      "group": "domestic",
+      "priceStr": "645.68",
+      "diffStr": "▼ -39.13",
+      "changePct": -5.71,
+      "asOfLocal": "국내 정규장 기준",
+      "asOfKst": "한국 정규장 11.20 15:30 마감",
+      "stale": false,
+      "updatedAt": "2026-11-20T07:00:50.140Z"
+    },
+    {
+      "key": "SP500",
+      "name": "S&P 500",
+      "group": "global",
+      "priceStr": "7,175.83",
+      "diffStr": "▼ -147.80",
+      "changePct": -2.02,
+      "asOfLocal": "현지 11.19 16:00 마감",
+      "asOfKst": "한국 11.20 06:00 마감",
+      "stale": false,
+      "updatedAt": "2026-11-20T07:00:50.140Z"
+    },
+    {
+      "key": "NASDAQ",
+      "name": "나스닥",
+      "group": "global",
+      "priceStr": "23,879.20",
+      "diffStr": "▼ -550.69",
+      "changePct": -2.25,
+      "asOfLocal": "현지 11.19 16:00 마감",
+      "asOfKst": "한국 11.20 06:00 마감",
+      "stale": false,
+      "updatedAt": "2026-11-20T07:00:50.140Z"
+    },
+    {
+      "key": "SOX",
+      "name": "필라델피아 반도체",
+      "group": "global",
+      "priceStr": "9,419.72",
+      "diffStr": "▼ -233.07",
+      "changePct": -2.42,
+      "asOfLocal": "현지 11.19 16:00 마감",
+      "asOfKst": "한국 11.20 06:00 마감",
+      "stale": false,
+      "updatedAt": "2026-11-20T07:00:50.140Z"
+    },
+    {
+      "key": "USDKRW",
+      "name": "원/달러 환율",
+      "group": "fx",
+      "priceStr": "1,335.44",
+      "diffStr": "▲ +5.04",
+      "changePct": 0.38,
+      "asOfLocal": "집계 기준 확인 중",
+      "asOfKst": "집계 기준 확인 중",
+      "stale": false,
+      "updatedAt": "2026-11-20T07:00:50.140Z"
+    }
+  ],
+  "extraMarket": [
+    {
+      "key": "US10Y",
+      "name": "미 10년물 금리",
+      "unit": "%",
+      "priceStr": "5.05",
+      "changePct": -0.28,
+      "diff": -0.014,
+      "chgStr": "-1bp",
+      "stale": false
+    },
+    {
+      "key": "US5Y",
+      "name": "미 5년물 금리",
+      "unit": "%",
+      "priceStr": "4.87",
+      "changePct": -0.37,
+      "diff": -0.018,
+      "chgStr": "-2bp",
+      "stale": false
+    },
+    {
+      "key": "DXY",
+      "name": "달러인덱스",
+      "unit": "",
+      "priceStr": "103.72",
+      "changePct": -0.17,
+      "diff": -0.18,
+      "stale": false
+    },
+    {
+      "key": "USDJPY",
+      "name": "엔/달러",
+      "unit": "엔",
+      "priceStr": "159.20",
+      "changePct": -0.11,
+      "diff": -0.181,
+      "stale": false
+    },
+    {
+      "key": "GOLD",
+      "name": "금",
+      "unit": "달러",
+      "priceStr": "3,558.0",
+      "changePct": -3.46,
+      "diff": -127.5,
+      "stale": false
+    },
+    {
+      "key": "WTI",
+      "name": "WTI 유가",
+      "unit": "달러",
+      "priceStr": "82.91",
+      "changePct": -0.36,
+      "diff": -0.3,
+      "stale": false
+    },
+    {
+      "key": "BTC",
+      "name": "비트코인",
+      "unit": "달러",
+      "priceStr": "61,929",
+      "changePct": -1.68,
+      "diff": -1058.7,
+      "stale": false
+    }
+  ],
+  "issues": [
+    {
+      "cat": "국내증시",
+      "tag": "코스피 4,869.96 (-5.21%) · 코스닥 645.68 (-5.71%)",
+      "title": "코스피·코스닥 매도 사이드카 발동…삼성전자·하이닉스 6%대 급락",
+      "desc": "오늘 국내 증시는 외국인의 강한 매도 공세와 수급 악화가 겹치며 코스피와 코스닥 모두 매도 사이드카가 발동되는 등 큰 폭으로 하락 마감했습니다. 특히 시가총액 상위 종목인 삼성전자와 SK하이닉스가 6%대 급락세를 기록하며 지수 하락을 주도했습니다. 외국인 투자가들의 이탈 흐름이 증시 전반의 변동성을 키우는 모습입니다."
+    },
+    {
+      "cat": "수급외환",
+      "tag": "원/달러 환율 1,335.44원 (+0.38%) · 달러인덱스 103.72 (-0.17%)",
+      "title": "외국인 10월 국내 주식 26조 순매도…환율은 1,330원대 후반 기록",
+      "desc": "외국인 투자자들이 10월 한 달간 국내 주식을 26조 원 가량 팔아치운 데 이어 채권 시장에는 7.4조 원을 순투자한 것으로 나타났습니다. 주가 급락과 외국인 자금 이탈 영향으로 오늘 원/달러 환율은 1,335.44원을 기록하며 상승 압력을 받았습니다. 대내외 금융시장 환경 변화에 따른 환율과 자금 이동 흐름을 주시할 필요가 있습니다."
+    },
+    {
+      "cat": "글로벌증시",
+      "tag": "S&P500 -2.02% · 나스닥 -2.25%",
+      "title": "미국 증시 하락 마감 속 필라델피아 반도체 지수 약세",
+      "desc": "미국 증시 마지막 거래일인 11월 19일(목) 뉴욕증시는 S&P 500이 2.02%, 나스닥이 2.25% 하락하며 마감했습니다. 필라델피아 반도체 지수 역시 2.42% 내리며 기술주 전반의 조정을 나타냈습니다. 이러한 글로벌 기술주 및 반도체 섹터의 약세 흐름이 국내 증시에도 연동되는 양상을 보였습니다."
+    }
+  ],
+  "talkingPoint": "오늘 국내 증시는 코스피가 4,869.96으로 전일 대비 5.21% 하락하고 코스닥도 5.71% 급락하면서 장을 마쳤습니다. 원/달러 환율은 1,335.44원으로 0.38% 상승하였고, 미국 증시 마지막 거래일인 11월 19일(목) 뉴욕증시에서 S&P 500은 2.02%, 나스닥은 2.25%, 필라델피아 반도체 지수는 2.42% 하락 마감했습니다.\n\n외국인 투자자의 지속적인 국내 주식 매도 공세와 주요 반도체 대형주의 급락이 국내 증시의 매도 사이드카 발동으로 이어졌습니다. 미 10년물 금리가 5.05%, 5년물 금리가 4.87%를 기록한 가운데 글로벌 위험자산 회피 심리가 반영되며 국내 환율 상승과 증시 조정 압력으로 작용했습니다. 외국인들이 주식 시장에서 대규모 자금을 회수하는 반면 채권 시장에는 일부 순투자를 이어가는 수급 변화가 나타나고 있습니다.\n\n다가오는 일정으로는 11월 20일(D-0) 미국 월물 옵션 만기일이 위치해 있으며, 11월 26일(목)에는 한국은행 금통위 회의와 미국 증시 휴장일이 예정되어 있습니다. 이어 11월 27일(금) 미국 증시 조기 폐장까지 앞두고 있어 국내외 통화정책 방향과 수급 변동성을 차분히 점검해 보는 시기입니다.",
+  "topNews": [
+    {
+      "title": "10월 국내 주식 26조 팔아치운 외국인...채권엔 7.4조 순투자",
+      "press": "매일일보",
+      "url": "https://www.m-i.kr/news/articleView.html?idxno=2021399",
+      "timestamp": 1795153344000,
+      "date": "2026.11.20 14:42",
+      "tags": [
+        "증시",
+        "외환"
+      ],
+      "tagSource": "ai",
+      "coverage": 19,
+      "scope": "국내",
+      "outlets": [
+        "매일일보",
+        "폴리뉴스 Polinews",
+        "파이낸셜신문",
+        "부산일보",
+        "서울경제TV",
+        "산경투데이"
+      ],
+      "rssDate": "2026.11.20 14:42",
+      "timeSource": "meta",
+      "googleUrl": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE42c0dmZGNtZ1NVZ2RaeWtqWTlfaTZTcG9ycktUbzNCRjFaejAwczVwOEpWOW1CQzVSWUdyTHI4NU01Q2QzcVcxMnRGLXJiTnVHLWdOZEF0TFlZN1gwRE9TRXdDWVI?oc=5",
+      "shortUrl": "https://is.gd/RkN5U6"
+    },
+    {
+      "title": "한화, 하안주공5 시공…정비사업 2.5조 수주",
+      "press": "한국경제",
+      "url": "https://www.hankyung.com/article/2026111981061",
+      "timestamp": 1795046400000,
+      "date": "2026.11.19 09:00",
+      "tags": [
+        "부동산"
+      ],
+      "tagSource": "ai",
+      "coverage": 4,
+      "scope": "국내",
+      "outlets": [
+        "한국경제",
+        "매일일보",
+        "매일경제",
+        "Korea IT Times"
+      ],
+      "rssDate": "2026.11.19 18:14",
+      "timeSource": "meta",
+      "shortUrl": "https://is.gd/6iSfn9"
+    },
+    {
+      "title": "코스피 이어 코스닥도 매도 사이드카…삼성전자·하이닉스 6%대 급락",
+      "press": "한국경제",
+      "url": "https://www.hankyung.com/article/2026112099276",
+      "timestamp": 1795132800000,
+      "date": "2026.11.20 09:00",
+      "tags": [
+        "증시"
+      ],
+      "tagSource": "ai",
+      "coverage": 3,
+      "scope": "국내",
+      "outlets": [
+        "한국경제",
+        "연합뉴스",
+        "매일경제"
+      ],
+      "rssDate": "2026.11.20 13:52",
+      "timeSource": "meta",
+      "shortUrl": "https://is.gd/sAn72r"
+    },
+    {
+      "title": "목동 5·12·14단지 통합심의 통과…1만1863가구로 탈바꿈",
+      "press": "매일경제",
+      "url": "https://www.mk.co.kr/news/realestate/12214432",
+      "timestamp": 1795141502000,
+      "date": "2026.11.20 11:25",
+      "tags": [
+        "부동산"
+      ],
+      "tagSource": "ai",
+      "coverage": 3,
+      "scope": "국내",
+      "outlets": [
+        "매일경제",
+        "한국경제",
+        "매일일보"
+      ],
+      "rssDate": "2026.11.20 11:25",
+      "timeSource": "meta",
+      "shortUrl": "https://is.gd/kdWENX"
+    },
+    {
+      "title": "임용민 전남광주통합특별시의원 “양돈업 가업상속공제 적용해야”",
+      "press": "웹이코노미",
+      "url": "https://www.webeconomy.co.kr/news/articleView.html?idxno=2384082",
+      "timestamp": 1795140110000,
+      "date": "2026.11.20 11:01",
+      "tags": [
+        "TAX"
+      ],
+      "tagSource": "ai",
+      "coverage": 3,
+      "scope": "국내",
+      "outlets": [
+        "웹이코노미",
+        "투데이광주전남",
+        "서울뉴스통신"
+      ],
+      "rssDate": "2026.11.20 11:01",
+      "timeSource": "meta",
+      "googleUrl": "https://news.google.com/rss/articles/CBMickFVX3lxTE0wQ3ktbm5LNGtFdHBWN0p2YlRPbjlnMUE3OWVMbDJndzlPSm5Bc2RqcHUxaGZIRTBQRk1kSnRhRWl2eHVoSTZHTEJDRmVIRV83c2hVenBjdE15Mjh4bkRrdllReldWZkNsZXpvQ2Z1YUh6dw?oc=5",
+      "shortUrl": "https://is.gd/jwpMqI"
+    },
+    {
+      "title": "신협자산관리회사 출범…부실채권 관리 본격화",
+      "press": "매일경제",
+      "url": "https://www.mk.co.kr/news/economy/12214588",
+      "timestamp": 1795153475000,
+      "date": "2026.11.20 14:44",
+      "tags": [
+        "채권·금리"
+      ],
+      "tagSource": "ai",
+      "coverage": 2,
+      "scope": "국내",
+      "outlets": [
+        "매일경제",
+        "연합뉴스"
+      ],
+      "rssDate": "2026.11.20 14:44",
+      "timeSource": "meta",
+      "shortUrl": "https://is.gd/bLm3Zs"
+    },
+    {
+      "title": "통상본부장, 우루과이와 메르코수르 무역협정 재개 논의",
+      "press": "연합뉴스",
+      "url": "https://www.yna.co.kr/view/AKR20261120031100003",
+      "timestamp": 1795140001000,
+      "date": "2026.11.20 11:00",
+      "tags": [
+        "매크로"
+      ],
+      "tagSource": "ai",
+      "coverage": 2,
+      "scope": "국내",
+      "outlets": [
+        "연합뉴스",
+        "파이낸셜뉴스"
+      ],
+      "rssDate": "2026.11.20 11:00",
+      "timeSource": "meta",
+      "shortUrl": "https://is.gd/NqZ8mt"
+    },
+    {
+      "title": "“재초환 부과기한 연장 안 돼” 국토부에…전국 25개 조합장 “행정소송”",
+      "press": "매일경제",
+      "url": "https://www.mk.co.kr/news/realestate/12214385",
+      "timestamp": 1795139201000,
+      "date": "2026.11.20 10:46",
+      "tags": [
+        "부동산",
+        "TAX"
+      ],
+      "tagSource": "ai",
+      "coverage": 2,
+      "scope": "국내",
+      "outlets": [
+        "매일경제",
+        "매일일보"
+      ],
+      "rssDate": "2026.11.20 10:46",
+      "timeSource": "meta",
+      "shortUrl": "https://is.gd/EAlldj"
+    }
+  ],
+  "assetChecks": {
+    "framework": "assets",
+    "generatedAt": "2026-11-20T07:03:31.640Z",
+    "model": "gemini-3.5-flash-lite",
+    "cards": [
+      {
+        "key": "kr_equity",
+        "name": "국내 주식",
+        "market": [
+          {
+            "key": "KOSPI",
+            "name": "코스피",
+            "priceStr": "4,869.96",
+            "changePct": -5.21,
+            "unit": ""
+          },
+          {
+            "key": "KOSDAQ",
+            "name": "코스닥",
+            "priceStr": "645.68",
+            "changePct": -5.71,
+            "unit": ""
+          }
+        ],
+        "events": [
+          {
+            "date": "2026-11-26",
+            "kind": "bok",
+            "dday": 6,
+            "label": "한국은행 금통위 (통화정책방향 결정회의)",
+            "when": "11/26(목)"
+          },
+          {
+            "date": "2026-12-01",
+            "kind": "msci_effective",
+            "dday": 11,
+            "label": "MSCI 분기 리뷰 적용일",
+            "when": "12/1(화)"
+          }
+        ],
+        "news": [
+          {
+            "title": "10월 국내 주식 26조 팔아치운 외국인...채권엔 7.4조 순투자",
+            "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE42c0dmZGNtZ1NVZ2RaeWtqWTlfaTZTcG9ycktUbzNCRjFaejAwczVwOEpWOW1CQzVSWUdyTHI4NU01Q2QzcVcxMnRGLXJiTnVHLWdOZEF0TFlZN1gwRE9TRXdDWVI?oc=5",
+            "press": "매일일보",
+            "coverage": 19
+          },
+          {
+            "title": "코스피 이어 코스닥도 매도 사이드카…삼성전자·하이닉스 6%대 급락",
+            "url": "https://www.hankyung.com/article/2026112099276",
+            "press": "한국경제",
+            "coverage": 3
+          },
+          {
+            "title": "가격 빠진 SK하이닉스 담은 초고수들…삼성전자 우선주 사고 보통주 팔았다 [주식 초고수는 지금]",
+            "url": "https://www.mk.co.kr/news/stock/12214379",
+            "press": "매일경제",
+            "coverage": 2
+          },
+          {
+            "title": "삼성전자, 반도체 전영현·갤럭시 노태문 '투톱' 유지",
+            "url": "https://www.yna.co.kr/view/AKR20261120040100003",
+            "press": "연합뉴스",
+            "coverage": 2
+          }
+        ],
+        "level": "변동 큼",
+        "headline": "외인 매도와 대형주 급락 속 코스피·코스닥 동반 하락",
+        "analysis": "11월 20일(금) 코스피는 4,869.96(-5.21%), 코스닥은 645.68(-5.71%)로 급락하며 양시장 매도 사이드카가 발령되었다. 10월 한 달간 외국인이 국내 주식을 26조 원 팔아치운 가운데, 삼성전자와 하이닉스가 6%대 급락세를 보였다.",
+        "watch": "11월 26일(목) 한국은행 금통위의 통화정책방향 결정회의와 12월 1일(화) MSCI 분기 리뷰 적용일이 주요 변수이다.",
+        "textBy": "ai"
+      },
+      {
+        "key": "us_equity",
+        "name": "해외 주식",
+        "market": [
+          {
+            "key": "SP500",
+            "name": "S&P 500",
+            "priceStr": "7,175.83",
+            "changePct": -2.02,
+            "unit": ""
+          },
+          {
+            "key": "NASDAQ",
+            "name": "나스닥",
+            "priceStr": "23,879.20",
+            "changePct": -2.25,
+            "unit": ""
+          },
+          {
+            "key": "SOX",
+            "name": "필라델피아 반도체",
+            "priceStr": "9,419.72",
+            "changePct": -2.42,
+            "unit": ""
+          }
+        ],
+        "events": [
+          {
+            "date": "2026-11-20",
+            "kind": "us_opex",
+            "dday": 0,
+            "label": "미국 월물 옵션 만기일",
+            "when": "11/20(금)"
+          },
+          {
+            "date": "2026-11-26",
+            "kind": "us_holiday",
+            "dday": 6,
+            "label": "미국 증시 휴장일",
+            "when": "11/26(목)"
+          },
+          {
+            "date": "2026-11-27",
+            "kind": "us_early_close",
+            "dday": 7,
+            "label": "미국 증시 조기 폐장",
+            "when": "11/27(금)"
+          }
+        ],
+        "news": [
+          {
+            "title": "앤트로픽 상장에도 꺼진 AI 기대…소프트뱅크 장중 16% 폭락",
+            "url": "https://www.hankyung.com/article/2026112001507",
+            "press": "한국경제",
+            "coverage": 3
+          }
+        ],
+        "level": "변동 큼",
+        "headline": "AI 기대감 약화 속 11월 19일 뉴욕증시 일제히 하락",
+        "analysis": "11월 19일(목) 뉴욕증시는 S&P 500이 7,175.83(-2.02%), 나스닥이 23,879.20(-2.25%), 필라델피아 반도체가 9,419.72(-2.42%)로 하락 마감했다. 앤트로픽 상장에도 불구하고 AI에 대한 기대가 식으며 소프트뱅크가 장중 16% 폭락하는 등 기술주 중심의 조정을 겪었다.",
+        "watch": "11월 20일(금) 미국 월물 옵션 만기일과 11월 26일(목) 휴장일, 11월 27일(금) 조기 폐장 일정이 예정되어 있다.",
+        "textBy": "ai"
+      },
+      {
+        "key": "bonds",
+        "name": "채권·금리",
+        "market": [
+          {
+            "key": "US10Y",
+            "name": "미 10년물 금리",
+            "priceStr": "5.05",
+            "changePct": -0.28,
+            "unit": "%",
+            "chgStr": "-1bp"
+          },
+          {
+            "key": "US5Y",
+            "name": "미 5년물 금리",
+            "priceStr": "4.87",
+            "changePct": -0.37,
+            "unit": "%",
+            "chgStr": "-2bp"
+          }
+        ],
+        "events": [
+          {
+            "date": "2026-11-26",
+            "kind": "bok",
+            "dday": 6,
+            "label": "한국은행 금통위 (통화정책방향 결정회의)",
+            "when": "11/26(목)"
+          },
+          {
+            "date": "2026-12-04",
+            "kind": "jobs_us",
+            "dday": 14,
+            "label": "미국 고용보고서 (비농업 고용·실업률)",
+            "when": "12/4(금)"
+          }
+        ],
+        "news": [
+          {
+            "title": "신협자산관리회사 출범…부실채권 관리 본격화",
+            "url": "https://www.mk.co.kr/news/economy/12214588",
+            "press": "매일경제",
+            "coverage": 2
+          },
+          {
+            "title": "통상본부장, 우루과이와 메르코수르 무역협정 재개 논의",
+            "url": "https://www.yna.co.kr/view/AKR20261120031100003",
+            "press": "연합뉴스",
+            "coverage": 2
+          },
+          {
+            "title": "[게시판] 기획처·중장기전략委, AI 확산 영향 논의",
+            "url": "https://www.yna.co.kr/view/AKR20261120115700002",
+            "press": "연합뉴스",
+            "coverage": 1
+          },
+          {
+            "title": "수출 1조달러 달성 후...산업장관 “메가특구법, 꼭 통과돼야”",
+            "url": "https://www.mk.co.kr/news/economy/12214650",
+            "press": "매일경제",
+            "coverage": 1
+          }
+        ],
+        "level": "평이",
+        "headline": "미국 국채 금리 소폭 하락 속 평이한 흐름 지속",
+        "analysis": "미국 10년물 금리는 5.05%(-1bp), 5년물 금리는 4.87%(-2bp)로 소폭 하락하며 안정세를 보였다. 신협자산관리회사 출범을 통한 부실채권 관리 본격화 및 AI 확산 영향에 대한 논의 등 정책적 뉴스들이 이어졌다.",
+        "watch": "11월 26일(목) 한국은행 금통위와 12월 4일(금) 미국의 비농업 고용 및 실업률을 담은 고용보고서 발표가 예정되어 있다.",
+        "textBy": "ai"
+      },
+      {
+        "key": "fx",
+        "name": "외환",
+        "market": [
+          {
+            "key": "USDKRW",
+            "name": "원/달러 환율",
+            "priceStr": "1,335.44",
+            "changePct": 0.38,
+            "unit": ""
+          },
+          {
+            "key": "DXY",
+            "name": "달러인덱스",
+            "priceStr": "103.72",
+            "changePct": -0.17,
+            "unit": ""
+          },
+          {
+            "key": "USDJPY",
+            "name": "엔/달러",
+            "priceStr": "159.20",
+            "changePct": -0.11,
+            "unit": "엔"
+          }
+        ],
+        "events": [
+          {
+            "date": "2026-11-26",
+            "kind": "bok",
+            "dday": 6,
+            "label": "한국은행 금통위 (통화정책방향 결정회의)",
+            "when": "11/26(목)"
+          }
+        ],
+        "news": [
+          {
+            "title": "환율, 강달러·주가 급락에 6.2원 오른 1,336.2원",
+            "url": "https://www.yna.co.kr/view/AKR20261120132200002",
+            "press": "연합뉴스",
+            "coverage": 1
+          },
+          {
+            "title": "외국환시세(11월20일·15:30 기준가)",
+            "url": "https://www.yna.co.kr/view/AKR20261120127500002",
+            "press": "연합뉴스",
+            "coverage": 1
+          }
+        ],
+        "level": "평이",
+        "headline": "강달러와 주가 급락 영향으로 원/달러 환율 소폭 상승",
+        "analysis": "원/달러 환율은 1,335.44원(+0.38%)으로 상승하였고, 달러인덱스는 103.72(-0.17%), 엔/달러는 159.20엔(-0.11%)을 기록했다. 국내 증시 급락과 강달러 압력이 맞물리면서 환율이 6.2원 오른 1,336.2원 수준을 보였다.",
+        "watch": "11월 26일(목) 한국은행 금통위의 금리 결정이 향후 환율 방향성에 미칠 영향을 주시해야 한다.",
+        "textBy": "ai"
+      },
+      {
+        "key": "commodities",
+        "name": "원자재",
+        "market": [
+          {
+            "key": "GOLD",
+            "name": "금",
+            "priceStr": "3,558.0",
+            "changePct": -3.46,
+            "unit": "달러"
+          },
+          {
+            "key": "WTI",
+            "name": "WTI 유가",
+            "priceStr": "82.91",
+            "changePct": -0.36,
+            "unit": "달러"
+          }
+        ],
+        "events": [],
+        "news": [],
+        "level": "변동 큼",
+        "headline": "금 가격 3%대 하락 및 유가 소폭 약세 기록",
+        "analysis": "금 시세는 3,558.0달러로 3.46% 하락하였고, WTI 유가는 82.91달러로 0.36% 내림세를 나타냈다. 위험자산 전반의 변동성 확대와 함께 원자재 시장에서도 차익실현 및 가격 조정이 나타났다.",
+        "watch": "글로벌 증시 변동성 추이와 주요국 통화정책 이벤트에 따른 원자재 가격 반응을 살펴봐야 한다.",
+        "textBy": "ai"
+      },
+      {
+        "key": "alternatives",
+        "name": "부동산·대체투자",
+        "market": [
+          {
+            "key": "BTC",
+            "name": "비트코인",
+            "priceStr": "61,929",
+            "changePct": -1.68,
+            "unit": "달러"
+          }
+        ],
+        "events": [],
+        "news": [
+          {
+            "title": "한화, 하안주공5 시공…정비사업 2.5조 수주",
+            "url": "https://www.hankyung.com/article/2026111981061",
+            "press": "한국경제",
+            "coverage": 4
+          },
+          {
+            "title": "목동 5·12·14단지 통합심의 통과…1만1863가구로 탈바꿈",
+            "url": "https://www.mk.co.kr/news/realestate/12214432",
+            "press": "매일경제",
+            "coverage": 3
+          },
+          {
+            "title": "“재초환 부과기한 연장 안 돼” 국토부에…전국 25개 조합장 “행정소송”",
+            "url": "https://www.mk.co.kr/news/realestate/12214385",
+            "press": "매일경제",
+            "coverage": 2
+          },
+          {
+            "title": "서울 경부·경원선 지하화 … 지상은 주거복합 개발",
+            "url": "https://www.mk.co.kr/news/realestate/12213908",
+            "press": "매일경제",
+            "coverage": 2
+          }
+        ],
+        "level": "평이",
+        "headline": "주요 정비사업 추진과 비트코인 조용한 흐름",
+        "analysis": "비트코인은 61,929달러(-1.68%)로 소폭 하락했다. 부동산 부문에서는 목동 5·12·14단지 통합심의 통과(1만1,863가구 규모)와 서울 경부·경원선 지하화 및 상부 주거복합 개발 계획 등이 발표되며 정비사업 뉴스가 이어졌다.",
+        "watch": "재초환 부과기한 연장 관련 조합들의 행정소송 움직임과 서울 주요 정비사업의 진행 속도가 주요 변수이다.",
+        "textBy": "ai"
+      }
+    ],
+    "taxNews": [
+      {
+        "title": "한화, 하안주공5 시공…정비사업 2.5조 수주",
+        "url": "https://www.hankyung.com/article/2026111981061",
+        "press": "한국경제",
+        "coverage": 4
+      },
+      {
+        "title": "목동 5·12·14단지 통합심의 통과…1만1863가구로 탈바꿈",
+        "url": "https://www.mk.co.kr/news/realestate/12214432",
+        "press": "매일경제",
+        "coverage": 3
+      }
+    ]
+  }
+}
