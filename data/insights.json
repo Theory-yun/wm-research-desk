@@ -1,6 +1,6 @@
 {
   "note": "curated=true 는 PB가 고른 연례 핵심 리포트(고정), 나머지는 scripts/build-insights.mjs가 매일 자동 수집합니다.",
-  "updatedAt": "2026-11-20T09:34:11.600Z",
+  "updatedAt": "2026-11-20T22:48:02.072Z",
   "categories": [
     "글로벌 F/O 동향",
     "국내 부자·웰스 리포트",
@@ -118,6 +118,19 @@
       "btnText": "🔗 원문 자료실",
       "url": "https://www2.deloitte.com/global/en/pages/deloitte-private/articles/family-office-insights-series.html",
       "curated": true
+    },
+    {
+      "stars": "★★★★☆",
+      "category": "글로벌 F/O 동향",
+      "title": "앤트로픽 IPO, AI 부의 창출이 새롭고 더 날렵한 형태의 패밀리오피스를 탄생시키다",
+      "desc": "AI 부의 성장에 따른 글로벌 패밀리오피스의 변화 동향을 다루고 있다.",
+      "org": "CNBC",
+      "date": "2026.11.19",
+      "ts": 1795096801000,
+      "btnText": "🔗 원문 보기",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOQUlCck41bVlFamthWGZnMXNTRG8wSm1KejZibkVvRHk1RWhpRHlMRENjTUVVZXZ1M2ZLdUkzZ3BnczZDY0JRU0t0d1J4LWZ5NndLNDdQX1BmNE1iblFHQkFpSDZlWmpTUVBOZ0t4NVZfYzh2dTduZFBvV1VibTlwNVZaaWg2QVc0MjUtMWpDNXd6OVRuNkg1QnJjSzg0WWFDQnlz0gGoAUFVX3lxTE0yc1BGd2w2T3FZY0owLXVKc1dNdTVCaDFTOGZxeDhuV2RzN0lsZjFBTDN6NThodlZEU2pMcHZZenktUzRLVFVPeDJjRmQyS3dOSy1PTkkwM2xaNVBXSlpGNUN4U0ZOUl85dVUxLXZwWVBDMFBtSE1YOGtwR3dIOENxUDVhRFZTNkJNQjFVUHhsTjh3dC1FZnNsQTR3QTBfd2ZZYVlrenQwRg?oc=5",
+      "lang": "en",
+      "classifiedBy": "AI(gemini-3.5-flash-lite)"
     },
     {
       "stars": "★★★★★",
@@ -350,6 +363,19 @@
       "ts": 1794472120000,
       "btnText": "🔗 원문 보기",
       "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5IYnhvclVTWVF4bEZISEFZSzJVU3N2X1NtVzhMTlZ0SXRjN3BKaVk1T2dndDVSNTBjd081a3VKTWFibWV1MVF6eV9xN1BhaU1Kdmc?oc=5",
+      "lang": "ko",
+      "classifiedBy": "AI(gemini-3.5-flash-lite)"
+    },
+    {
+      "stars": "★★★★☆",
+      "category": "대체투자·사모시장",
+      "title": "전력망·데이터센터 투자 열기 '후끈'…글로벌 인프라 펀드로 '뭉칫돈'",
+      "desc": "전력망과 데이터센터 등 글로벌 인프라 펀드를 중심으로 한 대체투자 시장 동향을 보여준다.",
+      "org": "마켓인",
+      "date": "2026.11.12",
+      "ts": 1794470400000,
+      "btnText": "🔗 원문 보기",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBBWFZGU0gwbXZlbkNBUmRaT3d4bDVTbldHSlo4dVVpZ25kb05qUl9nSndabmN6ME5MVDVjZUJtMzFwNlU3YXFYRU45V0FtMWF6Yy1ENUs2Vm9kYVNBNkNVWHFKY2k1X29Oa0pfT3pYOUV2Zw?oc=5",
       "lang": "ko",
       "classifiedBy": "AI(gemini-3.5-flash-lite)"
     },
@@ -870,32 +896,6 @@
       "ts": 1792738800000,
       "btnText": "🔗 원문 보기",
       "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9rVC1YMWs0ZzdLZ2ZSc3ZrS08weU1CS1Vnd3o2NUJ4dTBhVUp2Sm9NUWhSWlVKWHVVTXEwd1ZFNTBzUXRLUUFVQW1wUDFGZC1ZQ1liNVJYcHBkQTk5ZVlFNXRJd29ZV1hVRnlieFNsMVBIWS04QURNTjNadk8?oc=5",
-      "lang": "en",
-      "classifiedBy": "AI(gemini-3.5-flash-lite)"
-    },
-    {
-      "stars": "★★★★★",
-      "category": "글로벌 F/O 동향",
-      "title": "AI가 글로벌 초고액자산가의 최고 직접투자처로 등극",
-      "desc": "초고액자산가들의 글로벌 직접투자 트렌드에서 AI가 선두를 차지하고 있음을 보여주는 조사 결과입니다.",
-      "org": "Funds Society",
-      "date": "2026.10.23",
-      "ts": 1792738800000,
-      "btnText": "🔗 원문 보기",
-      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNY1Vfbm0wcXJROW1YeHJnSU1EcnNkS21EdnZWV1luVHJ2VmhvaXBlQjVwSFNnUGVHRk9BeDlMcTFQNndaWnBLOWhYV2szMXhFa3I2RXd6bndpbjBkUVJVMk13Nko5MFVNVkVLZEZwZTdoLW9oanNCdkt6NUplcmk3cFU1M1ZGRFdKMk4xLUlBR1puczU0NkZYZVZXU0Y5VGJUWlVoSXRmbHBtalNOLUg3M245VnNreGZqdXNHdTJsbUxfVnE1S2cxSEI5b2Q0bmhRNEs5d2F0Nlowdw?oc=5",
-      "lang": "en",
-      "classifiedBy": "AI(gemini-3.5-flash-lite)"
-    },
-    {
-      "stars": "★★★★☆",
-      "category": "글로벌 F/O 동향",
-      "title": "차세대에 의해 패밀리오피스는 위험, 부채, 대체투자를 늘릴 가능성이 높다",
-      "desc": "차세대 경영진 등장에 따라 패밀리오피스의 포트폴리오에서 위험자산, 부채, 대체투자 확대가 예상된다는 전망입니다.",
-      "org": "CNBC",
-      "date": "2026.10.23",
-      "ts": 1792738800000,
-      "btnText": "🔗 원문 보기",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPaUNHcnBPQzdjbm94QzBhRjhIMDlkQi1aalpmTlBxbzJMNGZ5TTdlSlBWWWdZQVZWNVZHM25nbHNnN2hlY1JyNXZuS2pxZTJaODJwdkhwbXI0eEZvRy02dVhTMzlQb2xTTkJkYlFtMmItT1RfWjdMSU1ETDByN01nYnAzOWE1czBXX2hNRGtwWHpkN1pITGJjT0xvMEdOM0tCQkVBbDg4TdIBrAFBVV95cUxNWjhUblQzOGJDOVFEbDhsWk92SG5EdjZMdnRINnF2V2MwWDBtTEcwR1k3Szh2ZzZIQ3U0Vzhwai12eXpwaE1QQWx1MHN6WVRVYklIdWs2b3A0Yy1rdENrS01adl9GLTdMVHZOUHV4YkpaRllnajJ0TzdTQWtTNEZrb25wR3ZxQTVBcm1vdWU3ZFg1SEg1UEp1UFYwcWsxME4yUlRtSktxdnctQ0Jo?oc=5",
       "lang": "en",
       "classifiedBy": "AI(gemini-3.5-flash-lite)"
     }
