@@ -1,6 +1,6 @@
 {
   "note": "curated=true 는 PB가 고른 연례 핵심 리포트(고정), 나머지는 scripts/build-insights.mjs가 매일 자동 수집합니다.",
-  "updatedAt": "2026-11-21T09:21:03.143Z",
+  "updatedAt": "2026-11-21T22:41:53.643Z",
   "categories": [
     "글로벌 F/O 동향",
     "국내 부자·웰스 리포트",
@@ -889,13 +889,13 @@
     {
       "stars": "★★★★☆",
       "category": "글로벌 F/O 동향",
-      "title": "AI는 글로벌 초고액자산가의 최고의 직접 투자 목적지로 선정되었습니다",
-      "desc": "글로벌 초고액자산가들의 AI 분야 직접 투자 동향을 전합니다.",
-      "org": "Funds Society",
+      "title": "래플스 패밀리오피스, 아시아의 스테이블코인 억만장자를 위한 자산관리사 구축 중",
+      "desc": "아시아 지역 스테이블코인 자산가들을 겨냥한 글로벌 패밀리오피스의 동향을 보여줍니다.",
+      "org": "Fortune",
       "date": "2026.10.23",
       "ts": 1792738800000,
       "btnText": "🔗 원문 보기",
-      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNY1Vfbm0wcXJROW1YeHJnSU1EcnNkS21EdnZWV1luVHJ2VmhvaXBlQjVwSFNnUGVHRk9BeDlMcTFQNndaWnBLOWhYV2szMXhFa3I2RXd6bndpbjBkUVJVMk13Nko5MFVNVkVLZEZwZTdoLW9oanNCdkt6NUplcmk3cFU1M1ZGRFdKMk4xLUlBR1puczU0NkZYZVZXU0Y5VGJUWlVoSXRmbHBtalNOLUg3M245VnNreGZqdXNHdTJsbUxfVnE1S2cxSEI5b2Q0bmhRNEs5d2F0Nlowdw?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9rVC1YMWs0ZzdLZ2ZSc3ZrS08weU1CS1Vnd3o2NUJ4dTBhVUp2Sm9NUWhSWlVKWHVVTXEwd1ZFNTBzUXRLUUFVQW1wUDFGZC1ZQ1liNVJYcHBkQTk5ZVlFNXRJd29ZV1hVRnlieFNsMVBIWS04QURNTjNadk8?oc=5",
       "lang": "en",
       "classifiedBy": "AI(gemini-3.5-flash-lite)"
     }
