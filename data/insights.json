@@ -1,6 +1,6 @@
 {
   "note": "curated=true 는 PB가 고른 연례 핵심 리포트(고정), 나머지는 scripts/build-insights.mjs가 매일 자동 수집합니다.",
-  "updatedAt": "2026-11-20T22:48:02.072Z",
+  "updatedAt": "2026-11-21T09:21:03.143Z",
   "categories": [
     "글로벌 F/O 동향",
     "국내 부자·웰스 리포트",
@@ -208,6 +208,19 @@
       "btnText": "🔗 원문 보기",
       "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPMDZRcFBWNlp4emdkc1E5SFlXaGlwbmw3WE1vazRvZDB2UzNfbDZZTk0yMzRncmxYNlBaRUl3empDSURZUndJTWpvY05SdlF6VU9Kck4wdEFMdXhFTmphSk56bW12dy13RWdUOWtrNWNfNldCZ0pZV0xMbHBpbXZYMTM3OUdqRDZCRFhQbkszcUNpZ0F2LXA5MG9acjNWRzhyNk5LQURNbXBOU1duTHd1U3lLU25IT0VsRVVXTkJzYlZQZTEyRHpkNHN3?oc=5",
       "lang": "en",
+      "classifiedBy": "AI(gemini-3.5-flash-lite)"
+    },
+    {
+      "stars": "★★★☆☆",
+      "category": "대체투자·사모시장",
+      "title": "패밀리오피스 CEO, 비트코인 건너뛴 이유 설명할 날 온다",
+      "desc": "패밀리오피스들의 가상자산 투자 접근 방식과 인식 변화를 다룹니다.",
+      "org": "BeInCrypto",
+      "date": "2026.11.18",
+      "ts": 1794954556000,
+      "btnText": "🔗 원문 보기",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFAtSzdDNmEyWDdjMjUyZ20yYy1tUG5QNU1OU2thY29FZ2NTaGZ6YmZpYk1tTWJiZHNhRWtmS00yNEVkcEI4RHJoV1F1X0FEQzY0WkhJQVZKUE41aTRSMGhMNTZRc21DLU84QjdFaXdudWZYSE51RkE?oc=5",
+      "lang": "ko",
       "classifiedBy": "AI(gemini-3.5-flash-lite)"
     },
     {
@@ -876,26 +889,13 @@
     {
       "stars": "★★★★☆",
       "category": "글로벌 F/O 동향",
-      "title": "패밀리오피스 딜 메이킹: 신뢰가 실사를 대신할 때, 실제로 누가 책임을 지는가?",
-      "desc": "패밀리오피스 투자 집행 시 신뢰와 실사 책임에 관한 글로벌 인사이트입니다.",
-      "org": "Crain Currency",
+      "title": "AI는 글로벌 초고액자산가의 최고의 직접 투자 목적지로 선정되었습니다",
+      "desc": "글로벌 초고액자산가들의 AI 분야 직접 투자 동향을 전합니다.",
+      "org": "Funds Society",
       "date": "2026.10.23",
       "ts": 1792738800000,
       "btnText": "🔗 원문 보기",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQWWNYaDN6Q2hKMEtZMFJaT0ZMSGRNdnUtM2xndjFLMzdfOWxod2F5UE1ZVzF2cW9kdmk1M3hhUUtiRnk3NkgtUTNWYWxQTHpjVW54VFZqeW5vLUFjVTNBUVkySnFwVFMyUG54ZTJFcFFsNm1CZ01vb2V1OTJyZjdBMXRpb3pSOTNPeTM3NkJB?oc=5",
-      "lang": "en",
-      "classifiedBy": "AI(gemini-3.5-flash-lite)"
-    },
-    {
-      "stars": "★★★★☆",
-      "category": "글로벌 F/O 동향",
-      "title": "래플스 패밀리오피스, 아시아의 스테이블코인 억만장자를 위한 자산관리사 구축",
-      "desc": "아시아 지역 패밀리오피스가 스테이블코인 자산가들을 위한 서비스 확장에 나서고 있습니다.",
-      "org": "Fortune",
-      "date": "2026.10.23",
-      "ts": 1792738800000,
-      "btnText": "🔗 원문 보기",
-      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9rVC1YMWs0ZzdLZ2ZSc3ZrS08weU1CS1Vnd3o2NUJ4dTBhVUp2Sm9NUWhSWlVKWHVVTXEwd1ZFNTBzUXRLUUFVQW1wUDFGZC1ZQ1liNVJYcHBkQTk5ZVlFNXRJd29ZV1hVRnlieFNsMVBIWS04QURNTjNadk8?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNY1Vfbm0wcXJROW1YeHJnSU1EcnNkS21EdnZWV1luVHJ2VmhvaXBlQjVwSFNnUGVHRk9BeDlMcTFQNndaWnBLOWhYV2szMXhFa3I2RXd6bndpbjBkUVJVMk13Nko5MFVNVkVLZEZwZTdoLW9oanNCdkt6NUplcmk3cFU1M1ZGRFdKMk4xLUlBR1puczU0NkZYZVZXU0Y5VGJUWlVoSXRmbHBtalNOLUg3M245VnNreGZqdXNHdTJsbUxfVnE1S2cxSEI5b2Q0bmhRNEs5d2F0Nlowdw?oc=5",
       "lang": "en",
       "classifiedBy": "AI(gemini-3.5-flash-lite)"
     }
