@@ -1,0 +1,652 @@
+{
+  "edition": "MORNING",
+  "generatedAt": "2026-11-22T21:31:41.498Z",
+  "generatedAtKST": "2026.11.23 06:31",
+  "sourceStatus": {
+    "market": "ok",
+    "news": "ok",
+    "summary": "ai-gemini",
+    "summaryModel": "gemini-3.5-flash"
+  },
+  "market": [
+    {
+      "key": "KOSPI",
+      "name": "코스피",
+      "group": "domestic",
+      "priceStr": "4,869.96",
+      "diffStr": "▼ -267.93",
+      "changePct": -5.21,
+      "asOfLocal": "국내 정규장 기준",
+      "asOfKst": "한국 정규장 11.20 15:30 마감",
+      "stale": false,
+      "updatedAt": "2026-11-22T21:30:25.703Z"
+    },
+    {
+      "key": "KOSDAQ",
+      "name": "코스닥",
+      "group": "domestic",
+      "priceStr": "645.68",
+      "diffStr": "▼ -39.13",
+      "changePct": -5.71,
+      "asOfLocal": "국내 정규장 기준",
+      "asOfKst": "한국 정규장 11.20 15:30 마감",
+      "stale": false,
+      "updatedAt": "2026-11-22T21:30:25.703Z"
+    },
+    {
+      "key": "SP500",
+      "name": "S&P 500",
+      "group": "global",
+      "priceStr": "6,910.39",
+      "diffStr": "▼ -265.44",
+      "changePct": -3.7,
+      "asOfLocal": "현지 11.20 16:00 마감",
+      "asOfKst": "한국 11.21 06:00 마감",
+      "stale": false,
+      "updatedAt": "2026-11-22T21:30:25.703Z"
+    },
+    {
+      "key": "NASDAQ",
+      "name": "나스닥",
+      "group": "global",
+      "priceStr": "22,617.73",
+      "diffStr": "▼ -1,261.47",
+      "changePct": -5.28,
+      "asOfLocal": "현지 11.20 16:00 마감",
+      "asOfKst": "한국 11.21 06:00 마감",
+      "stale": false,
+      "updatedAt": "2026-11-22T21:30:25.703Z"
+    },
+    {
+      "key": "SOX",
+      "name": "필라델피아 반도체",
+      "group": "global",
+      "priceStr": "8,408.59",
+      "diffStr": "▼ -1,011.13",
+      "changePct": -10.73,
+      "asOfLocal": "현지 11.20 16:00 마감",
+      "asOfKst": "한국 11.21 06:00 마감",
+      "stale": false,
+      "updatedAt": "2026-11-22T21:30:25.703Z"
+    },
+    {
+      "key": "USDKRW",
+      "name": "원/달러 환율",
+      "group": "fx",
+      "priceStr": "1,346.04",
+      "diffStr": "▲ +11.25",
+      "changePct": 0.84,
+      "asOfLocal": "집계 기준 확인 중",
+      "asOfKst": "집계 기준 확인 중",
+      "stale": false,
+      "updatedAt": "2026-11-22T21:30:25.703Z"
+    }
+  ],
+  "extraMarket": [
+    {
+      "key": "US10Y",
+      "name": "미 10년물 금리",
+      "unit": "%",
+      "priceStr": "4.91",
+      "changePct": -2.77,
+      "diff": -0.14,
+      "chgStr": "-14bp",
+      "stale": false
+    },
+    {
+      "key": "US5Y",
+      "name": "미 5년물 금리",
+      "unit": "%",
+      "priceStr": "4.70",
+      "changePct": -3.39,
+      "diff": -0.165,
+      "chgStr": "-17bp",
+      "stale": false
+    },
+    {
+      "key": "DXY",
+      "name": "달러인덱스",
+      "unit": "",
+      "priceStr": "103.84",
+      "changePct": -0.06,
+      "diff": -0.06,
+      "stale": false
+    },
+    {
+      "key": "USDJPY",
+      "name": "엔/달러",
+      "unit": "엔",
+      "priceStr": "158.61",
+      "changePct": -0.69,
+      "diff": -1.096,
+      "stale": false
+    },
+    {
+      "key": "GOLD",
+      "name": "금",
+      "unit": "달러",
+      "priceStr": "3,515.4",
+      "changePct": -4.62,
+      "diff": -170.1,
+      "stale": false
+    },
+    {
+      "key": "WTI",
+      "name": "WTI 유가",
+      "unit": "달러",
+      "priceStr": "83.41",
+      "changePct": 0.24,
+      "diff": 0.2,
+      "stale": false
+    },
+    {
+      "key": "BTC",
+      "name": "비트코인",
+      "unit": "달러",
+      "priceStr": "60,900",
+      "changePct": 1.34,
+      "diff": 805.7,
+      "stale": false
+    }
+  ],
+  "issues": [
+    {
+      "cat": "증시",
+      "tag": "나스닥 -5.28% · 필라델피아 반도체 -10.73%",
+      "title": "뉴욕증시 기술주 폭락…국내 반도체·AI주 연쇄 충격 우려",
+      "desc": "11월 20일(금) 뉴욕증시는 나스닥 지수가 5.28% 급락하고 필라델피아 반도체 지수가 10.73% 폭락했습니다. 주말 사이 시장에서는 뉴욕증시의 급락 여파가 23일(월) 국내 증시의 반도체 및 AI 관련 종목으로 이어질지 주목하고 있습니다."
+    },
+    {
+      "cat": "증시/매크로",
+      "tag": "코스피 4,869.96 (-5.21%) · 코스닥 645.68 (-5.71%)",
+      "title": "국내 증시 급락 마감 속 주말 사이 정부 증시 안정 대책 가동",
+      "desc": "11월 20일(금) 코스피는 5.21% 내린 4,869.96, 코스닥은 5.71% 하락한 645.68로 마감했습니다. 글로벌 증시의 불확실성이 확대되자 주말 사이 정부는 시장 변동성에 대응하기 위해 증시 안정 대책 가동에 나섰습니다."
+    },
+    {
+      "cat": "외환/채권",
+      "tag": "원/달러 1,346.04원 (+0.84%) · 미 10년물 4.91% (-14bp)",
+      "title": "원/달러 환율 상승 지속 및 미 국채 금리 하락세",
+      "desc": "원/달러 환율은 11.25원 상승하며 1,346.04원을 기록해 해외증권투자 확대에 따른 외환 변동성 우려를 높였습니다. 미 10년물 국채 금리는 14bp 하락한 4.91%를 기록하며 자산 시장 전반의 위험 회피 심리를 반영했습니다."
+    }
+  ],
+  "talkingPoint": "11월 20일(금) 뉴욕증시는 큰 폭으로 하락하며 나스닥 지수가 5.28% 급락한 22,617.73에 마감했고, S&P 500 지수는 3.7% 내린 6,910.39를 기록했습니다. 특히 필라델피아 반도체 지수는 10.73% 폭락한 8,408.59로 마감하며 기술주 전반에 강한 매도세가 집중되었습니다. 앞서 11월 20일(금) 코스피 역시 5.21% 하락한 4,869.96, 코스닥은 5.71% 내린 645.68로 정규장을 마쳤으며, 원/달러 환율은 11.25원 상승한 1,346.04원을 기록했습니다.\n\n주말 사이 뉴욕증시 급락에 따른 국내 증시의 연쇄 충격 우려가 확산된 가운데, 정부는 증시 안정 대책 가동에 나섰습니다. 시장 위험 선호 심리가 경색되면서 안전자산으로 평가받는 금 가격도 4.62% 하락한 3,515.4달러를 기록했고, 미 10년물 국채 금리는 14bp 하락한 4.91%로 내려앉았습니다. 반면 비트코인은 1.34% 상승한 60,900달러, WTI 유가는 0.24% 오른 83.41달러에 거래되었으며 달러인덱스는 103.84로 소폭 내렸습니다. 해외증권투자 확대에 따른 외환 변동성 증가가 환율 상방 압력으로 작용하는 가운데 연준의 정책 불확실성이 자산 시장 전반의 변동성을 확장시키는 양상입니다.\n\n이번 주에는 11월 26일(목) 개최되는 한국은행 금통위의 통화정책방향 결정회의가 국내 금융시장에 중요한 분수령이 될 전망입니다. 또한 11월 26일(목) 미국 증시 휴장과 11월 27일(금) 미국 증시 조기 폐장이 예정되어 있어 주 후반 글로벌 시장의 거래량 감소와 변동성 추이에 유의할 필요가 있습니다. 아울러 12월 1일(화) 예정된 MSCI 분기 리뷰 적용을 앞두고 글로벌 패시브 자금의 이동과 수급 변화 가능성도 함께 지켜볼 요인입니다.",
+  "topNews": [
+    {
+      "title": "올해 상승분 모두 날린 나스닥…월요일 국내 증시 반도체·AI주 '연쇄 충격' 오나",
+      "press": "핀포인트뉴스",
+      "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=506739",
+      "timestamp": 1795331827000,
+      "date": "2026.11.22 16:17",
+      "tags": [
+        "증시"
+      ],
+      "tagSource": "ai",
+      "coverage": 21,
+      "scope": "해외",
+      "outlets": [
+        "빅터뉴스",
+        "핀포인트뉴스",
+        "서울경제",
+        "더스쿠프",
+        "MBC 뉴스",
+        "뉴스1"
+      ],
+      "rssDate": "2026.11.22 16:17",
+      "timeSource": "meta",
+      "googleUrl": "https://news.google.com/rss/articles/CBMic0FVX3lxTFB5ODBIXzBlR1lMSXBUb0Vtb2YwR2E5VGsycUtIbjBRMWlnbWJfZzV3WW9hdHBxYnZ0V3NVcW1NSzREX3d3QTZMS3cxYjRoQ2lsZ25QMWlZT2x0OTlfNmZVYjhwWkpGOGd0bjVZTlBwanViLXfSAXdBVV95cUxQQ1ljTnZIOGt3Q1EwR1BWbV9lN2xhSFlIVHNXUl9FVklMc2E4SFRVMzFhZkFubTZNTXFONGZNYUo5blhwUWN0ZGd4U1ZzQjI2UTFzSkJkeE5oWm8xcHc0ellyQlFoZmt1cEJwRGdQaWN2MWc3dmFsRQ?oc=5",
+      "shortUrl": "https://is.gd/GuoGmN"
+    },
+    {
+      "title": "금(금값, 금시세) 18K 14K 등 얼마…뉴욕증시 급락 등 불안정한 금융시장 속 반등 여부는?",
+      "press": "CBC뉴스",
+      "url": "https://www.cbci.co.kr/news/articleView.html?idxno=629590",
+      "timestamp": 1795359660000,
+      "date": "2026.11.23 00:01",
+      "tags": [
+        "원자재"
+      ],
+      "tagSource": "ai",
+      "coverage": 9,
+      "scope": "해외",
+      "outlets": [
+        "CBC뉴스",
+        "게임톡",
+        "뉴시스",
+        "뉴스1",
+        "씬짜오베트남",
+        "헤럴드경제"
+      ],
+      "rssDate": "2026.11.23 00:01",
+      "timeSource": "meta",
+      "googleUrl": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBDNmhZVjVrNk90eDZULUZGQlY1RmJibHFvbGhkT2ZzaGVFT0VZLUdBbWFqTkVhRmcwUHVQSHpoYWRzRXRQSE1CNm1sdFl6SVlsb3ladWdvOFhMa3ZmVHBjWHlXekRxUWt3?oc=5",
+      "shortUrl": "https://is.gd/CEiwEO"
+    },
+    {
+      "title": "연준 정책 불확실성과 펀드 인출로 디지털 자산 유동성이 줄면서 지캐시 하락",
+      "press": "Traders Union",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQVm1BeC12M0lGUHZIX1pKZVBhSWJsVHFZU0planpHTm9ySVQ2S2tlR2pheU1MdnQ4T3ZBcThjSmZIaEczalJkeUtYSWdYLXZlNVBxSXdobGY1N0VrOTNISmJ2WEFsWkc1N3NpTjZaSzd5a2xFZklxTHZzdC1fTmNKYmdLNnVFYVpZaHFxSXNjSUl1cE1yYmUwSGp4LTA?oc=5",
+      "timestamp": 1795379670000,
+      "date": "2026.11.23 05:34",
+      "tags": [
+        "대체투자",
+        "채권·금리"
+      ],
+      "tagSource": "ai",
+      "coverage": 3,
+      "scope": "해외",
+      "outlets": [
+        "Traders Union",
+        "코인리더스",
+        "BeInCrypto"
+      ],
+      "rssDate": "2026.11.23 05:34",
+      "timeSource": "rss",
+      "shortUrl": "https://is.gd/ADWSjO"
+    },
+    {
+      "title": "[뉴욕채권-주간] 연준 긴축 증시가 대신 해주나…다가오는 '침묵 기간'",
+      "press": "연합인포맥스",
+      "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4445897",
+      "timestamp": 1795338318000,
+      "date": "2026.11.22 18:05",
+      "tags": [
+        "채권·금리",
+        "증시"
+      ],
+      "tagSource": "ai",
+      "coverage": 1,
+      "scope": "해외",
+      "outlets": [
+        "연합인포맥스"
+      ],
+      "rssDate": "2026.11.22 18:05",
+      "timeSource": "meta",
+      "googleUrl": "https://news.google.com/rss/articles/CBMicEFVX3lxTE93eDljMVVkZEVnUFZFcmpHSUc1NmhGdm9ZbG9hSElsZHJ5bjB4RjN4d0Y5RmlaTGxRS3pjdnV2RzI0UkdlUjh3c3h5ZUtTYU1SaUdwSk9xUjAwQmFFMENnQ2lJemNxX0lGWFEycUYyRlU?oc=5",
+      "shortUrl": "https://is.gd/gfJMsY"
+    },
+    {
+      "title": "옆 동 실거래가로 증여세 추징?‥법원 \"적법한 과세\"",
+      "press": "MBC 뉴스",
+      "url": "https://imnews.imbc.com/replay/2026/nwdesk/article/6867646_37004.html",
+      "timestamp": 1795346237000,
+      "date": "2026.11.22 20:17",
+      "tags": [
+        "TAX"
+      ],
+      "tagSource": "ai",
+      "coverage": 16,
+      "scope": "국내",
+      "outlets": [
+        "MBC 뉴스",
+        "Daily NTN",
+        "동아일보",
+        "아주경제",
+        "파이낸셜뉴스",
+        "KBS 뉴스"
+      ],
+      "rssDate": "2026.11.22 20:17",
+      "timeSource": "meta",
+      "googleUrl": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5QMlB0VVBoYi1qdHJrRzI2RnN6OG1hV1FoRGgwMndjRHI0VEJKUVE4ZkRXZnBWcl9rRnoySFZaSWUyTHFFMm9Fc0hOWUViajRnZ3RnU05xQkFHbDEySVVWa3hISUFEcHo5Z3dtbHRPUzUzc1ZvWTZhZNIBeEFVX3lxTE5wVFk3bFJjelZwV1BfUkZUUVNHQm9YcW1vSFZsS0dsakhJcmRfQ2Z5WmtiSVN6T1VXbm5GYmZPZ1JiNzl1YUJ4MENpX0JoT0RnUWI3bGdyc2d4RHgxbXRZWDB2akMySTloSUNTZkNzdGR0V1RqcUw4VA?oc=5",
+      "shortUrl": "https://is.gd/YkPDJy"
+    },
+    {
+      "title": "달러자산 쌓아도 환율 불안…해외증권투자가 변동성 키웠다",
+      "press": "www.ebn.co.kr",
+      "url": "https://www.ebn.co.kr/news/articleView.html?idxno=1732574",
+      "timestamp": 1795381200000,
+      "date": "2026.11.23 06:00",
+      "tags": [
+        "외환"
+      ],
+      "tagSource": "ai",
+      "coverage": 5,
+      "scope": "국내",
+      "outlets": [
+        "www.ebn.co.kr",
+        "블루밍비트",
+        "서울파이낸스",
+        "국민일보",
+        "KB Think"
+      ],
+      "rssDate": "2026.11.23 06:00",
+      "timeSource": "meta",
+      "googleUrl": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9sTk5xdEJQV3VRNEZFWGJjMTdkcDJIT3YzZXpTRnlodVJ3Zk42Nm1vazZKb2JSQldYY25fN1dQVDl0T21QWUVkQ19FZURLMVUybDlCcEhrdmZHNzNKZktfSGcxSWdwbGFR?oc=5",
+      "shortUrl": "https://is.gd/8bsHrU"
+    },
+    {
+      "title": "'S&P500 몰빵'도 위험 구간…ETF 장기투자 '분산'이 답",
+      "press": "www.ebn.co.kr",
+      "url": "https://www.ebn.co.kr/news/articleView.html?idxno=1732456",
+      "timestamp": 1795381200000,
+      "date": "2026.11.23 06:00",
+      "tags": [
+        "증시"
+      ],
+      "tagSource": "ai",
+      "coverage": 2,
+      "scope": "국내",
+      "outlets": [
+        "www.ebn.co.kr",
+        "Naver Blog"
+      ],
+      "rssDate": "2026.11.23 06:00",
+      "timeSource": "meta",
+      "googleUrl": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9FNmRpdk9FSjRERnNhYUw1Z2ZWYWtWbDZKYjdvclVfQlJWQXVrTzB3M25paG1ONUkxLTYwOWhMOG1xeU04UmRPakk4dUl0QkxVWk9XcWhHaWcyeHFnRnNFazEzaDZoRjV0?oc=5",
+      "shortUrl": "https://is.gd/H2ugpE"
+    },
+    {
+      "title": "뉴욕증시 급락에 코스피 '검은 월요일' 우려…정부, 증시 안정 대책 가동",
+      "press": "국제뉴스",
+      "url": "https://www.gukjenews.com/news/articleView.html?idxno=3759676",
+      "timestamp": 1795352519000,
+      "date": "2026.11.22 22:01",
+      "tags": [
+        "증시",
+        "매크로"
+      ],
+      "tagSource": "ai",
+      "coverage": 1,
+      "scope": "국내",
+      "outlets": [
+        "국제뉴스"
+      ],
+      "rssDate": "2026.11.22 22:01",
+      "timeSource": "meta",
+      "googleUrl": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1jWkx2VnpnUlZBYy1hTDBydVg2MTdYUTBqekN0NVFha1U2b2c3VjVlNDlNREE4d05PTmVNSFN6VC0tblpmY214QVZpQXNPU0RRWTFtVmxwa1llOEIwYU1RSHNIcXpLRHhiT2V6MHRB?oc=5",
+      "shortUrl": "https://is.gd/RIkaXF"
+    }
+  ],
+  "assetChecks": {
+    "framework": "assets",
+    "generatedAt": "2026-11-22T21:31:41.498Z",
+    "model": "gemini-3.5-flash",
+    "cards": [
+      {
+        "key": "kr_equity",
+        "name": "국내 주식",
+        "market": [
+          {
+            "key": "KOSPI",
+            "name": "코스피",
+            "priceStr": "4,869.96",
+            "changePct": -5.21,
+            "unit": ""
+          },
+          {
+            "key": "KOSDAQ",
+            "name": "코스닥",
+            "priceStr": "645.68",
+            "changePct": -5.71,
+            "unit": ""
+          }
+        ],
+        "events": [
+          {
+            "date": "2026-11-26",
+            "kind": "bok",
+            "dday": 3,
+            "label": "한국은행 금통위 (통화정책방향 결정회의)",
+            "when": "11/26(목)"
+          },
+          {
+            "date": "2026-12-01",
+            "kind": "msci_effective",
+            "dday": 8,
+            "label": "MSCI 분기 리뷰 적용일",
+            "when": "12/1(화)"
+          }
+        ],
+        "news": [
+          {
+            "title": "'S&P500 몰빵'도 위험 구간…ETF 장기투자 '분산'이 답",
+            "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9FNmRpdk9FSjRERnNhYUw1Z2ZWYWtWbDZKYjdvclVfQlJWQXVrTzB3M25paG1ONUkxLTYwOWhMOG1xeU04UmRPakk4dUl0QkxVWk9XcWhHaWcyeHFnRnNFazEzaDZoRjV0?oc=5",
+            "press": "www.ebn.co.kr",
+            "coverage": 2
+          },
+          {
+            "title": "뉴욕증시 급락에 코스피 '검은 월요일' 우려…정부, 증시 안정 대책 가동",
+            "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1jWkx2VnpnUlZBYy1hTDBydVg2MTdYUTBqekN0NVFha1U2b2c3VjVlNDlNREE4d05PTmVNSFN6VC0tblpmY214QVZpQXNPU0RRWTFtVmxwa1llOEIwYU1RSHNIcXpLRHhiT2V6MHRB?oc=5",
+            "press": "국제뉴스",
+            "coverage": 1
+          }
+        ],
+        "level": "변동 큼",
+        "headline": "뉴욕증시 급락 영향 속 코스피·코스닥 큰 폭 하락",
+        "analysis": "11월 20일(금) 코스피는 4,869.96(-5.21%), 코스닥은 645.68(-5.71%)로 크게 하락했습니다. 뉴욕증시 급락의 여파로 국내 증시 충격 우려가 커지자 정부는 증시 안정 대책 가동에 나섰습니다. 주말 사이 시장에서는 단일 지수 집중 투자 위험성과 ETF 분산 투자 필요성이 제기되었습니다.",
+        "watch": "11월 26일(목) 한국은행 금통위 통화정책 결정과 12월 1일(화) MSCI 분기 리뷰 적용일을 주시할 필요가 있습니다.",
+        "textBy": "ai"
+      },
+      {
+        "key": "us_equity",
+        "name": "해외 주식",
+        "market": [
+          {
+            "key": "SP500",
+            "name": "S&P 500",
+            "priceStr": "6,910.39",
+            "changePct": -3.7,
+            "unit": ""
+          },
+          {
+            "key": "NASDAQ",
+            "name": "나스닥",
+            "priceStr": "22,617.73",
+            "changePct": -5.28,
+            "unit": ""
+          },
+          {
+            "key": "SOX",
+            "name": "필라델피아 반도체",
+            "priceStr": "8,408.59",
+            "changePct": -10.73,
+            "unit": ""
+          }
+        ],
+        "events": [
+          {
+            "date": "2026-11-26",
+            "kind": "us_holiday",
+            "dday": 3,
+            "label": "미국 증시 휴장일",
+            "when": "11/26(목)"
+          },
+          {
+            "date": "2026-11-27",
+            "kind": "us_early_close",
+            "dday": 4,
+            "label": "미국 증시 조기 폐장",
+            "when": "11/27(금)"
+          },
+          {
+            "date": "2026-12-04",
+            "kind": "jobs_us",
+            "dday": 11,
+            "label": "미국 고용보고서 (비농업 고용·실업률)",
+            "when": "12/4(금)"
+          }
+        ],
+        "news": [
+          {
+            "title": "올해 상승분 모두 날린 나스닥…월요일 국내 증시 반도체·AI주 '연쇄 충격' 오나",
+            "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFB5ODBIXzBlR1lMSXBUb0Vtb2YwR2E5VGsycUtIbjBRMWlnbWJfZzV3WW9hdHBxYnZ0V3NVcW1NSzREX3d3QTZMS3cxYjRoQ2lsZ25QMWlZT2x0OTlfNmZVYjhwWkpGOGd0bjVZTlBwanViLXfSAXdBVV95cUxQQ1ljTnZIOGt3Q1EwR1BWbV9lN2xhSFlIVHNXUl9FVklMc2E4SFRVMzFhZkFubTZNTXFONGZNYUo5blhwUWN0ZGd4U1ZzQjI2UTFzSkJkeE5oWm8xcHc0ellyQlFoZmt1cEJwRGdQaWN2MWc3dmFsRQ?oc=5",
+            "press": "핀포인트뉴스",
+            "coverage": 21
+          },
+          {
+            "title": "[뉴욕채권-주간] 연준 긴축 증시가 대신 해주나…다가오는 '침묵 기간'",
+            "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE93eDljMVVkZEVnUFZFcmpHSUc1NmhGdm9ZbG9hSElsZHJ5bjB4RjN4d0Y5RmlaTGxRS3pjdnV2RzI0UkdlUjh3c3h5ZUtTYU1SaUdwSk9xUjAwQmFFMENnQ2lJemNxX0lGWFEycUYyRlU?oc=5",
+            "press": "연합인포맥스",
+            "coverage": 1
+          }
+        ],
+        "level": "변동 큼",
+        "headline": "기술주 폭락 속 나스닥 올해 상승분 반납",
+        "analysis": "11월 20일(금) 뉴욕증시는 나스닥이 22,617.73(-5.28%) 하락하며 올해 상승분을 모두 날렸고, S&P 500은 6,910.39(-3.7%), 필라델피아 반도체 지수는 8,408.59(-10.73%) 급락했습니다. 연준의 긴축 및 정책 불확실성이 증시 하락을 유발했으며, 주말 사이 국내 증시의 반도체 및 AI 주식으로 연쇄 충격이 이어질 수 있다는 우려가 나왔습니다.",
+        "watch": "11월 26일(목) 미 증시 휴장 및 27일(금) 조기 폐장을 지나 12월 4일(금) 발표될 미국 고용보고서를 확인할 필요가 있습니다.",
+        "textBy": "ai"
+      },
+      {
+        "key": "bonds",
+        "name": "채권·금리",
+        "market": [
+          {
+            "key": "US10Y",
+            "name": "미 10년물 금리",
+            "priceStr": "4.91",
+            "changePct": -2.77,
+            "unit": "%",
+            "chgStr": "-14bp"
+          },
+          {
+            "key": "US5Y",
+            "name": "미 5년물 금리",
+            "priceStr": "4.70",
+            "changePct": -3.39,
+            "unit": "%",
+            "chgStr": "-17bp"
+          }
+        ],
+        "events": [
+          {
+            "date": "2026-11-26",
+            "kind": "bok",
+            "dday": 3,
+            "label": "한국은행 금통위 (통화정책방향 결정회의)",
+            "when": "11/26(목)"
+          },
+          {
+            "date": "2026-12-04",
+            "kind": "jobs_us",
+            "dday": 11,
+            "label": "미국 고용보고서 (비농업 고용·실업률)",
+            "when": "12/4(금)"
+          }
+        ],
+        "news": [
+          {
+            "title": "연준 정책 불확실성과 펀드 인출로 디지털 자산 유동성이 줄면서 지캐시 하락",
+            "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQVm1BeC12M0lGUHZIX1pKZVBhSWJsVHFZU0planpHTm9ySVQ2S2tlR2pheU1MdnQ4T3ZBcThjSmZIaEczalJkeUtYSWdYLXZlNVBxSXdobGY1N0VrOTNISmJ2WEFsWkc1N3NpTjZaSzd5a2xFZklxTHZzdC1fTmNKYmdLNnVFYVpZaHFxSXNjSUl1cE1yYmUwSGp4LTA?oc=5",
+            "press": "Traders Union",
+            "coverage": 3
+          }
+        ],
+        "level": "변동 큼",
+        "headline": "미국 국채 금리 하락 및 연준 불확실성 지속",
+        "analysis": "11월 20일(금) 미 10년물 국채 금리는 4.91%로 14bp 하락했고, 미 5년물 금리는 4.70%로 17bp 하락했습니다. 연준 정책 불확실성이 이어지는 가운데 주말 사이 펀드 인출 등으로 시장 유동성 위축 현상이 지적되었습니다.",
+        "watch": "11월 26일(목) 한국은행 금통위와 12월 4일(금) 미국 고용보고서 발표가 채권 시장의 주요 변수입니다.",
+        "textBy": "ai"
+      },
+      {
+        "key": "fx",
+        "name": "외환",
+        "market": [
+          {
+            "key": "USDKRW",
+            "name": "원/달러 환율",
+            "priceStr": "1,346.04",
+            "changePct": 0.84,
+            "unit": ""
+          },
+          {
+            "key": "DXY",
+            "name": "달러인덱스",
+            "priceStr": "103.84",
+            "changePct": -0.06,
+            "unit": ""
+          },
+          {
+            "key": "USDJPY",
+            "name": "엔/달러",
+            "priceStr": "158.61",
+            "changePct": -0.69,
+            "unit": "엔"
+          }
+        ],
+        "events": [
+          {
+            "date": "2026-11-26",
+            "kind": "bok",
+            "dday": 3,
+            "label": "한국은행 금통위 (통화정책방향 결정회의)",
+            "when": "11/26(목)"
+          }
+        ],
+        "news": [
+          {
+            "title": "달러자산 쌓아도 환율 불안…해외증권투자가 변동성 키웠다",
+            "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9sTk5xdEJQV3VRNEZFWGJjMTdkcDJIT3YzZXpTRnlodVJ3Zk42Nm1vazZKb2JSQldYY25fN1dQVDl0T21QWUVkQ19FZURLMVUybDlCcEhrdmZHNzNKZktfSGcxSWdwbGFR?oc=5",
+            "press": "www.ebn.co.kr",
+            "coverage": 5
+          }
+        ],
+        "level": "주목",
+        "headline": "원/달러 환율 상승 속 달러 자산 변동성 확대",
+        "analysis": "11월 20일(금) 원/달러 환율은 1,346.04원(+0.84%)으로 상승한 반면, 달러인덱스는 103.84(-0.06%), 엔/달러 환율은 158.61엔(-0.69%)을 기록했습니다. 주말 사이 달러 자산을 쌓아도 해외증권투자가 환율 변동성을 확대시키며 불안 요소로 작용한다는 분석이 나왔습니다.",
+        "watch": "11월 26일(목) 개최되는 한국은행 금통위의 통화정책방향 결정이 환율에 미칠 영향을 관찰해야 합니다.",
+        "textBy": "ai"
+      },
+      {
+        "key": "commodities",
+        "name": "원자재",
+        "market": [
+          {
+            "key": "GOLD",
+            "name": "금",
+            "priceStr": "3,515.4",
+            "changePct": -4.62,
+            "unit": "달러"
+          },
+          {
+            "key": "WTI",
+            "name": "WTI 유가",
+            "priceStr": "83.41",
+            "changePct": 0.24,
+            "unit": "달러"
+          }
+        ],
+        "events": [],
+        "news": [
+          {
+            "title": "금(금값, 금시세) 18K 14K 등 얼마…뉴욕증시 급락 등 불안정한 금융시장 속 반등 여부는?",
+            "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBDNmhZVjVrNk90eDZULUZGQlY1RmJibHFvbGhkT2ZzaGVFT0VZLUdBbWFqTkVhRmcwUHVQSHpoYWRzRXRQSE1CNm1sdFl6SVlsb3ladWdvOFhMa3ZmVHBjWHlXekRxUWt3?oc=5",
+            "press": "CBC뉴스",
+            "coverage": 9
+          }
+        ],
+        "level": "변동 큼",
+        "headline": "금 가격 급락 속 WTI 유가 소폭 상승",
+        "analysis": "11월 20일(금) 금 가격은 3,515.4달러(-4.62%)로 큰 폭 하락한 반면, WTI 유가는 83.41달러(+0.24%)로 소폭 상승했습니다. 뉴욕증시 급락 등 불안정한 금융시장 환경 속에서 금 시세의 향후 반등 여부에 관심이 쏠리고 있습니다.",
+        "watch": "불안정한 금융시장 상황 속에서 위험자산 변동성에 따른 원자재 가격 흐름을 살펴볼 필요가 있습니다.",
+        "textBy": "ai"
+      },
+      {
+        "key": "alternatives",
+        "name": "부동산·대체투자",
+        "market": [
+          {
+            "key": "BTC",
+            "name": "비트코인",
+            "priceStr": "60,900",
+            "changePct": 1.34,
+            "unit": "달러"
+          }
+        ],
+        "events": [],
+        "news": [],
+        "level": "평이",
+        "headline": "뚜렷한 신호 없음",
+        "analysis": "11월 20일(금) 비트코인은 60,900달러(+1.34%)를 기록했습니다.",
+        "watch": "연준 정책 불확실성에 따른 디지털 자산 시장 내 유동성 변화를 주시해야 합니다.",
+        "textBy": "ai"
+      }
+    ],
+    "taxNews": [
+      {
+        "title": "옆 동 실거래가로 증여세 추징?‥법원 \"적법한 과세\"",
+        "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5QMlB0VVBoYi1qdHJrRzI2RnN6OG1hV1FoRGgwMndjRHI0VEJKUVE4ZkRXZnBWcl9rRnoySFZaSWUyTHFFMm9Fc0hOWUViajRnZ3RnU05xQkFHbDEySVVWa3hISUFEcHo5Z3dtbHRPUzUzc1ZvWTZhZNIBeEFVX3lxTE5wVFk3bFJjelZwV1BfUkZUUVNHQm9YcW1vSFZsS0dsakhJcmRfQ2Z5WmtiSVN6T1VXbm5GYmZPZ1JiNzl1YUJ4MENpX0JoT0RnUWI3bGdyc2d4RHgxbXRZWDB2akMySTloSUNTZkNzdGR0V1RqcUw4VA?oc=5",
+        "press": "MBC 뉴스",
+        "coverage": 16
+      }
+    ]
+  }
+}
