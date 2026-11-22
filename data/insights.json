@@ -1,6 +1,6 @@
 {
   "note": "curated=true 는 PB가 고른 연례 핵심 리포트(고정), 나머지는 scripts/build-insights.mjs가 매일 자동 수집합니다.",
-  "updatedAt": "2026-11-21T22:41:53.643Z",
+  "updatedAt": "2026-11-22T09:21:51.693Z",
   "categories": [
     "글로벌 F/O 동향",
     "국내 부자·웰스 리포트",
@@ -459,6 +459,19 @@
     },
     {
       "stars": "★★★★☆",
+      "category": "글로벌 F/O 동향",
+      "title": "패밀리오피스 2026년 기술 보고서: 공급업체들이 AI 분야에서 앞서가는 동안 패밀리오피스는 여전히 수작업으로 운영되고 있다",
+      "desc": "패밀리오피스의 운영 및 기술 도입 현황을 담은 2026년 테크 리포트입니다.",
+      "org": "The Detroit News",
+      "date": "2026.11.10",
+      "ts": 1794316978000,
+      "btnText": "🔗 원문 보기",
+      "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPVUpMTzh0WkdXYWRrZzRjMU5aQXo0NldtaUF4b3dDdXd3VVRUWmpDMGdLZUxwODhLbGtmNFBYZ1pyeTlMT3k3Zll2TU5udUNkNmd1Sk9rcXZGUm5veW5SUHhqam5QcGJ3VXVsUExCNWxoNWR2ejlrYjE5ajh3RW14LWxkc3JfckFNcVhnbjRMb2dzTlN0Si1XRjRzRnZZVGlvd0FvNHJwTkJ5WFB1M1ROWlpzV25UTVNWdmFTVXVPZkVEeFZ3eEliODY5SkozZFVCWHYzdmFURkwzbXpvS3pucnFqYVJ2Y1BqeEE?oc=5",
+      "lang": "en",
+      "classifiedBy": "AI(gemini-3.5-flash-lite)"
+    },
+    {
+      "stars": "★★★★☆",
       "category": "대체투자·사모시장",
       "title": "부동산 신흥 트렌드: 유럽 2027",
       "desc": "유럽 부동산 시장의 신흥 투자 트렌드와 전망을 제시합니다.",
@@ -572,6 +585,19 @@
       "btnText": "🔗 원문 보기",
       "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE10dC1tMi1rSTU5OUlMaFczR0ltbkhZSmY5dGhCSlIwQUdZa0NnUHlNb2UzTUVpUHo2NVhOdkUxTGFHMG1sNWtJRUxZQ3F3UTU2ZGNBb3dTNnppNHRqdDVSeHpBNDNzdlBvVzBUWQ?oc=5",
       "lang": "ko",
+      "classifiedBy": "AI(gemini-3.5-flash-lite)"
+    },
+    {
+      "stars": "★★★★☆",
+      "category": "승계·세무·신탁",
+      "title": "패밀리오피스의 경우, 자산 이전은 대개 경영권 승계보다 선행한다",
+      "desc": "초고액자산가 가문의 자산 이전과 경영권 승계의 선후 관계에 대한 리포트 내용입니다.",
+      "org": "Crain Currency",
+      "date": "2026.11.06",
+      "ts": 1793952000000,
+      "btnText": "🔗 원문 보기",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNbmpMeGtQVEJPWXdNQW1BcHFDS1VUWmJYcEZyZEZwNllmY1R1RUxqT2FsNlEzMEl4UWpKV05zRVhfSXkxemlhWkpqbjg1dWFrUmcxdDZHMERWaHBjaUNxYU1LVGZNSklzY19EcW1CSnpualo5THNQbTBjcUxFaVQ2anpiMUI1YnBHU0lSc2lubkQyXzRFVHRQN3hR?oc=5",
+      "lang": "en",
       "classifiedBy": "AI(gemini-3.5-flash-lite)"
     },
     {
@@ -870,32 +896,6 @@
       "ts": 1792998000000,
       "btnText": "🔗 원문 보기",
       "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNeGFpRTRTTE9TZnB6NzgwX3R3eHFISjMzUWdLRDNDSXRDMnN0a3YyU245bWdJWlB0ZEJwaHBUdmZvVEFOSldocC1GLTJDQi1WblBndEo4SFVzNlN4R1REYVp6cFVIU2xkSENHWEJHeVNkSndKWTlXNjVEeTJBUGpaUmtHd1dzcDdZWmh1alVOQUpvQ0l2MTA4WW9wbmxpdXFMcURpU1o0bXRURFYwRVpXWjFRYTJxeTNndWc?oc=5",
-      "lang": "en",
-      "classifiedBy": "AI(gemini-3.5-flash-lite)"
-    },
-    {
-      "stars": "★★★★☆",
-      "category": "자산배분·시장 전망",
-      "title": "2026년 4분기 시장 전망: 회복력이 커지는 리스크를 만나다 - 동스프링 인베스트먼트",
-      "desc": "4분기 거시경제 회복력과 잠재적 리스크 요인을 분석한 시장 전망 보고서입니다.",
-      "org": "Eastspring Investments",
-      "date": "2026.10.23",
-      "ts": 1792743338000,
-      "btnText": "🔗 원문 보기",
-      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPQUNvaHZqNk41V1lWeXo1bUF3dTJBVVN1LTB6NU42V2wyNEV1b1p2N1h0RjJKWFI1ak5GVVRaLUdDc19PNWJmRVFEMjRmUkNBbUJ4d3NJeXZhX1otS241TjZRUEtVTkZXc0dyOTRhV3dKNE1DeG9nNlZkcWJSZUdwTDgwTFdSdWpON25ZTWI3UFFSN0loUi03NzVtdlhlRDJuWWxDcFdhNVY5djFWRkE?oc=5",
-      "lang": "en",
-      "classifiedBy": "AI(gemini-3.5-flash-lite)"
-    },
-    {
-      "stars": "★★★★☆",
-      "category": "글로벌 F/O 동향",
-      "title": "래플스 패밀리오피스, 아시아의 스테이블코인 억만장자를 위한 자산관리사 구축 중",
-      "desc": "아시아 지역 스테이블코인 자산가들을 겨냥한 글로벌 패밀리오피스의 동향을 보여줍니다.",
-      "org": "Fortune",
-      "date": "2026.10.23",
-      "ts": 1792738800000,
-      "btnText": "🔗 원문 보기",
-      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9rVC1YMWs0ZzdLZ2ZSc3ZrS08weU1CS1Vnd3o2NUJ4dTBhVUp2Sm9NUWhSWlVKWHVVTXEwd1ZFNTBzUXRLUUFVQW1wUDFGZC1ZQ1liNVJYcHBkQTk5ZVlFNXRJd29ZV1hVRnlieFNsMVBIWS04QURNTjNadk8?oc=5",
       "lang": "en",
       "classifiedBy": "AI(gemini-3.5-flash-lite)"
     }
