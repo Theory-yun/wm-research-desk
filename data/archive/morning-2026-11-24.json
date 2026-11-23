@@ -1,11 +1,12 @@
 {
   "edition": "MORNING",
-  "generatedAt": "2026-11-23T21:33:31.944Z",
-  "generatedAtKST": "2026.11.24 06:33",
+  "generatedAt": "2026-11-23T22:05:56.057Z",
+  "generatedAtKST": "2026.11.24 07:05",
   "sourceStatus": {
     "market": "ok",
     "news": "ok",
-    "summary": "fallback"
+    "summary": "ai-gemini",
+    "summaryModel": "gemini-3.5-flash"
   },
   "market": [
     {
@@ -18,7 +19,7 @@
       "asOfLocal": "국내 정규장 기준",
       "asOfKst": "한국 정규장 11.23 15:30 마감",
       "stale": false,
-      "updatedAt": "2026-11-23T21:30:27.769Z"
+      "updatedAt": "2026-11-23T22:03:37.562Z"
     },
     {
       "key": "KOSDAQ",
@@ -30,7 +31,7 @@
       "asOfLocal": "국내 정규장 기준",
       "asOfKst": "한국 정규장 11.23 15:30 마감",
       "stale": false,
-      "updatedAt": "2026-11-23T21:30:27.769Z"
+      "updatedAt": "2026-11-23T22:03:37.562Z"
     },
     {
       "key": "SP500",
@@ -42,7 +43,7 @@
       "asOfLocal": "현지 11.23 16:00 마감",
       "asOfKst": "한국 11.24 06:00 마감",
       "stale": false,
-      "updatedAt": "2026-11-23T21:30:27.769Z"
+      "updatedAt": "2026-11-23T22:03:37.562Z"
     },
     {
       "key": "NASDAQ",
@@ -54,7 +55,7 @@
       "asOfLocal": "현지 11.23 16:00 마감",
       "asOfKst": "한국 11.24 06:00 마감",
       "stale": false,
-      "updatedAt": "2026-11-23T21:30:27.769Z"
+      "updatedAt": "2026-11-23T22:03:37.562Z"
     },
     {
       "key": "SOX",
@@ -66,19 +67,19 @@
       "asOfLocal": "현지 11.23 16:00 마감",
       "asOfKst": "한국 11.24 06:00 마감",
       "stale": false,
-      "updatedAt": "2026-11-23T21:30:27.769Z"
+      "updatedAt": "2026-11-23T22:03:37.562Z"
     },
     {
       "key": "USDKRW",
       "name": "원/달러 환율",
       "group": "fx",
-      "priceStr": "1,341.69",
-      "diffStr": "▲ +6.90",
-      "changePct": 0.52,
+      "priceStr": "1,340.87",
+      "diffStr": "▲ +6.08",
+      "changePct": 0.46,
       "asOfLocal": "집계 기준 확인 중",
       "asOfKst": "집계 기준 확인 중",
       "stale": false,
-      "updatedAt": "2026-11-23T21:30:27.769Z"
+      "updatedAt": "2026-11-23T22:03:37.562Z"
     }
   ],
   "extraMarket": [
@@ -108,117 +109,156 @@
       "unit": "",
       "priceStr": "104.33",
       "changePct": 0.5,
-      "diff": 0.517,
+      "diff": 0.521,
       "stale": false
     },
     {
       "key": "USDJPY",
       "name": "엔/달러",
       "unit": "엔",
-      "priceStr": "158.98",
-      "changePct": -0.45,
-      "diff": -0.726,
+      "priceStr": "158.95",
+      "changePct": -0.47,
+      "diff": -0.756,
       "stale": false
     },
     {
       "key": "GOLD",
       "name": "금",
       "unit": "달러",
-      "priceStr": "3,635.4",
-      "changePct": 3.41,
-      "diff": 120,
+      "priceStr": "3,632.0",
+      "changePct": 3.32,
+      "diff": 116.6,
       "stale": false
     },
     {
       "key": "WTI",
       "name": "WTI 유가",
       "unit": "달러",
-      "priceStr": "80.33",
-      "changePct": -4.35,
-      "diff": -3.65,
+      "priceStr": "80.40",
+      "changePct": -4.26,
+      "diff": -3.58,
       "stale": false
     },
     {
       "key": "BTC",
       "name": "비트코인",
       "unit": "달러",
-      "priceStr": "61,370",
-      "changePct": 0.34,
-      "diff": 207.6,
+      "priceStr": "61,236",
+      "changePct": 0.12,
+      "diff": 74.2,
       "stale": false
     }
   ],
   "issues": [
     {
-      "cat": "GLOBAL ISSUE 01",
-      "tag": "증시",
-      "title": "젠슨황 복귀에 나스닥 6.5% 급등…나스닥100 시총 2조달러↑ [뉴욕증시 브리핑]",
-      "desc": "한국경제 (2026.11.24 06:25) 보도. 자동 요약 생성에 실패하여 원문 제목을 그대로 노출했습니다 — AI 요약 키 설정 또는 호출 상태를 확인해주세요."
+      "cat": "증시",
+      "tag": "나스닥 +6.51% · 필라델피아 반도체 +14.03%",
+      "title": "젠슨 황 복귀 소식 속 기술주 폭등… 뉴욕증시 강력 반등",
+      "desc": "간밤 뉴욕증시는 젠슨 황 복귀 소식에 힘입어 기술주를 중심으로 급등세를 나타냈습니다. 나스닥지수가 6.51% 폭등하고 필라델피아 반도체 지수가 14.03% 상승하며 기술주 투자 심리가 대폭 개선되었습니다. 전일 3.31% 급락 마감했던 국내 증시에도 금일 긍정적인 영향을 미칠지 주목됩니다."
     },
     {
-      "cat": "GLOBAL ISSUE 02",
-      "tag": "원자재",
-      "title": "금값, 사상 최고서 37% 추락…14개월 만에 최저 찍고 반등",
-      "desc": "더페어 (2026.11.23 16:36) 보도. 자동 요약 생성에 실패하여 원문 제목을 그대로 노출했습니다 — AI 요약 키 설정 또는 호출 상태를 확인해주세요."
+      "cat": "원자재·외환",
+      "tag": "WTI -4.26% · 금 +3.32% · 원/달러 1,340.87원",
+      "title": "국제유가 3개월 만에 최저치… 원/달러 환율은 상승세 유지",
+      "desc": "글로벌 원유 공급 우려 완화 영향으로 WTI 유가가 배럴당 80.40달러로 4.26% 하락하며 약세를 보였습니다. 반면 금 가격은 저가 매수세가 유입되며 3,632.0달러로 3.32% 상승했습니다. 원/달러 환율은 전일 대비 6.08원 오른 1,340.87원을 기록하며 원화 약세 흐름을 이어갔습니다."
     },
     {
-      "cat": "GLOBAL ISSUE 03",
-      "tag": "채권·금리 · 증시",
-      "title": "美국채 2년물 금리 4.66%로 상승…뉴욕증시 반등, 12월 인상 확률 98%",
-      "desc": "뉴스1 (2026.11.24 05:20) 보도. 자동 요약 생성에 실패하여 원문 제목을 그대로 노출했습니다 — AI 요약 키 설정 또는 호출 상태를 확인해주세요."
+      "cat": "매크로",
+      "tag": "미 10년물 금리 4.92% · 달러인덱스 104.33",
+      "title": "국채 금리 상승 속 12월 금리 인상 전망 및 물가 우려 상존",
+      "desc": "미국 10년물 국채 금리가 4.92%로 1bp 올랐으며 달러인덱스는 104.33으로 0.5% 상승했습니다. 연준이 선호하는 물가지표가 목표치를 크게 웃돌 것이라는 분석과 함께 12월 금리 인상 가능성이 제기되고 있어 채권 및 외환 시장의 변동성이 이어지는 모습입니다."
     }
   ],
-  "talkingPoint": "[글로벌 모닝 요약] S&P500 7,237.17(4.73%), 나스닥 24,089.56(6.51%), 필라델피아 반도체 9,588.05(14.03%)로 마감했습니다. 참고로 직전 국내 마감은 코스피 4,708.54(-3.31%), 코스닥 635.45(-1.58%)였습니다. (이 요약은 AI 생성에 실패해 규칙 기반으로 생성되었습니다.)",
+  "talkingPoint": "간밤 뉴욕증시는 나스닥지수가 6.51% 폭등한 24,089.56을 기록하고 S&P 500지수가 4.73% 상승한 7,237.17로 마감하는 등 폭발적인 반등세를 보였습니다. 특히 필라델피아 반도체 지수는 14.03% 급등한 9,588.05를 기록하며 시장 상승을 이끌었습니다. 반면 11월 23일 국내 증시는 코스피가 3.31% 하락한 4,708.54, 코스닥이 1.58% 내린 635.45로 마감했으며 원/달러 환율은 1,340.87원으로 0.46% 상승 마감했습니다.\n\n미국 증시의 급반등은 젠슨 황 복귀 소식과 더불어 그간 하락폭이 컸던 주요 기술주로 강력한 매수세가 유입된 영향입니다. 한편 미 국채 시장에서는 10년물 금리가 4.92%, 5년물 금리가 4.73%로 소폭 상승했고 달러인덱스도 104.33으로 올랐습니다. 연준 선호 물가지표가 목표치를 상회할 것이라는 전망과 12월 금리 인상 가능성이 언급되는 가운데, 국제유가(WTI)는 공급 우려 완화로 4.26% 하락한 80.40달러를 기록했고 금 가격은 저가 매수세에 힘입어 3.32% 상승한 3,632.0달러를 기록했습니다.\n\n다가오는 11월 26일에는 한국은행 금통위의 통화정책방향 결정회의가 예정되어 있으며 당일 미국 증시는 휴장합니다. 이어 11월 27일 미국 증시 조기 폐장과 12월 1일 MSCI 분기 리뷰 적용, 12월 4일 미국 고용보고서 발표가 순차적으로 대기하고 있습니다. 기술주 중심의 미국 증시 반등이 국내 증시로 전이될지 여부와 함께 국채 금리 및 환율 변동성이 국내 통화정책 결정과 수급에 미칠 영향에 주목할 필요가 있습니다.",
   "topNews": [
     {
-      "title": "젠슨황 복귀에 나스닥 6.5% 급등…나스닥100 시총 2조달러↑ [뉴욕증시 브리핑]",
-      "press": "한국경제",
-      "url": "https://www.hankyung.com/article/2026112454917",
-      "timestamp": 1795469109000,
-      "date": "2026.11.24 06:25",
+      "title": "젠슨 황 복귀에 뉴욕증시 상승 마감… 나스닥 6%대 급등",
+      "press": "Chosunbiz",
+      "url": "https://biz.chosun.com/international/international_general/2026/11/24/7XYD7SE2TVA4NKKTJSNKSYNE7U/",
+      "timestamp": 1795470847000,
+      "date": "2026.11.24 06:54",
       "tags": [
         "증시"
       ],
       "tagSource": "ai",
-      "coverage": 39,
+      "coverage": 43,
       "scope": "해외",
       "outlets": [
-        "아시아경제",
-        "한국경제",
-        "경북매일",
-        "문화일보",
-        "뉴스핌",
-        "한겨레"
+        "Chosunbiz",
+        "연합뉴스 한민족센터",
+        "조선일보",
+        "아주경제",
+        "부산일보",
+        "뉴시안"
       ],
-      "rssDate": "2026.11.24 06:25",
-      "timeSource": "rss",
-      "googleUrl": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE4tcGR4ajgtc1RPMkFBNURidGpDLTZiYWllSWZtVlI2clh5N0VKaUtzdzdnV2tkY1otazZEU3V2VnVROFF2UVZlN09JQVo4bi13MDF1OTh5dmtXUQ?oc=5",
-      "shortUrl": "https://is.gd/Rcwf2V"
+      "rssDate": "2026.11.24 06:54",
+      "timeSource": "meta",
+      "googleUrl": "https://news.google.com/rss/articles/CBMingFBVV95cUxQa3hDNVlEWG9CbDVNY3pIbGJUeThIRUVTS29kRWppUktNZ0ZkclRSaHNGWk9LY0RpQ0JRV2kwY2JobS11dTZHRGdCamVJUEgyYTRGM1lTMWV4UllXT1BBUy1xb212WUNYUkpvaGc1aC02cHVrMlk1bERHdUJTaEdpRU1XSWdOLU5VUktOVUNQbnktSFpsYWVjNk1qTnd2Z9IBsgFBVV95cUxQa3gyNVVSM3hTVDQtODdieF82LTdpSlN6bWV1Y2pNQ1RuSm5FbG5qaXNmNEFsU205MjkwMV9kQ2dLZVlnMGprUjhJNUwtU1JEZ0EtckpMaEhXQmZPczZUMHZvR2w2NHdoQlNrTGZrNEJhUmNfMzlfZDBMNWp4YlZ2U0g2ei1vaERLemR0VTFrMElXdUVTTE0xamhyTmFVMFlZYTVTOXZld0tFZG43eGdoT2FB?oc=5",
+      "shortUrl": "https://is.gd/FVpopJ"
     },
     {
-      "title": "금값, 사상 최고서 37% 추락…14개월 만에 최저 찍고 반등",
-      "press": "더페어",
-      "url": "https://www.thefairnews.co.kr/news/articleView.html?idxno=95218",
-      "timestamp": 1795419386000,
-      "date": "2026.11.23 16:36",
+      "title": "국제유가, 글로벌 원유공급 우려 완화 등 영향 하락-WTI·브렌트유 3%대 내려 3개월만 최저치…국제금값, 저가매수세에 3%대 상승",
+      "press": "이코노뉴스",
+      "url": "http://www.econonews.co.kr/news/articleView.html?idxno=447597",
+      "timestamp": 1795471119000,
+      "date": "2026.11.24 06:58",
       "tags": [
         "원자재"
       ],
       "tagSource": "ai",
-      "coverage": 8,
+      "coverage": 10,
       "scope": "해외",
       "outlets": [
+        "이코노뉴스",
+        "조선일보",
         "일요시사",
         "더페어",
         "위키트리",
-        "www.bntnews.co.kr",
-        "CBC뉴스",
-        "블루밍비트"
+        "www.bntnews.co.kr"
       ],
-      "rssDate": "2026.11.23 16:36",
+      "rssDate": "2026.11.24 06:58",
       "timeSource": "meta",
-      "googleUrl": "https://news.google.com/rss/articles/CBMicEFVX3lxTE01UXBsbTc2LXdza1RtOHBvWnpEZ1ZwbUhGazZUZ2RoWFRVMWVIUXlIYVI1d0VTQl9XRTU5T2xWcVE5cXQtRlBJSnFlOXNOTXNjMzhoZ01GY19wOEdkTXpDVGNDc3k5aHhtbDl4RllibljSAXRBVV95cUxQN2l0NUZITWp1d25odm1wRjgtTjVtaEgyR2xFM0xHd3oySktYa0tDODNtVFA3bk9tTlJIUFdPUjZJV1ltRzR4bFhpN1VmTTBZVlJodXFfVHJneUhlR2FmWmRyM0E3eXVFa0M3a3lJZXN0TjRxTg?oc=5",
-      "shortUrl": "https://is.gd/tGw3F5"
+      "googleUrl": "https://news.google.com/rss/articles/CBMibkFVX3lxTE92cG1EeXVKaXR0RU1DV3FUQ0lENVFLRXEzczR6NkQtZENVYVBWOUozNElCQ3NWUjZocXpvYUN6R3p5V21YdDFvQmNfeTJlMl9TMS1lUXU2NS1xUngxRXpZNzNXRkRYU0lDRnpjTHNn?oc=5",
+      "shortUrl": "https://is.gd/O2BBZ9"
+    },
+    {
+      "title": "LibertyStream, 나스닥 IPO를 위해 SEC에 S-1 등록 신청",
+      "press": "Investing.com 한국어",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5KbEJ2c0NxNF9oWFgtRGZ0QkZKYi1VLWZfU3N6RzNRM0MwSVBPMWxkZ29sQlZQTUpLRHR0S2N0dDJFX2QyQ2hHUXkyTjhNWk5Qb2RkclBjZjA1TGlLQWVOMm13emFGS29DWkZFNy1iYTlHWHRMYktDMQ?oc=5",
+      "timestamp": 1795470720000,
+      "date": "2026.11.24 06:52",
+      "tags": [
+        "증시"
+      ],
+      "tagSource": "ai",
+      "coverage": 1,
+      "scope": "해외",
+      "outlets": [
+        "Investing.com 한국어"
+      ],
+      "rssDate": "2026.11.24 06:52",
+      "timeSource": "rss",
+      "shortUrl": "https://is.gd/zl8GGBA"
+    },
+    {
+      "title": "[마켓톡스]BTIG \"美 증시 반등 일시적…S&P500, 7350선 찍고 재하락 가능성\"",
+      "press": "이데일리",
+      "url": "https://www.edaily.co.kr/News/Read?newsId=01279206645649000&mediaCodeNo=257",
+      "timestamp": 1795466058000,
+      "date": "2026.11.24 05:34",
+      "tags": [
+        "증시"
+      ],
+      "tagSource": "ai",
+      "coverage": 1,
+      "scope": "해외",
+      "outlets": [
+        "이데일리"
+      ],
+      "rssDate": "2026.11.24 05:34",
+      "timeSource": "meta",
+      "googleUrl": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQQkZ0Ni12dDQ5U0pqOVNBSkRCLUVVYXlkcm5QUlBJUHNwXzZoMzFVWURPZ1JuN1VyTE1PN3FpT083RWcxdFBxUlBQaXVzM3hlTmhlV1hQbm0xWmxZMU50RVczSDZxOG5VY0xQclVibzJ4VmRHTTl3SWdhbUVZYzRXQw?oc=5",
+      "shortUrl": "https://is.gd/qmwiMr"
     },
     {
       "title": "美국채 2년물 금리 4.66%로 상승…뉴욕증시 반등, 12월 인상 확률 98%",
@@ -239,6 +279,26 @@
       "rssDate": "2026.11.24 05:20",
       "timeSource": "rss",
       "shortUrl": "https://is.gd/njAJyt"
+    },
+    {
+      "title": "‘앤스로픽 쇼크’… 1000억 달러 신주 발행하자 나스닥 폭락",
+      "press": "조선일보",
+      "url": "https://www.chosun.com/economy/stock-finance/2026/11/24/UP4PM2ZOGVD3TEEEEUSDETA5VA/",
+      "timestamp": 1795344950000,
+      "date": "2026.11.22 19:55",
+      "tags": [
+        "증시"
+      ],
+      "tagSource": "ai",
+      "coverage": 1,
+      "scope": "해외",
+      "outlets": [
+        "조선일보"
+      ],
+      "rssDate": "2026.11.24 03:00",
+      "timeSource": "meta",
+      "googleUrl": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOdUdsaWxiVXdiR25WaTh5NTBHOXNxZHFzYTBGYURTR3B3WmpsRmVJenE1REg3d3NUS1hIS3lncW9sSjBpVlNFWFRGNTlEcXlQUWFIZWpoNFVUNmNfMUVYZHkyekQwVnRvNkxnam1XaG4xWUZhdGRNZDY0dnVVVDFIWDUxdk8xX3FKSGZN?oc=5",
+      "shortUrl": "https://is.gd/n9Y5Ar"
     },
     {
       "title": "연준 선호 물가지표, 목표치 크게 웃돌 전망—Truflation",
@@ -266,73 +326,29 @@
       "timestamp": 1795432091000,
       "date": "2026.11.23 20:08",
       "tags": [
-        "외환"
+        "외환",
+        "증시"
       ],
       "tagSource": "ai",
-      "coverage": 30,
+      "coverage": 29,
       "scope": "국내",
       "outlets": [
         "CBC뉴스",
         "베타뉴스",
         "자본시장뉴스",
-        "매일경제TV",
         "서울파이낸스",
-        "재경일보"
+        "재경일보",
+        "서울경제"
       ],
       "rssDate": "2026.11.23 20:08",
       "timeSource": "meta",
       "googleUrl": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9zaUo1Wi0yMGtTNG1FU2lJZktUMHdETW9CbC1RYThwai1aMnlUNFNnZk9GR3BIV2g4LTVQSUhReHBmMkc1aG9VTlJ3aWlfVURUVjNnZmVRakRaX3dfMjUtRzZxY1A?oc=5",
       "shortUrl": "https://is.gd/munvQt"
-    },
-    {
-      "title": "국민의힘 \"수출 1조 달러 기업인 땀 덕분…정년연장 신중·상속세 전면 감세 필요\"",
-      "press": "한국사회복지저널",
-      "url": "http://www.ksw-news.com/news/articleView.html?idxno=3066070",
-      "timestamp": 1795424587000,
-      "date": "2026.11.23 18:03",
-      "tags": [
-        "TAX",
-        "매크로"
-      ],
-      "tagSource": "ai",
-      "coverage": 4,
-      "scope": "국내",
-      "outlets": [
-        "한국사회복지저널",
-        "연합뉴스TV",
-        "뉴스1",
-        "머니투데이"
-      ],
-      "rssDate": "2026.11.23 18:03",
-      "timeSource": "meta",
-      "googleUrl": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9NNDA4VElGNE84dzNHVTVTWmVuT0pFMXdGbnQyaWtrVFM3dXpOSy1KbmNwTlV1QzJqQUVIZjNzQTJBTlF3VkVhX0o1QzJHaUtCVUczemM1YmhkUEFoQlNOQmlJT0duMDhranJZ?oc=5",
-      "shortUrl": "https://is.gd/7AZClx"
-    },
-    {
-      "title": "옆 동 실거래가로 증여세?‥법원 \"적법 과세\"",
-      "press": "MBC 뉴스",
-      "url": "https://imnews.imbc.com/replay/2026/nw1200/article/6867811_36967.html",
-      "timestamp": 1795404008000,
-      "date": "2026.11.23 12:20",
-      "tags": [
-        "TAX"
-      ],
-      "tagSource": "ai",
-      "coverage": 2,
-      "scope": "국내",
-      "outlets": [
-        "MBC 뉴스",
-        "Daily NTN"
-      ],
-      "rssDate": "2026.11.23 12:20",
-      "timeSource": "meta",
-      "googleUrl": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5MdzBPX04xTU5FekJxNVBKcE8tMEVIYkZxLVRkemhCTV9kdFVSRkgyVkM5UGFHTUxibWVfaDRTblp1bnV2VzNMd1NDeEQxY09EOEoyUXctekxvdTA4RWo4VzRHWHZ2X1hmNWN1aERZSUtmYW1FdVkzV9IBeEFVX3lxTFBSMzlkNzZqbGdaY3lMZ2xWVFhKc2VTdTFIZGJFQUxxXzNsbFdmLXhzMURZODMtay01OExQVjZmQ3EtUFJyS2xHT1hKbE42OWhfRUpCRkRQQ2lpZXdkNnhEa29WekU0clE4Z3d0QWZjb0pIaXRVemp2eg?oc=5",
-      "shortUrl": "https://is.gd/XrPYRB"
     }
   ],
   "assetChecks": {
     "framework": "assets",
-    "generatedAt": "2026-11-23T21:33:31.944Z",
+    "generatedAt": "2026-11-23T22:05:56.057Z",
     "model": "gemini-3.5-flash",
     "cards": [
       {
@@ -370,11 +386,30 @@
             "when": "12/1(화)"
           }
         ],
-        "news": [],
+        "news": [
+          {
+            "title": "코스피 급락에 원화 약세...원·달러 환율, 2주만에 장중 1350원대 돌파",
+            "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9zaUo1Wi0yMGtTNG1FU2lJZktUMHdETW9CbC1RYThwai1aMnlUNFNnZk9GR3BIV2g4LTVQSUhReHBmMkc1aG9VTlJ3aWlfVURUVjNnZmVRakRaX3dfMjUtRzZxY1A?oc=5",
+            "press": "베타뉴스",
+            "coverage": 29
+          },
+          {
+            "title": "뉴욕 증시 급반등‥'검은 월요일' 국내 증시는?",
+            "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9TcThaLXpVekk0UnVSeVZhS2h0N0Q1bm16dlAwT2Y4Z2VSM19VckF5SmFBY2twclQ4Z2NBWlR2QVc3Z3d6ZHVpZkhlak9JYzNESlgtbWZmNDFRRFRSeGhyaGhfWHloV3k3R3lYczI1ZmZCTVQ0dm4yUy1R0gF6QVVfeXFMT2dydU5SZHVIdFBrUkh0SmRYYktjeE93bzMwSVgyYU1ZbXdqNzlhVENWYWgzMU9FX3dWUlZsd1Zwa0hnVHFrQmh1TC10OHNFNDlidnBEdm4tV0FCVTJ4MnBDbFBHQXV2ZE1rdU1aNVN5YUZVcE1sQjdObUE?oc=5",
+            "press": "MBC 뉴스",
+            "coverage": 1
+          },
+          {
+            "title": "[속보]오늘 국장은?…엔비디아 33%·나스닥 7.3% 폭등 출발",
+            "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFA5S0NhVDI4NTd0SUtURl9iUE85UGJlWG5KVTlZclpoZW5XQkpzejgwQXRUQV81RlpSREo0cFB3cTZlWnM2QXc0ZUpxNTlfNFlh?oc=5",
+            "press": "문화일보",
+            "coverage": 1
+          }
+        ],
         "level": "변동 큼",
-        "headline": "코스피 3.31% 급락하며 약세",
-        "analysis": "코스피가 4,708.54로 3.31% 하락하고 코스닥도 635.45로 1.58% 내리며 국내 증시가 조정을 받았습니다. 증시 하락에 따른 원화 약세와 전반적인 시장 불안 심리가 지수 하방 압력으로 작용했습니다.",
-        "watch": "오는 11월 26일(목) 한국은행 금통위와 12월 1일(화) MSCI 분기 리뷰 적용일의 영향성을 확인할 필요가 있습니다.",
+        "headline": "코스피 3.31% 급락 및 원·달러 환율 1,350원대 진입",
+        "analysis": "11월 23일(월) 코스피는 4,708.54로 3.31% 급락했고 코스닥 역시 635.45로 1.58% 하락했습니다. 주가 하락과 더불어 원·달러 환율이 2주 만에 장중 1,350원대를 돌파하는 등 원화 약세 압력이 확대되는 모습을 보였습니다.",
+        "watch": "11월 26일(목) 한국은행 금통위 통화정책 결정과 12월 1일(화) MSCI 분기 리뷰 적용 영향을 주시할 필요가 있습니다.",
         "textBy": "ai"
       },
       {
@@ -428,10 +463,22 @@
         ],
         "news": [
           {
-            "title": "젠슨황 복귀에 나스닥 6.5% 급등…나스닥100 시총 2조달러↑ [뉴욕증시 브리핑]",
-            "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE4tcGR4ajgtc1RPMkFBNURidGpDLTZiYWllSWZtVlI2clh5N0VKaUtzdzdnV2tkY1otazZEU3V2VnVROFF2UVZlN09JQVo4bi13MDF1OTh5dmtXUQ?oc=5",
-            "press": "한국경제",
-            "coverage": 39
+            "title": "젠슨 황 복귀에 뉴욕증시 상승 마감… 나스닥 6%대 급등",
+            "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQa3hDNVlEWG9CbDVNY3pIbGJUeThIRUVTS29kRWppUktNZ0ZkclRSaHNGWk9LY0RpQ0JRV2kwY2JobS11dTZHRGdCamVJUEgyYTRGM1lTMWV4UllXT1BBUy1xb212WUNYUkpvaGc1aC02cHVrMlk1bERHdUJTaEdpRU1XSWdOLU5VUktOVUNQbnktSFpsYWVjNk1qTnd2Z9IBsgFBVV95cUxQa3gyNVVSM3hTVDQtODdieF82LTdpSlN6bWV1Y2pNQ1RuSm5FbG5qaXNmNEFsU205MjkwMV9kQ2dLZVlnMGprUjhJNUwtU1JEZ0EtckpMaEhXQmZPczZUMHZvR2w2NHdoQlNrTGZrNEJhUmNfMzlfZDBMNWp4YlZ2U0g2ei1vaERLemR0VTFrMElXdUVTTE0xamhyTmFVMFlZYTVTOXZld0tFZG43eGdoT2FB?oc=5",
+            "press": "Chosunbiz",
+            "coverage": 43
+          },
+          {
+            "title": "LibertyStream, 나스닥 IPO를 위해 SEC에 S-1 등록 신청",
+            "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5KbEJ2c0NxNF9oWFgtRGZ0QkZKYi1VLWZfU3N6RzNRM0MwSVBPMWxkZ29sQlZQTUpLRHR0S2N0dDJFX2QyQ2hHUXkyTjhNWk5Qb2RkclBjZjA1TGlLQWVOMm13emFGS29DWkZFNy1iYTlHWHRMYktDMQ?oc=5",
+            "press": "Investing.com 한국어",
+            "coverage": 1
+          },
+          {
+            "title": "[마켓톡스]BTIG \"美 증시 반등 일시적…S&P500, 7350선 찍고 재하락 가능성\"",
+            "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQQkZ0Ni12dDQ5U0pqOVNBSkRCLUVVYXlkcm5QUlBJUHNwXzZoMzFVWURPZ1JuN1VyTE1PN3FpT083RWcxdFBxUlBQaXVzM3hlTmhlV1hQbm0xWmxZMU50RVczSDZxOG5VY0xQclVibzJ4VmRHTTl3SWdhbUVZYzRXQw?oc=5",
+            "press": "이데일리",
+            "coverage": 1
           },
           {
             "title": "美국채 2년물 금리 4.66%로 상승…뉴욕증시 반등, 12월 인상 확률 98%",
@@ -441,9 +488,9 @@
           }
         ],
         "level": "변동 큼",
-        "headline": "젠슨황 복귀 호재 속 나스닥 6.51% 급등",
-        "analysis": "간밤 뉴욕증시는 젠슨황 복귀 소식에 필라델피아 반도체 지수가 14.03% 폭등하고 나스닥이 6.51% 급등했습니다. 미 2년물 국채 금리가 4.66%로 오르고 12월 금리 인상 확률이 98%에 달했음에도 반도체 대형주 중심의 강한 반등에 힘입어 S&P 500 역시 4.73% 상승한 7,237.17로 마감했습니다.",
-        "watch": "11월 26일(목) 휴장과 11월 27일(금) 조기 폐장을 거쳐 12월 4일(금) 발표되는 미국 고용보고서를 주시해야 합니다.",
+        "headline": "젠슨 황 복귀로 나스닥 6.51%·필라델피아 반도체 14.03% 폭등",
+        "analysis": "간밤 뉴욕증시는 젠슨 황 복귀 소식 속에 나스닥이 6.51%, S&P 500이 4.73% 급등했고 필라델피아 반도체 지수는 14.03% 폭등했습니다. 반면 미 국채 2년물 금리가 4.66%로 상승하며 12월 금리 인상 확률이 98%로 거론되는 가운데 일시적 반등에 대한 우려도 제기되고 있습니다.",
+        "watch": "11월 26일(목) 휴장 및 27일(금) 조기 폐장 이후 12월 4일(금) 발표되는 미국 고용보고서 결과가 중요합니다.",
         "textBy": "ai"
       },
       {
@@ -485,10 +532,10 @@
         ],
         "news": [
           {
-            "title": "국민의힘 \"수출 1조 달러 기업인 땀 덕분…정년연장 신중·상속세 전면 감세 필요\"",
-            "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9NNDA4VElGNE84dzNHVTVTWmVuT0pFMXdGbnQyaWtrVFM3dXpOSy1KbmNwTlV1QzJqQUVIZjNzQTJBTlF3VkVhX0o1QzJHaUtCVUczemM1YmhkUEFoQlNOQmlJT0duMDhranJZ?oc=5",
-            "press": "한국사회복지저널",
-            "coverage": 4
+            "title": "美국채 2년물 금리 4.66%로 상승…뉴욕증시 반등, 12월 인상 확률 98%",
+            "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE45VXZKcERwZWZlUGMzOWNOX1NoNnNyYlFjZ0o1MUx3ODdFOUV2VHE2X2RKVXN1VHB4cW1kbGVMWFNib0VpQ3lXcVFyVGVlaFBkb1owWDk5NDlmb29jSmx4WllyUHF3bms?oc=5",
+            "press": "뉴스1",
+            "coverage": 1
           },
           {
             "title": "연준 선호 물가지표, 목표치 크게 웃돌 전망—Truflation",
@@ -498,9 +545,9 @@
           }
         ],
         "level": "주목",
-        "headline": "미 국채 금리 소폭 상승 속 물가 경계감 지속",
-        "analysis": "미 국채 10년물 금리가 4.92%로 1bp 오르고 5년물 금리는 4.73%로 3bp 상승했습니다. 연준이 선호하는 물가지표가 목표치를 크게 웃돌 것이라는 전망이 나오면서 금리 상방 압력을 높였습니다.",
-        "watch": "11월 26일(목) 한국은행 금통위와 12월 4일(금) 미국 고용보고서 결과가 향후 금리 방향성에 중요하게 작용할 전망입니다.",
+        "headline": "미 국채 금리 상승 및 12월 금리 인상 가능성 부각",
+        "analysis": "미 국채 10년물 금리가 4.92%로 1bp, 5년물 금리가 4.73%로 3bp 상승했습니다. 2년물 금리가 4.66%로 오르며 12월 금리 인상 확률이 98%로 제시된 가운데 연준 선호 물가지표가 목표치를 웃돌 것이라는 전망이 금리 상방 압력으로 작용했습니다.",
+        "watch": "11월 26일(목) 한국은행 금통위 회의와 12월 4일(금) 미국 고용보고서 발표 결과를 점검할 필요가 있습니다.",
         "textBy": "ai"
       },
       {
@@ -510,8 +557,8 @@
           {
             "key": "USDKRW",
             "name": "원/달러 환율",
-            "priceStr": "1,341.69",
-            "changePct": 0.52,
+            "priceStr": "1,340.87",
+            "changePct": 0.46,
             "unit": ""
           },
           {
@@ -524,8 +571,8 @@
           {
             "key": "USDJPY",
             "name": "엔/달러",
-            "priceStr": "158.98",
-            "changePct": -0.45,
+            "priceStr": "158.95",
+            "changePct": -0.47,
             "unit": "엔"
           }
         ],
@@ -538,18 +585,11 @@
             "when": "11/26(목)"
           }
         ],
-        "news": [
-          {
-            "title": "코스피 급락에 원화 약세...원·달러 환율, 2주만에 장중 1350원대 돌파",
-            "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9zaUo1Wi0yMGtTNG1FU2lJZktUMHdETW9CbC1RYThwai1aMnlUNFNnZk9GR3BIV2g4LTVQSUhReHBmMkc1aG9VTlJ3aWlfVURUVjNnZmVRakRaX3dfMjUtRzZxY1A?oc=5",
-            "press": "베타뉴스",
-            "coverage": 30
-          }
-        ],
+        "news": [],
         "level": "주목",
-        "headline": "코스피 급락 여파에 원/달러 환율 상승",
-        "analysis": "달러인덱스가 104.33으로 0.5% 상승한 가운데 원/달러 환율은 1,341.69로 0.52% 오르며 원화 약세를 보였습니다. 코스피 급락 영향으로 원/달러 환율은 장중 2주 만에 1,350원대를 돌파하기도 했으며, 엔/달러 환율은 158.98엔으로 0.45% 하락했습니다.",
-        "watch": "11월 26일(목) 열리는 한국은행 금통위의 통화정책 결정이 외환시장에 미칠 영향을 살펴볼 필요가 있습니다.",
+        "headline": "달러인덱스 0.5% 상승 및 원·달러 환율 1,340원대 도달",
+        "analysis": "달러인덱스가 104.33으로 0.5% 상승하면서 원·달러 환율은 1,340.87로 0.46% 올랐으며 장중 1,350원대를 돌파했습니다. 엔/달러 환율은 158.95엔으로 0.47% 하락하며 엔화 강세를 나타냈습니다.",
+        "watch": "11월 26일(목) 예정된 한국은행 금통위의 기준금리 결정과 외환시장 반응을 지켜볼 필요가 있습니다.",
         "textBy": "ai"
       },
       {
@@ -559,31 +599,31 @@
           {
             "key": "GOLD",
             "name": "금",
-            "priceStr": "3,635.4",
-            "changePct": 3.41,
+            "priceStr": "3,632.0",
+            "changePct": 3.32,
             "unit": "달러"
           },
           {
             "key": "WTI",
             "name": "WTI 유가",
-            "priceStr": "80.33",
-            "changePct": -4.35,
+            "priceStr": "80.40",
+            "changePct": -4.26,
             "unit": "달러"
           }
         ],
         "events": [],
         "news": [
           {
-            "title": "금값, 사상 최고서 37% 추락…14개월 만에 최저 찍고 반등",
-            "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE01UXBsbTc2LXdza1RtOHBvWnpEZ1ZwbUhGazZUZ2RoWFRVMWVIUXlIYVI1d0VTQl9XRTU5T2xWcVE5cXQtRlBJSnFlOXNOTXNjMzhoZ01GY19wOEdkTXpDVGNDc3k5aHhtbDl4RllibljSAXRBVV95cUxQN2l0NUZITWp1d25odm1wRjgtTjVtaEgyR2xFM0xHd3oySktYa0tDODNtVFA3bk9tTlJIUFdPUjZJV1ltRzR4bFhpN1VmTTBZVlJodXFfVHJneUhlR2FmWmRyM0E3eXVFa0M3a3lJZXN0TjRxTg?oc=5",
-            "press": "더페어",
-            "coverage": 8
+            "title": "국제유가, 글로벌 원유공급 우려 완화 등 영향 하락-WTI·브렌트유 3%대 내려 3개월만 최저치…국제금값, 저가매수세에 3%대 상승",
+            "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE92cG1EeXVKaXR0RU1DV3FUQ0lENVFLRXEzczR6NkQtZENVYVBWOUozNElCQ3NWUjZocXpvYUN6R3p5V21YdDFvQmNfeTJlMl9TMS1lUXU2NS1xUngxRXpZNzNXRkRYU0lDRnpjTHNn?oc=5",
+            "press": "이코노뉴스",
+            "coverage": 10
           }
         ],
         "level": "변동 큼",
-        "headline": "금값 3.41% 반등 및 유가 4.35% 하락",
-        "analysis": "금 가격은 사상 최고치 대비 37% 하락하며 14개월 만에 최저를 기록한 후 반등해 온스당 3,635.4달러(+3.41%)로 올라섰습니다. 반면 WTI 유가는 배럴당 80.33달러로 4.35% 하락하며 약세를 나타냈습니다.",
-        "watch": "최근 큰 폭으로 흔들린 금 가격의 안정을 비롯해 국제유가 변동성 추이를 관찰해야 합니다.",
+        "headline": "WTI 유가 4.26% 급락 및 금 선물 3.32% 반등",
+        "analysis": "WTI 유가는 글로벌 원유 공급 우려가 완화되며 80.40달러로 4.26% 하락해 3개월 만에 최저치를 기록했습니다. 반면 국제 금값은 저가 매수세 유입 영향으로 3,632.0달러를 기록하며 3.32% 상승했습니다.",
+        "watch": "글로벌 원유 공급 안정화 지속 여부와 금 가격의 추가 반등 동력을 모니터링할 필요가 있습니다.",
         "textBy": "ai"
       },
       {
@@ -593,8 +633,8 @@
           {
             "key": "BTC",
             "name": "비트코인",
-            "priceStr": "61,370",
-            "changePct": 0.34,
+            "priceStr": "61,236",
+            "changePct": 0.12,
             "unit": "달러"
           }
         ],
@@ -602,23 +642,17 @@
         "news": [],
         "level": "평이",
         "headline": "뚜렷한 신호 없음",
-        "analysis": "비트코인은 61,370달러로 0.34% 소폭 상승하며 제한된 변동성을 보였습니다.",
-        "watch": "글로벌 위험선호 심리 변화와 주요 가상자산 관련 변수를 모니터링할 필요가 있습니다.",
+        "analysis": "비트코인은 61,236달러로 0.12% 상승하며 소폭의 보합 흐름을 보였습니다.",
+        "watch": "가상자산 시장 내 수급 변화와 주요 가격대의 지지 여부를 확인할 필요가 있습니다.",
         "textBy": "ai"
       }
     ],
     "taxNews": [
       {
-        "title": "국민의힘 \"수출 1조 달러 기업인 땀 덕분…정년연장 신중·상속세 전면 감세 필요\"",
-        "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9NNDA4VElGNE84dzNHVTVTWmVuT0pFMXdGbnQyaWtrVFM3dXpOSy1KbmNwTlV1QzJqQUVIZjNzQTJBTlF3VkVhX0o1QzJHaUtCVUczemM1YmhkUEFoQlNOQmlJT0duMDhranJZ?oc=5",
-        "press": "한국사회복지저널",
-        "coverage": 4
-      },
-      {
-        "title": "옆 동 실거래가로 증여세?‥법원 \"적법 과세\"",
-        "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5MdzBPX04xTU5FekJxNVBKcE8tMEVIYkZxLVRkemhCTV9kdFVSRkgyVkM5UGFHTUxibWVfaDRTblp1bnV2VzNMd1NDeEQxY09EOEoyUXctekxvdTA4RWo4VzRHWHZ2X1hmNWN1aERZSUtmYW1FdVkzV9IBeEFVX3lxTFBSMzlkNzZqbGdaY3lMZ2xWVFhKc2VTdTFIZGJFQUxxXzNsbFdmLXhzMURZODMtay01OExQVjZmQ3EtUFJyS2xHT1hKbE42OWhfRUpCRkRQQ2lpZXdkNnhEa29WekU0clE4Z3d0QWZjb0pIaXRVemp2eg?oc=5",
-        "press": "MBC 뉴스",
-        "coverage": 2
+        "title": "한화생명, ‘PLUS 파이’ 전면 개편…성년 자녀 투자·증여세 신고 지원 확대",
+        "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE0wemk1V3l1UkVrWVg1Z2lHMkpyRjVFbjZMLUdXVTc5bVQxRWlPaU9McFVUcUQycWhSTUdtUDJOaVRqRXlpd3FmUGlHV29IVnpGeWhweDk4M3F2ZE55cmhtU0hYYXpRMEtpdG9SZ2RXMNIBc0FVX3lxTE1veGFYRFYzTnNDTkhTSHR4Q1k4Q2dJZU5lbEpLdkpvQUF5WTlHM1ZKYzVuVEpma2FiNEhSaUZDTExiUlU0aXQxWWlrX3ZvRUN6VGhfejFEZDdKUjdTZWM5X1pwOGRodi03NEpUVXEwZFN4eEE?oc=5",
+        "press": "데일리한국",
+        "coverage": 12
       }
     ]
   }
