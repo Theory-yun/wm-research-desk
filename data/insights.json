@@ -1,6 +1,6 @@
 {
   "note": "curated=true 는 PB가 고른 연례 핵심 리포트(고정), 나머지는 scripts/build-insights.mjs가 매일 자동 수집합니다.",
-  "updatedAt": "2026-11-23T09:54:13.472Z",
+  "updatedAt": "2026-11-23T22:54:57.103Z",
   "categories": [
     "글로벌 F/O 동향",
     "국내 부자·웰스 리포트",
@@ -757,6 +757,19 @@
       "classifiedBy": "AI(gemini-3.5-flash-lite)"
     },
     {
+      "stars": "★★★☆☆",
+      "category": "글로벌 F/O 동향",
+      "title": "서비스와 역량: 패밀리오피스의 존재 이유에 대한 BBH의 제언",
+      "desc": "패밀리오피스가 제공해야 하는 핵심 서비스와 역량에 대한 글로벌 금융사의 진단입니다.",
+      "org": "Family Wealth Report",
+      "date": "2026.11.04",
+      "ts": 1793779200000,
+      "btnText": "🔗 원문 보기",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQNzZTUGwyOGJ4ekp3bUlvV05tZ0ZsZDVfWnVMYTVkcC0tWHNIRUVDeURZQWtTVFh0dTFkRGR0MDVOZ19GbHRkZUMtS21HR1BHdC0tVzlST0t3VDlJVXNDbWJLcWN0NHVRcFRUTVBVLVBCZmZqQUNJSktlY1Noc2p6TVNjajNpMEV4RHhsRVdiMEtWMEVhdEZxVEQ3ZkFOSlBQMmxSN2NFRFZoX21CdXFnNFpMSUdpc2tJcUx2R084N3JHdmF3OHc?oc=5",
+      "lang": "en",
+      "classifiedBy": "AI(gemini-3.5-flash-lite)"
+    },
+    {
       "stars": "★★★★☆",
       "category": "승계·세무·신탁",
       "title": "2026년 가업승계 세제개편안…승계 가능한 업종과 제외되는 업종은?",
@@ -883,19 +896,6 @@
       "ts": 1793257200000,
       "btnText": "🔗 원문 보기",
       "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9oWlY1SU81RFVLMElqdDBUMmRQVDA2WHZzVU55T2xZUk1uMG11RkV0N0pVS2U5WGNzT056WDczN2NKNlJtRHBYeUJhWmx5ZnFpSEZMNTZzbTVjODgzbmFESk9wWnVpSXFYczhmc01UTnJVNGExaVE?oc=5",
-      "lang": "en",
-      "classifiedBy": "AI(gemini-3.5-flash-lite)"
-    },
-    {
-      "stars": "★★★★☆",
-      "category": "자산배분·시장 전망",
-      "title": "2026년 금 가격 전망치 2개 분기 연속 하향 조정; 애널리스트들은 여전히 2027년 4,650달러 반등 전망",
-      "desc": "금 가격 전망치 수정 및 2027년 반등 시나리오를 다룬 시장 전망 통계입니다.",
-      "org": "BigGo Finance",
-      "date": "2026.10.29",
-      "ts": 1793257200000,
-      "btnText": "🔗 원문 보기",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9IX05CZm04dndJUm9fWGZyN1VFa0V6SmRDOHpweFdsWHprczVCdWgta2pMejJHQlJKeVE1RnZJT1NCNXE4NkZpM0xMcXpNUGQyTFNxaDc3ajl1SXFTNUhRdVNsVEdxTGZtUkJqaFJ1VU5ZNUhzR3c?oc=5",
       "lang": "en",
       "classifiedBy": "AI(gemini-3.5-flash-lite)"
     }
