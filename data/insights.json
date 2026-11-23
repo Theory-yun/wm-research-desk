@@ -1,6 +1,6 @@
 {
   "note": "curated=true 는 PB가 고른 연례 핵심 리포트(고정), 나머지는 scripts/build-insights.mjs가 매일 자동 수집합니다.",
-  "updatedAt": "2026-11-22T22:46:03.367Z",
+  "updatedAt": "2026-11-23T09:54:13.472Z",
   "categories": [
     "글로벌 F/O 동향",
     "국내 부자·웰스 리포트",
@@ -772,6 +772,19 @@
     {
       "stars": "★★★★☆",
       "category": "글로벌 F/O 동향",
+      "title": "DBS 보고서, 설문 조사한 패밀리오피스의 43%가 자산 계획에 차세대를 참여시키지 않았다고 밝혀",
+      "desc": "패밀리오피스의 차세대 자산 계획 참여 현황을 다룬 DBS의 설문 조사 결과입니다.",
+      "org": "Hubbis",
+      "date": "2026.11.04",
+      "ts": 1793740417000,
+      "btnText": "🔗 원문 보기",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOWDZWTXFiQXo3d1BRZjFNZU9HU2RUVFppenVEazRWUHgwY1U4OUFXcjNvV1RJRTJ2eHZ6UE4yTm9wWUdLbUhUdW5lY2Y4QW1FSGg3VWxJYm5FS2ZzQmhxSzJCbFB0YUpCU0dYVTd6dnRZaHJsZVB4QnBsZkU0YjFWMU5fVy0xeXlFeXlrczkyb1plaVdBY19QV2JrNzJueXdmVmJQZzdkYlFRd0Z2Q0Q3aDRSQWpGcm0yWGxDdjVBb25DVkVLT21fVi1TMkxVbnZyZ2paOUR3?oc=5",
+      "lang": "en",
+      "classifiedBy": "AI(gemini-3.5-flash-lite)"
+    },
+    {
+      "stars": "★★★★☆",
+      "category": "글로벌 F/O 동향",
       "title": "AI는 패밀리오피스에 기회이자 위험을 제공한다 - RBC 웰스 매니지먼트",
       "desc": "패밀리오피스 운영에 있어 인공지능(AI) 도입이 가져오는 명암을 다룹니다.",
       "org": "RBC Wealth Management",
@@ -796,15 +809,15 @@
       "classifiedBy": "AI(gemini-3.5-flash-lite)"
     },
     {
-      "stars": "★★★★★",
-      "category": "국내 부자·웰스 리포트",
-      "title": "연방준비제도의 새로운 부 보고서에서 가장 충격적인 내용: 고등학교 졸업장이 없는 가족의 중간 순자산이 55% 감소했습니다",
-      "desc": "미 연방준비제도의 자산 보고서를 통해 계층별 순자산 변화 통계를 다룬 데이터 발표입니다.",
-      "org": "Yahoo Finance",
+      "stars": "★★★★☆",
+      "category": "글로벌 F/O 동향",
+      "title": "연준의 새로운 부의 보고서에서 가장 충격적인 내용: 고등학교 졸업장이 없는 가계의 중위 순자산 55% 감소",
+      "desc": "미국 연방준비제도의 자산 보고서를 통해 가계 순자산 통계 데이터를 분석한 내용입니다.",
+      "org": "24/7 Wall St.",
       "date": "2026.11.02",
       "ts": 1793606400000,
       "btnText": "🔗 원문 보기",
-      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNdTVyY0g4TjFvUi01SURqTlBUR0gyQlRCQkhOYnY0cHRXQ0ZYamNLUXU2Y2RBa1c5M3hXbnlKSlF1bTQ5NjV6WFE0VUFUYlVETUM0TzI3TFVCem96Qm9CWHBfLXBmUXZzMVFQd1poVlFKYXd3VE9Pa3FEcHVMRUtUY3BTLUNJNmNvLTl5aTBoQ0s?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxNdGdWTE5GV3VkZnZhUzlnYUtneEh1RERka2xFQThmVGIyRmR1OFhPLTF1NWwtRzdLMTA1NWtzaWU2N1V4SUhXMENhUHItWjVXM3U1SGxVSW1Bbm9hWjhVUFIzY0pObm1aUUh4X2thdUZQMkhPd0lTbFZwM0M4aGl2RFRyZmxVRzdmQnpkZHZPYkN6cG9VVmR3c0F3WmlBZDY5TEFoTWRheVI2dHQ3WEdSeHBCRzFVTWdpZ0tkd055YlphOFhyWDViaDAzN0s3WEpPbG1NWmlfQ1Q5QkltSFhyeE5Kem1IY19mb0psQmZjdWQzWnNMeFZ4VDIxMXNXdVg2VlJRTEJZNXc?oc=5",
       "lang": "en",
       "classifiedBy": "AI(gemini-3.5-flash-lite)"
     },
@@ -862,6 +875,19 @@
     },
     {
       "stars": "★★★★☆",
+      "category": "대체투자·사모시장",
+      "title": "퍼스트 이글, 패밀리오피스 대상 사모신용(Private Credit) 상품 확대",
+      "desc": "패밀리오피스를 위한 사모신용 투자 옵션 확대에 관한 글로벌 시장 동향입니다.",
+      "org": "Professional Wealth Management",
+      "date": "2026.10.29",
+      "ts": 1793257200000,
+      "btnText": "🔗 원문 보기",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9oWlY1SU81RFVLMElqdDBUMmRQVDA2WHZzVU55T2xZUk1uMG11RkV0N0pVS2U5WGNzT056WDczN2NKNlJtRHBYeUJhWmx5ZnFpSEZMNTZzbTVjODgzbmFESk9wWnVpSXFYczhmc01UTnJVNGExaVE?oc=5",
+      "lang": "en",
+      "classifiedBy": "AI(gemini-3.5-flash-lite)"
+    },
+    {
+      "stars": "★★★★☆",
       "category": "자산배분·시장 전망",
       "title": "2026년 금 가격 전망치 2개 분기 연속 하향 조정; 애널리스트들은 여전히 2027년 4,650달러 반등 전망",
       "desc": "금 가격 전망치 수정 및 2027년 반등 시나리오를 다룬 시장 전망 통계입니다.",
@@ -870,32 +896,6 @@
       "ts": 1793257200000,
       "btnText": "🔗 원문 보기",
       "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9IX05CZm04dndJUm9fWGZyN1VFa0V6SmRDOHpweFdsWHprczVCdWgta2pMejJHQlJKeVE1RnZJT1NCNXE4NkZpM0xMcXpNUGQyTFNxaDc3ajl1SXFTNUhRdVNsVEdxTGZtUkJqaFJ1VU5ZNUhzR3c?oc=5",
-      "lang": "en",
-      "classifiedBy": "AI(gemini-3.5-flash-lite)"
-    },
-    {
-      "stars": "★★★★★",
-      "category": "대체투자·사모시장",
-      "title": "프레킨, 2031년 사모시장 운용자산(AuM) 34조 달러 돌파 전망",
-      "desc": "프레킨이 발표한 글로벌 사모시장 운용자산 규모의 장기 성장 통계 전망입니다.",
-      "org": "Family Wealth Report",
-      "date": "2026.10.29",
-      "ts": 1793257200000,
-      "btnText": "🔗 원문 보기",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPbUVobGVkeUJLbDc4ZUJSX09SNnlyU3N2b0NfaWY1V0JNdGhfSmM2SmRMSmMyR050M0pZYTlrbjh6dkI3MjZFU2c4d2VYZm1pZV9nYlR2YkVrT2RlYUh2T3lEWjVQTWE5Q1BGRWhNb3p5QUZZX2VEOFJSc1ZWMFNIWU9TU0FUMVJySlVyRnlsZ0hUaVdQbEJpam4wczMyb21FaTVoQ05SV3hCUjdVbTlvZzhWWVVzcGs?oc=5",
-      "lang": "en",
-      "classifiedBy": "AI(gemini-3.5-flash-lite)"
-    },
-    {
-      "stars": "★★★★★",
-      "category": "글로벌 F/O 동향",
-      "title": "패밀리오피스가 펀드를 건너뛰고 직접 공동투자를 하는 이유",
-      "desc": "전통적인 블라인드 펀드 대신 개별 자산에 직접 공동투자(Co-investment)하려는 글로벌 패밀리오피스의 투자 전략 변화입니다.",
-      "org": "www.dakota.com",
-      "date": "2026.10.29",
-      "ts": 1793257200000,
-      "btnText": "🔗 원문 보기",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxORV92ZWNVV3FUamJqU3lMOHhRcUxiY3c0TF9WMGlhb2NwRnVTYVVrQXhfa05WYWIyUlBOa2V6dzVXNjNER1hJYnMyb0x0QmwyYS1fNnlobkw4d1pGZlI3bm91ZHhJVjJ1NXRRS0k1ZjlNS1k3SDVBN3FuMDJBQlJjTUtFSmVvalJ3Y2hFV2F0Uk00czlnZGJDQUhrOFpFd3lqRTVuLWlMOA?oc=5",
       "lang": "en",
       "classifiedBy": "AI(gemini-3.5-flash-lite)"
     }
