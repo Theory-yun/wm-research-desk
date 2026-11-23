@@ -45,7 +45,7 @@ export function extractJson(text) {
  * @param {string[]} [p.models]  후보 모델(기본: GEMINI_MODEL_CHAIN). 가벼운 작업은 lite 우선 목록을 넘기면 빠름.
  * @returns {Promise<{data:any, model:string}|null>}  모든 후보 실패 시 null
  */
-export async function geminiJson({ prompt, system, validate = () => true, label = "gemini", models } = {}) {
+export async function geminiJson({ prompt, system, validate = () => true, label = "gemini", models, rounds = 3 } = {}) {
   const apiKey = process.env.GEMINI_API_KEY;
   if (!apiKey) return null;
 
@@ -57,6 +57,21 @@ export async function geminiJson({ prompt, system, validate = () => true, label 
     generationConfig: { responseMimeType: "application/json", maxOutputTokens: 8192 },
   };
 
+  // Google 서버 과부하(503) 때는 모든 모델이 동시에 실패하므로, 한 바퀴 실패 시 잠시 쉬었다가 다시 시도
+  const waits = [30_000, 75_000, 120_000];
+  for (let round = 1; round <= rounds; round++) {
+    if (round > 1) {
+      const w = waits[round - 2] ?? 120_000;
+      console.log(`[${label}] 모든 모델 실패 → ${w / 1000}초 후 다시 시도 (${round}/${rounds}회차)`);
+      await new Promise((r) => setTimeout(r, w));
+    }
+    const out = await tryChainOnce({ chain, body, apiKey, validate, label });
+    if (out) return out;
+  }
+  return null;
+}
+
+async function tryChainOnce({ chain, body, apiKey, validate, label }) {
   for (const model of chain) {
     const res = await fetchWithRetry(`https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`, {
       timeoutMs: PER_MODEL_TIMEOUT_MS,

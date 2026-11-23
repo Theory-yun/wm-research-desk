@@ -263,8 +263,8 @@ function fallbackSummary({ edition, market, candidateNews }) {
 
   const talkingPoint =
     edition === "MORNING"
-      ? `[글로벌 모닝 요약] S&P500 ${sp?.priceStr ?? "-"}(${sp?.changePct ?? "-"}%), 나스닥 ${nd?.priceStr ?? "-"}(${nd?.changePct ?? "-"}%), 필라델피아 반도체 ${sox?.priceStr ?? "-"}(${sox?.changePct ?? "-"}%)로 마감했습니다. 참고로 직전 국내 마감은 코스피 ${ks?.priceStr ?? "-"}(${ks?.changePct ?? "-"}%), 코스닥 ${kq?.priceStr ?? "-"}(${kq?.changePct ?? "-"}%)였습니다. (이 요약은 AI 생성에 실패해 규칙 기반으로 생성되었습니다.)`
-      : `[국내 이브닝 요약] 코스피 ${ks?.priceStr ?? "-"}(${ks?.changePct ?? "-"}%), 코스닥 ${kq?.priceStr ?? "-"}(${kq?.changePct ?? "-"}%)로 마감했습니다. 원/달러 환율은 ${fx?.priceStr ?? "-"}원(${fx?.changePct ?? "-"}%)을 기록했습니다. (이 요약은 AI 생성에 실패해 규칙 기반으로 생성되었습니다.)`;
+      ? `간밤 뉴욕증시는 S&P 500 ${sp?.priceStr ?? "-"}(${sp?.changePct ?? "-"}%), 나스닥 ${nd?.priceStr ?? "-"}(${nd?.changePct ?? "-"}%), 필라델피아 반도체 ${sox?.priceStr ?? "-"}(${sox?.changePct ?? "-"}%)로 마감했습니다. 참고로 직전 국내 마감은 코스피 ${ks?.priceStr ?? "-"}(${ks?.changePct ?? "-"}%), 코스닥 ${kq?.priceStr ?? "-"}(${kq?.changePct ?? "-"}%)였습니다.`
+      : `오늘 국내 증시는 코스피 ${ks?.priceStr ?? "-"}(${ks?.changePct ?? "-"}%), 코스닥 ${kq?.priceStr ?? "-"}(${kq?.changePct ?? "-"}%)로 마감했습니다. 원/달러 환율은 ${fx?.priceStr ?? "-"}원(${fx?.changePct ?? "-"}%)을 기록했습니다.`;
 
   return { issues, talkingPoint };
 }

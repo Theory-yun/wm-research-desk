@@ -186,6 +186,7 @@ function renderIssues(data) {
   const pb = STATE.pbOverride && STATE.pbOverride.file === currentDataFile() ? STATE.pbOverride : null;
   talkEl.textContent = pb ? pb.talkingPoint : data.talkingPoint;
   $("pb-applied-badge")?.toggleAttribute("hidden", !pb);
+  $("summary-fallback-note")?.toggleAttribute("hidden", Boolean(pb) || data.sourceStatus?.summary !== "fallback");
   talkEl.setAttribute("contenteditable", "false");
 }
 

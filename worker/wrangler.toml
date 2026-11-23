@@ -15,5 +15,6 @@ SITE_BASE = "https://theory-yun.github.io/wm-research-desk"
 # 정시 실행 예약 (UTC 기준) — GitHub 자체 예약은 수십 분씩 밀리므로 Cloudflare가 정시에 실행을 요청
 #   21:30 UTC 일~목 = 한국 06:30 월~금 (모닝)
 #   07:00 UTC 월~금 = 한국 16:00 월~금 (이브닝)
+#   22:00 / 07:30 UTC = 한국 07:00 / 16:30 재점검 — AI 요약 실패·미생성 시 다시 실행
 [triggers]
-crons = ["30 21 * * SUN,MON,TUE,WED,THU", "0 7 * * MON,TUE,WED,THU,FRI"]
+crons = ["30 21 * * SUN,MON,TUE,WED,THU", "0 7 * * MON,TUE,WED,THU,FRI", "0 22 * * SUN,MON,TUE,WED,THU", "30 7 * * MON,TUE,WED,THU,FRI"]

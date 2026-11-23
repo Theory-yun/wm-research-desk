@@ -26,10 +26,34 @@ const json = (req, env, body, status = 200, extra = {}) =>
 function workflowForTime(ts) {
   const d = new Date(ts);
   const h = d.getUTCHours();
-  if (h === 21) return "briefing-morning.yml"; // 한국 06:30
-  if (h === 7 && d.getUTCMinutes() < 30) return "briefing-evening.yml"; // 한국 16:00
+  const m = d.getUTCMinutes();
+  if (h === 21 && m < 45) return "briefing-morning.yml"; // 한국 06:30
+  if (h === 7 && m < 15) return "briefing-evening.yml"; // 한국 16:00
   return null;
 }
+
+/** 점검 예약(07:00·16:30): AI 요약이 실패했거나(서버 과부하 등) 브리핑이 안 만들어졌으면 다시 실행 */
+function checkTargetForTime(ts) {
+  const d = new Date(ts);
+  const h = d.getUTCHours();
+  const m = d.getUTCMinutes();
+  if (h === 22) return { file: "morning-latest.json", workflow: "briefing-morning.yml" };
+  if (h === 7 && m >= 25) return { file: "evening-latest.json", workflow: "briefing-evening.yml" };
+  return null;
+}
+
+async function recheckBriefing(env, target) {
+  const data = await getJson(`${env.SITE_BASE}/data/${target.file}?t=${Date.now()}`, 8000);
+  const ageMin = data?.generatedAt ? (Date.now() - Date.parse(data.generatedAt)) / 60000 : Infinity;
+  const fallback = data?.sourceStatus?.summary === "fallback";
+  if (ageMin > 60 || fallback) {
+    console.log(`[재점검] ${target.file}: ${ageMin > 60 ? `최근 생성 없음(${Math.round(ageMin)}분 전)` : "AI 요약 실패"} → 다시 실행`);
+    return dispatchWorkflow(env, target.workflow);
+  }
+  console.log(`[재점검] ${target.file}: 정상`);
+  return true;
+}
+
 const REPO = "Theory-yun/wm-research-desk";
 
 async function dispatchWorkflow(env, workflow) {
@@ -61,6 +85,11 @@ async function dispatchWorkflow(env, workflow) {
 
 export default {
   async scheduled(event, env, ctx) {
+    const check = checkTargetForTime(event.scheduledTime);
+    if (check) {
+      ctx.waitUntil(recheckBriefing(env, check));
+      return;
+    }
     const wf = workflowForTime(event.scheduledTime);
     console.log(`[정시 실행] cron="${event.cron}" → ${wf ?? "(대상 없음)"}`);
     if (wf) ctx.waitUntil(dispatchWorkflow(env, wf));

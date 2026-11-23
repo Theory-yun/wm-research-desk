@@ -1031,3 +1031,4 @@ a { color: inherit; }
 .cn-day .cn-greet { background: #0F3D3A; border-color: #0F3D3A; color: #F3EFE6; }
 .cn-day .cn-sign { color: #E3C27A; }
 .cn-day .cn-badge { background: #0F3D3A; color: #F3E3BD; }
+.summary-fallback-note { margin-left: 8px; font-size: 11px; font-weight: 700; color: #FFB27A; border: 1px solid #FFB27A; border-radius: 999px; padding: 2px 8px; vertical-align: middle; }

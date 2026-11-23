@@ -93,6 +93,7 @@ export async function aiClassifyTitles(titles, { label = "뉴스 분야" } = {})
     const chunk = titles.slice(start, start + 60);
     const r = await geminiJson({
       label,
+      rounds: 1, // 뉴스룸 분야 태깅은 다음 수집 때 다시 시도하면 되므로 기다리지 않음
       models: GEMINI_LITE_FIRST,
       prompt: `증권사 PB가 초고액자산가 손님에게 전할 뉴스를 분류합니다. 각 기사 제목의 '실제 내용'을 보고 분야를 정하세요.
 제목에 특정 단어가 들어 있다는 이유만으로 분류하지 말고, 기사의 핵심 주제가 무엇인지로 판단하세요.
