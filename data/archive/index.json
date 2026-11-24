@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-11-24T07:02:44.134Z",
+  "updatedAt": "2026-11-24T21:35:20.045Z",
   "dates": [
+    {
+      "date": "2026-11-25",
+      "editions": [
+        "morning"
+      ]
+    },
     {
       "date": "2026-11-24",
       "editions": [
