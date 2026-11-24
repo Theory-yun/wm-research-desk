@@ -1,6 +1,6 @@
 {
   "note": "curated=true 는 PB가 고른 연례 핵심 리포트(고정), 나머지는 scripts/build-insights.mjs가 매일 자동 수집합니다.",
-  "updatedAt": "2026-11-24T09:43:26.708Z",
+  "updatedAt": "2026-11-24T22:58:23.500Z",
   "categories": [
     "글로벌 F/O 동향",
     "국내 부자·웰스 리포트",
@@ -822,15 +822,28 @@
       "classifiedBy": "AI(gemini-3.5-flash-lite)"
     },
     {
-      "stars": "★★★★☆",
-      "category": "글로벌 F/O 동향",
-      "title": "연준의 새로운 부의 보고서에서 가장 충격적인 내용: 고등학교 졸업장이 없는 가계의 중위 순자산 55% 감소",
-      "desc": "미국 연방준비제도의 자산 보고서를 통해 가계 순자산 통계 데이터를 분석한 내용입니다.",
-      "org": "24/7 Wall St.",
+      "stars": "★★★★★",
+      "category": "승계·세무·신탁",
+      "title": "DBS, 패밀리오피스는 승계 및 운영 리스크에 대한 준비가 부족하다고 진단",
+      "desc": "DBS 보고서에 따르면 패밀리오피스들이 가문 승계와 운영 리스크 대응에 미흡한 것으로 나타났습니다.",
+      "org": "Wealth Briefing",
       "date": "2026.11.02",
       "ts": 1793606400000,
       "btnText": "🔗 원문 보기",
-      "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxNdGdWTE5GV3VkZnZhUzlnYUtneEh1RERka2xFQThmVGIyRmR1OFhPLTF1NWwtRzdLMTA1NWtzaWU2N1V4SUhXMENhUHItWjVXM3U1SGxVSW1Bbm9hWjhVUFIzY0pObm1aUUh4X2thdUZQMkhPd0lTbFZwM0M4aGl2RFRyZmxVRzdmQnpkZHZPYkN6cG9VVmR3c0F3WmlBZDY5TEFoTWRheVI2dHQ3WEdSeHBCRzFVTWdpZ0tkd055YlphOFhyWDViaDAzN0s3WEpPbG1NWmlfQ1Q5QkltSFhyeE5Kem1IY19mb0psQmZjdWQzWnNMeFZ4VDIxMXNXdVg2VlJRTEJZNXc?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNUVJuMUc3T1Q5RUtudEV6SmtDSVc2c1JfbEtla3M1TTFiZ2ppeFBXbnJrRnhtdm9FQVZTQlVqdTBBa1Fhajc3VUJQUjVTVlVsR3ljYm5TeEJsZlBaMlBKd3MwQ2J6UjdaSld5TFpiT1I0T3R3OGVkLUhrMFBfTFJGZFE4azRzR2FWcThZSXMxUndILS1HdnBrMDVzNm41cG9naUlkbndIYkctQjF6c3pXVkxEYw?oc=5",
+      "lang": "en",
+      "classifiedBy": "AI(gemini-3.5-flash-lite)"
+    },
+    {
+      "stars": "★★★★☆",
+      "category": "국내 부자·웰스 리포트",
+      "title": "연준의 새로운 부의 보고서에서 가장 충격적인 한 줄: 고등학교 학력이 없는 가정의 순자산 중간값 55% 감소",
+      "desc": "미 연준의 자산 보고서에서 저학력 가구의 순자산 중간값이 크게 감소한 통계가 발표되었습니다.",
+      "org": "Yahoo Finance",
+      "date": "2026.11.02",
+      "ts": 1793606400000,
+      "btnText": "🔗 원문 보기",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNdTVyY0g4TjFvUi01SURqTlBUR0gyQlRCQkhOYnY0cHRXQ0ZYamNLUXU2Y2RBa1c5M3hXbnlKSlF1bTQ5NjV6WFE0VUFUYlVETUM0TzI3TFVCem96Qm9CWHBfLXBmUXZzMVFQd1poVlFKYXd3VE9Pa3FEcHVMRUtUY3BTLUNJNmNvLTl5aTBoQ0s?oc=5",
       "lang": "en",
       "classifiedBy": "AI(gemini-3.5-flash-lite)"
     },
@@ -884,19 +897,6 @@
       "btnText": "🔗 원문 보기",
       "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBKallJMXFfZjN5d3ZERThQTDU5ZXB1bDROakRIRmliSnBZX0htNElGaERCTlZ6Z012Y3ZvR2RMZzlTY0NyY3ByandwODRpaDRxMnk0Tm5RaGRZcXZxblk4UnV1b1dVU3ZUc3U2V1lmWTlVSHljWUHSAWZBVV95cUxOMldCZ2ltQng1UkJOQ3JHb1R1TGJTbVNuaE11WHJnMTNTMk1fakY1SDBKMWM3QzI1OG1vY2JqOUV1Ql82UHZDMFhDUHdZUkk1bTVfSHFBMnEteXQ5MXNjTEZhYmRSZXc?oc=5",
       "lang": "ko",
-      "classifiedBy": "AI(gemini-3.5-flash-lite)"
-    },
-    {
-      "stars": "★★★★☆",
-      "category": "대체투자·사모시장",
-      "title": "퍼스트 이글, 패밀리오피스 대상 사모신용(Private Credit) 상품 확대",
-      "desc": "패밀리오피스를 위한 사모신용 투자 옵션 확대에 관한 글로벌 시장 동향입니다.",
-      "org": "Professional Wealth Management",
-      "date": "2026.10.29",
-      "ts": 1793257200000,
-      "btnText": "🔗 원문 보기",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9oWlY1SU81RFVLMElqdDBUMmRQVDA2WHZzVU55T2xZUk1uMG11RkV0N0pVS2U5WGNzT056WDczN2NKNlJtRHBYeUJhWmx5ZnFpSEZMNTZzbTVjODgzbmFESk9wWnVpSXFYczhmc01UTnJVNGExaVE?oc=5",
-      "lang": "en",
       "classifiedBy": "AI(gemini-3.5-flash-lite)"
     }
   ]
