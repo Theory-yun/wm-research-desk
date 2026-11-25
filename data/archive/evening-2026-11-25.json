@@ -1,0 +1,681 @@
+{
+  "edition": "EVENING",
+  "generatedAt": "2026-11-25T07:05:05.546Z",
+  "generatedAtKST": "2026.11.25 16:05",
+  "sourceStatus": {
+    "market": "ok",
+    "news": "ok",
+    "summary": "ai-gemini",
+    "summaryModel": "gemini-3.5-flash-lite"
+  },
+  "market": [
+    {
+      "key": "KOSPI",
+      "name": "코스피",
+      "group": "domestic",
+      "priceStr": "4,697.51",
+      "diffStr": "▼ -308.52",
+      "changePct": -6.16,
+      "asOfLocal": "국내 정규장 기준",
+      "asOfKst": "한국 정규장 11.25 15:30 마감",
+      "stale": false,
+      "updatedAt": "2026-11-25T07:00:48.393Z"
+    },
+    {
+      "key": "KOSDAQ",
+      "name": "코스닥",
+      "group": "domestic",
+      "priceStr": "650.64",
+      "diffStr": "▼ -15.24",
+      "changePct": -2.29,
+      "asOfLocal": "국내 정규장 기준",
+      "asOfKst": "한국 정규장 11.25 15:30 마감",
+      "stale": false,
+      "updatedAt": "2026-11-25T07:00:48.393Z"
+    },
+    {
+      "key": "SP500",
+      "name": "S&P 500",
+      "group": "global",
+      "priceStr": "7,201.09",
+      "diffStr": "▼ -36.08",
+      "changePct": -0.5,
+      "asOfLocal": "현지 11.24 16:00 마감",
+      "asOfKst": "한국 11.25 06:00 마감",
+      "stale": false,
+      "updatedAt": "2026-11-25T07:00:48.393Z"
+    },
+    {
+      "key": "NASDAQ",
+      "name": "나스닥",
+      "group": "global",
+      "priceStr": "23,733.54",
+      "diffStr": "▼ -356.02",
+      "changePct": -1.48,
+      "asOfLocal": "현지 11.24 16:00 마감",
+      "asOfKst": "한국 11.25 06:00 마감",
+      "stale": false,
+      "updatedAt": "2026-11-25T07:00:48.393Z"
+    },
+    {
+      "key": "SOX",
+      "name": "필라델피아 반도체",
+      "group": "global",
+      "priceStr": "8,832.50",
+      "diffStr": "▼ -755.55",
+      "changePct": -7.88,
+      "asOfLocal": "현지 11.24 16:00 마감",
+      "asOfKst": "한국 11.25 06:00 마감",
+      "stale": false,
+      "updatedAt": "2026-11-25T07:00:48.393Z"
+    },
+    {
+      "key": "USDKRW",
+      "name": "원/달러 환율",
+      "group": "fx",
+      "priceStr": "1,342.00",
+      "diffStr": "▲ +0.98",
+      "changePct": 0.07,
+      "asOfLocal": "집계 기준 확인 중",
+      "asOfKst": "집계 기준 확인 중",
+      "stale": false,
+      "updatedAt": "2026-11-25T07:00:48.393Z"
+    }
+  ],
+  "extraMarket": [
+    {
+      "key": "US10Y",
+      "name": "미 10년물 금리",
+      "unit": "%",
+      "priceStr": "4.90",
+      "changePct": -0.28,
+      "diff": -0.014,
+      "chgStr": "-1bp",
+      "stale": false
+    },
+    {
+      "key": "US5Y",
+      "name": "미 5년물 금리",
+      "unit": "%",
+      "priceStr": "4.71",
+      "changePct": -0.34,
+      "diff": -0.016,
+      "chgStr": "-2bp",
+      "stale": false
+    },
+    {
+      "key": "DXY",
+      "name": "달러인덱스",
+      "unit": "",
+      "priceStr": "104.04",
+      "changePct": 0.22,
+      "diff": 0.227,
+      "stale": false
+    },
+    {
+      "key": "USDJPY",
+      "name": "엔/달러",
+      "unit": "엔",
+      "priceStr": "159.23",
+      "changePct": 0.14,
+      "diff": 0.223,
+      "stale": false
+    },
+    {
+      "key": "GOLD",
+      "name": "금",
+      "unit": "달러",
+      "priceStr": "3,516.4",
+      "changePct": -1.28,
+      "diff": -45.5,
+      "stale": false
+    },
+    {
+      "key": "WTI",
+      "name": "WTI 유가",
+      "unit": "달러",
+      "priceStr": "80.55",
+      "changePct": -1.83,
+      "diff": -1.5,
+      "stale": false
+    },
+    {
+      "key": "BTC",
+      "name": "비트코인",
+      "unit": "달러",
+      "priceStr": "59,131",
+      "changePct": -3.4,
+      "diff": -2080.2,
+      "stale": false
+    }
+  ],
+  "issues": [
+    {
+      "cat": "국내증시",
+      "tag": "코스피 4,697.51 (-6.16%) · 코스닥 650.64 (-2.29%)",
+      "title": "코스피 6%대 급락 마감, 삼성전자와 SK하이닉스 등 대형주 약세 주도",
+      "desc": "11월 25일 국내 증시는 대형 반도체 주식을 중심으로 강한 하방 압력을 받으며 코스피가 4,600선 초반까지 급락했습니다. 필라델피아 반도체 지수의 큰 폭 하락과 맞물려 투자 심리가 크게 위축된 모습입니다."
+    },
+    {
+      "cat": "글로벌증시",
+      "tag": "필라델피아 반도체 -7.88% · 나스닥 -1.48%",
+      "title": "뉴욕증시 기술주 중심 조정을 거치며 국내 시장에 부담으로 작용",
+      "desc": "11월 24일 뉴욕증시에서 S&P 500과 나스닥이 각각 하락 마감한 가운데, 특히 필라델피아 반도체 지수가 7.88% 급락하며 글로벌 기술주 전반의 변동성을 키웠습니다. 이러한 흐름이 국내 증시의 낙폭을 키우는 주요 외부 요인으로 작용했습니다."
+    },
+    {
+      "cat": "부동산·채권",
+      "tag": "가계대출 5% 돌파 · 주담대 14년 7개월래 최고",
+      "title": "가계대출 금리 5% 상회하며 주택담보대출 14년 7개월래 최고치 기록",
+      "desc": "시중 가계대출 금리가 5%를 넘어섰고 주택담보대출 증가세가 이어지면서 자금 조달 비용 부담이 가중되고 있습니다. 관련 대출 지표가 장기간 최고 수준을 기록하면서 실물 경제와 자산 시장 전반의 자금 흐름을 제약하는 요인이 되고 있습니다."
+    }
+  ],
+  "talkingPoint": "오늘 코스피는 308.52포인트 내린 4,697.51로, 코스닥은 15.24포인트 하락한 650.64로 마감했습니다. 원/달러 환율은 1,342.00원으로 소폭 상승하며 좁은 박스권에서 움직였고, 미 10년물 국채 금리는 4.90%로 전일 대비 1bp 내렸습니다.\n\n간밤 뉴욕증시에서 11월 24일(화) S&P 500이 0.5%, 나스닥이 1.48% 하락한 데 이어 필라델피아 반도체 지수가 7.88% 급락한 영향이 오늘 국내 정규장으로 곧바로 전해졌습니다. 글로벌 기술주 약세와 맞물려 국내 반도체 대형주를 중심으로 매물이 출회되었고, 국내 가계대출 금리가 5%를 상회하며 주담대가 14년 7개월래 최고치를 기록하는 등 국내외 유동성 환경의 긴장감이 높게 유지되고 있습니다.\n\n다가오는 11월 26일(목)에는 한국은행 금융통화위원회의 통화정책방향 결정회의가 예정되어 있으며 같은 날 미국 증시는 휴장에 들어갑니다. 이후 11월 27일 미국 증시 조기 폐장과 12월 1일 MSCI 분기 리뷰 적용일, 12월 4일 미국 고용보고서 발표 등 주요 지표 발표가 이어지므로 금통위의 금리 결정 방향과 국내외 거시경제 지표의 변화를 차분히 관찰할 시점입니다.",
+  "topNews": [
+    {
+      "title": "코스피 장중 5%대 급락세 지속…삼전·닉스 8%대 하락",
+      "press": "연합뉴스",
+      "url": "https://www.yna.co.kr/view/AKR20261125083800008",
+      "timestamp": 1795573104000,
+      "date": "2026.11.25 11:18",
+      "tags": [
+        "증시"
+      ],
+      "tagSource": "ai",
+      "coverage": 3,
+      "scope": "국내",
+      "outlets": [
+        "연합뉴스",
+        "한국경제",
+        "매일경제"
+      ],
+      "rssDate": "2026.11.25 11:18",
+      "timeSource": "meta",
+      "shortUrl": "https://is.gd/LqSFNc"
+    },
+    {
+      "title": "삼성동 옛 한국감정원 부지에 38층 업무·마이스 복합시설 들어선다",
+      "press": "한국경제",
+      "url": "https://www.hankyung.com/article/202611258466i",
+      "timestamp": 1795564800000,
+      "date": "2026.11.25 09:00",
+      "tags": [
+        "부동산"
+      ],
+      "tagSource": "ai",
+      "coverage": 3,
+      "scope": "국내",
+      "outlets": [
+        "한국경제",
+        "연합뉴스",
+        "매일경제"
+      ],
+      "rssDate": "2026.11.25 11:15",
+      "timeSource": "meta",
+      "shortUrl": "https://is.gd/Uftv5D"
+    },
+    {
+      "title": "원·달러 환율 0.8원 오른 1343.2원",
+      "press": "파이낸셜뉴스",
+      "url": "https://www.fnnews.com/news/202611251544208293",
+      "timestamp": 1795589139000,
+      "date": "2026.11.25 15:45",
+      "tags": [
+        "외환"
+      ],
+      "tagSource": "ai",
+      "coverage": 2,
+      "scope": "국내",
+      "outlets": [
+        "파이낸셜뉴스",
+        "연합뉴스"
+      ],
+      "rssDate": "2026.11.25 15:45",
+      "timeSource": "meta",
+      "shortUrl": "https://is.gd/swf4Da"
+    },
+    {
+      "title": "'상품권 영업' CJ프레시웨이 부당 고객유인 혐의… 공정위, 제재 착수",
+      "press": "파이낸셜뉴스",
+      "url": "https://www.fnnews.com/news/202611251425094997",
+      "timestamp": 1795587407000,
+      "date": "2026.11.25 15:16",
+      "tags": [
+        "증시"
+      ],
+      "tagSource": "ai",
+      "coverage": 2,
+      "scope": "국내",
+      "outlets": [
+        "파이낸셜뉴스",
+        "연합뉴스"
+      ],
+      "rssDate": "2026.11.25 15:16",
+      "timeSource": "meta",
+      "shortUrl": "https://is.gd/Edm2vJ"
+    },
+    {
+      "title": "노원구 중계현대2 84.34㎡, 8억 6300만원 `최근 3년 신고가` [MAI부동산]",
+      "press": "매일경제",
+      "url": "https://www.mk.co.kr/news/realestate/12217762",
+      "timestamp": 1795565979000,
+      "date": "2026.11.25 09:19",
+      "tags": [
+        "부동산"
+      ],
+      "tagSource": "ai",
+      "coverage": 2,
+      "scope": "국내",
+      "outlets": [
+        "연합뉴스",
+        "매일경제"
+      ],
+      "rssDate": "2026.11.25 09:19",
+      "timeSource": "meta",
+      "shortUrl": "https://is.gd/GcdSLP"
+    },
+    {
+      "title": "영끌족 다시 비명 지른다…가계대출 5% 돌파, 주담대 14년7개월래 최고",
+      "press": "매일경제",
+      "url": "https://www.mk.co.kr/news/economy/12218043",
+      "timestamp": 1795583833000,
+      "date": "2026.11.25 14:17",
+      "tags": [
+        "부동산",
+        "채권·금리"
+      ],
+      "tagSource": "ai",
+      "coverage": 2,
+      "scope": "국내",
+      "outlets": [
+        "매일경제",
+        "연합뉴스"
+      ],
+      "rssDate": "2026.11.25 14:17",
+      "timeSource": "meta",
+      "shortUrl": "https://is.gd/De4kWY"
+    },
+    {
+      "title": "한투운용, 전주사무소 개소…\"국민연금과 협력 강화 기대\"",
+      "press": "한국경제",
+      "url": "https://www.hankyung.com/article/2026112590086",
+      "timestamp": 1795564800000,
+      "date": "2026.11.25 09:00",
+      "tags": [
+        "대체투자"
+      ],
+      "tagSource": "ai",
+      "coverage": 2,
+      "scope": "국내",
+      "outlets": [
+        "한국경제",
+        "매일경제"
+      ],
+      "rssDate": "2026.11.25 10:52",
+      "timeSource": "meta",
+      "shortUrl": "https://is.gd/ycEkvN"
+    },
+    {
+      "title": "다올투자증권, 경영권 매각 추진 소식에 16% 급등",
+      "press": "한국경제",
+      "url": "https://www.hankyung.com/article/2026112585416",
+      "timestamp": 1795564800000,
+      "date": "2026.11.25 09:00",
+      "tags": [
+        "증시"
+      ],
+      "tagSource": "ai",
+      "coverage": 2,
+      "scope": "국내",
+      "outlets": [
+        "한국경제",
+        "매일경제"
+      ],
+      "rssDate": "2026.11.25 09:11",
+      "timeSource": "meta",
+      "shortUrl": "https://is.gd/5b6Y2h"
+    }
+  ],
+  "assetChecks": {
+    "framework": "assets",
+    "generatedAt": "2026-11-25T07:05:05.546Z",
+    "model": "gemini-3.5-flash",
+    "cards": [
+      {
+        "key": "kr_equity",
+        "name": "국내 주식",
+        "market": [
+          {
+            "key": "KOSPI",
+            "name": "코스피",
+            "priceStr": "4,697.51",
+            "changePct": -6.16,
+            "unit": ""
+          },
+          {
+            "key": "KOSDAQ",
+            "name": "코스닥",
+            "priceStr": "650.64",
+            "changePct": -2.29,
+            "unit": ""
+          }
+        ],
+        "events": [
+          {
+            "date": "2026-11-26",
+            "kind": "bok",
+            "dday": 1,
+            "label": "한국은행 금통위 (통화정책방향 결정회의)",
+            "when": "11/26(목)"
+          },
+          {
+            "date": "2026-12-01",
+            "kind": "msci_effective",
+            "dday": 6,
+            "label": "MSCI 분기 리뷰 적용일",
+            "when": "12/1(화)"
+          }
+        ],
+        "news": [
+          {
+            "title": "코스피 장중 5%대 급락세 지속…삼전·닉스 8%대 하락",
+            "url": "https://www.yna.co.kr/view/AKR20261125083800008",
+            "press": "연합뉴스",
+            "coverage": 3
+          },
+          {
+            "title": "'상품권 영업' CJ프레시웨이 부당 고객유인 혐의… 공정위, 제재 착수",
+            "url": "https://www.fnnews.com/news/202611251425094997",
+            "press": "파이낸셜뉴스",
+            "coverage": 2
+          },
+          {
+            "title": "다올투자증권, 경영권 매각 추진 소식에 16% 급등",
+            "url": "https://www.hankyung.com/article/2026112585416",
+            "press": "한국경제",
+            "coverage": 2
+          },
+          {
+            "title": "[특징주] 화장품주, 연말 성수기 매출성장 기대감에 강세 마감(종합)",
+            "url": "https://www.yna.co.kr/view/AKR20261125048251008",
+            "press": "연합뉴스",
+            "coverage": 1
+          }
+        ],
+        "level": "변동 큼",
+        "headline": "반도체주 8%대 급락에 코스피 6.16% 대폭락",
+        "analysis": "11월 25일(수) 코스피는 삼성전자와 SK하이닉스가 8%대 급락한 영향으로 6.16% 내린 4,697.51, 코스닥은 2.29% 내린 650.64로 마감했습니다. 다올투자증권이 매각 추진 소식에 16% 급등하고 화장품주가 성수기 기대감으로 강세를 보였으나 시장 하락세를 막기에는 역부족이었습니다.",
+        "watch": "11월 26일(목) 한국은행 금통위 통화정책 방향과 12월 1일(화) MSCI 분기 리뷰 적용에 따른 수급 변동을 주시할 필요가 있습니다.",
+        "textBy": "ai"
+      },
+      {
+        "key": "us_equity",
+        "name": "해외 주식",
+        "market": [
+          {
+            "key": "SP500",
+            "name": "S&P 500",
+            "priceStr": "7,201.09",
+            "changePct": -0.5,
+            "unit": ""
+          },
+          {
+            "key": "NASDAQ",
+            "name": "나스닥",
+            "priceStr": "23,733.54",
+            "changePct": -1.48,
+            "unit": ""
+          },
+          {
+            "key": "SOX",
+            "name": "필라델피아 반도체",
+            "priceStr": "8,832.50",
+            "changePct": -7.88,
+            "unit": ""
+          }
+        ],
+        "events": [
+          {
+            "date": "2026-11-26",
+            "kind": "us_holiday",
+            "dday": 1,
+            "label": "미국 증시 휴장일",
+            "when": "11/26(목)"
+          },
+          {
+            "date": "2026-11-27",
+            "kind": "us_early_close",
+            "dday": 2,
+            "label": "미국 증시 조기 폐장",
+            "when": "11/27(금)"
+          },
+          {
+            "date": "2026-12-04",
+            "kind": "jobs_us",
+            "dday": 9,
+            "label": "미국 고용보고서 (비농업 고용·실업률)",
+            "when": "12/4(금)"
+          }
+        ],
+        "news": [
+          {
+            "title": "'젠슨황 랠리' 하루만에 끝?…메모리과잉·관세우려 투심 냉기",
+            "url": "https://www.yna.co.kr/view/AKR20261125066900008",
+            "press": "연합뉴스",
+            "coverage": 2
+          },
+          {
+            "title": "에그코스메틱, 인니 BPOM 화장품 판매허가 획득…동남아·글로벌 공략 가속",
+            "url": "https://www.mk.co.kr/news/stock/12218158",
+            "press": "매일경제",
+            "coverage": 1
+          }
+        ],
+        "level": "변동 큼",
+        "headline": "반도체지수 7.88% 급락 속 나스닥·S&P500 하락",
+        "analysis": "11월 24일(화) 뉴욕증시는 메모리 공급 과잉과 관세 우려로 필라델피아 반도체 지수가 7.88% 폭락하며 나스닥(-1.48%)과 S&P 500(-0.5%)의 하락을 이끌었습니다. 젠슨 황 랠리가 하루 만에 진정되며 기술주 전반에 투자심리 냉기가 반영되었습니다.",
+        "watch": "11월 26일(목) 증시 휴장 및 11월 27일(금) 조기 폐장 이후 12월 4일(금) 발표될 미국 고용보고서 향방을 관찰할 필요가 있습니다.",
+        "textBy": "ai"
+      },
+      {
+        "key": "bonds",
+        "name": "채권·금리",
+        "market": [
+          {
+            "key": "US10Y",
+            "name": "미 10년물 금리",
+            "priceStr": "4.90",
+            "changePct": -0.28,
+            "unit": "%",
+            "chgStr": "-1bp"
+          },
+          {
+            "key": "US5Y",
+            "name": "미 5년물 금리",
+            "priceStr": "4.71",
+            "changePct": -0.34,
+            "unit": "%",
+            "chgStr": "-2bp"
+          }
+        ],
+        "events": [
+          {
+            "date": "2026-11-26",
+            "kind": "bok",
+            "dday": 1,
+            "label": "한국은행 금통위 (통화정책방향 결정회의)",
+            "when": "11/26(목)"
+          },
+          {
+            "date": "2026-12-04",
+            "kind": "jobs_us",
+            "dday": 9,
+            "label": "미국 고용보고서 (비농업 고용·실업률)",
+            "when": "12/4(금)"
+          },
+          {
+            "date": "2026-12-09",
+            "kind": "fomc",
+            "dday": 14,
+            "label": "미국 FOMC 정례회의 (기준금리 결정)",
+            "when": "12/9(수)"
+          }
+        ],
+        "news": [
+          {
+            "title": "영끌족 다시 비명 지른다…가계대출 5% 돌파, 주담대 14년7개월래 최고",
+            "url": "https://www.mk.co.kr/news/economy/12218043",
+            "press": "매일경제",
+            "coverage": 2
+          }
+        ],
+        "level": "주목",
+        "headline": "미 금리 소폭 하락 속 국내 주담대 금리 최고치",
+        "analysis": "미 10년물 국채 금리는 4.90%(-1bp), 5년물 금리는 4.71%(-2bp)로 소폭 하락했습니다. 반면 국내 시장은 가계대출 금리가 5%를 돌파하고 주담대 금리가 14년 7개월 만에 최고치를 기록하며 대출 이자 부담이 가중되는 모습입니다.",
+        "watch": "11월 26일(목) 한국은행 금통위 결과와 12월 4일(금) 미국 고용보고서, 12월 9일(수) 미 FOMC 정례회의를 통한 금리 시그널을 점검해야 합니다.",
+        "textBy": "ai"
+      },
+      {
+        "key": "fx",
+        "name": "외환",
+        "market": [
+          {
+            "key": "USDKRW",
+            "name": "원/달러 환율",
+            "priceStr": "1,342.00",
+            "changePct": 0.07,
+            "unit": ""
+          },
+          {
+            "key": "DXY",
+            "name": "달러인덱스",
+            "priceStr": "104.04",
+            "changePct": 0.22,
+            "unit": ""
+          },
+          {
+            "key": "USDJPY",
+            "name": "엔/달러",
+            "priceStr": "159.23",
+            "changePct": 0.14,
+            "unit": "엔"
+          }
+        ],
+        "events": [
+          {
+            "date": "2026-11-26",
+            "kind": "bok",
+            "dday": 1,
+            "label": "한국은행 금통위 (통화정책방향 결정회의)",
+            "when": "11/26(목)"
+          },
+          {
+            "date": "2026-12-09",
+            "kind": "fomc",
+            "dday": 14,
+            "label": "미국 FOMC 정례회의 (기준금리 결정)",
+            "when": "12/9(수)"
+          }
+        ],
+        "news": [
+          {
+            "title": "원·달러 환율 0.8원 오른 1343.2원",
+            "url": "https://www.fnnews.com/news/202611251544208293",
+            "press": "파이낸셜뉴스",
+            "coverage": 2
+          }
+        ],
+        "level": "주목",
+        "headline": "달러인덱스 상승 속 원/달러 환율 1,342원 상승",
+        "analysis": "달러인덱스가 104.04(+0.22%)로 상승함에 따라 원/달러 환율은 1,342.00원(+0.07%), 엔/달러 환율은 159.23엔(+0.14%)을 기록하며 강달러 흐름을 반영했습니다. 주요국 통화가 달러 대비 전반적인 약세 흐름을 나타냈습니다.",
+        "watch": "11월 26일(목) 한국은행 금통위 결정과 12월 9일(수) 미 FOMC 정례회의가 외환 시장에 미칠 영향을 관찰할 필요가 있습니다.",
+        "textBy": "ai"
+      },
+      {
+        "key": "commodities",
+        "name": "원자재",
+        "market": [
+          {
+            "key": "GOLD",
+            "name": "금",
+            "priceStr": "3,516.4",
+            "changePct": -1.28,
+            "unit": "달러"
+          },
+          {
+            "key": "WTI",
+            "name": "WTI 유가",
+            "priceStr": "80.55",
+            "changePct": -1.83,
+            "unit": "달러"
+          }
+        ],
+        "events": [],
+        "news": [],
+        "level": "주목",
+        "headline": "달러 강세 영향에 금·유가 동반 하락세",
+        "analysis": "국제 금 가격은 3,516.4달러로 1.28% 하락했고, WTI 유가 역시 80.55달러로 1.83% 내렸습니다. 달러화 강세와 주요 자산군의 조정 여파로 안전자산과 에너지 원자재 가격이 동반 약세를 보였습니다.",
+        "watch": "달러화 향방과 글로벌 경기 동향에 따른 원자재 수요 변화를 지속 점검할 필요가 있습니다.",
+        "textBy": "ai"
+      },
+      {
+        "key": "alternatives",
+        "name": "부동산·대체투자",
+        "market": [
+          {
+            "key": "BTC",
+            "name": "비트코인",
+            "priceStr": "59,131",
+            "changePct": -3.4,
+            "unit": "달러"
+          }
+        ],
+        "events": [],
+        "news": [
+          {
+            "title": "삼성동 옛 한국감정원 부지에 38층 업무·마이스 복합시설 들어선다",
+            "url": "https://www.hankyung.com/article/202611258466i",
+            "press": "한국경제",
+            "coverage": 3
+          },
+          {
+            "title": "노원구 중계현대2 84.34㎡, 8억 6300만원 `최근 3년 신고가` [MAI부동산]",
+            "url": "https://www.mk.co.kr/news/realestate/12217762",
+            "press": "매일경제",
+            "coverage": 2
+          },
+          {
+            "title": "한투운용, 전주사무소 개소…\"국민연금과 협력 강화 기대\"",
+            "url": "https://www.hankyung.com/article/2026112590086",
+            "press": "한국경제",
+            "coverage": 2
+          },
+          {
+            "title": "공공택지 이주 협조땐 보상금 30%↑",
+            "url": "https://www.mk.co.kr/news/realestate/12217322",
+            "press": "매일경제",
+            "coverage": 2
+          }
+        ],
+        "level": "주목",
+        "headline": "비트코인 3.4% 하락 및 부동산 개발 호재 혼재",
+        "analysis": "비트코인은 위험자산 투자심리 위축 영향으로 59,131달러로 3.4% 하락했습니다. 부동산 시장에서는 서울 노원구 중계현대2(84.34㎡)가 8억 6300만 원으로 3년 신고가를 기록하고 삼성동 옛 한국감정원 부지 개발 사업 등 입지별 호재가 구체화되었습니다.",
+        "watch": "가상자산 시장의 변동성과 함께 공공택지 이주 보상금 인상 등 정책 변화를 주시할 필요가 있습니다.",
+        "textBy": "ai"
+      }
+    ],
+    "taxNews": [
+      {
+        "title": "삼성동 옛 한국감정원 부지에 38층 업무·마이스 복합시설 들어선다",
+        "url": "https://www.hankyung.com/article/202611258466i",
+        "press": "한국경제",
+        "coverage": 3
+      },
+      {
+        "title": "노원구 중계현대2 84.34㎡, 8억 6300만원 `최근 3년 신고가` [MAI부동산]",
+        "url": "https://www.mk.co.kr/news/realestate/12217762",
+        "press": "매일경제",
+        "coverage": 2
+      }
+    ]
+  }
+}
