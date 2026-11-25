@@ -1,6 +1,6 @@
 {
   "note": "curated=true 는 PB가 고른 연례 핵심 리포트(고정), 나머지는 scripts/build-insights.mjs가 매일 자동 수집합니다.",
-  "updatedAt": "2026-11-24T22:58:23.500Z",
+  "updatedAt": "2026-11-25T09:48:17.575Z",
   "categories": [
     "글로벌 F/O 동향",
     "국내 부자·웰스 리포트",
@@ -121,6 +121,45 @@
     },
     {
       "stars": "★★★★☆",
+      "category": "대체투자·사모시장",
+      "title": "JP모건이 내년 채권·사모신용을 더욱 낙관하는 이유",
+      "desc": "글로벌 투자은행의 시장 분석을 통해 대체투자 내 사모신용 자산의 비중 확대 근거를 제시합니다.",
+      "org": "KB Think",
+      "date": "2026.11.25",
+      "ts": 1795566935000,
+      "btnText": "🔗 원문 보기",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9NaFNmUDh5eDgydnUyM2pNS3U2OThKNVVkWkpCVV8yX0tLZjBhQ1E3TGlpaUpfZVR5RXpIUm81M2N0UTZqclFubjZldWdEcUNleWwza1RyQjlyQ0txT0xkdGEwUHMzNTMyaVp6aHA5X0djQQ?oc=5",
+      "lang": "ko",
+      "classifiedBy": "AI(gemini-3.1-flash-lite)"
+    },
+    {
+      "stars": "★★★★☆",
+      "category": "승계·세무·신탁",
+      "title": "전문가들, 가업승계 지원 공감.. 상장주식평가방법은 이견",
+      "desc": "가업승계 세제 개편 논의의 핵심 쟁점을 파악하여 고객의 승계 전략 수립에 도움을 줍니다.",
+      "org": "조세일보",
+      "date": "2026.11.23",
+      "ts": 1795428396000,
+      "btnText": "🔗 원문 보기",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE43N3ppNkl5QmF2ckI1WjJmRm12RW5NSkhRLU5OTVE3RGpXMElNbWU5QzJpWTZrN01hTV94UVhNeExpbHpEb0xfZk5vWjNSMzVQb1VfeTE5NU9oOWtIN3lR?oc=5",
+      "lang": "ko",
+      "classifiedBy": "AI(gemini-3.1-flash-lite)"
+    },
+    {
+      "stars": "★★★☆☆",
+      "category": "자산배분·시장 전망",
+      "title": "2027년, 채권에 관심 가져야…경제 전문가가 제시한 투자 전략",
+      "desc": "특정 자산군에 대한 전문가들의 중장기 투자 전략을 확인할 수 있습니다.",
+      "org": "뉴시스",
+      "date": "2026.11.21",
+      "ts": 1795228200000,
+      "btnText": "🔗 원문 보기",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBjNDdEd0czSWVPeVNxcDlNQWdhbUNVcTFUbzgtcWF0YmpSOUFTb01SbmNUZnd4WVFZN1ZEbmVQSGhUSWFXLXJSbU5RMW1Jc1J2c2ViOTdrbW12WXY1X1A0LdIBeEFVX3lxTFBISXdJU3lfQ2ZNblQ4QkZyZ1NPa3JvWWcwR1ZtMkZBVVBWUU9CZmFBR2xfR1hoWXE2Z2xWVWNHeTl5M0cxbG1OcHNkaXFKdFMxbHIwOHl4TzlfZk0tN3ZzbVdnRXdlOThTalFSTnh6bE1qQlI3QjJXbw?oc=5",
+      "lang": "ko",
+      "classifiedBy": "AI(gemini-3.1-flash-lite)"
+    },
+    {
+      "stars": "★★★★☆",
       "category": "글로벌 F/O 동향",
       "title": "앤트로픽 IPO, AI 부의 창출이 새롭고 더 날렵한 형태의 패밀리오피스를 탄생시키다",
       "desc": "AI 부의 성장에 따른 글로벌 패밀리오피스의 변화 동향을 다루고 있다.",
@@ -183,6 +222,19 @@
       "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE93UEhPS3FKZGpMc3NnbG5yMUNqdVJJOFY3SVdlWjZpbUhqZElzUUg3WmtHOWhEdWRTbWNnYmcxR0NpU0Z4ZG5ZWU9iYnQzU0xBZ3c?oc=5",
       "lang": "ko",
       "classifiedBy": "AI(gemini-3.5-flash-lite)"
+    },
+    {
+      "stars": "★★★★☆",
+      "category": "자산배분·시장 전망",
+      "title": "2027년 노다지: 월가 대형 기관 강세장 지속 전망, 기회는 구조적 장세에 숨어 있다",
+      "desc": "글로벌 대형 기관의 시장 전망을 통해 고객 포트폴리오의 구조적 조정 근거를 마련할 수 있습니다.",
+      "org": "PANews",
+      "date": "2026.11.19",
+      "ts": 1795046730000,
+      "btnText": "🔗 원문 보기",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE00VVBMXzB1YXJ1MGRXVHEyc28xakxfWGRXalpUdzdQY2kyRFdyXzQyb0hQWVVDTDFtczlLNTBVcDB4STVITGg4a2ZteG1EbDhoNXo5bU43aFlxYjIzTkV6RnkwSWVraWhWekVsRW5aNVhtQlJ3c3BlNHJibVZPdE0?oc=5",
+      "lang": "ko",
+      "classifiedBy": "AI(gemini-3.1-flash-lite)"
     },
     {
       "stars": "★★★★☆",
@@ -291,6 +343,19 @@
     {
       "stars": "★★★★☆",
       "category": "자산배분·시장 전망",
+      "title": "2027 대전망: 2000억 굴리는 강남 전문가 내년엔 ○○○ 비중 늘려라",
+      "desc": "초고액 자산가 운용 전문가의 시장 전망을 통한 자산 배분 방향성을 제시합니다.",
+      "org": "한국경제",
+      "date": "2026.11.17",
+      "ts": 1794889984000,
+      "btnText": "🔗 원문 보기",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBPbV9uS2U0WjR6LWZJVHI3NjBkMURfbXNMcHo3LXNHdXVoblNsazk1Y05fMzdUVm9TUkhhUTM0czJMVldNQy1UV19sTjc4ekNDczFpU2ZCYjQ0Zw?oc=5",
+      "lang": "ko",
+      "classifiedBy": "AI(gemini-3.1-flash-lite)"
+    },
+    {
+      "stars": "★★★★☆",
+      "category": "자산배분·시장 전망",
       "title": "NH투자증권, 2027년 코스피 목표치 9,200 제시 및 AI와 비AI 동반 성장 전망",
       "desc": "국내 증권사의 2027년 지수 전망 및 주도주 변화에 대한 자산배분·시장 전망 데이터입니다.",
       "org": "BigGo Finance",
@@ -326,6 +391,19 @@
       "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOLWNQVmtHZm5JQ2JaNUNVZUdNLXF1dzRQOEFRMjVTT08xdUZmMjdKdWRWVHpzOGcteXZuM09fVWY2S2VjMEMxT2FFVTFqai1acHRlT3l2NldnZlpDODVWWmp5MW53cWZBMGoxakl3dEJUQk10aGhENnh2U0J6SzFQOE5qd1JKUk1KZVdObnhTSXRLVGE0UWYzSDRCM29aUQ?oc=5",
       "lang": "en",
       "classifiedBy": "AI(gemini-3.5-flash-lite)"
+    },
+    {
+      "stars": "★★★☆☆",
+      "category": "승계·세무·신탁",
+      "title": "종부세 공제·상속세 할증·가상자산 유예까지…갈팡질팡 세제 개편에 납세자 혼선",
+      "desc": "최근 세제 정책 변화에 따른 납세자 리스크와 대응 필요성을 시사합니다.",
+      "org": "더퍼블릭",
+      "date": "2026.11.16",
+      "ts": 1794808258000,
+      "btnText": "🔗 원문 보기",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBYaWZqYmQyNVpLUFRxX3ZMbEZORGFzY1V2dk8xcnYzQ2dac1RVMlBiRUlyU2ZJcDJEY3AzUWVrOVR3NlFoczAzZ3BqR1dycG9xV0d6bTJvX0JDbHFpaV8tRElURDBrNEFRVlRr0gFvQVVfeXFMT0hQb0swMVU5TGE5SEhmOGQ1c1dGbmQwVjQ2YW81NnU1MVlHcGhEU1FIYXJOUmFSR3Bxdi1McU0ycnRnX0xWdXIyMmpsSUd2bldhNWU5V0thUHpybUl6UlYzYlhCbXJjdUV5d1pCOURB?oc=5",
+      "lang": "ko",
+      "classifiedBy": "AI(gemini-3.1-flash-lite)"
     },
     {
       "stars": "★★★★☆",
@@ -706,6 +784,19 @@
     },
     {
       "stars": "★★★★☆",
+      "category": "글로벌 F/O 동향",
+      "title": "패밀리오피스, 사모 시장에서 역량 강화",
+      "desc": "글로벌 패밀리오피스의 사모 시장 참여 확대 현황을 통해 고객의 투자 트렌드 비교가 가능합니다.",
+      "org": "Professional Wealth Management",
+      "date": "2026.11.05",
+      "ts": 1793865600000,
+      "btnText": "🔗 원문 보기",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9MWXp3UU5zdEsxbHpxZkdpemdhd1hlcUE5RFpleVlRY1ZBdmU3djdvQzA5blNnc1pHM3o5QTNLTzhjT3ljckduMTRxMm1ESW1YZFhNMHNKZllKZ0RDNFdTQS1DZkRVUDJIalJiNnp6TEpCQ3BqcWc?oc=5",
+      "lang": "en",
+      "classifiedBy": "AI(gemini-3.1-flash-lite)"
+    },
+    {
+      "stars": "★★★★☆",
       "category": "승계·세무·신탁",
       "title": "부모님 통장에서 옮긴 병원비 상속세 증여세 낼까",
       "desc": "부모님 통장에서 이체된 병원비와 관련된 상속세 및 증여세 과세 여부를 설명합니다.",
@@ -806,97 +897,6 @@
       "btnText": "🔗 원문 보기",
       "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNUU1Hd2E1VGEyQ2JwVjl2ZzNKWFFHVDVDSk4xR2NPc3BRYVl0YnV3eTZsd3dJYnVtaC1zX1B2UWdrdzdVSmtUTUpEVk5YT2lHYjZJY1ZIM0RkZkJCbXk2V21TUXFqQ0pQZ1RGTHR3LWtteWZ5RHI4cTNFUzVaRkZ2eDhBRzJQRTg1dWVVLV92MzRGQjBkSUl4OG16WXRWdw?oc=5",
       "lang": "en",
-      "classifiedBy": "AI(gemini-3.5-flash-lite)"
-    },
-    {
-      "stars": "★★★★☆",
-      "category": "승계·세무·신탁",
-      "title": "\"서울 아파트 한 채 물려받으면 상속세 얼마\"…공제 5억원 30년째 그대로, 11월 국회 개편 테이블에",
-      "desc": "상속세 공제 제도 및 국회 개편 논의와 관련된 세무 이슈를 다룹니다.",
-      "org": "경제시그널",
-      "date": "2026.11.03",
-      "ts": 1793692800000,
-      "btnText": "🔗 원문 보기",
-      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE8yMlJBUm82SW00eC1ibk9ONFd2WWFvY1RuTjA4TUE1Z2xldjlWOUlLN0pQMHAtSWRfOXR1MjkxVnhnd00ybXVlU2ZMN214N00tSVVmRHFHeS11ZUpRend4U3U4VGlYN01lU2FFTWtjQkVKcHM?oc=5",
-      "lang": "ko",
-      "classifiedBy": "AI(gemini-3.5-flash-lite)"
-    },
-    {
-      "stars": "★★★★★",
-      "category": "승계·세무·신탁",
-      "title": "DBS, 패밀리오피스는 승계 및 운영 리스크에 대한 준비가 부족하다고 진단",
-      "desc": "DBS 보고서에 따르면 패밀리오피스들이 가문 승계와 운영 리스크 대응에 미흡한 것으로 나타났습니다.",
-      "org": "Wealth Briefing",
-      "date": "2026.11.02",
-      "ts": 1793606400000,
-      "btnText": "🔗 원문 보기",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNUVJuMUc3T1Q5RUtudEV6SmtDSVc2c1JfbEtla3M1TTFiZ2ppeFBXbnJrRnhtdm9FQVZTQlVqdTBBa1Fhajc3VUJQUjVTVlVsR3ljYm5TeEJsZlBaMlBKd3MwQ2J6UjdaSld5TFpiT1I0T3R3OGVkLUhrMFBfTFJGZFE4azRzR2FWcThZSXMxUndILS1HdnBrMDVzNm41cG9naUlkbndIYkctQjF6c3pXVkxEYw?oc=5",
-      "lang": "en",
-      "classifiedBy": "AI(gemini-3.5-flash-lite)"
-    },
-    {
-      "stars": "★★★★☆",
-      "category": "국내 부자·웰스 리포트",
-      "title": "연준의 새로운 부의 보고서에서 가장 충격적인 한 줄: 고등학교 학력이 없는 가정의 순자산 중간값 55% 감소",
-      "desc": "미 연준의 자산 보고서에서 저학력 가구의 순자산 중간값이 크게 감소한 통계가 발표되었습니다.",
-      "org": "Yahoo Finance",
-      "date": "2026.11.02",
-      "ts": 1793606400000,
-      "btnText": "🔗 원문 보기",
-      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNdTVyY0g4TjFvUi01SURqTlBUR0gyQlRCQkhOYnY0cHRXQ0ZYamNLUXU2Y2RBa1c5M3hXbnlKSlF1bTQ5NjV6WFE0VUFUYlVETUM0TzI3TFVCem96Qm9CWHBfLXBmUXZzMVFQd1poVlFKYXd3VE9Pa3FEcHVMRUtUY3BTLUNJNmNvLTl5aTBoQ0s?oc=5",
-      "lang": "en",
-      "classifiedBy": "AI(gemini-3.5-flash-lite)"
-    },
-    {
-      "stars": "★★★★★",
-      "category": "승계·세무·신탁",
-      "title": "가업상속공제 개편 ‘얻는 것’보다 ‘잃는 것’ 더 많아",
-      "desc": "가업상속공제 제도 개편의 득실을 분석한 내용으로 가문 단위 상속 플래닝에 참고할 수 있습니다.",
-      "org": "병원신문",
-      "date": "2026.11.02",
-      "ts": 1793606400000,
-      "btnText": "🔗 원문 보기",
-      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE54eGF3Ql95WFBvV0kyeUpCQjVpMkxxUEphekhXQ0xtUHRiY1BxSC1tVVBybWMxa3FENFdRX2lhaW1WUlZIc3ZFa3FHbGZwSUNReUw5ZGFZTUZZN0Mta3FfTk9tZE5QZ2x1X3c?oc=5",
-      "lang": "ko",
-      "classifiedBy": "AI(gemini-3.5-flash-lite)"
-    },
-    {
-      "stars": "★★★★☆",
-      "category": "승계·세무·신탁",
-      "title": "가업상속공제, 경영 15년·사후관리 5년·고용 80%로 완화해야",
-      "desc": "가업상속공제 제도와 관련하여 경영 기간, 사후관리, 고용 요건 등의 완화 필요성이 제기된 세법 및 제도 관련 내용입니다.",
-      "org": "한국세정신문",
-      "date": "2026.11.02",
-      "ts": 1793606400000,
-      "btnText": "🔗 원문 보기",
-      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1HRXg0WWpsVWF0QWtPNGZsSk8xSXJGTmM0NXpjbjlOTlRKRUo2WmFTUjhoZ1B2VVhTR0s1dkZfYzBCbkRYci1YOHRsRVBPZmZqQ2JJQWRra0J3RDV3amtZOEtNTUc?oc=5",
-      "lang": "ko",
-      "classifiedBy": "AI(gemini-3.5-flash-lite)"
-    },
-    {
-      "stars": "★★★★☆",
-      "category": "대체투자·사모시장",
-      "title": "2026 사모펀드 아시아 전망",
-      "desc": "아시아 지역의 사모펀드 시장 동향과 전망을 다루고 있습니다.",
-      "org": "Markets Group",
-      "date": "2026.10.30",
-      "ts": 1793343600000,
-      "btnText": "🔗 원문 보기",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOalVWM2ZqT1NaXzhMZ2VSOTRHMmJaeXFTb0pEM3pCQ0hlSUhWdlp0a2dpYUdvLXFNUHJKaDUtR3FMeGZ1c2pSYWxBQk9kU0Zxa210OFRDVjM2ZDdRSlpXb2xuUDVGbmlvNUtGckcyUFh1SUdYZ0c1YTNYdS1yT1k0aUZLYXh6amZW?oc=5",
-      "lang": "en",
-      "classifiedBy": "AI(gemini-3.5-flash-lite)"
-    },
-    {
-      "stars": "★★★★☆",
-      "category": "국내 부자·웰스 리포트",
-      "title": "패밀리오피스 서비스 200가구 넘어서",
-      "desc": "국내 초고액자산가 대상 패밀리오피스 서비스 이용 가구 수가 200가구를 넘어섰음을 보여주는 통계 데이터입니다.",
-      "org": "동아일보",
-      "date": "2026.10.30",
-      "ts": 1793343600000,
-      "btnText": "🔗 원문 보기",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBKallJMXFfZjN5d3ZERThQTDU5ZXB1bDROakRIRmliSnBZX0htNElGaERCTlZ6Z012Y3ZvR2RMZzlTY0NyY3ByandwODRpaDRxMnk0Tm5RaGRZcXZxblk4UnV1b1dVU3ZUc3U2V1lmWTlVSHljWUHSAWZBVV95cUxOMldCZ2ltQng1UkJOQ3JHb1R1TGJTbVNuaE11WHJnMTNTMk1fakY1SDBKMWM3QzI1OG1vY2JqOUV1Ql82UHZDMFhDUHdZUkk1bTVfSHFBMnEteXQ5MXNjTEZhYmRSZXc?oc=5",
-      "lang": "ko",
       "classifiedBy": "AI(gemini-3.5-flash-lite)"
     }
   ]
