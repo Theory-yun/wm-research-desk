@@ -1,6 +1,6 @@
 {
   "note": "캘린더 일정의 결과. 대부분 scripts/collect-calendar.mjs가 자동으로 채우며, method가 manual인 항목은 사람이 직접 입력한 것입니다. status가 final이면 다시 덮어쓰지 않습니다.",
-  "updatedAt": "2026-11-25T22:56:54.332Z",
+  "updatedAt": "2026-11-26T09:44:00.268Z",
   "results": {
     "2026-10-22|bok": {
       "status": "final",
@@ -228,6 +228,19 @@
       "sourceName": "DART — 셀트리온 [기재정정]연결재무제표기준영업(잠정)실적(공정공시)",
       "sourceUrl": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261027800047",
       "collectedAt": "2026-11-15T07:59:59.947Z"
+    },
+    "2026-11-26|bok": {
+      "status": "final",
+      "headline": "기준금리 인상 — 연 3.25%",
+      "details": [
+        "한국은행 금융통화위원회는 기준금리를 3.25%로 0.25%포인트 인상하였다.",
+        "근거 헤드라인 20건 · 예: \"기준금리 3.25%로 올린 한은, 이번엔 왜 인상을 택했을까?\" (네이버페이 머니스토리)"
+      ],
+      "method": "ai-news",
+      "model": "gemini-3.5-flash-lite",
+      "sourceName": "네이버페이 머니스토리 외 뉴스",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5ZWUV5SkJHSUhQUk5qVUUtQ1NlbVAyTXA1ZFJUdW5HbjQyNkRveTBvNVNYMWl2X3h5eVFzYlVxd2xoT2dxS0E5b3h3MFhhWHpTTXc?oc=5",
+      "collectedAt": "2026-11-26T09:44:00.268Z"
     }
   }
 }

@@ -1,6 +1,6 @@
 {
   "note": "curated=true 는 PB가 고른 연례 핵심 리포트(고정), 나머지는 scripts/build-insights.mjs가 매일 자동 수집합니다.",
-  "updatedAt": "2026-11-25T22:57:05.631Z",
+  "updatedAt": "2026-11-26T09:44:18.078Z",
   "categories": [
     "글로벌 F/O 동향",
     "국내 부자·웰스 리포트",
@@ -118,6 +118,19 @@
       "btnText": "🔗 원문 자료실",
       "url": "https://www2.deloitte.com/global/en/pages/deloitte-private/articles/family-office-insights-series.html",
       "curated": true
+    },
+    {
+      "stars": "★★★★☆",
+      "category": "자산배분·시장 전망",
+      "title": "AI 투자 사이클·증시 고평가 …NH아문디운용이 바라본 내년 전망은",
+      "desc": "AI 투자 사이클과 증시 고평가에 초점을 맞춘 자산배분 전망입니다.",
+      "org": "뉴스핌",
+      "date": "2026.11.26",
+      "ts": 1795652160000,
+      "btnText": "🔗 원문 보기",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9iV0VBNjZJZGRBc1BNZ0JHNUF0bWFHT1FKblAtOXNObnBKY2dlVWR6R1pRc1JrVVk0eDhmS282SWZQS3JyamVGM3E2QXVVS2NvRGRScjd5bzMxLU91?oc=5",
+      "lang": "ko",
+      "classifiedBy": "AI(gemini-flash-lite-latest)"
     },
     {
       "stars": "★★★★☆",
@@ -448,14 +461,14 @@
       "stars": "★★★★☆",
       "category": "자산배분·시장 전망",
       "title": "[마켓스토리] 롤러코스터 탔던 올해 코스피…내년 투자 전략은?",
-      "desc": "국내 주식시장의 연간 흐름을 복기하고 다가오는 해의 국내 증시 투자 전략을 세우는 데 도움을 줍니다.",
-      "org": "연합뉴스",
+      "desc": "한 해 코스피 흐름을 바탕으로 제시된 내년도 투자 전략입니다.",
+      "org": "매일경제 마켓",
       "date": "2026.11.15",
       "ts": 1794691800000,
       "btnText": "🔗 원문 보기",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE41ZWZsZWFkdVlKNXg2ZzV5aVlHR3JRVzNnTEQ3MXBhc3NfaUVNQi1LVWZJc2stRzVRNjE1d1VRQ3hLaU52Z190aDJHQk5rYXI4eTdUWVZkWHljMFVwOWFaY9IBYEFVX3lxTE41ZWZsZWFkdVlKNXg2ZzV5aVlHR3JRVzNnTEQ3MXBhc3NfaUVNQi1LVWZJc2stRzVRNjE1d1VRQ3hLaU52Z190aDJHQk5rYXI4eTdUWVZkWHljMFVwOWFaYw?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE4xSC01ampBZS12SjE3czlRRkFHRzdfVzB2R1VMUjF3Q2Y0SjFicmI1OUZ4WTZoQkVXNjNLQ1lucG9BRThwS0ZFcEJNYTlXRGtaaFE?oc=5",
       "lang": "ko",
-      "classifiedBy": "AI(gemini-3.5-flash-lite)"
+      "classifiedBy": "AI(gemini-flash-lite-latest)"
     },
     {
       "stars": "★★★★★",
@@ -884,19 +897,6 @@
       "btnText": "🔗 원문 보기",
       "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQNzZTUGwyOGJ4ekp3bUlvV05tZ0ZsZDVfWnVMYTVkcC0tWHNIRUVDeURZQWtTVFh0dTFkRGR0MDVOZ19GbHRkZUMtS21HR1BHdC0tVzlST0t3VDlJVXNDbWJLcWN0NHVRcFRUTVBVLVBCZmZqQUNJSktlY1Noc2p6TVNjajNpMEV4RHhsRVdiMEtWMEVhdEZxVEQ3ZkFOSlBQMmxSN2NFRFZoX21CdXFnNFpMSUdpc2tJcUx2R084N3JHdmF3OHc?oc=5",
       "lang": "en",
-      "classifiedBy": "AI(gemini-3.5-flash-lite)"
-    },
-    {
-      "stars": "★★★★☆",
-      "category": "승계·세무·신탁",
-      "title": "2026년 가업승계 세제개편안…승계 가능한 업종과 제외되는 업종은?",
-      "desc": "가업승계 세제개편안에 따라 승계가 가능한 업종과 제외되는 업종을 분석한 세무 관련 정보입니다.",
-      "org": "조세금융신문",
-      "date": "2026.11.04",
-      "ts": 1793779200000,
-      "btnText": "🔗 원문 보기",
-      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFB5QkY3aUZ6dVNHNllwZTQtY0FlcmRBdVFUTzlNZno0Vm1SQXpWOHJiWll1T0MwVWpJSXZWYzlIRTcxOURsNHVFZjJtQTRUZmRZcmQwWWE2N0RNaVBhcHJnQU4tTQ?oc=5",
-      "lang": "ko",
       "classifiedBy": "AI(gemini-3.5-flash-lite)"
     }
   ]
