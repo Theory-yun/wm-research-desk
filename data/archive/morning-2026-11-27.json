@@ -1,0 +1,668 @@
+{
+  "edition": "MORNING",
+  "generatedAt": "2026-11-26T21:32:58.589Z",
+  "generatedAtKST": "2026.11.27 06:32",
+  "sourceStatus": {
+    "market": "ok",
+    "news": "ok",
+    "summary": "ai-gemini",
+    "summaryModel": "gemini-3.5-flash-lite"
+  },
+  "market": [
+    {
+      "key": "KOSPI",
+      "name": "코스피",
+      "group": "domestic",
+      "priceStr": "4,711.21",
+      "diffStr": "▲ +13.70",
+      "changePct": 0.29,
+      "asOfLocal": "국내 정규장 기준",
+      "asOfKst": "한국 정규장 11.26 15:30 마감",
+      "stale": false,
+      "updatedAt": "2026-11-26T21:30:25.100Z"
+    },
+    {
+      "key": "KOSDAQ",
+      "name": "코스닥",
+      "group": "domestic",
+      "priceStr": "655.71",
+      "diffStr": "▲ +5.07",
+      "changePct": 0.78,
+      "asOfLocal": "국내 정규장 기준",
+      "asOfKst": "한국 정규장 11.26 15:30 마감",
+      "stale": false,
+      "updatedAt": "2026-11-26T21:30:25.100Z"
+    },
+    {
+      "key": "SP500",
+      "name": "S&P 500",
+      "group": "global",
+      "priceStr": "7,182.78",
+      "diffStr": "▼ -18.31",
+      "changePct": -0.25,
+      "asOfLocal": "현지 11.25 16:00 마감",
+      "asOfKst": "한국 11.26 06:00 마감",
+      "stale": false,
+      "updatedAt": "2026-11-26T21:30:25.100Z"
+    },
+    {
+      "key": "NASDAQ",
+      "name": "나스닥",
+      "group": "global",
+      "priceStr": "23,585.80",
+      "diffStr": "▼ -147.73",
+      "changePct": -0.62,
+      "asOfLocal": "현지 11.25 16:00 마감",
+      "asOfKst": "한국 11.26 06:00 마감",
+      "stale": false,
+      "updatedAt": "2026-11-26T21:30:25.100Z"
+    },
+    {
+      "key": "SOX",
+      "name": "필라델피아 반도체",
+      "group": "global",
+      "priceStr": "8,774.86",
+      "diffStr": "▼ -57.64",
+      "changePct": -0.65,
+      "asOfLocal": "현지 11.25 16:00 마감",
+      "asOfKst": "한국 11.26 06:00 마감",
+      "stale": false,
+      "updatedAt": "2026-11-26T21:30:25.100Z"
+    },
+    {
+      "key": "USDKRW",
+      "name": "원/달러 환율",
+      "group": "fx",
+      "priceStr": "1,342.98",
+      "diffStr": "▲ +0.33",
+      "changePct": 0.02,
+      "asOfLocal": "집계 기준 확인 중",
+      "asOfKst": "집계 기준 확인 중",
+      "stale": false,
+      "updatedAt": "2026-11-26T21:30:25.100Z"
+    }
+  ],
+  "extraMarket": [
+    {
+      "key": "US10Y",
+      "name": "미 10년물 금리",
+      "unit": "%",
+      "priceStr": "4.85",
+      "changePct": -1.14,
+      "diff": -0.056,
+      "chgStr": "-6bp",
+      "stale": false
+    },
+    {
+      "key": "US5Y",
+      "name": "미 5년물 금리",
+      "unit": "%",
+      "priceStr": "4.66",
+      "changePct": -1.1,
+      "diff": -0.052,
+      "chgStr": "-5bp",
+      "stale": false
+    },
+    {
+      "key": "DXY",
+      "name": "달러인덱스",
+      "unit": "",
+      "priceStr": "103.78",
+      "changePct": 0.1,
+      "diff": 0.108,
+      "stale": false
+    },
+    {
+      "key": "USDJPY",
+      "name": "엔/달러",
+      "unit": "엔",
+      "priceStr": "159.28",
+      "changePct": 0.01,
+      "diff": 0.016,
+      "stale": false
+    },
+    {
+      "key": "GOLD",
+      "name": "금",
+      "unit": "달러",
+      "priceStr": "3,593.4",
+      "changePct": 1.63,
+      "diff": 57.6,
+      "stale": false
+    },
+    {
+      "key": "WTI",
+      "name": "WTI 유가",
+      "unit": "달러",
+      "priceStr": "84.91",
+      "changePct": 1.47,
+      "diff": 1.23,
+      "stale": false
+    },
+    {
+      "key": "BTC",
+      "name": "비트코인",
+      "unit": "달러",
+      "priceStr": "60,857",
+      "changePct": 0.79,
+      "diff": 478.8,
+      "stale": false
+    }
+  ],
+  "issues": [
+    {
+      "cat": "증시",
+      "tag": "나스닥 -0.62% · 필라델피아반도체 -0.65%",
+      "title": "뉴욕증시, AI 불확실성에 혼조세 마감",
+      "desc": "11월 25일 뉴욕증시는 AI 관련 불확실성이 부각되면서 나스닥이 0.62% 하락하는 등 혼조세를 보였습니다. 필라델피아 반도체 지수도 0.65% 내리며 기술주 전반에 조정을 나타냈습니다."
+    },
+    {
+      "cat": "원자재",
+      "tag": "금 3,593.4달러 (+1.63%) · WTI 84.91달러 (+1.47%)",
+      "title": "안전자산 금과 국제유가 동반 상승",
+      "desc": "직전 거래일 글로벌 시장에서 금 가격은 1.63% 상승한 온스당 3,593.4달러를 기록했고 WTI 유가도 1.47% 올랐습니다. 지정학적 긴장과 매크로 변동성 속에서 원자재 가격이 강세를 보였습니다."
+    },
+    {
+      "cat": "외환",
+      "tag": "원/달러 환율 1,342.98원 (+0.33원)",
+      "title": "국내 증시 강세 마감 속 환율 보합권 등락",
+      "desc": "전일 한국 정규장 마감 기준 코스피는 4,711.21로 0.29% 상승했고 코스닥은 655.71로 0.78% 올랐습니다. 원/달러 환율은 1,342.98원으로 소폭 상승하며 보합권에서 안정적인 흐름을 보였습니다."
+    }
+  ],
+  "talkingPoint": "11월 26일 마감된 국내 증시는 코스피가 4,711.21로 0.29% 상승하고 코스닥이 655.71로 0.78% 오르며 양 지수 모두 플러스로 마감했습니다. 원/달러 환율은 1,342.98원으로 전일과 유사한 수준을 기록하며 안정세를 이어갔습니다. 반면 11월 25일 뉴욕증시는 S&P 500이 7,182.78로 0.25% 내리고 나스닥이 23,585.80으로 0.62% 하락하는 등 혼조 양상을 보였습니다.\n\n뉴욕증시의 약세는 AI 관련 불확실성과 기술주 중심의 차익실현 매물이 출회된 영향으로 풀이됩니다. 이와 함께 미 10년물 금리는 4.85%로 6bp 하락했고 5년물 금리도 4.66%로 내렸으며, 달러인덱스는 103.78로 소폭 상승했습니다. 채권 금리 하락에도 불구하고 뉴욕증시가 조정을 받은 반면, 안전자산인 금은 3,593.4달러로 1.63% 상승하고 WTI 유가도 84.91달러로 1.47% 오르며 원자재 시장은 강세를 나타냈습니다.\n\n오늘은 11월 27일로 미국 증시가 조기 폐장을 앞두고 있어 글로벌 거래량이 다소 축소될 수 있습니다. 다가오는 12월 1일 MSCI 분기 리뷰 적용일과 12월 4일 미국의 11월 고용보고서 발표 등 주요 매크로 일정이 대기하고 있습니다. 이러한 일정들이 글로벌 금리와 증시 방향성에 미칠 영향을 주시하며 시장 변동성에 대비할 시점입니다.",
+  "topNews": [
+    {
+      "title": "(뉴욕증시) AI 불확실성에 혼조…나스닥 0.62%↓ - 경제 - koreadailytimes.com",
+      "press": "koreadailytimes.com",
+      "url": "https://koreadailytimes.com/88446",
+      "timestamp": 1795669407000,
+      "date": "2026.11.26 14:03",
+      "tags": [
+        "증시"
+      ],
+      "tagSource": "ai",
+      "coverage": 25,
+      "scope": "해외",
+      "outlets": [
+        "koreadailytimes.com",
+        "서울경제TV",
+        "MBC 뉴스",
+        "Chosunbiz",
+        "동아일보",
+        "연합뉴스"
+      ],
+      "rssDate": "2026.11.26 14:03",
+      "timeSource": "meta",
+      "googleUrl": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE1WdlJzVlptZEUzRlU1eGpMb0NGcml1bmJmVFVHSzVvZm1wOE9rZjktM29hbnR2TTIxNWRPcVFmMFJEbnFLZjZQXw?oc=5",
+      "shortUrl": "https://is.gd/h8q1FC"
+    },
+    {
+      "title": "[금시세] 금값 1돈 가격은?",
+      "press": "게임톡",
+      "url": "https://www.gametoc.co.kr/news/articleView.html?idxno=113441",
+      "timestamp": 1795693980000,
+      "date": "2026.11.26 20:53",
+      "tags": [
+        "원자재"
+      ],
+      "tagSource": "ai",
+      "coverage": 9,
+      "scope": "해외",
+      "outlets": [
+        "게임톡",
+        "키즈맘",
+        "뉴스핌",
+        "글로벌이코노믹",
+        "뉴스투데이",
+        "국제뉴스"
+      ],
+      "rssDate": "2026.11.26 20:53",
+      "timeSource": "meta",
+      "googleUrl": "https://news.google.com/rss/articles/CBMibEFVX3lxTE03T2MxSkFXdkNFa2d0ajBnbGN1M0xqSF9DUkNTd0FBbmxlWDcwTzk1OS1ld0J1eW9Yc1VQbVRiZnRwaGd5M1hRUGN4azY2c3FUT0xTUWhGd1ZGMUJ6WnVUZ3RxWVQzYXQzVllabw?oc=5",
+      "shortUrl": "https://is.gd/3cwoGT"
+    },
+    {
+      "title": "[데스크 시각] 연준 위원들 입조심 해야",
+      "press": "이투데이",
+      "url": "https://www.etoday.co.kr/news/view/2653625",
+      "timestamp": 1795726800000,
+      "date": "2026.11.27 06:00",
+      "tags": [
+        "매크로",
+        "채권·금리"
+      ],
+      "tagSource": "ai",
+      "coverage": 4,
+      "scope": "해외",
+      "outlets": [
+        "이투데이",
+        "뉴스1",
+        "www.tmgm.com",
+        "이데일리"
+      ],
+      "rssDate": "2026.11.27 06:00",
+      "timeSource": "meta",
+      "googleUrl": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9oWEluM3NEWG81Y1MyR2pLNFllRjc5d0NTaVpDQzZwa2lfZEdPdkpRQ2xiLU5UVTBiaHJxWVZTbTZQTEdKU3JKNUI3Smd1MTZmYlVrNQ?oc=5",
+      "shortUrl": "https://is.gd/QMriPc"
+    },
+    {
+      "title": "‘빅쇼트’ 버리, 나스닥 하락 베팅 2주 만에 철회",
+      "press": "중앙일보",
+      "url": "https://www.joongang.co.kr/article/25482399",
+      "timestamp": 1795705320000,
+      "date": "2026.11.27 00:02",
+      "tags": [
+        "증시"
+      ],
+      "tagSource": "ai",
+      "coverage": 4,
+      "scope": "해외",
+      "outlets": [
+        "중앙일보",
+        "강원도민일보",
+        "뉴데일리",
+        "Investing.com 한국어"
+      ],
+      "rssDate": "2026.11.27 00:02",
+      "timeSource": "meta",
+      "googleUrl": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFB6ZkpTeUNaRkpwM3dlQW5OREJmM2xYYl9lZjgxd3ZzM3AyQ1E5UTlCUXdxVmNseFUwN1hZT0hXOTR0bF9DdXl5TW90aDZhZFFJbjFodFln?oc=5",
+      "shortUrl": "https://is.gd/vsDSkQ"
+    },
+    {
+      "title": "나스닥, EU에 토큰화 증권 규제 도입 촉구",
+      "press": "블루밍비트",
+      "url": "https://bloomingbit.io/feed/news/125318",
+      "timestamp": 1795704443000,
+      "date": "2026.11.26 23:47",
+      "tags": [
+        "대체투자"
+      ],
+      "tagSource": "ai",
+      "coverage": 2,
+      "scope": "해외",
+      "outlets": [
+        "블루밍비트",
+        "비욘드포스트"
+      ],
+      "rssDate": "2026.11.26 23:47",
+      "timeSource": "meta",
+      "googleUrl": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5KVUwyX1hrS0E4dUx6NkJiTGo2V2x4aFQxdW1zQWRMU0tCcnhFLVhPakJXQWlnQV9ZZW5rRkRfWVFyZmk5RUMxbGg2V0VaOXVn?oc=5",
+      "shortUrl": "https://is.gd/rTH6s1"
+    },
+    {
+      "title": "한은 금리 인상에도 보합권...원·달러 환율, 0.5원 하락한 1342.7원 마감",
+      "press": "베타뉴스",
+      "url": "https://www.betanews.net/article/view/beta202611260139",
+      "timestamp": 1795686836000,
+      "date": "2026.11.26 18:53",
+      "tags": [
+        "외환",
+        "채권·금리"
+      ],
+      "tagSource": "ai",
+      "coverage": 19,
+      "scope": "국내",
+      "outlets": [
+        "베타뉴스",
+        "재경일보",
+        "조세일보",
+        "연합뉴스",
+        "머니투데이",
+        "아시아경제"
+      ],
+      "rssDate": "2026.11.26 18:53",
+      "timeSource": "meta",
+      "googleUrl": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5salRHc2pXa1pENXRZR3Z1emxPNVBBRW1WSUdDM2RsWEgtSVpoYVFuS3JOUFBpam1GUXBNVDFiYktvb09DOTF0eHFDM1lKNzdwUG9DR09hQW9NN043X2dGcmhYQ2E?oc=5",
+      "shortUrl": "https://is.gd/TuHmW2"
+    },
+    {
+      "title": "종부세·가업상속공제 줄줄이 소소위…예상대로 '밀실 협상'",
+      "press": "뉴스토마토",
+      "url": "https://www.newstomato.com/ReadNews.aspx?no=1322068",
+      "timestamp": 1795682680000,
+      "date": "2026.11.26 17:44",
+      "tags": [
+        "TAX"
+      ],
+      "tagSource": "ai",
+      "coverage": 3,
+      "scope": "국내",
+      "outlets": [
+        "뉴스토마토",
+        "미주중앙일보",
+        "Manna 24"
+      ],
+      "rssDate": "2026.11.26 17:44",
+      "timeSource": "meta",
+      "googleUrl": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9oclZyQ2Vha3RTSmttV1c3djlQV0ZpU05nUWkwT1pRZ3hRN0IzdG1mVkpzb3gzNThqYnV0S1l3Z0ZVcVNtNGxlSG9QVGQ0MUZZTUE1S3lCYlhFeUN1blRZWg?oc=5",
+      "shortUrl": "https://is.gd/3BClci"
+    },
+    {
+      "title": "미국 과잉생산 관세, 한국은 15% 상한 유지… 연준 12월 인상 확률 98%, 휴장일 밤에 볼 숫자 5개",
+      "press": "네이버 프리미엄콘텐츠",
+      "url": "https://contents.premium.naver.com/answerindata/answerindatalab/contents/261126204845107yz",
+      "timestamp": 1795693680000,
+      "date": "2026.11.26 20:48",
+      "tags": [
+        "매크로",
+        "채권·금리"
+      ],
+      "tagSource": "ai",
+      "coverage": 1,
+      "scope": "국내",
+      "outlets": [
+        "네이버 프리미엄콘텐츠"
+      ],
+      "rssDate": "2026.11.26 20:48",
+      "timeSource": "rss",
+      "googleUrl": "https://news.google.com/rss/articles/CBMilAFBVV95cUxONUU0VlUwcDVZZnZPcWpSMmZtRF9hWF9nNXY4UG9NaVlQV2RFb1Jmdk40c0tPUUJ2WFZwWFJ3dGRiaXNfblhyRGd1aG5ELUtYQmFoc05FTENCaGd5blZwNzduMUdEZ3VBZUNLNGQ4clVIYlRjZWxWY0J6UzE3YVE3T2lKRGRmTmduZFVaOEljWERIZVhV?oc=5",
+      "shortUrl": "https://is.gd/r4aFxS"
+    }
+  ],
+  "assetChecks": {
+    "framework": "assets",
+    "generatedAt": "2026-11-26T21:32:58.589Z",
+    "model": "gemini-3.5-flash-lite",
+    "cards": [
+      {
+        "key": "kr_equity",
+        "name": "국내 주식",
+        "market": [
+          {
+            "key": "KOSPI",
+            "name": "코스피",
+            "priceStr": "4,711.21",
+            "changePct": 0.29,
+            "unit": ""
+          },
+          {
+            "key": "KOSDAQ",
+            "name": "코스닥",
+            "priceStr": "655.71",
+            "changePct": 0.78,
+            "unit": ""
+          }
+        ],
+        "events": [
+          {
+            "date": "2026-12-01",
+            "kind": "msci_effective",
+            "dday": 4,
+            "label": "MSCI 분기 리뷰 적용일",
+            "when": "12/1(화)"
+          },
+          {
+            "date": "2026-12-10",
+            "kind": "kr_quad",
+            "dday": 13,
+            "label": "KOSPI200 선물·옵션 동시만기일",
+            "when": "12/10(목)"
+          },
+          {
+            "date": "2026-12-11",
+            "kind": "kospi200_rebal",
+            "dday": 14,
+            "label": "KOSPI200 정기변경 적용일",
+            "when": "12/11(금)"
+          }
+        ],
+        "news": [],
+        "level": "평이",
+        "headline": "코스피·코스닥 소폭 상승 마감",
+        "analysis": "11월 26일(목) 코스피는 4,711.21로 0.29%, 코스닥은 655.71로 0.78% 각각 상승 마감했다. 연말을 앞두고 주요 지수 관련 일정을 대기하며 완만한 흐름을 보였다.",
+        "watch": "12월 1일(화) MSCI 분기 리뷰 적용일과 12월 10일(목) KOSPI200 선물·옵션 동시만기일 수급 변화를 살펴볼 예정입니다.",
+        "textBy": "ai"
+      },
+      {
+        "key": "us_equity",
+        "name": "해외 주식",
+        "market": [
+          {
+            "key": "SP500",
+            "name": "S&P 500",
+            "priceStr": "7,182.78",
+            "changePct": -0.25,
+            "unit": ""
+          },
+          {
+            "key": "NASDAQ",
+            "name": "나스닥",
+            "priceStr": "23,585.80",
+            "changePct": -0.62,
+            "unit": ""
+          },
+          {
+            "key": "SOX",
+            "name": "필라델피아 반도체",
+            "priceStr": "8,774.86",
+            "changePct": -0.65,
+            "unit": ""
+          }
+        ],
+        "events": [
+          {
+            "date": "2026-11-27",
+            "kind": "us_early_close",
+            "dday": 0,
+            "label": "미국 증시 조기 폐장",
+            "when": "11/27(금)"
+          },
+          {
+            "date": "2026-12-04",
+            "kind": "jobs_us",
+            "dday": 7,
+            "label": "미국 고용보고서 (비농업 고용·실업률)",
+            "when": "12/4(금)"
+          },
+          {
+            "date": "2026-12-09",
+            "kind": "fomc",
+            "dday": 12,
+            "label": "미국 FOMC 정례회의 (기준금리 결정)",
+            "when": "12/9(수)"
+          }
+        ],
+        "news": [
+          {
+            "title": "(뉴욕증시) AI 불확실성에 혼조…나스닥 0.62%↓ - 경제 - koreadailytimes.com",
+            "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE1WdlJzVlptZEUzRlU1eGpMb0NGcml1bmJmVFVHSzVvZm1wOE9rZjktM29hbnR2TTIxNWRPcVFmMFJEbnFLZjZQXw?oc=5",
+            "press": "koreadailytimes.com",
+            "coverage": 25
+          },
+          {
+            "title": "‘빅쇼트’ 버리, 나스닥 하락 베팅 2주 만에 철회",
+            "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFB6ZkpTeUNaRkpwM3dlQW5OREJmM2xYYl9lZjgxd3ZzM3AyQ1E5UTlCUXdxVmNseFUwN1hZT0hXOTR0bF9DdXl5TW90aDZhZFFJbjFodFln?oc=5",
+            "press": "중앙일보",
+            "coverage": 4
+          }
+        ],
+        "level": "주목",
+        "headline": "AI 불확실성 속 나스닥 하락",
+        "analysis": "11월 25일(수) 뉴욕증시는 S&P 500이 7,182.78로 0.25%, 나스닥이 23,585.80으로 0.62% 하락했다. AI 관련 불확실성이 부각되며 기술주 중심의 나스닥이 조정을 받았고, 빅쇼트로 알려진 마이클 버리가 나스닥 하락 베팅을 2주 만에 철회한 소식이 전해졌다.",
+        "watch": "11월 27일(금) 미국 증시 조기 폐장 이후 12월 4일(금) 발표될 미국 고용보고서를 주시해야 합니다.",
+        "textBy": "ai"
+      },
+      {
+        "key": "bonds",
+        "name": "채권·금리",
+        "market": [
+          {
+            "key": "US10Y",
+            "name": "미 10년물 금리",
+            "priceStr": "4.85",
+            "changePct": -1.14,
+            "unit": "%",
+            "chgStr": "-6bp"
+          },
+          {
+            "key": "US5Y",
+            "name": "미 5년물 금리",
+            "priceStr": "4.66",
+            "changePct": -1.1,
+            "unit": "%",
+            "chgStr": "-5bp"
+          }
+        ],
+        "events": [
+          {
+            "date": "2026-12-04",
+            "kind": "jobs_us",
+            "dday": 7,
+            "label": "미국 고용보고서 (비농업 고용·실업률)",
+            "when": "12/4(금)"
+          },
+          {
+            "date": "2026-12-09",
+            "kind": "fomc",
+            "dday": 12,
+            "label": "미국 FOMC 정례회의 (기준금리 결정)",
+            "when": "12/9(수)"
+          },
+          {
+            "date": "2026-12-10",
+            "kind": "cpi_us",
+            "dday": 13,
+            "label": "미국 소비자물가지수(CPI) 발표",
+            "when": "12/10(목)"
+          }
+        ],
+        "news": [
+          {
+            "title": "한은 금리 인상에도 보합권...원·달러 환율, 0.5원 하락한 1342.7원 마감",
+            "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5salRHc2pXa1pENXRZR3Z1emxPNVBBRW1WSUdDM2RsWEgtSVpoYVFuS3JOUFBpam1GUXBNVDFiYktvb09DOTF0eHFDM1lKNzdwUG9DR09hQW9NN043X2dGcmhYQ2E?oc=5",
+            "press": "베타뉴스",
+            "coverage": 19
+          },
+          {
+            "title": "[데스크 시각] 연준 위원들 입조심 해야",
+            "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9oWEluM3NEWG81Y1MyR2pLNFllRjc5d0NTaVpDQzZwa2lfZEdPdkpRQ2xiLU5UVTBiaHJxWVZTbTZQTEdKU3JKNUI3Smd1MTZmYlVrNQ?oc=5",
+            "press": "이투데이",
+            "coverage": 4
+          },
+          {
+            "title": "미국 과잉생산 관세, 한국은 15% 상한 유지… 연준 12월 인상 확률 98%, 휴장일 밤에 볼 숫자 5개",
+            "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxONUU0VlUwcDVZZnZPcWpSMmZtRF9hWF9nNXY4UG9NaVlQV2RFb1Jmdk40c0tPUUJ2WFZwWFJ3dGRiaXNfblhyRGd1aG5ELUtYQmFoc05FTENCaGd5blZwNzduMUdEZ3VBZUNLNGQ4clVIYlRjZWxWY0J6UzE3YVE3T2lKRGRmTmduZFVaOEljWERIZVhV?oc=5",
+            "press": "네이버 프리미엄콘텐츠",
+            "coverage": 1
+          }
+        ],
+        "level": "주목",
+        "headline": "미 국채 금리 하락 및 금리 인상 확률 주시",
+        "analysis": "11월 25일(수) 기준 미국 10년물 금리는 4.85%로 6bp, 5년물 금리는 4.66%로 5bp 하락했다. 한국은행의 금리 인상에도 원·달러 환율은 보합권을 보였으며, 연준의 12월 금리 인상 확률이 98%로 반영된 가운데 연준 위원들의 발언과 정책 경로를 살피고 있다.",
+        "watch": "12월 4일(금) 미국 고용보고서와 12월 9일(수) FOMC 정례회의, 12월 10일(목) 소비자물가지수(CPI) 발표를 앞두고 있습니다.",
+        "textBy": "ai"
+      },
+      {
+        "key": "fx",
+        "name": "외환",
+        "market": [
+          {
+            "key": "USDKRW",
+            "name": "원/달러 환율",
+            "priceStr": "1,342.98",
+            "changePct": 0.02,
+            "unit": ""
+          },
+          {
+            "key": "DXY",
+            "name": "달러인덱스",
+            "priceStr": "103.78",
+            "changePct": 0.1,
+            "unit": ""
+          },
+          {
+            "key": "USDJPY",
+            "name": "엔/달러",
+            "priceStr": "159.28",
+            "changePct": 0.01,
+            "unit": "엔"
+          }
+        ],
+        "events": [
+          {
+            "date": "2026-12-09",
+            "kind": "fomc",
+            "dday": 12,
+            "label": "미국 FOMC 정례회의 (기준금리 결정)",
+            "when": "12/9(수)"
+          }
+        ],
+        "news": [],
+        "level": "평이",
+        "headline": "원/달러 환율과 달러인덱스 보합세",
+        "analysis": "11월 26일(목) 한국 시장 마감 기준 원/달러 환율은 1,342.98원으로 0.02% 올랐고, 달러인덱스는 103.78로 0.1% 상승했다. 엔/달러 환율도 159.28엔으로 0.01% 소폭 오르며 주요 통화쌍은 대체로 안정적인 흐름을 나타냈다.",
+        "watch": "12월 9일(수) 미국 FOMC 정례회의 전까지 연준의 통화정책 기대감에 따른 환율 변동성을 확인할 예정입니다.",
+        "textBy": "ai"
+      },
+      {
+        "key": "commodities",
+        "name": "원자재",
+        "market": [
+          {
+            "key": "GOLD",
+            "name": "금",
+            "priceStr": "3,593.4",
+            "changePct": 1.63,
+            "unit": "달러"
+          },
+          {
+            "key": "WTI",
+            "name": "WTI 유가",
+            "priceStr": "84.91",
+            "changePct": 1.47,
+            "unit": "달러"
+          }
+        ],
+        "events": [],
+        "news": [
+          {
+            "title": "[금시세] 금값 1돈 가격은?",
+            "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE03T2MxSkFXdkNFa2d0ajBnbGN1M0xqSF9DUkNTd0FBbmxlWDcwTzk1OS1ld0J1eW9Yc1VQbVRiZnRwaGd5M1hRUGN4azY2c3FUT0xTUWhGd1ZGMUJ6WnVUZ3RxWVQzYXQzVllabw?oc=5",
+            "press": "게임톡",
+            "coverage": 9
+          }
+        ],
+        "level": "주목",
+        "headline": "금과 WTI 유가 동반 상승",
+        "analysis": "금 가격은 3,593.4달러로 1.63%, WTI 유가는 84.91달러로 1.47% 각각 상승했다. 안전자산과 에너지 가격이 나란히 오름세를 보이며 원자재 시장 전반에 매수 유입이 나타났다.",
+        "watch": "글로벌 매크로 지표 발표와 연준의 금리 결정에 따른 원자재 가격의 방향성을 점검할 계획입니다.",
+        "textBy": "ai"
+      },
+      {
+        "key": "alternatives",
+        "name": "부동산·대체투자",
+        "market": [
+          {
+            "key": "BTC",
+            "name": "비트코인",
+            "priceStr": "60,857",
+            "changePct": 0.79,
+            "unit": "달러"
+          }
+        ],
+        "events": [],
+        "news": [
+          {
+            "title": "나스닥, EU에 토큰화 증권 규제 도입 촉구",
+            "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5KVUwyX1hrS0E4dUx6NkJiTGo2V2x4aFQxdW1zQWRMU0tCcnhFLVhPakJXQWlnQV9ZZW5rRkRfWVFyZmk5RUMxbGg2V0VaOXVn?oc=5",
+            "press": "블루밍비트",
+            "coverage": 2
+          }
+        ],
+        "level": "평이",
+        "headline": "비트코인 소폭 상승 및 규제 움직임",
+        "analysis": "비트코인은 60,857달러로 0.79% 상승하며 완만한 회복세를 보였다. 한편 나스닥이 EU에 토큰화 증권 규제 도입을 촉구했다는 소식이 전해지며 디지털 자산 시장의 제도화 논의가 이어지고 있다.",
+        "watch": "디지털 자산 관련 규제 동향과 대체투자 시장의 유동성 변화를 계속 모니터링하겠습니다.",
+        "textBy": "ai"
+      }
+    ],
+    "taxNews": [
+      {
+        "title": "종부세·가업상속공제 줄줄이 소소위…예상대로 '밀실 협상'",
+        "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9oclZyQ2Vha3RTSmttV1c3djlQV0ZpU05nUWkwT1pRZ3hRN0IzdG1mVkpzb3gzNThqYnV0S1l3Z0ZVcVNtNGxlSG9QVGQ0MUZZTUE1S3lCYlhFeUN1blRZWg?oc=5",
+        "press": "뉴스토마토",
+        "coverage": 3
+      }
+    ]
+  }
+}

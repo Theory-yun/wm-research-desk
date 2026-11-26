@@ -1,37 +1,37 @@
 {
   "edition": "MORNING",
-  "generatedAt": "2026-11-25T21:31:50.007Z",
-  "generatedAtKST": "2026.11.26 06:31",
+  "generatedAt": "2026-11-26T21:32:58.589Z",
+  "generatedAtKST": "2026.11.27 06:32",
   "sourceStatus": {
     "market": "ok",
     "news": "ok",
     "summary": "ai-gemini",
-    "summaryModel": "gemini-3.5-flash"
+    "summaryModel": "gemini-3.5-flash-lite"
   },
   "market": [
     {
       "key": "KOSPI",
       "name": "코스피",
       "group": "domestic",
-      "priceStr": "4,697.51",
-      "diffStr": "▼ -308.52",
-      "changePct": -6.16,
+      "priceStr": "4,711.21",
+      "diffStr": "▲ +13.70",
+      "changePct": 0.29,
       "asOfLocal": "국내 정규장 기준",
-      "asOfKst": "한국 정규장 11.25 15:30 마감",
+      "asOfKst": "한국 정규장 11.26 15:30 마감",
       "stale": false,
-      "updatedAt": "2026-11-25T21:30:34.213Z"
+      "updatedAt": "2026-11-26T21:30:25.100Z"
     },
     {
       "key": "KOSDAQ",
       "name": "코스닥",
       "group": "domestic",
-      "priceStr": "650.64",
-      "diffStr": "▼ -15.24",
-      "changePct": -2.29,
+      "priceStr": "655.71",
+      "diffStr": "▲ +5.07",
+      "changePct": 0.78,
       "asOfLocal": "국내 정규장 기준",
-      "asOfKst": "한국 정규장 11.25 15:30 마감",
+      "asOfKst": "한국 정규장 11.26 15:30 마감",
       "stale": false,
-      "updatedAt": "2026-11-25T21:30:34.213Z"
+      "updatedAt": "2026-11-26T21:30:25.100Z"
     },
     {
       "key": "SP500",
@@ -43,7 +43,7 @@
       "asOfLocal": "현지 11.25 16:00 마감",
       "asOfKst": "한국 11.26 06:00 마감",
       "stale": false,
-      "updatedAt": "2026-11-25T21:30:34.213Z"
+      "updatedAt": "2026-11-26T21:30:25.100Z"
     },
     {
       "key": "NASDAQ",
@@ -55,7 +55,7 @@
       "asOfLocal": "현지 11.25 16:00 마감",
       "asOfKst": "한국 11.26 06:00 마감",
       "stale": false,
-      "updatedAt": "2026-11-25T21:30:34.213Z"
+      "updatedAt": "2026-11-26T21:30:25.100Z"
     },
     {
       "key": "SOX",
@@ -67,19 +67,19 @@
       "asOfLocal": "현지 11.25 16:00 마감",
       "asOfKst": "한국 11.26 06:00 마감",
       "stale": false,
-      "updatedAt": "2026-11-25T21:30:34.213Z"
+      "updatedAt": "2026-11-26T21:30:25.100Z"
     },
     {
       "key": "USDKRW",
       "name": "원/달러 환율",
       "group": "fx",
-      "priceStr": "1,344.45",
-      "diffStr": "▲ +3.43",
-      "changePct": 0.26,
+      "priceStr": "1,342.98",
+      "diffStr": "▲ +0.33",
+      "changePct": 0.02,
       "asOfLocal": "집계 기준 확인 중",
       "asOfKst": "집계 기준 확인 중",
       "stale": false,
-      "updatedAt": "2026-11-25T21:30:34.213Z"
+      "updatedAt": "2026-11-26T21:30:25.100Z"
     }
   ],
   "extraMarket": [
@@ -107,264 +107,262 @@
       "key": "DXY",
       "name": "달러인덱스",
       "unit": "",
-      "priceStr": "103.70",
-      "changePct": -0.1,
-      "diff": -0.109,
+      "priceStr": "103.78",
+      "changePct": 0.1,
+      "diff": 0.108,
       "stale": false
     },
     {
       "key": "USDJPY",
       "name": "엔/달러",
       "unit": "엔",
-      "priceStr": "159.19",
-      "changePct": 0.11,
-      "diff": 0.177,
+      "priceStr": "159.28",
+      "changePct": 0.01,
+      "diff": 0.016,
       "stale": false
     },
     {
       "key": "GOLD",
       "name": "금",
       "unit": "달러",
-      "priceStr": "3,597.2",
-      "changePct": 0.99,
-      "diff": 35.3,
+      "priceStr": "3,593.4",
+      "changePct": 1.63,
+      "diff": 57.6,
       "stale": false
     },
     {
       "key": "WTI",
       "name": "WTI 유가",
       "unit": "달러",
-      "priceStr": "84.19",
-      "changePct": 2.61,
-      "diff": 2.14,
+      "priceStr": "84.91",
+      "changePct": 1.47,
+      "diff": 1.23,
       "stale": false
     },
     {
       "key": "BTC",
       "name": "비트코인",
       "unit": "달러",
-      "priceStr": "60,275",
-      "changePct": 0.88,
-      "diff": 527.4,
+      "priceStr": "60,857",
+      "changePct": 0.79,
+      "diff": 478.8,
       "stale": false
     }
   ],
   "issues": [
     {
-      "cat": "미국 증시",
-      "tag": "S&P500 -0.25% · 나스닥 -0.62%",
-      "title": "뉴욕증시, AI 투매 딛고 낙폭 축소하며 혼조 마감",
-      "desc": "간밤 뉴욕증시는 물가와 관세 우려에 따른 기술주 조정 속에서도 저가 매수세가 유입되며 낙폭을 일부 축소했습니다. 나스닥지수는 0.62% 하락한 반면 다우지수는 상승 마감하며 지수별로 엇갈린 흐름을 보였습니다."
+      "cat": "증시",
+      "tag": "나스닥 -0.62% · 필라델피아반도체 -0.65%",
+      "title": "뉴욕증시, AI 불확실성에 혼조세 마감",
+      "desc": "11월 25일 뉴욕증시는 AI 관련 불확실성이 부각되면서 나스닥이 0.62% 하락하는 등 혼조세를 보였습니다. 필라델피아 반도체 지수도 0.65% 내리며 기술주 전반에 조정을 나타냈습니다."
     },
     {
-      "cat": "원자재·채권",
-      "tag": "미 10년물 4.85% (-6bp) · WTI $84.19 (+2.61%)",
-      "title": "국채 금리 하락 속 지정학적 리스크에 유가 상승",
-      "desc": "안전자산 선호 심리가 강화되면서 미 국채 10년물 금리는 4.85%로 6bp 하락했습니다. 반면 중동 지역의 지정학적 리스크 우려가 재부각되며 국제유가(WTI)는 이틀 연속 상승해 배럴당 84.19달러를 기록했습니다."
+      "cat": "원자재",
+      "tag": "금 3,593.4달러 (+1.63%) · WTI 84.91달러 (+1.47%)",
+      "title": "안전자산 금과 국제유가 동반 상승",
+      "desc": "직전 거래일 글로벌 시장에서 금 가격은 1.63% 상승한 온스당 3,593.4달러를 기록했고 WTI 유가도 1.47% 올랐습니다. 지정학적 긴장과 매크로 변동성 속에서 원자재 가격이 강세를 보였습니다."
     },
     {
-      "cat": "국내 증시·외환",
-      "tag": "코스피 -6.16% · 환율 1,344.45원 (+0.26%)",
-      "title": "코스피 급락 여파 속 원/달러 환율 상승",
-      "desc": "전일 국내 증시는 미 기술주 조정 여파가 전파되며 코스피가 6.16% 급락한 4,697.51로 마감했습니다. 외환시장에서는 증시 하락세와 연동되어 원/달러 환율이 1,344.45원으로 상승 마감했습니다."
+      "cat": "외환",
+      "tag": "원/달러 환율 1,342.98원 (+0.33원)",
+      "title": "국내 증시 강세 마감 속 환율 보합권 등락",
+      "desc": "전일 한국 정규장 마감 기준 코스피는 4,711.21로 0.29% 상승했고 코스닥은 655.71로 0.78% 올랐습니다. 원/달러 환율은 1,342.98원으로 소폭 상승하며 보합권에서 안정적인 흐름을 보였습니다."
     }
   ],
-  "talkingPoint": "간밤 글로벌 시장은 미 기술주 조정과 매크로 변수 우려 속에서 혼조세를 나타냈습니다. 뉴욕증시에서 나스닥 지수는 0.62% 하락한 23,585.80, S&P 500 지수는 0.25% 내린 7,182.78로 마감했고 필라델피아 반도체 지수도 0.65% 하락했습니다. 전일 국내 증시에서는 코스피가 6.16% 급락한 4,697.51, 코스닥이 2.29% 내린 650.64를 기록했으며 원/달러 환율은 0.26% 오른 1,344.45원으로 집계되었습니다.\n\n물가와 관세 관련 악재가 겹치며 장 초반 나스닥 선물이 급락하는 등 투심이 악화되었으나 장중 저가 매수세가 들어오며 낙폭이 축소되었습니다. 안전자산으로 피난 수요가 쏠리며 미 10년물 국채 금리는 4.85%로 6bp 하락했고 달러인덱스도 103.70으로 0.1% 하락했습니다. 반면 중동 지정학적 리스크 고조 우려로 WTI 유가는 2.61% 상승한 배럴당 84.19달러를 기록했고 금 가격도 3,597.2달러로 0.99% 오르는 등 원자재 변동성이 이어졌습니다.\n\n금일 11월 26일(목)은 한국은행 금통위 통화정책방향 결정회의가 예정되어 있어 국내 금리 및 환율 시장 변동성에 영향을 줄 것으로 보입니다. 한편 11월 26일(목) 미국 증시 휴장과 11월 27일(금) 조기 폐장으로 인해 글로벌 시장의 거래량 감소 및 소강상태가 예상됩니다. 이어 12월 1일(화) MSCI 분기 리뷰 적용과 12월 4일(금) 미국 고용보고서 발표까지 주요 매크로 이벤트에 따른 자금 흐름을 지켜볼 필요가 있습니다.",
+  "talkingPoint": "11월 26일 마감된 국내 증시는 코스피가 4,711.21로 0.29% 상승하고 코스닥이 655.71로 0.78% 오르며 양 지수 모두 플러스로 마감했습니다. 원/달러 환율은 1,342.98원으로 전일과 유사한 수준을 기록하며 안정세를 이어갔습니다. 반면 11월 25일 뉴욕증시는 S&P 500이 7,182.78로 0.25% 내리고 나스닥이 23,585.80으로 0.62% 하락하는 등 혼조 양상을 보였습니다.\n\n뉴욕증시의 약세는 AI 관련 불확실성과 기술주 중심의 차익실현 매물이 출회된 영향으로 풀이됩니다. 이와 함께 미 10년물 금리는 4.85%로 6bp 하락했고 5년물 금리도 4.66%로 내렸으며, 달러인덱스는 103.78로 소폭 상승했습니다. 채권 금리 하락에도 불구하고 뉴욕증시가 조정을 받은 반면, 안전자산인 금은 3,593.4달러로 1.63% 상승하고 WTI 유가도 84.91달러로 1.47% 오르며 원자재 시장은 강세를 나타냈습니다.\n\n오늘은 11월 27일로 미국 증시가 조기 폐장을 앞두고 있어 글로벌 거래량이 다소 축소될 수 있습니다. 다가오는 12월 1일 MSCI 분기 리뷰 적용일과 12월 4일 미국의 11월 고용보고서 발표 등 주요 매크로 일정이 대기하고 있습니다. 이러한 일정들이 글로벌 금리와 증시 방향성에 미칠 영향을 주시하며 시장 변동성에 대비할 시점입니다.",
   "topNews": [
     {
-      "title": "뉴욕증시, AI 투매 딛고 낙폭 축소하며 혼조 마감…다우 0.3%↑·나스닥 0.6%↓",
-      "press": "뉴스핌",
-      "url": "https://www.newspim.com/news/view/20261126000033",
-      "timestamp": 1795641840000,
-      "date": "2026.11.26 06:24",
+      "title": "(뉴욕증시) AI 불확실성에 혼조…나스닥 0.62%↓ - 경제 - koreadailytimes.com",
+      "press": "koreadailytimes.com",
+      "url": "https://koreadailytimes.com/88446",
+      "timestamp": 1795669407000,
+      "date": "2026.11.26 14:03",
       "tags": [
         "증시"
       ],
       "tagSource": "ai",
-      "coverage": 26,
+      "coverage": 25,
       "scope": "해외",
       "outlets": [
-        "뉴스핌",
-        "문화일보",
-        "아시아경제",
-        "이투데이",
-        "뉴스1",
-        "연합뉴스 한민족센터"
+        "koreadailytimes.com",
+        "서울경제TV",
+        "MBC 뉴스",
+        "Chosunbiz",
+        "동아일보",
+        "연합뉴스"
       ],
-      "rssDate": "2026.11.26 06:24",
+      "rssDate": "2026.11.26 14:03",
       "timeSource": "meta",
-      "googleUrl": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE43clBsOVg1SW81OHN2c2JGT3J0cTRBcVZ6RDE4S0tvVDRHdVBpOEtQbmpJcVhqOUJWNlI3d2IzNXU0QjZnbEhCOEVyV2Z5X2dHU1JwWGt1TkkxV3hC?oc=5",
-      "shortUrl": "https://is.gd/DkPTES"
+      "googleUrl": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE1WdlJzVlptZEUzRlU1eGpMb0NGcml1bmJmVFVHSzVvZm1wOE9rZjktM29hbnR2TTIxNWRPcVFmMFJEbnFLZjZQXw?oc=5",
+      "shortUrl": "https://is.gd/h8q1FC"
     },
     {
-      "title": "물가·관세 겹악재에 나스닥 선물 3%↓…국채로 '피난'(종합)",
-      "press": "이데일리",
-      "url": "https://www.edaily.co.kr/News/Read?newsId=04375526645649328&mediaCodeNo=257",
-      "timestamp": 1795616333000,
-      "date": "2026.11.25 23:18",
+      "title": "[금시세] 금값 1돈 가격은?",
+      "press": "게임톡",
+      "url": "https://www.gametoc.co.kr/news/articleView.html?idxno=113441",
+      "timestamp": 1795693980000,
+      "date": "2026.11.26 20:53",
+      "tags": [
+        "원자재"
+      ],
+      "tagSource": "ai",
+      "coverage": 9,
+      "scope": "해외",
+      "outlets": [
+        "게임톡",
+        "키즈맘",
+        "뉴스핌",
+        "글로벌이코노믹",
+        "뉴스투데이",
+        "국제뉴스"
+      ],
+      "rssDate": "2026.11.26 20:53",
+      "timeSource": "meta",
+      "googleUrl": "https://news.google.com/rss/articles/CBMibEFVX3lxTE03T2MxSkFXdkNFa2d0ajBnbGN1M0xqSF9DUkNTd0FBbmxlWDcwTzk1OS1ld0J1eW9Yc1VQbVRiZnRwaGd5M1hRUGN4azY2c3FUT0xTUWhGd1ZGMUJ6WnVUZ3RxWVQzYXQzVllabw?oc=5",
+      "shortUrl": "https://is.gd/3cwoGT"
+    },
+    {
+      "title": "[데스크 시각] 연준 위원들 입조심 해야",
+      "press": "이투데이",
+      "url": "https://www.etoday.co.kr/news/view/2653625",
+      "timestamp": 1795726800000,
+      "date": "2026.11.27 06:00",
       "tags": [
         "매크로",
         "채권·금리"
       ],
       "tagSource": "ai",
-      "coverage": 11,
+      "coverage": 4,
       "scope": "해외",
       "outlets": [
-        "뉴스핌",
-        "뉴스1",
-        "이데일리",
-        "Investing.com 한국어",
-        "블루밍비트",
-        "매일경제 마켓"
-      ],
-      "rssDate": "2026.11.25 23:18",
-      "timeSource": "meta",
-      "googleUrl": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNckFWcFNPUS1hQ3JNVm4wV3UtYy1CNndCdlREOWg2ZUtGRFR2N25yejZCUk1vWjQ1Z2dwWGJYQUc4Tk1JZnFZbkd3M3FyUll5anY5MGhTdEVqZDJLUHRyN2s0YnRCX3daNTVzSnhBTHZfLWRFMC0yTmZNTjJycVpOVA?oc=5",
-      "shortUrl": "https://is.gd/FIM59d"
-    },
-    {
-      "title": "국제유가, 중동 지정학적 리스크 고조 우려 등 영향 이틀째 상승-WTI 2%대 올라 배럴당 84달러대⋯국제금값, 미국 금리인상 전망 등에 하락",
-      "press": "이코노뉴스",
-      "url": "http://www.econonews.co.kr/news/articleView.html?idxno=447728",
-      "timestamp": 1795641856000,
-      "date": "2026.11.26 06:24",
-      "tags": [
-        "원자재"
-      ],
-      "tagSource": "ai",
-      "coverage": 7,
-      "scope": "해외",
-      "outlets": [
-        "이코노뉴스",
         "이투데이",
-        "비건뉴스",
-        "더페어",
-        "Investing.com 한국어",
-        "데일리머니"
+        "뉴스1",
+        "www.tmgm.com",
+        "이데일리"
       ],
-      "rssDate": "2026.11.26 06:24",
+      "rssDate": "2026.11.27 06:00",
       "timeSource": "meta",
-      "googleUrl": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1pRVRfOUd0c1hFVW9vYUFKVVlZU0FKRTZFcFhHX0hoZWstUUVMUzFyUndmV0JUc2Q0eWZBem9JRnVaX2FJWmdnME9RYjJaOEtnbkFlcXFJUEpVcXdQazBOci1WWnBiSFhOWWMtLTF3?oc=5",
-      "shortUrl": "https://is.gd/aVKLAx"
+      "googleUrl": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9oWEluM3NEWG81Y1MyR2pLNFllRjc5d0NTaVpDQzZwa2lfZEdPdkpRQ2xiLU5UVTBiaHJxWVZTbTZQTEdKU3JKNUI3Smd1MTZmYlVrNQ?oc=5",
+      "shortUrl": "https://is.gd/QMriPc"
     },
     {
-      "title": "JP모건 \"내년 S&P500 14% 더 오른다…AI 투자 사이클 이어질 것\"",
-      "press": "뉴시스",
-      "url": "https://www.newsis.com/view/NISX20261125_0003883008",
-      "timestamp": 1795601064000,
-      "date": "2026.11.25 19:04",
+      "title": "‘빅쇼트’ 버리, 나스닥 하락 베팅 2주 만에 철회",
+      "press": "중앙일보",
+      "url": "https://www.joongang.co.kr/article/25482399",
+      "timestamp": 1795705320000,
+      "date": "2026.11.27 00:02",
       "tags": [
         "증시"
+      ],
+      "tagSource": "ai",
+      "coverage": 4,
+      "scope": "해외",
+      "outlets": [
+        "중앙일보",
+        "강원도민일보",
+        "뉴데일리",
+        "Investing.com 한국어"
+      ],
+      "rssDate": "2026.11.27 00:02",
+      "timeSource": "meta",
+      "googleUrl": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFB6ZkpTeUNaRkpwM3dlQW5OREJmM2xYYl9lZjgxd3ZzM3AyQ1E5UTlCUXdxVmNseFUwN1hZT0hXOTR0bF9DdXl5TW90aDZhZFFJbjFodFln?oc=5",
+      "shortUrl": "https://is.gd/vsDSkQ"
+    },
+    {
+      "title": "나스닥, EU에 토큰화 증권 규제 도입 촉구",
+      "press": "블루밍비트",
+      "url": "https://bloomingbit.io/feed/news/125318",
+      "timestamp": 1795704443000,
+      "date": "2026.11.26 23:47",
+      "tags": [
+        "대체투자"
       ],
       "tagSource": "ai",
       "coverage": 2,
       "scope": "해외",
       "outlets": [
-        "뉴시스",
-        "YTN"
+        "블루밍비트",
+        "비욘드포스트"
       ],
-      "rssDate": "2026.11.25 16:36",
+      "rssDate": "2026.11.26 23:47",
       "timeSource": "meta",
-      "googleUrl": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBXbDlhTzVVbmdBWjZpZTViaFNPblowM3o2bG5LQ29ieExvZklwbG9uQm43ZlpsTTJORlp1YnN6V1JGYjY5Q0Vkcl9DRjYyTkhXeUcxbFo5aWdpdHpIX0l5M9IBeEFVX3lxTE5vemhtV2hmTmgtWnQ0MjFfVTFuTnV0Y3Z3Z2tOVlFMMUFaeTFyLV9JTzVZWTZTTlhSUDJHbW9sNVFXQ0w1US1xbFR6bmlSdHI5WXBaZGk2MlVtOE8wYnh0RGltQnFHcGZndUpOenlob0RIOGFHb0UzVA?oc=5",
-      "shortUrl": "https://is.gd/XtihCm"
+      "googleUrl": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5KVUwyX1hrS0E4dUx6NkJiTGo2V2x4aFQxdW1zQWRMU0tCcnhFLVhPakJXQWlnQV9ZZW5rRkRfWVFyZmk5RUMxbGg2V0VaOXVn?oc=5",
+      "shortUrl": "https://is.gd/rTH6s1"
     },
     {
-      "title": "'美 기술주 조정·코스피 급락' 원·달러 환율, 소폭 상승해 1343.2원 마감",
+      "title": "한은 금리 인상에도 보합권...원·달러 환율, 0.5원 하락한 1342.7원 마감",
       "press": "베타뉴스",
-      "url": "https://www.betanews.net/article/view/beta202611250140",
-      "timestamp": 1795596260000,
-      "date": "2026.11.25 17:44",
+      "url": "https://www.betanews.net/article/view/beta202611260139",
+      "timestamp": 1795686836000,
+      "date": "2026.11.26 18:53",
       "tags": [
-        "외환"
+        "외환",
+        "채권·금리"
       ],
       "tagSource": "ai",
-      "coverage": 16,
+      "coverage": 19,
       "scope": "국내",
       "outlets": [
-        "토큰포스트",
         "베타뉴스",
-        "진일보 | 전남일보",
-        "Chosunbiz",
-        "뉴시스",
-        "파이낸셜뉴스"
+        "재경일보",
+        "조세일보",
+        "연합뉴스",
+        "머니투데이",
+        "아시아경제"
       ],
-      "rssDate": "2026.11.25 17:44",
+      "rssDate": "2026.11.26 18:53",
       "timeSource": "meta",
-      "googleUrl": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1pVmdnTVdGWTk2aS12akU3WEdJWU9mM0JSbGszYXNhTXRhWVZ4cFlpcXZtbHpkRnBkWjRvNjU3V1NLZS1XOE82NXZBVVA4Znd0cjFYTkExSFpvNUh3S0NxUl96bTE?oc=5",
-      "shortUrl": "https://is.gd/Xdtl4C"
+      "googleUrl": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5salRHc2pXa1pENXRZR3Z1emxPNVBBRW1WSUdDM2RsWEgtSVpoYVFuS3JOUFBpam1GUXBNVDFiYktvb09DOTF0eHFDM1lKNzdwUG9DR09hQW9NN043X2dGcmhYQ2E?oc=5",
+      "shortUrl": "https://is.gd/TuHmW2"
     },
     {
-      "title": "삼성준감위, 이재용 회장 증여세·주주환원 논란 일축",
-      "press": "스페셜경제",
-      "url": "https://www.speconomy.com/news/articleView.html?idxno=420378",
-      "timestamp": 1795566984000,
-      "date": "2026.11.25 09:36",
+      "title": "종부세·가업상속공제 줄줄이 소소위…예상대로 '밀실 협상'",
+      "press": "뉴스토마토",
+      "url": "https://www.newstomato.com/ReadNews.aspx?no=1322068",
+      "timestamp": 1795682680000,
+      "date": "2026.11.26 17:44",
       "tags": [
         "TAX"
       ],
       "tagSource": "ai",
-      "coverage": 8,
+      "coverage": 3,
       "scope": "국내",
       "outlets": [
-        "스페셜경제",
-        "Daum",
-        "한겨레",
-        "파이낸셜포스트",
-        "이투데이",
-        "뉴시스"
+        "뉴스토마토",
+        "미주중앙일보",
+        "Manna 24"
       ],
-      "rssDate": "2026.11.25 09:36",
+      "rssDate": "2026.11.26 17:44",
       "timeSource": "meta",
-      "googleUrl": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1YeGQzWXlDUEVaaHZRVjlKLV83R2NBenNtemxZNE96QlBfeFk2WFpaNDR6ZEZ0NUhSOWlNS0dEVVEtSlJ6ZG8zMzV1bUJKWUE1VkI4N09RdzdhVENKM3RvT0ZvU19MRnl4YVlFOA?oc=5",
-      "shortUrl": "https://is.gd/JnSU1r"
+      "googleUrl": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9oclZyQ2Vha3RTSmttV1c3djlQV0ZpU05nUWkwT1pRZ3hRN0IzdG1mVkpzb3gzNThqYnV0S1l3Z0ZVcVNtNGxlSG9QVGQ0MUZZTUE1S3lCYlhFeUN1blRZWg?oc=5",
+      "shortUrl": "https://is.gd/3BClci"
     },
     {
-      "title": "내년 원달러 환율 1280원~1380원 전망…엇갈리는 이유는",
-      "press": "중기이코노미",
-      "url": "https://www.junggi.co.kr/news/articleView.html?idxno=38645",
-      "timestamp": 1795591200000,
-      "date": "2026.11.25 16:20",
+      "title": "미국 과잉생산 관세, 한국은 15% 상한 유지… 연준 12월 인상 확률 98%, 휴장일 밤에 볼 숫자 5개",
+      "press": "네이버 프리미엄콘텐츠",
+      "url": "https://contents.premium.naver.com/answerindata/answerindatalab/contents/261126204845107yz",
+      "timestamp": 1795693680000,
+      "date": "2026.11.26 20:48",
       "tags": [
-        "외환"
+        "매크로",
+        "채권·금리"
       ],
       "tagSource": "ai",
-      "coverage": 2,
+      "coverage": 1,
       "scope": "국내",
       "outlets": [
-        "중기이코노미",
-        "한스경제"
+        "네이버 프리미엄콘텐츠"
       ],
-      "rssDate": "2026.11.25 16:20",
-      "timeSource": "meta",
-      "googleUrl": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5kOWxvRXpvWGdySW00MmZqek5CcklkMFBfQlpsMmstX05sWkxKdzIzdlg4M1k1WF8ya0FBS0lBa2VTeXdqMFFZQXVqM3otRDlhMEFldmhDLThzM2h0dFJ5WUdHZGFtTmI3eEE?oc=5",
-      "shortUrl": "https://is.gd/NsDxJj"
-    },
-    {
-      "title": "\"영원무역, 원달러 환율 하락에 3Q 실적↓… 목표가↓\"-유진 - 머니투데이",
-      "press": "머니투데이",
-      "url": "https://www.mt.co.kr/index.php/stock/2026/11/25/2026112508325036602",
-      "timestamp": 1795564757000,
-      "date": "2026.11.25 08:59",
-      "tags": [
-        "증시"
-      ],
-      "tagSource": "ai",
-      "coverage": 2,
-      "scope": "국내",
-      "outlets": [
-        "머니투데이",
-        "한국경제"
-      ],
-      "rssDate": "2026.11.25 08:59",
-      "timeSource": "meta",
-      "googleUrl": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9raWtPN3FaVFV1RmJnVm5tY19lUE9LRzF6Um1zc05ESkIyQW0tc0lZMFNOMkNiNXgyS0k4cm9zM3lZbjViNkFrZlpQMTBKTnhla1FVNnFlQnJSbk83R2poODBpRGh4U0xRcVRfT3JDN3ZyVTdZQlHSAXtBVV95cUxOZnNHM0RIekstMWdUcjVhUnlMN1c3RE0xdFlGUmtzRlBBTEVaT3Z2Ty1ab2dUWWZNc2F3Um5FUGRmUW9FdDVCZXQtZTdnQUpGcS1pd1dMMXhhdmNzOUhlSlozNjBjcnBhVHlfcUFqak5mM1llQndSVUtJZ0E?oc=5",
-      "shortUrl": "https://is.gd/wT5U08"
+      "rssDate": "2026.11.26 20:48",
+      "timeSource": "rss",
+      "googleUrl": "https://news.google.com/rss/articles/CBMilAFBVV95cUxONUU0VlUwcDVZZnZPcWpSMmZtRF9hWF9nNXY4UG9NaVlQV2RFb1Jmdk40c0tPUUJ2WFZwWFJ3dGRiaXNfblhyRGd1aG5ELUtYQmFoc05FTENCaGd5blZwNzduMUdEZ3VBZUNLNGQ4clVIYlRjZWxWY0J6UzE3YVE3T2lKRGRmTmduZFVaOEljWERIZVhV?oc=5",
+      "shortUrl": "https://is.gd/r4aFxS"
     }
   ],
   "assetChecks": {
     "framework": "assets",
-    "generatedAt": "2026-11-25T21:31:50.007Z",
-    "model": "gemini-3.5-flash",
+    "generatedAt": "2026-11-26T21:32:58.589Z",
+    "model": "gemini-3.5-flash-lite",
     "cards": [
       {
         "key": "kr_equity",
@@ -373,53 +371,46 @@
           {
             "key": "KOSPI",
             "name": "코스피",
-            "priceStr": "4,697.51",
-            "changePct": -6.16,
+            "priceStr": "4,711.21",
+            "changePct": 0.29,
             "unit": ""
           },
           {
             "key": "KOSDAQ",
             "name": "코스닥",
-            "priceStr": "650.64",
-            "changePct": -2.29,
+            "priceStr": "655.71",
+            "changePct": 0.78,
             "unit": ""
           }
         ],
         "events": [
           {
-            "date": "2026-11-26",
-            "kind": "bok",
-            "dday": 0,
-            "label": "한국은행 금통위 (통화정책방향 결정회의)",
-            "when": "11/26(목)"
-          },
-          {
             "date": "2026-12-01",
             "kind": "msci_effective",
-            "dday": 5,
+            "dday": 4,
             "label": "MSCI 분기 리뷰 적용일",
             "when": "12/1(화)"
           },
           {
             "date": "2026-12-10",
             "kind": "kr_quad",
-            "dday": 14,
+            "dday": 13,
             "label": "KOSPI200 선물·옵션 동시만기일",
             "when": "12/10(목)"
-          }
-        ],
-        "news": [
+          },
           {
-            "title": "\"영원무역, 원달러 환율 하락에 3Q 실적↓… 목표가↓\"-유진 - 머니투데이",
-            "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9raWtPN3FaVFV1RmJnVm5tY19lUE9LRzF6Um1zc05ESkIyQW0tc0lZMFNOMkNiNXgyS0k4cm9zM3lZbjViNkFrZlpQMTBKTnhla1FVNnFlQnJSbk83R2poODBpRGh4U0xRcVRfT3JDN3ZyVTdZQlHSAXtBVV95cUxOZnNHM0RIekstMWdUcjVhUnlMN1c3RE0xdFlGUmtzRlBBTEVaT3Z2Ty1ab2dUWWZNc2F3Um5FUGRmUW9FdDVCZXQtZTdnQUpGcS1pd1dMMXhhdmNzOUhlSlozNjBjcnBhVHlfcUFqak5mM1llQndSVUtJZ0E?oc=5",
-            "press": "머니투데이",
-            "coverage": 2
+            "date": "2026-12-11",
+            "kind": "kospi200_rebal",
+            "dday": 14,
+            "label": "KOSPI200 정기변경 적용일",
+            "when": "12/11(금)"
           }
         ],
-        "level": "변동 큼",
-        "headline": "코스피 6.16% 급락하며 4,690선 하락",
-        "analysis": "전 거래일 코스피는 6.16% 급락한 4,697.51, 코스닥은 2.29% 하락한 650.64로 마감했습니다. 미국 기술주 조정과 원/달러 환율 변동에 따른 기업 실적 둔화 우려 등 대외 악재가 겹치며 국내 증시의 하방 압력이 크게 나타났습니다.",
-        "watch": "11월 26일(목) 개최되는 한국은행 금통위 결과와 12월 1일(화) MSCI 분기 리뷰 적용 영향을 주시할 필요가 있습니다.",
+        "news": [],
+        "level": "평이",
+        "headline": "코스피·코스닥 소폭 상승 마감",
+        "analysis": "11월 26일(목) 코스피는 4,711.21로 0.29%, 코스닥은 655.71로 0.78% 각각 상승 마감했다. 연말을 앞두고 주요 지수 관련 일정을 대기하며 완만한 흐름을 보였다.",
+        "watch": "12월 1일(화) MSCI 분기 리뷰 적용일과 12월 10일(목) KOSPI200 선물·옵션 동시만기일 수급 변화를 살펴볼 예정입니다.",
         "textBy": "ai"
       },
       {
@@ -450,45 +441,45 @@
         ],
         "events": [
           {
-            "date": "2026-11-26",
-            "kind": "us_holiday",
-            "dday": 0,
-            "label": "미국 증시 휴장일",
-            "when": "11/26(목)"
-          },
-          {
             "date": "2026-11-27",
             "kind": "us_early_close",
-            "dday": 1,
+            "dday": 0,
             "label": "미국 증시 조기 폐장",
             "when": "11/27(금)"
           },
           {
             "date": "2026-12-04",
             "kind": "jobs_us",
-            "dday": 8,
+            "dday": 7,
             "label": "미국 고용보고서 (비농업 고용·실업률)",
             "when": "12/4(금)"
+          },
+          {
+            "date": "2026-12-09",
+            "kind": "fomc",
+            "dday": 12,
+            "label": "미국 FOMC 정례회의 (기준금리 결정)",
+            "when": "12/9(수)"
           }
         ],
         "news": [
           {
-            "title": "뉴욕증시, AI 투매 딛고 낙폭 축소하며 혼조 마감…다우 0.3%↑·나스닥 0.6%↓",
-            "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE43clBsOVg1SW81OHN2c2JGT3J0cTRBcVZ6RDE4S0tvVDRHdVBpOEtQbmpJcVhqOUJWNlI3d2IzNXU0QjZnbEhCOEVyV2Z5X2dHU1JwWGt1TkkxV3hC?oc=5",
-            "press": "뉴스핌",
-            "coverage": 26
+            "title": "(뉴욕증시) AI 불확실성에 혼조…나스닥 0.62%↓ - 경제 - koreadailytimes.com",
+            "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE1WdlJzVlptZEUzRlU1eGpMb0NGcml1bmJmVFVHSzVvZm1wOE9rZjktM29hbnR2TTIxNWRPcVFmMFJEbnFLZjZQXw?oc=5",
+            "press": "koreadailytimes.com",
+            "coverage": 25
           },
           {
-            "title": "JP모건 \"내년 S&P500 14% 더 오른다…AI 투자 사이클 이어질 것\"",
-            "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBXbDlhTzVVbmdBWjZpZTViaFNPblowM3o2bG5LQ29ieExvZklwbG9uQm43ZlpsTTJORlp1YnN6V1JGYjY5Q0Vkcl9DRjYyTkhXeUcxbFo5aWdpdHpIX0l5M9IBeEFVX3lxTE5vemhtV2hmTmgtWnQ0MjFfVTFuTnV0Y3Z3Z2tOVlFMMUFaeTFyLV9JTzVZWTZTTlhSUDJHbW9sNVFXQ0w1US1xbFR6bmlSdHI5WXBaZGk2MlVtOE8wYnh0RGltQnFHcGZndUpOenlob0RIOGFHb0UzVA?oc=5",
-            "press": "뉴시스",
-            "coverage": 2
+            "title": "‘빅쇼트’ 버리, 나스닥 하락 베팅 2주 만에 철회",
+            "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFB6ZkpTeUNaRkpwM3dlQW5OREJmM2xYYl9lZjgxd3ZzM3AyQ1E5UTlCUXdxVmNseFUwN1hZT0hXOTR0bF9DdXl5TW90aDZhZFFJbjFodFln?oc=5",
+            "press": "중앙일보",
+            "coverage": 4
           }
         ],
         "level": "주목",
-        "headline": "간밤 AI 투매 여파 축소되며 혼조 마감",
-        "analysis": "간밤 미 증시는 AI 관련주 투매 여파로 나스닥이 0.62% 하락한 23,585.80, 필라델피아 반도체지수가 0.65% 내렸으나 낙폭을 축소하며 S&P 500은 0.25% 하락한 7,182.78에 마감했습니다. 물가와 관세 우려로 나스닥 선물이 약세를 보였으나, AI 투자 사이클이 지속될 것이라는 분석이 하강 폭을 제한했습니다.",
-        "watch": "11월 26일(목) 미국 증시 휴장 및 11월 27일(금) 조기 폐장 이후 12월 4일(금) 발표될 미국 고용보고서를 주시할 필요가 있습니다.",
+        "headline": "AI 불확실성 속 나스닥 하락",
+        "analysis": "11월 25일(수) 뉴욕증시는 S&P 500이 7,182.78로 0.25%, 나스닥이 23,585.80으로 0.62% 하락했다. AI 관련 불확실성이 부각되며 기술주 중심의 나스닥이 조정을 받았고, 빅쇼트로 알려진 마이클 버리가 나스닥 하락 베팅을 2주 만에 철회한 소식이 전해졌다.",
+        "watch": "11월 27일(금) 미국 증시 조기 폐장 이후 12월 4일(금) 발표될 미국 고용보고서를 주시해야 합니다.",
         "textBy": "ai"
       },
       {
@@ -514,39 +505,51 @@
         ],
         "events": [
           {
-            "date": "2026-11-26",
-            "kind": "bok",
-            "dday": 0,
-            "label": "한국은행 금통위 (통화정책방향 결정회의)",
-            "when": "11/26(목)"
-          },
-          {
             "date": "2026-12-04",
             "kind": "jobs_us",
-            "dday": 8,
+            "dday": 7,
             "label": "미국 고용보고서 (비농업 고용·실업률)",
             "when": "12/4(금)"
           },
           {
             "date": "2026-12-09",
             "kind": "fomc",
-            "dday": 13,
+            "dday": 12,
             "label": "미국 FOMC 정례회의 (기준금리 결정)",
             "when": "12/9(수)"
+          },
+          {
+            "date": "2026-12-10",
+            "kind": "cpi_us",
+            "dday": 13,
+            "label": "미국 소비자물가지수(CPI) 발표",
+            "when": "12/10(목)"
           }
         ],
         "news": [
           {
-            "title": "물가·관세 겹악재에 나스닥 선물 3%↓…국채로 '피난'(종합)",
-            "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNckFWcFNPUS1hQ3JNVm4wV3UtYy1CNndCdlREOWg2ZUtGRFR2N25yejZCUk1vWjQ1Z2dwWGJYQUc4Tk1JZnFZbkd3M3FyUll5anY5MGhTdEVqZDJLUHRyN2s0YnRCX3daNTVzSnhBTHZfLWRFMC0yTmZNTjJycVpOVA?oc=5",
-            "press": "이데일리",
-            "coverage": 11
+            "title": "한은 금리 인상에도 보합권...원·달러 환율, 0.5원 하락한 1342.7원 마감",
+            "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5salRHc2pXa1pENXRZR3Z1emxPNVBBRW1WSUdDM2RsWEgtSVpoYVFuS3JOUFBpam1GUXBNVDFiYktvb09DOTF0eHFDM1lKNzdwUG9DR09hQW9NN043X2dGcmhYQ2E?oc=5",
+            "press": "베타뉴스",
+            "coverage": 19
+          },
+          {
+            "title": "[데스크 시각] 연준 위원들 입조심 해야",
+            "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9oWEluM3NEWG81Y1MyR2pLNFllRjc5d0NTaVpDQzZwa2lfZEdPdkpRQ2xiLU5UVTBiaHJxWVZTbTZQTEdKU3JKNUI3Smd1MTZmYlVrNQ?oc=5",
+            "press": "이투데이",
+            "coverage": 4
+          },
+          {
+            "title": "미국 과잉생산 관세, 한국은 15% 상한 유지… 연준 12월 인상 확률 98%, 휴장일 밤에 볼 숫자 5개",
+            "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxONUU0VlUwcDVZZnZPcWpSMmZtRF9hWF9nNXY4UG9NaVlQV2RFb1Jmdk40c0tPUUJ2WFZwWFJ3dGRiaXNfblhyRGd1aG5ELUtYQmFoc05FTENCaGd5blZwNzduMUdEZ3VBZUNLNGQ4clVIYlRjZWxWY0J6UzE3YVE3T2lKRGRmTmduZFVaOEljWERIZVhV?oc=5",
+            "press": "네이버 프리미엄콘텐츠",
+            "coverage": 1
           }
         ],
         "level": "주목",
-        "headline": "안전자산 선호 심리로 미 국채 금리 하락",
-        "analysis": "물가 및 관세 우려와 주식시장 변동성 확대 속에서 안전자산 선호 심리가 강화되며 자금이 국채로 이동했습니다. 이에 따라 미 10년물 금리는 4.85%로 6bp 하락했고, 5년물 금리는 4.66%로 5bp 내렸습니다.",
-        "watch": "11월 26일(목) 한국은행 금통위 통화정책 결정과 12월 4일(금) 미국 고용보고서, 12월 9일(수) FOMC 정례회의를 주시할 필요가 있습니다.",
+        "headline": "미 국채 금리 하락 및 금리 인상 확률 주시",
+        "analysis": "11월 25일(수) 기준 미국 10년물 금리는 4.85%로 6bp, 5년물 금리는 4.66%로 5bp 하락했다. 한국은행의 금리 인상에도 원·달러 환율은 보합권을 보였으며, 연준의 12월 금리 인상 확률이 98%로 반영된 가운데 연준 위원들의 발언과 정책 경로를 살피고 있다.",
+        "watch": "12월 4일(금) 미국 고용보고서와 12월 9일(수) FOMC 정례회의, 12월 10일(목) 소비자물가지수(CPI) 발표를 앞두고 있습니다.",
         "textBy": "ai"
       },
       {
@@ -556,59 +559,39 @@
           {
             "key": "USDKRW",
             "name": "원/달러 환율",
-            "priceStr": "1,344.45",
-            "changePct": 0.26,
+            "priceStr": "1,342.98",
+            "changePct": 0.02,
             "unit": ""
           },
           {
             "key": "DXY",
             "name": "달러인덱스",
-            "priceStr": "103.70",
-            "changePct": -0.1,
+            "priceStr": "103.78",
+            "changePct": 0.1,
             "unit": ""
           },
           {
             "key": "USDJPY",
             "name": "엔/달러",
-            "priceStr": "159.19",
-            "changePct": 0.11,
+            "priceStr": "159.28",
+            "changePct": 0.01,
             "unit": "엔"
           }
         ],
         "events": [
           {
-            "date": "2026-11-26",
-            "kind": "bok",
-            "dday": 0,
-            "label": "한국은행 금통위 (통화정책방향 결정회의)",
-            "when": "11/26(목)"
-          },
-          {
             "date": "2026-12-09",
             "kind": "fomc",
-            "dday": 13,
+            "dday": 12,
             "label": "미국 FOMC 정례회의 (기준금리 결정)",
             "when": "12/9(수)"
           }
         ],
-        "news": [
-          {
-            "title": "'美 기술주 조정·코스피 급락' 원·달러 환율, 소폭 상승해 1343.2원 마감",
-            "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1pVmdnTVdGWTk2aS12akU3WEdJWU9mM0JSbGszYXNhTXRhWVZ4cFlpcXZtbHpkRnBkWjRvNjU3V1NLZS1XOE82NXZBVVA4Znd0cjFYTkExSFpvNUh3S0NxUl96bTE?oc=5",
-            "press": "베타뉴스",
-            "coverage": 16
-          },
-          {
-            "title": "내년 원달러 환율 1280원~1380원 전망…엇갈리는 이유는",
-            "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5kOWxvRXpvWGdySW00MmZqek5CcklkMFBfQlpsMmstX05sWkxKdzIzdlg4M1k1WF8ya0FBS0lBa2VTeXdqMFFZQXVqM3otRDlhMEFldmhDLThzM2h0dFJ5WUdHZGFtTmI3eEE?oc=5",
-            "press": "중기이코노미",
-            "coverage": 2
-          }
-        ],
-        "level": "주목",
-        "headline": "증시 변동성 확대 속 원/달러 환율 상승",
-        "analysis": "달러인덱스가 103.70으로 0.1% 하락했음에도 불구하고, 미국 기술주 조정과 국내 증시 급락 영향에 원/달러 환율은 1,344.45원으로 0.26% 상승했습니다. 엔/달러 환율 역시 159.19엔으로 0.11% 상승하는 등 위험자산 약세 여파가 외환시장에 반영되었습니다.",
-        "watch": "11월 26일(목) 한국은행 금통위의 기준금리 결정 및 향후 통화정책 방향과 12월 9일(수) 미국 FOMC 결과를 주시할 필요가 있습니다.",
+        "news": [],
+        "level": "평이",
+        "headline": "원/달러 환율과 달러인덱스 보합세",
+        "analysis": "11월 26일(목) 한국 시장 마감 기준 원/달러 환율은 1,342.98원으로 0.02% 올랐고, 달러인덱스는 103.78로 0.1% 상승했다. 엔/달러 환율도 159.28엔으로 0.01% 소폭 오르며 주요 통화쌍은 대체로 안정적인 흐름을 나타냈다.",
+        "watch": "12월 9일(수) 미국 FOMC 정례회의 전까지 연준의 통화정책 기대감에 따른 환율 변동성을 확인할 예정입니다.",
         "textBy": "ai"
       },
       {
@@ -618,31 +601,31 @@
           {
             "key": "GOLD",
             "name": "금",
-            "priceStr": "3,597.2",
-            "changePct": 0.99,
+            "priceStr": "3,593.4",
+            "changePct": 1.63,
             "unit": "달러"
           },
           {
             "key": "WTI",
             "name": "WTI 유가",
-            "priceStr": "84.19",
-            "changePct": 2.61,
+            "priceStr": "84.91",
+            "changePct": 1.47,
             "unit": "달러"
           }
         ],
         "events": [],
         "news": [
           {
-            "title": "국제유가, 중동 지정학적 리스크 고조 우려 등 영향 이틀째 상승-WTI 2%대 올라 배럴당 84달러대⋯국제금값, 미국 금리인상 전망 등에 하락",
-            "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1pRVRfOUd0c1hFVW9vYUFKVVlZU0FKRTZFcFhHX0hoZWstUUVMUzFyUndmV0JUc2Q0eWZBem9JRnVaX2FJWmdnME9RYjJaOEtnbkFlcXFJUEpVcXdQazBOci1WWnBiSFhOWWMtLTF3?oc=5",
-            "press": "이코노뉴스",
-            "coverage": 7
+            "title": "[금시세] 금값 1돈 가격은?",
+            "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE03T2MxSkFXdkNFa2d0ajBnbGN1M0xqSF9DUkNTd0FBbmxlWDcwTzk1OS1ld0J1eW9Yc1VQbVRiZnRwaGd5M1hRUGN4azY2c3FUT0xTUWhGd1ZGMUJ6WnVUZ3RxWVQzYXQzVllabw?oc=5",
+            "press": "게임톡",
+            "coverage": 9
           }
         ],
-        "level": "변동 큼",
-        "headline": "지정학적 리스크 고조로 유가 및 금값 상승",
-        "analysis": "중동 지정학적 리스크 고조 우려로 WTI 유가는 2.61% 상승한 배럴당 84.19달러를 기록하며 이틀째 오름세를 이어갔습니다. 대표적 안전자산인 금 가격 역시 증시 불안 및 자금 이동 영향으로 0.99% 상승한 3,597.2달러로 마감했습니다.",
-        "watch": "중동 정세 변화와 함께 안전자산 선호 흐름의 지속 여부를 주시할 필요가 있습니다.",
+        "level": "주목",
+        "headline": "금과 WTI 유가 동반 상승",
+        "analysis": "금 가격은 3,593.4달러로 1.63%, WTI 유가는 84.91달러로 1.47% 각각 상승했다. 안전자산과 에너지 가격이 나란히 오름세를 보이며 원자재 시장 전반에 매수 유입이 나타났다.",
+        "watch": "글로벌 매크로 지표 발표와 연준의 금리 결정에 따른 원자재 가격의 방향성을 점검할 계획입니다.",
         "textBy": "ai"
       },
       {
@@ -652,26 +635,33 @@
           {
             "key": "BTC",
             "name": "비트코인",
-            "priceStr": "60,275",
-            "changePct": 0.88,
+            "priceStr": "60,857",
+            "changePct": 0.79,
             "unit": "달러"
           }
         ],
         "events": [],
-        "news": [],
+        "news": [
+          {
+            "title": "나스닥, EU에 토큰화 증권 규제 도입 촉구",
+            "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5KVUwyX1hrS0E4dUx6NkJiTGo2V2x4aFQxdW1zQWRMU0tCcnhFLVhPakJXQWlnQV9ZZW5rRkRfWVFyZmk5RUMxbGg2V0VaOXVn?oc=5",
+            "press": "블루밍비트",
+            "coverage": 2
+          }
+        ],
         "level": "평이",
-        "headline": "뚜렷한 신호 없음",
-        "analysis": "비트코인은 60,275달러로 0.88% 소폭 상승하며 제한된 범위 내에서 거래되었습니다.",
-        "watch": "글로벌 위험자산 변동성 확대에 따른 가상자산 시장으로의 자금 유입 추이를 주시할 필요가 있습니다.",
+        "headline": "비트코인 소폭 상승 및 규제 움직임",
+        "analysis": "비트코인은 60,857달러로 0.79% 상승하며 완만한 회복세를 보였다. 한편 나스닥이 EU에 토큰화 증권 규제 도입을 촉구했다는 소식이 전해지며 디지털 자산 시장의 제도화 논의가 이어지고 있다.",
+        "watch": "디지털 자산 관련 규제 동향과 대체투자 시장의 유동성 변화를 계속 모니터링하겠습니다.",
         "textBy": "ai"
       }
     ],
     "taxNews": [
       {
-        "title": "삼성준감위, 이재용 회장 증여세·주주환원 논란 일축",
-        "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1YeGQzWXlDUEVaaHZRVjlKLV83R2NBenNtemxZNE96QlBfeFk2WFpaNDR6ZEZ0NUhSOWlNS0dEVVEtSlJ6ZG8zMzV1bUJKWUE1VkI4N09RdzdhVENKM3RvT0ZvU19MRnl4YVlFOA?oc=5",
-        "press": "스페셜경제",
-        "coverage": 8
+        "title": "종부세·가업상속공제 줄줄이 소소위…예상대로 '밀실 협상'",
+        "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9oclZyQ2Vha3RTSmttV1c3djlQV0ZpU05nUWkwT1pRZ3hRN0IzdG1mVkpzb3gzNThqYnV0S1l3Z0ZVcVNtNGxlSG9QVGQ0MUZZTUE1S3lCYlhFeUN1blRZWg?oc=5",
+        "press": "뉴스토마토",
+        "coverage": 3
       }
     ]
   }
