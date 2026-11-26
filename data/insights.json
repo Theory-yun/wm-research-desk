@@ -1,6 +1,6 @@
 {
   "note": "curated=true 는 PB가 고른 연례 핵심 리포트(고정), 나머지는 scripts/build-insights.mjs가 매일 자동 수집합니다.",
-  "updatedAt": "2026-11-26T09:44:18.078Z",
+  "updatedAt": "2026-11-26T22:58:31.544Z",
   "categories": [
     "글로벌 F/O 동향",
     "국내 부자·웰스 리포트",
@@ -416,6 +416,19 @@
       "btnText": "🔗 원문 보기",
       "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQMkd3R0w3V0d6WFVtckh0VUcxSFVGcGNXLU1TQkxZUktHeHdxNjZzZFJKVFFDdWljUVMteGVwVEJ0S1lpbUFoLVJibm5SMmEwS21ZRzE2MktlS1RBVkN5cnM3RTd2U284ZUdWLUdtMHNoY2xMQnFDU1FaRHVlQjV6aHVSWWcxTjRtY1E?oc=5",
       "lang": "en",
+      "classifiedBy": "AI(gemini-3.5-flash-lite)"
+    },
+    {
+      "stars": "★★★★☆",
+      "category": "승계·세무·신탁",
+      "title": "저PBR주 상속세 폭탄 … 물려받을 주식보다 세금이 더 클수도",
+      "desc": "저PBR주 상속 시 물려받을 주식보다 세금이 더 클 수 있는 상속세 관련 세무 이슈입니다.",
+      "org": "매일경제",
+      "date": "2026.11.16",
+      "ts": 1794816000000,
+      "btnText": "🔗 원문 보기",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1EQjUzbXVnQkV2LWQ4V0RoaWxrVElvb2FRNy10cE5wdEpXODhSOVNmdEljUkhJcjAtRUFnMnR1bldUMjZrb2J4cVA4V2txZTVHQlE?oc=5",
+      "lang": "ko",
       "classifiedBy": "AI(gemini-3.5-flash-lite)"
     },
     {
@@ -883,19 +896,6 @@
       "ts": 1793797201000,
       "btnText": "🔗 원문 보기",
       "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNOXZBdlZTYkd5ZE05UUdPTEQzNnBfeGdjYU9sRnJXWmVOT0draG9XeE9semRSTVc0dXo5azZTcFRsdHRqbld4LXpsMVMzQWZfTUEwbExGam9zejVWUmh2QmRrXzhaMlVVV2F2OVF6MERudDFiLXQyblRUWmhPTk9jS09ZUk01SDJJcVpSbG1CbldzVjJYMS0wWFYyUlpqXzhJUnd4OFA1SzQ3Zw?oc=5",
-      "lang": "en",
-      "classifiedBy": "AI(gemini-3.5-flash-lite)"
-    },
-    {
-      "stars": "★★★☆☆",
-      "category": "글로벌 F/O 동향",
-      "title": "서비스와 역량: 패밀리오피스의 존재 이유에 대한 BBH의 제언",
-      "desc": "패밀리오피스가 제공해야 하는 핵심 서비스와 역량에 대한 글로벌 금융사의 진단입니다.",
-      "org": "Family Wealth Report",
-      "date": "2026.11.04",
-      "ts": 1793779200000,
-      "btnText": "🔗 원문 보기",
-      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQNzZTUGwyOGJ4ekp3bUlvV05tZ0ZsZDVfWnVMYTVkcC0tWHNIRUVDeURZQWtTVFh0dTFkRGR0MDVOZ19GbHRkZUMtS21HR1BHdC0tVzlST0t3VDlJVXNDbWJLcWN0NHVRcFRUTVBVLVBCZmZqQUNJSktlY1Noc2p6TVNjajNpMEV4RHhsRVdiMEtWMEVhdEZxVEQ3ZkFOSlBQMmxSN2NFRFZoX21CdXFnNFpMSUdpc2tJcUx2R084N3JHdmF3OHc?oc=5",
       "lang": "en",
       "classifiedBy": "AI(gemini-3.5-flash-lite)"
     }
