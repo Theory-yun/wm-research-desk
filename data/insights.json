@@ -1,6 +1,6 @@
 {
   "note": "curated=true 는 PB가 고른 연례 핵심 리포트(고정), 나머지는 scripts/build-insights.mjs가 매일 자동 수집합니다.",
-  "updatedAt": "2026-11-27T09:43:18.088Z",
+  "updatedAt": "2026-11-27T22:58:23.793Z",
   "categories": [
     "글로벌 F/O 동향",
     "국내 부자·웰스 리포트",
@@ -196,6 +196,19 @@
       "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE43N3ppNkl5QmF2ckI1WjJmRm12RW5NSkhRLU5OTVE3RGpXMElNbWU5QzJpWTZrN01hTV94UVhNeExpbHpEb0xfZk5vWjNSMzVQb1VfeTE5NU9oOWtIN3lR?oc=5",
       "lang": "ko",
       "classifiedBy": "AI(gemini-3.1-flash-lite)"
+    },
+    {
+      "stars": "★★★★☆",
+      "category": "글로벌 F/O 동향",
+      "title": "홍콩 패밀리오피스: 거버넌스와 부의 보존",
+      "desc": "홍콩 패밀리오피스의 거버넌스 및 부의 보존 전략에 관한 연구 자료입니다.",
+      "org": "CFA Institute Research and Policy Center",
+      "date": "2026.11.23",
+      "ts": 1795420800000,
+      "btnText": "🔗 원문 보기",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNTTBXdldnVXB0YlRRNlBvLWRYYU5NMmhieVF0QURlV0lhLTU5bzVBcDBHY2xHSzRTeVVabnNjdHdBWTUyaWoycm9fWFpCWXI4WmVLb1VadUFBc0lwanVmSDNhY1Z6b0ktc3hKLVM0VmxjY3VsQnJiVlRqemtOdUY2UWZ0cVlzQVNqdkFxcVN2ZFN5V1ExSkc1SExBQm5aQ1lyNWtHUHJlT1U?oc=5",
+      "lang": "en",
+      "classifiedBy": "AI(gemini-3.5-flash-lite)"
     },
     {
       "stars": "★★★☆☆",
@@ -693,6 +706,19 @@
     },
     {
       "stars": "★★★★☆",
+      "category": "글로벌 F/O 동향",
+      "title": "2026년 기술 리포트로 본 패밀리오피스의 수작업 의존과 AI 솔루션 도입 경쟁",
+      "desc": "패밀리오피스의 기술 활용 및 수작업 운영 실태에 관한 최신 조사 결과입니다.",
+      "org": "EIN Presswire",
+      "date": "2026.11.10",
+      "ts": 1794303360000,
+      "btnText": "🔗 원문 보기",
+      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQcTBkN3doU09nVG9LNlY1NzVpVmgyWnczWkxra0ZsY2pZY0x5T2s2NjJxcW1RTmtWTkZvMkJsNU1GZ3V1M3VOemV0SEhnX0pYQ0luM1JzdGtIUEx3Z1Jtb1hldGVpTF9zVXJEb2VuTm1WTzBlU0RsaXc0dHVOU0MxOGxTVHZHaHR0QlRPVzR0TDZpVlo2VlFSdDZteEFJd0I3MWhIaW9BZkpUWXd5YXN1RnlJUTVlWmJSRk9yamNYT3JZZ25lZUdhVWJndWJmOWxXdXE2dkIzVVVNS3lhNUc4?oc=5",
+      "lang": "en",
+      "classifiedBy": "AI(gemini-3.5-flash-lite)"
+    },
+    {
+      "stars": "★★★★☆",
       "category": "대체투자·사모시장",
       "title": "부동산 신흥 트렌드: 유럽 2027",
       "desc": "유럽 부동산 시장의 신흥 투자 트렌드와 전망을 제시합니다.",
@@ -872,32 +898,6 @@
       "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9MWXp3UU5zdEsxbHpxZkdpemdhd1hlcUE5RFpleVlRY1ZBdmU3djdvQzA5blNnc1pHM3o5QTNLTzhjT3ljckduMTRxMm1ESW1YZFhNMHNKZllKZ0RDNFdTQS1DZkRVUDJIalJiNnp6TEpCQ3BqcWc?oc=5",
       "lang": "en",
       "classifiedBy": "AI(gemini-3.1-flash-lite)"
-    },
-    {
-      "stars": "★★★★☆",
-      "category": "승계·세무·신탁",
-      "title": "부모님 통장에서 옮긴 병원비 상속세 증여세 낼까",
-      "desc": "부모님 통장에서 이체된 병원비와 관련된 상속세 및 증여세 과세 여부를 설명합니다.",
-      "org": "파이낸셜리뷰",
-      "date": "2026.11.05",
-      "ts": 1793862423000,
-      "btnText": "🔗 원문 보기",
-      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1INXVaNmJjOHNhcFA5R1Y4QWRiNUp4NnlMQXA1MnRJVk5OMENSdDlUaWNZaWpYUENmaWwyaE9sSThJZVRkVGJDTVlMOTRsdHEtcXFLeVYxcVFGbU93WVZCR2lRdndzWTZ6Q0V1Szh6cC1vMktS?oc=5",
-      "lang": "ko",
-      "classifiedBy": "AI(gemini-3.5-flash-lite)"
-    },
-    {
-      "stars": "★★★★☆",
-      "category": "대체투자·사모시장",
-      "title": "AI 인프라에 5조달러 몰린다…GPU 파이낸싱·온사이트 발전 등 유망",
-      "desc": "AI 인프라 분야에 막대한 자금이 유입되며 GPU 파이낸싱과 온사이트 발전 등이 유망 투자처로 꼽힙니다.",
-      "org": "마켓인",
-      "date": "2026.11.05",
-      "ts": 1793860325000,
-      "btnText": "🔗 원문 보기",
-      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1fWkRmVjBRUVY2VGduZ2E2MnFONVpITGNTM1p4MXlYZmdIeFJIYkwyZmlfTW9jV3UtSGFIdE05SUd5MC1TaXRpUWg1cE8yVU15aGtpeHRwOUE2OG1XcWRWVUtTbVRaWTN4WTdDcnpJeXNXRUk?oc=5",
-      "lang": "ko",
-      "classifiedBy": "AI(gemini-3.5-flash-lite)"
     }
   ]
 }
