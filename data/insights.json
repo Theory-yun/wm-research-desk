@@ -1,6 +1,6 @@
 {
   "note": "curated=true 는 PB가 고른 연례 핵심 리포트(고정), 나머지는 scripts/build-insights.mjs가 매일 자동 수집합니다.",
-  "updatedAt": "2026-11-26T22:58:31.544Z",
+  "updatedAt": "2026-11-27T09:43:18.088Z",
   "categories": [
     "글로벌 F/O 동향",
     "국내 부자·웰스 리포트",
@@ -118,6 +118,32 @@
       "btnText": "🔗 원문 자료실",
       "url": "https://www2.deloitte.com/global/en/pages/deloitte-private/articles/family-office-insights-series.html",
       "curated": true
+    },
+    {
+      "stars": "★★★☆☆",
+      "category": "대체투자·사모시장",
+      "title": "토큰화, 기관 거래부터 확산…채권·사모펀드 개인투자 문턱 낮아질 수도",
+      "desc": "채권 및 사모펀드 등의 토큰화를 통한 투자 문턱 변화 가능성을 다룹니다.",
+      "org": "뉴시안",
+      "date": "2026.11.27",
+      "ts": 1795768793000,
+      "btnText": "🔗 원문 보기",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5iSXlLUEswVkx6c3p6VEV1Y0RyVWc5OVhBVjdTZ2JqcHkzaU1lZ0tIV2xKQUkxWDFPemxSRVBhSFN6T3B5MmNEWnZOSy1oaE82YmtmMEZtckg4RnVweTZXdzJhQ1hzYjRsR0hqSA?oc=5",
+      "lang": "ko",
+      "classifiedBy": "AI(gemini-3.5-flash-lite)"
+    },
+    {
+      "stars": "★★★★☆",
+      "category": "자산배분·시장 전망",
+      "title": "NH아문디자산운용, 글로벌 투자 콘퍼런스 개최…내년 자산배분 전략 논의",
+      "desc": "내년 글로벌 자산배분 전략과 투자 방향에 대한 논의 결과를 담고 있습니다.",
+      "org": "Chosunbiz",
+      "date": "2026.11.26",
+      "ts": 1795656240000,
+      "btnText": "🔗 원문 보기",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOekc1Z2I3TmhBajFIV04yNDZ5Q1hfbWw3ejEtNXlaUFcxbi1mak9YYkFydHFncVZEdV85ZnZJNkhNMWVURlFBa1daUjAtcmRQTk1qSzZzWjJOT0hzVlQzdTZCSE5uemhtY2NUNWhpUy04dFhRS0M3YzFfLW0wTjVueFlFdmlpOTVrRmlmd0w0ejZmS0YwSDl2WTFNQk3SAZwBQVVfeXFMTnpHNWdiN05oQWoxSFdOMjQ2eUNYX21sN3oxLTV5WlBXMW4tZmpPWGJBcnRxZ3FWRHVfOWZ2STZITTFlVEZRQWtXWlIwLXJkUE5Naks2c1oyTk9Ic1ZUM3U2QkhObnpobWNjVDVoaVMtOHRYUUtDN2MxXy1tME41bnhZRXZpaTk1a0ZpZndMNHo2ZktGMEg5dlkxTUJN?oc=5",
+      "lang": "ko",
+      "classifiedBy": "AI(gemini-3.5-flash-lite)"
     },
     {
       "stars": "★★★★☆",
@@ -871,32 +897,6 @@
       "btnText": "🔗 원문 보기",
       "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1fWkRmVjBRUVY2VGduZ2E2MnFONVpITGNTM1p4MXlYZmdIeFJIYkwyZmlfTW9jV3UtSGFIdE05SUd5MC1TaXRpUWg1cE8yVU15aGtpeHRwOUE2OG1XcWRWVUtTbVRaWTN4WTdDcnpJeXNXRUk?oc=5",
       "lang": "ko",
-      "classifiedBy": "AI(gemini-3.5-flash-lite)"
-    },
-    {
-      "stars": "★★★★☆",
-      "category": "대체투자·사모시장",
-      "title": "트윈포커스 공동창업자: 'DPI 위기' 속 사모펀드 투자 점점 더 까다로워져",
-      "desc": "DPI 위기 속에서 사모펀드 투자 집행이 더욱 까다로워지고 있는 대체투자 시장 동향입니다.",
-      "org": "PEI Private Equity",
-      "date": "2026.11.04",
-      "ts": 1793798098000,
-      "btnText": "🔗 원문 보기",
-      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQRnlseE9xNEUzQ1ZBSGpWdWlUWUF3czZMblo1LU8xVnZQZ0doeFhpUzRzZEF3MzdOTkNxcVJtdFZfRWVWYVc1OF9ZOEJBVVZPTVhOaVgyTDMxRVV5Z3oyWVZ5THAzZ0dlcmVJbEhZbk5YR1N2TXg2QXBra1JVLWRWd3k5X3ZqSDBxMWs5Mk84ZUo0TXY0Q19nSnlwdHY3cWNaMjNpZWkwSzM4VDM0VG5HZTNhaWtId3JZZjBLM1EtZW1OcFA2?oc=5",
-      "lang": "en",
-      "classifiedBy": "AI(gemini-3.5-flash-lite)"
-    },
-    {
-      "stars": "★★★★☆",
-      "category": "글로벌 F/O 동향",
-      "title": "13F 공시가 패밀리오피스에 대해 실제로 말해주는 것들",
-      "desc": "13F 공시 데이터를 통해 글로벌 패밀리오피스의 투자 동향을 분석하는 방법을 다룹니다.",
-      "org": "Bloomberg.com",
-      "date": "2026.11.04",
-      "ts": 1793797201000,
-      "btnText": "🔗 원문 보기",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNOXZBdlZTYkd5ZE05UUdPTEQzNnBfeGdjYU9sRnJXWmVOT0draG9XeE9semRSTVc0dXo5azZTcFRsdHRqbld4LXpsMVMzQWZfTUEwbExGam9zejVWUmh2QmRrXzhaMlVVV2F2OVF6MERudDFiLXQyblRUWmhPTk9jS09ZUk01SDJJcVpSbG1CbldzVjJYMS0wWFYyUlpqXzhJUnd4OFA1SzQ3Zw?oc=5",
-      "lang": "en",
       "classifiedBy": "AI(gemini-3.5-flash-lite)"
     }
   ]
