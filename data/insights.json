@@ -1,6 +1,6 @@
 {
   "note": "curated=true 는 PB가 고른 연례 핵심 리포트(고정), 나머지는 scripts/build-insights.mjs가 매일 자동 수집합니다.",
-  "updatedAt": "2026-11-27T22:58:23.793Z",
+  "updatedAt": "2026-11-28T09:25:04.871Z",
   "categories": [
     "글로벌 F/O 동향",
     "국내 부자·웰스 리포트",
@@ -120,6 +120,19 @@
       "curated": true
     },
     {
+      "stars": "★★★★☆",
+      "category": "자산배분·시장 전망",
+      "title": "주식 더 담고 현금 줄여라… 자산배분 키워드는 '한국·미국·인프라'[2027년 대전망]",
+      "desc": "2027년 대전망에 따른 자산배분 키워드로 주식을 더 담고 현금을 줄이며 한국, 미국, 인프라를 주목하라는 전망입니다.",
+      "org": "한국경제",
+      "date": "2026.11.28",
+      "ts": 1795824012000,
+      "btnText": "🔗 원문 보기",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFA4TUd2OFFvZXk3RUNYa1NRN1dGLXcxTXZjWmlvNFdZNlN1cVNiMTdaMFVTbml5ZkxqT2F0cS1Fd3d0YnFzdl8yZU9EdEFjV2tRVGhhX215cjlKUQ?oc=5",
+      "lang": "ko",
+      "classifiedBy": "AI(gemini-3.5-flash-lite)"
+    },
+    {
       "stars": "★★★☆☆",
       "category": "대체투자·사모시장",
       "title": "토큰화, 기관 거래부터 확산…채권·사모펀드 개인투자 문턱 낮아질 수도",
@@ -170,6 +183,32 @@
       "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9NaFNmUDh5eDgydnUyM2pNS3U2OThKNVVkWkpCVV8yX0tLZjBhQ1E3TGlpaUpfZVR5RXpIUm81M2N0UTZqclFubjZldWdEcUNleWwza1RyQjlyQ0txT0xkdGEwUHMzNTMyaVp6aHA5X0djQQ?oc=5",
       "lang": "ko",
       "classifiedBy": "AI(gemini-3.1-flash-lite)"
+    },
+    {
+      "stars": "★★★★☆",
+      "category": "승계·세무·신탁",
+      "title": "집 물려줄 때 세금 2억이라고? 60대 상속세 개편, 배우자공제 조건 계산해봤더니",
+      "desc": "60대 상속세 개편과 배우자공제 조건에 따른 세금 계산 사례를 다룬 세법 및 상속 제도 관련 내용입니다.",
+      "org": "Daum",
+      "date": "2026.11.25",
+      "ts": 1795565685000,
+      "btnText": "🔗 원문 보기",
+      "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTFBYd0tCd2ZOYTBwTTlVZkRqVnNjd3ktN3oycG9qbllMRVNQX29QSEtIYW9mZzIxQUdBa3lpWUxHRmpVc2xrLVE?oc=5",
+      "lang": "ko",
+      "classifiedBy": "AI(gemini-3.5-flash-lite)"
+    },
+    {
+      "stars": "★★★★☆",
+      "category": "대체투자·사모시장",
+      "title": "현대해상, 대체투자 평가손실 1400억…대응카드는 '대출형 자산'",
+      "desc": "현대해상의 대체투자 평가손실 규모와 이에 대한 대응 카드로 대출형 자산을 활용한다는 시장 동향입니다.",
+      "org": "Daum",
+      "date": "2026.11.24",
+      "ts": 1795508743000,
+      "btnText": "🔗 원문 보기",
+      "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTFA1UWVGRUtzaGVMbU9VVHEtam91V2JPVWN5enQ5VURKNS1jaEJybTZoWFpWdGdEY3FmQWFjQmszNHhFZ0twd0E?oc=5",
+      "lang": "ko",
+      "classifiedBy": "AI(gemini-3.5-flash-lite)"
     },
     {
       "stars": "★★★☆☆",
@@ -442,6 +481,19 @@
       "btnText": "🔗 원문 보기",
       "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5uUlh1a2JPejRqYTdsMVJJRzNkSm5vTGJTYjJnLTdDbW1POVdjYWFMMjNHeExWQm9VeXlOT0lMM09PRlhxY1Nmb1Q2c0c5WEl5RFo5WFFxcHo5ZmVwLS12VHpGM1h3clVFbVRweXVtOWFuNzA3X1E?oc=5",
       "lang": "en",
+      "classifiedBy": "AI(gemini-3.5-flash-lite)"
+    },
+    {
+      "stars": "★★★★☆",
+      "category": "자산배분·시장 전망",
+      "title": "5000피도 불안한데…내년 9200피 간다는 증권가",
+      "desc": "증권가에서 내년 지수 전망과 관련하여 9200피를 전망하는 등 시장에 대한 장기 전망을 담고 있습니다.",
+      "org": "마켓인",
+      "date": "2026.11.17",
+      "ts": 1794874745000,
+      "btnText": "🔗 원문 보기",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE92YWhyaHpJVUw2Mk9kUm5NbEZnWFNtcG4zQ2FNMnRKWlo5WHMxWGg2MjdONHBlZlNVZGhtc0djNWJBQzF1WUJpRTJmM2RwWWJSZ3k4TElETnBwRHVSbXQwajM0QmxCVklUX0t0SkxLUEdUbVU?oc=5",
+      "lang": "ko",
       "classifiedBy": "AI(gemini-3.5-flash-lite)"
     },
     {
@@ -846,58 +898,6 @@
       "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNbmpMeGtQVEJPWXdNQW1BcHFDS1VUWmJYcEZyZEZwNllmY1R1RUxqT2FsNlEzMEl4UWpKV05zRVhfSXkxemlhWkpqbjg1dWFrUmcxdDZHMERWaHBjaUNxYU1LVGZNSklzY19EcW1CSnpualo5THNQbTBjcUxFaVQ2anpiMUI1YnBHU0lSc2lubkQyXzRFVHRQN3hR?oc=5",
       "lang": "en",
       "classifiedBy": "AI(gemini-3.5-flash-lite)"
-    },
-    {
-      "stars": "★★★★☆",
-      "category": "자산배분·시장 전망",
-      "title": "11월 미국 주식시장 전망: 2026년 남은 기간 포트폴리오 포지셔닝 방법",
-      "desc": "연말까지의 미국 주식시장 대응과 포트폴리오 조정 전략을 다룬 전망입니다.",
-      "org": "Morningstar",
-      "date": "2026.11.06",
-      "ts": 1793952000000,
-      "btnText": "🔗 원문 보기",
-      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNLTBzVlJUNDJiazlQdkE4WVBCNVFGQ0w3YVZfak1VdUlyeFBoR1hfTk44dU53cDJoSkVnbURmM0ZJdkZTb21mVHNvWk5vR21RVW1kWDdGb2pOeGtLNVBpNVlZbGpaOEcxOEhBOXhSQ3NMcFVQUnBadEFYUkl0ZG1fVUcwV1FfWnJreDJLMDl4Z2FOMFBEUXUxT05zQ09YUjh0NXhEV3A2ek0xOWpSOWRXNVFIRVFuV1YwbWFVbA?oc=5",
-      "lang": "en",
-      "classifiedBy": "AI(gemini-3.5-flash-lite)"
-    },
-    {
-      "stars": "★★★★☆",
-      "category": "자산배분·시장 전망",
-      "title": "올 214조 외인 순매도 미국이 최다 아니었네…영국계가 절반 차지",
-      "desc": "외국인 순매도 자금 중 영국계 자금이 절반을 차지하는 등 국가별 수급 통계를 확인할 수 있습니다.",
-      "org": "매일경제 마켓",
-      "date": "2026.11.06",
-      "ts": 1793952000000,
-      "btnText": "🔗 원문 보기",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5qRnFZeDZIM3ZaeU8zR0JXVHQzZlN3WnlmNmdac0xkQ2J0SWJMd0RDM05rbk93TlJIYTJscHo4NDJrN1o1MnY4TmRzcU5lclJFckE?oc=5",
-      "lang": "ko",
-      "classifiedBy": "AI(gemini-3.5-flash-lite)"
-    },
-    {
-      "stars": "★★★★★",
-      "category": "글로벌 F/O 동향",
-      "title": "신규 킹스톤 패밀리오피스 보고서 – 독일 부동산 노출도를 대폭 축소하는 패밀리오피스",
-      "desc": "글로벌 패밀리오피스들이 특정 지역(독일) 부동산 자산 비중을 줄이고 리스크 관리에 나섰음을 보여주는 보고서입니다.",
-      "org": "ASSETPHYSICS",
-      "date": "2026.11.05",
-      "ts": 1793866093000,
-      "btnText": "🔗 원문 보기",
-      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNbGpfem5Pa1A5X051QlRybmZ5bjVMbEE0OF9JVlZkbGl5LXdGdmpDRllSZndSdmdxaU1xYmNVeDhzbFcxSTFRSTl3bDRTWktOYm42anExYldOaUlvV0NRbUg5N2FyZ3gxOFJEcDZ3WlB5aVRlaWxZeXlKeHBlOFRSOW85LU4xUWxaMDhFQmVJaGFzWmZMMFdKQkJGaGxCQkZEWVpwQ3lfMGlDVGVCeXNXREFCcHpILWdScUN3ei1rMFlfRFB6ZjlFT3g0eklaNERJ?oc=5",
-      "lang": "en",
-      "classifiedBy": "AI(gemini-3.5-flash-lite)"
-    },
-    {
-      "stars": "★★★★☆",
-      "category": "글로벌 F/O 동향",
-      "title": "패밀리오피스, 사모 시장에서 역량 강화",
-      "desc": "글로벌 패밀리오피스의 사모 시장 참여 확대 현황을 통해 고객의 투자 트렌드 비교가 가능합니다.",
-      "org": "Professional Wealth Management",
-      "date": "2026.11.05",
-      "ts": 1793865600000,
-      "btnText": "🔗 원문 보기",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9MWXp3UU5zdEsxbHpxZkdpemdhd1hlcUE5RFpleVlRY1ZBdmU3djdvQzA5blNnc1pHM3o5QTNLTzhjT3ljckduMTRxMm1ESW1YZFhNMHNKZllKZ0RDNFdTQS1DZkRVUDJIalJiNnp6TEpCQ3BqcWc?oc=5",
-      "lang": "en",
-      "classifiedBy": "AI(gemini-3.1-flash-lite)"
     }
   ]
 }
